@@ -1,5 +1,826 @@
 [
   {
+    "id": "fn-1",
+    "bates_ids": ["PSI-HHS-000008257238"],
+    "footnote_text": "HHS records also credit Dr. Szarfman as someone who \"worked to develop the data mining system\" that FDA was using at the time. See PSI-HHS-000008257238; David Wiseman, Signal loss by truancy, masking, and filtering, and underestimation of potential risks and suspected adverse reactions in the Disproportionality Signal Analyses of VAERS data associated with COVID-19 pro-vaccines, ResearchGate, Sept. 2025, https://www.researchgate.net/publication/395382959_Signal_loss_by_truancy_masking_and_filtering_and_underestimation_of_potential_risks_and_suspected_adverse_reactions_in_the_Disproportionality_Signal_Analyses_of_VAERS_data_associated_with_COVID-19_pro at 8-9. Dr. Szarfman retired from the FDA in 2025. The Subcommittee applied Bates stamps to the records cited in the report that were produced by HHS.",
+    "document_id": null,
+    "external_url": "https://www.researchgate.net/publication/395382959_Signal_loss_by_truancy_masking_and_filtering_and_underestimation_of_potential_risks_and_suspected_adverse_reactions_in_the_Disproportionality_Signal_Analyses_of_VAERS_data_associated_with_COVID-19_pro"
+  },
+  {
+    "id": "fn-2",
+    "bates_ids": ["PSI-HHS-000008257443-44"],
+    "footnote_text": "PSI-HHS-000008257443-44 (with attachment).",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-3",
+    "bates_ids": [],
+    "footnote_text": "Id.; See e.g., David Martin et al., Data Mining for Prospective Early Detection of Safety Signals in the Vaccine Adverse Event Reporting System (VAERS): A Case Study of Febrile Seizures after a 2010–2011 Seasonal Influenza Virus Vaccine, Drug Safety (2013), https://link.springer.com/article/10.1007/s40264-013-0051-9; Rave Harpaz et al., Signaling COVID-19 Vaccine Adverse Events, Drug Safety (2022), https://link.springer.com/article/10.1007/s40264-022-01186-z.",
+    "document_id": null,
+    "external_url": "https://link.springer.com/article/10.1007/s40264-013-0051-9"
+  },
+  {
+    "id": "fn-4",
+    "bates_ids": ["PSI-HHS-000002293255", "PSI-HHS-000008263190-91"],
+    "footnote_text": "PSI-HHS-000002293255; PSI-HHS-000008263190-91 (emphasis added). Records show that FDA's threshold for determining a statistically significant safety signal was when the lower bound of the reporting estimate (EB05) exceeded 2.0. See PSI's March 25, 2026 document release on EB data mining: https://www.ronjohnson.senate.gov/services/files/F92FBB0A-CCFD-412A-A02D-243AA1844D6E at 166; FOIA production: https://www.fda.gov/media/184988/download?attachment at 23.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/F92FBB0A-CCFD-412A-A02D-243AA1844D6E",
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-5",
+    "bates_ids": ["PSI-HHS-000008257443-44"],
+    "footnote_text": "PSI-HHS-000008257443-44 (with attachment).",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-6",
+    "bates_ids": ["PSI-HHS-000008258306", "PSI-HHS-00008258202-03", "PSI-HHS-000002208944-45", "PSI-HHS-000004592364-65"],
+    "footnote_text": "PSI-HHS-000008258306 (with attachment); PSI-HHS-00008258202-03; PSI-HHS-000002208944-45; PSI-HHS-000004592364-65 (with attachment) (emphasis added).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-7",
+    "bates_ids": ["PSI-HHS-000008251979"],
+    "footnote_text": "PSI-HHS-000008251979 (emphasis added, ellipsis in original).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-8",
+    "bates_ids": ["PSICOVID_00017246", "PSI-HHS-000008251530", "PSI-HHS-000008251912-13", "PSI-HHS-000001195617-19", "PSI_HHS-000008253450-51", "PSI-HHS-000001175745-47", "PSICOVID_00017246-47"],
+    "footnote_text": "PSICOVID_00017246; PSI-HHS-000008251530; PSI-HHS-000008251912-13; PSI-HHS-000001195617-19; PSI_HHS-000008253450-51; PSI-HHS-000001175745-47; PSICOVID_00017246-47.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-9",
+    "bates_ids": ["PSI-HHS-000002213753", "PSICOVID_00017246-47"],
+    "footnote_text": "PSI-HHS-000002213753; PSICOVID_00017246-47. See also, Testimony of Dr. Peter Marks before the Select Subcomm. on the Coronavirus Pandemic Comm. on Oversight and Accountability, U.S. House of Representatives, Feb. 15, 2024, https://oversight.house.gov/wp-content/uploads/2024/02/FDA-SSCP-Vaccine-Safety-and-Surveillance-FDA-Written-Testimony-FINAL-Clean.pdf.",
+    "document_id": null,
+    "external_url": "https://oversight.house.gov/wp-content/uploads/2024/02/FDA-SSCP-Vaccine-Safety-and-Surveillance-FDA-Written-Testimony-FINAL-Clean.pdf"
+  },
+  {
+    "id": "fn-10",
+    "bates_ids": ["PSICOVID_00017246-47"],
+    "footnote_text": "PSICOVID_00017246-47.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-11",
+    "bates_ids": ["PSICOVID_00017245", "PSI-HHS-000002208944-45"],
+    "footnote_text": "PSICOVID_00017245; PSI-HHS-000002208944-45. In a May 6, 2021 email to her FDA colleagues, Dr. Szarfman wrote, \"Note that the ER05 signals of RPGS are higher than the EB05 signals of MGPS.\" Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-12",
+    "bates_ids": [],
+    "footnote_text": "Chairman Ron Johnson, Failure to Warn: How Federal Health Agencies Downplayed the Risk of Myocarditis and Other Adverse Events Following COVID-19 Vaccination, Permanent Subcomm. on Investigations, May 21, 2025, https://www.hsgac.senate.gov/wp-content/uploads/2025.05.21-PSI-Majority-Staff-Interim-Report-Failure-to-Warn.pdf at 20.",
+    "document_id": null,
+    "external_url": "https://www.hsgac.senate.gov/wp-content/uploads/2025.05.21-PSI-Majority-Staff-Interim-Report-Failure-to-Warn.pdf"
+  },
+  {
+    "id": "fn-13",
+    "bates_ids": [],
+    "footnote_text": "Id. It is unclear what data mining system was used to determine that VAERS was signaling for myopericarditis.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-14",
+    "bates_ids": [],
+    "footnote_text": "Id. Chairman Johnson's May 21, 2025 report discussed how Biden health officials failed to issue a formal warning about myocarditis, despite increasing cases in VAERS, through the Health Alert Network which would have notified health care providers about the risk of myocarditis associated with the mRNA COVID-19 vaccines. The FDA did not announce changes to the labels \"to include a warning about myocarditis and pericarditis\" for the Moderna and Pfizer COVID-19 vaccines until June 25, 2021, months after first becoming aware of reports of increased cases of the adverse events. Id. at 3, 6, 27-28.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-15",
+    "bates_ids": ["PSI-HHS-000002208944"],
+    "footnote_text": "PSI-HHS-000002208944.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-16",
+    "bates_ids": ["PSI-HHS-000002208944-45"],
+    "footnote_text": "PSI-HHS-000002208944-45.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-17",
+    "bates_ids": ["PSI-HHS-000002208944"],
+    "footnote_text": "PSI-HHS-000002208944.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-18",
+    "bates_ids": ["PSI-HHS-000004592364"],
+    "footnote_text": "PSI-HHS-000004592364.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-19",
+    "bates_ids": ["PSI-HHS-000008254471"],
+    "footnote_text": "PSI-HHS-000008254471.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-20",
+    "bates_ids": [],
+    "footnote_text": "Rave Harpaz et al., Signaling COVID-19 Vaccine Adverse Events, Drug Safety (2022), https://link.springer.com/article/10.1007/s40264-022-01186-z.",
+    "document_id": null,
+    "external_url": "https://link.springer.com/article/10.1007/s40264-022-01186-z"
+  },
+  {
+    "id": "fn-21",
+    "bates_ids": ["PSI-HHS-000004461747-48"],
+    "footnote_text": "PSI-HHS-000004461747-48.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-22",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-23",
+    "bates_ids": ["PSI-HHS-000004594929"],
+    "footnote_text": "PSI-HHS-000004594929.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-24",
+    "bates_ids": [],
+    "footnote_text": "Vaccine Adverse Event Reporting System (VAERS) Standard Operating Procedures for COVID-19, Centers for Disease Control and Prevention, Jan. 29, 2021, https://web.archive.org/web/20210319091240/https://www.cdc.gov/vaccinesafety/pdf/VAERS-v2-SOP.pdf at 16-17. See also PSI's March 25, 2026 document release on EB data mining: https://www.ronjohnson.senate.gov/services/files/F92FBB0A-CCFD-412A-A02D-243AA1844D6E at 160; FOIA production: https://www.fda.gov/media/184988/download?attachment at 22.",
+    "document_id": null,
+    "external_url": "https://web.archive.org/web/20210319091240/https://www.cdc.gov/vaccinesafety/pdf/VAERS-v2-SOP.pdf"
+  },
+  {
+    "id": "fn-25",
+    "bates_ids": ["PSI-HHS-000002293255"],
+    "footnote_text": "PSI-HHS-000002293255. See also, William DuMouchel, Bayesian Data Mining in Large Frequency Tables, with an Application to the FDA Spontaneous Reporting System, The American Statistician (1999), available at https://www.jstor.org/stable/2686093?seq=1.",
+    "document_id": null,
+    "external_url": "https://www.jstor.org/stable/2686093?seq=1"
+  },
+  {
+    "id": "fn-26",
+    "bates_ids": [],
+    "footnote_text": "The FDA issued the EUA for the Pfizer-BioNTech COVID-19 vaccine on December 11, 2020. Moderna received the EUA for its vaccine on December 18, 2020. COVID-19 Timeline, Centers for Disease Control and Prevention, https://www.cdc.gov/museum/timeline/covid19.html; Vaccine Adverse Event Reporting System (VAERS) Standard Operating Procedures for COVID-19, Centers for Disease Control and Prevention, Jan. 29, 2021, https://web.archive.org/web/20210319091240/https://www.cdc.gov/vaccinesafety/pdf/VAERS-v2-SOP.pdf.",
+    "document_id": null,
+    "external_url": "https://www.cdc.gov/museum/timeline/covid19.html"
+  },
+  {
+    "id": "fn-27",
+    "bates_ids": [],
+    "footnote_text": "Letter from Jeff Reezek, Centers for Disease Control and Prevention to Sen. Ron Johnson, Permanent Subcomm. on Investigations, Mar. 14, 2023 (on file with Subcomm.); PSI's March 25, 2026 document release on EB data mining: https://www.ronjohnson.senate.gov/services/files/F92FBB0A-CCFD-412A-A02D-243AA1844D6E at 161; FOIA production: https://www.fda.gov/media/184988/download?attachment at 23; David Wiseman, Signal loss by truancy, masking, and filtering, and underestimation of potential risks and suspected adverse reactions in the Disproportionality Signal Analyses of VAERS data associated with COVID-19 pro-vaccines, ResearchGate, Sept. 2025, https://www.researchgate.net/publication/395382959_Signal_loss_by_truancy_masking_and_filtering_and_underestimation_of_potential_risks_and_suspected_adverse_reactions_in_the_Disproportionality_Signal_Analyses_of_VAERS_data_associated_with_COVID-19_pro at 8-9.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/F92FBB0A-CCFD-412A-A02D-243AA1844D6E"
+  },
+  {
+    "id": "fn-28",
+    "bates_ids": ["PSI-HHS-000008257238"],
+    "footnote_text": "Robert O'Neill and Ana Szarfman, Some US Food and Drug Administration perspectives on data mining for pediatric safety Assessment, Current Therapeutic Research (2001), https://www.sciencedirect.com/science/article/abs/pii/S0011393X01800710; Ana Szarfman et al., Use of screening algorithms and computer systems to efficiently signal higher-than-expected combinations of drugs and events in the US FDA's spontaneous reports database, Drug Safety (2002), https://link.springer.com/article/10.2165/00002018-200225060-00001; David Wiseman, Signal loss by truancy, masking, and filtering, and underestimation of potential risks and suspected adverse reactions in the Disproportionality Signal Analyses of VAERS data associated with COVID-19 pro-vaccines, ResearchGate, Sept. 2025, https://www.researchgate.net/publication/395382959_Signal_loss_by_truancy_masking_and_filtering_and_underestimation_of_potential_risks_and_suspected_adverse_reactions_in_the_Disproportionality_Signal_Analyses_of_VAERS_data_associated_with_COVID-19_pro at 8-9; PSI-HHS-000008257238. One FDA official referred to Dr. Szarfman as someone who \"worked to develop the data mining system[.]\" Id. In 2002, Dr. Szarfman was reportedly awarded \"the FDA and CDER Outstanding Scientific Achievement Awards for contributions to safety data mining.\" See Professional Activities, Ana Szarfman, ORCID, https://orcid.org/0000-0001-6680-1423.",
+    "document_id": null,
+    "external_url": "https://link.springer.com/article/10.2165/00002018-200225060-00001"
+  },
+  {
+    "id": "fn-29",
+    "bates_ids": [],
+    "footnote_text": "PSI's March 25, 2026 document release on EB data mining: https://www.ronjohnson.senate.gov/services/files/F92FBB0A-CCFD-412A-A02D-243AA1844D6E at 166; FOIA production: https://www.fda.gov/media/184988/download?attachment at 23. Although FDA officials used 2.0 as their threshold for a statistically significant signal, an FDA official's April 5, 2021 PowerPoint presentation before the Advisory Committee on Immunization Practices appeared to recognize that, \"Technically, any [Empirical Bayes Geometric Mean] value above one indicates disproportional reporting.\" See PSI's March 25, 2026 document release on EB data mining: https://www.hsgac.senate.gov/wp-content/uploads/2025.05.21-Supporting-Documents-Failure-to-Warn-Part-08.pdf at 47. As medical researcher Dr. David Wiseman wrote in his September 2025 Preprint article, because health officials used the higher threshold of 2.0, as opposed to 1.0 which would \"technically\" indicate a signal, \"[s]ignals were filtered out by an inappropriately high detection threshold.\" David Wiseman, Signal loss by truancy, masking, and filtering, and underestimation of potential risks and suspected adverse reactions in the Disproportionality Signal Analyses of VAERS data associated with COVID-19 pro-vaccines, ResearchGate, Sept. 2025, https://www.researchgate.net/publication/395382959_Signal_loss_by_truancy_masking_and_filtering_and_underestimation_of_potential_risks_and_suspected_adverse_reactions_in_the_Disproportionality_Signal_Analyses_of_VAERS_data_associated_with_COVID-19_pro at 3.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/F92FBB0A-CCFD-412A-A02D-243AA1844D6E"
+  },
+  {
+    "id": "fn-30",
+    "bates_ids": [],
+    "footnote_text": "Letter from Rochelle Walensky, Dir., Centers for Disease Control and Prevention to Sen. Ron Johnson, Sept. 2, 2022 (on file with Subcomm.).",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-31",
+    "bates_ids": ["PSI-HHS-000005235281"],
+    "footnote_text": "PSI-HHS-000005235281.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-32",
+    "bates_ids": [],
+    "footnote_text": "Rave Harpaz et al., Signaling COVID-19 Vaccine Adverse Events, Drug Safety (2022), https://link.springer.com/article/10.1007/s40264-022-01186-z.",
+    "document_id": null,
+    "external_url": "https://link.springer.com/article/10.1007/s40264-022-01186-z"
+  },
+  {
+    "id": "fn-33",
+    "bates_ids": [],
+    "footnote_text": "Letter from Ron Johnson, Chairman, Permanent Subcomm. on Investigations to Robert F. Kennedy, Jr., Sec., Dep't of Health and Human Services, Mar. 23, 2026, https://www.ronjohnson.senate.gov/services/files/CA500350-195E-472C-9F26-BE93B290B9D9.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/CA500350-195E-472C-9F26-BE93B290B9D9"
+  },
+  {
+    "id": "fn-34",
+    "bates_ids": [],
+    "footnote_text": "David Wiseman, Signal loss by truancy, masking, and filtering, and underestimation of potential risks and suspected adverse reactions in the Disproportionality Signal Analyses of VAERS data associated with COVID-19 pro-vaccines, ResearchGate, Sept. 2025, https://www.researchgate.net/publication/395382959_Signal_loss_by_truancy_masking_and_filtering_and_underestimation_of_potential_risks_and_suspected_adverse_reactions_in_the_Disproportionality_Signal_Analyses_of_VAERS_data_associated_with_COVID-19_pro.",
+    "document_id": null,
+    "external_url": "https://www.researchgate.net/publication/395382959_Signal_loss_by_truancy_masking_and_filtering_and_underestimation_of_potential_risks_and_suspected_adverse_reactions_in_the_Disproportionality_Signal_Analyses_of_VAERS_data_associated_with_COVID-19_pro"
+  },
+  {
+    "id": "fn-35",
+    "bates_ids": [],
+    "footnote_text": "Id. at 3.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-36",
+    "bates_ids": [],
+    "footnote_text": "Letter from Ron Johnson, Chairman, Permanent Subcomm. on Investigations to Robert F. Kennedy, Jr., Sec., Dep't of Health and Human Services, Mar. 23, 2026, https://www.ronjohnson.senate.gov/services/files/CA500350-195E-472C-9F26-BE93B290B9D9 at 15.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/CA500350-195E-472C-9F26-BE93B290B9D9"
+  },
+  {
+    "id": "fn-37",
+    "bates_ids": [],
+    "footnote_text": "Id. at 16.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-38",
+    "bates_ids": [],
+    "footnote_text": "Chairman Ron Johnson, Failure to Warn: How Federal Health Agencies Downplayed the Risk of Myocarditis and Other Adverse Events Following COVID-19 Vaccination, Permanent Subcomm. on Investigations, May 21, 2025, https://www.hsgac.senate.gov/wp-content/uploads/2025.05.21-PSI-Majority-Staff-Interim-Report-Failure-to-Warn.pdf at 20.",
+    "document_id": null,
+    "external_url": "https://www.hsgac.senate.gov/wp-content/uploads/2025.05.21-PSI-Majority-Staff-Interim-Report-Failure-to-Warn.pdf"
+  },
+  {
+    "id": "fn-39",
+    "bates_ids": [],
+    "footnote_text": "Ana Szarfman et al., Pharmacovigilance in the 21st century: new systematic tools for an old problem, Pharmacotherapy (2004), https://accpjournals.onlinelibrary.wiley.com/doi/epdf/10.1592/phco.24.13.1099.38090.",
+    "document_id": null,
+    "external_url": "https://accpjournals.onlinelibrary.wiley.com/doi/epdf/10.1592/phco.24.13.1099.38090"
+  },
+  {
+    "id": "fn-40",
+    "bates_ids": [],
+    "footnote_text": "Id. at 1.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-41",
+    "bates_ids": ["PSI-HHS-000008254390-92"],
+    "footnote_text": "See, e.g., PSI-HHS-000008254390-92; FOIA production: https://www.fda.gov/media/184988/download?attachment at 2-5.",
+    "document_id": null,
+    "external_url": "https://www.fda.gov/media/184988/download?attachment"
+  },
+  {
+    "id": "fn-42",
+    "bates_ids": ["PSI-HHS-000008257443-44", "PSI-HHS-000004783470-71", "PSI-HHS-000008257443", "PSI-HHS-000008259555"],
+    "footnote_text": "Dr. Szarfman referred to Dr. DuMouchel's RGPS methodology as \"new.\" PSI-HHS-000008257443-44; Dr. DuMouchel co-authored a white paper in 2012 about RGPS. William DuMouchel and Rave Harpaz, Regression-Adjusted GPS Algorithm (RGPS), Oracle, Nov. 2012, https://docs.oracle.com/health-sciences/empirica-signal-811/ESIUG/Regression-Adjusted_GPS_Algorithm.pdf; PSI-HHS-000004783470-71; PSI-HHS-000008257443; PSI-HHS-000008259555, 62; Vaccine Adverse Event Reporting System (VAERS) Standard Operating Procedures for COVID-19, Centers for Disease Control and Prevention, Jan. 29, 2021, https://web.archive.org/web/20210319091240/https://www.cdc.gov/vaccinesafety/pdf/VAERS-v2-SOP.pdf at 16-17.",
+    "document_id": null,
+    "external_url": "https://docs.oracle.com/health-sciences/empirica-signal-811/ESIUG/Regression-Adjusted_GPS_Algorithm.pdf"
+  },
+  {
+    "id": "fn-43",
+    "bates_ids": ["PSI-HHS-000008259555"],
+    "footnote_text": "PSI-HHS-000008259555, 57.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-44",
+    "bates_ids": [],
+    "footnote_text": "Id. at 61 (emphasis in original).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis in original)"
+  },
+  {
+    "id": "fn-45",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-46",
+    "bates_ids": ["PSI-HHS-000008257443-44"],
+    "footnote_text": "In a March 26, 2021 email to senior FDA officials, Dr. Szarfman left little doubt about her and Dr. DuMouchel's expertise in data mining, stating explicitly that she and Dr. DuMouchel \"extensively studied the increased value of RGPS over MGPS for reducing false positives and negative signals.\" PSI-HHS-000008257443-44.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-47",
+    "bates_ids": ["PSI-HHS-000008259561"],
+    "footnote_text": "PSI-HHS-000008259561.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-48",
+    "bates_ids": ["PSI-HHS-000008257237"],
+    "footnote_text": "PSI-HHS-000008257237.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-49",
+    "bates_ids": ["PSI-HHS-000008251980"],
+    "footnote_text": "PSI-HHS-000008251980.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-50",
+    "bates_ids": ["PSI-HHS-000008257443", "PSI-HHS-000008257443-44", "PSI-HHS-000008258306", "PSI-HHS-00008258202-03", "PSI-HHS-000002208944-45", "PSI-HHS-000004592364"],
+    "footnote_text": "In a March 26, 2021 email, Dr. Szarfman wrote to her FDA colleagues, \"the attached excel comparisons between RGPS and MGPS were generated by Bill DuMouchel using the VAERS public domain data incorporated into the Empirica Signal. RGPS is included with the public domain version of Empirica Signal.\" PSI-HHS-000008257443; See e.g., PSI-HHS-000008257443-44 (with attachment); PSI-HHS-000008258306 (with attachment); PSI-HHS-00008258202-03; PSI-HHS-000002208944-45; PSI-HHS-000004592364 (with attachment).",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-51",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-52",
+    "bates_ids": ["PSI-HHS-000002213753"],
+    "footnote_text": "PSI-HHS-000002213753.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-53",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-54",
+    "bates_ids": ["PSI-HHS-000002213752-53"],
+    "footnote_text": "PSI-HHS-000002213752-53.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-55",
+    "bates_ids": ["PSI-HHS-000005524064"],
+    "footnote_text": "PSI-HHS-000005524064. See e.g., PSI's March 25, 2026 document release on EB data mining: https://www.ronjohnson.senate.gov/services/files/D4D8B767-A092-455C-9CDE-DC8EC1419B31.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/D4D8B767-A092-455C-9CDE-DC8EC1419B31"
+  },
+  {
+    "id": "fn-56",
+    "bates_ids": ["PSI-HHS-000001217046"],
+    "footnote_text": "PSI-HHS-000001217046 (with attachment); PSI's March 25, 2026 document release on EB data mining: https://www.ronjohnson.senate.gov/services/files/D4D8B767-A092-455C-9CDE-DC8EC1419B31 at 231-234; See also Dr. Menschik writing to his FDA colleagues on Aug. 5, 2022, \"we are no longer routinely sending COVID data mining to CDC[.]\" One FDA official responded, \"I was also hoping we would stop doing that at some point!\" PSI-HHS-000008266854.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/D4D8B767-A092-455C-9CDE-DC8EC1419B31"
+  },
+  {
+    "id": "fn-57",
+    "bates_ids": ["PSI-HHS-000001160286"],
+    "footnote_text": "PSI-HHS-000001160286.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-58",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-59",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-60",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-61",
+    "bates_ids": ["PSI-HHS-000002480132"],
+    "footnote_text": "PSI-HHS-000002480132.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-62",
+    "bates_ids": [],
+    "footnote_text": "FOIA request, May 9, 2022, https://jackanapes.substack.com/api/v1/file/44421d00-9c02-4fc9-9471-65fcdb24152c.pdf.",
+    "document_id": null,
+    "external_url": "https://jackanapes.substack.com/api/v1/file/44421d00-9c02-4fc9-9471-65fcdb24152c.pdf"
+  },
+  {
+    "id": "fn-63",
+    "bates_ids": [],
+    "footnote_text": "Letter from Senator Ron Johnson to Rochelle Walensky, Director, Centers for Disease Control and Prevention, June 23, 2022, https://www.ronjohnson.senate.gov/services/files/9914278B-A73B-4434-8349-91091138E18B.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/9914278B-A73B-4434-8349-91091138E18B"
+  },
+  {
+    "id": "fn-64",
+    "bates_ids": [],
+    "footnote_text": "Letter from Aaron Siri, Attorney, Siri Glimstad, et al., to Food and Drug Administration, Oct. 31, 2022, https://icandecide.org/wp-content/uploads/2023/02/001-Complaint-Exhibits-January-25-2023-IR0802M.pdf at 7. According to the Informed Consent Action Network, FDA denied the entire FOIA request on Aug. 26, 2022. Id. at 8.",
+    "document_id": null,
+    "external_url": "https://icandecide.org/wp-content/uploads/2023/02/001-Complaint-Exhibits-January-25-2023-IR0802M.pdf"
+  },
+  {
+    "id": "fn-65",
+    "bates_ids": [],
+    "footnote_text": "The first FOIA production of EB data mining reports did not occur until January 22, 2025, under the Trump administration. David Wiseman, Signal loss by truancy, masking, and filtering, and underestimation of potential risks and suspected adverse reactions in the Disproportionality Signal Analyses of VAERS data associated with COVID-19 pro-vaccines, ResearchGate, Sept. 2025, https://www.researchgate.net/publication/395382959_Signal_loss_by_truancy_masking_and_filtering_and_underestimation_of_potential_risks_and_suspected_adverse_reactions_in_the_Disproportionality_Signal_Analyses_of_VAERS_data_associated_with_COVID-19_pro at 51, see footnote 41.",
+    "document_id": null,
+    "external_url": "https://www.researchgate.net/publication/395382959_Signal_loss_by_truancy_masking_and_filtering_and_underestimation_of_potential_risks_and_suspected_adverse_reactions_in_the_Disproportionality_Signal_Analyses_of_VAERS_data_associated_with_COVID-19_pro"
+  },
+  {
+    "id": "fn-66",
+    "bates_ids": [],
+    "footnote_text": "PSI's March 25, 2026 document release on EB data mining: https://www.ronjohnson.senate.gov/services/files/F92FBB0A-CCFD-412A-A02D-243AA1844D6E at 117.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/F92FBB0A-CCFD-412A-A02D-243AA1844D6E"
+  },
+  {
+    "id": "fn-67",
+    "bates_ids": ["PSI-HHS-000008259561", "PSI-HHS-000001136460", "PSICOVID_00015642", "PSICOVID_00014435"],
+    "footnote_text": "PSI-HHS-000008259561; PSI-HHS-000001136460; PSICOVID_00015642; PSICOVID_00014435.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-68",
+    "bates_ids": [],
+    "footnote_text": "PSI's March 25, 2026 document release on EB data mining: https://www.ronjohnson.senate.gov/services/files/F92FBB0A-CCFD-412A-A02D-243AA1844D6E at 117.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/F92FBB0A-CCFD-412A-A02D-243AA1844D6E"
+  },
+  {
+    "id": "fn-69",
+    "bates_ids": [],
+    "footnote_text": "Id. (emphasis added). As explained in Chairman Johnson's March 23, 2026 letter to HHS, the Subcommittee uncovered several emails regarding the evolution of this excerpt in the manuscript. Similar language referencing EB data mining limitations appeared in two preprint versions of the manuscript, one dated Oct. 27, 2021, and one dated Oct. 28, 2021. The final version of the paper appeared in the Lancet in March 2022 without the reference to EB data mining limitations. See Letter from Ron Johnson, Chairman, Permanent Subcomm. on Investigations to Robert F. Kennedy, Jr., Sec., Dep't of Health and Human Services, Mar. 23, 2026, https://www.ronjohnson.senate.gov/services/files/CA500350-195E-472C-9F26-BE93B290B9D9; See Hannah Rosenblum, et al., Safety Monitoring of mRNA Vaccines Administered During the Initial 6 Months of the U.S. COVID-19 Vaccination Program: Reports to Vaccine Adverse Events Reporting System (VAERS) and v-safe, MedRxiv, Oct. 27, 2021, https://www.medrxiv.org/content/10.1101/2021.10.26.21265261v1.full.pdf at 13; Hannah Rosenblum, et al., Safety Monitoring of mRNA Vaccines Administered During the Initial 6 Months of the U.S. COVID-19 Vaccination Program: Reports to Vaccine Adverse Events Reporting System (VAERS) and v-safe, MedRxiv, Oct. 28, 2021, https://www.medrxiv.org/content/10.1101/2021.10.26.21265261v2.full.pdf at 13; Hannah Rosenblum et al., Safety of mRNA vaccines administered during the initial 6 months of the US COVID-19 vaccination programme: an observational study of reports to the Vaccine Adverse Event Reporting System and v-safe, The Lancet, https://pmc.ncbi.nlm.nih.gov/articles/PMC8901181/.",
+    "document_id": null,
+    "external_url": "https://www.medrxiv.org/content/10.1101/2021.10.26.21265261v1.full.pdf",
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-70",
+    "bates_ids": [],
+    "footnote_text": "PSI's March 25, 2026 document release on EB data mining: https://www.ronjohnson.senate.gov/services/files/7DD643F9-BF66-4923-B791-7766870C8856 at 120 (ellipses in original, emphasis added).",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/7DD643F9-BF66-4923-B791-7766870C8856",
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-71",
+    "bates_ids": ["PSICOVID_00015642"],
+    "footnote_text": "PSICOVID_00015642.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-72",
+    "bates_ids": ["PSI-HHS-000001136460"],
+    "footnote_text": "PSI-HHS-000001136460.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-73",
+    "bates_ids": [],
+    "footnote_text": "Id. Dr. DuMouchel co-authored a paper in 2012 about the RGPS data mining method. William DuMouchel and Rave Harpaz, Regression-Adjusted GPS Algorithm (RGPS), Oracle, Nov. 2012, https://docs.oracle.com/health-sciences/empirica-signal-811/ESIUG/Regression-Adjusted_GPS_Algorithm.pdf.",
+    "document_id": null,
+    "external_url": "https://docs.oracle.com/health-sciences/empirica-signal-811/ESIUG/Regression-Adjusted_GPS_Algorithm.pdf"
+  },
+  {
+    "id": "fn-74",
+    "bates_ids": ["PSI-HHS-000008253424"],
+    "footnote_text": "PSI-HHS-000008253424.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-75",
+    "bates_ids": [],
+    "footnote_text": "Id. It is unclear what adverse events Dr. Baer reviewed that were associated with the Gardasil vaccine.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-76",
+    "bates_ids": [],
+    "footnote_text": "Id. It is also unclear what adverse events Dr. Baer reviewed that were associated with the Pfizer COVID-19 bivalent vaccine.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-77",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-78",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-79",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-80",
+    "bates_ids": ["PSI-HHS-000008257237-38"],
+    "footnote_text": "PSI-HHS-000008257237-38.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-81",
+    "bates_ids": ["PSI-HHS-000004585100"],
+    "footnote_text": "PSI-HHS-000004585100. Until 2022, The Office of Biostatistics and Pharmacovigilance was named the Office of Biostatistics and Epidemiology. For purposes of this document, the office will be referred to by its current name. See National Science Foundation, NI Protocol, FDA CBER Reorg & More—March '22 Pharma News, Mar. 1, 2022, available at https://www.nsf.org/news/march-pharma-news.",
+    "document_id": null,
+    "external_url": "https://www.nsf.org/news/march-pharma-news"
+  },
+  {
+    "id": "fn-82",
+    "bates_ids": [],
+    "footnote_text": "COVID-19 Timeline, Centers for Disease Control and Prevention, https://www.cdc.gov/museum/timeline/covid19.html.",
+    "document_id": null,
+    "external_url": "https://www.cdc.gov/museum/timeline/covid19.html"
+  },
+  {
+    "id": "fn-83",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-84",
+    "bates_ids": ["PSICOVID_00014194"],
+    "footnote_text": "PSICOVID_00014194.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-85",
+    "bates_ids": ["PSICOVID_00014194", "PSI-HHS-000002185990-91", "PSI-HHS-000002293255"],
+    "footnote_text": "PSICOVID_00014194; PSI-HHS-000002185990-91. Szarfman's Dec. 23, 2020 email thanking Forshee for attending the presentation notes that she has attached an updated version of the slides. One such update appears to be a slide including DuMouchel's background as the inventor of MGPS. See PSI-HHS-000002293255.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-86",
+    "bates_ids": ["PSICOVID_00014198"],
+    "footnote_text": "PSICOVID_00014198.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-87",
+    "bates_ids": ["PSI-HHS-000008254390"],
+    "footnote_text": "PSI-HHS-000008254390.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-88",
+    "bates_ids": ["PSI-HHS-000002293255"],
+    "footnote_text": "Id.; PSI-HHS-000002293255.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-89",
+    "bates_ids": [],
+    "footnote_text": "Vaccine Adverse Event Reporting System (VAERS) Standard Operating Procedures for COVID-19, Centers for Disease Control and Prevention, Jan. 29, 2021, https://web.archive.org/web/20210319091240/https://www.cdc.gov/vaccinesafety/pdf/VAERS-v2-SOP.pdf.",
+    "document_id": null,
+    "external_url": "https://web.archive.org/web/20210319091240/https://www.cdc.gov/vaccinesafety/pdf/VAERS-v2-SOP.pdf"
+  },
+  {
+    "id": "fn-90",
+    "bates_ids": [],
+    "footnote_text": "Id. at 16-17.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-91",
+    "bates_ids": ["PSI-HHS-000002213369"],
+    "footnote_text": "PSI-HHS-000002213369.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-92",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-93",
+    "bates_ids": [],
+    "footnote_text": "COVID-19 Timeline, Centers for Disease Control and Prevention, https://www.cdc.gov/museum/timeline/covid19.html.",
+    "document_id": null,
+    "external_url": "https://www.cdc.gov/museum/timeline/covid19.html"
+  },
+  {
+    "id": "fn-94",
+    "bates_ids": ["PSI-HHS-000004783471-72", "PSI-HHS-000002134656"],
+    "footnote_text": "PSI-HHS-000004783471-72; PSI-HHS-000002134656.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-95",
+    "bates_ids": ["PSI-HHS-000004783471-72", "PSI-HHS-000008259555"],
+    "footnote_text": "PSI-HHS-000004783471-72; PSI-HHS-000008259555; William DuMouchel and Rave Harpaz, Regression-Adjusted GPS Algorithm (RGPS), Oracle, Nov. 2012, https://docs.oracle.com/health-sciences/empirica-signal-811/ESIUG/Regression-Adjusted_GPS_Algorithm.pdf.",
+    "document_id": null,
+    "external_url": "https://docs.oracle.com/health-sciences/empirica-signal-811/ESIUG/Regression-Adjusted_GPS_Algorithm.pdf"
+  },
+  {
+    "id": "fn-96",
+    "bates_ids": ["PSI-HHS-000008259561"],
+    "footnote_text": "PSI-HHS-000008259561.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-97",
+    "bates_ids": ["PSI-HHS-000002134652"],
+    "footnote_text": "Id. (emphasis in original); PSI-HHS-000002134652 (emphasis added).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-98",
+    "bates_ids": ["PSI-HHS-000004783470-71"],
+    "footnote_text": "PSI-HHS-000004783470-71.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-99",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-100",
+    "bates_ids": ["PSI-HHS-000004584613"],
+    "footnote_text": "PSI-HHS-000004584613.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-101",
+    "bates_ids": ["PSI-HHS-000008257240-41"],
+    "footnote_text": "PSI-HHS-000008257240-41.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-102",
+    "bates_ids": ["PSI-HHS-000008257239"],
+    "footnote_text": "PSI-HHS-000008257239.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-103",
+    "bates_ids": ["PSI-HHS-000008257238-39"],
+    "footnote_text": "PSI-HHS-000008257238-39.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-104",
+    "bates_ids": ["PSI-HHS-000008257238"],
+    "footnote_text": "PSI-HHS-000008257238.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-105",
+    "bates_ids": [],
+    "footnote_text": "Id. At the time of Baer's email the Division of Pharmacovigilance was known as the Division of Epidemiology.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-106",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-107",
+    "bates_ids": [],
+    "footnote_text": "Id. (emphasis added).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-108",
+    "bates_ids": ["PSI-HHS-000008257237-38"],
+    "footnote_text": "PSI-HHS-000008257237-38 (emphasis added).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-109",
+    "bates_ids": ["PSI-HHS-000008257237"],
+    "footnote_text": "PSI-HHS-000008257237.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-110",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-111",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-112",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-113",
+    "bates_ids": ["PSICOVID_00017214"],
+    "footnote_text": "PSICOVID_00017214.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-114",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-115",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-116",
+    "bates_ids": ["PSICOVID_00017210"],
+    "footnote_text": "PSICOVID_00017210.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
     "id": "fn-117",
     "bates_ids": ["PSI-HHS-000008263190-91"],
     "footnote_text": "PSI-HHS-000008263190-91 (emphasis added).",
@@ -8,10 +829,1219 @@
     "emphasis_note": "(emphasis added)"
   },
   {
-    "id": "fn-9",
-    "bates_ids": ["PSI-HHS-000002213753", "PSICOVID_00017246-47"],
-    "footnote_text": "PSI-HHS-000002213753; PSICOVID_00017246-47.",
+    "id": "fn-118",
+    "bates_ids": ["PSI-HHS-000008257443-44"],
+    "footnote_text": "PSI-HHS-000008257443-44 (with attachment).",
     "document_id": null,
     "external_url": null
+  },
+  {
+    "id": "fn-119",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-120",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-121",
+    "bates_ids": ["PSI-HHS-000001187885", "PSI-HHS-000001187886-88"],
+    "footnote_text": "PSI-HHS-000001187885 (with attachment); PSI-HHS-000001187886-88.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-122",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-123",
+    "bates_ids": ["PSI-HHS-000001187888"],
+    "footnote_text": "PSI-HHS-000001187888.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-124",
+    "bates_ids": ["PSI-HHS-000008251981-82", "PSI-HHS-000008258306-07"],
+    "footnote_text": "PSI-HHS-000008251981-82; PSI-HHS-000008258306-07 (with attachment).",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-125",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-126",
+    "bates_ids": ["PSI-HHS-000008251982"],
+    "footnote_text": "PSI-HHS-000008251982.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-127",
+    "bates_ids": ["PSI-HHS-000008251981-82"],
+    "footnote_text": "PSI-HHS-000008251981-82.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-128",
+    "bates_ids": ["PSI-HHS-000008251981"],
+    "footnote_text": "PSI-HHS-000008251981.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-129",
+    "bates_ids": ["PSI-HHS-000008251980-81"],
+    "footnote_text": "PSI-HHS-000008251980-81.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-130",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-131",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-132",
+    "bates_ids": ["PSI-HHS-000008251980"],
+    "footnote_text": "PSI-HHS-000008251980.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-133",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-134",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-135",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-136",
+    "bates_ids": ["PSI-HHS-000008251979-80"],
+    "footnote_text": "PSI-HHS-000008251979-80.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-137",
+    "bates_ids": ["PSI-HHS-000008251979"],
+    "footnote_text": "PSI-HHS-000008251979 (emphasis added) (ellipses in original).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-138",
+    "bates_ids": ["PSI-HHS-000008258202-03"],
+    "footnote_text": "PSI-HHS-000008258202-03. Records show that FDA's threshold for determining a statistically significant safety signal was when the lower bound of the reporting estimate (EB05) exceeded 2.0. See PSI's March 25, 2026 document release on EB data mining https://www.ronjohnson.senate.gov/services/files/F92FBB0A-CCFD-412A-A02D-243AA1844D6E at 166.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/F92FBB0A-CCFD-412A-A02D-243AA1844D6E"
+  },
+  {
+    "id": "fn-139",
+    "bates_ids": ["PSI-HHS-000008258203"],
+    "footnote_text": "PSI-HHS-000008258203.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-140",
+    "bates_ids": ["PSI-HHS-000008258202"],
+    "footnote_text": "PSI-HHS-000008258202.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-141",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-142",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-143",
+    "bates_ids": ["PSI-HHS-000008258271"],
+    "footnote_text": "PSI-HHS-000008258271.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-144",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-145",
+    "bates_ids": [],
+    "footnote_text": "Id. (emphasis added).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-146",
+    "bates_ids": ["PSI HHS-000008260150"],
+    "footnote_text": "PSI HHS-000008260150.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-147",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-148",
+    "bates_ids": ["PSI-HHS-000008258271"],
+    "footnote_text": "PSI-HHS-000008258271.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-149",
+    "bates_ids": ["PSI HHS-000008260150"],
+    "footnote_text": "PSI HHS-000008260150.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-150",
+    "bates_ids": ["PSI-HHS-000008258271"],
+    "footnote_text": "PSI-HHS-000008258271.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-151",
+    "bates_ids": ["PSI-HHS-000008258153-54", "PSICOVID_00017031", "PSICOVID_00017032-33", "PSICOVID_00017034-81"],
+    "footnote_text": "PSI-HHS-000008258153-54; PSICOVID_00017031; PSICOVID_00017032-33; PSICOVID_00017034-81.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-152",
+    "bates_ids": ["PSI-HHS-000008258153"],
+    "footnote_text": "PSI-HHS-000008258153.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-153",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-154",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-155",
+    "bates_ids": ["PSI-HHS-000008258190"],
+    "footnote_text": "PSI-HHS-000008258190.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-156",
+    "bates_ids": ["PSI-HHS-000008258271"],
+    "footnote_text": "PSI-HHS-000008258271.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-157",
+    "bates_ids": ["PSI-HHS-000002208944-45"],
+    "footnote_text": "PSI-HHS-000002208944-45.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-158",
+    "bates_ids": [],
+    "footnote_text": "Id. (using the RGPS methodology, ER05 notification signals were significantly higher than the previously running EB05 of MGPS).",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-159",
+    "bates_ids": ["PSICOVID_00017246", "PSI-HHS-000008251530", "PSI-HHS-000008251912-13", "PSI-HHS-000001195617-19", "PSI_HHS-000008253450-51", "PSI-HHS-000001175745-47", "PSI-HHS-000001148712-14"],
+    "footnote_text": "PSICOVID_00017246; PSI-HHS-000008251530; PSI-HHS-000008251912-13; PSI-HHS-000001195617-19; PSI_HHS-000008253450-51; PSI-HHS-000001175745-47; PSI-HHS-000001148712-14.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-160",
+    "bates_ids": ["PSICOVID_00017246-47"],
+    "footnote_text": "PSICOVID_00017246-47.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-161",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-162",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-163",
+    "bates_ids": ["PSICOVID_00017245"],
+    "footnote_text": "PSICOVID_00017245.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-164",
+    "bates_ids": [],
+    "footnote_text": "Id. (emphasis added).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-165",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-166",
+    "bates_ids": [],
+    "footnote_text": "COVID-19 Timeline, Centers for Disease Control and Prevention, https://www.cdc.gov/museum/timeline/covid19.html.",
+    "document_id": null,
+    "external_url": "https://www.cdc.gov/museum/timeline/covid19.html"
+  },
+  {
+    "id": "fn-167",
+    "bates_ids": ["PSI-HHS-000001640809", "PSI-HHS-000001622854-55"],
+    "footnote_text": "PSI-HHS-000001640809; PSI-HHS-000001622854-55.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-168",
+    "bates_ids": ["PSI-HHS-000001622854", "PSI-HHS-000001639129-34"],
+    "footnote_text": "PSI-HHS-000001622854; PSI-HHS-000001639129-34 at 33.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-169",
+    "bates_ids": ["PSI-HHS-000002208944-45"],
+    "footnote_text": "PSI-HHS-000002208944-45.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-170",
+    "bates_ids": ["PSI-HHS-000002208944"],
+    "footnote_text": "PSI-HHS-000002208944.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-171",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-172",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-173",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-174",
+    "bates_ids": ["PSI-HHS-000002199145-46", "PSI-HHS-000004592364-65"],
+    "footnote_text": "PSI-HHS-000002199145-46; PSI-HHS-000004592364-65 (with attachment).",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-175",
+    "bates_ids": ["PSI-HHS-000004592364-65"],
+    "footnote_text": "PSI-HHS-000004592364-65 (with attachment).",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-176",
+    "bates_ids": [],
+    "footnote_text": "Id. (emphasis added).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-177",
+    "bates_ids": ["PSI-HHS-000004590546-47"],
+    "footnote_text": "Id. That same day, Forshee forwards Szarfman's email and DuMouchel's analysis to Anderson. PSI-HHS-000004590546-47 (with attachment).",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-178",
+    "bates_ids": ["PSI-HHS-000004588545-46", "PSI-HHS-000004592364-65"],
+    "footnote_text": "PSI-HHS-000004588545-46 (with attachment); PSI-HHS-000004592364-65 (with attachment).",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-179",
+    "bates_ids": ["PSI-HHS-000004588545-46"],
+    "footnote_text": "PSI-HHS-000004588545-46.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-180",
+    "bates_ids": ["PSI-HHS-000002199145"],
+    "footnote_text": "PSI-HHS-000002199145.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-181",
+    "bates_ids": ["PSI-HHS-000005524064"],
+    "footnote_text": "PSI-HHS-000005524064.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-182",
+    "bates_ids": ["PSICOVID_00017545"],
+    "footnote_text": "PSICOVID_00017545.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-183",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-184",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-185",
+    "bates_ids": [],
+    "footnote_text": "BLA approval, Food and Drug Admin., Aug. 23, 2021, https://www.fda.gov/media/151710/download?attachment; COVID-19 Timeline, Centers for Disease Control and Prevention, https://www.cdc.gov/museum/timeline/covid19.html.",
+    "document_id": null,
+    "external_url": "https://www.fda.gov/media/151710/download?attachment"
+  },
+  {
+    "id": "fn-186",
+    "bates_ids": ["PSI-HHS-000008254473-74"],
+    "footnote_text": "PSI-HHS-000008254473-74.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-187",
+    "bates_ids": ["PSI-HHS-000008254472"],
+    "footnote_text": "PSI-HHS-000008254472 (emphasis added).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-188",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-189",
+    "bates_ids": ["PSI-HHS-000008254471"],
+    "footnote_text": "PSI-HHS-000008254471.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-190",
+    "bates_ids": [],
+    "footnote_text": "Id. (emphasis added).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-191",
+    "bates_ids": ["PSI-HHS-000008253098", "PSI-HHS-000008253959", "PSI-HHS-000008252951", "PSI-HHS-000008253958", "PSI-HHS-000008267103", "PSI-HHS-000008254470"],
+    "footnote_text": "PSI-HHS-000008253098; PSI-HHS-000008253959; PSI-HHS-000008252951; PSI-HHS-000008253958; PSI-HHS-000008267103; PSI-HHS-000008254470.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-192",
+    "bates_ids": ["PSI-HHS-000008254470"],
+    "footnote_text": "PSI-HHS-000008254470.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-193",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-194",
+    "bates_ids": [],
+    "footnote_text": "Id. (emphasis added).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-195",
+    "bates_ids": ["PSICOVID_00014054-55", "PSI-HHS-000002213753-54"],
+    "footnote_text": "PSICOVID_00014054-55; PSI-HHS-000002213753-54.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-196",
+    "bates_ids": ["PSI-HHS-000002213753-54"],
+    "footnote_text": "PSI-HHS-000002213753-54.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-197",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-198",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-199",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-200",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-201",
+    "bates_ids": [],
+    "footnote_text": "See Chairman Ron Johnson, Failure to Warn: How Federal Health Agencies Downplayed the Risk of Myocarditis and Other Adverse Events Following COVID-19 Vaccination, Permanent Subcomm. on Investigations, May 21, 2025, https://www.hsgac.senate.gov/wp-content/uploads/2025.05.21-PSI-Majority-Staff-Interim-Report-Failure-toWarn.pdf.",
+    "document_id": null,
+    "external_url": "https://www.hsgac.senate.gov/wp-content/uploads/2025.05.21-PSI-Majority-Staff-Interim-Report-Failure-toWarn.pdf"
+  },
+  {
+    "id": "fn-202",
+    "bates_ids": ["PSI-HHS-000002213753"],
+    "footnote_text": "PSI-HHS-000002213753 (emphasis added).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-203",
+    "bates_ids": ["PSI-HHS-000002213752-53"],
+    "footnote_text": "PSI-HHS-000002213752-53 (ellipses in original).",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-204",
+    "bates_ids": ["PSI-HHS-000008268909"],
+    "footnote_text": "PSI-HHS-000008268909.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-205",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-206",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-207",
+    "bates_ids": [],
+    "footnote_text": "Id. (emphasis added).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-208",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-209",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-210",
+    "bates_ids": [],
+    "footnote_text": "FDA Authorizes Pfizer-BioNTech COVID-19 Vaccine for Emergency Use in Children 5 through 11 Years of Age, Food and Drug Admin., Oct. 29, 2021, https://web.archive.org/web/20211029200859/https://www.fda.gov/news-events/press-announcements/fda-authorizes-pfizer-biontech-covid-19-vaccine-emergency-use-children-5-through-11-years-age.",
+    "document_id": null,
+    "external_url": "https://web.archive.org/web/20211029200859/https://www.fda.gov/news-events/press-announcements/fda-authorizes-pfizer-biontech-covid-19-vaccine-emergency-use-children-5-through-11-years-age"
+  },
+  {
+    "id": "fn-211",
+    "bates_ids": [],
+    "footnote_text": "COVID-19 Timeline, Centers for Disease Control and Prevention, https://www.cdc.gov/museum/timeline/covid19.html.",
+    "document_id": null,
+    "external_url": "https://www.cdc.gov/museum/timeline/covid19.html"
+  },
+  {
+    "id": "fn-212",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-213",
+    "bates_ids": ["PSI-HHS-000001617192-93", "PSI-HHS-000001626344-45", "PSI-HHS-000001626448-49"],
+    "footnote_text": "PSI-HHS-000001617192-93; PSI-HHS-000001626344-45; PSI-HHS-000001626448-49.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-214",
+    "bates_ids": ["PSI-HHS-000001626344-45"],
+    "footnote_text": "PSI-HHS-000001626344-45.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-215",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-216",
+    "bates_ids": ["PSI-HHS-000001627327-77"],
+    "footnote_text": "PSI-HHS-000001627327-77.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-217",
+    "bates_ids": [],
+    "footnote_text": "Coronavirus (COVID-19) Update: FDA Authorizes Moderna and Pfizer-BioNTech COVID-19 Vaccines for Children Down to 6 Months of Age, Food and Drug Admin., June 17, 2022, https://web.archive.org/web/20220617140937/https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-moderna-and-pfizer-biontech-covid-19-vaccines-children?utm_medium=email&utm_source=govdelivery.",
+    "document_id": null,
+    "external_url": "https://web.archive.org/web/20220617140937/https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-moderna-and-pfizer-biontech-covid-19-vaccines-children?utm_medium=email&utm_source=govdelivery"
+  },
+  {
+    "id": "fn-218",
+    "bates_ids": [],
+    "footnote_text": "Rave Harpaz et al., Signaling COVID-19 Vaccine Adverse Events, Drug Safety (2022), https://link.springer.com/article/10.1007/s40264-022-01186-z.",
+    "document_id": null,
+    "external_url": "https://link.springer.com/article/10.1007/s40264-022-01186-z"
+  },
+  {
+    "id": "fn-219",
+    "bates_ids": [],
+    "footnote_text": "COVID-19 Timeline, Centers for Disease Control and Prevention, https://www.cdc.gov/museum/timeline/covid19.html; Supplement BLA approval, Food and Drug Admin., July 8, 2022, https://www.fda.gov/media/159727/download?attachment.",
+    "document_id": null,
+    "external_url": "https://www.cdc.gov/museum/timeline/covid19.html"
+  },
+  {
+    "id": "fn-220",
+    "bates_ids": ["PSI-HHS-000001217046"],
+    "footnote_text": "PSI-HHS-000001217046 (with attachment).",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-221",
+    "bates_ids": ["PSI-HHS-000004461747-48"],
+    "footnote_text": "PSI-HHS-000004461747-48.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-222",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-223",
+    "bates_ids": ["PSI-HHS-000008266854"],
+    "footnote_text": "PSI-HHS-000008266854.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-224",
+    "bates_ids": [],
+    "footnote_text": "Id. After Menschik informs his colleagues that FDA is no longer routinely sending the data mining to CDC, one FDA official responds, \"I was also hoping we would stop doing that at some point!\" Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-225",
+    "bates_ids": ["PSI-HHS-000004594929", "PSI-HHS-000004604858-59"],
+    "footnote_text": "PSI-HHS-000004594929; Forshee attaches Marks' September 2021 email to Szarfman's supervisors Cavazzoni and Stein. PSI-HHS-000004604858-59.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-226",
+    "bates_ids": ["PSI-HHS-000004594929"],
+    "footnote_text": "PSI-HHS-000004594929.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-227",
+    "bates_ids": ["PSI-HHS-000004604858-59"],
+    "footnote_text": "Id.; PSI-HHS-000004604858-59.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-228",
+    "bates_ids": ["PSI-HHS-000001160286"],
+    "footnote_text": "PSI-HHS-000001160286.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-229",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-230",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-231",
+    "bates_ids": [],
+    "footnote_text": "Id.; Per Chairman Johnson's March 23, 2026 highlighting the FDA's detection of ischemic stroke following COVID-19 vaccination, it appears FDA did regularly conduct data mining runs. Letter from Sen. Ron Johnson, Permanent Subcomm. on Investigations to Robert Kennedy, Secretary, Dep't of Health and Human Services, March 23, 2026, https://www.ronjohnson.senate.gov/services/files/CA500350-195E-472C-9F26-BE93B290B9D9.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/CA500350-195E-472C-9F26-BE93B290B9D9"
+  },
+  {
+    "id": "fn-232",
+    "bates_ids": ["PSI-HHS-000002480132"],
+    "footnote_text": "PSI-HHS-000002480132.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-233",
+    "bates_ids": [],
+    "footnote_text": "Id. (emphasis added).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-234",
+    "bates_ids": ["PSICOVID_00015642-43"],
+    "footnote_text": "PSICOVID_00015642-43.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-235",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-236",
+    "bates_ids": [],
+    "footnote_text": "Id. (emphasis added).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-237",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-238",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-239",
+    "bates_ids": ["PSICOVID_00014435"],
+    "footnote_text": "PSICOVID_00014435.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-240",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-241",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-242",
+    "bates_ids": ["PSI-HHS-000001136460-64"],
+    "footnote_text": "PSI-HHS-000001136460-64.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-243",
+    "bates_ids": ["PSI-HHS-000001136460"],
+    "footnote_text": "PSI-HHS-000001136460 (emphasis added).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-244",
+    "bates_ids": ["PSI-HHS-000008261793-94"],
+    "footnote_text": "PSI-HHS-000008261793-94.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-245",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-246",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-247",
+    "bates_ids": ["PSI-HHS-000008261793"],
+    "footnote_text": "PSI-HHS-000008261793.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-248",
+    "bates_ids": ["PSI-HHS-000008263353"],
+    "footnote_text": "PSI-HHS-000008263353.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-249",
+    "bates_ids": ["PSI-HHS-000008261793"],
+    "footnote_text": "Id.; PSI-HHS-000008261793.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-250",
+    "bates_ids": ["PSI-HHS-000008261793"],
+    "footnote_text": "PSI-HHS-000008261793.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-251",
+    "bates_ids": ["PSI-HHS-000001152913"],
+    "footnote_text": "PSI-HHS-000001152913.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-252",
+    "bates_ids": ["PSI-HHS-000008268909"],
+    "footnote_text": "PSI-HHS-000008268909.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-253",
+    "bates_ids": ["PSI-HHS-000008253424"],
+    "footnote_text": "PSI-HHS-000008253424.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-254",
+    "bates_ids": [],
+    "footnote_text": "Id. It is unclear what adverse events Baer reviewed that were associated with the Gardasil vaccine.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-255",
+    "bates_ids": [],
+    "footnote_text": "Id. It is also unclear what adverse events Baer reviewed that were associated with the Pfizer COVID-19 bivalent vaccine.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-256",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-257",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-258",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-259",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-260",
+    "bates_ids": [],
+    "footnote_text": "User Guide and Online Help, \"About the Oracle Empirica Signal Application,\" Oracle, April 1, 2025, https://docs.oracle.com/en/industries/life-sciences/empirica/2025.4.01/userguide/empirica-signal-application.html.",
+    "document_id": null,
+    "external_url": "https://docs.oracle.com/en/industries/life-sciences/empirica/2025.4.01/userguide/empirica-signal-application.html"
+  },
+  {
+    "id": "fn-261",
+    "bates_ids": [],
+    "footnote_text": "Data Mining at FDA – White Paper, Food and Drug Admin., Aug. 20, 2018, https://www.fda.gov/science-research/data-mining/data-mining-fda-white-paper.",
+    "document_id": null,
+    "external_url": "https://www.fda.gov/science-research/data-mining/data-mining-fda-white-paper"
+  },
+  {
+    "id": "fn-262",
+    "bates_ids": [],
+    "footnote_text": "Rave Harpaz et al., Signaling COVID-19 Vaccine Adverse Events, Drug Safety, June 23, 2022, https://link.springer.com/article/10.1007/s40264-022-01186-z.",
+    "document_id": null,
+    "external_url": "https://link.springer.com/article/10.1007/s40264-022-01186-z"
+  },
+  {
+    "id": "fn-263",
+    "bates_ids": [],
+    "footnote_text": "Id.",
+    "document_id": null,
+    "external_url": null
+  },
+  {
+    "id": "fn-264",
+    "bates_ids": [],
+    "footnote_text": "William DuMouchel, Bayesian Data Mining in Large Frequency Tables, With an Application to the FDA Spontaneous Reporting System, Am. Stat., (Aug. 1999), https://www.researchgate.net/publication/254331086_Bayesian_Data_Mining_in_Large_Frequency_Tables_with_an_Application_to_the_FDA_Spontaneous_Reporting_System_Reply; See also Emeri Potter et al., FDA Adverse Event Reporting System (FAERS) Essentials: A Guide to Understanding, Applying, and Interpreting Adverse Event Data Reported to FAERS, Clin. Pharmacol. Ther., May 19, 2025, https://ascpt.onlinelibrary.wiley.com/doi/10.1002/cpt.3701.",
+    "document_id": null,
+    "external_url": "https://www.researchgate.net/publication/254331086_Bayesian_Data_Mining_in_Large_Frequency_Tables_with_an_Application_to_the_FDA_Spontaneous_Reporting_System_Reply"
+  },
+  {
+    "id": "fn-265",
+    "bates_ids": [],
+    "footnote_text": "William DuMouchel and Rave Harpaz, Regression-Adjusted GPS Algorithm (RGPS), Oracle, Nov. 2012, https://docs.oracle.com/health-sciences/empirica-signal-811/ESIUG/Regression-Adjusted_GPS_Algorithm.pdf; Rave Harpaz et al., Signaling COVID-19 Vaccine Adverse Events, Drug Safety, June 23, 2022, https://link.springer.com/article/10.1007/s40264-022-01186-z.",
+    "document_id": null,
+    "external_url": "https://docs.oracle.com/health-sciences/empirica-signal-811/ESIUG/Regression-Adjusted_GPS_Algorithm.pdf"
+  },
+  {
+    "id": "fn-266",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/17788FED-A947-4143-8C1B-95C59E60EE87 at 2.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/17788FED-A947-4143-8C1B-95C59E60EE87"
+  },
+  {
+    "id": "fn-267",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/EB95C952-175D-405C-8247-AD40FB742DEF.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/EB95C952-175D-405C-8247-AD40FB742DEF"
+  },
+  {
+    "id": "fn-268",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/17788FED-A947-4143-8C1B-95C59E60EE87.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/17788FED-A947-4143-8C1B-95C59E60EE87"
+  },
+  {
+    "id": "fn-269",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/vaccine-side-effects-and-mandates.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/vaccine-side-effects-and-mandates"
+  },
+  {
+    "id": "fn-270",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/7EC06E87-9F6F-4E22-8877-8D519CF25A32.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/7EC06E87-9F6F-4E22-8877-8D519CF25A32"
+  },
+  {
+    "id": "fn-271",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/F564153D-89FD-40C9-A1B1-8663C22D2F0A.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/F564153D-89FD-40C9-A1B1-8663C22D2F0A"
+  },
+  {
+    "id": "fn-272",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/vaccine-side-effects-and-mandates.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/vaccine-side-effects-and-mandates"
+  },
+  {
+    "id": "fn-273",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/018E3CF9-DCE9-4F0D-836B-DC4DD9866FF2.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/018E3CF9-DCE9-4F0D-836B-DC4DD9866FF2"
+  },
+  {
+    "id": "fn-274",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/08942E5E-4220-48A9-B989-9D5947C10BB4.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/08942E5E-4220-48A9-B989-9D5947C10BB4"
+  },
+  {
+    "id": "fn-275",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/9914278B-A73B-4434-8349-91091138E18B.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/9914278B-A73B-4434-8349-91091138E18B"
+  },
+  {
+    "id": "fn-276",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/D48FBED6-BDF3-4FB7-8B24-D52A2EDCE39E.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/D48FBED6-BDF3-4FB7-8B24-D52A2EDCE39E"
+  },
+  {
+    "id": "fn-277",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/0CBE044E-4F2C-47F2-8272-4DB4F14D3359.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/0CBE044E-4F2C-47F2-8272-4DB4F14D3359"
+  },
+  {
+    "id": "fn-278",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/vaccine-side-effects-and-mandates.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/vaccine-side-effects-and-mandates"
+  },
+  {
+    "id": "fn-279",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/AB68101B-CDA4-49F1-8174-4274DDEB0120.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/AB68101B-CDA4-49F1-8174-4274DDEB0120"
+  },
+  {
+    "id": "fn-280",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/A80C5322-F694-4803-BC15-BE3B0D4708D1.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/A80C5322-F694-4803-BC15-BE3B0D4708D1"
+  },
+  {
+    "id": "fn-281",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/0E2CC41F-6202-4124-A7F6-8491E864FB23.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/0E2CC41F-6202-4124-A7F6-8491E864FB23"
+  },
+  {
+    "id": "fn-282",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/241E701E-A91E-4B82-B4A8-FF233A3C5C98.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/241E701E-A91E-4B82-B4A8-FF233A3C5C98"
+  },
+  {
+    "id": "fn-283",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/8989A37B-49B7-4E87-827F-9BE74D00D06A.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/8989A37B-49B7-4E87-827F-9BE74D00D06A"
+  },
+  {
+    "id": "fn-284",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/0D09CBFB-7A6E-426F-813D-F89DFC4E2EFD.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/0D09CBFB-7A6E-426F-813D-F89DFC4E2EFD"
+  },
+  {
+    "id": "fn-285",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/603DE6AC-5F83-4226-8A69-0BB5DCDA6841.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/603DE6AC-5F83-4226-8A69-0BB5DCDA6841"
+  },
+  {
+    "id": "fn-286",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/2024/2/icymi-sen-johnson-leads-roundtable-discussion-federal-health-agencies-and-the-covid-cartel-what-are-they-hiding.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/2024/2/icymi-sen-johnson-leads-roundtable-discussion-federal-health-agencies-and-the-covid-cartel-what-are-they-hiding"
+  },
+  {
+    "id": "fn-287",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/32B052BE-2606-4118-9833-BD0BF255867C0.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/32B052BE-2606-4118-9833-BD0BF255867C0"
+  },
+  {
+    "id": "fn-288",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/00AAFB3D-72EE-475F-94D5-66708B4AA86D.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/00AAFB3D-72EE-475F-94D5-66708B4AA86D"
+  },
+  {
+    "id": "fn-289",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/CCEF4C60-FA50-4A57-804B-D4CA2F835C41.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/CCEF4C60-FA50-4A57-804B-D4CA2F835C41"
   }
 ]
