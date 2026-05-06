@@ -14,5 +14,6 @@
     "access-control"
   ],
   "category": "internal",
+  "source": "report-body",
   "body": "Szarfman confirms that she has access to VAERS data through Oracle's Empirica, a tool for detecting and analyzing vaccine safety signals.[^fn-101] Other CBER officials, including Anderson, were aware of and did not object to Szarfman's access, even though she works in CDER.[^fn-102]"
 }

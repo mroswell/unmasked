@@ -1,0 +1,21 @@
+{
+  "date": "2024-11-19",
+  "date_display": "November 19, 2024",
+  "summary": "Sen. Johnson writes to Becerra, Califf, and Cohen about heavily redacted FOIA records on myocarditis and pericarditis after mRNA COVID-19 vaccination, requesting unredacted copies.",
+  "actors": [
+    "johnson",
+    "becerra",
+    "califf",
+    "cohen"
+  ],
+  "citations": [
+    "fn-288"
+  ],
+  "tags": [
+    "oversight",
+    "myocarditis"
+  ],
+  "category": "oversight",
+  "source": "report-appendix",
+  "body": "Sen. Johnson sends a letter to HHS Secretary Xavier Becerra, FDA Commissioner Dr. Robert Califf, and CDC Director Dr. Mandy Cohen highlighting heavily redacted records released through the Freedom of Information Act (FOIA) connected to federal health agencies' knowledge of the risks of myocarditis and pericarditis following an mRNA COVID-19 vaccine and requesting unredacted copies of these records.[^fn-288]"
+}

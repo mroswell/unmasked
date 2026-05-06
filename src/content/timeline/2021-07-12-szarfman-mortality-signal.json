@@ -17,5 +17,6 @@
     "signal-detection"
   ],
   "category": "analysis",
+  "source": "report-body",
   "body": "Following her July 9 phone call, Szarfman writes Forshee, \"As we talked over the phone, I became aware last Fri[day] that scientists from Cornell are concerned of an increased mortality signal with the COVID-19 vaccines.\"[^fn-175] Szarfman encloses DuMouchel's earlier RGPS analysis, showing statistically significant safety signals for \"death and sudden death\" associated with the Pfizer and Moderna COVID-19 vaccines.[^fn-176] She writes that the method DuMouchel used \"automatically unmask[s] signals that remain hidden by other data mining methodologies, including MGPS[,]\" FDA's current data mining methodology.[^fn-177]"
 }

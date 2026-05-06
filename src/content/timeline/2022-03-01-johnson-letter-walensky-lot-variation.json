@@ -1,0 +1,19 @@
+{
+  "date": "2022-03-01",
+  "date_display": "March 1, 2022",
+  "summary": "Sen. Johnson writes to Walensky reiterating outstanding requests for COVID-19 information including data on adverse events and vaccine lot variation.",
+  "actors": [
+    "johnson",
+    "walensky"
+  ],
+  "citations": [
+    "fn-273"
+  ],
+  "tags": [
+    "oversight",
+    "hot-lots"
+  ],
+  "category": "oversight",
+  "source": "report-appendix",
+  "body": "Sen. Johnson sends a letter to CDC Director Dr. Rochelle Walensky reiterating outstanding requests for information on COVID-19 including data on adverse events and vaccine lot variation data.[^fn-273]"
+}

@@ -16,5 +16,6 @@
     "data-mining-method"
   ],
   "category": "analysis",
+  "source": "report-body",
   "body": "As FDA officials discussed the use of empirical Bayesian (EB) data mining to detect safety signals for adverse events associated with COVID-19 vaccines, David Menschik and Bethany Baer, two officials at CBER OBPV, communicate about \"a few classic data mining references\" written by Szarfman and DuMouchel.[^fn-87] Baer notes that FDA's current EB data mining system uses the Multi-item Gamma Poisson Shrinker (MGPS), which is the algorithm DuMouchel invented.[^fn-88]"
 }

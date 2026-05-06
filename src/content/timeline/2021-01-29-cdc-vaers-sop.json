@@ -12,5 +12,6 @@
     "data-mining-method"
   ],
   "category": "regulatory",
+  "source": "report-body",
   "body": "The CDC releases its Standard Operating Procedures (SOP) for the Vaccine Adverse Event Reporting System (VAERS).[^fn-89] The SOP identifies the \"analyses for COVID-19 vaccine safety signals,\" noting that FDA will be responsible for \"using empirical Bayesian data mining to identify [adverse events] reported more frequently than expected following vaccination with COVID-19 vaccines.\"[^fn-90]"
 }

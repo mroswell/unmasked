@@ -20,5 +20,6 @@
     "signal-detection"
   ],
   "category": "analysis",
+  "source": "report-body",
   "body": "- Szarfman forwards Niu an analysis that DuMouchel compiled the day before using his new data mining method (RGPS), which revealed six statistically significant safety signals for adverse events not previously detected by FDA's current system.[^fn-138] DuMouchel's analysis uncovered statistically significant safety signals, currently masked by MGPS, including Bell's palsy associated with the Pfizer vaccine and thrombosis associated with the Moderna vaccine.[^fn-139]\n- Two days later, Niu forwards Szarfman's email containing DuMouchel's analysis to Zinderman, Baer, and Menschik.[^fn-140]"
 }

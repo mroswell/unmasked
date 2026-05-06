@@ -1,0 +1,21 @@
+{
+  "date": "2023-12-21",
+  "date_display": "December 21, 2023",
+  "summary": "Sen. Johnson writes to Becerra, Califf, and Cohen highlighting that deaths per million doses of COVID-19 vaccines are approximately 55 times greater than for flu vaccines and requesting all PRR and EB data mining analyses.",
+  "actors": [
+    "johnson",
+    "becerra",
+    "califf",
+    "cohen"
+  ],
+  "citations": [
+    "fn-284"
+  ],
+  "tags": [
+    "oversight",
+    "data-mining-method"
+  ],
+  "category": "oversight",
+  "source": "report-appendix",
+  "body": "Sen. Johnson sends a letter to HHS Secretary Xavier Becerra, FDA Commissioner Dr. Robert Califf, and CDC Director Dr. Mandy Cohen highlighting that the deaths per million doses of COVID-19 vaccines are approximately **55 times greater than for deaths per million doses of flu vaccines** and requesting all Proportional Reporting Ratio and EB data mining analyses for the COVID-19 vaccines.[^fn-284]"
+}

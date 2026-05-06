@@ -1,0 +1,22 @@
+{
+  "date": "2023-10-25",
+  "date_display": "October 25, 2023",
+  "summary": "Sen. Johnson writes to Califf, Becerra, CDC Director Cohen, and NIH Acting Director Tabak reiterating earlier requests and seeking information on myocarditis and pericarditis after vaccination.",
+  "actors": [
+    "johnson",
+    "califf",
+    "becerra",
+    "cohen",
+    "tabak"
+  ],
+  "citations": [
+    "fn-283"
+  ],
+  "tags": [
+    "oversight",
+    "myocarditis"
+  ],
+  "category": "oversight",
+  "source": "report-appendix",
+  "body": "Sen. Johnson sends a letter to FDA Commissioner Dr. Robert Califf, HHS Secretary Xavier Becerra, CDC Director Dr. Mandy Cohen, and NIH Acting Director Dr. Lawrence Tabak reiterating earlier requests for vaccine safety information and requesting additional vaccine safety information, including information on myocarditis and pericarditis after vaccination.[^fn-283]"
+}

@@ -16,5 +16,6 @@
     "access-control"
   ],
   "category": "internal",
+  "source": "report-body",
   "body": "- Menschik emails Nair about how to respond to CDC's request.[^fn-235] Menschik notes that FDA has \"concerns about sharing our data mining output externally given history including over reliance on data mining output[.]\"[^fn-236]\n- Menschik warns that data mining results may be \"misconstrued\" because the detection of \"signals,\" or lack thereof, could lead to a false conclusion.[^fn-237] In addition to the masking limitations, Menschik argues against sharing the data CDC requested and states that FDA's \"standard practice\" relies on \"assigned reviewers\" to evaluate potential safety findings \"in the context of other available data\" prior to sharing any safety signal information.[^fn-238]"
 }

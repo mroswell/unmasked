@@ -1,0 +1,20 @@
+{
+  "date": "2021-06-28",
+  "date_display": "June 28, 2021",
+  "summary": "Sens. Johnson and Lee write to CDC Director Walensky and FDA Acting Commissioner Woodcock raising concerns about reports of adverse events following COVID-19 vaccination.",
+  "actors": [
+    "johnson",
+    "lee",
+    "walensky",
+    "woodcock"
+  ],
+  "citations": [
+    "fn-267"
+  ],
+  "tags": [
+    "oversight"
+  ],
+  "category": "oversight",
+  "source": "report-appendix",
+  "body": "Sen. Johnson and Sen. Mike Lee send a letter to CDC Director Dr. Rochelle Walensky and FDA Acting Commissioner Dr. Janet Woodcock raising concerns about several hundred individuals who reported experiencing an adverse event after receiving a COVID-19 vaccine.[^fn-267]"
+}

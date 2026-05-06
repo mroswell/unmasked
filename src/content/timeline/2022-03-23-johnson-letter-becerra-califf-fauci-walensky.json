@@ -1,0 +1,21 @@
+{
+  "date": "2022-03-23",
+  "date_display": "March 23, 2022",
+  "summary": "Sen. Johnson writes to HHS Secretary Becerra, FDA Commissioner Califf, NIAID Director Fauci, and CDC Director Walensky highlighting more than 1 million VAERS reports of adverse events.",
+  "actors": [
+    "johnson",
+    "becerra",
+    "califf",
+    "fauci",
+    "walensky"
+  ],
+  "citations": [
+    "fn-274"
+  ],
+  "tags": [
+    "oversight"
+  ],
+  "category": "oversight",
+  "source": "report-appendix",
+  "body": "Sen. Johnson sends a letter to HHS Secretary Xavier Becerra, FDA Commissioner Dr. Robert Califf, National Institute of Allergy and Infectious Diseases Director Dr. Anthony Fauci, and CDC Director Dr. Rochelle Walensky highlighting the over 1 million reports of adverse events on VAERS and what steps are being taken to address these reports. Sen. Johnson writes, \"As of March 18, 2022, VAERS has received 1,183,495 worldwide reports of adverse events and 25,641 death reports. Of those deaths, 7,382 (28.8%) occurred on day 0, 1, or 2 following vaccination.\"[^fn-274]"
+}

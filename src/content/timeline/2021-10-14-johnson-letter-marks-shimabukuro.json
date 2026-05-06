@@ -1,0 +1,22 @@
+{
+  "date": "2021-10-14",
+  "date_display": "October 14, 2021",
+  "summary": "Sen. Johnson writes to Collins, Walensky, Woodcock, Marks, and Shimabukuro about federal safety surveillance systems and reports of adverse events following COVID-19 vaccination.",
+  "actors": [
+    "johnson",
+    "collins",
+    "walensky",
+    "woodcock",
+    "marks",
+    "shimabukuro"
+  ],
+  "citations": [
+    "fn-270"
+  ],
+  "tags": [
+    "oversight"
+  ],
+  "category": "oversight",
+  "source": "report-appendix",
+  "body": "Sen. Johnson sends a letter to NIH Director Dr. Francis Collins, CDC Director Dr. Rochelle Walensky, FDA Acting Commissioner Dr. Janet Woodcock, Dr. Peter Marks (Director of the Center for Biologics Evaluation and Research at FDA), and Dr. Tom Shimabukuro (Deputy Director of the Immunization Safety Office at CDC) regarding federal health agencies' safety surveillance systems and reports of adverse events following COVID-19 vaccination.[^fn-270]"
+}

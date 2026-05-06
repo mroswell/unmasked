@@ -13,6 +13,7 @@ const timeline = defineCollection({
     citations: z.array(z.string()).default([]),
     tags: z.array(z.string()).default([]),
     category: z.enum(TIMELINE_CATEGORIES),
+    source: z.enum(['report-body', 'report-appendix']).default('report-body'),
     body: z.string(),
   }),
 });

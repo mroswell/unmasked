@@ -1,0 +1,19 @@
+{
+  "date": "2025-05-21",
+  "date_display": "May 21, 2025",
+  "summary": "PSI releases its prior interim report \"Failure to Warn,\" detailing how federal health officials knew about myocarditis and pericarditis risks after mRNA COVID-19 vaccination and failed to alert the public.",
+  "actors": [
+    "johnson"
+  ],
+  "citations": [
+    "fn-291"
+  ],
+  "tags": [
+    "oversight",
+    "myocarditis",
+    "report"
+  ],
+  "category": "oversight",
+  "source": "report-appendix",
+  "body": "PSI releases its interim report titled, \"Failure to Warn: How Federal Health Agencies Downplayed the Risk of Myocarditis and Other Adverse Events Following COVID-19 Vaccination,\" detailing how federal health officials knew about the risks of myocarditis and pericarditis after an mRNA COVID-19 vaccine and failed to properly alert the public to those risks.[^fn-291]"
+}

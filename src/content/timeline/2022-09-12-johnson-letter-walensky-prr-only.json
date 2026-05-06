@@ -1,0 +1,19 @@
+{
+  "date": "2022-09-12",
+  "date_display": "September 12, 2022",
+  "summary": "Sen. Johnson writes to Walensky in response to CDC producing only public Proportional Reporting Ratio analyses and failing to respond to requests for EB data mining analyses.",
+  "actors": [
+    "johnson",
+    "walensky"
+  ],
+  "citations": [
+    "fn-277"
+  ],
+  "tags": [
+    "oversight",
+    "data-mining-method"
+  ],
+  "category": "oversight",
+  "source": "report-appendix",
+  "body": "Sen. Johnson sends a letter to CDC Director Dr. Rochelle Walensky in response to CDC producing only public Proportional Reporting Ratio analyses and failing to respond to requests for EB data mining analyses.[^fn-277]"
+}

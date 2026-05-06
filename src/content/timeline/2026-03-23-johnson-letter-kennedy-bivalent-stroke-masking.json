@@ -1,0 +1,20 @@
+{
+  "date": "2026-03-23",
+  "date_display": "March 23, 2026",
+  "summary": "Sen. Johnson writes to HHS Secretary Kennedy detailing findings that federal health officials in late 2022 identified, then ignored and downplayed, a risk of ischemic stroke in seniors who received the Pfizer bivalent booster, and raising concerns about masking in EB data mining.",
+  "actors": [
+    "johnson",
+    "kennedy"
+  ],
+  "citations": [
+    "fn-293"
+  ],
+  "tags": [
+    "oversight",
+    "masking",
+    "data-mining-method"
+  ],
+  "category": "oversight",
+  "source": "report-appendix",
+  "body": "Sen. Johnson sends a letter to Secretary of HHS Robert F. Kennedy, Jr. detailing findings that in late 2022, federal health officials identified, and subsequently ignored and downplayed, a risk of ischemic stroke in individuals age 65 years and older who received the Pfizer COVID-19 bivalent booster and raising concerns about masking in EB data mining used to monitor COVID-19 vaccine safety.[^fn-293]"
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2024-01-12",
+  "date_display": "January 12, 2024",
+  "summary": "Sen. Johnson writes to Califf and Cohen highlighting higher rates of adverse events connected to specific manufacture lots of COVID-19 vaccine and reiterating December requests for EB data mining.",
+  "actors": [
+    "johnson",
+    "califf",
+    "cohen"
+  ],
+  "citations": [
+    "fn-285"
+  ],
+  "tags": [
+    "oversight",
+    "hot-lots",
+    "data-mining-method"
+  ],
+  "category": "oversight",
+  "source": "report-appendix",
+  "body": "Sen. Johnson sends a letter to FDA Commissioner Dr. Robert Califf and CDC Director Dr. Mandy Cohen highlighting the issue of higher rates of adverse events connected to specific manufacture lots of COVID-19 vaccine and reiterating requests from December, including the request for all EB data mining analysis on COVID-19 vaccines.[^fn-285]"
+}

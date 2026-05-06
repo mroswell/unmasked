@@ -1,0 +1,19 @@
+{
+  "date": "2024-09-04",
+  "date_display": "September 4, 2024",
+  "summary": "Sen. Johnson writes to Califf and Cohen about a study finding increased all-cause mortality after Moderna mRNA COVID-19 vaccination and requests mortality data.",
+  "actors": [
+    "johnson",
+    "califf",
+    "cohen"
+  ],
+  "citations": [
+    "fn-287"
+  ],
+  "tags": [
+    "oversight"
+  ],
+  "category": "oversight",
+  "source": "report-appendix",
+  "body": "Sen. Johnson sends a letter to FDA Commissioner Dr. Robert Califf and CDC Director Dr. Mandy Cohen regarding a study finding increased all-cause mortality following receipt of the Moderna mRNA COVID-19 vaccine and requesting mortality data related to COVID-19 vaccines from federal health agencies.[^fn-287]"
+}

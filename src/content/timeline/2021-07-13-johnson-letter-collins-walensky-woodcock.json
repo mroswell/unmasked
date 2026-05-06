@@ -1,0 +1,20 @@
+{
+  "date": "2021-07-13",
+  "date_display": "July 13, 2021",
+  "summary": "Sen. Johnson writes to Collins, Walensky, and Woodcock about vaccine safety monitoring systems described in the October 2020 VRBAC meeting.",
+  "actors": [
+    "johnson",
+    "collins",
+    "walensky",
+    "woodcock"
+  ],
+  "citations": [
+    "fn-268"
+  ],
+  "tags": [
+    "oversight"
+  ],
+  "category": "oversight",
+  "source": "report-appendix",
+  "body": "Sen. Johnson sends a letter to NIH Director Dr. Francis Collins, CDC Director Dr. Rochelle Walensky, and FDA Acting Commissioner Dr. Janet Woodcock regarding vaccine safety monitoring systems described in the October 2020 VRBAC meeting. Sen. Johnson writes, \"Unfortunately, your agencies' lack of response to congressional oversight letters, combined with my discussions with agency officials and individuals who believe they have experienced vaccine injuries, leads me to believe the preauthorization safety surveillance hype does not appear to match the agencies' actual performance.\"[^fn-268]"
+}

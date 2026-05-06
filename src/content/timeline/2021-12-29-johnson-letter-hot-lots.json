@@ -1,0 +1,20 @@
+{
+  "date": "2021-12-29",
+  "date_display": "December 29, 2021",
+  "summary": "Sen. Johnson writes to Woodcock and Walensky about specific \"hot lots\" of COVID-19 vaccines associated with increased reports of adverse events.",
+  "actors": [
+    "johnson",
+    "woodcock",
+    "walensky"
+  ],
+  "citations": [
+    "fn-271"
+  ],
+  "tags": [
+    "oversight",
+    "hot-lots"
+  ],
+  "category": "oversight",
+  "source": "report-appendix",
+  "body": "Sen. Johnson sends a letter to FDA Acting Commissioner Dr. Janet Woodcock and CDC Director Dr. Rochelle Walensky regarding specific \"hot lots\" of COVID-19 vaccines associated with increased reports of adverse events.[^fn-271]"
+}

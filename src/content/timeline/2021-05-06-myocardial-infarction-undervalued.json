@@ -16,5 +16,6 @@
     "signal-detection"
   ],
   "category": "analysis",
+  "source": "report-body",
   "body": "Szarfman circulates an analysis run by DuMouchel to Norman Stockbridge and another CDER official, showing that MGPS had undervalued the safety signals for acute myocardial infarction for both the Pfizer and Moderna COVID-19 vaccines.[^fn-157] DuMouchel's RGPS method appeared to yield much higher signals compared to FDA's MGPS method.[^fn-158]"
 }

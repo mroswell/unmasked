@@ -1,0 +1,19 @@
+{
+  "date": "2023-01-10",
+  "date_display": "January 10, 2023",
+  "summary": "Sen. Johnson writes to Walensky reiterating requests for EB data mining analyses and other vaccine safety data first requested in June 2022.",
+  "actors": [
+    "johnson",
+    "walensky"
+  ],
+  "citations": [
+    "fn-279"
+  ],
+  "tags": [
+    "oversight",
+    "data-mining-method"
+  ],
+  "category": "oversight",
+  "source": "report-appendix",
+  "body": "Sen. Johnson sends a letter to CDC Director Dr. Rochelle Walensky reiterating requests for EB data mining analyses and other vaccine safety data first requested in June 2022.[^fn-279]"
+}

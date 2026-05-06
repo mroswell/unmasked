@@ -23,5 +23,6 @@
     "analysis"
   ],
   "category": "analysis",
+  "source": "report-body",
   "body": "- Szarfman meets with CBER Director Peter Marks, along with Forshee, Anderson, and others at CBER, to discuss confounding issues with MGPS, particularly data masking, a known limitation that can lead to missed or reduced signals in data mining.[^fn-94] Szarfman showcases \"the superior performance\" of DuMouchel's Regression-Adjusted Gamma Poisson Shrinker (RGPS), an \"updated algorithm\" for data mining that DuMouchel first outlined in a 2012 white paper.[^fn-95] Szarfman states that \"[t]he MGPS data mining method currently in use at [FDA]\" is \"not the state of the art.\"[^fn-96] In contrast, she emphasizes, \"RGPS is the state of the art,\" noting that the new method can \"better adjust for both, masking (false negatives) and confounding (false positives).\"[^fn-97]\n- Marks thanks Szarfman \"for taking the time to go over everything so carefully with us.\"[^fn-98] He writes, \"[w]e will work through the issues that you presented.\"[^fn-99] Afterwards, Marks schedules a meeting with Forshee and Anderson to discuss \"how to proceed\" on the issues raised by Szarfman and DuMouchel's updated data mining algorithm.[^fn-100] It is unclear whether this meeting occurred."
 }

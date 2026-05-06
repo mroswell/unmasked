@@ -20,5 +20,6 @@
     "external-publication"
   ],
   "category": "publication",
+  "source": "report-body",
   "body": "- Menschik writes to John Su, a CDC official and member of the Vaccine Safety Team and Vaccine Safety Technical Work Group, and identifies limitations within FDA's data mining system.[^fn-204] Menschik describes the masking effect, the exact data limitation that Szarfman had been raising for months at FDA.[^fn-205] Although Menschik does not credit Szarfman, he echoes her concerns in draft language he shares with Su for an article reviewing the safety of the COVID-19 vaccines.[^fn-206]\n- Menschik's draft language notes that FDA's current data mining system \"has multiple limitations,\" including that, \"disproportionately scores . . . can be muted by COVID-19 vaccine reports contributing substantially to the comparator group, particularly if both mRNA COVID-19 vaccines are associated with the same adverse event.\"[^fn-207] Menschik tells Su he is \"happy\" to discuss further by phone.[^fn-208]\n- Su acknowledges the concern in a response email, noting that signal detection with VAERS data \"has always been tricky business\" and that those who work with VAERS frequently are \"mindful of those limitations[.]\"[^fn-209]"
 }

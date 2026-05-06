@@ -142,5 +142,65 @@
     "name": "Sen. Ron Johnson",
     "role_at_time": "Chairman, U.S. Senate Permanent Subcommittee on Investigations",
     "short_bio": "PSI Chairman who issued the interim report and conducted the underlying oversight of federal health agencies' COVID-19 vaccine safety surveillance."
+  },
+  {
+    "id": "collins",
+    "name": "Dr. Francis Collins",
+    "role_at_time": "Director, National Institutes of Health (NIH)",
+    "short_bio": "NIH Director from 2009 to 2021; recipient of multiple Sen. Johnson oversight letters and the April 2021 meeting in which he responded \"Senator, people die\" when asked about VAERS death reports."
+  },
+  {
+    "id": "woodcock",
+    "name": "Dr. Janet Woodcock",
+    "role_at_time": "Acting Commissioner, U.S. Food and Drug Administration",
+    "short_bio": "FDA Acting Commissioner during 2021; recipient of Sen. Johnson oversight letters on COVID-19 vaccine safety surveillance, hot lots, and adverse event reports."
+  },
+  {
+    "id": "lee",
+    "name": "Sen. Mike Lee",
+    "role_at_time": "U.S. Senator from Utah",
+    "short_bio": "Co-signed the June 2021 oversight letter with Sen. Johnson to CDC Director Walensky and FDA Acting Commissioner Woodcock raising concerns about COVID-19 vaccine adverse events."
+  },
+  {
+    "id": "becerra",
+    "name": "Xavier Becerra",
+    "role_at_time": "U.S. Secretary of Health and Human Services",
+    "short_bio": "HHS Secretary from 2021 to 2025; recipient of multiple Sen. Johnson oversight letters on COVID-19 vaccine adverse events and Countermeasures Injury Compensation Program claims."
+  },
+  {
+    "id": "fauci",
+    "name": "Dr. Anthony Fauci",
+    "role_at_time": "Director, National Institute of Allergy and Infectious Diseases (NIAID)",
+    "short_bio": "NIAID Director and recipient of the March 2022 Sen. Johnson oversight letter highlighting over 1 million VAERS reports of adverse events."
+  },
+  {
+    "id": "carole-johnson",
+    "name": "Carole Johnson",
+    "role_at_time": "Administrator, Health Resources and Services Administration (HRSA)",
+    "short_bio": "HRSA Administrator and co-recipient of the April 2023 Sen. Johnson oversight letter regarding Countermeasures Injury Compensation Program claims for COVID-19 vaccine injuries."
+  },
+  {
+    "id": "cohen",
+    "name": "Dr. Mandy Cohen",
+    "role_at_time": "Director, Centers for Disease Control and Prevention",
+    "short_bio": "CDC Director from July 2023 to January 2025; recipient of multiple Sen. Johnson oversight letters on COVID-19 vaccine safety, EB data mining analyses, and adverse event reports."
+  },
+  {
+    "id": "tabak",
+    "name": "Dr. Lawrence Tabak",
+    "role_at_time": "Acting Director, National Institutes of Health (NIH)",
+    "short_bio": "NIH Acting Director and co-recipient of the October 2023 Sen. Johnson oversight letter reiterating earlier requests for vaccine safety information."
+  },
+  {
+    "id": "kennedy",
+    "name": "Robert F. Kennedy, Jr.",
+    "role_at_time": "U.S. Secretary of Health and Human Services",
+    "short_bio": "HHS Secretary and recipient of the December 2025 and March 2026 oversight letters from Chairman Johnson on COVID-19 vaccine adverse events and masking in EB data mining."
+  },
+  {
+    "id": "prasad",
+    "name": "Dr. Vinay Prasad",
+    "role_at_time": "Director, FDA Center for Biologics Evaluation and Research (CBER)",
+    "short_bio": "CBER Director whose memorandum on deaths of children following a COVID-19 vaccine was the subject of Sen. Johnson's December 2025 letter to HHS Secretary Kennedy."
   }
 ]

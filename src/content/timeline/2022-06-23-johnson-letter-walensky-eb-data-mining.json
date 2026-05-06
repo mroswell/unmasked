@@ -1,0 +1,19 @@
+{
+  "date": "2022-06-23",
+  "date_display": "June 23, 2022",
+  "summary": "Sen. Johnson writes to Walensky requesting CDC produce vaccine safety data, including any EB data mining analyses created as part of its monitoring efforts.",
+  "actors": [
+    "johnson",
+    "walensky"
+  ],
+  "citations": [
+    "fn-275"
+  ],
+  "tags": [
+    "oversight",
+    "data-mining-method"
+  ],
+  "category": "oversight",
+  "source": "report-appendix",
+  "body": "Sen. Johnson sends a letter to CDC Director Dr. Rochelle Walensky requesting CDC provide vaccine safety data, including any EB data mining analyses, created as part of its vaccine safety monitoring efforts.[^fn-275]"
+}

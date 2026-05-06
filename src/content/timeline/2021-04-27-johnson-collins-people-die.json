@@ -1,0 +1,18 @@
+{
+  "date": "2021-04-27",
+  "date_display": "April 27, 2021",
+  "summary": "During a meeting, NIH Director Collins responds \"Senator, people die\" when Sen. Johnson raises VAERS reports of more than 2,900 deaths within 30 days of vaccination.",
+  "actors": [
+    "johnson",
+    "collins"
+  ],
+  "citations": [
+    "fn-266"
+  ],
+  "tags": [
+    "oversight"
+  ],
+  "category": "oversight",
+  "source": "report-appendix",
+  "body": "During a meeting with then-National Institutes of Health (NIH) Director Dr. Francis Collins, Sen. Johnson asks him about the alarming number of adverse event reports in VAERS, particularly the more than 2,900 deaths worldwide reported within 30 days of vaccination. Collins responds, \"Senator, people die.\"[^fn-266]"
+}
