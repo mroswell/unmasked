@@ -22,12 +22,12 @@ const { Content } = await render(event);
   <div class="event-body">
     <Content />
     {event.data.citations.length > 0 && (
-      <p class="event-citations">
+      <div class="event-citations">
         <strong>Citations:</strong>
         {event.data.citations.map((id) => (
           <Citation citationId={id} />
         ))}
-      </p>
+      </div>
     )}
   </div>
 </details>
