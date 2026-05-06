@@ -1,15 +1,252 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Citation from '../../components/Citation.astro';
 ---
 
-<BaseLayout title="Explainer — Unmasked">
-  <article class="prose-page">
-    <h1>What "masking" actually means</h1>
-    <p class="placeholder-note">Plain-language explainer arrives in M1. This page exists so the route works and the navigation lights up.</p>
+<BaseLayout title="What signal masking is, and why it matters — Unmasked">
+  <article class="prose-page" data-pagefind-body>
+    <h1>What signal masking is, and why it matters</h1>
+
+    <p class="lead">
+      When a new vaccine is rolled out to tens of millions of people, regulators
+      need a way to tell, quickly, whether it is causing harm at unusual rates.
+      The U.S. Food and Drug Administration's main early-warning tool is a
+      computer program that scans VAERS — the public adverse-event reporting
+      database — and flags drug-event combinations that show up far more often
+      than expected. The program does this by comparing reports for one product
+      against a baseline drawn from reports for everything else. That baseline
+      is what makes the system work, and it is also where it has a known blind
+      spot. When one product, or a small group of similar products, dominates
+      the database, the baseline gets distorted, and real signals can be hidden
+      inside it. Records released by the U.S. Senate Permanent Subcommittee on
+      Investigations describe what FDA scientists saw when they applied a
+      newer method to the COVID-19 vaccine data, and what happened internally
+      when they reported the results.
+    </p>
+
+    <h2>What "masking" actually means</h2>
+
+    <p>
+      Masking is a statistical phenomenon, not a policy choice. It happens
+      whenever the baseline a surveillance system compares a product against is
+      itself made up largely of similar products with similar adverse-event
+      profiles. When that happens, a real safety signal can be drowned out by
+      the very thing it should stand out against.
+    </p>
+
+    <p>
+      The Subcommittee's report uses a plain analogy. Imagine you want to know
+      whether hemlock is dangerous. You compare hemlock's adverse-event reports
+      against a baseline. If that baseline is just saline — an inert
+      substance — hemlock's harms stand out clearly. But if the baseline is a
+      mixture of arsenic and saline, hemlock's reports look unremarkable next
+      to a comparison group that already contains a similarly toxic ingredient.
+      Hemlock has not become safer; the comparison has been corrupted.
+    </p>
+
+    <p>
+      The COVID-19 vaccines created an analogous situation in VAERS. By 2021,
+      reports for the Pfizer-BioNTech and Moderna mRNA vaccines made up such a
+      large share of the database that they began appearing on both sides of
+      the comparison: as the product being screened, and as a major component
+      of the baseline they were screened against. Dr. William DuMouchel, the
+      statistician who originally invented the FDA's data-mining algorithm,
+      illustrated the effect with a concrete number — applied to COVID-19
+      vaccine data, masking was "roughly eight times more likely to occur with
+      COVID-19 vaccines than with other vaccines."<Citation citationId="fn-20" />
+    </p>
+
+    <h2>The two methods: MGPS and RGPS</h2>
+
+    <p>
+      To detect safety signals in VAERS, the FDA used a method called the
+      Multi-item Gamma Poisson Shrinker, or MGPS. DuMouchel published the
+      algorithm in 1999, and Dr. Ana Szarfman — a senior FDA medical officer
+      and safety data-mining developer — was one of the agency officials who
+      helped adopt it.<Citation citationId="fn-28" /> MGPS scans large databases
+      of spontaneous adverse-event reports and flags drug-event pairs that show
+      up disproportionately often compared to a baseline of all other reports.
+      FDA's threshold for declaring a statistically significant signal was when
+      the lower bound of MGPS's reporting estimate, called EB05, exceeded
+      2.0.<Citation citationId="fn-29" /> One senior CDC official described
+      MGPS as the "'gold standard' for disproportionality
+      analysis."<Citation citationId="fn-31" />
+    </p>
+
+    <p>
+      MGPS has a well-known limitation: it is vulnerable to masking. In 2012,
+      DuMouchel and a colleague published an updated method called the
+      Regression-Adjusted Gamma Poisson Shrinker, or RGPS, designed to correct
+      for that limitation. RGPS still scans for disproportionality, but it
+      adjusts the comparison so that one large product cannot drown out signals
+      from a similar product. In a March 1, 2021 briefing to senior FDA
+      officials, Szarfman described RGPS as "superior" to MGPS because it
+      "can better adjust for both, masking (false negatives) and confounding
+      (false positives)."<Citation citationId="fn-43" />
+    </p>
+
+    <blockquote>
+      RGPS is the state of the art... incorporates more information into the
+      signal generation process. This leads to a lower rate of missed signals
+      and less false alerts.
+      <cite>— Dr. Ana Szarfman, briefing to FDA leadership, March 1, 2021</cite>
+    </blockquote>
+
+    <h2>What Szarfman and DuMouchel found</h2>
+
+    <p>
+      On <a href="/timeline/#2021-03-26">March 26, 2021</a>, Szarfman sent
+      senior FDA officials a spreadsheet from DuMouchel comparing MGPS and RGPS
+      side by side on the same VAERS data. The comparison identified
+      "<strong>49 examples of extreme masking</strong>" in the COVID-19 vaccine
+      data.<Citation citationId="fn-2" /> Of those 49, more than twenty
+      adverse events showed a statistically significant safety signal once
+      RGPS adjusted for masking — signals that the MGPS method was not
+      surfacing. Among the events that emerged when masking was accounted for
+      were sudden cardiac death, Bell's palsy, and pulmonary
+      infarction.<Citation citationId="fn-5" />
+    </p>
+
+    <p>
+      Over the following months, Szarfman and DuMouchel ran further analyses
+      and reported additional signals to FDA colleagues, including acute
+      myocardial infarction associated with the Moderna and Pfizer vaccines,
+      non-site-specific embolism and thrombosis associated with the Janssen
+      (Johnson &amp; Johnson) and Pfizer vaccines, dementia associated with the
+      Pfizer vaccine, and "Death and sudden death" associated with the Moderna
+      and Pfizer vaccines.<Citation citationId="fn-6" /> In June 2021, Szarfman
+      wrote to a colleague about ongoing CDC-FDA discussions of myocardial
+      events and the absence of corresponding signals in VAERS:
+    </p>
+
+    <blockquote>
+      I am not astonished that [FDA's data mining system] was unable to detect
+      these signals.
+      <cite>— Dr. Ana Szarfman, email to FDA colleague, June 11, 2021</cite>
+    </blockquote>
+
+    <p>
+      In a 2022 paper in the journal <em>Drug Safety</em>, Szarfman, DuMouchel,
+      and co-authors described their method as one that "automatically
+      unmask[s] signals that remain hidden by other data mining methodologies"
+      and concluded that masking "is roughly eight times more likely to occur
+      with COVID-19 vaccines than with other
+      vaccines."<Citation citationId="fn-20" />
+    </p>
+
+    <h2>What happened internally</h2>
+
+    <p>
+      Szarfman raised the masking issue with FDA colleagues repeatedly between
+      February 2021 and 2022. The internal correspondence shows officials
+      acknowledging her expertise and the limits of their own. In a March 2021
+      email, one CBER official wrote, "I know Ana [Szarfman] worked to develop
+      the data mining system," and later added, "I know that she knows a lot
+      more about data mining than I do!"<Citation citationId="fn-47" /> In an
+      April 2021 email discussing Szarfman's and DuMouchel's analysis, another
+      CBER official wrote, "I don't pretend to understand it, but sounds like
+      they are suggesting an analysis not stratified by
+      year."<Citation citationId="fn-49" />
+    </p>
+
+    <p>
+      In <a href="/timeline/#2021-04-15">mid-April 2021</a>, after Szarfman
+      circulated an analysis of FDA's current system, a senior FDA official
+      wrote to colleagues:
+    </p>
+
+    <blockquote>
+      Before we potentially reach out to Ana, we should meet internally — many
+      considerations not suited to email…
+      <cite>— Senior FDA official, internal email, April 15, 2021</cite>
+    </blockquote>
+
+    <p>
+      On <a href="/timeline/#2021-05-07">May 7, 2021</a>, after a draft email
+      circulated among Drs. David Menschik, Narayan Nair, and Craig Zinderman
+      of FDA's Center for Biologics Evaluation and Research, Zinderman sent
+      Szarfman a directive asking her to "hold off on creating and sending data
+      mining reports and analyses using COVID-19 vaccine [adverse event]
+      data."<Citation citationId="fn-8" /> Szarfman replied that she would
+      deliver analyses only when specifically asked, and reiterated that the
+      RGPS method "strongly reduces confounding."<Citation citationId="fn-164" />
+    </p>
+
+    <p>
+      In <a href="/timeline/#2021-09-15">September 2021</a>, then-CBER Director
+      Dr. Peter Marks wrote to CDER Director Dr. Patrizia Cavazzoni — to whom
+      Szarfman reported — that Szarfman "has been asked to cease and desist"
+      her vaccine data-mining work, and that her approach "could create
+      erroneous conflicts that feed in to anti-vaccination
+      rhetoric."<Citation citationId="fn-9" /> Dr. Peter Stein, the director of
+      CDER's Office of New Drugs, replied that his office had "made it clear to
+      her that she should not be discussing or providing internal analyses
+      externally, and needs to focus on her assigned
+      work."<Citation citationId="fn-203" /> FDA did not adopt RGPS as its
+      surveillance method during the period covered by the records.
+    </p>
+
+    <p>
+      In <a href="/timeline/#2022-07-12">July 2022</a>, the final weekly
+      COVID-19 vaccine data-mining report was distributed inside FDA, ending a
+      practice that had been routine since the vaccines were authorized.
+      Internal CDC emails from later that fall noted that the change in
+      distribution coincided with a series of public records requests for the
+      same data: one CDC official wrote, "I think that because of the FOIAs
+      [Freedom of Information Act requests] we may have asked FDA to stop
+      sending these weekly data mining
+      outputs."<Citation citationId="fn-61" />
+    </p>
+
+    <h2>What the records show</h2>
+
+    <p>
+      The Subcommittee published the underlying records on which this account
+      rests, including the contemporaneous emails quoted above. The site
+      organizes them three ways: a day-by-day
+      <a href="/timeline/">timeline</a> of internal correspondence and
+      external events; a <a href="/quotes/">quotes index</a> grouped by
+      speaker and topic; and a <a href="/documents/">document archive</a>
+      indexed by Bates number, where each footnote on this page links to the
+      underlying record where one is publicly posted. The
+      <a href="/glossary/">glossary</a> defines the pharmacovigilance terms
+      used here and in the source materials.
+    </p>
+
+    <h2>The substantive finding</h2>
+
+    <p>
+      A known statistical limitation of the FDA's then-current data-mining
+      method went unaddressed during a period when novel vaccines were under
+      active monitoring. A more sensitive method, designed by the same
+      statistician who built the original system, existed and was offered. The
+      scientists who developed both methods raised the issue inside the agency
+      between early 2021 and 2022, identified specific safety signals — for
+      sudden cardiac death, Bell's palsy, pulmonary infarction, acute
+      myocardial infarction, dementia, and others — that the newer method
+      surfaced and the older one did not, and were asked to stop. The records
+      released by the Subcommittee make it possible to follow that sequence
+      step by step, in the participants' own words.
+    </p>
   </article>
 </BaseLayout>
 
 <style>
   .prose-page { max-width: var(--max-prose); margin: 0 auto; }
-  .placeholder-note { font-style: italic; color: var(--color-muted); padding: 1rem; border-left: 3px solid var(--color-border); }
+  .prose-page h2 { margin-top: 2.5rem; }
+  .prose-page .lead { font-size: 1.05rem; }
+  .prose-page blockquote {
+    border-left: 3px solid var(--color-accent);
+    padding: 0.5rem 0 0.5rem 1.25rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: var(--color-text);
+  }
+  .prose-page blockquote cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-style: normal;
+    font-size: 0.9rem;
+    color: var(--color-muted);
+  }
 </style>
