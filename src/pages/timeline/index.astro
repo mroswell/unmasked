@@ -7,6 +7,10 @@ const events = (await getCollection('timeline')).sort((a, b) => a.data.date.loca
 ---
 
 <BaseLayout title="Timeline — Unmasked">
+  <div class="version-banner">
+    <strong>Original timeline.</strong> Markdown-based, expand-on-click.
+    <a href="/timeline-redesign/">Try the redesigned version →</a>
+  </div>
   <h1>Timeline</h1>
   <p class="placeholder-note">Currently displaying placeholder events. Real chronology arrives in M1.</p>
   <div class="timeline-controls">
@@ -50,4 +54,14 @@ const events = (await getCollection('timeline')).sort((a, b) => a.data.date.loca
   }
   .timeline-controls button:hover { border-color: var(--color-accent); }
   .placeholder-note { font-style: italic; color: var(--color-muted); }
+  .version-banner {
+    background: #fff8e8;
+    border: 1px solid #e8d394;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  .version-banner a { margin-left: 1rem; }
 </style>
