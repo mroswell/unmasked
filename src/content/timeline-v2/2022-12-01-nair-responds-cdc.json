@@ -1,0 +1,20 @@
+{
+  "date": "2022-12-01",
+  "date_display": "December 1, 2022",
+  "summary": "Nair responds to CDC framing data mining as hypothesis-generating and not, by itself, evidence of causation.",
+  "actors": [
+    "nair",
+    "menschik"
+  ],
+  "citations": [
+    "fn-239",
+    "fn-240",
+    "fn-241"
+  ],
+  "tags": [
+    "access-control",
+    "data-mining-method"
+  ],
+  "category": "internal",
+  "body": "Nair responds to the CDC official, incorporating many of Menschik's points that appear to downplay FDA's reliance on EB data mining.[^fn-239] Nair writes, \"Results from data mining are considered hypothesis generating and do not, by themselves, demonstrate causal associations.\"[^fn-240] He adds that little can be attained from the presence or absence of a safety signal, and notes that even the use of the terms \"signal and/or safety signal have certain connotations and may trigger actions so we try not [sic] conflate data mining alerts with signals.\"[^fn-241]"
+}

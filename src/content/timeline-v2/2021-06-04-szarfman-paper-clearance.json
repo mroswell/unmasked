@@ -1,0 +1,19 @@
+{
+  "date": "2021-06-04",
+  "date_display": "June 4, 2021",
+  "summary": "Szarfman receives clearance from Stockbridge to publish her paper on masking and RGPS.",
+  "actors": [
+    "szarfman",
+    "stockbridge",
+    "dumouchel"
+  ],
+  "citations": [
+    "fn-167",
+    "fn-168"
+  ],
+  "tags": [
+    "external-publication"
+  ],
+  "category": "publication",
+  "body": "Szarfman receives clearance from Stockbridge to publish a paper she co-authored with DuMouchel and others at Oracle, entitled \"Masking Associated with Early COVID-19 Vaccine Safety Surveillance.\"[^fn-167] Szarfman encloses a draft version of her paper that \"demonstrates the potential utility of a new signal detection methodology called RGPS that can address masking and confounding effects that cannot be properly controlled by conventional signaling methodologies.\"[^fn-168]"
+}

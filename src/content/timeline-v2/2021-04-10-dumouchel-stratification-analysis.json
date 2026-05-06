@@ -1,0 +1,22 @@
+{
+  "date": "2021-04-10",
+  "date_display": "April 10, 2021",
+  "summary": "DuMouchel sends analysis adjusting for the fact that 99% of 2021 VAERS reports are for COVID-19 vaccines.",
+  "actors": [
+    "dumouchel",
+    "szarfman",
+    "niu"
+  ],
+  "citations": [
+    "fn-124",
+    "fn-125",
+    "fn-126",
+    "fn-127"
+  ],
+  "tags": [
+    "analysis",
+    "data-mining-method"
+  ],
+  "category": "analysis",
+  "body": "- DuMouchel sends additional data to Szarfman and others that appears to analyze VAERS reports while adjusting for the fact that \"99% of all reports\" for the year 2021 are for the COVID-19 vaccines.[^fn-124] DuMouchel's analysis appears to adjust for the masking effect.[^fn-125] He notes, \"[o]nly if you mix in more non-covid reports within each stratum can you get enough diversity to allow larger disproportionalities.\"[^fn-126]\n- Szarfman forwards the email to Niu and other FDA officials, flagging the \"[i]mportant analysis by DuMouchel,\" and writes, \"I think that we need to invite [DuMouchel] to talk with us about the effect of adjustment factors, given the data, so we can all learn from his knowledge.\"[^fn-127]"
+}

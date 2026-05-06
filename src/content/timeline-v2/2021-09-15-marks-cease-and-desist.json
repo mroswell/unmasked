@@ -1,0 +1,21 @@
+{
+  "date": "2021-09-15",
+  "date_display": "September 15, 2021",
+  "summary": "Marks tells Cavazzoni that Szarfman has been asked to cease and desist on her vaccine analysis.",
+  "actors": [
+    "marks",
+    "cavazzoni",
+    "stein",
+    "szarfman",
+    "anderson"
+  ],
+  "citations": [
+    "fn-202",
+    "fn-203"
+  ],
+  "tags": [
+    "internal-pushback"
+  ],
+  "category": "internal",
+  "body": "- Marks forwards Anderson's write-up about Szarfman's data mining efforts to CDER Director Patrizia Cavazzoni, to whom Szarfman reports, and writes, \"I really am sorry to bother you with this, but issue is [sic] become a major distraction. . . . Ana Szarfman[] has decided on her own to do vaccine analysis using VAERS as part of her work at FDA. She is, however, not doing this in collaboration with our CBER statisticians, and quite to the contrary, has been asked to cease and desist, because the strategy that she is using could create erroneous conflicts that feed in to anti-vaccination rhetoric.\"[^fn-202]\n- CDER Office of New Drugs Director Peter Stein replies to Marks, \"[T]hanks for flagging this – we've made it clear to her that she should not be discussing or providing internal analyses externally, and needs to focus on her assigned work.\" He closes his email, \"Hopefully, you won't have further surprises….\"[^fn-203]"
+}

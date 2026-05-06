@@ -1,0 +1,18 @@
+{
+  "date": "2022-11-26",
+  "date_display": "November 26, 2022",
+  "summary": "CDC officials discuss the end of weekly FDA reports; one notes CDC may have asked FDA to stop because of FOIAs.",
+  "actors": [
+    "menschik"
+  ],
+  "citations": [
+    "fn-232",
+    "fn-233",
+    "fn-234"
+  ],
+  "tags": [
+    "access-control"
+  ],
+  "category": "internal",
+  "body": "CDC officials discuss how they no longer receive weekly data mining reports from FDA.[^fn-232] One official notes, \"I think that because of the FOIAs [Freedom of Information Act requests] we may have asked FDA to stop sending these weekly data mining outputs.\"[^fn-233] A CDC official eventually writes to Menschik requesting the most recent data mining report.[^fn-234]"
+}
