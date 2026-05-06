@@ -1,0 +1,65 @@
+---
+import { render, type CollectionEntry } from 'astro:content';
+
+interface Props {
+  event: CollectionEntry<'timeline'>;
+}
+
+const { event } = Astro.props;
+const { Content } = await render(event);
+---
+
+<details
+  class="timeline-event"
+  id={event.data.date}
+  data-pagefind-body
+>
+  <summary>
+    <time datetime={event.data.date}>{event.data.date_display}</time>
+    <span class="summary-text">{event.data.summary}</span>
+  </summary>
+  <div class="event-body">
+    <Content />
+    {event.data.citations.length > 0 && (
+      <p class="event-citations">
+        <strong>Citations:</strong> {event.data.citations.join(', ')}
+      </p>
+    )}
+  </div>
+</details>
+
+<style>
+  .timeline-event {
+    border-bottom: 1px solid var(--color-border);
+    padding: 0.75rem 0;
+  }
+  .timeline-event > summary {
+    list-style: none;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+    gap: 1rem;
+    font-family: var(--font-sans);
+  }
+  .timeline-event > summary::-webkit-details-marker { display: none; }
+  .timeline-event > summary::before {
+    content: '▸ ';
+    color: var(--color-muted);
+    grid-column: 1;
+    margin-left: -1rem;
+  }
+  .timeline-event[open] > summary::before { content: '▾ '; }
+  time { font-weight: 600; }
+  .summary-text { color: var(--color-text); }
+  .event-body { padding: 1rem 0 0.5rem 9rem; }
+  .event-citations { font-size: 0.9rem; color: var(--color-muted); }
+  @media (max-width: 720px) {
+    .timeline-event > summary { grid-template-columns: 1fr; }
+    .event-body { padding-left: 0; }
+  }
+  @media print {
+    .timeline-event { page-break-inside: avoid; }
+    .timeline-event > summary { display: block; }
+    .event-body { display: block !important; padding-left: 0; }
+  }
+</style>

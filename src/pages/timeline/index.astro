@@ -1,0 +1,53 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TimelineEvent from '../../components/TimelineEvent.astro';
+
+const events = (await getCollection('timeline')).sort((a, b) => a.data.date.localeCompare(b.data.date));
+---
+
+<BaseLayout title="Timeline — Unmasked">
+  <h1>Timeline</h1>
+  <p class="placeholder-note">Currently displaying placeholder events. Real chronology arrives in M1.</p>
+  <div class="timeline-controls">
+    <button id="expand-all" type="button">Expand all</button>
+    <button id="collapse-all" type="button">Collapse all</button>
+  </div>
+  <ol class="timeline" reversed={false}>
+    {events.map((event) => <li><TimelineEvent event={event} /></li>)}
+  </ol>
+</BaseLayout>
+
+<script>
+  const expandAll = document.getElementById('expand-all');
+  const collapseAll = document.getElementById('collapse-all');
+  const all = () => document.querySelectorAll<HTMLDetailsElement>('.timeline-event');
+  expandAll?.addEventListener('click', () => all().forEach((d) => (d.open = true)));
+  collapseAll?.addEventListener('click', () => all().forEach((d) => (d.open = false)));
+
+  // Auto-expand event matching URL hash
+  const hash = window.location.hash.slice(1);
+  if (hash) {
+    const target = document.getElementById(hash) as HTMLDetailsElement | null;
+    if (target) {
+      target.open = true;
+      target.scrollIntoView({ block: 'start' });
+    }
+  }
+</script>
+
+<style>
+  .timeline { list-style: none; padding: 0; }
+  .timeline-controls { font-family: var(--font-sans); margin-bottom: 1.5rem; }
+  .timeline-controls button {
+    background: white;
+    border: 1px solid var(--color-border);
+    padding: 0.4rem 0.9rem;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+  }
+  .timeline-controls button:hover { border-color: var(--color-accent); }
+  .placeholder-note { font-style: italic; color: var(--color-muted); }
+</style>
