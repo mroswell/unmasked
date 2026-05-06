@@ -1,5 +1,6 @@
 ---
 import { render, type CollectionEntry } from 'astro:content';
+import Citation from './Citation.astro';
 
 interface Props {
   event: CollectionEntry<'timeline'>;
@@ -22,7 +23,10 @@ const { Content } = await render(event);
     <Content />
     {event.data.citations.length > 0 && (
       <p class="event-citations">
-        <strong>Citations:</strong> {event.data.citations.join(', ')}
+        <strong>Citations:</strong>
+        {event.data.citations.map((id) => (
+          <Citation citationId={id} />
+        ))}
       </p>
     )}
   </div>
