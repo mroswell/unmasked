@@ -64,3 +64,25 @@ main.prose { max-width: var(--max-prose); }
 @media (max-width: 720px) {
   .site-header { flex-direction: column; align-items: stretch; }
 }
+
+dfn[data-term] {
+  font-style: normal;
+  border-bottom: 1px dotted var(--color-accent);
+  cursor: help;
+  position: relative;
+}
+dfn[data-term]:hover::after,
+dfn[data-term]:focus::after {
+  content: attr(data-term) ': definition pending (see /glossary/)';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  font-family: var(--font-sans);
+  white-space: nowrap;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
