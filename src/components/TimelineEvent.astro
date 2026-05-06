@@ -19,7 +19,13 @@ const CATEGORY_LABELS: Record<string, string> = {
 };
 ---
 
-<article class={`timeline-event timeline-event--${event.data.category}`} id={event.data.date} data-pagefind-body>
+<article
+  class={`timeline-event timeline-event--${event.data.category}`}
+  id={event.data.date}
+  data-pagefind-body
+  data-category={event.data.category}
+  data-source={event.data.source}
+>
   <header class="event-header">
     <span class="event-category">{CATEGORY_LABELS[event.data.category]}</span>
     <span class="event-sep">·</span>

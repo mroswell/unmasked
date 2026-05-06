@@ -8,38 +8,129 @@ const events = (await getCollection('timeline')).sort((a, b) => a.data.date.loca
 
 <BaseLayout title="Timeline — Signals">
   <h1>Timeline</h1>
-  <p class="lede">Records released by the U.S. Senate Permanent Subcommittee on Investigations chronicle FDA scientists' attempts to surface masking-affected safety signals in COVID-19 vaccine adverse event data, and the agency's responses.</p>
-  <div class="legend">
-    <span class="legend-item legend-item--regulatory"><span class="dot"></span>Regulatory action</span>
-    <span class="legend-item legend-item--analysis"><span class="dot"></span>Scientific analysis</span>
-    <span class="legend-item legend-item--internal"><span class="dot"></span>Internal conversation</span>
-    <span class="legend-item legend-item--publication"><span class="dot"></span>Publication</span>
-    <span class="legend-item legend-item--oversight"><span class="dot"></span>Oversight</span>
+  <p class="lede">Records released by the U.S. Senate Permanent Subcommittee on Investigations chronicle FDA scientists' attempts to surface masking-affected safety signals in COVID-19 vaccine adverse event data, the agency's responses, and the Subcommittee's oversight.</p>
+
+  <div class="filters" role="region" aria-label="Filter timeline">
+    <div class="filter-row">
+      <span class="filter-label">Source</span>
+      <button class="filter-chip is-active" data-filter="source" data-value="all" type="button">All</button>
+      <button class="filter-chip" data-filter="source" data-value="report-body" type="button">Section II (FDA story)</button>
+      <button class="filter-chip" data-filter="source" data-value="report-appendix" type="button">Appendix (PSI oversight)</button>
+    </div>
+    <div class="filter-row">
+      <span class="filter-label">Category</span>
+      <button class="filter-chip is-active" data-filter="category" data-value="all" type="button">All</button>
+      <button class="filter-chip filter-chip--regulatory" data-filter="category" data-value="regulatory" type="button"><span class="dot"></span>Regulatory</button>
+      <button class="filter-chip filter-chip--analysis" data-filter="category" data-value="analysis" type="button"><span class="dot"></span>Analysis</button>
+      <button class="filter-chip filter-chip--internal" data-filter="category" data-value="internal" type="button"><span class="dot"></span>Internal</button>
+      <button class="filter-chip filter-chip--publication" data-filter="category" data-value="publication" type="button"><span class="dot"></span>Publication</button>
+      <button class="filter-chip filter-chip--oversight" data-filter="category" data-value="oversight" type="button"><span class="dot"></span>Oversight</button>
+    </div>
   </div>
+
+  <p class="empty-state" hidden>No events match the current filters.</p>
+
   <div class="timeline-rail">
     {events.map((event) => <TimelineEvent event={event} />)}
   </div>
 </BaseLayout>
 
+<script>
+  const state: { source: string; category: string } = { source: 'all', category: 'all' };
+  const events = document.querySelectorAll('.timeline-event');
+  const emptyState = document.querySelector('.empty-state');
+
+  function applyFilters() {
+    let visibleCount = 0;
+    events.forEach((el) => {
+      const ev = el as HTMLElement;
+      const src = ev.dataset.source;
+      const cat = ev.dataset.category;
+      const visible = (state.source === 'all' || state.source === src) &&
+                       (state.category === 'all' || state.category === cat);
+      ev.hidden = !visible;
+      if (visible) visibleCount++;
+    });
+    if (emptyState) (emptyState as HTMLElement).hidden = visibleCount > 0;
+  }
+
+  document.querySelectorAll<HTMLButtonElement>('.filter-chip').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const dim = btn.dataset.filter as 'source' | 'category';
+      const val = btn.dataset.value!;
+      state[dim] = val;
+      document.querySelectorAll<HTMLElement>(`.filter-chip[data-filter="${dim}"]`).forEach((b) => {
+        b.classList.toggle('is-active', b.dataset.value === val);
+      });
+      applyFilters();
+    });
+  });
+</script>
+
 <style>
   .lede { color: var(--color-muted); max-width: var(--max-prose); }
 
-  .legend {
+  .filters {
+    margin: 2rem 0 2.5rem;
+    padding: 1rem 1.25rem;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+  }
+  .filter-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    align-items: center;
+    gap: 0.5rem;
     font-family: var(--font-sans);
-    font-size: 0.78rem;
-    margin: 1.5rem 0 2rem;
-    color: var(--color-muted);
+    font-size: 0.85rem;
   }
-  .legend-item { display: flex; align-items: center; gap: 0.4rem; }
-  .legend-item .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
-  .legend-item--regulatory  .dot { background: #1e40af; }
-  .legend-item--analysis    .dot { background: #0f4c5c; }
-  .legend-item--internal    .dot { background: #b45309; }
-  .legend-item--publication .dot { background: #15803d; }
-  .legend-item--oversight   .dot { background: #6b21a8; }
+  .filter-row + .filter-row { margin-top: 0.5rem; }
+  .filter-label {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.72rem;
+    color: var(--color-muted);
+    width: 4.5rem;
+    flex-shrink: 0;
+  }
+  .filter-chip {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color: var(--color-text);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .filter-chip:hover { border-color: var(--color-accent); }
+  .filter-chip.is-active {
+    background: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+  }
+  .filter-chip .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--chip-color, var(--color-accent));
+  }
+  .filter-chip--regulatory  { --chip-color: #1e40af; }
+  .filter-chip--analysis    { --chip-color: #0f4c5c; }
+  .filter-chip--internal    { --chip-color: #b45309; }
+  .filter-chip--publication { --chip-color: #15803d; }
+  .filter-chip--oversight   { --chip-color: #6b21a8; }
+
+  .empty-state {
+    color: var(--color-muted);
+    font-style: italic;
+    margin: 2rem 0;
+  }
 
   .timeline-rail {
     position: relative;
