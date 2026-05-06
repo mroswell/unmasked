@@ -1,0 +1,59 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const docs = await getCollection('documents');
+  return docs.map((doc) => ({ params: { bates_id: doc.data.bates_id }, props: { doc } }));
+}
+
+interface Props {
+  doc: CollectionEntry<'documents'>;
+}
+
+const { doc } = Astro.props;
+---
+
+<BaseLayout title={`${doc.data.title} — Unmasked`}>
+  <article class="document-page">
+    <header>
+      <h1>{doc.data.title}</h1>
+      <p class="bates"><code>{doc.data.bates_id}</code></p>
+    </header>
+
+    <div class="document-layout">
+      <div class="pdf-pane">
+        <embed src={doc.data.pdf_path} type="application/pdf" />
+        <p class="pdf-fallback">PDF not yet downloaded. <a href={doc.data.source_url}>View original on hsgac.senate.gov</a>.</p>
+      </div>
+      <aside class="meta-pane">
+        <dl>
+          <dt>Type</dt><dd>{doc.data.doc_type}</dd>
+          <dt>Date</dt><dd>{doc.data.date ?? '—'}</dd>
+          <dt>Pages</dt><dd>{doc.data.page_count ?? '—'}</dd>
+          <dt>Source</dt><dd><a href={doc.data.source_url}>hsgac.senate.gov</a></dd>
+        </dl>
+        <details class="ocr-text">
+          <summary>OCR text</summary>
+          <p class="placeholder-note">OCR text rendered here once pipeline runs in M2.</p>
+        </details>
+      </aside>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .document-page header { margin-bottom: 1rem; }
+  .bates { font-family: var(--font-sans); color: var(--color-muted); margin-top: -0.5rem; }
+  .document-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem; align-items: start; }
+  .pdf-pane embed { width: 100%; height: 70vh; border: 1px solid var(--color-border); }
+  .pdf-fallback { font-size: 0.9rem; color: var(--color-muted); }
+  .meta-pane { font-family: var(--font-sans); font-size: 0.95rem; }
+  .meta-pane dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.4rem 1rem; }
+  .meta-pane dt { font-weight: 600; color: var(--color-muted); }
+  .ocr-text { margin-top: 1.5rem; }
+  .placeholder-note { font-style: italic; color: var(--color-muted); }
+  @media (max-width: 720px) {
+    .document-layout { grid-template-columns: 1fr; }
+  }
+</style>

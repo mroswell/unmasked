@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const docs = (await getCollection('documents')).sort((a, b) => a.data.bates_id.localeCompare(b.data.bates_id));
+---
+
+<BaseLayout title="Documents — Unmasked">
+  <h1>Document archive</h1>
+  <p class="placeholder-note">Currently showing placeholder records. Real catalog populates in M2.</p>
+  <table class="doc-table">
+    <thead>
+      <tr><th>Bates ID</th><th>Title</th><th>Type</th><th>Date</th></tr>
+    </thead>
+    <tbody>
+      {docs.map((doc) => (
+        <tr>
+          <td><a href={`/documents/${doc.data.bates_id}/`}><code>{doc.data.bates_id}</code></a></td>
+          <td>{doc.data.title}</td>
+          <td>{doc.data.doc_type}</td>
+          <td>{doc.data.date ?? '—'}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</BaseLayout>
+
+<style>
+  .doc-table { width: 100%; border-collapse: collapse; font-family: var(--font-sans); font-size: 0.95rem; }
+  .doc-table th, .doc-table td { padding: 0.6rem 0.5rem; border-bottom: 1px solid var(--color-border); text-align: left; }
+  .doc-table th { font-weight: 600; }
+  .placeholder-note { font-style: italic; color: var(--color-muted); }
+</style>
