@@ -1,0 +1,14 @@
+[
+  {
+    "id": "szarfman",
+    "name": "Dr. Ana Szarfman",
+    "role_at_time": "Senior Medical Officer & Safety Data Mining Developer, FDA CDER",
+    "short_bio": "Co-developer of FDA's data mining system; advocated for the RGPS method during COVID-19 vaccine safety surveillance."
+  },
+  {
+    "id": "marks",
+    "name": "Dr. Peter Marks",
+    "role_at_time": "Director, FDA Center for Biologics Evaluation and Research (CBER)",
+    "short_bio": "Led FDA's biologics center during COVID-19 vaccine authorization and surveillance."
+  }
+]

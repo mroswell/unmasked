@@ -1,0 +1,17 @@
+[
+  {
+    "id": "fn-117",
+    "bates_ids": ["PSI-HHS-000008263190-91"],
+    "footnote_text": "PSI-HHS-000008263190-91 (emphasis added).",
+    "document_id": null,
+    "external_url": null,
+    "emphasis_note": "(emphasis added)"
+  },
+  {
+    "id": "fn-9",
+    "bates_ids": ["PSI-HHS-000002213753", "PSICOVID_00017246-47"],
+    "footnote_text": "PSI-HHS-000002213753; PSICOVID_00017246-47.",
+    "document_id": null,
+    "external_url": null
+  }
+]
