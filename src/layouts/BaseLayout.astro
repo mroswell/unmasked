@@ -1,0 +1,40 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Unmasked: a structured presentation of the Senate PSI report and its underlying records.' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="/" class="site-title">Unmasked</a>
+      <nav>
+        <a href="/explainer/">Explainer</a>
+        <a href="/timeline/">Timeline</a>
+        <a href="/documents/">Documents</a>
+        <a href="/quotes/">Quotes</a>
+        <a href="/glossary/">Glossary</a>
+        <a href="/about/">About</a>
+      </nav>
+      <div id="search-mount" class="search-mount" data-pagefind-ignore></div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>Source: <a href="https://www.hsgac.senate.gov/">U.S. Senate Permanent Subcommittee on Investigations</a> hearing materials. This site is not affiliated with the Subcommittee.</p>
+    </footer>
+  </body>
+</html>
