@@ -3,6 +3,7 @@ term: "MGPS"
 aliases: ["Multi-item Gamma Poisson Shrinker", "MGPS model", "MGPS algorithm"]
 short_def: "Multi-item Gamma Poisson Shrinker — the data-mining algorithm the FDA used to scan VAERS for safety signals. Invented by William DuMouchel in 1999."
 category: "statistical-method"
+source: "original"
 ---
 
 The Multi-item Gamma Poisson Shrinker, or MGPS, is the Empirical Bayesian data-mining algorithm the FDA has long used to identify statistically significant safety signals in adverse event reporting databases like VAERS. As the report describes it, MGPS "was originally developed by William DuMouchel in 1999" and is the algorithm at the heart of the FDA's "gold standard" disproportionality analysis.

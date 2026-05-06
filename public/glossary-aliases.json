@@ -136,6 +136,14 @@
     "alias": "disproportionality signal"
   },
   {
+    "canonical": "e",
+    "alias": "E"
+  },
+  {
+    "canonical": "e",
+    "alias": "expected count"
+  },
+  {
     "canonical": "eb data mining",
     "alias": "EB data mining"
   },
@@ -156,10 +164,6 @@
     "alias": "Empirical Bayesian (\"EB\") Data Mining"
   },
   {
-    "canonical": "eb data mining",
-    "alias": "Empirical Bayes Geometric Mean"
-  },
-  {
     "canonical": "eb05",
     "alias": "EB05"
   },
@@ -178,6 +182,42 @@
   {
     "canonical": "eb05",
     "alias": "lower bound of the reporting estimate"
+  },
+  {
+    "canonical": "ebgm",
+    "alias": "EBGM"
+  },
+  {
+    "canonical": "ebgm",
+    "alias": "EB95"
+  },
+  {
+    "canonical": "ebgm",
+    "alias": "Empirical Bayes Geometric Mean"
+  },
+  {
+    "canonical": "empirica signal",
+    "alias": "Empirica Signal"
+  },
+  {
+    "canonical": "empirica signal",
+    "alias": "Empirica"
+  },
+  {
+    "canonical": "eram",
+    "alias": "ERAM"
+  },
+  {
+    "canonical": "eram",
+    "alias": "ER05"
+  },
+  {
+    "canonical": "eram",
+    "alias": "ER95"
+  },
+  {
+    "canonical": "eram",
+    "alias": "Empirical Regression-Adjusted Mean"
   },
   {
     "canonical": "eua",
@@ -292,6 +332,14 @@
     "alias": "muting"
   },
   {
+    "canonical": "meddra",
+    "alias": "MedDRA"
+  },
+  {
+    "canonical": "meddra",
+    "alias": "Medical Dictionary for Regulatory Activities"
+  },
+  {
     "canonical": "mgps",
     "alias": "MGPS"
   },
@@ -356,6 +404,14 @@
     "alias": "acute myocardial infarction"
   },
   {
+    "canonical": "n",
+    "alias": "N"
+  },
+  {
+    "canonical": "n",
+    "alias": "observed count"
+  },
+  {
     "canonical": "obpv",
     "alias": "OBPV"
   },
@@ -392,6 +448,42 @@
     "alias": "vaccine safety surveillance"
   },
   {
+    "canonical": "prr_chisq",
+    "alias": "PRR_CHISQ"
+  },
+  {
+    "canonical": "prr_chisq",
+    "alias": "PRR chi-squared"
+  },
+  {
+    "canonical": "prr",
+    "alias": "PRR"
+  },
+  {
+    "canonical": "prr",
+    "alias": "Proportional Reporting Ratio"
+  },
+  {
+    "canonical": "pt_plus_smq",
+    "alias": "PT_plus_SMQ"
+  },
+  {
+    "canonical": "pt_plus_smq",
+    "alias": "PT+SMQ"
+  },
+  {
+    "canonical": "pt",
+    "alias": "PT"
+  },
+  {
+    "canonical": "pt",
+    "alias": "Preferred Term"
+  },
+  {
+    "canonical": "pt",
+    "alias": "MedDRA Preferred Term"
+  },
+  {
     "canonical": "rgps",
     "alias": "RGPS"
   },
@@ -410,6 +502,18 @@
   {
     "canonical": "rgps",
     "alias": "Regression-Adjusted GPS"
+  },
+  {
+    "canonical": "rr",
+    "alias": "RR"
+  },
+  {
+    "canonical": "rr",
+    "alias": "Relative Reporting Ratio"
+  },
+  {
+    "canonical": "rr",
+    "alias": "Relative Risk"
   },
   {
     "canonical": "safety signal",
@@ -434,6 +538,14 @@
   {
     "canonical": "safety signal",
     "alias": "signal detection"
+  },
+  {
+    "canonical": "smq",
+    "alias": "SMQ"
+  },
+  {
+    "canonical": "smq",
+    "alias": "Standardized MedDRA Query"
   },
   {
     "canonical": "stratification",

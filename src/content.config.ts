@@ -25,6 +25,7 @@ const glossary = defineCollection({
     aliases: z.array(z.string()).default([]),
     short_def: z.string().max(280),
     category: z.string().optional(),
+    source: z.enum(['original', 'additional']).default('additional'),
   }),
 });
 

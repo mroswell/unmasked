@@ -1,8 +1,9 @@
 ---
 term: "EB data mining"
-aliases: ["Empirical Bayesian data mining", "Empirical Bayes data mining", "EB Data Mining", "Empirical Bayesian (\"EB\") Data Mining", "Empirical Bayes Geometric Mean"]
+aliases: ["Empirical Bayesian data mining", "Empirical Bayes data mining", "EB Data Mining", "Empirical Bayesian (\"EB\") Data Mining"]
 short_def: "Empirical Bayesian data mining — the statistical method federal health agencies use to scan adverse-event databases for disproportionate combinations of products and events."
 category: "statistical-method"
+source: "original"
 ---
 
 As the report defines it, Empirical Bayesian ("EB") data mining is "the data mining method utilized by federal health agencies to identify statistical associations between products and adverse events." HHS describes it as a "statistical method for identifying disproportionality (excess of reported [adverse events]) for [a] product relative to other products) in large database[s]."

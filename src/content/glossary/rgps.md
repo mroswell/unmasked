@@ -3,6 +3,7 @@ term: "RGPS"
 aliases: ["Regression-Adjusted Gamma Poisson Shrinker", "RGPS model", "RGPS algorithm", "Regression-Adjusted GPS"]
 short_def: "Regression-Adjusted Gamma Poisson Shrinker — an updated data-mining algorithm that controls for masking effects, first described in a 2012 Oracle white paper."
 category: "statistical-method"
+source: "original"
 ---
 
 The Regression-Adjusted Gamma Poisson Shrinker, or RGPS, is an Empirical Bayesian data-mining algorithm that builds on MGPS. As the report defines it, RGPS was "first outlined in a 2012 Oracle white paper by William DuMouchel" and is "an update to MGPS that controls for masking effects."

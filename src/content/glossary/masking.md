@@ -3,6 +3,7 @@ term: "masking"
 aliases: ["mask", "masked", "extreme masking", "muting"]
 short_def: "A statistical phenomenon where a high volume of reports for one product drowns out reports for a similar product, hiding safety signals that would otherwise stand out."
 category: "statistical-method"
+source: "original"
 ---
 
 As the report defines it, masking is "a statistical phenomenon in which the volume of adverse event reports from a similar drug or vaccine product drowns out reports from other drug or vaccine products, thus distorting the baseline group being compared to the drug or vaccine of interest being screened." It is sometimes called "muting." When masking is severe, real safety signals can go undetected.
