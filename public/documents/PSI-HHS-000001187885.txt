@@ -1,0 +1,8 @@
+Sheet: data
+Drug | Event | US EB05 20210326 | US Serious EB05 20210326 | US Fatal EB05 20210326 | US Infant EB05 20210326 | US Child EB05 20210326 | US Teen EB05 20210326 | US Adult1 EB05 20210326 | US Adult2 EB05 20210326 | US Adult3 EB05 20210326 | US Female EB05 20210326 | US Male EB05 20210326 | Comment
+COVID19 (COVID19 (JANSSEN)) | Chills | 1.969 | 0.951 | 0.893 |  |  | 1.022 | 1.862 | 1.826 | 2.223 | 2.088 | 1.548 | 
+COVID19 (COVID19 (JANSSEN)) | Fall | 1.002 | 0.287 |  |  |  | 0.524 | 2.037 | 0.71 | 0.255 | 1.038 | 0.642 | 
+COVID19 (COVID19 (JANSSEN)) | Feeling cold | 2.186 |  |  |  |  |  | 2.282 | 1.35 | 1.448 | 2.246 | 1.19 | 
+COVID19 (COVID19 (JANSSEN)) | Hyperhidrosis | 1.875 | 0.91 |  |  |  | 0.729 | 2.003 | 1.403 | 0.956 | 1.741 | 1.736 | 
+COVID19 (COVID19 (JANSSEN)) | Syncope | 1.781 | 0.799 |  |  |  |  | 2.194 | 1.133 | 0.605 | 1.67 | 1.415 | 
+COVID19 (COVID19 (JANSSEN)) | Vital signs measurement | 2.313 |  |  |  |  |  | 1.739 | 0.673 | 0.886 | 1.497 | 0.974 | 

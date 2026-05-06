@@ -1,0 +1,5064 @@
+[OCR skipped on page(s) 1-9]AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+From: "Niu, Manette"
+To: "Baer, Bethany" >, "Zinderman, Craig E"
+David"
+Subject: RE: Important analysis by DuMouchel -> Peculiarities of disproportionality statistics when
+the product of interest is in almost all of the reports
+Date: Thu, 15 Apr 2021 13:27:27 +0000
+Importance: Normal
+
+Inline-Images: image001.png
+
+V'll forward you Ana’s email with the attachment. The best person to ask would be Ana as she has close ties with Bill
+Dumouchel.
+
+Thank you!
+
+Manette
+
+Sent: Thursday, April 15, 2021 9:00 AM
+
+To: Zinderman, Craig E >; Menschik, David <j >
+
+Cc: Niu, Manette >
+
+Subject: RE: Important analysis by DuMouchel -> Peculiarities of disproportionality statistics when the product of interest
+is in almost all of the reports
+
+Thanks for forwarding this on. | agree that we should consider different approaches as the underlying database is
+changing significantly due to the high volume of COVID vaccine reports. | think we should welcome any expert input. The
+spreadsheet that Bill mentioned in the first email is not attached so | can’t look at it, but David and | have been discussing
+and are concerned about the effect of so many COVID reports on the standard system we use. Is there a way that Bill can
+be more involved in our data mining process and interpretation during this unprecedented reporting time?
+
+Thanks,
+Bethany
+
+From: Zinderman, Craig E -rtti—‘“‘“‘“‘“‘“‘< CO!
+
+Sent: Wednesday, April 14, 2021 2:02 PM
+
+To: Menschik, David |; Baer, Bethany - | &§
+
+Cc: Niu, Manette ‘ee
+
+Subject: FW: Important analysis by DuMouchel -> Peculiarities of disproportionality statistics when the product of interest
+is in almost all of the reports
+
+David, Bethany:
+Might be worth considering the below? | don’t pretend to understand it, but sounds like they are suggesting an analysis
+not stratified by year. Thoughts?
+
+Thanks,
+Craig
+
+Sent: Wednesday, April 14, 2021 6:24 AM
+
+To: Zinderman, Craig E
+
+Subject: FW: Important analysis by DuMouchel -> Peculiarities of disproportionality statistics when the product of interest
+is in almost all of the reports
+
+PSI-HHS-000008258289
+[OCR skipped on page(s) 11-12]AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+From: "Niu, Manette"
+
+To: "Zinderman, Craig E" >, "Baer, Bethany"
+
+Subject: FW: Important analysis by DuMouchel -> Peculiarities of disproportionality statistics when
+the product of interest is in almost all of the reports
+
+Date: Thu, 15 Apr 2021 13:33:02 +0000
+Importance: Normal
+Attachments: CompareStratifications.xls
+Inline-Images: image001.png
+
+fyi
+
+Sent: Saturday, April 10, 2021 1:22 PM
+To: Niu, Manette
+Cc: Vega, Amarilys >; Stockbridge, Norman L
+>; billdumouchel >; Rave Harpaz
+>; Pease-Fye, Meg ; i ,
+>; Callahan, Lawrence >; Paredes, Antonio
+>; Temple, Robert ; ,
+>; Dal Pan, Gerald >; Zander, Judith
+>; Munoz, Monica >; Diak, Ida-Lina <Ida-
+
+Subject: Important analysis by DuMouchel -> Peculiarities of disproportionality statistics when the product of interest is in
+almost all of the reports
+
+Hello all,
+Please refer to the message from Bill DuMouchel that | am forwarding and to his attached spreadsheet.
+
+Notice how Bill discovered the need to eliminate the stratification by year when the reports for the COVID-19 vaccine in
+VAERS are 99% of all reports for a year (2021).
+
+| think that we need to invite him to talk with us about the effect of adjustment factors, given the data, so we can all learn
+from his knowledge.
+
+Warmest regards to all,
+~-Ana
+
+Ana Szarfman, MD, PhD, FAMIA,
+
+Diplomate by the American Board of Pathology in both, Clinical Pathology (1984) and Clinical Informatics (2017), and
+Fellow of the American Medical Informatics Association (2020)
+
+Medical Officer, Safety Data Mining Developer and Medical Informatics Analyst,
+
+Celebrating nearly a quarter of a century of successful implementation of safety data mining, interactive patient profiles,
+and other automated analytical tools.
+
+Division of Cardiology and Nephrology, OCHEN, Center for Drug Evaluation and Research, Food and Drug Administration
+
+(office)
+(personal cell phone and WhatsApp)
+
+PSI-HHS-000008258306
+[OCR skipped on page(s) 14-56]AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+EXTENT AND IMPACT OF MASKING IN SRS DATABASES 205
+
+Table 9. Differences of masking observed between Pfizer database and EudraVigilance. The difference of approximate masking ratio is displayed on the right
+hand column, this difference is positive when the magnitude of the masking was higher in Pfizer database than in EudraVigilance, negative when the contrary
+‘was observed. Cells highlighted in pink show differences greater than 1. N/A denotes the absence of reports associated with the Medical Dictionary for
+Regulatory Activities preferred term in the database. ApproxMR denotes MRepeapproxt (Table 2)
+
+Reaction PT Approx.MREV Approx. MR Pfizerdb _Difference
+Acute hepatic failure 1.653 1.255 -0.398
+Acute myocardial infarction 1.743 1.244 -0.500
+Amnesia 1.130 1.190 0.061
+
+Anaphylactic shock 1.042 1.072 0.030
+‘Anterograde amnesia 1655781 8.126
+Anti-erythropoietin antibody positive 6.518 NA
+
+Aplastic anaemia 1.046 1.122 0.075
+Bone debridement  sas7 500.797
+Bone marrow reticulin fibrosis 8.559 N/A
+
+Bronchiolitis 1.766 1.416 -0.350
+Cardiac valve disease 1224 12.052 10.827
+Confusional state 1.021 1.100 0.080
+Convulsion 1.036 1.143 0.107
+Craniopharyngioma 6.264 6.500 0.236
+Depression 1.126 1.226 0.100
+Dermatitis bullous 1.048 1.118 0.070
+Drug specific entbody present 87 2886.28
+Dupuytren's contracture 1.193 1.159 0.034
+Electrocardiogram QT prolonged 1.176 1.308 0.131
+
+Epiohysilyss ast ora t88
+Extrapyramidal disorder 1.256 1.462 0.205
+Factor IX inhibition 2.625 N/A
+
+Factor VIII inhibition 2.063 N/A
+
+Fanconi syndrome 1.630 1.481 0.149
+Fanconi syndrome acquired 1.630 N/A
+
+Gambling 2.693 3.328 0.636
+Haemolytic anaemia 1.081 1.065 0.016
+Intussusception 2.523 1.600 0.923
+Jaw operation 4882 2125.8
+Mania 1.089 1.290 0.201
+
+Mitochondrial toxicity 1.575 1.600 0.025
+Nephrogenic systemic fibrosis 2.521 N/A
+
+Neuropathy peripheral 4.105 1.255 0.151
+
+Neutropenia 1,067 1.184 0.117
+Ovarian hyperstimulation syndrome 1.573 1.500 -0.073
+Pancreatitis acute 1.064 1.200 0.136
+Pancytopenia 1.102 1.501 0.399
+
+Pathological gambling
+
+Polyomavirus-associated nephropathy 3.326 2.600 0.726
+Pregnancy with contraceptive patch 4.036 N/A
+
+Progressive external ophthalmoplegia 11.991 N/A
+
+Progressive multifocal leukoencephalopathy 1.647 1.633 0.014
+Rapid correction of hyponatraemia 21.999 N/A
+
+Rash maculo-papular 1.050 1.072 0.022
+Renal failure acute 1.034 1.101 0.066
+Retrograde amnesia 1.067 1.774 0.703
+Rhabdomyolysis 4.289 2.049 0.760
+Rosai-Dorfman syndrome 1.167 1.500 0.333
+Stevens-Johnson syndrome 4.111 1.366 0.255
+Sudden onset of sleep 1.908 2.200 0.292
+Suicidal behaviour 1.143 1.590 0.447
+Suicide attempt 1.061 1.203 0.142
+Thrombocytopenia 1.046 1.085 0.040
+Toxic epidermal necrolysis 1.086 4.072 0.013
+Upper gastrointestinal haemorrhage 4.104 1.271 0.167
+Venous thrombosis 1.066 1.112 0.046
+
+ao Kon NA “EPA S144 67SESPAIZOOT OLMOPAUOD Kp CrexHouUOysdny OY PoPEOIUMOC ‘Z'p10Z"LSSL66OL
+
+Copyright © 2013 John Wiley & Sons, Ltd. Pharmacoepidemiology and Drug Safety, 2014; 23: 195-207
+
+DOI: 10.1002/pds
+
+S627] stoU oaneat> ogee omp Aq pousono ae Sofie Yo) 26n5o sso} Ig SUID pL Uo (suorpec>-pur-aMsAy Sop Kem amNOD/-sduH) suoMpIDD pur se] aM225 TyOZEOS I] w KET]
+
+PSI-HHS-000008265465
+[OCR skipped on page(s) 58-59]AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+From:
+To:
+
+>, "Niu, Manette"
+
+>, "Menscl Davi
+Ce: "Stockbridge, Norman L"
+
+Subject: RE: Our conversation about VAERS of this afternoon.
+Date: Sat, 27 Mar 2021 01:00:44 +0000
+Importance: Normal
+Inline-Images: image001.png
+
+Sure Ana, It will be my pleasure to entertain any questions regarding my experience with Empirica Signal and Empirica
+Study.
+
+Have a great weekend!
+
+Qin
+
+Sent: Friday, March 26, 2021
+>; Baer, Bethany
+
+Ce: Stockbridge, Norman L ; i >
+
+Subject: Our conversation about VAERS of this afternoon.
+
+Hi Manette, Beth, and Craig,
+Please refer to the attached files that | displayed this afternoon.
+
+As we talked, the attached excel comparisons between RGPS and MGPS were generated by Bill DuMouchel using the
+VAERS public domain data incorporated into Empirica Signal.
+
+RGPS is included with the public domain version of Empirica Signal.
+Bill and | extensively studied the increased value of RGPS over MGPS for reducing false positives and negative signals.
+
+Oligonucleotides (regulated by CDER) and mRNA vaccines (regulated by CBER) share some common important
+characteristics, including severe thrombocytopenia; and we are interested in using several resources to understand them
+better.
+
+Qin Ryan, in the cc is the principal investigator of a project studying this effect with oligonucleotides, having me as a
+collaborator.
+
+VAERs offers a unique opportunity to study the value of RGPS in improving the detection of early signals in a different,
+important environment during a pandemic situation whereas the early detection of novel signals is tremendously
+important for all.
+
+The new methodology being proposed by Bill to study across multiple applications offers the opportunity to benefit from
+automation, immediate access to a cross comparison of safety signals across multiple treatment arms within multiple
+applications, and the identification of unbalanced risk factors at baseline. Qin Ryan worked with an earlier prototype of
+the system, and will answer questions that you may have.
+
+PSI-HHS-000008263189
+[OCR skipped on page(s) 61-64]AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Drug Safety (2022) 45:765-780
+https://doL.org/10.1007/s40264-022-01186-z
+
+ORIGINAL RESEARCH ARTICLE ®
+
+Check for
+updates.
+
+Signaling COVID-19 Vaccine Adverse Events
+
+Rave Harpaz' - William DuMouchel! - Robbert Van Manen! - Alexander Nip’ - Steve Bright! - Ana Szarfman?-
+Joseph Tonning? - Magnus Lerch"
+
+Accepted: 8 May 2022 / Published online: 23 June 2022
+©The Author(s) 2022
+
+Abstract
+
+Introduction Statistical signal detection is a crucial tool for rapidly identifying potential risks associated with pharmaceuti-
+cal products. The unprecedented environment created by the coronavirus disease 2019 (COVID-19) pandemic for vaccine
+surveillance predisposes commonly applied signal detection methodologies to a statistical issue called the masking effect,
+in which signals for a vaccine of interest are hidden by the presence of other reported vaccines. This masking effect may in
+turn limit or delay our understanding of the risks associated with new and established vaccines.
+
+Objective The aim is to investigate the problem of masking in the context of COVID-19 vaccine signal detection, assessing
+its impact, extent, and root causes.
+
+Methods Based on data underlying the Vaccine Adverse Event Reporting System, three commonly applied statistical signal
+detection methodologies, and a more advanced regression-based methodology, we investigate the temporal evolution of
+signals corresponding to five largely recognized adverse events and two potentially new adverse events.
+
+Results The results demonstrate that signals of adverse events related to COVID-19 vaccines may be undetected or delayed
+due to masking when generated by methodologies currently utilized by pharmacovigilance organizations, and that a class
+of advanced methodologies can partially alleviate the problem. The results indicate that while masking is rare relative to all
+possible statistical associations, it is much more likely to occur in COVID-19 vaccine signaling, and that its extent, direction,
+impact, and roots are not static, but rather changing in accordance with the changing nature of data.
+
+Conclusions Masking is an addressable problem that merits careful consideration, especially in situations such as COVID-19
+vaccine safety surveillance and other emergency use authorization products.
+
+1 Introduction the opportunity to rapidly identify potential risks associated
+with vaccines—a process usually known as signal detection.
+As the world contends with ending the coronavirus disease According to the World Health Organization (WHO), a
+
+2019 (COVID-19) pandemic, understanding the risks associ- __ safety signal is defined as reported information on a possible
+ated with COVID-19 vaccines is critically urgent. The Vac- _ causal relationship between an AE and a product, of which
+cine Adverse Event Reporting System (VAERS), co-admin- _ the relationship is unknown or incompletely documented [1].
+istered by the US Food and Drug Administration (FDA) and At a very high level, signal detection is the active pursuit of
+the Centers for Disease Control and Prevention (CDC), is safety signals. The process of signal detection is multifaceted
+one of several systems used to monitor adverse events (AEs) and interdisciplinary and can take many forms, be performed
+that occur after vaccination, including the COVID-19 vac- _at different levels of evidence and data, and be accomplished
+cines. Like other safety surveillance systems, VAERS offers _in different ways. The specific application considered in this
+study has previously been termed data mining, screening,
+disproportionality analysis, and quantitative signal detec-
+tion. It involves the use of statistical techniques that cast a
+wide net to rapidly explore large databases of reported AEs
+
+© Rave Harpaz
+rave harpaz@oracle.com
+
+' Oracle Health Sciences, Burlington, MA, USA for statistical patterns or anomalies that may be indicative
+2 U.S. FDA, Silver Spring, MD, USA of new risks that warrant further attention. This approach
+3 US. Public Health Service/UJ.S. FDA retired, Silver Spring, to signal detection has been routinely applied to safety sur-
+MD, USA veillance systems for over 20 years and has become a de
+
+4 Lenolution GmbH, Berlin, Germany facto standard [2]. To distinguish this approach from other
+A Adis
+
+PSI-HHS-000008265794
+[OCR skipped on page(s) 66-80]AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+From: "Alimchandani, Meghna"
+To: "Menschik, David" >, "Zinderman, Craig E"
+Subject: RE: Coverage through 8/18
+Date: Fri, 5 Aug 2022 14:22:56 +0000
+Importance: Normal
+
+Yay sounds good! (I was also hoping we would stop doing that at some point!)
+
+Sent: Friday, August 5, 2022 10:22 AM
+
+Subject: RE: Coverage through 8/18
+
+Thanks!
+No — we are no longer routinely sending COVID data mining to CDC (per Narayan after he discussed with Tom S.)
+Thanks again,
+
+David
+
+Sent: Friday, August 05, 2022 10:14 AM
+
+Subject: RE: Coverage through 8/18
+
+Thanks, David! Hope you and Craig have good vacations next week.
+Quick question...we are still sending data mining for COVID vaccines also on a weekly basis to CDC...is that right?
+
+Thanks to Melvyn for covering urgent BO needs!
+
+Best,
+Meghna
+
+Sent: Friday, August 5, 2022 8:23 AM
+
+Subject: Coverage through 8/18
+
+Hi Meghna and Craig,
+
+Thanks very much for covering me while I’m out from 10:30 am today through 8/18 (MA: covering through Friday 8/12; CZ
+covering through 8/18).
+
+PSI-HHS-000008266854
+[OCR skipped on page(s) 82-88]AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Sent: Tuesday, September 14, 2021 12:34 PM
+
+Subject: Write-up
+
+Dear Narayan,
+
+Can you send us a one-paragraph write-up about Ana and the challenges it is posing for DE? | would like to share it with
+
+Dr. Marks to potentially share with CDER leadership.
+
+Let me know if you wish to discuss.
+Regards,
+
+Steve
+
+Steve Anderson, Ph.D., M.P.P.
+
+Director
+
+Office of Biostatistics and Epidemiology
+
+Center for Biologics Evaluation and Research
+U.S. Food & Drug Administration
+
+Phone:
+email:
+
+PSI-HHS-000008268891
+[OCR skipped on page(s) 90]AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Message
+
+From: Anderson, Steven [/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP
+(FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=D4COC242FEBA45FA9S4F4F9B05EB3557-ANDERSONST]
+
+Sent: 9/15/2021 2:40:18 AM
+
+To: Nair, Narayan
+
+Subject: RE: Write-up
+
+Dear Narayan,
+
+Thank you for this — it is well done. | may modify this a bit by adding some more context since | am sharing with Dr.
+Marks who may share it with CDER and possibly agency leadership.
+
+Regards,
+
+Steve
+
+Steve Anderson, Ph.D., M.P.P.
+
+Director
+
+Office of Biostatistics and Epidemiology
+Center for Biologics Evaluation and Research
+U.S. Food & Drug Administration
+
+From: Nair, Narayan
+
+Sent: Tuesday, September 14, 2021 3:54 PM
+
+Subject: RE: Write-up
+Dear Steve,
+Happy to discuss further if needed. Here is a brief paragraph —
+
+We are very appreciative of Ana’s extensive knowledge and expertise related to data mining. However, we have
+concerns about her communicating data mining findings using CBER VAERS data to CBER and non-CBER personnel. While
+we think these efforts are well intentioned, we would request she refrain from using her FDA email or communicating
+data mining findings using CBER VAERS data given she is a CDER employee.
+
+Some additional info (not sure if this is helpful): When we began planning our approach to passive surveillance for the
+COVID-19 vaccines in the summer of 2020, our overarching strategy was to build on existing, established systems
+whenever possible. With regard to Data Mining, | felt that we should utilize the standardized, established system that
+has been in use for other vaccines. My concern was a novel approach that had not been validated would add another
+layer of uncertainty in the context of an EUA when rapid retrieval and interpretation of data would be imperative. We
+recognize as with all passive surveillance our current data mining process has limitations. In particular, we are well
+aware that if there is a class-effect (e.g., if both mRNA COVID-19 vaccines are associated with the same adverse event) it
+may be missed by data mining.
+
+PSICOVID_00014054
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+My thinking was to re-evaluate the data mining (as well as our other processes) once the data from active surveillance is
+available. In the best of circumstances data mining is only hypothesis generating and | thought it would be helpful once
+active surveillance has confirmed the hypothesis related to a certain safety signal(s) to re-evaluate our approach. This
+would be a suitable time to determine why it wasn’t detected by data mining (if that is the case). | think this
+retrospective approach is more downstream than what Ana is proposing but to my mind would be preferable to shifting
+midstream.
+
+Sent: Tuesday, September 14, 2021 12:34 PM
+
+To: Nair, Narayan <i
+
+Subject: Write-up
+
+Dear Narayan,
+
+Can you send us a one-paragraph write-up about Ana and the challenges it is posing for DE? | would like to share it with
+Dr. Marks to potentially share with CDER leadership.
+
+Let me know if you wish to discuss.
+Regards,
+
+Steve
+
+Steve Anderson, Ph.D., M.P.P
+
+Director
+
+Office of Biostatistics and Epidemiology
+
+Center for Biologics Evaluation and Research
+U.S. Food & Drug Administration
+
+PSICOVID_00014055
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Appointment
+
+From: Szarfman, Ana [/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP
+(FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=856B5EF9696E4C6F973C8F10409D88EE-SZARFMAN]
+
+Sent: 12/22/2020 7:37:36 PM
+
+To: Forshee, Richa / I Es Niu, Manette i: Allende, Maria
+NC
+Ellenberg, Susan [is | Janet Wittes eS Ee Kluetz, Paul
+
+|; Concato, oh ; Pennello, Gene
+
+|; Stockbridge, rs Temple, Robert
+; bill. dumouchel (|
+Pease-Fye, Meg [ Zhang, Rongmei
+
+SS | Janet wittes [ Nair, Narayan
+
+ Lababid), 527 TT Tomita, York a ;
+Chuk, Meredith [| |; Walderhaug, Mark O
+
+Dal Pan, Gerald
+
+cc: Blum, Michae! | i s ; Huang, ci i Vane, Yo | TS
+
+Subject: Bill DuMouchel's plan for a software that can assess multiple studies and applications at once
+Attachments: DuMouchel - Addressing the need for improving the comprehensiveness and transparency of our decision processes
+to address the COVID-19 pandemic (002).pptx
+
+Location: Via webex
+Start: 12/23/2020 5:00:00 PM
+End: 12/23/2020 6:00:00 PM
+
+Show Time As: Tentative
+Importance: High
+
+Required Forshee, Richard; Niu, Manette; Allende, Maria; Qin Ryan (7); \Weichold, Frank; Ellenberg,
+Attendees: Susan; Janet Wittes; Kluetz, Paul; Concato, John; Pennello, Gene; Stockbridge, Norman L; Temple, Robert;
+
+bill.dumouche| iD ; EE Pease-Fye, Meg; Zhang, Rongmei
+(EEE ; Janet Wittes; Nair, Narayan; Lababidi, Samir; Tomita, York; Chuk, Meredith; Kim,
+Tamy; Walderhaug, Mark O; cgrochester QE Dal Pan, Gerald; antonioparedes14 QE Pucino, Frank
+
+Optional Blum, Michael; Huang, Lei; Yang, Ye; Lin, Lisa
+
+Attendees:
+
+Hi All,
+
+Many thanks for all your hard work to keep us safe.
+
+We took the liberty to schedule this meeting so close to Christmas because this topic will help improve our analytical
+capabilities to fight effectively this pandemic situation.
+
+will this date and time work for you? Please RSVP.
+We have planned this small meeting to gain support for the attached project developed of Bill DuMouchel to address
+many of the analytical problems we are facing during this dire pandemic. Bob Temple and Norman Stockbridge are
+
+aware of this potential project.
+
+DuMouchel developed the safety data mining methodology being used to safety data mine AERS/FAERS and VAERS.
+
+PSICOVID_00014194
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+We have been encouraging Bill DuMouchel to implement a methodology that can assess multiple studies and
+applications at once (i.e., all vaccines for COVID-19, all anticoagulants) where the goal is to compare different treatments
+that don’t all appear in any one study, which is the “Network Meta-Analysis” paradigm.
+
+As Bill DuMouchel will explain, this approach will compare subgroups based on several covariates and in addition where
+there are multiple endpoints measured on each patient.
+
+All this would usually require an analysis of the patient level data in order to fit the Bayesian shrinkage model.
+
+An advantage of having one program that can do an analysis of patient level data from many studies and many
+applications at once is that if we can add or remove some data we can get a quick analysis without having to do a lot of
+intermediate analyses and redo a meta-analysis based on the new summary statistics.
+
+--Ana
+
+Ana Szarfman, MD, PhD, FAMIA,
+
+Diplomate by the American Board of Pathology in both, Clinical Pathology (1984) and Clinical Informatics (2017), and
+Fellow of the American Medical Informatics Association (2020)
+
+Medical Officer, Safety Data Mining Developer and Medical Informatics Analyst,
+
+Celebrating nearly a quarter of a century of successful implementation of safety data mining, interactive patient profiles,
+and other automated analytical tools.
+
+Division of — and OCHEN, Center for Drug Evaluation and Research, Food and Drug Administration
+(personal cell phone and WhatsApp)
+
+US. FOOD & DRUG
+
+ADMINISTRATION
+
+PSICOVID_00014195
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Addressing the need for improving the
+comprehensiveness and transparency of
+our decision processes to address the
+COVID-19 pandemic
+
+Introductory words to the presentation by Dr. Willlam DuMouchel
+by
+Ana Szarfman, MD, PhD, FAMIA
+Division of Cardiology and Nephrology, OCHEN, Center for Drug Evaluation and Research
+Foad and Drug Administration
+
+PSICOVID_00014196
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+* The good news is that we now have multiple new potential types of
+vaccines and medical interventions.
+
+* These interventions are unprecedented for:
+* The compressed time for their development and study
+* The large number of potential new interventions (20 +)
+* The enormous size of the global population impacted (hundreds of millions of
+people)
+* The usual review process for new vaccines and molecular entities at
+the Agency is designed at assessing a much smaller impacted
+population
+
+PSICOVID_00014197
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+* Hearing the summary options of scientists that helped control in the
+past much smaller outbreaks would not be sufficient.
+
+* Consistent efficacy and safety signals may remain hidden
+
+* in disjoined Clinical Trial applications and observational studies or by analyses
+that do not properly adjust for multiplicity and small counts across all the data
+being generated.
+
+* We need an automated, interactive analytical process in place that
+can compare the data of all interventions being continuously
+collected in CTs and observational studies.
+
+* The automated reanalysis of the data and identification of consistent signals
+
+by specific interventions that can be exhaustively examined by experts will
+provide transparency to the decision making process.
+
+PSICOVID_00014198
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+* We have been encouraging Bill DuMouchel to implement a
+methodology that can assess multiple studies and applications at
+once {i.e., all vaccines for COVID-19, all anticoagulants) where the
+goal is to compare different treatments that don’t all appear in any
+one study, which is the “Network Meta-Analysis” paradigm.
+
+* As Bill DuMouchel explained, this approach will compare subgroups
+based on several covariates and in addition where there are multiple
+endpoints measured on each patient.
+
+* All this would usually require an analysis of the patient level data in
+order to fit the Bayesian shrinkage model.
+
+PSICOVID_00014199
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+* An advantage of having one program that can do an analysis of
+patient level data from many studies and many applications at once is
+that if we can add or remove some data we can get a quick analysis
+without having to do a lot of intermediate analyses and redo a meta-
+
+analysis based on the new summary Statistics.
+
+PSICOVID_00014200
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+ORACLE
+
+Challenges Involving Models for Complicated Full-Data Meta-Analyses
+
+Analyses of pooled studies of vaccines, biologics, or drug products from prospective
+or observational studies and involving multiple treatments, subgroups and endpoints
+
+Willlam DuMouchel, PhD
+Chief Statistician
+Oracle Health Sciences
+
+PSICOVID_00014201
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Many New Vaccines and Proposed Treatments for Covid-1g Are Being Tested
+
+Comparisons of Efficacy and Safety Are Complicated
+* Multiple Efficacy and Multiple Safety Endpoints
+* Within-Study Comparisons of Treatment Arms
+* Comparing Subsets Depending on Covariate Values (age, sex, concomitant meds, etc.)
+* Combining Studies (including Prospective and Observational Studies)
+~ Studies May Differ by Indication, Populations or Medical History
+~ Bayesian Approaches May Give Higher Weight to Certain Study Designs
+
+PSICOVID_00014202
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Network Meta-Analysis
+
+https://training.cochrane.org/resource/key-concepts-network-meta-analysis-nma
+
+Several Products Need to Be Compared
+* Each Study Typically Only Includes Two or a Few Products
+* But a Chain of Within-Study Comparisons May Connect Every Pair of Products
+* Pooled Studies Can Create Efficient Indirect Comparisons Among Them All
+* Allowance Must Be Made for Population Differences Between Studies
+Both Observational and Prospective Studies May Be In the Pool
+* Bayesian Approaches May Give Higher Weight to Certain Study Designs
+
+PSICOVID_00014203
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Eight Studies of the ICP| Nivolumab versus other Active Comparators
+
+How to compare the various treatment effects?
+
+37 INVESTIGATOR CHOICE
+17 DOCETAXEL
+
+25 EVEROLIMUS
+
+57 DOCETAXEL
+
+66 NIVOLUMAB DACARBAZINE
+
+26 INVESTIGATOR CHOICE
+42 INVESTIGATOR CHOICE
+27 CHEMO
+
+PSICOVID_00014204
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Comparison: Pool All 8 Studies Into 1 Analysis For 11 Safety HLTs
+
+Odds Ratio Estimates for Term Group="Treatment”
+
+Results
+
+Methad=MBLR
+PRIOR _MEAN
+HLT: Acute and chronic thyrsiditis
+HUT: adrenal cortical hypofunctions
+HLT: Ghoroid and vitreous structural change, deposit and dea...
+HLT: Colitis (excl infective)
+HLT: Hepatocellular damage and hepatitis NEC
+HLT: Hepopigmantation diserders
+HLT: Hypothalamic and pittatary disorders NEC
+LT: Pruritus NEC
+HLT: Retinal structural change, deposit and deganeration
+HLT; Thyroid analyses
+HUT: Thyroid hypofunction diserders
+
+OROS-GR-ORDS
+
+;
+
+18
+
+commas Contdance interval far OR
+
+aed
+
+Multivariate Bayesian Logistic Regression (MBLR)
+MBLR (also known as BLR) is similar to meta-analysis, but uses the whole data from each study. Adjusts for potentially biasing
+between-study differences and multiple comparisons. The results of a BLR run may help support any of the following
+
+conclusions:
+
+An issue appears related to treatment in a screening analysis, but is not related to treatment when covariates are included ina
+BLR run, and these covariates show a strong relationship to issue outcome. This may indicate that a randomization error has
+
+occurred.
+
+PSICOVID_00014205
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Representing a Pool of Studies as a Network
+Lines Connecting Two Arms Represent within-Study Comparisons (numbers=study multiplicity}
+
+Docetaxel
+
+Nivolumab
+
+Everolimus
+
+Dacarbazine
+
+~
+a
+
+Chemo
+
+investigator
+Choice
+
+PSICOVID_00014206
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Each Patient May Have Multiple Medically Similar Endpoint Measurements
+
+| Endpoints
+_HLTa, HLT2, HLT3, ...
+
+Endpoints
+HLTa, HLT2, HLT3, .. Everolimus a
+
+Docetaxel |
+“ Endpoints
+HLTa, HLT2, HLTs, ...
+
+Nivolumab Dacarbazine —
+
+a S
+Endpoints
+
+HLT1, HLT2, HLT3, ...
+
+Endpoints
+HLT, HLT2, HLT3, ...
+
+Chemo Endpoints Investigator
+HLTa, HLT2, HLT3, ... Choice
+
+PSICOVID_00014207
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+rg
+
+Each Patient May Have Multiple Covariates
+Possibly Influencing Endpoints or Treatment Effects
+
+_ Covariates
+Age, Gender, Race,
+_Concom. Meds, ...
+
+Docetaxel
+
+on
+
+Covariates
+Age, Gender, Race,
+
+Everolimus -""
+
+Nivolumab
+
+NY
+
+Concom. Meds, ...
+
+oN
+4
+
+Chemo Covariates
+“=e Age, Gender, Race,
+Concom. Meds, ...
+
+investigator
+Choice
+
+Covariates
+_ Age, Gender, Race,
+wee Concom. Meds, ...
+
+_ Covariates
+_ Age, Gender, Race,
+Concom. Meds, ...
+
+Dacarbazine
+
+Covariates
+Age, Gender, Race,
+Concom. Meds, ...
+
+PSICOVID_00014208
+
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Hierarchical Bayesian Models and Muitiple Comparisons
+
+Selecting a “Best” Treatment, Covariate-Subgroup or Endpoint Post-hoc
+while Accounting for Random Variation
+
+Standard Approach: Require Small p-Values or Wide Confidence Intervals
+* When there are very many comparisons, these become too conservative
+* True Positives Can Remain Hidden
+* Very Large Datasets Can Generate too many False Positives
+Hierarchical Bayesian Approach
+* Fit Models that “Shrink” the Differences among the Estimates Being Compared
+* Estimates typically Move toward the Average of all stand-alone Estimates
+
+* But Error Bars typically become shorter, not longer and Effect strengths are more accurately
+ranked
+
+PSICOVID_00014209
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+NISOLDIPINE
+ACARBOSE
+ORTHO-NOVUM1/8
+PLATECONCENTRH
+URSODIOL
+
+EMLA
+ORTHO-NOVUMSQ
+COLFOSCEPALMIT
+AVG
+HYDROCORTISONE
+GANCICLOVIR
+GLYCINE
+SELENIUMSULFID
+SUPROFEN
+NONOXYNOL
+MINIZIDE
+PRILOCAINE
+FENFLURAMINE
+PENTAZOCINE
+TROPICAMIDE
+
+HEPATINONSPECI
+HEPATINONSPEC}
+CARCIN OMALIVER
+LIVEDAMAGAGGRA
+LIVEDAMAGAGGRA
+HYPALGESIA
+CARCINOMALARYN
+INTESTSMALLPER
+BALANITIS
+OTIMISEXT
+RETINGHS.
+HYPONATREM
+SEBORRHEA
+PAINKIDNEY
+PENISDIS.
+HYPOKALENM
+METHEMOGL OBIN
+HYPERTENSPULM
+FIBROINJECTSIT
+MYDRIASIS.
+
+0.3
+
+10
+
+wo
+
+© 9000000
+
+30 100 300 1000 10000 100000
+
+Example of Bayesian “Shrinkage”: Spontaneous Report Disproportionalities
+
+Drug-Event Combinations with large ratios of RR = N/E = Observed/Expected counts
+
+1@l@l@lelere)
+
+2000
+
+RR
+
+mostocerfomo gg.9% Cl
+© Bayes Est.
+
+PSICOVID_00014210
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+How Bayesian Models Decide How Much to Shrink
+
+Shrinking Estimated Differences Provides Multiple Comparisons Protection
+Requires Estimation of Variance Component or Prior Variability
+
+Compare Data Variation to that Expected by the Null Hypothesis
+
+Excess Data Variance Allows Estimate of Prior Variability
+
+Bayesian Calculations Produce the “Shrinkage” Estimates and Error Bars
+(Individual Values Move Toward Average of All Values)
+
+Next: Two examples of advanced meta-analyses where estimation of excess
+data variance helped evaluate prediction accuracy
+
+PSICOVID_00014211
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Meta-Regression for Extrapolating Across Biological Systems
+
+DuMouchel W, Harris J (2983) Bayes methods for combining the results of cancer studies in humans and
+other species, / Amer Stat Assoc 78: 293-315 (w Discussion)
+
+ROOF CORE GAS.
+
+ec cells are those Bio’ wR OMEN ERONE Ba? GG
+
+Chemical combinations with date for
+
+Biting a dose-response model, oe : i :
+Goalisio get betier estimates of =~ UNS CANCER ® * / *
+Human Lung Cancer Risk from poe Bmpr
+Biesel Emissions. it te ae ee ee ee |
+y = log of dose-response slope . 4 ; i
+Yu = t+ a + yt by ee eo ee ee ee ee | «8
+ao dl, ‘ . . :
+(Boal ~ Mb V). MITKGENESS MA Oe @ ee e@
+i@ Boa) ~ MYR aby, — : ! t en L.
+' g ; 4 § & : 8
+
+(V8, Boab NBC.
+
+PSICOVID_00014212
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Biological Effects of lonizing Radiation [B.E.1.R. Report IV]
+
+from: Health Risks of Radon and other Internally Deposited Alpha-Emitters, 1988, Nat
+Acadamy Press [Annex 7A, by P Groer and W DuMouchel]
+
+» Making Getter Use of Radium Dial Painters”
+Data by Combining Studies of Bone Cancer Risk
+from 4 isotopes across 4 Biological Systems
+
+ISOTOPE
+BIOLOGICAL SYSTEM Ra-226 Ra-228 Pu-2s@ Py-239
+Numan * * ? ?
+Beagie Dog (injection) * * *
+Beagle Dog (inhalation) *
+* .
+
+Rat
+Plutonium Bone Cancer Risk Estimate:
+300 Cancer Deaths per Milllon Person-Rad
+
+95% Interval = (80, 1100)
+& te 10 times Larger than Risk from Radon
+
+PSICOVID_00014213
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Complicated Problems Require Combining Several Shrinkage Calculations
+
+Combining Multiple Studies Requires Estimating Random Study Effects
+Multiple Treatment Effects Require a Separate Shrinkage Calculation
+Covariate by Treatment Interactions Require More Shrinkage Parameters
+Evaluating Multiple Endpoints: Choose Variables that Are Probably Correlated
+
+Ex: Safety ADRs—Choose Multiple MedDRA Preferred Terms
+within the Same Higher Level Grouped Term
+
+PSICOVID_00014214
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Rationale for Use of Covariates
+
+When Studies Are Randomized, Why Adjust for Covariates? Won't They all Balance
+Out Anyway?
+* Depending on sample sizes, will not be perfect balance
+
+* If covariates have strong effects, adjustment for them will reduce residual variance and therefore
+Treatment effect uncertainty
+
+* Less focus on a single pre-specified model for safety analyses than for efficacy analyses
+
+Main Rationale—Treatment by Covariate Interactions
+
+* Estimating Treatment x Covariate interactions in a safety analysis is equivalent to searching for
+vulnerable subgroups
+
+* MBLR- cross every Covariate with the Treatment effect
+
+PSICOVID_00014215
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Rationale for EB Model Across End Points
+
+Coping with Fine Granularity of Adverse Event Data or Several Efficacy Measures
+* Compare T vs. C on K potential AEs or Efficacy measures that are similar in meaning
+* Approach 1—separate analyses of all K measures
+- Small counts lead to non significant comparisons
+~ Adjustment for multiple comparisons further reduces sensitivity
+* Approach 2—define a single measure as the union or mean of the K measures
+~ Significant T vs C difference may be washed out by the pooling
+~ Even if significant, little information about the original K measures
+
+Compromise Approach—EB Hierarchical Model
+* K individual estimates that “borrow strength” from each other
+
+* Estimate separate vector of coefficients for each response measure
+- But a prior distribution shrinks corresponding coefficients
+across responses toward each other
+~ The amount of shrinkage is controlled by certain prior variances
+that are also estimated from the data
+- Treatment-Covariate interaction effects, which are aprvor/ less likely,
+are also shrunk toward the null hypothesis value of 0
+
+PSICOVID_00014216
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Bayesian Shrinkage Models
+
+Statistical Validity of Searching for Extreme Differences
+* Most significant adverse event or patient subgroup
+Classical Approach to Post-Hoc Interval Estimates
+* Maintain centers of Cl at observed differences
+* Expand widths of every Cl
+* Expansion is greater the more differences you look at
+- If you look at too many, the Cl's are too wide to be useful
+Bayesian Approach
+* Requires a prior distribution for differences
+~ Can estimate it from the multiple observed differences available
+* Centers of Ci’s are “shrunk” toward average or null difference
+- High-variance differences shrink the most
+* Widths of Cl's usually shrink a little too
+- The more you look at, the better you can model the prior dist.
+
+PSICOVID_00014217
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Safety Study Difficulties
+
+Analysis of safety data versus studies of efficacy
+1. Prespecification of end points is rarely possible for safety analyses
+2. Sample sizes are typically inadequate for many safety issues
+3. The optimal granularity of adverse event definitions is often uncertain
+4. Subset analyses across subpopulations can rarely be prespecified
+5. Pooled analyses of many studies are necessary to compare product safety profiles
+6, Cambining safety information from clinical trials and observational data may be necessary
+All of the above issues can be thought of as variations on problems of multiple comparisons
+
+techniques help the estimates “borrow strength” from each other
+
+W DuMouchel, "Multivariate Bayesian Logistic Regression for Analysis of Clinical Study Safety Issues”, Statistical
+Science, 2012, vol. 27, no. 3, 319-349). The cited pages include three invited discussions of the methodology.
+
+Hierarchical Bayesian analysis methods analyze commonalities among the diverse effects Shrinkage
+
+PSICOVID_00014218
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Robustness to Post-Hoc Selection
+
+Simulation Study of Bayesian Estimation from Article Cited on last Slide
+* Draw “true parameters” from the prior distributions 1000 times
+
+* Estimate main and interaction effects each time
+- Get both MBLR and Standard “unshrunk’” estimates
+
+Focus on Estimating the “Most Significant” Interaction (Subset Difference)
+* 80 Interactions (8 covariates x 10 response events)
+* For each simulation, select B,, that has largest b,./se,,
+* Compare accuracy of estimates and confidence limits
+
+Note that Bayesian Shrinkage Eliminates Selection Bias!
+
+2)
+a
+
+&
+
+SIM.COEF SD.SIMC BIAS RMSE Z.SCORE CIT.05
+MBLR 1.7651 0.6094 0.9005 0.2923 ~-0.0052 6.0687
+Stnd 1.7445 0.5981 O.2184 Q.4330 0.5794 0.008
+
+Co
+po 8 +
+
+cy oD
+a3
+
+PSICOVID_00014219
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Proposal for Enhancement of the Current MBLR Method
+
+Use Network Meta-Analysis to Compare Multiple Interventions Across Studies
+Add Estimation of a Study-Level Variance Component (Shrinkage Parameter)
+* Allow Study-Level Variables such as Prospective vs Observational
+* Incorporate Extra Uncertainty for Observational Studies
+Allow Borrowing Strength Across Multiple Efficacy Endpoints
+* Example: Multiple Values of Duration Since Vaccination
+
+Explore Markov Chain Monte Carlo Computational Approach
+
+PSICOVID_00014220
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Recommended Aspects of Analysis Methodology
+
+Graphical Representation of Comparisons with Confidence Intervals
+* Covariate selection and interpretation of subset analyses
+* Comparison of results from different input assumptions—Sensitivity Analyses
+
+Collaboration with statisticians from FDA and elsewhere during program
+development
+
+Example pools of studies with their analysis results for training purposes
+
+Not a Replacement for Study analyses, but a uniform methodology for
+comparing estimates across Treatments, Studies, Endpoints and Subsets
+
+PSICOVID_00014221
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+PSICOVID_00014222
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+PSICOVID_00014223
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Message
+
+From: Alimchandani, Meghna [/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP
+(FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=963019BC771F43CFB664C1729AAFSA17-MEGHNA.ALIM]
+Sent: 12/1/2022 4:16:29 PM
+
+To: Nair, Narayan
+Subject: RE: [EXTERNAL] RE: Weekly data mining
+THANKS!!!
+
+From: Nair, Narayan <r
+
+Sent: Thursday, December 1, 2022 11:14 AM
+
+To: Moro, Pedro L (CDC) <|
+Ce: Alimchandani, Meghna <| ; Zinderman, Craig E , — &§
+
+Subject: RE: [EXTERNAL] RE: Weekly data mining
+
+Hi Pedro,
+| hope you are well. FYI - we have shifted some of our responsibilities in our Division so David will no longer be
+responsible for fielding questions about data mining. Feel free to contact me if questions come up. With regard to
+Alison’s question, we have not had any disproportionality alerts from Data Mining for the mRNA COVID-19 vaccines for
+any new safety concerns (including none for Parsonage Turner Syndrome.)
+A couple of key points (you probably are already familiar with these) :
+e Results from data mining are considered hypothesis generating and do not, by themselves, demonstrate causal
+associations. They may serve as an indication for further investigation.
+e The absence of disproportionality does not confirm the absence of a safety signal nor negate a signal detected
+by other methods.
+¢ We generally try and avoid referring to disproportionality/data mining alerts as “signals” or “safety
+signals”. From a regulatory perspective the terms signal and/or safety signal have certain connotations and may
+trigger actions so we try not conflate data mining alerts with signals.
+
+| hope this is helpful. Thanks!
+
+Narayan
+
+From: Moro, Pedro (CDC/DDID/NCEZID/DHaP) <j
+Sent: Saturday, November 26, 2022 7:55 PM
+
+To: Menschik, David <|
+; Lale, Allison (CDC) ii. Nair, Narayan
+
+Ce: Broder, Karen R (CDC)
+Subject: [EXTERNAL] RE: Weekly data mining
+
+CAUTION: This email originated from outside of the organization. Do not click links or open attachments unless you recognize the
+sender and know the content is safe.
+
+Hi David,
+
+| hope your weekend is going well. | used to get these weekly data mining outputs from you but because of the FOIAS.
+we were getting we may have asked you to stop sending them. Per Alison’s comment and interest in the latest output
+do you think you could send us the latest data mining output you have?
+
+Thanks
+
+PSICOVID_00014435
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Pedro
+
+From: Lale, Allison (CDC/DDID/NCEZID/DHOP) Pté«<
+
+Sent: Saturday, November 26, 2022 6:28 PM
+
+To: Moro, Pedro (CDC/DDID/NCEZID/DHOP) <a
+Cc: Broder, Karen (CDC/DDID/NCEZID/DHQ?) <i
+Subject: FW: Weekly data mining
+
+Hi Pedro,
+
+| was just wondering if we still get these data-mining alerts from FDA? In the past, we have checked this list for our own
+verification before presenting a CISA consult.
+
+For example, we have an upcoming case of Parsonage Turner syndrome (PT: Neuralgic Amytrophy) following COVID-19
+vaccine. We performed a VAERS search with Elaine’s help, but it could be nice to say this event has not preliminarily
+signaled in VAERS.
+
+Thanks,
+Allison
+
+p.s. Hope you had a good holiday!
+
+From: Menschik, David <j
+
+Sent: Tuesday, July 5, 2022 7:42 AM
+To: Shimabukuro, Tom (CDC/DDID/NCEZID/DHQP) <a; Su, John (CDC/DDID/NCEZID/DHOP)
+<M, Vor, Pedro (CDC/DDID/NCEZID/DHOP) <a
+
+inderman, Craig E (FDA/CBER) <{': Nair, Narayan (FDA/CBER)
+Jlimchandani, Meghna (FDA/CBER) <i: Broder, Karen
+(CDC/DDID/NCEZID/DHQP) <P: VicNeil, Michael (CDC/DDID/NCEZID/DHOP) E>; Lale,
+
+Allison (CDC/DDID/NCEZID/DHQP) <>
+
+Subject: Weekly data mining
+
+Good morning all,
+
+Attached please find a list of all (i.e., unvetted and regardless of notability) PTs with data mining
+alerts (i.e., EBOS >2) for all SARS-CoV-2 vaccine VAERS reports from our weekly ‘US Signals Summary Table’ (‘as
+of date’ 7/1/22). Please feel free to share this hypothesis generating output with your team/command chain,
+though this is not intended to be shared more broadly.
+
+Thanks,
+David
+
+THIS MESSAGE, INCLUDING ANY ATTACHMENTS, IS INTENDED ONLY FOR THE USE OF THE PARTY TO WHOM IT IS ADDRESSED AND MAY
+CONTAIN INFORMATION THAT IS PRIVILEGED, CONFIDENTIAL, AND PROTECTED FROM DISCLOSURE UNDER LAW. If you are not the addressee, or
+‘a person authorized to deliver the document to the addressee, you are hereby notified that any review, disclosure, dissemination, copying, or other action based on the
+content of this communication is not authorized. If you have received this document in error, please immediately notify the sender immediately by e-mail or phone.
+
+PSICOVID_00014436
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+From: Menschik, David
+
+To: Nair, Narayan
+
+Subject: FW: [EXTERNAL] RE: Weekly data mining
+Date: Monday, November 28, 2022 6:06:06 AM
+
+Good Morning Narayan,
+
+We've previously discussed concerns about sharing our data mining output externally given history
+including over reliance on data mining output (e.g., ‘signaling’ as used below would be an
+inappropriate term for a data mining disproportionality finding, not to mention all the
+misinterpretations about absence of disproportionality misinterpretations as being reassuring,
+particularly in context of all the limitations including masking, etc.) and presenting findings out of
+context that can be misconstrued. Understood we were reverting to our traditional method of
+primary reviewer for a product evaluating statistical signals of disproportionality along with other
+methods and traditional working up of/vetting potential signals from all sources up the chain to
+division level prior to potential sharing of possible signals externally.
+
+If | misunderstood, let’s meet briefly to discuss. If | understood correctly, | could respond to Pedro
+indicating something to the effect of: ‘Given all the limitations of our data mining, our standard
+practice is for assigned reviewers to evaluate any disproportionality findings in the context of other
+available data with vetting of potential signals up the chain to our division level prior to potential
+sharing of disproportionality data.’
+
+Please advise.
+
+Thanks,
+David
+
+From: Moro, Pedro (CDC/DDID/NCEZID/oHaP) <_<
+Sent: Saturday, November 26, 2022 7:55 PM
+
+To: Menschik, David <_ji——aa
+
+Ce: Broder, Karen R (CDC) <| ; Lale, Allison (CDC) >; Nair, Narayan
+{
+
+Subject: [EXTERNAL] RE: Weekly data mining
+
+CAUTION: This email originated from outside of the organization. Do not click links or open attachments unless you
+recognize the sender and know the content is safe.
+
+Hi David,
+
+| hope your weekend is going well. | used to get these weekly data mining outputs from you but
+because of the FOIAS we were getting we may have asked you to stop sending them. Per Alison’s
+comment and interest in the latest output do you think you could send us the latest data mining
+
+output you have?
+
+Thanks
+
+PSICOVID_00015642
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Pedro
+
+From: Lale, Allison (CDC/DDID/NCEZID/DHa?) <j
+Sent: Saturday, November 26, 2022 6:28 PM
+
+To: Moro, Pedro (CDC/DDID/NCEZID/DHAP) ;ti‘“i~*@
+
+Cc: Broder, Karen (CDC/DDID/NCEZID/DHQP) <|
+Subject: FW: Weekly data mining
+
+Hi Pedro,
+
+| was just wondering if we still get these data-mining alerts from FDA? In the past, we have checked
+this list for our own verification before presenting a CISA consult.
+
+For example, we have an upcoming case of Parsonage Turner syndrome (PT: Neuralgic Amytrophy)
+following COVID-19 vaccine. We performed a VAERS search with Elaine’s help, but it could be nice to
+say this event has not preliminarily signaled in VAERS
+
+Thanks,
+Allison
+
+p.s. Hope you had a good holiday!
+
+Sent: Tuesday, July 5, 2022 7:42 AM
+To: Shimabukuro, Tom (CDC/DDID/NCEZID/DHQP) <P; Su, John
+(CDC/DDID/NCEZID/DHQP) <_EE- Vioro, Pedro (CDC/DDID/NCEZID/DHAP)
+
+Cc: Zinderman, Craig £ (FDA/CBER) a Nair, Narayan (FOA/CBER)
+
+limchandani, Meghna (FDA/CBER)
+
+Broder, Karen (CDC/DDID/NCEZiD/OHQP) <i.
+
+MeNeil, Michael (CDC/DDID/NCEZID/DHQ?) < EE ; Lale, Allison
+(CDC/DDID/NCEzID/OHOP) <_
+
+Subject: Weekly data mining
+
+Good morning all,
+
+Attached please find a list of all (ie., unvetted and regardless of notability) PTs with
+data mining alerts (i.e., EBOS >2) for all SARS-CoV-2 vaccine VAERS reports from our weekly
+‘US Signals Summary Table’ (‘as of date’ 7/1/22). Please feel free to share this hypothesis
+generating output with your team/command chain, though this is not intended to be shared
+more broadly.
+
+Thanks,
+David
+
+PSICOVID_00015643
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+THIS MESSAGE, INCLUDING ANY ATTACHMENTS, IS INTENDED ONLY FOR THE USE OF THE PARTY TO WHOM IT IS
+ADDRESSED AND MAY CONTAIN INFORMATION THAT IS PRIVILEGED, CONFIDENTIAL, AND PROTECTED FROM
+DISCLOSURE UNDER LAW. If you are not the addressee, or a person authorized to deliver the decument to the addressee, you are
+hereby notified that any review, disclosure, dissemination, copying, or other action based on the content of this communication is not
+authorized. If you have received this document in error, please immediately notify the sender immediately by e-mail or phone.
+
+PSICOVID_00015644
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Message
+
+From: Niu, Manette [/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP
+(FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=EE2A4A5 155724814A9836019691CABA7-MANETTE.NIU]
+Sent: 4/29/2021 10:35:38 AM
+
+To: Zinderman, Craig _
+ce: Baer, Bethany iS: Venschik, c2vid
+Subject: FW: a more efficient way to find events of interest
+
+Attachments: Audit trail for the TTP (3D 2010-2021) DM run.pdf; Output for the TTP (3D 2010-2021) DM Run.pdf
+
+fyi
+
+From: Szarfman, Ana <r
+
+Sent: Thursday, April 29, 2021 12:49 AM
+
+To: Allende, Vcr} I EE: \iu, Venette i
+Ce: Stockbridge, Norman | <r
+
+Subject: a more efficient way to find events of interest
+Hi Maria and Manette,
+1am sharing an analysis that was requested at your end.
+
+Please refer to the attached audit trail and to the companion 3D data mining analysis displaying all TTP cases reported
+for COVID-19 vaccines as of April 23, 2021 .
+
+By grouping PTs and HLTs representing TTP into a custom term, and using a 3D display of “vaccine--PT--custom term” it
+enables the reviewer to focus on every associated single event of interest with each vaccine. The associated reports can
+be easily grouped and accessed by drilling down techniques.
+
+See highlighted in yellow potential events that may be associated with brain TTP.
+Let me know if you need any additional feedback.
+--Ana
+
+Ana Szarfman, MD, PhD, FAMIA,
+
+Diplomate by the American Board of Pathology in both, Clinical Pathology (1984) and Clinical Informatics (2017), and
+Fellow of the American Medical Informatics Association (2020)
+
+Medical Officer, Safety Data Mining Developer and Medical Informatics Analyst,
+
+Celebrating nearly a quarter of a century of successful implementation of safety data mining, interactive patient profiles,
+and other automated analytical tools.
+
+ee hal OCHEN, Center for Drug Evaluation and Research, Food and Drug Administration
+office)
+personal cell phone and WhatsApp)
+
+U.S. FOOD & DRUG
+
+DMINISTRATION
+
+PSICOVID_00017031
+Detail ERA PRD OR eYRLIC RELEASE BY CHAIRMAN JOPESQ}82
+
+ID:
+
+Type:
+Name:
+Description:
+
+Project:
+Configuration:
+Configuration
+description:
+As of date:
+Database
+restriction:
+
+Item
+variables:
+
+Custom terms:
+
+Help
+
+Detail for Run "TTP(3D, 2010-21)"
+
+31881
+
+MGPS
+
+TTP(3D, 2010-21)
+
+Data as 4/23/2021 - Vaccine Name, PT; 3D; Stratified by Sex, AgeGroup11,
+2010-2021; Minimum count=2 Added fibrin d dimer increased & Platelet factor 4
+Clinical Informatics
+
+VAERS_M_TS
+
+Vaers data extracted from VAERS_M account; Data is refreshed weekly.
+
+04/23/2021 00:00:00
+
+Received Year equals any of the following values: '2010', '2011', '2012', '2013',
+‘2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021'
+Vaccine Name, Symptom: PT
+
+TTP_fibrin D Selection logic: ((1 union 4) intersect (2 union 3 union 5))
+
+dimer platelet 1) Symptom: PT equals any of the following values:
+
+(Custom Term) ‘Acquired amegakaryocytic thrombocytopenia’,
+
+for Symptom: "Amegakaryocytic thrombocytopenia’, ‘Autoimmune
+
+PT ym! . heparin-induced thrombocytopenia’, ‘Congenital
+thrombocytopenia’, 'Cutaneovisceral angiomatosis with
+thrombocytopenia’, 'Disseminated intravascular
+coagulation’, ‘Fibrin D dimer increased’, ‘Fibrin abnormal’,
+‘Fibrin degradation products increased’, ‘Fibrin increased’,
+‘Fibrinolysis’, 'Fibrinolysis increased’, 'Haemangioma-
+thrombocytopenia syndrome’, 'Heparin-induced
+thrombocytopenia’, 'Heparin-induced thrombocytopenia
+test', 'Heparin-induced thrombocytopenia test positive’,
+‘Immune thrombocytopenia’, ‘Neonatal alloimmune
+thrombocytopenia’, 'Non-immune heparin associated
+thrombocytopenia’, 'Platelet count decreased’, ‘Platelet
+dysfunction’, ‘Platelet factor 4', ‘Platelet factor 4
+increased', 'Severe fever with thrombocytopenia
+syndrome’, 'Spontaneous heparin-induced
+thrombocytopenia syndrome’, 'Thrombocytopenia',
+‘Thrombocytopenia neonatal’, 'Thrombocytopenia-absent
+radius syndrome’
+
+2) Narrative contains 'FIBRIN D DIMER INCREASED'
+
+3) Narrative contains 'factor 4'
+
+4) Symptom: HLT equals 'Thrombocytopenias'
+
+5) Symptom: HLT equals any of the following values: ‘Aortic
+embolism and thrombosis’, ‘Cerebrovascular embolism
+and thrombosis’, 'Cerebrovascular venous and sinus
+thrombosis’, ‘Gastrointestinal embolism and thrombosis',
+‘Gastrointestinal vascular occlusion and infarction’,
+‘Hepatic and portal embolism and thrombosis', 'Non-site
+specific embolism and thrombosis’, 'Peripheral embolism
+and thrombosis’, 'Pulmonary embolism and thrombosis',
+‘Pulmonary thrombotic and embolic conditions', 'Renal
+
+Ambaliom and theambarial (Natianl ambaliom and
+
+PSICOVID_00017032
+DAM FUQRZBR BOR PLIBLIC RELEASE BY CHAIRMAN JOPSON2
+
+SMIWUNSH anu WNUNWUSIS , ReUTa! eniwUnsH! anu
+thrombosis’, ‘Site specific embolism and thrombosis NEC’,
+‘Vena caval embolism and thrombosis’
+
+Stratification Sex, AgeGroup11
+
+variables:
+
+Event MedDRA 23.1
+Hierarchy:
+Highest 3
+dimension:
+Minimum 2
+count:
+
+Calculate PRR: No
+Calculate No
+ROR:
+
+Fill in No
+hierarchy
+
+values:
+
+Exclude single Yes
+itemtypes:
+
+Fit separate No
+distributions:
+Save No
+intermediate
+files:
+
+Created by: Ana Szarfman
+Created on: 04/26/2021 21:22:31 EDT
+
+User: Ana Szarfman
+Source Source Data: VAERS data as of April23, 2021 from VAERS data from VAERS_M
+database: as of 04/23/2021 00:00:00 loaded on 2021-04-25 00:00:00.0
+
+Close
+
+PSICOVID_00017033
+
+pri RHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQHAISGN8
+
+Configuration: VAERS_M_TS Run : TTP(3D, 2010-21) Run ID: 31881
+Dimension: 3 Selection Criteria: Vaccine Name(COVID19 (COVID19 (JANSSEN)), COVID19
+(COVID19 (MODERNA)), COVID19 (COVID19 (PFIZER-BIONTECH))) + Symptom: PT(PT=TTP_fibrin D
+dimer_platelet factor 4 (Custom Term)) + Any Symptom: PT(PT)
+548 rows Sorted by EBGM desc
+
+covipis dimer platelet
+(COVID19 Platelet count factor 4 (Custom 10] 7.63} 12.8] 20.5 1.52
+(JANSSEN)) Term)
+covipis dimer_platelet
+(COVID19 Cerebral haemorrhage fi 4 Cl 9} 6.37) 11.0} 18.0 1.32
+(JANSSEN)) factor 4 (Custom
+Term)
+TTP_fibrin D
+COVID19 j ia
+Cerebral venous sinus | dimer_platelet
+SANSSEN)) thrombosis factor 4 (Custom 13} 6.87) 10.9] 16.5) 0.647
+Term)
+covibis dimer platelet
+(COVID19 Cerebral haematoma factor 4 (Custom 4} 4.94] 10.8] 21.2] 0.539
+(ANSSEN)) Term)
+covipis dimer platelet
+(COVID19 Blood fibrinogen factor 4 (Custom 4} 4.90) 10.7} 21.1] 0.936
+(JANSSEN)) Term)
+covipis dimer_plateet
+(COVID19 Portal vein thrombosis factor 4 (Custom 4} 4.90} 10.7] 21.0} 0.568
+QANSSEN)) Term)
+TTP_fibrin D
+COVID19 7 ia,
+Mean cell haemoglobin | dimer_platelet
+SANSSEN)) concentration normal | factor 4 (Custom 4) 4.86) 10.6) 20.9 1.07
+Term)
+covipis dimer platelet
+(COVID19 Cerebral mass effect factor 4 (Custom 5] 4.96] 10.1] 18.8] 0.706
+(JANSSEN)) Term)
+TTP_fibrin D
+COVID19 aa raion
+Prothrombin time dimer_platelet
+JANSSEN) shortened factor 4 (Custom 4) 4.62) 10.1) 19.8 1.02
+Term)
+covipis dimer_plateet
+(COVID19 Fibrin D dimer factor 4 (Custom 7| 5.43] 10.0] 17.3] 0.920
+(JANSSEN)) Term)
+TTP_fibrin D
+COVID19 dimer_platelet
+
+PSICOVID_00017034
+prikbIORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQHAISGN8
+
+No EBOS: EBGM
+
+(COVID19 factor 4 (Custom
+(JANSSEN)) Platelet factor 4 Term) 5} 4.84] 9.85] 18.3
+covio19 —_| Heparin-induced Peon Ot
+(COVID19 thrombocytopenia test —P 4| 4.47) 9.77] 19.2] 0.400
+(JANSSEN)) _ | positive tony 4 (Custom
+coviD19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Thrombectomy 6} 5.04] 9.72] 17.3] 0.599
+(JANSSEN)) — | (Custom Term)
+covipis dimer platelet
+(COVID19 Platelet count normal factor 4 (Cust 6} 5.01}; 9.66] 17.2 1.10
+(JANSSEN)) factor 4 (Custom
+Term)
+COVID19 Magnetic resonance dimer platelet
+(COVID19 magn’ PI 6} 4.98] 9.61] 17.1] 1.10
+(JANSSEN)) imaging head factor 4 (Custom
+Term)
+TTP_fibrin D
+COVID19 ai rao
+Blood fibrinogen dimer_platelet
+SANSSEN)) decreased factor 4 (Custom 8} 5.36) 9.53) 15.9 1.18
+Term)
+TTP_fibrin D
+COVID19 7 ina
+(COVID19 Subarachnoid dimer_platelet 3| 3.911 9.42| 19.9] 0.860
+(ANSSEN)) haemorrhage factor 4 (Custom
+Term)
+TTP_fibrin D
+COVID19 rao
+(CoviDi9 Blood smear test dimer_platelet 2| 3.211 8.901 20.8! 0.670
+(JANSSEN)) normal tom (Custom
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Venogram normal 3] 3.69] 8.88] 18.7] 0.723
+(JANSSEN)) (Custom Term)
+COVID19 TTP_fibrin D ‘i
+(COVID19 —_| dimer_platelet factor 4 Transverse sinus 5| 4.33] 8.82] 16.4] 0.436
+(JANSSEN)) | (Custom Term)
+COVID19 TTP_fibrin D .
+(coviDi9 _| dimer_platelet factor 4 vasogenic cerebral | 5/ 3.17] 8.80] 20.5] 0.507
+(JANSSEN)) (Custom Term)
+TTP_fibrin D
+COVID19 A . . ra
+(COVIDi9 puuperior sagittal sinus | dimer_platelet 5| 4.301 8.76! 16.3] 0.520
+(JANSSEN)) thrombosis factor 4 (Custom
+Term)
+COVID19 7 il
+Angiogram cerebral TTP_fibrin D
+(COVID19 abnormal dimer_platelet 4| 4.00] 8.74} 17.2] 0.856
+GANSSEN)) factor 4 (Custom
+
+PSICOVID_00017035
+pri 4RbORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQHAISGNS
+
+No EBOS: EBGM
+
+Term)
+COVID19 Computerised ilieslaalie et
+(COVID19 tomogram head factor 4 (Custom 14} 5.62} 8.74) 13.1 1.23
+(JANSSEN)) abnormal Term)
+(COVID19 Blood sodium normal | stor 4 (Cust 3] 3.60] 8.66] 18.3] 0.790
+(ANSSEN)) factor 4 (Custom
+Term)
+TTP_fibrin D
+COVID19 A raion
+Computerised dimer_platelet
+JANSSEN) tomogram neck factor 4 (Custom 3] 3.58] 8.63} 18.2) 0.787
+Term)
+COVvID19 . TTP_fibrin D
+(Covibig _| Pneumatosis dimer_platelet 2] 3.08] 8.54] 19.9] 0.373
+(JANSSEN)) intestinalis factor 4 (Custom
+Term)
+CoviD19 dina elatotet
+(COVID19 Haematocrit normal factor 4 (Cust 4} 3.90] 8.52] 16.7] 0.856
+(ANSSEN)) factor 4 (Custom
+Term)
+covipis dimer platelet
+(COVID19 Albumin globulin ratio fi —P Cl 2] 3.05} 8.45] 19.7] 0.633
+(ANSSEN)) factor 4 (Custom
+Term)
+Covibis dimer platelet
+(COVID19 Blood sodium fi 4(C 2} 3.03] 8.42] 19.6] 0.666
+(JANSSEN)) factor 4 (Custom
+Term)
+TTP_fibrin D
+COVID19 ; ie
+Peripheral artery dimer_platelet
+SANSSEN)) thrombosis factor 4 (Custom 2] 3.03) 8.40) 19.6) 0.338
+Term)
+covipis dimer platelet
+(COVID19 Blood smear test factor 4 (Cl 2} 2.99] 8.30] 19.3] 0.657
+(ANSSEN)) factor 4 (Custom
+Term)
+TTP_fibrin D
+(covibie Scan with contrast dimer_platelet 5| 4.06] 8.28] 15.4] 0.893
+(QANSSEN)) abnormal factor 4 (Custom . . . .
+Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Venogram 3} 3.43] 8.27] 17.4] 0.581
+(JANSSEN)) (Custom Term)
+COVID19 TTP_fibrin D
+8
+
+PSICOVID_00017036
+pri GHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQHAISGN8
+
+No EBOS: EBGM
+
+(COVID19 a dimer_platelet
+Heparin-induced
+(JANSSEN)) thrombocytopenia test Torey “oustom 5} 4.02] 8.20] 15.3] 0.487
+covipis dimer platelet
+(COVID19 Blood chloride normal factor 4 (Custom 2} 2.95] 8.19] 19.1] 0.649
+(JANSSEN)) Term)
+TTP_fibrin D
+COVID19 A . inc
+Gastrointestinal dimer_platelet
+SANSSEN)) necrosis factor 4 (Custom 2) 2.92) 8.11) 18.9) 0.502
+Term)
+covipis dimer platelet
+(COVID19 Posturing factor 4 (Custom 2| 2.92} 8.11] 18.9] 0.642
+(ANSSEN)) Term)
+covipis dimer platelet
+(COVID19 Cerebral congestion factor 4 (Custom 2| 2.92} 8.09] 18.9] 0.403
+QANSSEN)) Term)
+covipis dimer platelet
+(COVID19 Haemoglobin factor 4 (Custom 2} 2.91] 8.08] 18.8] 0.639
+(ANSSEN)) Term)
+covipis dimer platelet
+(COVID19 Blood bilirubin factor 4 (Custom 2| 2.90] 8.06] 18.8] 0.638
+(JANSSEN)) Term)
+TTP_fibrin D
+COVID19 Pale
+Aspartate dimer_platelet
+JANSSEN) aminotransferase factor 4 (Custom 2] 2.89} 8.01) 18.7) 0.634
+Term)
+covibis dimer_plateet
+(COVID19 Blood lactic acid factor 4 (Custorn 5} 3.91] 7.97] 14.8] 0.859
+(JANSSEN)) Term)
+TTP_fibrin D
+COVID19 A aoa
+Alanine dimer_platelet
+SANSSEN)) aminotransferase factor 4 (Custom 2| 2.86) 7.94) 18.5) 0.628
+Term)
+covipis dimer platelet
+(COVID19 Haptoglobin increased factor 4 (Custom 2} 2.84] 7.87| 18.3] 0.623
+(JANSSEN)) Term)
+. TTP_fibrin D
+CovID19 Retching dimer_platelet 2| 2.82] 7.84] 18.3] 0.620
+(COVID19 factor 4 (Custom
+es =— 123/202!
+
+PSICOVID_00017037
+pri EGbORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQHAISQNS
+
+No EBOS: EBGM
+
+(JANSSEN)) Term)
+TTP_fibrin D
+COVID19 ica,
+Full blood count dimer_platelet
+(SANSSEN)) abnormal factor 4 (Custom 4) 3.55) 7.76) 15.2) 0.779
+Term)
+TTP_fibrin D
+COVID19 ‘ ra
+Computerised dimer_platelet
+ANSSEN)) tomogram head factor 4 (Custom 7) 4.19} 7.74) 13.3) 0.921
+Term)
+TTP_fibrin D
+COVID19 7 rao
+Blood alkaline dimer_platelet
+(JANSSEN) phosphatase normal factor 4 (Custom 2| 2.79) 7.74) 18.0) 0.612
+Term)
+covibis dimer platelet
+(COVID19 Haemorrhagic stroke factor 4 (Custom 2] 2.79} 7.73] 18.0] 0.612
+GANSSEN)) Term)
+COvID19 dinar eiatatet
+(COVID19 Cerebral infarction factor 4 (Custom 2| 2.75| 7.63] 17.8] 0.604
+GANSSEN)) Term)
+covipis dimer platelet
+(COVID19 Brain herniation factor 4 (Custom 3] 3.17] 7.63] 16.1] 0.625
+(JANSSEN)) Term)
+Covibis dimer platelet
+(COVID19 Hemiparesis factor 4 (Custom 4| 3.48) 7.62} 15.0] 0.765
+(JANSSEN))
+Term)
+COVID19 TTP_fibrin D .
+(CovIDi9 _| dimer_platelet factor 4 hike plod «el 7| 4.12] 7.59] 13.1] 0.904
+(JANSSEN)) | (Custom Term) unt no
+TTP_fibrin D
+COVID19 oe ran
+(COVID19 Hepatitis B surface dimer_platelet 21 2.731 7.56] 17.6] 0.599
+(GANSSEN)) antigen factor 4 (Custom
+Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Troponin I normal 2| 2.68] 7.45] 17.4] 0.590
+(GANSSEN)) (Custom Term)
+covibis dimer platelet
+(COVID19 Monocyte percentage factor 4 (Custom 2] 2.67] 7.40] 17.3] 0.586
+GANSSEN)) Term)
+COVID19 TTP_fibrin D 3] 3.03] 7.29] 15.4] 0.665
+(COVID19 Red cell distribution dimer_platelet
+28202)
+
+PSICOVID_00017038
+pri RHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQHASGN8
+
+No EBOS: EBGM
+
+(JANSSEN)) width normal factor 4 (Custom
+Term)
+TTP_fibrin D
+COVID19 ra
+Mean platelet volume | dimer_platelet
+SANSSEN)) normal factor 4 (Custom 2] 2.62} 7.27) 16.9) 0.576
+Term)
+TTP_fibrin D
+COVID19 i rao
+(COVID19 Blood alkaline dimer_platelet 2| 2.621 7.26] 16.9] 0.574
+(JANSSEN)) phosphatase factor 4 (Custom
+Term)
+covipis dimer platelet
+(COVID19 Myocardial strain factor 4 (Custom 2} 2.60] 7.22] 16.8} 0.292
+(ANSSEN)) Term)
+covibis dimer platelet
+(COVID19 Anticoagulant therapy factor 4 (Custom 7} 3.92] 7.22) 12.4] 0.555
+(ANSSEN)) Term)
+covipis dimer platelet
+(COVID19 Haptoglobin factor 4 (Custom 2| 2.60] 7.20) 16.8] 0.491
+(ANSSEN)) Term)
+TTP_fibrin D
+COVID19 7 ial
+Computerised dimer_platelet
+(SaNSsen)) tomogram abdomen factor 4 (Custom 3} 2.96} 7.14) 15.0) 0.651
+Term)
+TTP_fibrin D
+COVID19 . oa
+Blood potassium dimer_platelet
+JANSSEN) normal factor 4 (Custom 3] 2,96} 7.13) 15.0) 0.650
+Term)
+covipis dimer platelet
+(COVID19 Cholelithiasis factor 4 (Custom 2} 2.53] 7.03] 16.4] 0.557
+(JANSSEN)) Term)
+covipis dimer platelet
+(COVID19 Haemoglobin normal factor 4 (Custom 4} 3.20) 7.00} 13.7] 0.703
+(JANSSEN)) Term)
+Covib19 Mean cell volume dimer piatatet
+(COVID19 i” 2) 2.52} 7.00] 16.3] 0.554
+(QANSSEN)) normal factor 4 (Custom
+Term)
+TTP_fibrin D
+COVID19 | - oo
+(covipis —_| pplenie veln rarer Platelet 2] 2.52] 6.99] 16.3] 0.311
+(JANSSEN)) thrombosis factor 4 (Custom
+Term)
+ee 4/28/2021
+
+PSICOVID_00017039
+pri ELbORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQHAISGNg
+
+No EBOS: EBGM
+
+TTP_fibrin D
+CovID19 an | dime
+(COVID19 Mean cell haemoglobin | dimer_platelet 2| 2.521 6.99] 16.3] 0.554
+(JANSSEN)) normal factor 4 (Custom
+Term)
+(COVID19 Blood bilirubin normal factor 4 (Custom 2| 2.49] 6.91] 16.1] 0.547
+(ANSSEN)) Term)
+TTP_fibrin D
+COVID19 7 . i,
+(Covipig —_| Glomerular filtration factor a (custom 2| 2.47] 6.86] 16.0] 0.543
+(JANSSEN)) Term)
+TTP_fibrin D
+COVID19 rand
+(COvID19 Red blood cell count dimer_platelet 3| 2.84] 6.85| 14.4] 0.625
+(ANSSEN)) normal factor 4 (Custom
+Term)
+COVID19 TTP_fibrin D js
+(COVID19 dimer_platelet factor 4 white blood cell 2| 2.46] 6.82] 15.9] 0.540
+(JANSSEN)) (Custom Term)
+TTP_fibrin D
+COVID19 7 on
+Angiogram cerebral dimer_platelet
+(SANSSeN)) normal factor 4 (Custom 2) 2.44) 6.78) 15.8) 0.537
+Term)
+TTP_fibrin D
+COVID19 . . ra
+Activated partial dimer_platelet
+SANSSEN)) thromboplastin time factor 4 (Custom 2] 2.42) 6.70) 15.6) 0.531
+Term)
+covipis dimer platelet
+(COVID19 Coma scale abnormal factor 4 (Custom 2| 2.39] 6.64] 15.5] 0.526
+(JANSSEN)) Term)
+covibis dimer_platelet
+(COVID19 Abdominal X-ray factor 4 (Custorn 3] 2.73] 6.57] 13.8] 0.599
+(JANSSEN)) Term)
+CovID19 dinar elgeatet
+(COVID19 Blood albumin normal factor 4 (Custom 2| 2.36] 6.53] 15.2] 0.517
+(JANSSEN)) Term)
+covipis dimer platelet
+(COVID19 Aphasia factor 4 (Custom 2| 2.35] 6.53] 15.2] 0.517
+(JANSSEN)) Term)
+COVID19 TTP_fibrin D Venogram
+(COVID19 dimer_platelet factor 4 abnonnal 5] 3.20] 6.52] 12.1] 0.403
+(JANSSEN)) (Custom Term)
+
+PSICOVID_00017040
+PritiTibHORIZED FOR PUBLIC RELEASE BY CHAIRMAN J@ERNSQN8
+
+No EBOS: EBGM
+
+COvID19 Blood thyroid TTP_fibrin D
+
+(COVID19 stimulating hormo dimer_platelet
+
+(QANSSEN)) | normal g me | factor 4 (Custom 2| 2.33] 6.47] 15.1] 0.512
+Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 Photophobia dimer_platelet
+
+(ANSSEN)) P factor 4 (Custom 3] 2.68] 6.46] 13.6] 0.589
+Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 COVID-19 ' dimer_platelet
+
+(OANSSEN)) pneumonia factor 4 (Custom 2} 2.32] 6.45] 15.0] 0.511
+Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 Pulmonary dimer_platelet
+
+GANSSEN)) _ | hyPertension factor 4 (Custom 2] 2.32] 6.43] 15.0] 0.509
+Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 —_‘| Oxygen saturati dimer_platelet
+
+QaNsseN)) | ation —_ltsctora (Custom | 2] 2:31] 6-41] 14.9) 0.438
+Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 Pupil fixed dimer_platelet
+
+(JANSSEN)) factor 4 (Custom 2} 2.30] 6.37] 14.9] 0.505
+Term)
+
+(Covi TTP_fibrin D utt d
+
+VID19 dimer_platelet factor 4 | ~ "asoun
+
+QANSSEN)) | (Custom Term) | 2domen normal 2] 2.29] 6.35) 14.8) 0.503
+
+COVID19 TTP_fibrin D
+
+(COVID19 Metabolic functi dimer_platelet
+
+(ANSSEN)) nction test factor 4 (Custom 6| 3.29] 6.34} 11,3) 0.722
+Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 Protein S dimer_platelet
+
+(JANSSEN)) factor 4 (Custom 2| 2.25] 6.24] 14.6) 0.411
+Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 Blood calcium n dimer_platelet
+
+(JANSSEN)) ormal factor 4 (Custom 2} 2.25] 6.23) 14.5) 0.493
+Term)
+
+COVID19 | TTP_fibrin D
+
+(covipig _| Antiphospholipid dimer_platelet
+
+GANSSEN)) | antibodies factor 4 (Custom 2| 2.23] 6.18] 14.4] 0.490
+Term)
+TTP_fibrin D
+
+(covioia Immunology test dimer_platelet 2} 2.23] 6.18| 14.4] 0.489
+factor 4 (Custom
+
+ee ee
+
+PSICOVID_00017041
+PritiFibHORIZED FOR PUBLIC RELEASE BY CHAIRMAN J@ERNSQN8
+
+No EBOS: EBGM
+
+(ANSSEN)) Term)
+COVID19 TTP_fibrin D
+(COVID19 COVID-19 dimer_platelet
+(ANSSEN)) factor 4 (Custom 5| 3.03] 6.18] 11.5] 0.666
+Term)
+COVID19 TTP_fibrin D
+(COVID19 Full blood count dimer_platelet
+(JANSSEN) lu factor4 (Custom | ©| 3-18] 6.13] 10.9] 0.699
+Term)
+COVID19 TTP_fibrin D
+(COVID19 Cardiolipin antib dimer_platelet
+(OANSSEN)) pin antibody factor 4 (Custom 2} 2.21] 6.13] 14.3] 0.485
+Term)
+COVvID19 Computerised TP fibrin D
+(COVID19 tomogram head imer_platelet
+GANSSEN)) | normal factor 4 (Custom 6} 3.14} 6.04] 10.8] 0.689
+Term)
+COVID19 TTP_fibrin D
+(COVID19 Angiogram dimer_platelet
+(ANSSEN)) g199 factor 4 (Custom 6] 3.12} 6.02) 10.7} 0.686
+Term)
+COVID19 TTP_fibrin D
+(COVID19 Migraine dimer_platelet
+(ANSSEN)) i factor 4 (Custom 3| 2.49] 6.00] 12.6) 0.548
+Term)
+COVID19 TTP_fibrin D
+(COVID19 Lung opacit dimer_platelet
+(ANSSEN)) S opaany factor 4 (Custom 3] 2.49] 6.00} 12.6) 0.547
+Term)
+COVID19 TTP_fibrin D
+(COVID19 Cerebrovascular dimer_platelet
+QANSSEN)) | accident factor 4 (Custom 2} 2.12] 5.89] 13.7) 0.466
+Term)
+COVID19 . TTP_fibrin D
+(COVID19 Jugular vein dimer_platelet
+(ANSSEN)) thrombosis factor 4 (Custom 3] 2.45] 5.89) 12.4) 0.325
+Term)
+(covion: TTP_fibrin D Uri
+VID19 dimer_platelet factor 4 | Urine'y system X-
+(GANSSEN)) | (Custom Term) ray 2] 2.12} 5.89) 13.7) 0.466
+COVID19 International Ue fenn D
+(COVID19 normalised ratio imer_platelet
+GIANSSEN)) | normal factor 4 (Custom 4| 2.68] 5.86] 11.5] 0.589
+Term)
+COVID19 TTP_fibrin D
+ee —28/2021
+
+PSICOVID_00017042
+pri hbIORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQakINSGiN8
+
+No EBOS: EBGM
+
+(COVID19 dimer_platelet factor 4 .
+(JANSSEN)) (Custom Term) Thrombocytopenia [17] 3.92} 5.86] 8.49] 0.860
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Venous occlusion 3] 2.43] 5.85] 12.3] 0.343
+(JANSSEN)) (Custom Term)
+COVvID19 Aspartate diner nintelet
+ANSSEN)) aminotransferase factor 4 (Custom 2] 2.09] 5.80} 13.5] 0.459
+Term)
+COVID19 TTP_fibrin D
+SANSSEN dimer_platelet factor 4 | Ultrasound scan 6} 2.97] 5.73| 10.2] 0.653
+JANSSEN)) (Custom Term)
+covio19 | Alanine dimer platelet
+OANSSEN)) aminotransferase factor 4 (Custom 2] 2.06) 5.71) 13.3] 0.452
+Term)
+CovID19 TTP_fibrin D
+dimer_platelet
+SANSSEN)) Mental status changes factor 4 (Custom 5] 2.80} 5.69] 10.6] 0.614
+Term)
+CovID19 TTP_fibrin D
+“CoV dimer_platelet
+(aNesen)) SARS-CoV-2 test factor 4 (Custom 4} 2.60) 5.68} 11.1] 0.571
+Term)
+covip19 TTP_fibrin D
+7 dimer_platelet
+(Janssen) Protein total normal factor 4 (Custom 3} 2.34) 5.63] 11.9] 0.513
+Term)
+COVvID19 TTP_fibrin D
+. dimer_platelet
+(JANSSEN) Platelet transfusion factor 4 (Custom 4] 2.54) 5.56] 10.9] 0.558
+Term)
+covip19 TTP_fibrin D
+A 7 dimer_platelet
+CANSSEN)) Antinuclear antibody factor 4 (Custom 2] 1.95} 5.40] 12.6] 0.427
+Term)
+CovID19 TTP_fibrin D
+dimer_platelet
+ANSSEN)) Blood glucose normal factor 4 (Custom 2] 1.93] 5.36] 12.5] 0.425
+Term)
+covip19 TTP_fibrin D
+‘ . dimer_platelet
+SANSSEN)) Antithrombin III factor 4 (Custom 2] 1.93] 5.36) 12.5] 0.424
+Term)
+COVID19 TTP_fibrin D
+
+PSICOVID_00017043
+PritiTkbORIZED FOR PUBLIC RELEASE BY CHAIRMAN J®QEENS QR
+
+No EBOS: EBGM
+
+GANSSEN)) Brain oedema dimer_platelet
+factor 4 (Custom 3] 2.21] 5.32
+Term) 3 11.2] 0.486
+
+COVID19 TTP_fibrin D
+
+(COVID19 Brain injur dimer_platelet
+
+(QJANSSEN)) very factor4 (Custom | 2| 1:92] 5:32] 12.4] 0.421
+Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 Skin discolourati dimer_platelet
+
+(IANSSEN)) ion | ractor4 (Custom | 2] 1-92] 5:32] 12.4) 0.421
+Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 Protein C dimer_platelet
+
+(JANSSEN)) factor 4 (Custom 2| 1.92] 5.31] 12.4) 0.421
+Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 Anxiet dimer_platelet
+
+(JANSSEN)) y factor 4 (Custom 6} 2.74) 5.28] 9.41) 0.602
+Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 Headache dimer_platelet
+
+(ANSSEN)) factor 4 (Custom |23| 3:71] 5.25] 7.26] 0.816
+Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 Metabolic acidosi dimer_platelet
+
+(JANSSEN)) 's factor 4 (Custom 2) 1.89) 5.24) 12.2) 0.415
+Term)
+
+COVID19 7 TTP_fibrin D
+
+(COVID19 Pupillary reflex dimer_platelet
+
+(ANSSEN)) impaired factor 4 (Custom 2) 1,87] 5.18} 12.1) 0.410
+Term)
+
+COVID19 TTP_fibrin D
+
+(CovID19 _| Scan with contrast dimer_platelet
+
+(JANSSEN)) S factor 4 (Custom 2| 1.85] 5.14] 12.0) 0.407
+Term)
+
+COvID19 TTP_fibrin D
+
+(COVID19 dimer_platelet f
+
+(QANSSEN)) (anton tem Ultrasound Doppler | 6| 2.66] 5.13] 9.14] 0.584
+
+COVID19 TTP_fibrin D
+
+(COVID19 Contusion dimer_platelet
+
+GANSSEN)) factor 4 (Custom 4) 2.34] 5.12] 10.0} 0.514
+Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 SARS-CoV-2 test dimer_platelet
+
+QANSSEN)) | Positive factor 4 (Custom 4] 2.33} 5.09] 9.98) 0.511
+Term)
+
+ee eR
+
+PSICOVID_00017044
+pri kHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JfakINSGHNs
+
+No EBOS: EBGM
+
+covID19 Gene mutation Aliealaties et
+(COVID19 identification test factor 4 (Custom 3} 2.09] 5.04] 10.6] 0.460
+(GJANSSEN)) negative Term)
+(COVID19 Haemorrhage factor 4 (Custom 2] 1.81} 5.02] 11.7] 0.397
+(ANSSEN)) Term)
+TTP_fibrin D
+COVID19 « ian
+Magnetic resonance dimer_platelet
+JANSSEN) imaging factor 4 (Custom 5| 2.44) 4.96) 9.23) 0.535
+Term)
+covipis dimer platelet
+(COVID19 Electrocardiogram factor 4 (Custom 5| 2.43} 4.96] 9.22] 0.535
+GANSSEN)) Term)
+covipis dimer platelet
+(COVID19 Angiogram abnormal factor 4 (Custom 3} 2.06] 4.95] 10.4] 0.452
+(JANSSEN)) Term)
+TTP_fibrin D
+COVID19 ra
+Magnetic resonance dimer_platelet
+SANSSEN)) imaging head normal factor 4 (Custom 3} 2,04) 4.90} 10.3) 0.447
+Term)
+COVID19 TTP_fibrin D
+(COVID19 Haemorrhage dimer_platelet
+(PFIZER- intracranial factor 4 (Custom 2) 1.74) 4.82) 11.2) 0.467
+BIONTECH)) Term)
+TTP_fibrin D
+COVID19 ; rae
+(covipig _| Blood sodium dimer platelet 4| 2.19] 4.79] 9.41] 0.481
+(GANSSEN)) _ | increase factor 4 (Custom
+Term)
+TTP_fibrin D
+COVvID19 / a
+Computerised dimer_platelet
+SANSSEN)) tomogram factor 4 (Custom 8) 2.64) 4.70) 7.87) 0.581
+Term)
+covipis dimer platelet
+(COVID19 Seizure factor 4 (Custom 4] 2.15] 4.70} 9.23} 0.472
+(JANSSEN)) Term)
+covipis dimer platelet
+(COVID19 Shock factor 4 (Custom 2} 1.69] 4.68] 10.9} 0.370
+(JANSSEN)) Term)
+TTP_fibrin D
+COVID19 Blood smear test dimer_platelet
+ee = =— 4/28/2021
+
+PSICOVID_00017045
+pri 4hbIORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQakINSGHN8
+
+No EBOS: EBGM
+
+(COVID19 abnormal factor 4 (Custom
+(ANSSEN)) Term) 2| 1.69] 4.68] 10.9] 0.370
+TTP_fibrin D
+COVID19 ra
+Platelet count dimer_platelet
+SANSSEN)) decreased factor 4 (Custom 30) 3.44) 4.66) 6.20) 0.754
+Term)
+TTP_fibrin D
+(covipie Electroencephalogram | dimer_platelet 3| 1.93] 4.64] 9.79] 0.424
+abnormal factor 4 (Custom . . . .
+(JANSSEN))
+Term)
+CovID19 TTP_fibrin D
+(covipi9 —_| Neck pain cimer_Platelet 4| 211] 4.61] 9.05] 0.463
+(JANSSEN) factor 4 (Custom
+Term)
+Covip19 TTP_fibrin D
+(COVID19 Feeling abnormal dimer_Platelet 2] 1.65] 4.58] 10.7] 0.362
+(JANSSEN)) factor 4 (Custom
+Term)
+TTP_fibrin D
+(covtn1s Right ventricular dimer_platelet 2| 1.651 4.57| 10.7] 0.266
+(MODERNA)) dilatation factor 4 (Custom . . . .
+Term)
+coviDi9 Activated partial diner ntatelet
+(SaNSsen)) Srrompopiastin time factor 4 (Custom 3} 1.89] 4.55] 9.58] 0.415
+Term)
+CovIp19 TTP_fibrin D
+(covID19 —_| Death dimer_platelet 6| 2.35] 4.53] 8.08) 0.517
+(GANSSEN)) factor 4 (Custom . . . .
+Term)
+COvID19 TTP_fibrin D
+(CovID1I9 —_| dimer_platelet factor 4 | Vena cava filter 2| 1.63] 4.52] 10.5] 0.229
+(JANSSEN)) (Custom Term)
+COVID19 Magnetic resonance Oreo et
+(COVID19 imaging head PI 10] 2.65] 4.45] 7.11] 0.582
+(QANSSEN)) | abnormal factor 4 (Custom
+Term)
+COVvID19 TTP_fibrin D
+(COVIDI9 ~—_—| Muscle spasms dimer_Platelet 2] 1.60] 4.44] 10.3] 0.351
+(ANSSEN)) factor 4 (Custom
+Term)
+COVID19 TTP_fibrin D
+(COvIDI9 —_| Cardiac arrest dimer platelet 2] 1.58] 4.40] 10.2] 0.348
+(GANSSEN)) factor 4 (Custom
+Term)
+62820:
+
+PSICOVID_00017046
+pri hbIORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQakINSGRN8
+
+No EBOS: EBGM
+
+covip1s dimmer platelet
+(COVID19 Lung infiltration fi AC 2] 1.57] 4.37] 10.2] 0.346
+(JANSSEN)) factor 4 (Custom
+Term)
+TTP_fibrin D
+COVID19 ia
+Immune dimer_platelet
+WANSSEN)) thrombocytopenia factor 4 (Custom 2] 1.57) 4.36) 10.1) 0.345
+Term)
+COVID19 TTP_fibrin D i
+COVID19 jimer_platelet factor 4 a 3} 1.80] 4.32] 9.11] 0.395
+d let fi gnresponsive to
+(JANSSEN)) (Custom Term)
+COVID19 TTP_fibrin D
+VID1I9 jimer_platelet factor 4 | Vision blurre 1. 4.31] 10. 0.341
+oo) d latelet fa bl d 2 55 3 ts) 3.
+(GJANSSEN)) (Custom Term)
+TTP_fibrin D
+COVID19 A a inc
+Antiphospholipid dimer_platelet
+SANSSEN)) antibodies negative factor 4 (Custom 2) 1.55) 4.29) 10.00) 0.340
+Term)
+TTP_fibrin D
+(covtn1s Fibrin D dimer dimer_platelet 40} 3.28] 4.27| 5.48] 0.721
+(ANSSEN)) increased factor 4 (Custom . . . .
+Term)
+coviDi9 Computerised dean nn eet
+(COVID19 tomogram thorax factor 4 (Custom 13} 2.66) 4.21) 6.40] 0.585
+(JANSSEN)) abnormal Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Troponin 3} 1.73] 4.17] 8.78] 0.380
+(JANSSEN)) (Custom Term)
+TTP_fibrin D
+COVID19 ie
+Blood pressure dimer_platelet
+SANSSEN)) increased factor 4 (Custom 2] 1.50] 4.16) 9.70) 0.330
+Term)
+COVID19 TTP_fibrin D
+(COVID19 Interleukin-2 receptor | dimer_platelet
+(PFIZER- assay factor 4 (Custom 2) 145) 4.02) 9.38) 0.295
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Dizziness fi —P 6| 2.08} 4.00] 7.14] 0.456
+(ANSSEN)) factor 4 (Custom
+Term)
+TTP_fibrin D
+COVID19 ae bi ie
+Prothrombin time dimer_platelet
+SANSSEN)) prolonged factor 4 (Custom 9} 2.30] 3.98} 6.49) 0.506
+Term)
+EE
+
+PSICOVID_00017047
+priRbIORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQakINSGHNs
+
+No EBOS: EBGM
+
+TTP_fibrin D
+coviD19 : . oP
+Brain natriuretic dimer_platelet
+SANSSEN)) peptide normal factor4 (Custom | 2| 1:42) 3.93) 9.17) 0.311
+Term)
+CovID19 TTP_fibrin D Ultrasound
+(COVID19 dimer_platelet factor 4 3] 1.62] 3.90] 8.23] 0.356
+QANSSEN)) | (Custom Term) abdomen abnormal
+coviD19 TTP_fibrin D “as
+(CoviDi9 _| dimer_platelet factor 4 ere ees 3| 1.62] 3.89] 8.20] 0.226
+(JANSSEN)) | (Custom Term)
+coviD19 TTP_fibrin D
+OPER. Hypercoagulation factor d (custom 2| 1.37] 3.81] 8.89] 0.350
+BIONTECH)) Term)
+covID19 Activated partial Teen et
+(COVID19 _| thromboplastin time —P 5| 1.87] 3.81] 7.08] 0.410
+(JANSSEN)) prolonged factor 4 (Custom
+Term)
+CoVvID19 TTP_fibrin D Ultrasound Doppler
+(COVID19 dimer_platelet factor 4 abnormal PP. 10} 2.24] 3.77| 6.02] 0.493
+(GJANSSEN)) (Custom Term)
+covip19 TTP_fibrin D
+(COVID19 Confusional state cimer_Platelet 3| 1.56] 3.76] 7.92] 0.343
+(ANSSEN)) factor 4 (Custom
+Term)
+coviDi9 TTP_fibrin D
+(Covipig —_| Erythema eer Platelet 2| 1.34] 3.73] 8.68] 0.295
+(ANSSEN)) factor 4 (Custom
+Term)
+covip19 TTP_fibrin D
+(CoviDi9 _| Blood urea decreasea_| “imer_platelet 4] 1.70] 3.73] 7.31] 0.374
+(JANSSEN)) factor 4 (Custom
+Term)
+coviD19 TTP_fibrin D
+(COVID19 “CoM dimer_platelet
+(PFIZER- SARS-CoV-2 test factor 4 (Custom 4| 1.70] 3.71] 7.28] 0.266
+BIONTECH)) Term)
+TTP_fibrin D
+(covinie Angiogram pulmonary | dimer_platelet 9| 2.14] 3.70] 6.04] 0.471
+(ANSSEN)) abnormal factor 4 (Custom . . . .
+Term)
+covin19 TTP_fibrin D
+(COVIDI9 —_| Atelectasis dimer platelet 3] 1.52] 3.66] 7.70] 0.333
+(GANSSEN)) factor 4 (Custom
+Term)
+Cee ee
+
+PSICOVID_00017048
+priERbORIZED FOR PUBLIC RELEASE BY CHAIRMAN JfakiNSGRN8
+
+covipis dimer platelet
+VIDIO Peripheral swelling S 4} 1. 64) 7.1 0.
+(ee) heral i fi Pic 66} 3.6: 3 365
+(JANSSEN)) factor 4 (Custom
+Term)
+covipis dimer platelet
+WANSSEN)) Abdominal pain factor 4 (Custom 6| 1.87] 3.61) 6.43] 0.411
+Term)
+covipis dimer platelet
+jeart rate increase i” . . . .
+COVID19 Hi i d factor 4 (Cust 3} 1.50] 3.60] 7.59} 0.329
+(JANSSEN)) factor 4 (Custom
+Term)
+TTP_fibrin D
+COVID19 ; rand
+(COVID19 tmmunogiobulin dimer_platelet 7] 1.93] 3.56] 6.14] 0.424
+(ANSSEN)) therapy factor 4 (Custom
+Term)
+TTP_fibrin D
+COVID19 : aon
+Oxygen saturation dimer_platelet
+SANSSEN)) decreased factor 4 (Custom 2) 1.27) 3.52) 8.21) 0.279
+Term)
+COVID19 TTP_fibrin D
+(COVID19 . dimer_platelet
+(PFIZER- Ischaemic stroke factor 4 (Custom 2} 1.26) 3.51) 8.18] 0.375
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 7 i dimer_platelet
+(PFIZER- Lipase increased factor 4 (Custom 2] 1.26] 3.50) 8.15] 0.633
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Pulmonary embolism factor 4 (Cust 28| 2.53] 3.47] 4.66] 0.557
+(JANSSEN)) factor 4 (Custom
+Term)
+Covib19 dinar platelet
+(COVID19 PCO2 decreased fi 4(C 2| 1.25] 3.46] 8.06] 0.446
+(MODERNA)) factor 4 (Custom
+Term)
+COVID19 TTP_fibrin D
+(COVID19 a dimer_platelet
+(PFIZER- Cyanosis factor 4 (Custom 2| 1.24] 3.44] 8.03] 0.624
+BIONTECH)) Term)
+TTP_fibrin D
+COVID19 7 i inc
+(COVID19 Glomerular filtration dimer_platelet 3| 1.431 3.44] 7.25] 0.314
+(JANSSEN)) rate decreased factor 4 (Custom
+Term)
+covID19 TTP_fibrin D Thrombosis 1o| 2.05] 3.44] 5.50] 0.281
+(COVID19 dimer_platelet factor 4
+
+PSICOVID_00017049
+priRbIORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQakINSGRN8
+
+No EBOS: EBGM
+
+(JANSSEN)) (Custom Term)
+COVID19 TTP_fibrin D
+(COVID19 7 dimer_platelet
+(PFIZER- Chest X-ray factor 4 (Custom 7| 1.85] 3.41] 5.88] 0.930
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 . . dimer_platelet
+(PFIZER- COVID-19 pneumonia factor 4 (Custom 2| 1.22|) 3.38] 7.88] 0.272
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet
+(PFIZER- Pulmonary mass factor 4 (Custom 3} 1.40) 3.36) 7,08) 0.701
+BIONTECH)) Term)
+TTP_fibrin D
+COVID19 ran
+(COVID19 prgotracheal aimer_platelet 8| 1890] 3.36] 5.62] 0.415
+(ANSSEN)) intubation tom) (Custom
+TTP_fibrin D
+COVID19 A A rao
+Blood lactic acid dimer_platelet
+SANSSEN)) increased factor 4 (Custom 4) 1,52) 3.32) 6.52) 0.334
+Term)
+COVID19 TTP_fibrin D
+(COVID19 7 dimer_platelet
+(PFIZER- COVID-19 factor 4 (Custom 5] 1.63] 3.31] 6.16] 0.248
+BIONTECH)) Term)
+TTP_fibrin D
+COVID19 rao
+(COVID19 Musculoskeletal feet Platelet 2| 1.19] 3.30] 7.68] 0.261
+(JANSSEN)) stiffness tom (Custom
+COVID19 TTP_fibrin D
+(COVID19 cg . dimer_platelet
+(PFIZER- Pleuritic pain factor 4 (Custom 5S} 1.62] 3.29] 6.13) 0.813
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Echocardiogram factor 4 (Cl 6{ 1.70] 3.27] 5.83] 0.813
+(MODERNA)) Tanah * (Custom
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Troponin increased 3} 1.35] 3.26] 6.86] 0.297
+(JANSSEN)) (Custom Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Vomiting 7| 1.74] 3.22] 5.54] 0.383
+(JANSSEN)) (Custom Term)
+COVID19 TTP_fibrin D 13] 2.02] 3.20] 4.86] 0.833
+(COVID19 SARS-CoV-2 test dimer_platelet
+Me = =— 4/23/2021
+
+PSICOVID_00017050
+pri EhHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JakINSGRN8
+
+No EBOS: EBGM
+
+(MODERNA)) | negative factor 4 (Custom
+Term)
+(COVID19 Leukocytosis factor 4 (Custom 2} 1.15] 3.19] 7.44] 0.253
+(GANSSEN)) Term)
+(COVID19 Oedema peripheral factor 4 (Custom 2| 1.14] 3.18] 7.40] 0.251
+(JANSSEN)) Term)
+COVID19 TTP_fibrin D
+(COVID19 International dimer_platelet
+(PFIZER- normalised ratio factor 4 (Custom 2] 1.14) 3.16} 7.36) 0.407
+BIONTECH)) Term)
+COVID19 Echocardiogram aimer_platelet
+(COVID19 normal factor 4 (Custom 2) 1.14) 3.15] 7.35] 0.250
+QANSSEN)) Term)
+coviD19 Disseminated een et
+(COVID19 intravascular PI 2} 1.13] 3.13] 7.29} 0.248
+QANSSEN)) _ | coagulation factor 4 (Custom
+Term)
+fcovibie Computerised dinar rlatelet 4] 1.42] 3.10] 6.09] 0.311
+(JANSSEN)) tomogram thorax factor 4 (Custom . . . .
+Term)
+COVID19 dimer. platelet
+(COVID19 Pleural effusion fact ia 3} 1.29] 3.10] 6.52] 0.282
+(ANSSEN)) factor 4 (Custom
+Term)
+TTP_fibrin D
+COVID19 A ‘ rae
+(CovID19 Antinuclear antibody dimer_platelet 3| 1.28] 3.07| 6.48] 0.280
+(GANSSEN)) negative factor 4 (Custom
+Term)
+covio19 _| International eer et
+(COVID19 normalised ratio —P 7| 1.65} 3.04] 5.23] 0.362
+(JANSSEN)) increased Tom) 4 (Custom
+coviD19 TTP_fibrin D
+(COVID19 A dimer_platelet
+(PFIZER- Echocardiogram factor 4 (Custom 5} 1.48] 3.02] 5.61] 0.702
+BIONTECH)) Term)
+COVvID19 TTP_fibrin D
+(COVID19 SARS-CoV-2 test dimer_platelet
+(PFIZER- negative factor 4 (Custom 11) 1.83} 3.01} 4.72) 0.506
+BIONTECH)) Term)
+S820.)
+
+PSICOVID_00017051
+pri kHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQakINSGHNs
+
+No EBOS: EBGM
+
+COVID19 TTP_fibrin D
+OgER. Pericardial effusion factor 4 (Custom 3| 1.24] 3.00] 6.31] 0.552
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+RVER. Mouth haemorrhage factor d (custom 2| 1.08] 2.98] 6.96] 0.530
+BIONTECH)) Term)
+covipis dimer-plateet
+(COVID19 Intensive care factor 4 (Custom 11] 1.81] 2.97] 4.66] 0.397
+(JANSSEN)) Term)
+COVID19 TTP_fibrin D
+(COVID19 Brain natriuretic dimer_platelet
+(PFIZER- peptide normal factor 4 (Custom 3} 1.23) 2.96) 6.24) 0.360
+BIONTECH)) Term)
+TTP_fibrin D
+COVID19 ; a rao
+Liver function test dimer_platelet
+(MODERNA)) increased factor 4 (Custom 2] 1.06} 2.95) 6.88) 0.642
+Term)
+covipis dimer platelet
+(COVID19 Pain factor 4 (Custom 9] 1.70} 2.93] 4.79] 0.373
+(JANSSEN))
+Term)
+COVID19 TTP_fibrin D
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Syncope factor 4 (Custom 3] 1.21] 2.92] 6.14] 0.266
+(JANSSEN))
+Term)
+COVID19 TTP_fibrin D
+CRUER. Oxygen therapy factor & ceustomn 2| 1.05] 2.91] 6.78] 0.465
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+CRUER. Lung opacity factor (custom 3] 1.20] 2.90] 6.10] 0.291
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 Computerised dimer_platelet
+
+PSICOVID_00017052
+pri EkHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JAkINSGRNs
+
+No EBOS: EBGM
+
+(PFIZER- tomogram abdomen factor 4 (Custom
+
+BIONTECH)) Term) 2| 1.03] 2.87] 6.68] 0.377
+
+(COVID19 Mechanical ventilation factor 4 (Custom 4} 1.31] 2.87] 5.63] 0.288
+
+(JANSSEN)) Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 A dimer_platelet
+
+(PFIZER- Neutrophil count factor 4 (Custom 2] 1.03] 2.86] 6.67] 0.450
+
+BIONTECH)) Term)
+
+COVID19 TTP_fibrin D
+
+(prizen-— [nomal [factor (custom | 2| 103] 286] 6.66] 0.518
+
+BIONTECH)) Term)
+
+COVID19 Brain natriuretic dimer_platelet
+
+SANSSEN)) peptide increased factor 4 (Custom 2] 1.03} 2.86) 6.66) 0.226
+Term)
+
+(COVID19 Deep vein thrombosis factor 4 (Custom 13} 1.79] 2.83] 4.30] 0.330
+
+(ANSSEN)) Term)
+
+fcovibia Mean cell volume dimer platelet 2! 1.021 2.82! 6.57] 0.223
+
+(JANSSEN)) increased factor 4 (Custom . . . .
+Term)
+
+COVID19 dimer. platelet
+
+lood test norma aT a . : .
+
+(COVID19 Blood i factor 4 (Custom 3} 1.17] 2.82] 5.94] 0.706
+
+(MODERNA)) Term)
+
+COvID19 TTP_fibrin D
+
+(COVID19 dimer_platelet
+
+(PFIZER- Hypopnoea factor 4 (Custom 2] 1.01} 2.80] 6.53] 0.508
+
+BIONTECH)) Term)
+
+covipis dimer platelet
+
+(COVID19 Respiratory failure factor 4 (Custom 4} 1.28) 2.80} 5.50] 0.281
+
+(JANSSEN)) Term)
+
+covipis dimer_plateet
+
+(COVID19 Pain in extremity factor 4 (Custom 7| 1.52} 2.80) 4.82] 0.333
+
+(JANSSEN)) Term)
+
+coviois dimer platelet
+
+(COVID19 Condition aggravated factor 4 (Custom 3] 1.16] 2.79] 5.89] 0.255
+
+(JANSSEN)) Term)
+
+Men 4/28/2021
+
+PSICOVID_00017053
+prikbORIZED FOR PUBLIC RELEASE BY CHAIRMAN JAkINSGANg
+
+No EBOS: EBGM
+
+COVID19 TTP_fibrin D
+(COVIDi9 _| dimer_platelet factor 4 Uitrasound Doppler | >] 1.00] 2.79] 6.50] 0.221
+(JANSSEN)) (Custom Term)
+TTP_fibrin D
+COVID19 . ran
+Oxygen saturation dimer_platelet
+{MODERNA)) decreased factor 4 (Custom 5) 1.36) 2.76) 5.14) 0.617
+Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet
+(PFIZER- Blood culture factor 4 (Custom 2}0.995| 2.76] 6.44] 0.500
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 . z dimer_platelet
+(PFIZER- Cardiac failure factor 4 (Custom 3} 1.15] 2.76) 5.82] 0.469
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Blood urea normal i” 2|0.994| 2.76] 6.43] 0.600
+(MODERNA)) factor 4 (Custom
+Term)
+COvID19
+(COVIOI9 | Simer- platelet factor 4 | Troponi 1 | 4] 1.26] 2.75] 5.40] 0.545
+(PFIZER- (custo ore mn) actor roponin normal . . : a
+BIONTECH)) ustom Term
+COVID19 TTP_fibrin D Ultrasound scan
+(COVID19 dimer_platelet factor 4 abnormal 5} 1.35] 2.75] 5.11] 0.296
+(JANSSEN)) (Custom Term)
+COVID19 TTP_fibrin D
+(COVID19 : . dimer_platelet
+(PFIZER- Pulmonary infarction factor 4 (Custom 3} 1.14] 2.74] 5.78] 0.328
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Blood gases abnormal fi - Cl 4} 1.25] 2.74} 5.38] 0.275
+(ANSSEN)) toe (Custom
+rt
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet
+(PFIZER- Rales factor 4 (Custom 2|0.987] 2.74] 6.38] 0.496
+BIONTECH)) Term)
+covipis dimer_plateet
+(COVID19 Rash i” 2|0.982} 2.73] 6.35] 0.216
+factor 4 (Custom
+(JANSSEN))
+Term)
+coviois dimer platelet
+(COVID19 Painful respiration f 4 Cl 2/0.980] 2.72| 6.34] 0.215
+(ANSSEN)) factor 4 (Custom
+Term)
+CC ee
+
+PSICOVID_00017054
+pri bbORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQkINSGNg
+
+No EBOS: EBGM
+
+TTP_fibrin D
+COVID19 . rao
+Mean cell haemoglobin | dimer_platelet
+VaNssen)) | increased factor 4 (Custom | 7/9-977) 2.71] 6.32) 0.215
+Term)
+COVID19 TTP_fibrin D
+RER. Procalcitonin increased factor d (custom 4| 1.24] 2.71] 5.32] 0.539
+BIONTECH)) Term)
+COVID19 Activated partial TTP_fibrin D
+(COVID19 ~—| thromboplastin time _| dimer_platelet 4] 1.231 2.68] 5.27] 0.617
+(PFIZER- shortened factor 4 (Custom . . . .
+BIONTECH)) Term)
+TTP_fibrin D
+COVID19 rand
+(covipig —_| Body remperature dimer_platelet 2/0.958] 2.66] 6.20] 0.578
+(MODERNA)) increase sleet 4 (Custom
+erm
+COVID19 TTP_fibrin D
+(COVID19 Electrocardiogram dimer_platelet
+(PFIZER- normal factor 4 (Custom 7) 144) 2.65) 4.57) 0.722
+BIONTECH)) Term)
+(COVID19 Nausea factor 4 (Custom 8] 1.48] 2.64] 4.42] 0.326
+(JANSSEN)) Term)
+(COVID19 Chest X-ray factor 4 (Custom 2|0.947] 2.63] 6.12] 0.208
+(JANSSEN)) Term)
+COVID19 TTP_fibrin D
+CER. Laboratory test normal factor a (custom 2/0.944] 2.62] 6.10] 0.475
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 Cerebrovascular dimer_platelet
+(PFIZER- accident factor 4 (Custom 2/0942) 2.61} 6.09) 0.385
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Hiatus hernia factor 4 (Custom 2|0.941] 2.61] 6.08] 0.568
+(MODERNA)) Term)
+covi019 Blood lactate dimer nintelet
+SANSSEN)) dehydrogenase factor 4 (Custom 2|0.937] 2.60] 6.06] 0.206
+Term)
+COVID19 TTP_fibrin D
+(COVID19 Computerised dimer_platelet
+ee = 2/28/2021
+
+PSICOVID_00017055
+pri EhbIORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQkINSGHNg
+
+No EBOS: EBGM
+
+(PFIZER- tomogram thorax factor 4 (Custom
+BIONTECH)) Term) 7| 1.40] 2.58] 4.44
+TTP_fibrin D
+coviD19 , Line
+Blood chloride dimer_platelet
+(SaNSseN)) decreased factor 4 (Custom 2/0.926} 2.57} 5,99| 0.203
+Term)
+COVID19 pe
+(COVID19 dimer. ante f tor 4 | Ti in i d 5} 1.26] 2.56] 4.76] 0.471
+(PFIZER- imer_platelet factor roponin increase: : : : .
+BIONTECH)) (Custom Term)
+covipis dimer platelet
+(COVID19 Laboratory test factor 4 (Cust 2}0.921] 2.56] 5,96} 0.202
+(JANSSEN)) Term) (Custom
+COVID19 TTP_fibrin D
+(COVID19 Oxygen saturation dimer_platelet
+(PFIZER- decreased factor 4 (Custom 4) 116) 2.54) 4.98) 0.497
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Blood lactic acid factor 4 (Cust 3} 1.02] 2.46] 5.18] 0.384
+(MODERNA)) factor 4 (Custom
+Term)
+COvID19 Acute respiratory diner ntatelet
+(SaNesen)) failure factor 4 (Custom 2/ 0.886] 2.46) 5.73) 0.195
+Term)
+COVID19 dimer. platelet
+(JANSSEN) Pneumonia factor 4 (Custom 3} 1.02] 2.45] 5.16} 0.224
+Term)
+covipis dimer platelet
+(COVID19 Chest discomfort fi - Cl 3] 1.02} 2.45] 5.16] 0.223
+(GANSSEN)) laa (Custom
+TI
+COVID19 TTP_fibrin D
+(COVID19 Acute myocardial dimer_platelet
+(PFIZER- infarction factor 4 (Custom 2/0881) 2.44) 5.70) 0.283
+BIONTECH)) Term)
+covipis dimer_platelet
+(COVID19 Lung opacity fi 4a (C 3] 1.01} 2.42] 5.11] 0.328
+(MODERNA)) Bent ustom
+erm
+COVvID19 TTP_fibrin D
+(COVID19 Red blood cell count dimer_platelet
+(PFIZER- increased factor 4 (Custom 2)0.869) 2.41) 5.62) 0.437
+BIONTECH)) Term)
+32202)
+
+PSICOVID_00017056
+pri hbIORIZED FOR PUBLIC RELEASE BY CHAIRMAN JAkINSGNs
+
+COVID19 TTP_fibrin D
+(COVID19 Mean cell volume dimer_platelet
+(PFIZER- decreased factor 4 (Custom 2/0863) 2.40) 5.58) 0.434
+BIONTECH)) Term)
+(COVID19 Scan with contrast factor 4 (Custom 2}|0.862{ 2.39] 5.58] 0.423
+(MODERNA))
+Term)
+COVID19 Computerised Ue tn Oot
+(COVID19 tomogram abdomen factor 4 (Custom 3}0.993} 2.39] 5.04] 0.218
+(JANSSEN)) abnormal Term)
+CovIDi9 Computerised eer et
+(COVID19 tomogram abdomen factor 4 (Custom 2|0.859} 2.38) 5.55] 0.518
+(MODERNA)) | normal
+Term)
+(COVID19 Chest X-ray normal factor 4 (Custom 3}0.988} 2.38] 5.02] 0.217
+(JANSSEN))
+Term)
+TTP_fibrin D
+COVID19 . rae
+Computerised dimer_platelet
+SANSSEN)) tomogram abnormal factor 4 (Custom 6} 1.23) 2.37) 4.23) 0.270
+Term)
+TTP_fibrin D
+COVID19 . rao
+(COVID19 Electrocardiogram dimer_platelet 30.983! 2.37| 4.99] 0.216
+(QANSSEN)) normal factor 4 (Custom
+Term)
+COVID19 TTP_fibrin D
+(COVID19 . dimer_platelet
+(PFIZER- Chest pain factor 4 (Custom 14] 1.52] 2.36) 3.54] 0.762
+BIONTECH)) Term)
+COVvID19 Blood creatine Alicia et
+(COVID19 _| phosphokinase factor 4 (Custom 3/0971] 2.34] 4.93] 0.213
+(JANSSEN)) | increased Term)
+TTP_fibrin D
+COVID19 i ral
+(Covipig —_| Computerised dimer_platelet 7| 1.27] 2.34] 4.02] 0.512
+(MODERNA)) tomogram thorax factor 4 (Custom
+Term)
+(covibts Cough dimer platelet 4] 1.06] 2.32] 4.54] 0.233
+(ANSSEN)) factor 4 (Custom
+Term)
+covID19 TTP_fibrin D Troponin 4] 1.06} 2.31] 4.54] 0.542
+(COVID19 dimer_platelet factor 4
+CO
+
+PSICOVID_00017057
+pri{4hbORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQkINSGHg
+
+(MODERNA)) | (Custom Term)
+COVID19 TTP_fibrin D
+(COVID19 Depressed level of dimer_platelet
+(PFIZER- consciousness factor 4 (Custom 0.833) 2.31) 5.39) 0.419
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 Monocyte percentage | dimer_platelet
+(PFIZER- decreased factor 4 (Custom 0.833) 2.31) 5.39) 0.419
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Presyncope factor 4 (Cust 0.830} 2.30] 5.36] 0.501
+(MODERNA)) factor 4 (Custom
+Term)
+COVID19 TTP_fibrin D
+(COVID19 Mean cell haemoglobin | dimer_platelet
+(PFIZER- decreased factor 4 (Custom 0.825) 2.29) 5.34) 0.415
+BIONTECH)) Term)
+TTP_fibrin D
+COVID19 rao
+SARS-CoV-2 test dimer_platelet
+{MODERNA)) positive factor 4 (Custom 1.04) 2.28) 4.47) 0.499
+Term)
+(covipie TTP_fibrin D
+(PFIZER- dimer_platelet factor 4 | Ultrasound Doppler 1.18 2.28| 4.06] 0.594
+BIONTECH)) (Custom Term)
+COVID19 TTP_fibrin D
+(COVID19 7 dimer_platelet
+(PFIZER- Electrocardiogram factor 4 (Custom 1.03] 2.25| 4.42] 0.507
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 Scan with contrast dimer_platelet
+(PFIZER- abnormal factor 4 (Custom 0.808) 2.24) 5.22) 0.281
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet
+(PFIZER- Coagulopathy factor 4 (Custom 0.808] 2.24] 5.22] 0.398
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Back pain fi i 0.928| 2.24] 4.71) 0.204
+(ANSSEN)) factor 4 (Custom
+Term)
+covipis dimer platelet
+(COVID19 Pulmonary infarction fi 5 0.799} 2.22| 5.17] 0.180
+factor 4 (Custom
+(MODERNA))
+Term)
+ee = =— 128/202!
+
+PSICOVID_00017058
+pri{hbIORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQkINS Gis
+
+COVID19 TTP_fibrin D :
+(COVIDi9 _| dimer_platelet factor 4 White plood cel 1.28] 2.21] 3.60] 0.281
+QANSSEN)) | (Custom Term)
+covipis dimer platelet
+(COVIDI9 | Acute kidney injury | Factor (Custom 0.913] 2.20] 4.64] 0.201
+(ANSSEN)) Term)
+COVID19 TTP_fibrin D
+(COVID19 feati dimer_platelet
+(PFIZER- Palpitations factor 4 (Custom 1.00] 2.20) 4.32) 0.505
+BIONTECH)) Term)
+(COVID19 Resuscitation factor 4 (Custom 0.911] 2.20} 4.62] 0.345
+(MODERNA))
+Term)
+(coviDi9 Lethargy dimer platelet 0.791] 2.20] 5.12] 0.174
+factor 4 (Custom . . . .
+(JANSSEN)) Term)
+(COVID19 Hypotension factor 4 (Custom 0.908] 2.19] 4.61] 0.199
+(JANSSEN)) Term)
+(covibi9 | chil dimer plete 1.07} 2.18] 4.05) 0.235
+(JANSSEN)) factor 4 (Custom
+erm)
+COVID19 TTP_fibrin D
+(COVID19 a a dimer_platelet
+(PFIZER- Protein total increased factor 4 (Custom 0.780] 2.16} 5.04] 0.392
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 ‘ dimer_platelet
+(PFIZER- Dyspnoea exertional factor 4 (Custom 1.06] 2.16] 4.02) 0.534
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 a dimer_platelet
+(PFIZER- Cardiac arrest factor 4 (Custom 0.770| 2.14} 4.98] 0.239
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 Glomerular filtration dimer_platelet
+(PFIZER- rate decreased factor 4 (Custom 1.10] 2.13) 3.80) 0.555
+BIONTECH)) Term)
+Red blood cell count TTP_fibrin D
+COVID19 decreased dimer_platelet 1.15] 2.13] 3.66) 0.253
+(COVID19 factor 4 (Custom
+
+PSICOVID_00017059
+priEhbIORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQkINSGRNs
+
+No EBOS: EBGM
+
+(ANSSEN)) Term)
+TTP_fibrin D
+COVID19 a ian,
+Haemoglobin dimer_platelet
+(SANSSEN)) decreased factor 4 (Custom 11) 129) 211) 3.31) 0.283
+Term)
+covipis dimer platelet
+(COVID19 Decreased appetite factor 4 (Custom 2|0.761} 2.11] 4.92] 0.167
+(JANSSEN)) Term)
+covipis dimer platelet
+(COVID19 Anticoagulant therapy factor 4 (Custom 5] 1.03} 2.09] 3.89] 0.489
+(MODERNA)) Term)
+covibis dimer platelet
+(COVID19 Dyspnoea exertional factor 4 (Custom 2|0.745| 2.07] 4.82] 0.164
+GANSSEN)) Term)
+COVID19 TTP_fibrin D
+(COVID19 - dimer_platelet
+(PFIZER- Hypoxia factor 4 (Custom 6} 1.07) 2.06] 3.67] 0.444
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Tachypnoea 5] 1.01] 2.06] 3.82] 0.609
+(MODERNA)) | (Custom Term)
+COVID19 TTP_fibrin D
+(COVID19 | vat dimer_platelet
+(PFIZER- Painful respiration factor 4 (Custom 3/0.853} 2.05] 4.33] 0.429
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Chest X-ray normal factor 4 (Custom 6| 1.06] 2.04] 3.64] 0.638
+(MODERNA)) Term)
+TTP_fibrin D
+COVID19 . . rai
+(COVID19 Cardio-respiratory factor d (custom 210.735] 2.04] 4.75] 0.260
+(MODERNA)) Term)
+covipis dimer platelet
+(COVID19 Loss of consciousness factor 4 (Custom 2|0.732| 2.03] 4.74] 0.442
+(MODERNA))
+Term)
+COVID19 TTP_fibrin D
+(COVID19 Fibrin D dimer dimer_platelet
+(PFIZER- increased factor 4 (Custom 39} 1.54) 2.00) 2.58) 0.772
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+625202)
+
+PSICOVID_00017060
+pri EkbHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JAkINSGHNs
+
+(COVID19 a dimer_platelet
+(JANSSEN)) Blood creatinine factor 4 (Custom | 4|0.916| 2.00] 3.93] 0.201
+Term)
+COVID19 TTP_fibrin D
+(COVID19 Bilirubin conjugated dimer_platelet
+(PFIZER- increased factor 4 (Custom 2|0.720| 2.00) 4.65) 0.362
+BIONTECH)) Term)
+covib19 Acute respiratory dimer platelet
+(ODERNA)) distress syndrome factor 4 (Custom 2) 0.719} 2.00) 4.65) 0.434
+Term)
+COVID19 TTP_fibrin D
+CRVER. Pulmonary embolism footer a (custom 33] 1.49] 1.99] 2.62] 0.586
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Areflexia factor 4 (Custom 2/0.718} 1.99] 4.64] 0.158
+QANSSEN)) Term)
+TTP_fibrin D
+COVID19 - aa,
+(covipis _| flood chloride factors (Custom | 3/ 0-825] 1.99] 4.19] 0.181
+(ANSSEN))
+Term)
+COVID19 TTP_fibrin D
+tegER Brain oedema anton f (Custom 2|0.712] 1.98] 4.61] 0.358
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+CRUE. Chest discomfort factor (custom 5|0.970| 1.98] 3.68) 0.488
+BIONTECH)) Term)
+covibis dimer_plateet
+(COVID19 Chest pain factor 4 (Custorn 6| 1.02] 1.98] 3.52] 0.225
+(JANSSEN)) Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Wheezing 3/0.820] 1.98] 4.16] 0.495
+(MODERNA)) | (Custom Term)
+COVID19 TTP_fibrin D
+(COVID19 Angiogram pulmonary | dimer_platelet
+(PFIZER- abnormal factor 4 (Custom 10) 1.16) 1.96] 3.13) 0.454
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Seizure factor 4 (Custom 3}0.812] 1.96] 4.12] 0.490
+(MODERNA)) Term)
+
+PSICOVID_00017061
+pri EhHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQkINSGNg
+
+covipis dimer platelet
+(COVID19 Pyrexia fi AC 9] 1.13} 1.95] 3.19] 0.249
+(JANSSEN)) factor 4 (Custom
+Term)
+covipis dimer platelet
+(COVID19 Muscular weakness factor 4 (Cust 2}0.703| 1.95] 4.55] 0.154
+(GANSSEN)) Term) (Custom
+COVID19 TTP_fibrin D
+(COVID19 . dimer_platelet
+(PFIZER- Oedema peripheral factor 4 (Custom 3]0.806} 1.94] 4.09] 0.405
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Metabolic acidosis —P 2/0699} 1.94) 4.52] 0.422
+(MODERNA)) selaaa 4 (Custom
+erm
+COVID19 TTP_fibrin D
+(COVID19 . dimer_platelet
+(PFIZER- Pleural effusion factor 4 (Custom 5}0.946] 1.93] 3.59] 0.476
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Arthralgia factor 4 (Cust 3|0.798| 1.92] 4,05] 0.175
+(ANSSEN)) factor 4 (Custom
+Term)
+coviois dimer_ platelet
+(COVID19 Pulmonary embolism fi re Cl 35] 1.44] 1.91] 2.49] 0.544
+(MODERNA)) factor 4 (Custom
+Term)
+TTP_fibrin D
+COVID19 rae
+Angiogram pulmonary | dimer_platelet
+(ODERNA)) abnormal factor 4 (Custom 11) 1.16] 1.91) 2.99) 0.600
+Term)
+covipis dimer platelet
+(COVID19 Blood test fi 4(C 6/0.987] 1.90] 3.39] 0.595
+(MODERNA)) factor 4 (Custom
+Term)
+TTP_fibrin D
+COVID19 7 ral
+Red blood cells urine dimer_platelet
+WANSSEN)) positive factor 4 (Custom 210.685} 1.90) 4.43) 0.151
+Term)
+TTP_fibrin D
+COVID19 ‘ ia
+Neutrophil count dimer_platelet
+CANSSEN)) increased factor 4 (Custom 210.684) 1.90) 4.43) 0.150
+Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet
+ee = 4/23/2021
+
+PSICOVID_00017062
+pri hbIORIZED FOR PUBLIC RELEASE BY CHAIRMAN JAHN Gis
+
+SFONTECH)) Pallor Tomy oustom 2] 0.684] 1.90] 4.42] 0.344
+COVID19 TTP_fibrin D
+(COVID19 Computerised dimer_platelet
+(PFIZER- tomogram factor 4 (Custom 6/0.980| 1.89} 3.37/ 0.492
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Thrombectomy 3)0.778| 1.87] 3.95] 0.276
+(MODERNA)) | (Custom Term)
+TTP_fibrin D
+COVID19 . dimer_platelet
+(COVID19 Haemoglobin normal factor 4 (Cust 2|0.676| 1.87] 4.37] 0.408
+(MODERNA)) factor 4 (Custom
+Term)
+CovID19 TTP_fibrin D
+(CovID19 —_| Dyspnoea dimer_platelet 12] 1.16] 1.87] 2.88] 0.255
+(JANSSEN)) factor 4 (Custom
+Term)
+CoviDi9 Aspartate ae fibrin Ot
+(COVID19 aminotransferase factor 4 (Custom 7{ 1.01} 1.86] 3.20] 0.221
+(JANSSEN)) | increased Term)
+COVID19 TTP_fibrin D
+(COVID19 ; dimer_platelet
+(PFIZER- Metabolic function test factor 4 (Custom 3| 0.770 1.85] 3.91] 0.387
+BIONTECH)) Term)
+TTP_fibrin D
+Covibis . dimer_platelet
+(COVID19 Cardiac arrest fi a(c 2/0.664]) 1.84] 4.29] 0.255
+(MODERNA)) factor 4 (Custom
+Term)
+TTP_fibrin D
+COVID19 ie
+SARS-CoV-2 test dimer_platelet
+SANSSEN)) negative factor 4 (Custom 3/0.763| 1.84) 3.87) 0.168
+Term)
+COVID19 TTP_fibrin D
+(COVID19 . . dimer_platelet
+(PFIZER- Lung infiltration factor 4 (Custom 2/0.661| 1.84] 4.28) 0.332
+BIONTECH)) Term)
+COVvID19 TTP_fibrin D
+ij dimer_platelet
+(COVID19 Paraesthesia 2/0.660} 1.83) 4.27] 0.145
+(ANSSEN)) factor 4 (Custom
+Term)
+COVID19 TTP_fibrin D
+(COVID19 7 dimer_platelet
+(PFIZER- Respiratory distress factor 4 (Custom 2/0648] 1.80] 4.19] 0.326
+BIONTECH)) Term)
+2232
+
+PSICOVID_00017063
+pri4RbORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQakINSGHNg
+
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet
+(PFIZER- Dyspnoea factor 4 (Custom 23} 1.26) 1.79] 2.47] 0.636
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 . dimer_platelet
+(PFIZER- Angiogram factor 4 (Custom 3)0.741| 1.78] 3.76] 0.307
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet
+(PFIZER- Cerebral haemorrhage factor 4 (Custom 3}0.740| 1.78) 3.75] 0.269
+BIONTECH)) Term)
+COVID19 A TTP_fibrin D
+International ina
+(COVID19 | Normalised ratio dimer_platelet 2}0.641] 1.78] 4.15] 0.322
+(PFIZER- normal factor 4 (Custom
+BIONTECH)) Term)
+COVID19 _. | 11P_fibrin D
+Mean cell haemoglobin |. —
+(COVID19 - dimer_platelet
+(PFIZER- concentration factor 4 (Custom 2|0.641 1.78] 4.14] 0.322
+BIONTECH)) Term)
+TTP_fibrin D
+coviD19 ; ire
+General physical dimer_platelet
+{MODERNA)) health deterioration factor 4 (Custom 2/0640) 1.78) 4.14) 0.386
+Term)
+COVID19 TTP_fibrin D
+(COVID19 Lymphocyte count dimer_platelet
+(PFIZER- decreased factor 4 (Custom 4/0.807} 1.76} 3.46) 0.406
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 COVID-19 fi AC 3|0.732] 1.76] 3.72] 0.324
+(MODERNA)) factor 4 (Custom
+Term)
+COVID19 TTP_fibrin D
+(COVID19 a dimer_platelet
+(PFIZER- Haematocrit increased factor 4 (Custom 210.635] 1.76] 4.11] 0.319
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 Serum ferritin dimer_platelet
+(PFIZER- increased factor 4 (Custom 2/0633) 1.76} 4.09) 0.318
+BIONTECH)) Term)
+(covints Hypertension dimer platelet 2/0.629] 1.75] 4.07] 0.138
+YP factor 4 (Custom . . . .
+(ANSSEN)) tT
+erm)
+TTP_fibrin D
+COVID19 dimer_platelet
+ee = 2/28/2021
+
+PSICOVID_00017064
+pri hbHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQkINSGHNs
+
+(SaNeseny) Myalgia ieee (Custom 2]0.617] 1.71] 3.99] 0.136
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Walking aid user 2/0.610] 1.69] 3.94] 0.368
+(MODERNA)) | (Custom Term)
+COVID19 TTP_fibrin D
+(COVID19 . dimer_platelet
+(PFIZER- Anion gap decreased factor 4 (Custom 2|0.608} 1.69] 3.93] 0.306
+BIONTECH)) Term)
+fcovipia | TTPfibrin b
+(PFIZER- dimer_platelet factor 4 | Thrombectomy 2}|0.607| 1.68] 3.93] 0.166
+Custom Term)
+BIONTECH)) | ¢
+COVID19 TTP_fibrin D
+(COVID19 ee dimer_platelet
+(PFIZER- Condition aggravated factor 4 (Custom 4/0.767) 1.68} 3.29] 0.385
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet
+(PFIZER- Cough factor 4 (Custom 6|0.869;) 1.68} 2.99} 0.437
+BIONTECH)) Term)
+(coviie TTP_fibrin D
+(PFIZER- dimer_platelet factor 4 | Thrombosis 11} 1.02 1.67] 2.62] 0.512
+(Custom Term)
+BIONTECH))
+covinis, arp fibrin
+(PFIZER- dimer_platelet factor 4 | Wheezing 2|0.603} 1.67] 3.90] 0.303
+(Custom Term)
+BIONTECH))
+covipis dimer platelet
+(COVID19 Heart rate increased factor 4 (Custom 3|0.694] 1.67] 3.52] 0.419
+(MODERNA))
+Term)
+covipis dimer platelet
+(COVID19 Angiogram abnormal factor 4 (Custom 2/0.599} 1.66) 3.87] 0.361
+(MODERNA)) Term)
+covipis dimer platelet
+(COVID19 Blood urea increased factor 4 (Custom 4/0.759] 1.66} 3.26] 0.167
+(JANSSEN)) Term)
+COVID19 TTP_fibrin D
+(COVID19 «anti, - | dimer_platelet
+(PFIZER- Injection site pain factor 4 (Custom 2/0.598] 1.66] 3.87] 0.301
+BIONTECH)) Term)
+2282021
+
+PSICOVID_00017065
+pri hbIORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQQkINSGHNs
+
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Thrombosis 12] 1.01 1.63} 2.51} 0.610
+(MODERNA)) | (Custom Term)
+covipis dimer platelet
+(COVID19 Dyspnoea exertional factor 4 (Cust 4|0.744| 1.63} 3.19] 0.449
+(MODERNA)) Term) (Custom
+COVID19 TTP_fibrin D
+(COVID19 A dimer_platelet
+(PFIZER- Haematuria factor 4 (Custom 2/0.584] 1.62] 3.78] 0.294
+BIONTECH)) Term)
+TTP_fibrin D
+COVID19 a imma
+Blood albumin dimer_platelet
+ANSSEN)) decreased factor 4 (Custom 410.740} 1.62) 3.18) 0.163
+Term)
+fcovipie TTP_fibrin D
+dimer_platelet factor 4 | Troponin 2}0.582}] 1.62| 3.76] 0.222
+(PFIZER- PI Ps
+BIONTECH)) (Custom Term)
+TTP_fibrin D
+COVID19 aa,
+Electroencephalogram | dimer_platelet
+{MODERNA)) abnormal factor 4 (Custom 20.579) 161) 3.74) 0.349
+Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Tachycardia 4|0.732| 1.60] 3.14] 0.161
+(JANSSEN)) (Custom Term)
+COVID19 dimer. platelet
+(COVID19 Full blood count —P 3|0.664] 1.60} 3.37] 0.401
+factor 4 (Ci
+(MODERNA)) ton) (Custom
+COVID19 TTP_fibrin D
+(COVID19 Brain natriuretic dimer_platelet
+(PFIZER- peptide increased factor 4 (Custom 4/0.726| 1,59} 3.12) 0.365
+BIONTECH)) Term)
+TTP_fibrin D
+COVID19 A ras
+Blood potassium dimer_platelet
+SANSSEN)) decreased factor 4 (Custom 310.656} 1.58) 3.33) 0.144
+Term)
+COVID19 - TTP_fibrin D
+Computerised ia,
+(COVIDI9 | tomogram thorax dimer_platelet 1o|0.930] 1.56] 2.50] 0.468
+(PFIZER- abnormal factor 4 (Custom
+BIONTECH)) Term)
+TTP_fibrin D
+COVID19 7 ooo
+(COVID19 Blood calcium dimer_platelet 5| 0.761 1.55] 2.88] 0.167
+(ANSSEN)) lecreased factor 4 (Custom
+Term)
+SE 2820)
+
+PSICOVID_00017066
+pri 4kbIORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQkINSGRNs
+
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Troponin increased | 3|0.642] 1.55] 3.26] 0.272
+(MODERNA)) | (Custom Term)
+COVID19 TTP_fibrin D
+(COVID19 Influenza virus test dimer_platelet
+(PFIZER- negative factor 4 (Custom 2/0557] 1.54) 3.60) 0.280
+BIONTECH)) Term)
+(coviie Fatigue dimer platelet 510.757] 1.54] 2.87] 0.166
+(JANSSEN)) 9 factor 4 (Custom . . . .
+Term)
+covipis dimer platelet
+(COVID19 Angiogram factor 4 (Cust 3/0.640} 1.54] 3.25] 0.349
+(MODERNA)) factor 4 (Custom
+Term)
+CoVvID19 Alanine Ptr et
+(COVID19 aminotransferase fact von te 5|0.751} 1.53] 2.84] 0.165
+(ANSSEN)) _ | increased ‘actor 4 (Custom
+Term)
+covipi9 Computerised Deo et
+(COVID19 tomogram thorax factor 4 (Custom 11}0.931 1.53] 2.40] 0.562
+(MODERNA)) | abnormal Term)
+COVID19 TTP_fibrin D
+tegER Hyperhidrosis anton f (Custom 2/0.549] 1.52] 3.55] 0.276
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Chest X-ray factor 4 (Cust 3|0.628] 1.51] 3.19} 0.379
+(MODERNA)) factor 4 (Custom
+Term)
+TTP_fibrin D
+(coviols Fibrin D dimer dimer_platelet 321 1.11] 1.49! 1.97] 0.672
+(MODERNA)) increased factor 4 (Custom . . . .
+Term)
+COVID19 TTP_fibrin D
+(COVID19 Computerised dimer_platelet
+(PFIZER- tomogram abnormal factor 4 (Custom 8/0.839) 1.49) 2.50) 0.422
+BIONTECH)) Term)
+(coviors | Computerised dimer platelet
+(PFIZER- tomogram head factor 4 (Custom 5| 0.733 1.49] 2.78] 0.368
+BIONTECH)) | normal Term)
+COVID19 . TTP_fibrin D
+(COVID19 Blood culture negative dimer_platelet 3/0619} 1.49) 3.14] 0.311
+(PFIZER- factor 4 (Custom
+
+PSICOVID_00017067
+pri GHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQkINSGHNs
+
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 F dimer_platelet
+(PFIZER- Back pain factor 4 (Custom 4|0.679|} 1.48] 2.92] 0.341
+BIONTECH)) Term)
+(covibia | Atelectasis dimer pltee 3}0.604] 1.45] 3.06) 0.364
+factor 4 (Custom . . . .
+(MODERNA)) Term)
+(COVID19 Dyspnoea factor 4 (Custom 20|0.999] 1.45] 2.04] 0.603
+(MODERNA)) Term)
+(COVID19 Chest X-ray abnormal factor 4 (Custom 4/0.661) 1.44] 2.84] 0.145
+GANSSEN)) Term)
+COVID19 TTP _fibrin D
+(COVID19 - ; dimer_platelet
+(PFIZER- Respiratory failure factor 4 (Custom 5|0.707| 1.44] 2.68] 0.356
+BIONTECH)) Term)
+COVID19 7
+TTP_fibrin D
+(COVID19 | gimer_platelet factor 4 | Ultrasound scan 5/0.705] 1.44] 2.67] 0.355
+(PFIZER- (Custom Term) abnormal
+BIONTECH))
+COVID19 TTP_fibrin D
+(COVID19 Blood glucose dimer_platelet
+(PFIZER- increased factor 4 (Custom 10} 0.844) 1.42) 2.26) 0.424
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet
+(PFIZER- Death factor 4 (Custom 6|0.733| 1.41] 2.52] 0.277
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 . ‘ dimer_platelet
+(PFIZER- Deep vein thrombosis factor 4 (Custom 12|0.865] 1.39] 2.15] 0.408
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Protein total decreased factor 4 (Custom 2/0.500} 1.39) 3.24] 0.110
+(ANSSEN)) Term)
+covipis dimer platelet
+(COVID19 Haematocrit decreased factor 4 (Custom 6/0.708| 1.36] 2.43] 0.155
+(JANSSEN)) Term)
+
+PSICOVID_00017068
+pri{4hbORIZED FOR PUBLIC RELEASE BY CHAIRMAN JakINSGRN8
+
+COVID19 TTP_fibrin D
+Blood lactate roe
+(COVID19 dimer_platelet
+(PFIZER- dehydrogenase factor 4 (Custom 0.489} 1.36] 3.16] 0.246
+BIONTECH)) Term)
+TTP_fibrin D
+COVID19 | ia
+Echocardiogram dimer_platelet
+WANSSEN)) abnormal factor 4 (Custom 0.489) 1.36} 3.16) 0.107
+Term)
+COVID19 TTP_fibrin D
+(COVID19 A ane dimer_platelet
+(PFIZER- Acute kidney injury factor 4 (Custom 0.665] 1.36} 2.52] 0.334
+BIONTECH)) Term)
+COVID19 7
+TTP_fibrin D
+(COVID19 | dimer_platelet factor 4 | Ultrasound Doppler 0.486] 1.35] 3.14] 0.244
+(PFIZER- (Custom Term) normal
+BIONTECH))
+TTP_fibrin D
+COVID19 Gerrit it aon
+Red cell distribution dimer_platelet
+SANSSEN)) width increased factor 4 (Custom 0.482} 1.34) 3.12) 0.106
+Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet
+(PFIZER- Full blood count factor 4 (Custom 0.482] 1.34] 3.12] 0.242
+BIONTECH)) Term)
+covipis dimer_plateet
+(COVID19 Chest pain fi AC 0.738] 1.31] 2.20] 0.445
+(MODERNA)) ton (Custom
+COVID19 TTP_fibrin D
+(COVID19 Carbon dioxide dimer_platelet
+(PFIZER- decreased factor 4 (Custom 0.544) 1.31) 2.76) 0.274
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 Red cell distribution dimer_platelet
+(PFIZER- width increased factor 4 (Custom 0.679) 1.31| 2.33) 0.341
+BIONTECH)) Term)
+TTP_fibrin D
+COVID19 ia
+Blood glucose dimer_platelet
+WANSSEN)) increased factor 4 (Custom 0.593) 1.30} 2.54) 0.130
+Term)
+(covints Malaise dimer platelet 0.464] 1.29] 3.00] 0.102
+(JANSSEN)) factor 4 (Custom . . . .
+Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet
+ee = =— 128/202!
+
+PSICOVID_00017069
+pri RbIORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQkINSGRN8
+
+(PFIZER- factor 4 (Custom
+BIONTECH)) Laboratory test Term) 0.463] 1.29) 3.00] 0.233
+fcovipia | TTP_fibrin b
+(PFIZER- dimer_platelet factor 4 | Transfusion 0.463] 1.29] 3,00] 0.233
+Custom Term)
+BIONTECH)) | “
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet
+(PFIZER- Syncope factor 4 (Custom 0.462] 1.28) 2.99] 0.232
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+BIONTECH)) Term)
+covibis dimer platelet
+(COVID19 Hypoxia factor 4 (Custom 0.578| 1.26| 2.48] 0.304
+(MODERNA)) Term)
+covipis dimer platelet
+(COVID19 Metabolic function test factor 4 (Custom 0.455] 1.26] 2.94] 0.275
+(MODERNA)) Term)
+covibia dimer_platelet
+(COVID19 Death factor4 (Custom 0.655] 1.26] 2.25] 0.241
+(MODERNA))
+Term)
+COVID19 TTP_fibrin D
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet
+(PFIZER- Confusional state factor 4 (Custom 0.449] 1.25] 2.90] 0.226
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+BIONTECH)) Term)
+covipis dimer_platelet
+(COVID19 Electrocardiogram factor 4 (Custom 0.444] 1.23| 2.87] 0.260
+(MODERNA)) Term)
+fcovibi9 TTP_fibrin D
+(PFIZER- dimer_platelet factor 4 | Tachycardia 0.634] 1.22] 2.18] 0.297
+(Custom Term)
+BIONTECH))
+ee 4/28/2021
+
+PSICOVID_00017070
+pri hbIORIZED FOR PUBLIC RELEASE BY CHAIRMAN JAkINSGRNs
+
+COVID19 TTP_fibrin D
+(COVID19 7 dimer_platelet
+(PFIZER- Chest X-ray abnormal factor 4 (Custom 0.709} 1.22] 2.00] 0.356
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 Red blood cell count dimer_platelet
+(PFIZER- decreased factor 4 (Custom 9.705) 1.22) 1.99) 0.355
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 f dimer_platelet
+(PFIZER- Chills factor 4 (Custom 0.597] 1.22] 2.26] 0.300
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet
+(PFIZER- Blood test factor 4 (Custom 0.504] 1.21} 2.56] 0.253
+BIONTECH)) Term)
+COVID19 7 i TTP_fibrin D
+Activated partial rao
+(COVID19 es dimer_platelet
+(PFIZER- thromboplastin time factor 4 (Custom 0.501] 1.21] 2.54] 0.252
+BIONTECH)) | Prolong Term)
+COVID19 TTP_fibrin D
+(COVID19 Neutrophil count dimer_platelet
+(PFIZER- increased factor 4 (Custom 0.500) 1.20) 2.54) 0.251
+BIONTECH)) Term)
+TTP_fibrin D
+COVID19 . oa
+(covioig | Fomputerised | mumer_Platelet 0.644] 1.19] 2.05] 0.389
+(MODERNA)) tomogram abnormal factor 4 (Custom
+Term)
+COVID19 TTP_fibrin D Ultrasound Doppler
+(COVID19 dimer_platelet factor 4 | orm PP. 0.426] 1.18] 2.76] 0.257
+(MODERNA)) | (Custom Term)
+CovID19 Lymphocyte dimer rigtetet
+CANSSEN)) percentage decreased factor 4 (Custom 0.489} 1.18} 2.48) 0.107
+Term)
+(coviots Syncope dimer platelet 0.424] 1.18] 2.74] 0.256
+(MODERNA)) YyAncop factor 4 (Custom . . . .
+Term)
+COVvID19 TTP_fibrin D
+(COVID19 Blood alkaline dimer_platelet
+(PFIZER- phosphatase increased | factor 4 (Custom 0.422! 1.17) 2.73) 0.212
+BIONTECH)) Term)
+COVID19
+(COVID19 TTP_fibrin D Tachypnoea 0.419 1.16] 2.71] 0.211
+(PFIZER- dimer_platelet factor 4
+
+PSICOVID_00017071
+pri hbIORIZED FOR PUBLIC RELEASE BY CHAIRMAN JakINSGHNs
+
+BIONTECH)) | (Custom Term)
+COVID19 dimer. platelet
+(COVID19 Fall factor 4 (Custom 0.418} 1.16] 2.70] 0.252
+(MODERNA)) Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Ultrasound scan 0.417] 1.16] 2.70] 0.252
+(MODERNA)) | (Custom Term)
+COVID19 dimer. platelet
+(COVID19 Myalgia factor 4 (Custom 0.479] 1.15] 2.43] 0.289
+(MODERNA)) Term)
+(COVID19 Laboratory test factor 4 (Custom 0.416] 1.15] 2.69] 0.251
+(MODERNA)) tT
+
+erm)
+(COVID19 Dizziness factor 4 (Custom 0.475] 1.14] 2.41] 0.287
+(MODERNA)) Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Ultrasound Doppler 0.473} 1.14] 2.40] 0.286
+(MODERNA)) | (Custom Term)
+COVID19 TTP_fibrin D
+(COVID19 . dimer_platelet
+(PFIZER- Malaise factor 4 (Custom 0.519] 1.14] 2.23] 0.261
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 A dimer_platelet
+(PFIZER- Pain factor 4 (Custom 0.581) 1.12} 2.00] 0.292
+BIONTECH)) Term)
+(COVID19 Sinus tachycardia factor 4 (Custom 0.402] 1.12} 2.60] 0.243
+(MODERNA)) Term)
+COVID19 TTP_fibrin D
+(COVID19 . dimer_platelet
+(PFIZER- Pyrexia factor 4 (Custom 0.645] 1.11] 1.82] 0.324
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 Blood lactic acid dimer_platelet
+(PFIZER- increased factor 4 (Custom 0.461) 1.11} 2.34) 0.232
+BIONTECH)) Term)
+COVID19 Diarrhoea TTP_fibrin D 0.460] 1.11] 2.33) 0.277
+(COVID19 dimer_platelet
+
+PSICOVID_00017072
+pri kHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JAkINS Gs
+
+(MODERNA)) factor 4 (Custom
+Term)
+
+COVID19 TTP_fibrin D
+
+VIDI i latel
+tpevER. Lethargy emer p (custom 0.397| 1.10] 2.57] 0.200
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 Echocardiogram dimer_platelet
+(PFIZER- abnormal factor 4 (Custom 0.502} 1.10} 2.16) 0.253
+BIONTECH)) Term)
+COVID19 7
+(COVIDi9 Up for D
+(PFIZER- jimer_platelet factor 4 | Thrombocytopenia 0.565] 1.09} 1.94] 0.284
+BIONTECH)) (Custom Term)
+covibis dimer platelet
+(COVID19 Pneumonia factor 4 (Custom 0.497] 1.09} 2.13] 0.300
+(MODERNA)) Term)
+COVID19 TTP_fibrin D
+teeyER Pain in extremity factors (Custom 0.526] 1.07] 2.00} 0.265
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Asthenia factor 4 (Custom 0.374| 1.04} 2.43] 0.082
+(JANSSEN)) Term)
+COVID19 dimer. platelet
+(COVID19 Blood urine present factor 4 (Custom 0.372] 1.03] 2.40] 0.224
+(MODERNA)) Term)
+COVID19 TTP_fibrin D
+(EER. Decreased appetite factor d (custom 0.367] 1.02] 2.38] 0.185
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Mechanical ventilation factor 4 (Custom 0.413] 0.994} 2.09] 0.249
+(MODERNA)) Term)
+COVID19 TTP_fibrin D
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+CORER Anaemia factor d (Custom 0.352| 0.978| 2.28] 0.177
+BIONTECH)) Term)
+
+PSICOVID_00017073
+pri{4RbORIZED FOR PUBLIC RELEASE BY CHAIRMAN JAkINSGNs
+
+COVID19 TTP_fibrin D
+(COVID19 Blood potassium dimer_platelet
+(PFIZER- decreased factor 4 (Custom 0.446 | 0.975} 1.91) 0.224
+BIONTECH)) Term)
+TTP_fibrin D
+COVID19 | ia
+Computerised dimer_platelet
+(ODERNA)) tomogram factor 4 (Custom 0.404 | 0.974) 2.05) 0.244
+Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet
+(PFIZER- Nausea factor 4 (Custom 0.475 | 0.968] 1.80} 0.239
+BIONTECH)) Term)
+TTP_fibrin D
+COVID19 A rand
+(COvID19 Cerebral venous sinus dimer_platelet 0.344] 0.955| 2.23] 0.208
+thrombosis factor 4 (Custom
+(MODERNA)) Term)
+COVID19 TTP_fibrin D
+(COVID19 ; dimer_platelet
+(PFIZER- Blood urea increased factor 4 (Custom 0.495] 0.954] 1.70] 0.249
+BIONTECH)) Term)
+(COVID19 Hypotension i 0.395] 0.952} 2.01} 0.239
+(MODERNA)) factor 4 (Custom
+Term)
+COVID19 TTP_fibrin D
+(COVID19 a dimer_platelet
+(PFIZER- Myalgia factor 4 (Custom 0.342] 0.949} 2.21] 0.172
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Pyrexia factor 4 (Cust 0.525] 0.935] 1.56] 0.317
+(MODERNA)) Term) (Custom
+Covib19 dinar platelet
+(COVID19 Chills > 0.427] 0.933] 1.83] 0.257
+factor 4 (Custom
+(MODERNA)) Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 oirasourd Doppler 0.457| 0.930] 1.73] 0.276
+(MODERNA)) | (Custom Term)
+covipis dimer platelet
+(COVID19 Intensive care fi AC 0.496] 0.916] 1.58] 0.299
+(MODERNA)) ton (Custom
+erm
+Electrocardiogram TTP_fibrin D
+COVID19 abnormal 9 dimer_platelet 0.474} 0.914) 1.63) 0.286
+(COVID19 factor 4 (Custom
+ee — 28/2021
+
+PSICOVID_00017074
+pri EhIORIZED FOR PUBLIC RELEASE BY CHAIRMAN JAkINSGHNs
+
+(MODERNA)) Term)
+
+COVID19 dimer. platelet
+
+(COVID19 Sepsis factor 4 (Custom 2} 0.328] 0.911] 2.12] 0.198
+(MODERNA)) Term)
+
+(coviois fonearen abdomen dimer platelet 2|0.327| 0.907] 2.12] 0.164
+(PFIZER- apnoonal factor 4 (Custom . . . .
+BIONTECH)) Term)
+
+(COVID19 Chest discomfort factor 4 (Custom 2} 0.327] 0.906] 2,11} 0.197
+(MODERNA)) Term)
+
+covibis dimer platelet
+
+(COVID19 Condition aggravated factor 4 (Custom 2/}0.326| 0.904] 2.11] 0.197
+(MODERNA)) Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 - dimer_platelet
+
+(PFIZER- Hypertension factor 4 (Custom 2/}0.326| 0.904] 2.11] 0.162
+BIONTECH)) Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 Blood albumin dimer_platelet
+
+(PFIZER- decreased factor 4 (Custom 5/ 0.443 0.902) 1.68) 0.223
+BIONTECH)) Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 Haemoglobin dimer_platelet
+
+(PFIZER- _| decreased factor 4 (Custom | 20 | 9-533] 0.895] 1.43) 0.268
+BIONTECH)) Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 Endotracheal dimer_platelet
+
+(PFIZER- intubation factor 4 (Custom | 4| 409] 0-894] 1.75) 0.205
+BIONTECH)) Term)
+
+(COVID19 Cough factor 4 (Custom 3| 0.366 | 0.882] 1.86] 0.221
+(MODERNA)) Term)
+
+COVID19 Electrocardiogram aimer_platelet
+
+(CovIDI9 | factor 4 (Custom 2] 0.316] 0.879] 2.05] 0.069
+(JANSSEN)) Term)
+
+COVID19 TTP_fibrin D
+
+(COVID19 Electrocardiogram dimer_platelet
+
+(PFIZER- abnormal factor 4 (Custom 5/ 0.430} 0.875] 1.63| 0.216
+BIONTECH)) Term)
+
+PSICOVID_00017075
+pri GbORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQkINSGNs
+
+COVID19 es
+TTP_fibrin D
+(COVID19 | gimer_platelet factor 4 | Ultrasound Doppler | 4/9 397] 9.868] 1.70 0.200
+(PFIZER- (Custom Term) abnormal
+BIONTECH))
+(COVID19 Chest X-ray abnormal factor 4 (Custom 0.468 | 0.863} 1.49] 0.282
+(MODERNA)) Term)
+COVID19 TTP_fibrin D
+(COVID19 . dimer_platelet
+(PFIZER- Fatigue factor 4 (Custom 0.420] 0.855} 1.59} 0.211
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Pleural effusion factor 4 (Custom 0.308 | 0.854} 1.99] 0.186
+(MODERNA))
+Term)
+COVID19 7 TTP_fibrin D
+Magnetic resonance int
+(COVID19 " : dimer_platelet
+(PFIZER- imaging head factor 4 (Custom 0.354} 0.852} 1.80) 0.178
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 Blood sodium dimer_platelet
+(PFIZER- decreased factor 4 (Custom 0.353) 0.850| 1.79) 0.177
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 . . dimer_platelet
+(PFIZER- Abdominal pain factor 4 (Custom 0.305 | 0.846} 1.97] 0.153
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 . dimer_platelet
+(PFIZER- Haematocrit decreased factor 4 (Custom 0.466 | 0.829] 1.39] 0.234
+BIONTECH)) Term)
+TTP_fibrin D
+COVvID19 , a
+(covipis —_| Acute respiratory factor & ceustomn 0.295] 0.818] 1.91] 0.178
+(MODERNA)) Term)
+TTP_fibrin D
+COVID19 ral
+(CoviD19 Blood glucose factor (custom 0.420] 0.810] 1.44] 0.254
+(MODERNA)) Term)
+coviD19 Computerised dimer ntntelet
+(COVID19 tomogram abdomen > 0.292] 0.810} 1.89) 0.176
+(MODERNA)) | abnormal factor 4 (Custom
+Term)
+covID19 TTP_fibrin D Tachycardia 0.368| 0.804] 1.58] 0.222
+(COVID19 dimer_platelet factor 4
+ee = =— 428/202!
+
+PSICOVID_00017076
+pri 4kbIORIZED FOR PUBLIC RELEASE BY CHAIRMAN JAkINSGNs
+
+(MODERNA)) | (Custom Term)
+COVID19 dimer. platelet
+(COVID19 Hypertension fact 4 Ci 2}0.289| 0.803] 1.87] 0.175
+(MODERNA)) factor 4 (Custom
+Term)
+TTP_fibrin D
+COVID19 ra
+Endotracheal dimer_platelet
+(ODERNA)) intubation factor 4 (Custom 4/ 0.364} 0.796} 1.56) 0.220
+Term)
+(COVID19 Fatigue factor 4 (Cust 5|0.391] 0.795] 1.48] 0.236
+(MODERNA)) toe) (Custom
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet
+(PFIZER- Blood gases abnormal factor 4 (Custom 2|0.285} 0.790] 1.84] 0.143
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Vomiting 3] 0.327] 0.788] 1.66] 0.197
+(MODERNA)) | (Custom Term)
+(COVID19 Abdominal pain fi AC 2| 0.282} 0.782] 1.82] 0.170
+(MODERNA)) tomy ustom
+erm
+COVID19 TTP_fibrin D
+Aspartate in
+(COVID19 dimer_platelet
+(PFIZER- aminotransferase factor 4 (Custom 5| 0.384} 0.782| 1.46] 0.193
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 Blood bilirubin dimer_platelet
+(PFIZER- increased factor 4 (Custom 2 | 0.280} 0.778} 1.81) 0.141
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 Platelet count dimer_platelet
+(PFIZER- decreased factor 4 (Custom 10} 0.460 | 0.773) 1.24) 0.231
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 . dimer_platelet
+(PFIZER- Intensive care factor 4 (Custom 5|0.372| 0.758) 1.41] 0.187
+BIONTECH)) Term)
+CoviD19 diner ntatelet
+(COVID19 Nausea fi AC 4/0.341] 0.746} 1.46] 0.206
+(MODERNA)) factor 4 (Custom
+Term)
+COVID19 TTP_fibrin D
+
+PSICOVID_00017077
+pri4GbORIZED FOR PUBLIC RELEASE BY CHAIRMAN JAkINSGs
+
+(COVID19 dimer_platelet
+(MODERNA)) | Pain factor 4 (Custom 0.338 | 0.739] 1.45] 0.204
+Term)
+COVID19 TTP_fibrin D
+(COVID19 Lymphocyte dimer_platelet
+(PFIZER- percentage decreased | factor 4 (Custom 0.336 | 0.736| 1.44) 0.169
+BIONTECH)) Term)
+COVID19 TTP_fibrin D
+(COVID19 + dimer_platelet
+(PFIZER- Pneumonia factor 4 (Custom 0.265 | 0.734] 1.71] 0.133
+BIONTECH)) Term)
+(COVID19 Arthralgia factor 4 (Custom 0.255] 0.707} 1.65] 0.154
+(MODERNA))
+Term)
+COVID19 TTP_fibrin D
+(COVID19 Blood chloride dimer_platelet
+(PFIZER- increased factor 4 (Custom 0.253 | 0.704) 1.64) 0.127
+BIONTECH)) Term)
+TTP_fibrin D
+COVID19 | on
+(covipio _| Blood potassium factor d (Custom 0.291] 0.701] 1.48] 0.176
+(MODERNA)) Term)
+COVID19 TTP_fibrin D
+(COVID19 : dimer_platelet
+(PFIZER- Asthenia factor 4 (Custom 0.285 | 0.688} 1.45] 0.143
+BIONTECH)) Term)
+covipis dimer platelet
+(COVID19 Deep vein thrombosis factor 4 (Custom 0.352] 0.679} 1.21} 0.202
+(MODERNA)) Term)
+TTP_fibrin D
+COVID19 , A ic
+(COVID19 rreactive protein factor d (custom 0.245] 0.679| 1.58] 0.148
+(MODERNA)) Term)
+COVID19 ‘
+TTP_fibrin D :
+(COVID19 aac White blood cell
+(PFIZER- (custor tem 4 count increased 0.333 | 0.678} 1.26) 0.167
+BIONTECH))
+COVID19 se
+TTP_fibrin D
+(COVID19 | gimer_platelet factor 4 | White blood cell 0.239] 0.663] 1.54] 0.120
+(PFIZER- (Custom Term) count decreased
+BIONTECH))
+COvID19 Neutrophil percentage | TTP_fibrin D
+(COVID19 increased p 9° | dimer_platelet 0.275 | 0.662} 1.40] 0.138
+(PFIZER- factor 4 (Custom
+12320:
+
+PSICOVID_00017078
+pri{EhbORIZED FOR PUBLIC RELEASE BY CHAIRMAN JAkINS Gis
+
+BIONTECH)) Term)
+Covibis dimer_platelet
+(COVID19 Pain in extremity factor4 (Custom 0.269 | 0.647] 1.36] 0.162
+(MODERNA))
+Term)
+fcovibie TTP_fibrin D
+(PFIZER- dimer_platelet factor 4 | Vomiting 0.232 | 0.644] 1.50} 0.117
+(Custom Term)
+BIONTECH))
+COvID19 TTP_fibrin D
+(COVID19 dimer_platelet
+(PFIZER- Headache factor’4 (Custom 0.289] 0.633] 1.24] 0.145
+BIONTECH)) Term)
+TTP_fibrin D
+CcovID19 iv
+(COVID19 Fatelet count aimer_platelet 0.366 | 0.632] 1.03] 0.221
+(MODERNA)) jecrease tom) (Custom
+COVID19 TTP_fibrin D
+BIONTECH)) Term)
+covibis dimer platelet
+(COVID19 Malaise factor 4 (Custom 0.224] 0.622] 1.45] 0.135
+(MODERNA)) Term)
+COVID19 dimer_platelet
+(COVID19 Asthenia factor 4 (Custom 0.257] 0.620] 1.31] 0.155
+(MODERNA))
+Term)
+coviD19 Al TTP_fibrin D
+(COVID19 janine f dimer_platelet > nl 1.2 127
+(PFIZER- aminotransferase factor 4 (Custom 9.253} 0.611) 1.29) 0.
+BIONTECH)) Term)
+COVvID19 TTP_fibrin D ,
+(COVID19 dimer_platelet factor 4 White blood cell 0.215] 0.598] 1.39] 0.130
+(MODERNA)) | (Custom Term) count decrease
+covibis dimer_plotelet
+(COVID19 Headache factor 4 (Custom 0.271] 0.592] 1.16] 0.163
+(MODERNA)) Term)
+TTP_fibrin D
+coviD19 . vp
+Echocardiogram dimer_platelet
+(ODERNA)) abnormal factor 4 (Custom 0.211} 0.586 1.37) 0.127
+Term)
+coviD19 TTP_fibrin D
+
+PSICOVID_00017079
+pri GbORIZED FOR PUBLIC RELEASE BY CHAIRMAN JQkINSGRN8
+
+(COVID19 a dimer_platelet
+(MODERNA)) Blood creatinine factor 4 (Custom 0.241] 0.581] 1.22] 0.145
+Term)
+COVID19 Magnetic resonance ae firm et
+(COVID19 imaging head factor 4 (Custom 0.209] 0.580] 1.35] 0.126
+(MODERNA)) | abnormal Term)
+COVID19 TTP_fibrin D
+(COVID19 dimer_platelet factor 4 | Thrombocytopenia 0.236 | 0.569} 1.20) 0.142
+(MODERNA)) | (Custom Term)
+covip19 _| Alanine Te fiorin ot
+(COVID19 aminotransferase factor 4 (Custom 0.235] 0.566} 1.19] 0.142
+(MODERNA)) | increased
+Term)
+COVID19 TTP_fibrin D :
+(COVIDI9 __| dimer_platelet factor 4 | White blood cel! 0.235] 0.515] 1.01] 0.142
+(MODERNA)) | (Custom Term)
+TTP_fibrin D
+COVID19 cea ee rao
+Red cell distribution dimer_platelet
+{MODERNA)) width increased factor 4 (Custom 0.179] 0.496 | 1.16) 0.108
+Term)
+COVID19 i TTP_fibrin D
+International iene
+(COVID19 | normalised ratio dimer_platelet 0.174] 0.483| 1.12] 0.087
+(PFIZER- increased factor 4 (Custom
+BIONTECH)) Term)
+TTP_fibrin D
+COVvID19 / a
+(COVID19 Neutrophil percentage cimer_ platelet 0.161] 0.446] 1.04] 0.097
+(MODERNA)) increased factor 4 (Custom
+Term)
+covip19 International Serer et
+(COVID19 normalised ratio factor 4 (Custom 0.153 | 0.424/| 0.988] 0.092
+(MODERNA)) | increased Term)
+TTP_fibrin D
+COVID19 rae
+Lymphocyte dimer_platelet
+(ODERNA)) percentage decreased | factor 4 (Custom 0.143 | 0.397} 0.925) 0.086
+Term)
+Covib19 Haemoglobin dinar nlgtetet
+(COVID19 i 0.167 | 0.366|0.719| 0.101
+(MODERNA)) decreased factor 4 (Custom
+Term)
+COVvID19 Aspartate elieslaatii et
+(COVID19 aminotransferase factor 4 (Custom 0.130 | 0.360} 0.840] 0.078
+(MODERNA)) | increased Term)
+eC ee
+
+PSICOVID_00017080
+Pritt TkbORIZED FOR PUBLIC RELEASE BY CHAIRMAN J®Q EEN 8 GM8
+
+covipi9 TTP_fibrin D
+
+(COVIDI9 —_| Haematocrit decreased | “imer_platelet 0.138 | 0.332] 0.701] 0.083
+
+(MODERNA)) factor 4 (Custom
+Term)
+TTP_fibrin D
+
+COVID19 ae
+
+Red blood cell count dimer_platelet
+
+(ODERNA)) decreased factor 4 (Custom 0.118 | 0.328 | 0.764) 0.071
+
+Term)
+
+These data do not, by themselves, demonstrate causal associations; they may serve as a signal for
+further investigation.
+
+4/28/2021
+PSICOVID_00017081
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Message
+
+From: Menschik, David [/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP.
+(FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=0407D7354456470CAB9BC2D3F98D6D3C-MENSCHIK]
+Sent: 3/18/2021 8:33:35 PM
+
+Subject: RE: special project run
+
+Thanks Kosal!!
+
+Sent: Thursday, March 18, 2021 4:30 PM
+
+To: Menschik, David i >
+
+Subject: RE: special project run
+
+Hi David,
+
+The updated “SP: SCV” run (ID 30822) has now been completed with an as of date of March 11, 2020. Additionally, |
+changed the custom name to “COVID mRNA Vaccines All” and edited the description (removed “Unknown” covid
+vaccine manufacturers as that was not part of the original custom term and query anyway).
+
+VIl get started on the other request regarding excising out all of the COVID reports minus the ones of interest.
+
+Enjoy your time off—thanks!
+
+Best,
+
+Kosal
+
+From: Menschik, 0ovid <i
+
+Sent: Thursday, March 18, 2021 2:58 PM
+
+Subject: RE: special project run
+
+Sure — thanks! I’ll send an outlook invite...
+
+From: Neuon, Kosal * <i
+
+Sent: Thursday, March 18, 2021 2:57 PM
+
+Subject: RE: special project run
+
+Hi David,
+
+| have a meeting that should end early at 330PM today. Does that work for you? Thanks.
+
+Best,
+
+Kosal
+
+PSICOVID_00017210
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+From: Menschik, Oavid <i
+
+Sent: Thursday, March 18, 2021 2:54 PM
+
+To: Nguon, Kosal * {ia
+
+Subject: RE: special project run
+Hi Kosal,
+| think it would be best if we touched base verbally — what’s your availability like?
+
+Thanks,
+David
+
+Sent: Thursday, March 18, 2021 1:12 PM
+
+To: Menschik, David <j.
+
+Subject: RE: special project run
+Hi David,
+
+I’ve been thinking deeply about this as | have been working with a few different folks with similar but important
+differences, and | want to make sure | understand the result/outcome concretely, and we can map out the
+methodology/custom run. Here’s what | have and reasoning:
+
+The concern is that COVID case reports contribute a significant enough portion to the VAERS database, where it may
+affect the EBGM scores of other vaccines/products-event combinations. In order to accurately calculate an EBGM score
+for all other product-event combinations, what is the best way to do that (i.e., pre-COVID reports)?
+
+Technically, a report is only counted once; however, a report may have more than one product-event combination (e.g.,
+a person got the COVID vaccine and takes aspirin, and experiences a rash, fever and upset stomach; 2 drugs times 3
+events equals 6 drug-event combinations). If you remove COVID, you only remove the COVID-event combinations, but
+the aspirin-event combinations exist. | believe the VAERS data only has identified vaccines, so the aspirin-related events
+would not show up. However, what's the likelihood of someone getting a COVID vaccine and another vaccine in a
+relatively close enough time period and reporting them both?
+
+| think you'll be ok removing COVID vaccines, which will in turn eliminate all the reports assuming there are no other
+vaccines. This makes it easier than identifying COVID reports by CASE ID and then removing them that way. Let me
+know if that makes sense as you followed though some of my stream-of-conscious thinking here. Thanks!
+
+Best,
+
+Kosal
+
+From: Menschik, Ovid i
+
+Sent: Thursday, March 18, 2021 11:54 AM
+
+Subject: RE: special project run
+
+Thanks and that explanation is helpful. Accordingly, would it make sense to restrict the background so that each actual
+vaccine report is only counted once? (i.e., remove the custom drug term from the denominator/comparator for this run)
+
+PSICOVID_00017211
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Thanks,
+David
+
+From: Nevon cosa * i
+
+Sent: Thursday, March 18, 2021 11:46 AM
+To: Menschik, David <a
+
+Subject: RE: special project run
+
+Hi David,
+
+I'll answer both your questions in this email to keep it all together.
+
+1. 1 can certainly change the custom drug name to “COVID mRNA Vaccine.”
+
+2. Regarding the custom term and comparator groups, | am not exactly sure what you are asking, but | think | do, so I’Il
+try my best to provide an explanation. For the COVID mRNA vaccines like Moderna and Pfizer, if you combine them to
+make a custom term for “mRNA Covid Vaccines” as we have done. So when it comes to background/denominator,
+MGPS will use it as:
+
+[custom drug term} + A+B +C+...+ N, where A, B, C are different specified “vaccines”
+
+| believe the slight changes you see are only with EBGM scores, and these due to the custom terms and how the
+“definition” of a vaccine or PT has altered.
+
+Please let me know if that second part makes sense, and if not, | am happy to talk through it. Thanks!
+Best,
+
+Kosal
+
+Sent: Thursday, March 18, 2021 10:39 AM
+
+To: Nguon, Kosal * <i
+
+Subject: RE: special project run
+Hi Kosal,
+
+Also wondering: how is this custom term built in to the denominator/comparator group for MGPS algorithm or is the
+denominator/comparator group unchanged? (wondering because for the [non-customized] component vaccines, | see
+slight differences in EBGMs/EBOSs relative to using the [non-special project] comparable ‘US VAERS vac name run’)
+
+Thanks,
+David
+
+From: Menschik, David
+Sent: Thursday, March 18, 2021 10:34 AM
+
+To: Nevon, Kosa * <i
+
+Subject: RE: special project run
+
+PSICOVID_00017212
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Thanks Kosal! As an aside, | noticed in the last special project called “SP: SCV” that the custom term is called “COVID
+Vaccine All” though it only refers to the mRNA vaccines (Pfizer and Moderna) based on definition in notes section.
+Accordingly, can you change the custom term from “COVID Vaccine All” to “COVID mRNA Vaccine” ?
+
+Thanks,
+David
+
+From: Nguon, Kosal * <i
+Sent: Thursday, March 18, 2021 10:07 AM
+
+To: Menschik, David q
+
+Ce: Baer, Bethany
+
+Subject: RE: special project run
+
+Hi David,
+
+Taking Brian off.
+
+Not a problem and looking forward to it.
+
+Best,
+
+Kosal
+
+From: Menschik, David i.
+
+Sent: Thursday, March 18, 2021 7:08 AM
+
+To: Nguon, Kosal *
+Cc: Baer, Bethany ; Hendrix, Brian * Fti‘“‘“*’;s
+
+Subject: RE: special project run
+
+Thanks very much Kosal. I'll plan to circle back to you on this later in the day.
+
+Thanks,
+David
+
+From: Neuon, Koso * ia
+
+Sent: Wednesday, March 17, 2021 5:46 PM
+To: Menschik, David
+Cc: Baer, Bethany
+Subject: RE: special project run
+
+Hi David,
+
+Not a problem, and | can definitely help with this request and Brian can focus on the VSafe and remaining runs.
+
+Just a few questions and comments:
+
+1. From your statement, “ [a] run that excludes from the comparison group all COVID vaccine reports except those
+involving the COVID vaccine report in the numerator (e.g., Pfizer vaccine in this example).” | think we’d have to create a
+special data mining run for each COVID vaccine (e.g., analogous run with Pfizer, analogous run with Moderna, analogous
+run with Jansen/J&J). Is that ok for you?
+
+PSICOVID_00017213
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+2. Do you want to create one for the Jansen/J&J now or wait until it reaches a certain threshold? We can create it, but
+it’s not going to be useful as there’s not much data for it.
+
+3. How do you want to approach vaccines marked as “Unknown manufacturer”? Create its own group? Exclude
+altogether? Or combine with another COVID vaccine?
+
+Thanks for thinking about this, and I can get started on it.
+Best,
+
+Kosal
+
+From: Menschik, 02vid
+Sent: Wednesday, March 17, 2021 3:41 PM
+
+To: Hendrix, Brian * ; Nguon, Kosal *
+Cc: Baer, Bethany
+
+Subject: RE: special project run
+
+Apologies for neglecting to include Kosal in my email below — this may be more in his lane (understand he has created
+‘special project’ runs in the past)
+
+Best,
+
+David
+
+From: Menschik, David
+
+Sent: Wednesday, March 17, 2021 2:58 PM
+
+To: Hendrix, Brian * hii
+Ce: Baer, Bethany <i
+
+Subject: special project run
+Hi Brian,
+
+| was exploring the time trend graph in the context of theoretical muting effect of so many COVID vaccine reports in the
+denominator/comparator and found that the first vaccine authorized under EUA (12/10) graph (attached) shows a
+muting trend for PTs. Consequently, | think it would be valuable to establish as a ‘special project’ run (visible only to us),
+an analogous (using “US VAERS Vac Name Monthly Cumulative”) run that excludes from the comparison group all COVID
+vaccine reports except those involving the COVID vaccine report in the numerator (e.g., Pfizer vaccine in this example).
+Can you please advise?
+
+Thanks,
+David
+
+nanan Original Appointment-----
+
+From: Menschik, David
+
+Sent: Tuesday, December 01, 2020 10:16 AM
+
+To: Menschik, David; Nguon, Kosal *; Sydnor, James *; Casey Sydnor; Lebow, William *; Hendrix, Brian *; Baer, Bethany
+Subject: Bi-weekly touching base on VAERS Empirica updates in support of SC2V surveillance
+
+When: Wednesday, March 17, 2021 2:00 PM-2:30 PM (UTC-05:00) Eastern Time (US & Canada).
+
+Where: WebEx
+
+Pushing back this one meeting 30 minutes to accommodate scheduling conflict. Please advise if this does not work.
+
+Thanks!
+Also removing Brendan (as discussed)
+
+PSICOVID_00017214
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+This is intended as a placeholder in case there is anything for Commonwealth and FDA to discuss regarding the VAERS
+Empirica update projects in support of SC2V surveillance. (If not, plan to cancel)
+
+When it's time, join your Webex meeting here.
+
+More ways to join:
+
+Join by meeting number
+Meeting number (access code):
+Meeting password:
+
+device (attendees onl)
+
+Join : 7
+
+If you are a host, click here to view host information.
+
+Need help? Go to https://help.webex.com
+
+PSICOVID_00017215
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Message
+
+From: Menschik, David [/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP.
+(FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=0407D7354456470CAB9BC2D3F98D6D3C-MENSCHIK]
+Sent: 5/9/2021 9:42:59 AM
+
+To: Zinderman, Craig —
+
+Subject: RE: Data Mining feedback
+
+Thanks Craig
+
+From: Zinderman, Craig - <n
+
+Sent: Friday, May 07, 2021 5:56 PM
+
+To: Menschik, 02vid iE iu, Vanette <i
+
+Subject: FW: Data Mining feedback
+Fyi..
+
+Sent: Friday, May 07, 2021 5:09 PM
+
+To: Zinderman, Craig: iT
+Ce: Nair, Narayan <i : Stockbridge, Norman | <i
+
+Subject: RE: Data Mining feedback
+Hi Craig,
+
+Thanks for your email. | understand your tremendous workload and the fantastic work you are all doing ,that |
+tremendously respect.
+
+| will only deliver analyses when | am specifically requested to do so, and only to the reviewer making such requests.
+
+We are testing a new data mining methodology, and given the circumstances, it will be good for all to understand its
+performance with such important data. This is a method that also strongly reduces confounding, so it may be helpful in
+certain future circumstances.
+
+Let me know if | misunderstood anything in your email.
+Warmest regards,
+~-Ana
+
+Ana Szarfman, MD, PhD, FAMIA,
+
+Diplomate by the American Board of Pathology in both, Clinical Pathology (1984) and Clinical Informatics (2017), and
+Fellow of the American Medical Informatics Association (2020)
+
+Medical Officer, Safety Data Mining Developer and Medical Informatics Analyst,
+
+Celebrating nearly a quarter of a century of successful implementation of safety data mining, interactive patient profiles,
+and other automated analytical tools.
+
+Division of Cardiology and Nephrology, OCHEN, Center for Drug Evaluation and Research, Food and Drug Administration
+
+PSICOVID_00017245
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+ADMINISTRATION
+
+ee U.S. FOOD & DRUG
+
+From: Zinderman, Cig ¢
+
+Sent: Friday, May 7, 2021 4:25 PM
+
+To: Szarfman, Ana <|
+Cc: Nair, Narayan
+
+Subject: Data Mining feedback
+
+Good Afternoon Ana,
+
+Thank you again for talking with us back in March about your work exploring new data mining approaches and
+discussing your interest in CBER’s COVID-19 vaccine products. We are writing to kindly ask you to please hold off on
+creating and sending data mining reports and analyses using COVID-19 vaccine AE data.
+
+In CBER OBE, we have been reviewing the various COVID-19 vaccine data mining results that you have been
+
+forwarding. While we appreciate your interest in sharing your results, they haven't contributed to the already robust
+process for reviewing VAERS (and other vaccine safety) data. | will describe a little bit below:
+
+-AESIs: CBER and CDC have established sets of AESIs (sets of PTs representing Adverse Events of Special Interest) for key
+events. Incoming reports captured by these AESIs are highlighted for FDA reviewer screening, as well as medical record
+follow-up and chart abstraction by CDC reviewers. Many of the alerts that you have been sending relate to AESIs for
+which we are already screening and reviewing reports, such as AMI, TTS, Thromboembolic events, and other forms of
+coagulopathy. Having our staff examine your alerts creates an extra, and somewhat redundant workstream for them,
+since these AESIs are already under close observation. AESIs for which we are seeing substantial or notable reporting
+are further evaluated via comparisons to background rates (using known COVID vaccine administration data tracked by
+CDC and provided weekly to FDA) as well as in population-based data sources both at FDA and CDC (e.g., BEST, CMS,
+Vaccine Safety Datalink (VSD)).
+
+-Serious report screening: FDA MOs review serious reports coming into VAERS daily until meeting pre-specified
+milestones (i.e., certain time since authorization and doses administered) and then review aggregated PT counts weekly,
+by seriousness, AESI, Lot number, most frequent PTs, weekly changes in PT rankings, and other metrics.
+
+-Pre-screening: for a couple of notable issues, the VAERS program contractor flags reports when they hit the door: these
+pre-screened events will have expedited gathering of medical records and CDC review and abstraction. TTS and
+anaphylaxis both have fallen into this category.
+
+Of note, data mining alerts, which are designed to generate hypotheses of possible safety issues, are no longer
+particularly useful for our pharmacovigilance purposes when a signal has already been identified, such as for TTS, or
+when an issue (e.g., an AESI such as AMI) is being worked up in a more robust (e.g., active surveillance) system.
+
+Further, we have a standard process for data mining screening in place for VAERS data; this screening was in place at the
+start of, and throughout, the COVID vaccine campaign; the frequency/nature of the calculations, stratifications and
+other parameters, are known and understood by us and our stakeholders. We understand that exploring new
+approaches might improve the methodology and is of interest to you. However, from our perspective, the approach
+employed during a period of intense, high profile surveillance should be standard, predictable, and road-tested. Results
+from adjusting parameters that raise or lower sensitivity of the alerts as the vaccination campaign is underway could
+lead to confusion and have unintended consequences (e.g., regarding vaccine confidence).
+
+So, while we appreciate your work and interest at CDER on the COVID vaccine VAERS data, in the above context, we
+have found no indication for action based on your findings, which have been consuming resources at a time when
+
+PSICOVID_00017246
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+resources are stretched across preexisting robust pharmacovigilance activities. So, we are asking that you please hold
+off on creating and sending data mining results for COVID-19 vaccine AE data. Thanks much for your time and
+understanding, and sorry for the long email.
+
+Kind regards,
+Craig Zinderman, MD, MPH
+
+Associate Director for Medical Policy
+Office of Biostatistics and Epidemiology
+
+- - ‘ . " i‘ ;" and Research
+
+Craig Zinderman, MD, MPH
+
+Associate Director for Medical Policy
+Office of Biostatistics and Epidemiology
+
+FDA/Center for — Evaluation and Research
+
+PSICOVID_00017247
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Message
+
+From: Menschik, David [/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP.
+(FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=0407D7354456470CAB9BC2D3F98D6D3C-MENSCHIK]
+
+Sent: 8/16/2021 3:18:21 PM
+
+To: Richardson, Judith
+
+Subject: RE: Comments from the CDER/CBER/Commonwealth call from today
+
+Will discuss at our 1:1 later today
+
+From: Baer, Bethany yLFTt—“(:SCSS
+
+Sent: Monday, August 16, 2021 11:17 AM
+To: Richardson, ju<ith
+Ce: Menschik, David {EE >; Zinderman, Cig ¢ i
+
+Subject: RE: Comments from the CDER/CBER/Commonwealth call from today
+
+Hi Judy,
+| know that you caught part of the conversation on the call so | wanted you to be aware of things.
+Thanks,
+Bethany
+
+From: Richardson, Judith <r
+
+Sent: Monday, August 16, 2021 10:48 AM
+
+To: Baer, Bethany <| ; Menschik, David <i ; Zinderman, Craig
+<
+
+Subject: RE: Comments from the CDER/CBER/Commonwealth call from today
+
+Thanks Bethany! (for including me ©)
+
+From: Baer, Bethany <n
+
+Sent: Thursday, August 12, 2021 2:37 PM
+
+To: Menschik, David . — § Zinderman, Craig E fF i‘“‘é‘S
+Ce: Richardson, Judith {ji
+
+Subject: Comments from the CDER/CBER/Commonwealth call from today
+
+Hi David and Craig,
+
+| wanted to pass on to you that during the Commonwealth contractor call today Ana Szarfman specifically brought up
+concerns directed at CBER’s vaccine data mining and the use of the “20-year-old MGPS model which could potentially
+mask signals.” She is especially concerned by the large (97% is what she stated, | believe) proportion of 2021 reports
+that are for COVID vaccines so that the expected comparison is lost. | let her know that you both were aware of these
+considerations. She may reach out to you directly again. | let her know that | am not the right person to respond to her
+concerns.
+
+Thanks,
+
+Bethany
+
+PSICOVID_00017545
+[OCR skipped on page(s) 189-191]AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+We are planning on conducting a study using the VAERS database to assess for any signals of COVID19 vaccines
+triggering or exacerbating psoriasis, for the purpose of hypothesis generation.
+
+Would you be able to elaborate the comparator vaccinee group you used in the disproportionality analysis from your
+publication? In our planned study, we were aiming to compare psoriasis patients who received covid-19 vaccinations
+during the period of December 2020-October 2021 versus psoriasis patients who were administered the flu vaccine during
+the same time period. However, the challenge is that AE reports for the comparator Flu vaccine group are very limited
+based on a feasibility analysis I conducted.
+
+T look forward to your response
+Kind Regards,
+
+Maha
+
+Maha N. Syed, MBBS
+Post-doctoral Research Fellow
+
+University of Pennsylvania
+Perelman School of Me Department of Dermatology
+
+Tel: | Mobile:
+Email
+
+PSI-HHS-000007122822
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+Vaccine 33 (2015) 4398-4405
+
+ELSEVIER
+
+journal homepage: www.elsev
+
+Contents lists available at ScienceDirect, |
+\Vaccine
+
+Vaccine
+
+com/locate/vaccine
+
+Review
+
+Safety monitoring in the Vaccine Adverse Event Reporting
+
+System (VAERS)
+
+Tom T. Shimabukuro, Michael Nguyen®, David Martin>, Frank DeStefano*
+
++ Immunization Safety Office, Division of Health care Quality Promotion, National Center for Emerging and Zoonotic Infectious Diseases, Centers for Disease
+
+Control and Prevention, Atlanta, GA, United States
+
+» Office of Biostatistics and Epidemiology, Center for Biologics Evaluation and Research, Food and Drug Administration, Silver Spring, MD, United States
+
+ARTICLE INFO
+
+ABSTRACT
+
+Article history:
+
+Received 26 December 2014
+Received in revised form 9 July 2015
+Accepted 11 July 2015
+
+Available online 22 July 2015
+
+Keywords:
+
+Vaccination
+
+Vaccine adverse event
+
+Adverse event following immunization
+Adverse reaction
+
+Adverse effect
+
+‘Spontaneous reporting
+
+Passive surveillance
+
+Vaccine safety
+
+Vaccine Adverse Event Reporting System
+(VAERS)
+
+The Centers for Disease Control and Prevention (CDC) and the U.S. Food and Drug Administration (FDA)
+conduct post-licensure vaccine safety monitoring using the Vaccine Adverse Event Reporting System
+(VAERS), a spontaneous (or passive) reporting system. This means that after a vaccine is approved, CDC
+and FDA continue to monitor safety while it is distributed in the marketplace for use by collecting and
+analyzing spontaneous reports of adverse events that occur in persons following vaccination. Various
+methods and statistical techniques are used to analyze VAERS data, which CDC and FDA use to guide
+further safety evaluations and inform decisions around vaccine recommendations and regulatory action.
+VAERS data must be interpreted with caution due to the inherent limitations of passive surveillance.
+VAERS is primarily a safety signal detection and hypothesis generating system. Generally, VAERS data
+cannot be used to determine if a vaccine caused an adverse event. VAERS data interpreted alone or out
+of context can lead to erroneous conclusions about cause and effect as well as the risk of adverse events
+occurring following vaccination. CDC makes VAERS data available to the public and readily accessible
+online.
+
+We describe fundamental vaccine safety concepts, provide an overview of VAERS for healthcare pro-
+fessionals who provide vaccinations and might want to report or better understand a vaccine adverse
+event, and explain how CDC and FDA analyze VAERS data. We also describe strengths and limitations,
+and address common misconceptions about VAERS. Information in this review will be helpful for health-
+care professionals counseling patients, parents, and others on vaccine safety and benefit-risk balance of
+vaccination.
+
+Published by Elsevier Ltd.
+
+1. Introduction
+
+surveillance means that no active effort is made to search for, iden-
+tify and collect information, but rather information is passively
+
+The Centers for Disease Control and Prevention (CDC) and the
+U.S, Food and Drug Administration (FDA) conduct post-licensure
+safety monitoring of U.S. licensed vaccines. This means that after
+a vaccine is approved, CDC and FDA continue to monitor safety
+while it is distributed in the marketplace for use. CDC and FDA co-
+administer the Vaccine Adverse Event Reporting System (VAERS),
+a spontaneous (or passive) reporting system [1]. Spontaneous
+
+Abbreviations: VAERS, Vaccine Adverse Event Reporting System; AEFI, adverse
+event following immunization; CDC, Centers for Disease Control and Prevention;
+FDA, US. Food and Drug Administration; MedDRA, Medical Dictionary for Regulatory
+Activities.
+
+* Corresponding author at: Immunization Safety Office, Centers for Disease Con-
+
+http://dx.doi.org/ 10.1016]j.vaccine.2015.07.035
+0264-410X/ Published by Elsevier Ltd.
+
+received from those who choose to voluntarily report their expe-
+rience. Therefore, VAERS relies on the intuition and experience of
+healthcare professionals in particular, but likewise for patients, par-
+ents and caregivers, to recognize and report unusual or unexpected
+events following vaccination or suspected vaccine safety problems,
+CDC and FDAalso independently administer large-linked electronic
+health record-based surveillance systems [2,3]. Various methods
+and statistical techniques are used to analyze VAERS data, which
+CDC and FDA use to guide further safety evaluations and inform
+decisions around vaccine recommendations and regulatory action.
+Furthermore, VAERS transmits its vaccine adverse event reports
+to the Uppsala Monitoring Center, the World Health Organization
+collaborating center for international drug and vaccine safety mon-
+itoring [4,5], in order to contribute to the global pharmacovigilance
+effort along with other countries that employ passive vaccine safety
+monitoring systems. VAERS data must be interpreted with caution
+
+PSI-HHS-000007172766
+AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+TT. Shimabukuro et al, / Vaccine 33 (2015) 4398-4405
+
+Vaccination
+
+4309
+AEFI"
+‘True adverse reaction
+
+or adverse effect?
+
+or
+
+Coincidental health
+event not related to
+vaccination
+
+Report submitted
+to VAERS!
+
+a
+
+Time
+\
+
+>
+
+a
+
+T
+‘Onset interval
+
+(time from vaccination to signs/symptoms of the adverse event)
+
+Fig. 1. Adverse event following immunization (AEFI) and the VAERS reporting timeline. “AEFI indicates only that the event happened after vaccination (i.e,, a temporal
+association). "Vaccine adverse reaction” and “vaccination adverse effect” are also AEFIs, but imply that the vaccine caused the event (i.e., a causal association). "There are no
+deadlines or time limits for the submission of a VAERS report, but reports should be submitted promptly after an adverse event occurs to facilitate surveillance and review.
+The National Vaccine Injury Compensation Program (VICP) is administered by the Health Resources and Services Administration (HRSA). The VICP is separate from the VAERS
+program and reporting an adverse event to VAERS does not constitute filing a claim for compensation to the VICP (see www.hrsa.gov/ vaccinecompensation/index.html).
+
+due to the inherent limitations of passive surveillance. VAERS is
+primarily a safety signal detection and hypothesis generating sys-
+tem. VAERS data interpreted alone or out of context can lead to
+erroneous conclusions about cause and effect or the risk of adverse
+events after vaccination.
+
+We describe fundamental vaccine safety concepts, provide an
+overview of VAERS for healthcare professionals who provide vac-
+cinations and might want to report or better understand a vaccine
+adverse event, and explain how CDC and FDA analyze VAERS data.
+We also describe strengths and limitations, and address common
+misconceptions about VAERS. Information in this review will be
+helpful for healthcare professionals counseling patients, parents,
+and others onvaccine safety and benefit-risk balance of vaccination.
+
+2. What is a vaccine adverse event or adverse event
+following immunization?
+
+A “vaccine adverse event,” also referred to as an “adverse event
+following immunization” (AEFI), is an adverse health event or
+health problem that occurs following (Fig. 1) or during administra-
+tion of a vaccine. Adverse events are temporally associated events,
+which might be caused by a vaccine or might be coincidental and
+not related to vaccination [6]. The Council for International Organi-
+zations of Medical Sciences (CIOMS) defines an AEFI as “... any
+untoward medical occurrence which follows immunization and
+which does not necessarily have a causal relationship with the
+usage of the vaccine, The adverse event may be any unfavourable
+or unintended sign, abnormal laboratory finding, symptom or dis-
+ease” [7]. CIOMS also defines AEFI related to product quality defects,
+vaccination errors and anxiety-related reactions, in addition to
+those related to inherent properties of a vaccine. In contrast to the
+term “event”, a vaccine adverse “reaction” and vaccination adverse
+“effect,” like “adverse drug reaction” used in pharmacovigilance for
+drug safety monitoring [8], are synonymous terms that indicate a
+reasonable body of scientific evidence exists to suggest an adverse
+health event was caused by vaccination [6,9]. Examples of com-
+mon vaccine adverse reactions are pain and redness at the injection
+site.
+
+3. Why do the CDC and the FDA monitor vaccine safety?
+
+The FDA requires extensive testing to evaluate safety and effi-
+cacy of a vaccine before granting licensure. The final phase of
+pre-licensure clinical trials might involve hundreds to thousands
+of volunteer study subjects [10]. Pre-licensure clinical trials are
+
+effective at identifying and characterizing the most common
+adverse events associated with a particular vaccine; examples
+include injection site reactions and post-vaccination fever. How-
+ever, clinical trials might not be large enough to detect rare adverse
+events, which may be seen only after tens or hundreds of thousands
+of people are vaccinated. The limited patient follow-up period for
+clinical trials also constrains the ability to identify possible adverse
+events with delayed onset. Clinical trials generally conduct active
+follow-up on participants for up to a full year after vaccination,
+and often extended follow-up for periods beyond one a year. This
+level of follow-up is sufficient to assess most acute and delayed
+onset adverse events of interest for vaccine safety, but is not suf-
+ficient to assess conditions with onset multiple years following
+exposure, Additionally, clinical trials for initial licensure usually
+include only healthy individuals, so data on special populations,
+like those with chronic illnesses or pregnant women, are limited.
+Therefore, after a vaccine is licensed and distributed for widespread
+use it is necessary to conduct monitoring to further evaluate safety
+1].
+
+Apart from scientific and methodological issues, policy consid-
+erations also influence CDC and FDA determinations on vaccine
+safety monitoring. Vaccines are generally given to healthy indi-
+viduals to prevent disease, whereas drugs are primarily given for
+treatment of illness. Sick patients, or parents of sick children, might
+be more willing to accept safety risks of drugs used to treat illnesses
+compared to vaccines used to prevent possible future illnesses,
+Furthermore, many state and local governments require vaccina-
+tion for school attendance and healthcare facilities are increasingly
+requiring vaccination as a condition of employment [12,13]. These
+mandates place additional emphasis on vaccine safety and adverse
+event monitoring.
+
+4. What is the Vaccine Adverse Event Reporting System
+(VAERS)?
+
+VAERS is a national early warning system to detect possible
+safety problems in U.S. licensed vaccines. It is a spontaneous, vol-
+untary reporting system for adverse events [1,14,15], and therefore
+no effort is made to search for individuals who experience adverse
+eventsand actively collect data, but rather VAERS passively receives
+information on adverse events from those who choose to report.
+VAERS is most useful as a hypothesis generating system with the
+primary goal to detect safety signals [9] that might be related to
+vaccination. The main objectives of VAERS are to: (1) detect new,
+unusual, or rare adverse events, (2) monitor reporting trends that
+
+PSI-HHS-000007172767
+[OCR skipped on page(s) 195-196]AUTHORIZED FOR PUBLIC RELEASE BY CHAIRMAN JOHNSON
+
+4402 TI. Shimabukuro et al. / Vaccine 33 (2015) 4398-4405
+
+of VAERS reports and an epidemiologic study in another data source
+is described in the final section of this paper.
+
+6.3. Clinical review of reports
+
+CDC and FDA physicians review serious reports, selected reports
+based on results of descriptive analysis and disproportionality
+analysis, and reports for selected conditions of interest. Clini-
+cal reviews are conducted to characterize the completeness and
+quality of reports, verify diagnoses if possible, characterize clin-
+ical and laboratory features, assess other potential risk factors
+(e.g., co-administration of vaccines, underlying health conditions),
+and evaluate the interval between vaccination and the adverse
+event. Reviewers use clinical judgment to detect concerning pat-
+terns or unusual and unexpected adverse events. CDC physicians
+generally conduct clinical reviews of selected types of vaccines
+and conditions of interest for particular vaccines (e.g., serious
+and pregnancy-related reports for influenza vaccines). FDA physi-
+cians structure clinical reviews of serious reports around individual
+vaccine brands with a regulatory focus. CDC and FDA regularly
+share information on clinical review findings. For selected adverse
+events of interest that are the focus of enhanced surveillance
+(eg., anaphylaxis following inactivated influenza vaccine in egg
+allergic patients), Brighton Collaboration case definitions [32]
+are used when available. The Brighton Collaboration is a global
+research network with a mission to “...enhance the science of
+vaccine research by providing standardized, validated, and objec-
+tive methods for monitoring safety profiles and benefit to risk
+ratios of vaccines.” (https://brightoncollaboration.org/public/who-
+we-are.html). The Brighton Collaboration generates standardized
+adverse event case definitions in order to enhance data consistency
+and comparability across systems and studies.
+
+7. What are the strengths of VAERS?
+
+VAERS is national in scope and is able to receive information
+from the entire U.S. population. Because of the large and diverse
+population available to report, VAERS is able to rapidly detect pos-
+sible safety problems and rare adverse events [1,14,15]. VAERS
+reports often include detailed information on vaccines given, char-
+acteristics of the individual vaccinated, and the adverse event itself.
+Furthermore, follow-up to obtain health records, when necessary,
+is possible. Due to direct reporting capability and the speed at
+which reports and follow-up information can be processed and ana-
+lyzed, VAERS can often provide the earliest information on potential
+vaccine safety problems. VAERS is less impacted by data lags and
+delayed access to health records than claims-based monitoring sys-
+tems, although these types of systems often compliment VAERS by
+allowing for more sophisticated follow-on signal assessment due to
+availability of numerator and denominator data. Lastly, VAERS data
+are made available online to the public, which affords an impor-
+tant level of transparency. This service allows the public to see the
+amount and nature of spontaneous adverse event reporting data
+that CDC and FDA collect and analyze to guide further safety evalu-
+ations and inform decisions around vaccine recommendations and
+regulatory action.
+
+8. What are the limitations of VAERS?
+
+Like all spontaneous public health reporting systems, VAERS
+has limitations [1,14]. VAERS is subject to reporting bias, includ-
+ing underreporting of adverse events ~ especially common, mild
+ones [33,34] - and stimulated reporting, which is elevated repor-
+ting that might occur in response to intense media attention
+and increased public awareness, such as during the 2009 H1N1
+
+Adverse event No adverse event
+
+‘Vaccinated and had an
+adverse event, but not
+
+reported to VAERS
+; Vaccinated and did not
+Vaccinated have an adverse event
+Vaccinated and had an
+adverse event, which was
+reported to VAERS:
+Ay Ar B
+
+Not vaccinated and had
+an adverse event
+
+Not vaccinated and did
+
+Not vaccinated not have an adverse event
+
+c D
+
+Fig. 3. 2x 2contingency table illustrating a hypothetical single vaccine and adverse
+event (AE) combination scenario. Az = VAERS database; incidence of AEin vaccinated
+individuals= (Ay +Az)/((Ai +A2)+B); reporting efficiency to VAERS=A2/(Ai +A2);
+incidence of AE in unvaccinated individuals C/(C+D).
+
+pandemic influenza vaccination program [35]. Quality and com-
+pleteness of VAERS reports are variable and many reports lack valid
+medical diagnoses. The amount of VAERS reporting (30,000 U.S.
+reports annually) makes it impractical to conduct detailed follow-
+up on all reports to obtain missing and incomplete information
+and correct inconsistencies and errors. Because VAERS data do not
+include an unvaccinated comparison group, it is not possible to cal-
+culate and compare rates of adverse events in vaccinated versus
+unvaccinated individuals and determine if vaccination is associ-
+ated with an increased risk of an adverse event (Fig. 3). Reporting
+efficiency, which is the proportion of adverse events that actually
+get reported to VAERS, is unknown, but is believed to be higher
+for clinically serious conditions. In a 1995 study, reporting sen-
+sitivities ranged from 68% for vaccine-associated polio following
+oral poliovirus vaccine to <1% for rash following measles, mumps,
+and rubella (MMR) vaccine [33]. Although underreporting is a lim-
+itation, VAERS is capable of detecting possible safety problems
+through disproportionality analyses and the other methods pre-
+viously described.
+
+Except in unambiguous biologically plausible cases (like pain
+and redness at the injection site), it generally cannot be determined
+if a vaccine caused an adverse event using VAERS data [11,18].
+On rare occasions, a detailed VAERS report with documentation
+of conclusive clinical or laboratory evidence might be sufficient
+to establish causality. For example, there have been case reports
+where vaccine sti rotavirus has been isolated from a stool spec-
+imen ina vaccinated infant experiencing severe gastroenteritis who
+was later diagnosed with severe combined immunodeficiency [36].
+There have also been case reports documenting anaphylaxis occur-
+ring within an appropriate onset interval following vaccination
+with no other obvious environmental exposure triggers [37].
+
+9. Misconceptions about VAERS
+
+Perhaps the most common misconceptions about VAERS are
+that temporally associated reports represent true adverse reac-
+tions caused by vaccination, and that VAERS reports equate to
+rates of adverse events or indicate risk of adverse events associ-
+ated with vaccination. The VAERS website has specific guidance
+on interpreting case report information, which includes the state-
+ment: “When evaluating data from VAERS, it is important to note
+that for any reported event, no cause-and-effect relationship has
+been established ... VAERS collects data on any adverse event
+
+PSI-HHS-000007172770
+[OCR skipped on page(s) 198-200]

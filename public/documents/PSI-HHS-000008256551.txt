@@ -1,0 +1,7 @@
+Sheet: data
+Drug | Event | US EB05 20220729 | US Serious EB05 20220729 | US Fatal EB05 20220729 | US Infant EB05 20220729 | US Child EB05 20220729 | US Teen EB05 20220729 | US Adult1 EB05 20220729 | US Adult2 EB05 20220729 | US Adult3 EB05 20220729 | US Female EB05 20220729 | US Male EB05 20220729
+SMALLPOX + MONKEYPOX (JYNNEOS) | Injection site erythema | 11.4 |  |  |  |  |  | 10.219 | 0.659 |  | 2.669 | 7.208
+SMALLPOX + MONKEYPOX (JYNNEOS) | Injection site induration | 8.491 |  |  |  |  |  | 3.16 | 0.555 |  | 0.685 | 0.974
+SMALLPOX + MONKEYPOX (JYNNEOS) | Injection site pruritus | 2.666 |  |  |  |  |  | 1.441 | 0.552 |  | 0.672 | 0.929
+SMALLPOX + MONKEYPOX (JYNNEOS) | Injection site swelling | 9.54 |  |  |  |  |  | 9.364 | 0.545 |  | 0.922 | 7.99
+SMALLPOX + MONKEYPOX (JYNNEOS) | Injection site warmth | 9.641 |  |  |  |  |  | 7.579 | 0.551 |  | 4.663 | 0.714
