@@ -33,12 +33,15 @@ const documents = defineCollection({
   schema: z.object({
     bates_id: z.string(),
     title: z.string(),
-    doc_type: z.enum(['email', 'presentation', 'spreadsheet', 'paper', 'letter', 'testimony', 'report', 'other']),
+    doc_type: z.enum(['email', 'presentation', 'spreadsheet', 'paper', 'letter', 'testimony', 'report', 'statement', 'bundle', 'other']),
+    format: z.enum(['pdf', 'spreadsheet']).default('pdf'),
     date: z.string().optional(),
     page_count: z.number().int().positive().optional(),
     source_url: z.string().url(),
-    pdf_path: z.string(),
-    ocr_text_path: z.string(),
+    pdf_path: z.string().optional(),
+    ocr_text_path: z.string().optional(),
+    xlsx_path: z.string().optional(),
+    table_data_path: z.string().optional(),
     split_from: z.string().nullable().default(null),
   }),
 });

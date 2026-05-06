@@ -3,22 +3,32 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const docs = (await getCollection('documents')).sort((a, b) => a.data.bates_id.localeCompare(b.data.bates_id));
+
+const formatLabel = (format: string) => format === 'spreadsheet' ? 'Spreadsheet' : 'PDF';
 ---
 
 <BaseLayout title="Documents — Unmasked">
   <h1>Document archive</h1>
-  <p class="placeholder-note">Currently showing placeholder records. Real catalog populates in M2.</p>
+  <p class="archive-summary">
+    {docs.length} documents from the Senate PSI investigation: testimonies, the staff report, and FOIA-produced HHS records.
+  </p>
   <table class="doc-table">
     <thead>
-      <tr><th>Bates ID</th><th>Title</th><th>Type</th><th>Date</th></tr>
+      <tr><th>Bates ID / Title</th><th>Type</th><th>Format</th></tr>
     </thead>
     <tbody>
       {docs.map((doc) => (
         <tr>
-          <td><a href={`/documents/${doc.data.bates_id}/`}><code>{doc.data.bates_id}</code></a></td>
-          <td>{doc.data.title}</td>
+          <td>
+            <a href={`/documents/${doc.data.bates_id}/`}>
+              <code>{doc.data.bates_id}</code>
+            </a>
+            <div class="doc-title">{doc.data.title}</div>
+          </td>
           <td>{doc.data.doc_type}</td>
-          <td>{doc.data.date ?? '—'}</td>
+          <td>
+            <span class={`format-badge format-${doc.data.format}`}>{formatLabel(doc.data.format)}</span>
+          </td>
         </tr>
       ))}
     </tbody>
@@ -26,8 +36,20 @@ const docs = (await getCollection('documents')).sort((a, b) => a.data.bates_id.l
 </BaseLayout>
 
 <style>
+  .archive-summary { font-family: var(--font-sans); color: var(--color-muted); margin-bottom: 1.5rem; }
   .doc-table { width: 100%; border-collapse: collapse; font-family: var(--font-sans); font-size: 0.95rem; }
-  .doc-table th, .doc-table td { padding: 0.6rem 0.5rem; border-bottom: 1px solid var(--color-border); text-align: left; }
+  .doc-table th, .doc-table td { padding: 0.6rem 0.5rem; border-bottom: 1px solid var(--color-border); text-align: left; vertical-align: top; }
   .doc-table th { font-weight: 600; }
-  .placeholder-note { font-style: italic; color: var(--color-muted); }
+  .doc-title { color: var(--color-muted); font-size: 0.9rem; margin-top: 0.2rem; }
+  .format-badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .format-pdf { background: rgba(180, 30, 30, 0.1); color: #b41e1e; border: 1px solid rgba(180, 30, 30, 0.3); }
+  .format-spreadsheet { background: rgba(30, 130, 70, 0.1); color: #1e8246; border: 1px solid rgba(30, 130, 70, 0.3); }
 </style>

@@ -1,42 +1,126 @@
 ---
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { readFile } from 'node:fs/promises';
+import { join } from 'node:path';
+
+interface Props {
+  doc: CollectionEntry<'documents'>;
+}
 
 export async function getStaticPaths() {
   const docs = await getCollection('documents');
   return docs.map((doc) => ({ params: { bates_id: doc.data.bates_id }, props: { doc } }));
 }
 
-interface Props {
-  doc: CollectionEntry<'documents'>;
+const { doc } = Astro.props;
+
+// Load OCR/text sidecar if present
+let ocrText = '';
+if (doc.data.ocr_text_path) {
+  try {
+    ocrText = await readFile(join('./public', doc.data.ocr_text_path), 'utf-8');
+  } catch {
+    /* sidecar may not exist for some docs */
+  }
 }
 
-const { doc } = Astro.props;
+// Load table JSON for spreadsheets
+type SpreadsheetData = { sheets: { name: string; headers: string[]; rows: string[][] }[] };
+let table: SpreadsheetData | null = null;
+if (doc.data.format === 'spreadsheet' && doc.data.table_data_path) {
+  try {
+    const raw = await readFile(join('./public', doc.data.table_data_path), 'utf-8');
+    table = JSON.parse(raw);
+  } catch {}
+}
+
+// For very large sheets, cap row rendering and link to download for the full table.
+const MAX_ROWS_PER_SHEET = 1000;
+let truncated = false;
+const renderedSheets = table
+  ? table.sheets.map((s) => {
+      if (s.rows.length > MAX_ROWS_PER_SHEET) {
+        truncated = true;
+        return { ...s, rows: s.rows.slice(0, MAX_ROWS_PER_SHEET), totalRows: s.rows.length };
+      }
+      return { ...s, totalRows: s.rows.length };
+    })
+  : null;
 ---
 
 <BaseLayout title={`${doc.data.title} — Unmasked`}>
-  <article class="document-page">
+  <article class="document-page" data-pagefind-body>
     <header>
       <h1>{doc.data.title}</h1>
       <p class="bates"><code>{doc.data.bates_id}</code></p>
     </header>
 
     <div class="document-layout">
-      <div class="pdf-pane">
-        <embed src={doc.data.pdf_path} type="application/pdf" />
-        <p class="pdf-fallback">PDF not yet downloaded. <a href={doc.data.source_url}>View original on hsgac.senate.gov</a>.</p>
+      <div class="content-pane">
+        {doc.data.format === 'pdf' && (
+          <div class="pdf-pane">
+            <embed src={doc.data.pdf_path} type="application/pdf" />
+            <p class="pdf-fallback">If the PDF doesn't load, <a href={doc.data.source_url}>view the original on hsgac.senate.gov</a>.</p>
+          </div>
+        )}
+        {doc.data.format === 'spreadsheet' && renderedSheets && (
+          <div class="spreadsheet-pane">
+            {truncated && (
+              <p class="truncation-note">
+                This spreadsheet is large; only the first {MAX_ROWS_PER_SHEET.toLocaleString()} rows of each sheet are shown.
+                {doc.data.xlsx_path && (<> <a href={doc.data.xlsx_path}>Download the full file</a> for complete data.</>)}
+              </p>
+            )}
+            {renderedSheets.map((sheet) => (
+              <div class="sheet">
+                {renderedSheets.length > 1 && <h2 class="sheet-name">{sheet.name}</h2>}
+                <p class="sheet-meta">
+                  {sheet.totalRows.toLocaleString()} row{sheet.totalRows === 1 ? '' : 's'}
+                  {sheet.totalRows > sheet.rows.length && (<> (showing first {sheet.rows.length.toLocaleString()})</>)}
+                </p>
+                <div class="table-wrap">
+                  <table>
+                    {sheet.headers.length > 0 && (
+                      <thead>
+                        <tr>{sheet.headers.map((h) => <th>{h}</th>)}</tr>
+                      </thead>
+                    )}
+                    <tbody>
+                      {sheet.rows.map((row) => (
+                        <tr>{row.map((cell) => <td>{cell}</td>)}</tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
+
       <aside class="meta-pane">
         <dl>
           <dt>Type</dt><dd>{doc.data.doc_type}</dd>
-          <dt>Date</dt><dd>{doc.data.date ?? '—'}</dd>
-          <dt>Pages</dt><dd>{doc.data.page_count ?? '—'}</dd>
+          <dt>Format</dt><dd>{doc.data.format}</dd>
+          {doc.data.date && <><dt>Date</dt><dd>{doc.data.date}</dd></>}
+          {doc.data.page_count && <><dt>Pages</dt><dd>{doc.data.page_count}</dd></>}
           <dt>Source</dt><dd><a href={doc.data.source_url}>hsgac.senate.gov</a></dd>
+          {doc.data.format === 'pdf' && doc.data.pdf_path && (
+            <><dt>Download</dt><dd><a href={doc.data.pdf_path}>PDF</a></dd></>
+          )}
+          {doc.data.format === 'spreadsheet' && doc.data.xlsx_path && (
+            <><dt>Download</dt><dd><a href={doc.data.xlsx_path}>Original spreadsheet</a></dd></>
+          )}
         </dl>
-        <details class="ocr-text">
-          <summary>OCR text</summary>
-          <p class="placeholder-note">OCR text rendered here once pipeline runs in M2.</p>
-        </details>
+
+        {ocrText && (
+          <details class="ocr-text">
+            <summary>{doc.data.format === 'spreadsheet' ? 'Plain text view' : 'OCR text'}</summary>
+            <pre>{ocrText}</pre>
+          </details>
+        )}
       </aside>
     </div>
   </article>
@@ -46,13 +130,36 @@ const { doc } = Astro.props;
   .document-page header { margin-bottom: 1rem; }
   .bates { font-family: var(--font-sans); color: var(--color-muted); margin-top: -0.5rem; }
   .document-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem; align-items: start; }
+
   .pdf-pane embed { width: 100%; height: 70vh; border: 1px solid var(--color-border); }
   .pdf-fallback { font-size: 0.9rem; color: var(--color-muted); }
+
+  .spreadsheet-pane .sheet + .sheet { margin-top: 2rem; }
+  .sheet-name { font-family: var(--font-sans); font-size: 1.1rem; font-weight: 600; margin: 0 0 0.25rem; }
+  .sheet-meta { font-family: var(--font-sans); font-size: 0.85rem; color: var(--color-muted); margin: 0 0 0.5rem; }
+  .truncation-note { font-family: var(--font-sans); font-size: 0.9rem; padding: 0.5rem 0.75rem; background: var(--color-bg); border: 1px solid var(--color-border); border-radius: 4px; margin-bottom: 1rem; }
+  .table-wrap { overflow-x: auto; max-height: 70vh; overflow-y: auto; border: 1px solid var(--color-border); }
+  .spreadsheet-pane table { border-collapse: collapse; font-family: var(--font-sans); font-size: 0.85rem; min-width: 100%; }
+  .spreadsheet-pane th, .spreadsheet-pane td { padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--color-border); border-right: 1px solid var(--color-border); text-align: left; vertical-align: top; }
+  .spreadsheet-pane th { background: var(--color-bg); font-weight: 600; position: sticky; top: 0; }
+  .spreadsheet-pane tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+
   .meta-pane { font-family: var(--font-sans); font-size: 0.95rem; }
   .meta-pane dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.4rem 1rem; }
   .meta-pane dt { font-weight: 600; color: var(--color-muted); }
   .ocr-text { margin-top: 1.5rem; }
-  .placeholder-note { font-style: italic; color: var(--color-muted); }
+  .ocr-text pre {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    padding: 0.75rem;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    line-height: 1.4;
+    max-height: 30vh;
+    overflow: auto;
+    white-space: pre-wrap;
+  }
+
   @media (max-width: 720px) {
     .document-layout { grid-template-columns: 1fr; }
   }

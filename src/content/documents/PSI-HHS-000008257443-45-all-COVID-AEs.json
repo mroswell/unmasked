@@ -1,0 +1,11 @@
+{
+  "bates_id": "PSI-HHS-000008257443-45-all-COVID-AEs",
+  "title": "PSI-HHS-000008257443-45 attachment - all COVID-AEs",
+  "doc_type": "spreadsheet",
+  "format": "spreadsheet",
+  "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/PSI-HHS-000008257443-45-attachment-all-COVID-AEs.xls",
+  "split_from": null,
+  "xlsx_path": "/documents/PSI-HHS-000008257443-45-all-COVID-AEs.xlsx",
+  "table_data_path": "/documents/PSI-HHS-000008257443-45-all-COVID-AEs.json",
+  "ocr_text_path": "/documents/PSI-HHS-000008257443-45-all-COVID-AEs.txt"
+}

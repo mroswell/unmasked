@@ -1,0 +1,10 @@
+{
+  "bates_id": "young-testimony",
+  "title": "Maria Young Testimony",
+  "doc_type": "testimony",
+  "format": "pdf",
+  "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/Young-Testimony.pdf",
+  "split_from": null,
+  "pdf_path": "/documents/young-testimony.pdf",
+  "ocr_text_path": "/documents/young-testimony.txt"
+}
