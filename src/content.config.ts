@@ -4,19 +4,7 @@ import { glob, file } from 'astro/loaders';
 const TIMELINE_CATEGORIES = ['regulatory', 'analysis', 'internal', 'publication', 'oversight'] as const;
 
 const timeline = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/timeline' }),
-  schema: z.object({
-    date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'date must be ISO YYYY-MM-DD'),
-    date_display: z.string(),
-    summary: z.string(),
-    actors: z.array(z.string()).default([]),
-    citations: z.array(z.string()).default([]),
-    tags: z.array(z.string()).default([]),
-  }),
-});
-
-const timelineV2 = defineCollection({
-  loader: glob({ pattern: '**/*.json', base: './src/content/timeline-v2' }),
+  loader: glob({ pattern: '**/*.json', base: './src/content/timeline' }),
   schema: z.object({
     date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'date must be ISO YYYY-MM-DD'),
     date_display: z.string(),
@@ -90,4 +78,4 @@ const citations = defineCollection({
   }),
 });
 
-export const collections = { timeline, timelineV2, glossary, documents, quotes, actors, citations };
+export const collections = { timeline, glossary, documents, quotes, actors, citations };

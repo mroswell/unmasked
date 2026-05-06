@@ -6,62 +6,45 @@ import TimelineEvent from '../../components/TimelineEvent.astro';
 const events = (await getCollection('timeline')).sort((a, b) => a.data.date.localeCompare(b.data.date));
 ---
 
-<BaseLayout title="Timeline — Unmasked">
-  <div class="version-banner">
-    <strong>Original timeline.</strong> Markdown-based, expand-on-click.
-    <a href="/timeline-redesign/">Try the redesigned version →</a>
-  </div>
+<BaseLayout title="Timeline — Signals">
   <h1>Timeline</h1>
-  <p class="placeholder-note">Currently displaying placeholder events. Real chronology arrives in M1.</p>
-  <div class="timeline-controls">
-    <button id="expand-all" type="button">Expand all</button>
-    <button id="collapse-all" type="button">Collapse all</button>
+  <p class="lede">Records released by the U.S. Senate Permanent Subcommittee on Investigations chronicle FDA scientists' attempts to surface masking-affected safety signals in COVID-19 vaccine adverse event data, and the agency's responses.</p>
+  <div class="legend">
+    <span class="legend-item legend-item--regulatory"><span class="dot"></span>Regulatory action</span>
+    <span class="legend-item legend-item--analysis"><span class="dot"></span>Scientific analysis</span>
+    <span class="legend-item legend-item--internal"><span class="dot"></span>Internal conversation</span>
+    <span class="legend-item legend-item--publication"><span class="dot"></span>Publication</span>
+    <span class="legend-item legend-item--oversight"><span class="dot"></span>Oversight</span>
   </div>
-  <ol class="timeline" reversed={false}>
-    {events.map((event) => <li><TimelineEvent event={event} /></li>)}
-  </ol>
+  <div class="timeline-rail">
+    {events.map((event) => <TimelineEvent event={event} />)}
+  </div>
 </BaseLayout>
 
-<script>
-  const expandAll = document.getElementById('expand-all');
-  const collapseAll = document.getElementById('collapse-all');
-  const all = () => document.querySelectorAll<HTMLDetailsElement>('.timeline-event');
-  expandAll?.addEventListener('click', () => all().forEach((d) => (d.open = true)));
-  collapseAll?.addEventListener('click', () => all().forEach((d) => (d.open = false)));
-
-  // Auto-expand event matching URL hash
-  const hash = window.location.hash.slice(1);
-  if (hash) {
-    const target = document.getElementById(hash) as HTMLDetailsElement | null;
-    if (target) {
-      target.open = true;
-      target.scrollIntoView({ block: 'start' });
-    }
-  }
-</script>
-
 <style>
-  .timeline { list-style: none; padding: 0; }
-  .timeline-controls { font-family: var(--font-sans); margin-bottom: 1.5rem; }
-  .timeline-controls button {
-    background: white;
-    border: 1px solid var(--color-border);
-    padding: 0.4rem 0.9rem;
-    cursor: pointer;
-    font-family: inherit;
-    font-size: 0.9rem;
-    margin-right: 0.5rem;
-  }
-  .timeline-controls button:hover { border-color: var(--color-accent); }
-  .placeholder-note { font-style: italic; color: var(--color-muted); }
-  .version-banner {
-    background: #fff8e8;
-    border: 1px solid #e8d394;
-    padding: 0.75rem 1rem;
-    border-radius: 4px;
+  .lede { color: var(--color-muted); max-width: var(--max-prose); }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     font-family: var(--font-sans);
-    font-size: 0.9rem;
-    margin-bottom: 1.5rem;
+    font-size: 0.78rem;
+    margin: 1.5rem 0 2rem;
+    color: var(--color-muted);
   }
-  .version-banner a { margin-left: 1rem; }
+  .legend-item { display: flex; align-items: center; gap: 0.4rem; }
+  .legend-item .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+  .legend-item--regulatory  .dot { background: #1e40af; }
+  .legend-item--analysis    .dot { background: #0f4c5c; }
+  .legend-item--internal    .dot { background: #b45309; }
+  .legend-item--publication .dot { background: #15803d; }
+  .legend-item--oversight   .dot { background: #6b21a8; }
+
+  .timeline-rail {
+    position: relative;
+    margin-left: 0.5rem;
+    padding-left: 0.75rem;
+    border-left: 2px solid var(--color-border);
+  }
 </style>
