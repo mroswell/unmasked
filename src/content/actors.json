@@ -10,5 +10,29 @@
     "name": "Dr. Peter Marks",
     "role_at_time": "Director, FDA Center for Biologics Evaluation and Research (CBER)",
     "short_bio": "Led FDA's biologics center during COVID-19 vaccine authorization and surveillance."
+  },
+  {
+    "id": "dumouchel",
+    "name": "Dr. William DuMouchel",
+    "role_at_time": "Then-Chief Statistician at Oracle",
+    "short_bio": "Inventor of the data mining algorithms (GPS, MGPS, RGPS) that supported FDA's data mining system. Collaborated with Dr. Szarfman on the analyses underlying this report."
+  },
+  {
+    "id": "menschik",
+    "name": "Dr. David Menschik",
+    "role_at_time": "Senior official, FDA CBER (Office of Biostatistics and Pharmacovigilance)",
+    "short_bio": "PLACEHOLDER. Real bio lands in M1."
+  },
+  {
+    "id": "baer",
+    "name": "Dr. Bethany Baer",
+    "role_at_time": "FDA CBER official",
+    "short_bio": "PLACEHOLDER. Real bio lands in M1."
+  },
+  {
+    "id": "zinderman",
+    "name": "Dr. Craig Zinderman",
+    "role_at_time": "FDA CBER official",
+    "short_bio": "PLACEHOLDER. Real bio lands in M1."
   }
 ]
