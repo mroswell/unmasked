@@ -1,0 +1,94 @@
+---
+// This component injects the glossary tooltip script + handles
+// tooltip enrichment for both server-rendered <dfn> elements
+// (from the remark plugin) and plain-text terms on .astro pages.
+---
+
+<script is:inline>
+  (async function() {
+    try {
+      const [aliasesResp, defsResp] = await Promise.all([
+        fetch('/glossary-aliases.json'),
+        fetch('/glossary-shortdefs.json'),
+      ]);
+      if (!aliasesResp.ok || !defsResp.ok) return;
+      const aliases = await aliasesResp.json();
+      const defs = await defsResp.json();
+
+      // Step 1: enrich existing <dfn> elements with the title attribute
+      document.querySelectorAll('dfn[data-term]').forEach((el) => {
+        const term = el.getAttribute('data-term');
+        if (term && defs[term]) el.setAttribute('title', defs[term]);
+      });
+
+      // Step 2: wrap plain-text glossary terms inside main content blocks
+      // that don't already have <dfn> markup (i.e., .astro pages).
+      const wrappedCanonicals = new Set();
+      // Mark any canonical that already has a <dfn> on the page so we
+      // don't double-wrap.
+      document.querySelectorAll('dfn[data-term]').forEach((el) => {
+        const t = el.getAttribute('data-term');
+        if (t) wrappedCanonicals.add(t);
+      });
+
+      const sortedAliases = aliases.slice().sort((a, b) => b.alias.length - a.alias.length);
+
+      const scopes = document.querySelectorAll('main article, main .prose-page, main .prose');
+      scopes.forEach((scope) => {
+        // Walk text nodes; replace the first occurrence of each unwrapped canonical.
+        const walker = document.createTreeWalker(scope, NodeFilter.SHOW_TEXT, {
+          acceptNode: (n) => {
+            if (!n.parentElement) return NodeFilter.FILTER_REJECT;
+            // Skip if inside <code>, <pre>, <dfn>, <a>, or [data-no-gloss]
+            for (let p = n.parentElement; p && p !== scope; p = p.parentElement) {
+              const tag = p.tagName;
+              if (tag === 'CODE' || tag === 'PRE' || tag === 'DFN' || tag === 'A') return NodeFilter.FILTER_REJECT;
+              if (p.hasAttribute('data-no-gloss')) return NodeFilter.FILTER_REJECT;
+            }
+            return NodeFilter.FILTER_ACCEPT;
+          },
+        });
+        const candidates = [];
+        let node;
+        while ((node = walker.nextNode())) candidates.push(node);
+
+        for (const textNode of candidates) {
+          let value = textNode.nodeValue || '';
+          let bestIndex = Infinity, best = null;
+          for (const { canonical, alias } of sortedAliases) {
+            if (wrappedCanonicals.has(canonical)) continue;
+            const re = new RegExp('\\b' + alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i');
+            const m = value.match(re);
+            if (m && m.index !== undefined) {
+              if (m.index < bestIndex) {
+                bestIndex = m.index;
+                best = { canonical, matched: m[0], at: m.index };
+              }
+            }
+          }
+          if (!best) continue;
+
+          const before = value.slice(0, best.at);
+          const after = value.slice(best.at + best.matched.length);
+          const beforeNode = before ? document.createTextNode(before) : null;
+          const dfn = document.createElement('dfn');
+          dfn.setAttribute('data-term', best.canonical);
+          if (defs[best.canonical]) dfn.setAttribute('title', defs[best.canonical]);
+          dfn.textContent = best.matched;
+          const afterNode = after ? document.createTextNode(after) : null;
+
+          const parent = textNode.parentNode;
+          if (!parent) continue;
+          if (beforeNode) parent.insertBefore(beforeNode, textNode);
+          parent.insertBefore(dfn, textNode);
+          if (afterNode) parent.insertBefore(afterNode, textNode);
+          parent.removeChild(textNode);
+
+          wrappedCanonicals.add(best.canonical);
+        }
+      });
+    } catch (e) {
+      // Silently ignore — search and tooltips degrade to plain text.
+    }
+  })();
+</script>

@@ -1,16 +1,14 @@
 import { defineConfig } from 'astro/config';
 import remarkGlossary from './src/lib/remark-glossary.ts';
+import { loadAliases } from './src/lib/glossary-loader.ts';
+import { emitGlossaryAssets } from './src/lib/emit-shortdefs.ts';
 
-const aliases = [
-  { canonical: 'masking', alias: 'masking' },
-  { canonical: 'masking', alias: 'masked' },
-  { canonical: 'masking', alias: 'extreme masking' },
-  { canonical: 'mgps', alias: 'MGPS' },
-  { canonical: 'mgps', alias: 'Multi-item Gamma Poisson Shrinker' },
-];
+emitGlossaryAssets();
+
+const aliases = loadAliases();
 
 export default defineConfig({
-  site: 'https://example.invalid',
+  site: 'https://signals.coviddocuments.com',
   base: '/',
   output: 'static',
   trailingSlash: 'always',

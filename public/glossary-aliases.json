@@ -1,0 +1,494 @@
+[
+  {
+    "canonical": "adverse event",
+    "alias": "adverse event"
+  },
+  {
+    "canonical": "adverse event",
+    "alias": "adverse events"
+  },
+  {
+    "canonical": "adverse event",
+    "alias": "adverse event report"
+  },
+  {
+    "canonical": "adverse event",
+    "alias": "adverse event reports"
+  },
+  {
+    "canonical": "adverse event",
+    "alias": "AE"
+  },
+  {
+    "canonical": "adverse event",
+    "alias": "AEs"
+  },
+  {
+    "canonical": "bates stamp",
+    "alias": "Bates stamp"
+  },
+  {
+    "canonical": "bates stamp",
+    "alias": "Bates ID"
+  },
+  {
+    "canonical": "bates stamp",
+    "alias": "Bates number"
+  },
+  {
+    "canonical": "bates stamp",
+    "alias": "Bates stamps"
+  },
+  {
+    "canonical": "bates stamp",
+    "alias": "Bates-stamped"
+  },
+  {
+    "canonical": "bates stamp",
+    "alias": "Bates stamping"
+  },
+  {
+    "canonical": "bivalent booster",
+    "alias": "bivalent booster"
+  },
+  {
+    "canonical": "bivalent booster",
+    "alias": "bivalent boosters"
+  },
+  {
+    "canonical": "bivalent booster",
+    "alias": "Pfizer-BioNTech bivalent booster"
+  },
+  {
+    "canonical": "bivalent booster",
+    "alias": "COVID-19 bivalent vaccine"
+  },
+  {
+    "canonical": "bivalent booster",
+    "alias": "Pfizer COVID-19 bivalent vaccine"
+  },
+  {
+    "canonical": "bivalent booster",
+    "alias": "bivalent vaccine"
+  },
+  {
+    "canonical": "cber",
+    "alias": "CBER"
+  },
+  {
+    "canonical": "cber",
+    "alias": "Center for Biologics Evaluation and Research"
+  },
+  {
+    "canonical": "cdc",
+    "alias": "CDC"
+  },
+  {
+    "canonical": "cdc",
+    "alias": "Centers for Disease Control and Prevention"
+  },
+  {
+    "canonical": "cdc",
+    "alias": "Centers for Disease Control"
+  },
+  {
+    "canonical": "cder",
+    "alias": "CDER"
+  },
+  {
+    "canonical": "cder",
+    "alias": "Center for Drug Evaluation and Research"
+  },
+  {
+    "canonical": "confounding",
+    "alias": "confounding"
+  },
+  {
+    "canonical": "confounding",
+    "alias": "confounder"
+  },
+  {
+    "canonical": "confounding",
+    "alias": "confounders"
+  },
+  {
+    "canonical": "confounding",
+    "alias": "confounded"
+  },
+  {
+    "canonical": "confounding",
+    "alias": "confound"
+  },
+  {
+    "canonical": "disproportionality",
+    "alias": "disproportionality"
+  },
+  {
+    "canonical": "disproportionality",
+    "alias": "disproportionality analysis"
+  },
+  {
+    "canonical": "disproportionality",
+    "alias": "disproportionate reporting"
+  },
+  {
+    "canonical": "disproportionality",
+    "alias": "disproportionality signal"
+  },
+  {
+    "canonical": "eb data mining",
+    "alias": "EB data mining"
+  },
+  {
+    "canonical": "eb data mining",
+    "alias": "Empirical Bayesian data mining"
+  },
+  {
+    "canonical": "eb data mining",
+    "alias": "Empirical Bayes data mining"
+  },
+  {
+    "canonical": "eb data mining",
+    "alias": "EB Data Mining"
+  },
+  {
+    "canonical": "eb data mining",
+    "alias": "Empirical Bayesian (\"EB\") Data Mining"
+  },
+  {
+    "canonical": "eb data mining",
+    "alias": "Empirical Bayes Geometric Mean"
+  },
+  {
+    "canonical": "eb05",
+    "alias": "EB05"
+  },
+  {
+    "canonical": "eb05",
+    "alias": "EB05 score"
+  },
+  {
+    "canonical": "eb05",
+    "alias": "EB05 value"
+  },
+  {
+    "canonical": "eb05",
+    "alias": "EB05 threshold"
+  },
+  {
+    "canonical": "eb05",
+    "alias": "lower bound of the reporting estimate"
+  },
+  {
+    "canonical": "eua",
+    "alias": "EUA"
+  },
+  {
+    "canonical": "eua",
+    "alias": "Emergency Use Authorization"
+  },
+  {
+    "canonical": "eua",
+    "alias": "emergency use authorizations"
+  },
+  {
+    "canonical": "fda",
+    "alias": "FDA"
+  },
+  {
+    "canonical": "fda",
+    "alias": "Food and Drug Administration"
+  },
+  {
+    "canonical": "fda",
+    "alias": "U.S. Food and Drug Administration"
+  },
+  {
+    "canonical": "filtering",
+    "alias": "filtering"
+  },
+  {
+    "canonical": "filtering",
+    "alias": "filter"
+  },
+  {
+    "canonical": "filtering",
+    "alias": "filtered"
+  },
+  {
+    "canonical": "filtering",
+    "alias": "filter out"
+  },
+  {
+    "canonical": "foia",
+    "alias": "FOIA"
+  },
+  {
+    "canonical": "foia",
+    "alias": "Freedom of Information Act"
+  },
+  {
+    "canonical": "foia",
+    "alias": "FOIA request"
+  },
+  {
+    "canonical": "foia",
+    "alias": "FOIAs"
+  },
+  {
+    "canonical": "foia",
+    "alias": "Freedom of Information Act requests"
+  },
+  {
+    "canonical": "foia",
+    "alias": "FOIA production"
+  },
+  {
+    "canonical": "gps",
+    "alias": "GPS"
+  },
+  {
+    "canonical": "gps",
+    "alias": "Gamma Poisson Shrinker"
+  },
+  {
+    "canonical": "gps",
+    "alias": "Gamma-Poisson Shrinker"
+  },
+  {
+    "canonical": "hhs",
+    "alias": "HHS"
+  },
+  {
+    "canonical": "hhs",
+    "alias": "Department of Health and Human Services"
+  },
+  {
+    "canonical": "hhs",
+    "alias": "U.S. Department of Health and Human Services"
+  },
+  {
+    "canonical": "hhs",
+    "alias": "Dep't of Health and Human Services"
+  },
+  {
+    "canonical": "masking",
+    "alias": "masking"
+  },
+  {
+    "canonical": "masking",
+    "alias": "mask"
+  },
+  {
+    "canonical": "masking",
+    "alias": "masked"
+  },
+  {
+    "canonical": "masking",
+    "alias": "extreme masking"
+  },
+  {
+    "canonical": "masking",
+    "alias": "muting"
+  },
+  {
+    "canonical": "mgps",
+    "alias": "MGPS"
+  },
+  {
+    "canonical": "mgps",
+    "alias": "Multi-item Gamma Poisson Shrinker"
+  },
+  {
+    "canonical": "mgps",
+    "alias": "MGPS model"
+  },
+  {
+    "canonical": "mgps",
+    "alias": "MGPS algorithm"
+  },
+  {
+    "canonical": "mrna vaccine",
+    "alias": "mRNA vaccine"
+  },
+  {
+    "canonical": "mrna vaccine",
+    "alias": "mRNA vaccines"
+  },
+  {
+    "canonical": "mrna vaccine",
+    "alias": "messenger RNA vaccine"
+  },
+  {
+    "canonical": "mrna vaccine",
+    "alias": "mRNA COVID-19 vaccine"
+  },
+  {
+    "canonical": "mrna vaccine",
+    "alias": "mRNA COVID-vaccine"
+  },
+  {
+    "canonical": "mrna vaccine",
+    "alias": "mRNA COVID-19 vaccines"
+  },
+  {
+    "canonical": "myocarditis",
+    "alias": "myocarditis"
+  },
+  {
+    "canonical": "myocarditis",
+    "alias": "pericarditis"
+  },
+  {
+    "canonical": "myocarditis",
+    "alias": "myopericarditis"
+  },
+  {
+    "canonical": "myocarditis",
+    "alias": "myocardial inflammation"
+  },
+  {
+    "canonical": "myocarditis",
+    "alias": "myocardial infarction"
+  },
+  {
+    "canonical": "myocarditis",
+    "alias": "acute myocardial infarction"
+  },
+  {
+    "canonical": "obpv",
+    "alias": "OBPV"
+  },
+  {
+    "canonical": "obpv",
+    "alias": "Office of Biostatistics and Pharmacovigilance"
+  },
+  {
+    "canonical": "ochen",
+    "alias": "OCHEN"
+  },
+  {
+    "canonical": "ochen",
+    "alias": "Office of Cardiology, Hematology, Endocrinology, and Nephrology"
+  },
+  {
+    "canonical": "ochen",
+    "alias": "Division of Cardiology, Hematology, Endocrinology, and Nephrology"
+  },
+  {
+    "canonical": "pharmacovigilance",
+    "alias": "pharmacovigilance"
+  },
+  {
+    "canonical": "pharmacovigilance",
+    "alias": "pharmacovigilant"
+  },
+  {
+    "canonical": "pharmacovigilance",
+    "alias": "drug safety surveillance"
+  },
+  {
+    "canonical": "pharmacovigilance",
+    "alias": "vaccine safety surveillance"
+  },
+  {
+    "canonical": "rgps",
+    "alias": "RGPS"
+  },
+  {
+    "canonical": "rgps",
+    "alias": "Regression-Adjusted Gamma Poisson Shrinker"
+  },
+  {
+    "canonical": "rgps",
+    "alias": "RGPS model"
+  },
+  {
+    "canonical": "rgps",
+    "alias": "RGPS algorithm"
+  },
+  {
+    "canonical": "rgps",
+    "alias": "Regression-Adjusted GPS"
+  },
+  {
+    "canonical": "safety signal",
+    "alias": "safety signal"
+  },
+  {
+    "canonical": "safety signal",
+    "alias": "safety signals"
+  },
+  {
+    "canonical": "safety signal",
+    "alias": "signal"
+  },
+  {
+    "canonical": "safety signal",
+    "alias": "signals"
+  },
+  {
+    "canonical": "safety signal",
+    "alias": "statistically significant safety signal"
+  },
+  {
+    "canonical": "safety signal",
+    "alias": "signal detection"
+  },
+  {
+    "canonical": "stratification",
+    "alias": "stratification"
+  },
+  {
+    "canonical": "stratification",
+    "alias": "stratified"
+  },
+  {
+    "canonical": "stratification",
+    "alias": "stratify"
+  },
+  {
+    "canonical": "stratification",
+    "alias": "stratified analysis"
+  },
+  {
+    "canonical": "truncation",
+    "alias": "truncation"
+  },
+  {
+    "canonical": "truncation",
+    "alias": "truncation bias"
+  },
+  {
+    "canonical": "truncation",
+    "alias": "truncated"
+  },
+  {
+    "canonical": "truncation",
+    "alias": "truncate"
+  },
+  {
+    "canonical": "truncation",
+    "alias": "truncating"
+  },
+  {
+    "canonical": "vaers",
+    "alias": "VAERS"
+  },
+  {
+    "canonical": "vaers",
+    "alias": "Vaccine Adverse Event Reporting System"
+  },
+  {
+    "canonical": "vaers",
+    "alias": "VAERS data"
+  },
+  {
+    "canonical": "vaers",
+    "alias": "VAERS reports"
+  },
+  {
+    "canonical": "vaers",
+    "alias": "VAERS database"
+  }
+]
