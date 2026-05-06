@@ -60,8 +60,8 @@ All links are relative — the site drops cleanly into a subdirectory or moves t
 
 The site is built standalone now, in this directory. Two future hosting paths are both supported:
 
-- **Subdirectory** of an existing site (e.g., `coviddocuments.com/unmasked/`): drop the `dist/` output into the parent repo's `/unmasked/` directory.
-- **Subdomain** (recommended: `unmasked.coviddocuments.com`): give the project its own GitHub repo with a `CNAME` file and a DNS record. Cleaner separation; the URL space stays clean.
+- **Subdirectory** of an existing site (e.g., `coviddocuments.com/signals/`): drop the `dist/` output into the parent repo's `/signals/` directory.
+- **Subdomain** (chosen: `signals.coviddocuments.com`): give the project its own GitHub repo with a `CNAME` file and a DNS record. Cleaner separation; the URL space stays clean. (See `docs/deploy/subdomain-setup.md` for step-by-step.)
 
 Either way, all internal links remain valid.
 
@@ -345,7 +345,7 @@ Astro project scaffolded; page templates for `/`, `/explainer/`, `/timeline/`, `
 
 ### M4 — Polish & migration
 - `/people/` page, topic-based timeline filters, "cite this page" tool, share button refinements.
-- Move to `unmasked.coviddocuments.com` (CNAME + DNS).
+- Move to `signals.coviddocuments.com` (CNAME + DNS).
 - Optional: PDF.js upgrade for per-page deep-linking; annotations/comments layer.
 
 ## 8. Repo structure
