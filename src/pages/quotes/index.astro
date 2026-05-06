@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const quotes = await getCollection('quotes');
+---
+
+<BaseLayout title="Quotes — Unmasked">
+  <h1>Quotes</h1>
+  <p class="placeholder-note">Currently placeholder. Filterable quote wall arrives in M1.</p>
+  <ul class="quote-list">
+    {quotes.map((q) => (
+      <li class="quote-card" id={q.data.id} data-pagefind-body>
+        <blockquote>"{q.data.text}"</blockquote>
+        <footer>
+          <cite>{q.data.speaker}</cite>{q.data.date && <span> · {q.data.date}</span>}
+          <p class="context">{q.data.context}</p>
+        </footer>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>
+
+<style>
+  .quote-list { list-style: none; padding: 0; display: grid; gap: 1.5rem; }
+  .quote-card { padding: 1.25rem; background: white; border: 1px solid var(--color-border); border-radius: 6px; }
+  .quote-card blockquote { font-size: 1.1rem; margin: 0 0 0.75rem; }
+  .quote-card footer { font-family: var(--font-sans); font-size: 0.9rem; color: var(--color-muted); }
+  .context { margin: 0.5rem 0 0; }
+  .placeholder-note { font-style: italic; color: var(--color-muted); }
+</style>

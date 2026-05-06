@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About — Unmasked">
+  <article class="prose-page">
+    <h1>About this site</h1>
+    <p>This is an independent, evidence-first presentation of the U.S. Senate Permanent Subcommittee on Investigations' April 29, 2026 majority-staff interim report <em>Unmasked: How Biden Health Officials Purposely Turned a Blind Eye Toward COVID-19 Vaccine Safety Signals</em>, together with the Bates-stamped HHS records, witness testimony, and other exhibits the Subcommittee published with it.</p>
+    <p>The site is not affiliated with the Subcommittee. Its purpose is to make the underlying records — emails, presentations, FOIA productions, journal papers — accessible and navigable to readers without a pharmacovigilance background, and to honestly disclose where the cited record is or is not publicly available.</p>
+    <h2>Methodology</h2>
+    <p>Source documents are downloaded from the Subcommittee's hearing page, OCR'd with <code>ocrmypdf</code>, and split into individual records where feasible. Citations in the report are extracted by Bates ID and cross-referenced against the document catalog. Where a cited Bates document is not publicly posted, the citation is rendered honestly as such.</p>
+    <h2>Contact</h2>
+    <p>(Contact details TBD — placeholder until M4.)</p>
+  </article>
+</BaseLayout>
+
+<style>
+  .prose-page { max-width: var(--max-prose); margin: 0 auto; }
+</style>

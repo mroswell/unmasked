@@ -1,0 +1,32 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const terms = (await getCollection('glossary')).sort((a, b) => a.data.term.localeCompare(b.data.term));
+const rendered = await Promise.all(
+  terms.map(async (t) => ({ term: t, ...(await render(t)) }))
+);
+---
+
+<BaseLayout title="Glossary — Unmasked">
+  <h1>Glossary</h1>
+  <dl class="glossary">
+    {rendered.map(({ term, Content }) => (
+      <div class="entry" id={term.data.term} data-pagefind-body>
+        <dt>{term.data.term}</dt>
+        <dd>
+          <p class="short-def">{term.data.short_def}</p>
+          <Content />
+        </dd>
+      </div>
+    ))}
+  </dl>
+</BaseLayout>
+
+<style>
+  .glossary { display: grid; gap: 1.5rem; max-width: var(--max-prose); }
+  .entry { padding-bottom: 1.5rem; border-bottom: 1px solid var(--color-border); }
+  .entry dt { font-family: var(--font-sans); font-weight: 600; font-size: 1.1rem; margin-bottom: 0.4rem; }
+  .entry dd { margin: 0; }
+  .short-def { font-style: italic; color: var(--color-muted); }
+</style>
