@@ -1,0 +1,10 @@
+{
+  "id": "wiseman-fda-neglected-correct",
+  "speaker": "wiseman",
+  "date": "2025-09",
+  "text": "FDA's analysis neglected to correct for masking, where signals for one vaccine are concealed by signals from other vaccines.",
+  "context": "Wiseman, an independent medical researcher, identified masking and other limitations in EB data mining as causes of underestimating COVID-19 vaccine adverse events.",
+  "emphasis_words": [],
+  "citation_id": "fn-35",
+  "topic": ["methodology", "science"]
+}

@@ -1,10 +1,10 @@
 {
   "id": "marks-anti-vaccination-rhetoric",
   "speaker": "marks",
-  "date": "2021-04",
+  "date": "2021-09-15",
   "text": "create erroneous conflicts that feed in to anti-vaccination rhetoric",
-  "context": "Marks warning Cavazzoni about Szarfman's data-mining concerns.",
-  "emphasis_words": [],
+  "context": "Marks emailed CDER Director Cavazzoni complaining that Szarfman's data mining strategy could create erroneous conflicts feeding anti-vaccine rhetoric, and noted she had been asked to cease and desist.",
+  "emphasis_words": ["could create erroneous conflicts that feed in to anti-vaccination rhetoric"],
   "citation_id": "fn-9",
   "topic": ["pushback", "framing"]
 }

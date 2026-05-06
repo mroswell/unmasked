@@ -1,0 +1,10 @@
+{
+  "id": "szarfman-not-astonished",
+  "speaker": "szarfman",
+  "date": "2021-06-11",
+  "text": "I am not astonished that [FDA's data mining system] was unable to detect these signals.",
+  "context": "Szarfman emailed FDA colleagues about CDC and FDA discussions on myocardial events and the lack of signals in VAERS, resending DuMouchel's RGPS analysis from one month earlier.",
+  "emphasis_words": ["I am not astonished that [FDA's data mining system] was unable to detect these signals."],
+  "citation_id": "fn-17",
+  "topic": ["methodology", "expertise", "signal"]
+}

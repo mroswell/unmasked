@@ -1,0 +1,10 @@
+{
+  "id": "nair-disproportionality-driven-to-null",
+  "speaker": "nair",
+  "date": "2024-03-15",
+  "text": "I know in the past we have discussed one of the possible limitations of data mining currently is the vast number of VAERS reports from the COVID vaccines may limit our ability to detect statistical alerts because disproportionality scores may be driven towards the null.",
+  "context": "Three years after Szarfman raised the masking concern, Nair restated it nearly verbatim in an internal email asking colleagues if they knew of relevant publications.",
+  "emphasis_words": [],
+  "citation_id": "fn-245",
+  "topic": ["methodology", "signal"]
+}

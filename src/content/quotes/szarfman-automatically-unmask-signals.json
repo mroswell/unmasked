@@ -1,0 +1,10 @@
+{
+  "id": "szarfman-automatically-unmask-signals",
+  "speaker": "szarfman",
+  "date": "2021-07-12",
+  "text": "a method that automatically unmask[s] signals that remain hidden by other data mining methodologies, including MGPS [FDA's current data mining method abbreviated for Multi-item Gamma Poisson Shrinker].",
+  "context": "Szarfman warned Forshee that her and DuMouchel's method had detected an increased mortality signal with the COVID-19 vaccines.",
+  "emphasis_words": [],
+  "citation_id": "fn-18",
+  "topic": ["methodology", "signal"]
+}

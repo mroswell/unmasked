@@ -1,0 +1,10 @@
+{
+  "id": "menschik-way-more-sensitive",
+  "speaker": "menschik",
+  "date": "2024-09-26",
+  "text": "in general the [RGPS model] appears way more sensitive in that its scores are generally higher than corresponding [MGPS model] scores when sampling different [adverse events].",
+  "context": "Menschik concurred with Baer's finding that RGPS yielded higher signal numbers than MGPS — three years after Szarfman first told FDA the same thing.",
+  "emphasis_words": ["way more sensitive"],
+  "citation_id": "fn-258",
+  "topic": ["methodology", "signal"]
+}
