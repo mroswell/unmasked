@@ -1,0 +1,26 @@
+# Build output
+dist/
+.astro/
+
+# Dependencies
+node_modules/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+npm-debug.log*
+
+# Pipeline scratch (manifests committed; intermediates ignored)
+ocr/*.tmp
+split-proposals/*.tmp
