@@ -1,0 +1,211 @@
+[
+  {
+    "id": "johnson-opening-statement",
+    "title": "Chairman Ron Johnson Opening Statement (April 29, 2026)",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/2026.04.29-%E2%80%93-Vaccine-Monitoring-Failures-Chairman-Johnson-Opening-Statement.pdf",
+    "kind": "statement",
+    "ext": "pdf",
+    "byte_size": 2275211,
+    "sha256": "d739e618a91ad8138bd5556a602b278e01181f079b7e69a056c052e41994cfdb",
+    "fetched_at": "2026-05-06T19:24:43Z",
+    "local_path": "raw/johnson-opening-statement.pdf"
+  },
+  {
+    "id": "wiseman-testimony",
+    "title": "David Wiseman Testimony",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/Wiseman-Testimony.pdf",
+    "kind": "testimony",
+    "ext": "pdf",
+    "byte_size": 518804,
+    "sha256": "72151e9ea810e41b36cac339611c37d0051b0ec4bd5c8bb6f1ad8df69c0d4677",
+    "fetched_at": "2026-05-06T19:24:43Z",
+    "local_path": "raw/wiseman-testimony.pdf"
+  },
+  {
+    "id": "wiseman-supporting-document-1",
+    "title": "Wiseman Supporting Document 1",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/Wiseman-Supporting-Document-1.pdf",
+    "kind": "testimony",
+    "ext": "pdf",
+    "byte_size": 3281012,
+    "sha256": "38f3693abf88e957bc54fb62156482dba3dec7dad2561be2087d7bc5a691cde3",
+    "fetched_at": "2026-05-06T19:24:43Z",
+    "local_path": "raw/wiseman-supporting-document-1.pdf"
+  },
+  {
+    "id": "wiseman-supporting-document-2",
+    "title": "Wiseman Supporting Document 2",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/Wiseman-Supporting-Document-2.pdf",
+    "kind": "testimony",
+    "ext": "pdf",
+    "byte_size": 1733401,
+    "sha256": "06a1e794908ffa1736ac914f27410629abc1aba986b61f72ac1a93e7dfacfd4f",
+    "fetched_at": "2026-05-06T19:24:43Z",
+    "local_path": "raw/wiseman-supporting-document-2.pdf"
+  },
+  {
+    "id": "jablonowski-testimony",
+    "title": "Karl Jablonowski Testimony",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/Jablonowski-Testimony.pdf",
+    "kind": "testimony",
+    "ext": "pdf",
+    "byte_size": 557512,
+    "sha256": "e3ee51e16bfc20bff2840d5c1b604d0fa9c77478a4c27ccc52ca153d9c318b67",
+    "fetched_at": "2026-05-06T19:24:43Z",
+    "local_path": "raw/jablonowski-testimony.pdf"
+  },
+  {
+    "id": "young-testimony",
+    "title": "Maria Young Testimony",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/Young-Testimony.pdf",
+    "kind": "testimony",
+    "ext": "pdf",
+    "byte_size": 268237,
+    "sha256": "59db6be9d415cab8b298172171ea62eed4da00b28989373c1fa066eb102d27df",
+    "fetched_at": "2026-05-06T19:24:43Z",
+    "local_path": "raw/young-testimony.pdf"
+  },
+  {
+    "id": "psi-april-2026-part-1",
+    "title": "Senate PSI Majority Staff Report - Part 1",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/Part-1.pdf",
+    "kind": "bundle",
+    "ext": "pdf",
+    "byte_size": 16920205,
+    "sha256": "9258fce7aaa28880e1eb74ba2973d4494ae50d4a98d3c9a69c712757cd80c911",
+    "fetched_at": "2026-05-06T19:24:43Z",
+    "local_path": "raw/psi-april-2026-part-1.pdf"
+  },
+  {
+    "id": "psi-april-2026-part-2",
+    "title": "Senate PSI Majority Staff Report - Part 2",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/Part-2.pdf",
+    "kind": "bundle",
+    "ext": "pdf",
+    "byte_size": 11991133,
+    "sha256": "496875441f45a8f615e3bcb307d7157bccab1854a51e2c5d2b298e4ded420f99",
+    "fetched_at": "2026-05-06T19:24:43Z",
+    "local_path": "raw/psi-april-2026-part-2.pdf"
+  },
+  {
+    "id": "psi-april-2026-part-3",
+    "title": "Senate PSI Majority Staff Report - Part 3",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/Part-3.pdf",
+    "kind": "bundle",
+    "ext": "pdf",
+    "byte_size": 14349735,
+    "sha256": "1be932dc687795d1c0e7ad56e1d1ce760d4516097e9c22ee0ec542f7a40b930d",
+    "fetched_at": "2026-05-06T19:24:43Z",
+    "local_path": "raw/psi-april-2026-part-3.pdf"
+  },
+  {
+    "id": "PSI-HHS-000001187885",
+    "title": "PSI-HHS-000001187885 attachment",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/PSI-HHS-000001187885-attachment.xls",
+    "kind": "attachment",
+    "ext": "xls",
+    "byte_size": 26112,
+    "sha256": "7635836e21386af65579131cd5b3f38f162e671d1350eaf3584e98713f3f1690",
+    "fetched_at": "2026-05-06T19:24:43Z",
+    "local_path": "raw/PSI-HHS-000001187885.xls"
+  },
+  {
+    "id": "PSI-HHS-000001217046",
+    "title": "PSI-HHS-000001217046 attachment",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/PSI-HHS-000001217046-attachment.xls",
+    "kind": "attachment",
+    "ext": "xls",
+    "byte_size": 55296,
+    "sha256": "614ef3585faee53daf425efa6063725149a30302dd3527160cccc51a2f896d5d",
+    "fetched_at": "2026-05-06T19:24:43Z",
+    "local_path": "raw/PSI-HHS-000001217046.xls"
+  },
+  {
+    "id": "PSI-HHS-000004590546-47",
+    "title": "PSI-HHS-000004590546-47 attachment",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/PSI-HHS-000004590546-47-attachment.xlsx",
+    "kind": "attachment",
+    "ext": "xlsx",
+    "byte_size": 461820,
+    "sha256": "5015f056a11f56fe2b53d9f6417da2c38272bc7fccd795c6c20304c45664537f",
+    "fetched_at": "2026-05-06T19:24:43Z",
+    "local_path": "raw/PSI-HHS-000004590546-47.xlsx"
+  },
+  {
+    "id": "PSI-HHS-000004592364-65-and-000004588545-46",
+    "title": "PSI-HHS-000004592364-65 and PSI-HHS-000004588545-46 attachment",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/PSI-HHS-000004592364-65-and-PSI-HHS-000004588545-46-attachment.xlsx",
+    "kind": "attachment",
+    "ext": "xlsx",
+    "byte_size": 461769,
+    "sha256": "7d72146e424c188c06fad0935b827c29dd0191b4f8ad48edd3443462d349768a",
+    "fetched_at": "2026-05-06T19:24:44Z",
+    "local_path": "raw/PSI-HHS-000004592364-65-and-000004588545-46.xlsx"
+  },
+  {
+    "id": "PSI-HHS-000004783470-73",
+    "title": "PSI-HHS-000004783470-73 attachment",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/PSI-HHS-000004783470-73-attachment.xlsx",
+    "kind": "attachment",
+    "ext": "xlsx",
+    "byte_size": 55864,
+    "sha256": "4b66499dd422844e79c0840a2965cc9dc079235f2119b52c53e40a1b6e8f5b03",
+    "fetched_at": "2026-05-06T19:24:44Z",
+    "local_path": "raw/PSI-HHS-000004783470-73.xlsx"
+  },
+  {
+    "id": "PSI-HHS-000007183065",
+    "title": "PSI-HHS-000007183065 attachment",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/PSI-HHS-000007183065-attachment.xls",
+    "kind": "attachment",
+    "ext": "xls",
+    "byte_size": 37376,
+    "sha256": "2ea5ed6db4f990e0c10f5c3cf7c0e0590a37e07cf49d2e0359bd0d731f2be9b1",
+    "fetched_at": "2026-05-06T19:24:44Z",
+    "local_path": "raw/PSI-HHS-000007183065.xls"
+  },
+  {
+    "id": "PSI-HHS-000008256551",
+    "title": "PSI-HHS-000008256551 attachment",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/PSI-HHS-000008256551-attachment.xls",
+    "kind": "attachment",
+    "ext": "xls",
+    "byte_size": 25600,
+    "sha256": "6a106ead90eadbb8b7ef443a53a2c4eb179844850a8e6000935aa02b3bbb4691",
+    "fetched_at": "2026-05-06T19:24:44Z",
+    "local_path": "raw/PSI-HHS-000008256551.xls"
+  },
+  {
+    "id": "PSI-HHS-000008257443-45-49-examples",
+    "title": "PSI-HHS-000008257443-45 attachment - 49 examples of extreme masking",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/PSI-HHS-000008257443-45-attachment-49-examples-of-extreme-masking.xls",
+    "kind": "attachment",
+    "ext": "xls",
+    "byte_size": 41472,
+    "sha256": "883fa83e3bef56c7d469e8b5aff888740fb255aff3b1c54ceab0117ee566ac30",
+    "fetched_at": "2026-05-06T19:24:44Z",
+    "local_path": "raw/PSI-HHS-000008257443-45-49-examples.xls"
+  },
+  {
+    "id": "PSI-HHS-000008257443-45-all-COVID-AEs",
+    "title": "PSI-HHS-000008257443-45 attachment - all COVID-AEs",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/PSI-HHS-000008257443-45-attachment-all-COVID-AEs.xls",
+    "kind": "attachment",
+    "ext": "xls",
+    "byte_size": 7923712,
+    "sha256": "223c180a696c9728600aab4d79cef3da814113412f864d87e3e66d7492e7fa60",
+    "fetched_at": "2026-05-06T19:24:44Z",
+    "local_path": "raw/PSI-HHS-000008257443-45-all-COVID-AEs.xls"
+  },
+  {
+    "id": "PSI-HHS-000008258306-07",
+    "title": "PSI-HHS-000008258306-07 attachment",
+    "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/PSI-HHS-000008258306-07-attachment.xls",
+    "kind": "attachment",
+    "ext": "xls",
+    "byte_size": 32256,
+    "sha256": "c81ea24954a0b3748c4957f150e1093ad84166d3b6df730d43a69afc44095c80",
+    "fetched_at": "2026-05-06T19:24:44Z",
+    "local_path": "raw/PSI-HHS-000008258306-07.xls"
+  }
+]

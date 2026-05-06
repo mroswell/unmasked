@@ -24,3 +24,14 @@ npm-debug.log*
 # Pipeline scratch (manifests committed; intermediates ignored)
 ocr/*.tmp
 split-proposals/*.tmp
+
+# Document pipeline (raw downloads — derived from source URLs, not committed;
+# OCR outputs in ocr/ are committed). The manifest is small and is committed
+# so the repo records exactly what was downloaded. We exclude individual
+# downloaded files (not the directory itself) so !raw/manifest.json can
+# re-include the manifest.
+raw/*
+!raw/manifest.json
+
+# Local scratch
+.tmp/
