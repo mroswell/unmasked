@@ -12,7 +12,7 @@ interface Options {
 }
 
 const remarkGlossary: Plugin<[Options], Root> = (options) => {
-  const aliases = [...options.aliases].sort((a, b) => b.alias.length - a.alias.length);
+  const aliases = options.aliases;
 
   return (tree) => {
     const wrappedCanonicals = new Set<string>();
@@ -26,21 +26,28 @@ const remarkGlossary: Plugin<[Options], Root> = (options) => {
       let value = node.value;
       let hadReplacement = false;
 
-      for (const { canonical, alias } of aliases) {
-        if (wrappedCanonicals.has(canonical)) continue;
-        const re = new RegExp(`\\b(${escapeRegex(alias)})\\b`, 'i');
-        const match = value.match(re);
-        if (!match || match.index === undefined) continue;
+      while (true) {
+        let best: { canonical: string; alias: string; index: number; matched: string } | null = null;
+        for (const { canonical, alias } of aliases) {
+          if (wrappedCanonicals.has(canonical)) continue;
+          const re = new RegExp(`\\b(${escapeRegex(alias)})\\b`, 'i');
+          const m = value.match(re);
+          if (!m || m.index === undefined) continue;
+          if (!best || m.index < best.index || (m.index === best.index && alias.length > best.alias.length)) {
+            best = { canonical, alias, index: m.index, matched: m[0] };
+          }
+        }
+        if (!best) break;
 
-        const before = value.slice(0, match.index);
-        const after = value.slice(match.index + match[0].length);
+        const before = value.slice(0, best.index);
+        const after = value.slice(best.index + best.matched.length);
         if (before) replacements.push({ type: 'text', value: before } as Text);
         replacements.push({
           type: 'html',
-          value: `<dfn data-term="${canonical}">${escapeHtml(match[0])}</dfn>`,
+          value: `<dfn data-term="${escapeAttr(best.canonical)}">${escapeHtml(best.matched)}</dfn>`,
         } as RootContent);
         value = after;
-        wrappedCanonicals.add(canonical);
+        wrappedCanonicals.add(best.canonical);
         hadReplacement = true;
       }
 
@@ -77,6 +84,13 @@ function escapeRegex(s: string): string {
 }
 function escapeHtml(s: string): string {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+function escapeAttr(s: string): string {
+  return s
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
 }
 
 export default remarkGlossary;

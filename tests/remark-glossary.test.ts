@@ -43,4 +43,18 @@ describe('remark-glossary', () => {
     expect(result).not.toContain('<dfn data-term="masking">');
     expect(result).toContain('`masking`');
   });
+
+  it('wraps the earliest source-position occurrence when multiple aliases share a canonical', async () => {
+    const result = await process('We saw masked outcomes before any masking adjustments.');
+    // Expected: "masked" gets wrapped, "masking" does NOT (canonical already used)
+    expect(result).toContain('<dfn data-term="masking">masked</dfn>');
+    expect(result).not.toContain('<dfn data-term="masking">masking</dfn>');
+  });
+
+  it('html-escapes the canonical name in the data-term attribute', async () => {
+    const customAliases = [{ canonical: 'a"b<c', alias: 'odd' }];
+    const out = await remark().use(remarkGlossary, { aliases: customAliases }).process('an odd term');
+    const result = String(out);
+    expect(result).toContain('data-term="a&quot;b&lt;c"');
+  });
 });
