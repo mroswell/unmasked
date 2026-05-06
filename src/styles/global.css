@@ -12,7 +12,11 @@
 
 * { box-sizing: border-box; }
 
-html { font-size: 17px; }
+html {
+  font-size: 17px;
+  /* offset for sticky header so URL-fragment scrolls don't land under it */
+  scroll-padding-top: 4.5rem;
+}
 
 body {
   margin: 0;
@@ -33,6 +37,15 @@ a { color: var(--color-accent); }
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-bg);
+  /* subtle elevation when content scrolls underneath */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
 .site-footer {
