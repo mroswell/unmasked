@@ -20,19 +20,121 @@
   {
     "id": "menschik",
     "name": "Dr. David Menschik",
-    "role_at_time": "Senior official, FDA CBER (Office of Biostatistics and Pharmacovigilance)",
-    "short_bio": "PLACEHOLDER. Real bio lands in M1."
+    "role_at_time": "Associate Director for Surveillance Informatics, Division of Pharmacovigilance, FDA CBER OBPV",
+    "short_bio": "Distributed FDA's weekly COVID-19 vaccine data mining reports and helped draft the May 2021 email directing Dr. Szarfman to hold off on her analyses."
   },
   {
     "id": "baer",
     "name": "Dr. Bethany Baer",
-    "role_at_time": "FDA CBER official",
-    "short_bio": "PLACEHOLDER. Real bio lands in M1."
+    "role_at_time": "Official, Division of Pharmacovigilance, FDA CBER OBPV",
+    "short_bio": "CBER official who questioned Dr. Szarfman's access to VAERS data and acknowledged in 2024 that the RGPS model yielded significantly higher signals than MGPS."
   },
   {
     "id": "zinderman",
     "name": "Dr. Craig Zinderman",
-    "role_at_time": "FDA CBER official",
-    "short_bio": "PLACEHOLDER. Real bio lands in M1."
+    "role_at_time": "Associate Director for Medical Policy, FDA CBER OBPV",
+    "short_bio": "Transmitted the May 7, 2021 email directing Dr. Szarfman to hold off on creating and sending COVID-19 vaccine data mining reports and analyses."
+  },
+  {
+    "id": "anderson",
+    "name": "Dr. Steven Anderson",
+    "role_at_time": "Director, Office of Biostatistics and Pharmacovigilance, FDA CBER",
+    "short_bio": "Headed CBER's pharmacovigilance office and in September 2021 asked that Dr. Szarfman refrain from using her FDA email to communicate data mining findings using CBER VAERS data."
+  },
+  {
+    "id": "forshee",
+    "name": "Dr. Richard Forshee",
+    "role_at_time": "Associate Director for Research/Acting Deputy Director, FDA CBER OBPV",
+    "short_bio": "Reported Dr. Szarfman's mortality-signal findings to Dr. Marks in July 2021 and in 2022 expressed concerns about her published paper on masking."
+  },
+  {
+    "id": "niu",
+    "name": "Dr. Manette Niu",
+    "role_at_time": "Acting Branch Chief, Division of Pharmacovigilance, FDA CBER OBPV",
+    "short_bio": "CBER official who received Dr. Szarfman's RGPS analyses in 2021 and told her CBER could not collaborate with her on the project."
+  },
+  {
+    "id": "nair",
+    "name": "Dr. Narayan Nair",
+    "role_at_time": "Division Director, Division of Pharmacovigilance, FDA CBER OBPV",
+    "short_bio": "Suggested in 2022 that FDA discontinue routine distribution of weekly COVID-19 data mining reports to CDC and acknowledged in 2023 that FDA was aware of the masking limitation during the pandemic."
+  },
+  {
+    "id": "cavazzoni",
+    "name": "Dr. Patrizia Cavazzoni",
+    "role_at_time": "Director, FDA Center for Drug Evaluation and Research (CDER)",
+    "short_bio": "Was warned by Dr. Marks in September 2021 that Dr. Szarfman's data mining could create erroneous conflicts that feed into anti-vaccination rhetoric."
+  },
+  {
+    "id": "stein",
+    "name": "Dr. Peter Stein",
+    "role_at_time": "Director, Office of New Drugs, FDA CDER",
+    "short_bio": "Reported to Dr. Marks in September 2021 that his office had made clear to Dr. Szarfman that she should not be discussing or providing internal analyses externally."
+  },
+  {
+    "id": "stockbridge",
+    "name": "Dr. Norman Stockbridge",
+    "role_at_time": "Division Director, Division of Cardiology and Nephrology, FDA CDER",
+    "short_bio": "CDER division director who attended Dr. Szarfman's December 2020 meeting on new safety methodology and received her May 2021 analysis on undervalued myocardial infarction signals."
+  },
+  {
+    "id": "califf",
+    "name": "Dr. Robert Califf",
+    "role_at_time": "Commissioner, FDA (Feb. 2022 - Jan. 2025)",
+    "short_bio": "Received Dr. Szarfman's 2022 paper on unmasking hidden signals and replied only, 'Thanks. These are good.'"
+  },
+  {
+    "id": "walinsky",
+    "name": "Sarah Walinsky",
+    "role_at_time": "Acting Chief of Staff, FDA CBER",
+    "short_bio": "In February 2022 circulated Dr. Szarfman's preprint on masking to FDA officials weighing Moderna's pediatric COVID-19 vaccine appeal."
+  },
+  {
+    "id": "shimabukuro",
+    "name": "Dr. Tom Shimabukuro",
+    "role_at_time": "Deputy Director and later Director, Immunization Safety Office, CDC",
+    "short_bio": "Senior CDC vaccine safety official who in June 2022 lauded FDA's EB data mining as the 'gold standard' for disproportionality analysis."
+  },
+  {
+    "id": "su",
+    "name": "Dr. John Su",
+    "role_at_time": "Immunization Safety Office, CDC; later Deputy Director and Acting Director",
+    "short_bio": "CDC vaccine safety official with whom Dr. Menschik discussed the masking limitation in September 2021 in connection with a draft article on COVID-19 vaccine safety."
+  },
+  {
+    "id": "walensky",
+    "name": "Dr. Rochelle Walensky",
+    "role_at_time": "Director, Centers for Disease Control and Prevention",
+    "short_bio": "CDC Director who in 2022 wrote to Sen. Johnson defending EB data mining as 'a more robust technique' for analyzing VAERS reports."
+  },
+  {
+    "id": "reezek",
+    "name": "Jeff Reezek",
+    "role_at_time": "Official, Centers for Disease Control and Prevention",
+    "short_bio": "Authored the March 2023 CDC letter to Sen. Johnson on EB data mining cited throughout the report."
+  },
+  {
+    "id": "maro",
+    "name": "Dr. Judy Maro",
+    "role_at_time": "Associate Professor, Department of Population Medicine, Harvard Medical School and Harvard Pilgrim Health Care Institute",
+    "short_bio": "Harvard researcher working with FDA and CDC who in October 2023 raised concerns about masking in FDA's data mining system."
+  },
+  {
+    "id": "wiseman",
+    "name": "Dr. David Wiseman",
+    "role_at_time": "Independent medical researcher",
+    "short_bio": "Authored a September 2025 preprint identifying masking and other limitations in EB data mining that resulted in underestimation of COVID-19 vaccine adverse events."
+  },
+  {
+    "id": "hendrix",
+    "name": "Brian Hendrix",
+    "role_at_time": "Contractor, Commonwealth Informatics (Empirica Signal system)",
+    "short_bio": "Commonwealth contractor who in March 2021 received Dr. Menschik's request for a special MGPS run adjusting for masking."
+  },
+  {
+    "id": "johnson",
+    "name": "Sen. Ron Johnson",
+    "role_at_time": "Chairman, U.S. Senate Permanent Subcommittee on Investigations",
+    "short_bio": "PSI Chairman who issued the interim report and conducted the underlying oversight of federal health agencies' COVID-19 vaccine safety surveillance."
   }
 ]
