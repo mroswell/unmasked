@@ -1,14 +1,18 @@
 [
   {
     "id": "fn-1",
-    "bates_ids": ["PSI-HHS-000008257238"],
+    "bates_ids": [
+      "PSI-HHS-000008257238"
+    ],
     "footnote_text": "HHS records also credit Dr. Szarfman as someone who \"worked to develop the data mining system\" that FDA was using at the time. See PSI-HHS-000008257238; David Wiseman, Signal loss by truancy, masking, and filtering, and underestimation of potential risks and suspected adverse reactions in the Disproportionality Signal Analyses of VAERS data associated with COVID-19 pro-vaccines, ResearchGate, Sept. 2025, https://www.researchgate.net/publication/395382959_Signal_loss_by_truancy_masking_and_filtering_and_underestimation_of_potential_risks_and_suspected_adverse_reactions_in_the_Disproportionality_Signal_Analyses_of_VAERS_data_associated_with_COVID-19_pro at 8-9. Dr. Szarfman retired from the FDA in 2025. The Subcommittee applied Bates stamps to the records cited in the report that were produced by HHS.",
     "document_id": null,
     "external_url": "https://www.researchgate.net/publication/395382959_Signal_loss_by_truancy_masking_and_filtering_and_underestimation_of_potential_risks_and_suspected_adverse_reactions_in_the_Disproportionality_Signal_Analyses_of_VAERS_data_associated_with_COVID-19_pro"
   },
   {
     "id": "fn-2",
-    "bates_ids": ["PSI-HHS-000008257443-44"],
+    "bates_ids": [
+      "PSI-HHS-000008257443-44"
+    ],
     "footnote_text": "PSI-HHS-000008257443-44 (with attachment).",
     "document_id": null,
     "external_url": null
@@ -22,7 +26,10 @@
   },
   {
     "id": "fn-4",
-    "bates_ids": ["PSI-HHS-000002293255", "PSI-HHS-000008263190-91"],
+    "bates_ids": [
+      "PSI-HHS-000002293255",
+      "PSI-HHS-000008263190-91"
+    ],
     "footnote_text": "PSI-HHS-000002293255; PSI-HHS-000008263190-91 (emphasis added). Records show that FDA's threshold for determining a statistically significant safety signal was when the lower bound of the reporting estimate (EB05) exceeded 2.0. See PSI's March 25, 2026 document release on EB data mining: https://www.ronjohnson.senate.gov/services/files/F92FBB0A-CCFD-412A-A02D-243AA1844D6E at 166; FOIA production: https://www.fda.gov/media/184988/download?attachment at 23.",
     "document_id": null,
     "external_url": "https://www.ronjohnson.senate.gov/services/files/F92FBB0A-CCFD-412A-A02D-243AA1844D6E",
@@ -30,14 +37,21 @@
   },
   {
     "id": "fn-5",
-    "bates_ids": ["PSI-HHS-000008257443-44"],
+    "bates_ids": [
+      "PSI-HHS-000008257443-44"
+    ],
     "footnote_text": "PSI-HHS-000008257443-44 (with attachment).",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-6",
-    "bates_ids": ["PSI-HHS-000008258306", "PSI-HHS-00008258202-03", "PSI-HHS-000002208944-45", "PSI-HHS-000004592364-65"],
+    "bates_ids": [
+      "PSI-HHS-000008258306",
+      "PSI-HHS-00008258202-03",
+      "PSI-HHS-000002208944-45",
+      "PSI-HHS-000004592364-65"
+    ],
     "footnote_text": "PSI-HHS-000008258306 (with attachment); PSI-HHS-00008258202-03; PSI-HHS-000002208944-45; PSI-HHS-000004592364-65 (with attachment) (emphasis added).",
     "document_id": null,
     "external_url": null,
@@ -45,7 +59,9 @@
   },
   {
     "id": "fn-7",
-    "bates_ids": ["PSI-HHS-000008251979"],
+    "bates_ids": [
+      "PSI-HHS-000008251979"
+    ],
     "footnote_text": "PSI-HHS-000008251979 (emphasis added, ellipsis in original).",
     "document_id": null,
     "external_url": null,
@@ -53,28 +69,44 @@
   },
   {
     "id": "fn-8",
-    "bates_ids": ["PSICOVID_00017246", "PSI-HHS-000008251530", "PSI-HHS-000008251912-13", "PSI-HHS-000001195617-19", "PSI_HHS-000008253450-51", "PSI-HHS-000001175745-47", "PSICOVID_00017246-47"],
+    "bates_ids": [
+      "PSICOVID_00017246",
+      "PSI-HHS-000008251530",
+      "PSI-HHS-000008251912-13",
+      "PSI-HHS-000001195617-19",
+      "PSI_HHS-000008253450-51",
+      "PSI-HHS-000001175745-47",
+      "PSICOVID_00017246-47"
+    ],
     "footnote_text": "PSICOVID_00017246; PSI-HHS-000008251530; PSI-HHS-000008251912-13; PSI-HHS-000001195617-19; PSI_HHS-000008253450-51; PSI-HHS-000001175745-47; PSICOVID_00017246-47.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-9",
-    "bates_ids": ["PSI-HHS-000002213753", "PSICOVID_00017246-47"],
+    "bates_ids": [
+      "PSI-HHS-000002213753",
+      "PSICOVID_00017246-47"
+    ],
     "footnote_text": "PSI-HHS-000002213753; PSICOVID_00017246-47. See also, Testimony of Dr. Peter Marks before the Select Subcomm. on the Coronavirus Pandemic Comm. on Oversight and Accountability, U.S. House of Representatives, Feb. 15, 2024, https://oversight.house.gov/wp-content/uploads/2024/02/FDA-SSCP-Vaccine-Safety-and-Surveillance-FDA-Written-Testimony-FINAL-Clean.pdf.",
     "document_id": null,
     "external_url": "https://oversight.house.gov/wp-content/uploads/2024/02/FDA-SSCP-Vaccine-Safety-and-Surveillance-FDA-Written-Testimony-FINAL-Clean.pdf"
   },
   {
     "id": "fn-10",
-    "bates_ids": ["PSICOVID_00017246-47"],
+    "bates_ids": [
+      "PSICOVID_00017246-47"
+    ],
     "footnote_text": "PSICOVID_00017246-47.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-11",
-    "bates_ids": ["PSICOVID_00017245", "PSI-HHS-000002208944-45"],
+    "bates_ids": [
+      "PSICOVID_00017245",
+      "PSI-HHS-000002208944-45"
+    ],
     "footnote_text": "PSICOVID_00017245; PSI-HHS-000002208944-45. In a May 6, 2021 email to her FDA colleagues, Dr. Szarfman wrote, \"Note that the ER05 signals of RPGS are higher than the EB05 signals of MGPS.\" Id.",
     "document_id": null,
     "external_url": null
@@ -102,35 +134,45 @@
   },
   {
     "id": "fn-15",
-    "bates_ids": ["PSI-HHS-000002208944"],
+    "bates_ids": [
+      "PSI-HHS-000002208944"
+    ],
     "footnote_text": "PSI-HHS-000002208944.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-16",
-    "bates_ids": ["PSI-HHS-000002208944-45"],
+    "bates_ids": [
+      "PSI-HHS-000002208944-45"
+    ],
     "footnote_text": "PSI-HHS-000002208944-45.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-17",
-    "bates_ids": ["PSI-HHS-000002208944"],
+    "bates_ids": [
+      "PSI-HHS-000002208944"
+    ],
     "footnote_text": "PSI-HHS-000002208944.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-18",
-    "bates_ids": ["PSI-HHS-000004592364"],
+    "bates_ids": [
+      "PSI-HHS-000004592364"
+    ],
     "footnote_text": "PSI-HHS-000004592364.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-19",
-    "bates_ids": ["PSI-HHS-000008254471"],
+    "bates_ids": [
+      "PSI-HHS-000008254471"
+    ],
     "footnote_text": "PSI-HHS-000008254471.",
     "document_id": null,
     "external_url": null
@@ -144,7 +186,9 @@
   },
   {
     "id": "fn-21",
-    "bates_ids": ["PSI-HHS-000004461747-48"],
+    "bates_ids": [
+      "PSI-HHS-000004461747-48"
+    ],
     "footnote_text": "PSI-HHS-000004461747-48.",
     "document_id": null,
     "external_url": null
@@ -158,7 +202,9 @@
   },
   {
     "id": "fn-23",
-    "bates_ids": ["PSI-HHS-000004594929"],
+    "bates_ids": [
+      "PSI-HHS-000004594929"
+    ],
     "footnote_text": "PSI-HHS-000004594929.",
     "document_id": null,
     "external_url": null
@@ -172,7 +218,9 @@
   },
   {
     "id": "fn-25",
-    "bates_ids": ["PSI-HHS-000002293255"],
+    "bates_ids": [
+      "PSI-HHS-000002293255"
+    ],
     "footnote_text": "PSI-HHS-000002293255. See also, William DuMouchel, Bayesian Data Mining in Large Frequency Tables, with an Application to the FDA Spontaneous Reporting System, The American Statistician (1999), available at https://www.jstor.org/stable/2686093?seq=1.",
     "document_id": null,
     "external_url": "https://www.jstor.org/stable/2686093?seq=1"
@@ -193,7 +241,9 @@
   },
   {
     "id": "fn-28",
-    "bates_ids": ["PSI-HHS-000008257238"],
+    "bates_ids": [
+      "PSI-HHS-000008257238"
+    ],
     "footnote_text": "Robert O'Neill and Ana Szarfman, Some US Food and Drug Administration perspectives on data mining for pediatric safety Assessment, Current Therapeutic Research (2001), https://www.sciencedirect.com/science/article/abs/pii/S0011393X01800710; Ana Szarfman et al., Use of screening algorithms and computer systems to efficiently signal higher-than-expected combinations of drugs and events in the US FDA's spontaneous reports database, Drug Safety (2002), https://link.springer.com/article/10.2165/00002018-200225060-00001; David Wiseman, Signal loss by truancy, masking, and filtering, and underestimation of potential risks and suspected adverse reactions in the Disproportionality Signal Analyses of VAERS data associated with COVID-19 pro-vaccines, ResearchGate, Sept. 2025, https://www.researchgate.net/publication/395382959_Signal_loss_by_truancy_masking_and_filtering_and_underestimation_of_potential_risks_and_suspected_adverse_reactions_in_the_Disproportionality_Signal_Analyses_of_VAERS_data_associated_with_COVID-19_pro at 8-9; PSI-HHS-000008257238. One FDA official referred to Dr. Szarfman as someone who \"worked to develop the data mining system[.]\" Id. In 2002, Dr. Szarfman was reportedly awarded \"the FDA and CDER Outstanding Scientific Achievement Awards for contributions to safety data mining.\" See Professional Activities, Ana Szarfman, ORCID, https://orcid.org/0000-0001-6680-1423.",
     "document_id": null,
     "external_url": "https://link.springer.com/article/10.2165/00002018-200225060-00001"
@@ -214,7 +264,9 @@
   },
   {
     "id": "fn-31",
-    "bates_ids": ["PSI-HHS-000005235281"],
+    "bates_ids": [
+      "PSI-HHS-000005235281"
+    ],
     "footnote_text": "PSI-HHS-000005235281.",
     "document_id": null,
     "external_url": null
@@ -284,21 +336,30 @@
   },
   {
     "id": "fn-41",
-    "bates_ids": ["PSI-HHS-000008254390-92"],
+    "bates_ids": [
+      "PSI-HHS-000008254390-92"
+    ],
     "footnote_text": "See, e.g., PSI-HHS-000008254390-92; FOIA production: https://www.fda.gov/media/184988/download?attachment at 2-5.",
     "document_id": null,
     "external_url": "https://www.fda.gov/media/184988/download?attachment"
   },
   {
     "id": "fn-42",
-    "bates_ids": ["PSI-HHS-000008257443-44", "PSI-HHS-000004783470-71", "PSI-HHS-000008257443", "PSI-HHS-000008259555"],
+    "bates_ids": [
+      "PSI-HHS-000008257443-44",
+      "PSI-HHS-000004783470-71",
+      "PSI-HHS-000008257443",
+      "PSI-HHS-000008259555"
+    ],
     "footnote_text": "Dr. Szarfman referred to Dr. DuMouchel's RGPS methodology as \"new.\" PSI-HHS-000008257443-44; Dr. DuMouchel co-authored a white paper in 2012 about RGPS. William DuMouchel and Rave Harpaz, Regression-Adjusted GPS Algorithm (RGPS), Oracle, Nov. 2012, https://docs.oracle.com/health-sciences/empirica-signal-811/ESIUG/Regression-Adjusted_GPS_Algorithm.pdf; PSI-HHS-000004783470-71; PSI-HHS-000008257443; PSI-HHS-000008259555, 62; Vaccine Adverse Event Reporting System (VAERS) Standard Operating Procedures for COVID-19, Centers for Disease Control and Prevention, Jan. 29, 2021, https://web.archive.org/web/20210319091240/https://www.cdc.gov/vaccinesafety/pdf/VAERS-v2-SOP.pdf at 16-17.",
     "document_id": null,
     "external_url": "https://docs.oracle.com/health-sciences/empirica-signal-811/ESIUG/Regression-Adjusted_GPS_Algorithm.pdf"
   },
   {
     "id": "fn-43",
-    "bates_ids": ["PSI-HHS-000008259555"],
+    "bates_ids": [
+      "PSI-HHS-000008259555"
+    ],
     "footnote_text": "PSI-HHS-000008259555, 57.",
     "document_id": null,
     "external_url": null
@@ -320,35 +381,50 @@
   },
   {
     "id": "fn-46",
-    "bates_ids": ["PSI-HHS-000008257443-44"],
+    "bates_ids": [
+      "PSI-HHS-000008257443-44"
+    ],
     "footnote_text": "In a March 26, 2021 email to senior FDA officials, Dr. Szarfman left little doubt about her and Dr. DuMouchel's expertise in data mining, stating explicitly that she and Dr. DuMouchel \"extensively studied the increased value of RGPS over MGPS for reducing false positives and negative signals.\" PSI-HHS-000008257443-44.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-47",
-    "bates_ids": ["PSI-HHS-000008259561"],
+    "bates_ids": [
+      "PSI-HHS-000008259561"
+    ],
     "footnote_text": "PSI-HHS-000008259561.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-48",
-    "bates_ids": ["PSI-HHS-000008257237"],
+    "bates_ids": [
+      "PSI-HHS-000008257237"
+    ],
     "footnote_text": "PSI-HHS-000008257237.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-49",
-    "bates_ids": ["PSI-HHS-000008251980"],
+    "bates_ids": [
+      "PSI-HHS-000008251980"
+    ],
     "footnote_text": "PSI-HHS-000008251980.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-50",
-    "bates_ids": ["PSI-HHS-000008257443", "PSI-HHS-000008257443-44", "PSI-HHS-000008258306", "PSI-HHS-00008258202-03", "PSI-HHS-000002208944-45", "PSI-HHS-000004592364"],
+    "bates_ids": [
+      "PSI-HHS-000008257443",
+      "PSI-HHS-000008257443-44",
+      "PSI-HHS-000008258306",
+      "PSI-HHS-00008258202-03",
+      "PSI-HHS-000002208944-45",
+      "PSI-HHS-000004592364"
+    ],
     "footnote_text": "In a March 26, 2021 email, Dr. Szarfman wrote to her FDA colleagues, \"the attached excel comparisons between RGPS and MGPS were generated by Bill DuMouchel using the VAERS public domain data incorporated into the Empirica Signal. RGPS is included with the public domain version of Empirica Signal.\" PSI-HHS-000008257443; See e.g., PSI-HHS-000008257443-44 (with attachment); PSI-HHS-000008258306 (with attachment); PSI-HHS-00008258202-03; PSI-HHS-000002208944-45; PSI-HHS-000004592364 (with attachment).",
     "document_id": null,
     "external_url": null
@@ -362,7 +438,9 @@
   },
   {
     "id": "fn-52",
-    "bates_ids": ["PSI-HHS-000002213753"],
+    "bates_ids": [
+      "PSI-HHS-000002213753"
+    ],
     "footnote_text": "PSI-HHS-000002213753.",
     "document_id": null,
     "external_url": null
@@ -376,28 +454,36 @@
   },
   {
     "id": "fn-54",
-    "bates_ids": ["PSI-HHS-000002213752-53"],
+    "bates_ids": [
+      "PSI-HHS-000002213752-53"
+    ],
     "footnote_text": "PSI-HHS-000002213752-53.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-55",
-    "bates_ids": ["PSI-HHS-000005524064"],
+    "bates_ids": [
+      "PSI-HHS-000005524064"
+    ],
     "footnote_text": "PSI-HHS-000005524064. See e.g., PSI's March 25, 2026 document release on EB data mining: https://www.ronjohnson.senate.gov/services/files/D4D8B767-A092-455C-9CDE-DC8EC1419B31.",
     "document_id": null,
     "external_url": "https://www.ronjohnson.senate.gov/services/files/D4D8B767-A092-455C-9CDE-DC8EC1419B31"
   },
   {
     "id": "fn-56",
-    "bates_ids": ["PSI-HHS-000001217046"],
+    "bates_ids": [
+      "PSI-HHS-000001217046"
+    ],
     "footnote_text": "PSI-HHS-000001217046 (with attachment); PSI's March 25, 2026 document release on EB data mining: https://www.ronjohnson.senate.gov/services/files/D4D8B767-A092-455C-9CDE-DC8EC1419B31 at 231-234; See also Dr. Menschik writing to his FDA colleagues on Aug. 5, 2022, \"we are no longer routinely sending COVID data mining to CDC[.]\" One FDA official responded, \"I was also hoping we would stop doing that at some point!\" PSI-HHS-000008266854.",
     "document_id": null,
     "external_url": "https://www.ronjohnson.senate.gov/services/files/D4D8B767-A092-455C-9CDE-DC8EC1419B31"
   },
   {
     "id": "fn-57",
-    "bates_ids": ["PSI-HHS-000001160286"],
+    "bates_ids": [
+      "PSI-HHS-000001160286"
+    ],
     "footnote_text": "PSI-HHS-000001160286.",
     "document_id": null,
     "external_url": null
@@ -425,7 +511,9 @@
   },
   {
     "id": "fn-61",
-    "bates_ids": ["PSI-HHS-000002480132"],
+    "bates_ids": [
+      "PSI-HHS-000002480132"
+    ],
     "footnote_text": "PSI-HHS-000002480132.",
     "document_id": null,
     "external_url": null
@@ -467,7 +555,12 @@
   },
   {
     "id": "fn-67",
-    "bates_ids": ["PSI-HHS-000008259561", "PSI-HHS-000001136460", "PSICOVID_00015642", "PSICOVID_00014435"],
+    "bates_ids": [
+      "PSI-HHS-000008259561",
+      "PSI-HHS-000001136460",
+      "PSICOVID_00015642",
+      "PSICOVID_00014435"
+    ],
     "footnote_text": "PSI-HHS-000008259561; PSI-HHS-000001136460; PSICOVID_00015642; PSICOVID_00014435.",
     "document_id": null,
     "external_url": null
@@ -497,14 +590,18 @@
   },
   {
     "id": "fn-71",
-    "bates_ids": ["PSICOVID_00015642"],
+    "bates_ids": [
+      "PSICOVID_00015642"
+    ],
     "footnote_text": "PSICOVID_00015642.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-72",
-    "bates_ids": ["PSI-HHS-000001136460"],
+    "bates_ids": [
+      "PSI-HHS-000001136460"
+    ],
     "footnote_text": "PSI-HHS-000001136460.",
     "document_id": null,
     "external_url": null
@@ -518,7 +615,9 @@
   },
   {
     "id": "fn-74",
-    "bates_ids": ["PSI-HHS-000008253424"],
+    "bates_ids": [
+      "PSI-HHS-000008253424"
+    ],
     "footnote_text": "PSI-HHS-000008253424.",
     "document_id": null,
     "external_url": null
@@ -560,14 +659,18 @@
   },
   {
     "id": "fn-80",
-    "bates_ids": ["PSI-HHS-000008257237-38"],
+    "bates_ids": [
+      "PSI-HHS-000008257237-38"
+    ],
     "footnote_text": "PSI-HHS-000008257237-38.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-81",
-    "bates_ids": ["PSI-HHS-000004585100"],
+    "bates_ids": [
+      "PSI-HHS-000004585100"
+    ],
     "footnote_text": "PSI-HHS-000004585100. Until 2022, The Office of Biostatistics and Pharmacovigilance was named the Office of Biostatistics and Epidemiology. For purposes of this document, the office will be referred to by its current name. See National Science Foundation, NI Protocol, FDA CBER Reorg & More—March '22 Pharma News, Mar. 1, 2022, available at https://www.nsf.org/news/march-pharma-news.",
     "document_id": null,
     "external_url": "https://www.nsf.org/news/march-pharma-news"
@@ -588,35 +691,47 @@
   },
   {
     "id": "fn-84",
-    "bates_ids": ["PSICOVID_00014194"],
+    "bates_ids": [
+      "PSICOVID_00014194"
+    ],
     "footnote_text": "PSICOVID_00014194.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-85",
-    "bates_ids": ["PSICOVID_00014194", "PSI-HHS-000002185990-91", "PSI-HHS-000002293255"],
+    "bates_ids": [
+      "PSICOVID_00014194",
+      "PSI-HHS-000002185990-91",
+      "PSI-HHS-000002293255"
+    ],
     "footnote_text": "PSICOVID_00014194; PSI-HHS-000002185990-91. Szarfman's Dec. 23, 2020 email thanking Forshee for attending the presentation notes that she has attached an updated version of the slides. One such update appears to be a slide including DuMouchel's background as the inventor of MGPS. See PSI-HHS-000002293255.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-86",
-    "bates_ids": ["PSICOVID_00014198"],
+    "bates_ids": [
+      "PSICOVID_00014198"
+    ],
     "footnote_text": "PSICOVID_00014198.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-87",
-    "bates_ids": ["PSI-HHS-000008254390"],
+    "bates_ids": [
+      "PSI-HHS-000008254390"
+    ],
     "footnote_text": "PSI-HHS-000008254390.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-88",
-    "bates_ids": ["PSI-HHS-000002293255"],
+    "bates_ids": [
+      "PSI-HHS-000002293255"
+    ],
     "footnote_text": "Id.; PSI-HHS-000002293255.",
     "document_id": null,
     "external_url": null
@@ -637,7 +752,9 @@
   },
   {
     "id": "fn-91",
-    "bates_ids": ["PSI-HHS-000002213369"],
+    "bates_ids": [
+      "PSI-HHS-000002213369"
+    ],
     "footnote_text": "PSI-HHS-000002213369.",
     "document_id": null,
     "external_url": null
@@ -658,28 +775,38 @@
   },
   {
     "id": "fn-94",
-    "bates_ids": ["PSI-HHS-000004783471-72", "PSI-HHS-000002134656"],
+    "bates_ids": [
+      "PSI-HHS-000004783471-72",
+      "PSI-HHS-000002134656"
+    ],
     "footnote_text": "PSI-HHS-000004783471-72; PSI-HHS-000002134656.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-95",
-    "bates_ids": ["PSI-HHS-000004783471-72", "PSI-HHS-000008259555"],
+    "bates_ids": [
+      "PSI-HHS-000004783471-72",
+      "PSI-HHS-000008259555"
+    ],
     "footnote_text": "PSI-HHS-000004783471-72; PSI-HHS-000008259555; William DuMouchel and Rave Harpaz, Regression-Adjusted GPS Algorithm (RGPS), Oracle, Nov. 2012, https://docs.oracle.com/health-sciences/empirica-signal-811/ESIUG/Regression-Adjusted_GPS_Algorithm.pdf.",
     "document_id": null,
     "external_url": "https://docs.oracle.com/health-sciences/empirica-signal-811/ESIUG/Regression-Adjusted_GPS_Algorithm.pdf"
   },
   {
     "id": "fn-96",
-    "bates_ids": ["PSI-HHS-000008259561"],
+    "bates_ids": [
+      "PSI-HHS-000008259561"
+    ],
     "footnote_text": "PSI-HHS-000008259561.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-97",
-    "bates_ids": ["PSI-HHS-000002134652"],
+    "bates_ids": [
+      "PSI-HHS-000002134652"
+    ],
     "footnote_text": "Id. (emphasis in original); PSI-HHS-000002134652 (emphasis added).",
     "document_id": null,
     "external_url": null,
@@ -687,7 +814,9 @@
   },
   {
     "id": "fn-98",
-    "bates_ids": ["PSI-HHS-000004783470-71"],
+    "bates_ids": [
+      "PSI-HHS-000004783470-71"
+    ],
     "footnote_text": "PSI-HHS-000004783470-71.",
     "document_id": null,
     "external_url": null
@@ -701,35 +830,45 @@
   },
   {
     "id": "fn-100",
-    "bates_ids": ["PSI-HHS-000004584613"],
+    "bates_ids": [
+      "PSI-HHS-000004584613"
+    ],
     "footnote_text": "PSI-HHS-000004584613.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-101",
-    "bates_ids": ["PSI-HHS-000008257240-41"],
+    "bates_ids": [
+      "PSI-HHS-000008257240-41"
+    ],
     "footnote_text": "PSI-HHS-000008257240-41.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-102",
-    "bates_ids": ["PSI-HHS-000008257239"],
+    "bates_ids": [
+      "PSI-HHS-000008257239"
+    ],
     "footnote_text": "PSI-HHS-000008257239.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-103",
-    "bates_ids": ["PSI-HHS-000008257238-39"],
+    "bates_ids": [
+      "PSI-HHS-000008257238-39"
+    ],
     "footnote_text": "PSI-HHS-000008257238-39.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-104",
-    "bates_ids": ["PSI-HHS-000008257238"],
+    "bates_ids": [
+      "PSI-HHS-000008257238"
+    ],
     "footnote_text": "PSI-HHS-000008257238.",
     "document_id": null,
     "external_url": null
@@ -758,7 +897,9 @@
   },
   {
     "id": "fn-108",
-    "bates_ids": ["PSI-HHS-000008257237-38"],
+    "bates_ids": [
+      "PSI-HHS-000008257237-38"
+    ],
     "footnote_text": "PSI-HHS-000008257237-38 (emphasis added).",
     "document_id": null,
     "external_url": null,
@@ -766,7 +907,9 @@
   },
   {
     "id": "fn-109",
-    "bates_ids": ["PSI-HHS-000008257237"],
+    "bates_ids": [
+      "PSI-HHS-000008257237"
+    ],
     "footnote_text": "PSI-HHS-000008257237.",
     "document_id": null,
     "external_url": null
@@ -794,7 +937,9 @@
   },
   {
     "id": "fn-113",
-    "bates_ids": ["PSICOVID_00017214"],
+    "bates_ids": [
+      "PSICOVID_00017214"
+    ],
     "footnote_text": "PSICOVID_00017214.",
     "document_id": null,
     "external_url": null
@@ -815,14 +960,18 @@
   },
   {
     "id": "fn-116",
-    "bates_ids": ["PSICOVID_00017210"],
+    "bates_ids": [
+      "PSICOVID_00017210"
+    ],
     "footnote_text": "PSICOVID_00017210.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-117",
-    "bates_ids": ["PSI-HHS-000008263190-91"],
+    "bates_ids": [
+      "PSI-HHS-000008263190-91"
+    ],
     "footnote_text": "PSI-HHS-000008263190-91 (emphasis added).",
     "document_id": null,
     "external_url": null,
@@ -830,7 +979,9 @@
   },
   {
     "id": "fn-118",
-    "bates_ids": ["PSI-HHS-000008257443-44"],
+    "bates_ids": [
+      "PSI-HHS-000008257443-44"
+    ],
     "footnote_text": "PSI-HHS-000008257443-44 (with attachment).",
     "document_id": null,
     "external_url": null
@@ -851,7 +1002,10 @@
   },
   {
     "id": "fn-121",
-    "bates_ids": ["PSI-HHS-000001187885", "PSI-HHS-000001187886-88"],
+    "bates_ids": [
+      "PSI-HHS-000001187885",
+      "PSI-HHS-000001187886-88"
+    ],
     "footnote_text": "PSI-HHS-000001187885 (with attachment); PSI-HHS-000001187886-88.",
     "document_id": null,
     "external_url": null
@@ -865,14 +1019,19 @@
   },
   {
     "id": "fn-123",
-    "bates_ids": ["PSI-HHS-000001187888"],
+    "bates_ids": [
+      "PSI-HHS-000001187888"
+    ],
     "footnote_text": "PSI-HHS-000001187888.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-124",
-    "bates_ids": ["PSI-HHS-000008251981-82", "PSI-HHS-000008258306-07"],
+    "bates_ids": [
+      "PSI-HHS-000008251981-82",
+      "PSI-HHS-000008258306-07"
+    ],
     "footnote_text": "PSI-HHS-000008251981-82; PSI-HHS-000008258306-07 (with attachment).",
     "document_id": null,
     "external_url": null
@@ -886,28 +1045,36 @@
   },
   {
     "id": "fn-126",
-    "bates_ids": ["PSI-HHS-000008251982"],
+    "bates_ids": [
+      "PSI-HHS-000008251982"
+    ],
     "footnote_text": "PSI-HHS-000008251982.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-127",
-    "bates_ids": ["PSI-HHS-000008251981-82"],
+    "bates_ids": [
+      "PSI-HHS-000008251981-82"
+    ],
     "footnote_text": "PSI-HHS-000008251981-82.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-128",
-    "bates_ids": ["PSI-HHS-000008251981"],
+    "bates_ids": [
+      "PSI-HHS-000008251981"
+    ],
     "footnote_text": "PSI-HHS-000008251981.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-129",
-    "bates_ids": ["PSI-HHS-000008251980-81"],
+    "bates_ids": [
+      "PSI-HHS-000008251980-81"
+    ],
     "footnote_text": "PSI-HHS-000008251980-81.",
     "document_id": null,
     "external_url": null
@@ -928,7 +1095,9 @@
   },
   {
     "id": "fn-132",
-    "bates_ids": ["PSI-HHS-000008251980"],
+    "bates_ids": [
+      "PSI-HHS-000008251980"
+    ],
     "footnote_text": "PSI-HHS-000008251980.",
     "document_id": null,
     "external_url": null
@@ -956,14 +1125,18 @@
   },
   {
     "id": "fn-136",
-    "bates_ids": ["PSI-HHS-000008251979-80"],
+    "bates_ids": [
+      "PSI-HHS-000008251979-80"
+    ],
     "footnote_text": "PSI-HHS-000008251979-80.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-137",
-    "bates_ids": ["PSI-HHS-000008251979"],
+    "bates_ids": [
+      "PSI-HHS-000008251979"
+    ],
     "footnote_text": "PSI-HHS-000008251979 (emphasis added) (ellipses in original).",
     "document_id": null,
     "external_url": null,
@@ -971,21 +1144,27 @@
   },
   {
     "id": "fn-138",
-    "bates_ids": ["PSI-HHS-000008258202-03"],
+    "bates_ids": [
+      "PSI-HHS-000008258202-03"
+    ],
     "footnote_text": "PSI-HHS-000008258202-03. Records show that FDA's threshold for determining a statistically significant safety signal was when the lower bound of the reporting estimate (EB05) exceeded 2.0. See PSI's March 25, 2026 document release on EB data mining https://www.ronjohnson.senate.gov/services/files/F92FBB0A-CCFD-412A-A02D-243AA1844D6E at 166.",
     "document_id": null,
     "external_url": "https://www.ronjohnson.senate.gov/services/files/F92FBB0A-CCFD-412A-A02D-243AA1844D6E"
   },
   {
     "id": "fn-139",
-    "bates_ids": ["PSI-HHS-000008258203"],
+    "bates_ids": [
+      "PSI-HHS-000008258203"
+    ],
     "footnote_text": "PSI-HHS-000008258203.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-140",
-    "bates_ids": ["PSI-HHS-000008258202"],
+    "bates_ids": [
+      "PSI-HHS-000008258202"
+    ],
     "footnote_text": "PSI-HHS-000008258202.",
     "document_id": null,
     "external_url": null
@@ -1006,7 +1185,9 @@
   },
   {
     "id": "fn-143",
-    "bates_ids": ["PSI-HHS-000008258271"],
+    "bates_ids": [
+      "PSI-HHS-000008258271"
+    ],
     "footnote_text": "PSI-HHS-000008258271.",
     "document_id": null,
     "external_url": null
@@ -1028,7 +1209,9 @@
   },
   {
     "id": "fn-146",
-    "bates_ids": ["PSI HHS-000008260150"],
+    "bates_ids": [
+      "PSI HHS-000008260150"
+    ],
     "footnote_text": "PSI HHS-000008260150.",
     "document_id": null,
     "external_url": null
@@ -1042,35 +1225,48 @@
   },
   {
     "id": "fn-148",
-    "bates_ids": ["PSI-HHS-000008258271"],
+    "bates_ids": [
+      "PSI-HHS-000008258271"
+    ],
     "footnote_text": "PSI-HHS-000008258271.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-149",
-    "bates_ids": ["PSI HHS-000008260150"],
+    "bates_ids": [
+      "PSI HHS-000008260150"
+    ],
     "footnote_text": "PSI HHS-000008260150.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-150",
-    "bates_ids": ["PSI-HHS-000008258271"],
+    "bates_ids": [
+      "PSI-HHS-000008258271"
+    ],
     "footnote_text": "PSI-HHS-000008258271.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-151",
-    "bates_ids": ["PSI-HHS-000008258153-54", "PSICOVID_00017031", "PSICOVID_00017032-33", "PSICOVID_00017034-81"],
+    "bates_ids": [
+      "PSI-HHS-000008258153-54",
+      "PSICOVID_00017031",
+      "PSICOVID_00017032-33",
+      "PSICOVID_00017034-81"
+    ],
     "footnote_text": "PSI-HHS-000008258153-54; PSICOVID_00017031; PSICOVID_00017032-33; PSICOVID_00017034-81.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-152",
-    "bates_ids": ["PSI-HHS-000008258153"],
+    "bates_ids": [
+      "PSI-HHS-000008258153"
+    ],
     "footnote_text": "PSI-HHS-000008258153.",
     "document_id": null,
     "external_url": null
@@ -1091,21 +1287,27 @@
   },
   {
     "id": "fn-155",
-    "bates_ids": ["PSI-HHS-000008258190"],
+    "bates_ids": [
+      "PSI-HHS-000008258190"
+    ],
     "footnote_text": "PSI-HHS-000008258190.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-156",
-    "bates_ids": ["PSI-HHS-000008258271"],
+    "bates_ids": [
+      "PSI-HHS-000008258271"
+    ],
     "footnote_text": "PSI-HHS-000008258271.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-157",
-    "bates_ids": ["PSI-HHS-000002208944-45"],
+    "bates_ids": [
+      "PSI-HHS-000002208944-45"
+    ],
     "footnote_text": "PSI-HHS-000002208944-45.",
     "document_id": null,
     "external_url": null
@@ -1119,14 +1321,24 @@
   },
   {
     "id": "fn-159",
-    "bates_ids": ["PSICOVID_00017246", "PSI-HHS-000008251530", "PSI-HHS-000008251912-13", "PSI-HHS-000001195617-19", "PSI_HHS-000008253450-51", "PSI-HHS-000001175745-47", "PSI-HHS-000001148712-14"],
+    "bates_ids": [
+      "PSICOVID_00017246",
+      "PSI-HHS-000008251530",
+      "PSI-HHS-000008251912-13",
+      "PSI-HHS-000001195617-19",
+      "PSI_HHS-000008253450-51",
+      "PSI-HHS-000001175745-47",
+      "PSI-HHS-000001148712-14"
+    ],
     "footnote_text": "PSICOVID_00017246; PSI-HHS-000008251530; PSI-HHS-000008251912-13; PSI-HHS-000001195617-19; PSI_HHS-000008253450-51; PSI-HHS-000001175745-47; PSI-HHS-000001148712-14.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-160",
-    "bates_ids": ["PSICOVID_00017246-47"],
+    "bates_ids": [
+      "PSICOVID_00017246-47"
+    ],
     "footnote_text": "PSICOVID_00017246-47.",
     "document_id": null,
     "external_url": null
@@ -1147,7 +1359,9 @@
   },
   {
     "id": "fn-163",
-    "bates_ids": ["PSICOVID_00017245"],
+    "bates_ids": [
+      "PSICOVID_00017245"
+    ],
     "footnote_text": "PSICOVID_00017245.",
     "document_id": null,
     "external_url": null
@@ -1176,28 +1390,38 @@
   },
   {
     "id": "fn-167",
-    "bates_ids": ["PSI-HHS-000001640809", "PSI-HHS-000001622854-55"],
+    "bates_ids": [
+      "PSI-HHS-000001640809",
+      "PSI-HHS-000001622854-55"
+    ],
     "footnote_text": "PSI-HHS-000001640809; PSI-HHS-000001622854-55.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-168",
-    "bates_ids": ["PSI-HHS-000001622854", "PSI-HHS-000001639129-34"],
+    "bates_ids": [
+      "PSI-HHS-000001622854",
+      "PSI-HHS-000001639129-34"
+    ],
     "footnote_text": "PSI-HHS-000001622854; PSI-HHS-000001639129-34 at 33.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-169",
-    "bates_ids": ["PSI-HHS-000002208944-45"],
+    "bates_ids": [
+      "PSI-HHS-000002208944-45"
+    ],
     "footnote_text": "PSI-HHS-000002208944-45.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-170",
-    "bates_ids": ["PSI-HHS-000002208944"],
+    "bates_ids": [
+      "PSI-HHS-000002208944"
+    ],
     "footnote_text": "PSI-HHS-000002208944.",
     "document_id": null,
     "external_url": null
@@ -1225,14 +1449,19 @@
   },
   {
     "id": "fn-174",
-    "bates_ids": ["PSI-HHS-000002199145-46", "PSI-HHS-000004592364-65"],
+    "bates_ids": [
+      "PSI-HHS-000002199145-46",
+      "PSI-HHS-000004592364-65"
+    ],
     "footnote_text": "PSI-HHS-000002199145-46; PSI-HHS-000004592364-65 (with attachment).",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-175",
-    "bates_ids": ["PSI-HHS-000004592364-65"],
+    "bates_ids": [
+      "PSI-HHS-000004592364-65"
+    ],
     "footnote_text": "PSI-HHS-000004592364-65 (with attachment).",
     "document_id": null,
     "external_url": null
@@ -1247,42 +1476,55 @@
   },
   {
     "id": "fn-177",
-    "bates_ids": ["PSI-HHS-000004590546-47"],
+    "bates_ids": [
+      "PSI-HHS-000004590546-47"
+    ],
     "footnote_text": "Id. That same day, Forshee forwards Szarfman's email and DuMouchel's analysis to Anderson. PSI-HHS-000004590546-47 (with attachment).",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-178",
-    "bates_ids": ["PSI-HHS-000004588545-46", "PSI-HHS-000004592364-65"],
+    "bates_ids": [
+      "PSI-HHS-000004588545-46",
+      "PSI-HHS-000004592364-65"
+    ],
     "footnote_text": "PSI-HHS-000004588545-46 (with attachment); PSI-HHS-000004592364-65 (with attachment).",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-179",
-    "bates_ids": ["PSI-HHS-000004588545-46"],
+    "bates_ids": [
+      "PSI-HHS-000004588545-46"
+    ],
     "footnote_text": "PSI-HHS-000004588545-46.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-180",
-    "bates_ids": ["PSI-HHS-000002199145"],
+    "bates_ids": [
+      "PSI-HHS-000002199145"
+    ],
     "footnote_text": "PSI-HHS-000002199145.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-181",
-    "bates_ids": ["PSI-HHS-000005524064"],
+    "bates_ids": [
+      "PSI-HHS-000005524064"
+    ],
     "footnote_text": "PSI-HHS-000005524064.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-182",
-    "bates_ids": ["PSICOVID_00017545"],
+    "bates_ids": [
+      "PSICOVID_00017545"
+    ],
     "footnote_text": "PSICOVID_00017545.",
     "document_id": null,
     "external_url": null
@@ -1310,14 +1552,18 @@
   },
   {
     "id": "fn-186",
-    "bates_ids": ["PSI-HHS-000008254473-74"],
+    "bates_ids": [
+      "PSI-HHS-000008254473-74"
+    ],
     "footnote_text": "PSI-HHS-000008254473-74.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-187",
-    "bates_ids": ["PSI-HHS-000008254472"],
+    "bates_ids": [
+      "PSI-HHS-000008254472"
+    ],
     "footnote_text": "PSI-HHS-000008254472 (emphasis added).",
     "document_id": null,
     "external_url": null,
@@ -1332,7 +1578,9 @@
   },
   {
     "id": "fn-189",
-    "bates_ids": ["PSI-HHS-000008254471"],
+    "bates_ids": [
+      "PSI-HHS-000008254471"
+    ],
     "footnote_text": "PSI-HHS-000008254471.",
     "document_id": null,
     "external_url": null
@@ -1347,14 +1595,23 @@
   },
   {
     "id": "fn-191",
-    "bates_ids": ["PSI-HHS-000008253098", "PSI-HHS-000008253959", "PSI-HHS-000008252951", "PSI-HHS-000008253958", "PSI-HHS-000008267103", "PSI-HHS-000008254470"],
+    "bates_ids": [
+      "PSI-HHS-000008253098",
+      "PSI-HHS-000008253959",
+      "PSI-HHS-000008252951",
+      "PSI-HHS-000008253958",
+      "PSI-HHS-000008267103",
+      "PSI-HHS-000008254470"
+    ],
     "footnote_text": "PSI-HHS-000008253098; PSI-HHS-000008253959; PSI-HHS-000008252951; PSI-HHS-000008253958; PSI-HHS-000008267103; PSI-HHS-000008254470.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-192",
-    "bates_ids": ["PSI-HHS-000008254470"],
+    "bates_ids": [
+      "PSI-HHS-000008254470"
+    ],
     "footnote_text": "PSI-HHS-000008254470.",
     "document_id": null,
     "external_url": null
@@ -1376,14 +1633,19 @@
   },
   {
     "id": "fn-195",
-    "bates_ids": ["PSICOVID_00014054-55", "PSI-HHS-000002213753-54"],
+    "bates_ids": [
+      "PSICOVID_00014054-55",
+      "PSI-HHS-000002213753-54"
+    ],
     "footnote_text": "PSICOVID_00014054-55; PSI-HHS-000002213753-54.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-196",
-    "bates_ids": ["PSI-HHS-000002213753-54"],
+    "bates_ids": [
+      "PSI-HHS-000002213753-54"
+    ],
     "footnote_text": "PSI-HHS-000002213753-54.",
     "document_id": null,
     "external_url": null
@@ -1425,7 +1687,9 @@
   },
   {
     "id": "fn-202",
-    "bates_ids": ["PSI-HHS-000002213753"],
+    "bates_ids": [
+      "PSI-HHS-000002213753"
+    ],
     "footnote_text": "PSI-HHS-000002213753 (emphasis added).",
     "document_id": null,
     "external_url": null,
@@ -1433,14 +1697,18 @@
   },
   {
     "id": "fn-203",
-    "bates_ids": ["PSI-HHS-000002213752-53"],
+    "bates_ids": [
+      "PSI-HHS-000002213752-53"
+    ],
     "footnote_text": "PSI-HHS-000002213752-53 (ellipses in original).",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-204",
-    "bates_ids": ["PSI-HHS-000008268909"],
+    "bates_ids": [
+      "PSI-HHS-000008268909"
+    ],
     "footnote_text": "PSI-HHS-000008268909.",
     "document_id": null,
     "external_url": null
@@ -1504,14 +1772,20 @@
   },
   {
     "id": "fn-213",
-    "bates_ids": ["PSI-HHS-000001617192-93", "PSI-HHS-000001626344-45", "PSI-HHS-000001626448-49"],
+    "bates_ids": [
+      "PSI-HHS-000001617192-93",
+      "PSI-HHS-000001626344-45",
+      "PSI-HHS-000001626448-49"
+    ],
     "footnote_text": "PSI-HHS-000001617192-93; PSI-HHS-000001626344-45; PSI-HHS-000001626448-49.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-214",
-    "bates_ids": ["PSI-HHS-000001626344-45"],
+    "bates_ids": [
+      "PSI-HHS-000001626344-45"
+    ],
     "footnote_text": "PSI-HHS-000001626344-45.",
     "document_id": null,
     "external_url": null
@@ -1525,7 +1799,9 @@
   },
   {
     "id": "fn-216",
-    "bates_ids": ["PSI-HHS-000001627327-77"],
+    "bates_ids": [
+      "PSI-HHS-000001627327-77"
+    ],
     "footnote_text": "PSI-HHS-000001627327-77.",
     "document_id": null,
     "external_url": null
@@ -1553,14 +1829,18 @@
   },
   {
     "id": "fn-220",
-    "bates_ids": ["PSI-HHS-000001217046"],
+    "bates_ids": [
+      "PSI-HHS-000001217046"
+    ],
     "footnote_text": "PSI-HHS-000001217046 (with attachment).",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-221",
-    "bates_ids": ["PSI-HHS-000004461747-48"],
+    "bates_ids": [
+      "PSI-HHS-000004461747-48"
+    ],
     "footnote_text": "PSI-HHS-000004461747-48.",
     "document_id": null,
     "external_url": null
@@ -1574,7 +1854,9 @@
   },
   {
     "id": "fn-223",
-    "bates_ids": ["PSI-HHS-000008266854"],
+    "bates_ids": [
+      "PSI-HHS-000008266854"
+    ],
     "footnote_text": "PSI-HHS-000008266854.",
     "document_id": null,
     "external_url": null
@@ -1588,28 +1870,37 @@
   },
   {
     "id": "fn-225",
-    "bates_ids": ["PSI-HHS-000004594929", "PSI-HHS-000004604858-59"],
+    "bates_ids": [
+      "PSI-HHS-000004594929",
+      "PSI-HHS-000004604858-59"
+    ],
     "footnote_text": "PSI-HHS-000004594929; Forshee attaches Marks' September 2021 email to Szarfman's supervisors Cavazzoni and Stein. PSI-HHS-000004604858-59.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-226",
-    "bates_ids": ["PSI-HHS-000004594929"],
+    "bates_ids": [
+      "PSI-HHS-000004594929"
+    ],
     "footnote_text": "PSI-HHS-000004594929.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-227",
-    "bates_ids": ["PSI-HHS-000004604858-59"],
+    "bates_ids": [
+      "PSI-HHS-000004604858-59"
+    ],
     "footnote_text": "Id.; PSI-HHS-000004604858-59.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-228",
-    "bates_ids": ["PSI-HHS-000001160286"],
+    "bates_ids": [
+      "PSI-HHS-000001160286"
+    ],
     "footnote_text": "PSI-HHS-000001160286.",
     "document_id": null,
     "external_url": null
@@ -1637,7 +1928,9 @@
   },
   {
     "id": "fn-232",
-    "bates_ids": ["PSI-HHS-000002480132"],
+    "bates_ids": [
+      "PSI-HHS-000002480132"
+    ],
     "footnote_text": "PSI-HHS-000002480132.",
     "document_id": null,
     "external_url": null
@@ -1652,7 +1945,9 @@
   },
   {
     "id": "fn-234",
-    "bates_ids": ["PSICOVID_00015642-43"],
+    "bates_ids": [
+      "PSICOVID_00015642-43"
+    ],
     "footnote_text": "PSICOVID_00015642-43.",
     "document_id": null,
     "external_url": null
@@ -1688,7 +1983,9 @@
   },
   {
     "id": "fn-239",
-    "bates_ids": ["PSICOVID_00014435"],
+    "bates_ids": [
+      "PSICOVID_00014435"
+    ],
     "footnote_text": "PSICOVID_00014435.",
     "document_id": null,
     "external_url": null
@@ -1709,14 +2006,18 @@
   },
   {
     "id": "fn-242",
-    "bates_ids": ["PSI-HHS-000001136460-64"],
+    "bates_ids": [
+      "PSI-HHS-000001136460-64"
+    ],
     "footnote_text": "PSI-HHS-000001136460-64.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-243",
-    "bates_ids": ["PSI-HHS-000001136460"],
+    "bates_ids": [
+      "PSI-HHS-000001136460"
+    ],
     "footnote_text": "PSI-HHS-000001136460 (emphasis added).",
     "document_id": null,
     "external_url": null,
@@ -1724,7 +2025,9 @@
   },
   {
     "id": "fn-244",
-    "bates_ids": ["PSI-HHS-000008261793-94"],
+    "bates_ids": [
+      "PSI-HHS-000008261793-94"
+    ],
     "footnote_text": "PSI-HHS-000008261793-94.",
     "document_id": null,
     "external_url": null
@@ -1745,49 +2048,63 @@
   },
   {
     "id": "fn-247",
-    "bates_ids": ["PSI-HHS-000008261793"],
+    "bates_ids": [
+      "PSI-HHS-000008261793"
+    ],
     "footnote_text": "PSI-HHS-000008261793.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-248",
-    "bates_ids": ["PSI-HHS-000008263353"],
+    "bates_ids": [
+      "PSI-HHS-000008263353"
+    ],
     "footnote_text": "PSI-HHS-000008263353.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-249",
-    "bates_ids": ["PSI-HHS-000008261793"],
+    "bates_ids": [
+      "PSI-HHS-000008261793"
+    ],
     "footnote_text": "Id.; PSI-HHS-000008261793.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-250",
-    "bates_ids": ["PSI-HHS-000008261793"],
+    "bates_ids": [
+      "PSI-HHS-000008261793"
+    ],
     "footnote_text": "PSI-HHS-000008261793.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-251",
-    "bates_ids": ["PSI-HHS-000001152913"],
+    "bates_ids": [
+      "PSI-HHS-000001152913"
+    ],
     "footnote_text": "PSI-HHS-000001152913.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-252",
-    "bates_ids": ["PSI-HHS-000008268909"],
+    "bates_ids": [
+      "PSI-HHS-000008268909"
+    ],
     "footnote_text": "PSI-HHS-000008268909.",
     "document_id": null,
     "external_url": null
   },
   {
     "id": "fn-253",
-    "bates_ids": ["PSI-HHS-000008253424"],
+    "bates_ids": [
+      "PSI-HHS-000008253424"
+    ],
     "footnote_text": "PSI-HHS-000008253424.",
     "document_id": null,
     "external_url": null
@@ -2043,5 +2360,33 @@
     "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/CCEF4C60-FA50-4A57-804B-D4CA2F835C41.",
     "document_id": null,
     "external_url": "https://www.ronjohnson.senate.gov/services/files/CCEF4C60-FA50-4A57-804B-D4CA2F835C41"
+  },
+  {
+    "id": "fn-290",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/8FAB9531-F799-4067-BA1C-AB8CA182D100.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/8FAB9531-F799-4067-BA1C-AB8CA182D100"
+  },
+  {
+    "id": "fn-291",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.hsgac.senate.gov/wp-content/uploads/2025.05.21-PSI-Majority-Staff-Interim-Report-Failure-to-Warn.pdf.",
+    "document_id": null,
+    "external_url": "https://www.hsgac.senate.gov/wp-content/uploads/2025.05.21-PSI-Majority-Staff-Interim-Report-Failure-to-Warn.pdf"
+  },
+  {
+    "id": "fn-292",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/services/files/AFDAD3A2-D789-46ED-B895-16341762156A.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/services/files/AFDAD3A2-D789-46ED-B895-16341762156A"
+  },
+  {
+    "id": "fn-293",
+    "bates_ids": [],
+    "footnote_text": "Available at https://www.ronjohnson.senate.gov/2026/3/psi-chairman-johnson-reveals-further-evidence-of-biden-administration-downplaying-covid-19-vaccine-safety-risk.",
+    "document_id": null,
+    "external_url": "https://www.ronjohnson.senate.gov/2026/3/psi-chairman-johnson-reveals-further-evidence-of-biden-administration-downplaying-covid-19-vaccine-safety-risk"
   }
 ]
