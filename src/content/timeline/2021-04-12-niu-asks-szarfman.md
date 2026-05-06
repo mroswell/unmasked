@@ -1,0 +1,10 @@
+---
+date: "2021-04-12"
+date_display: "April 12-13, 2021"
+summary: "Niu asks whether DuMouchel's findings affect 2021 data mining results; Szarfman confirms they do."
+actors: [niu, szarfman, dumouchel]
+citations: [fn-128, fn-129]
+tags: [analysis, data-mining-method]
+---
+
+Two days after Szarfman flags DuMouchel's "[i]mportant analysis," Niu replies in a separate chain asking, "Does this effect the data mining results we are receiving in 2021?"[^fn-128] Szarfman responds the next day, saying, "Exactly. As DuMouchel pinpointed, there is a need to extend the stratification brackets by the fact that 99% of the results for FY2021 are for COVID-19 vaccines this indeed affects the results."[^fn-129]

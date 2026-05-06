@@ -1,0 +1,10 @@
+---
+date: "2022-09-30"
+date_display: "September 30, 2022"
+summary: "Nair tells colleagues he suggested CDC discontinue the routine weekly data mining emails."
+actors: [nair]
+citations: [fn-228, fn-229, fn-230, fn-231]
+tags: [access-control]
+---
+
+Nair writes to his FDA colleagues that he suggested to CDC earlier that summer that "we discontinue the routine regular [weekly data mining] emails."[^fn-228] Nair adds, "[t]his was intended as a timesaving measure and to reduce email traffic."[^fn-229] He informs colleagues that FDA decided to end the weekly reporting email because "it had been some time that we had had a data mining alert that required further evaluation, CDC agreed with this approach."[^fn-230] Nair noted, however, that "FDA is still regularly conducting data mining for all approved/authorized vaccines."[^fn-231]

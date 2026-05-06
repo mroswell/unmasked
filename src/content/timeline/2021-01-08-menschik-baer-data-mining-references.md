@@ -1,0 +1,10 @@
+---
+date: "2021-01-08"
+date_display: "January 8, 2021"
+summary: "Menschik and Baer exchange about classic data mining references written by Szarfman and DuMouchel."
+actors: [menschik, baer, szarfman, dumouchel]
+citations: [fn-87, fn-88]
+tags: [data-mining-method]
+---
+
+As FDA officials discussed the use of empirical Bayesian (EB) data mining to detect safety signals for adverse events associated with COVID-19 vaccines, David Menschik and Bethany Baer, two officials at CBER OBPV, communicate about "a few classic data mining references" written by Szarfman and DuMouchel.[^fn-87] Baer notes that FDA's current EB data mining system uses the Multi-item Gamma Poisson Shrinker (MGPS), which is the algorithm DuMouchel invented.[^fn-88]

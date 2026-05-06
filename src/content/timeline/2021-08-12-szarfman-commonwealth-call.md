@@ -1,0 +1,10 @@
+---
+date: "2021-08-12"
+date_display: "August 12, 2021"
+summary: "Szarfman tells Commonwealth contractor that the 20-year-old MGPS model could potentially mask signals."
+actors: [szarfman, baer, zinderman, menschik]
+citations: [fn-182, fn-183, fn-184]
+tags: [data-mining-method, internal-pushback]
+---
+
+Szarfman attends a call with Commonwealth, the contractor that runs FDA's data mining system, and raises concerns about the current methodology.[^fn-182] Szarfman reportedly tells the contractor that "'the 20-year-old MGPS model could potentially mask signals.'"[^fn-183] Baer, who participated on the call, reports Szarfman's comments to Zinderman and Menschik and informs them that she told Szarfman that Zinderman and Menschik are aware of her considerations.[^fn-184]

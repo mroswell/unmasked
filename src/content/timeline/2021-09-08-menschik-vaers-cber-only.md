@@ -1,0 +1,10 @@
+---
+date: "2021-09-08"
+date_display: "September 8, 2021"
+summary: "Menschik tells Szarfman that VAERS data mining is CBER's responsibility and discussions must stay in chain of command."
+actors: [menschik, zinderman, szarfman]
+citations: [fn-191, fn-192, fn-193, fn-194]
+tags: [internal-pushback, access-control]
+---
+
+Menschik and Zinderman draft a response to Szarfman's previous email, which Menschik sends to her.[^fn-191] In his email, Menschik underscores that VAERS data mining is CBER's responsibility and must be only conducted through that office (Szarfman is a CDER employee, not a CBER employee).[^fn-192] Menschik acknowledges a limited issue with MGPS, separate from masking, that he plans to review further within CBER.[^fn-193] He also writes, "[a]ny further discussion on VAERS data mining methods/findings outside my chain of command will have to be offline and in general terms, as well as without reference to any specific VAERS [adverse events]."[^fn-194]

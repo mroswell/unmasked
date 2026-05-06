@@ -1,0 +1,10 @@
+---
+date: "2022-01-31"
+date_display: "January 31, 2022"
+summary: "FDA fully approves Moderna's COVID-19 vaccine for individuals ages 18 and older."
+actors: []
+citations: [fn-212]
+tags: [eua]
+---
+
+FDA fully approves Moderna COVID-19 vaccine for individuals ages 18 and older.[^fn-212]

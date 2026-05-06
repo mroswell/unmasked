@@ -1,0 +1,14 @@
+---
+date: "2021-05-07"
+date_display: "May 7, 2021"
+summary: "Zinderman directs Szarfman to hold off on creating COVID-19 vaccine data mining reports and analyses."
+actors: [zinderman, menschik, nair, szarfman]
+citations: [fn-159, fn-160, fn-161, fn-162, fn-163, fn-164, fn-165]
+tags: [internal-pushback, analysis]
+---
+
+- Following Szarfman's multi-month efforts advocating for FDA to change its data mining system in order to unmask statistically significant safety signals associated with the COVID-19 vaccines, Menschik, Nair, and Zinderman draft a lengthy email to Szarfman.[^fn-159]
+- The final draft, which Zinderman sends to Szarfman that same day, directs her to "please hold off on creating and sending data mining reports and analyses using COVID-19 vaccine [adverse event] data."[^fn-160]
+- The email states that, "we are already screening and reviewing reports, such as [acute myocardial infarction], [thrombocytopenia syndrome], Thromboembolic events, and other forms of coagulopathy."[^fn-161] It concludes by reiterating the directive to Szarfman to "hold off" on continuing her efforts.[^fn-162]
+- Szarfman replies to Zinderman that from now on, "I will only deliver analyses when I am specifically requested to do so[.]"[^fn-163] She reiterates, "[w]e are testing a new data mining methodology, and given the circumstances, it will be good for all to understand its performance with such important data. This is a method that also strongly reduces confounding, so it may be helpful in certain future circumstances."[^fn-164]
+- Zinderman forwards Szarfman's response to Menschik and Niu.[^fn-165]

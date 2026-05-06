@@ -1,0 +1,13 @@
+---
+date: "2021-04-25"
+date_display: "April 25-26, 2021"
+summary: "Szarfman resends RGPS analysis flagging cardiac signals; Niu tells her CBER cannot collaborate."
+actors: [szarfman, niu, zinderman, dumouchel]
+citations: [fn-143, fn-144, fn-145, fn-146, fn-147, fn-148, fn-149, fn-150]
+tags: [analysis, internal-pushback, signal-detection]
+---
+
+- Szarfman resends DuMouchel's analysis to Niu and includes several additional FDA officials.[^fn-143] In the email, Szarfman reiterates that she is sending all of DuMouchel's analysis to Niu.[^fn-144] She writes that DuMouchel's new method (RGPS) "is better at removing false positives and negatives than MGPS. Note the safety signals for cardiac events with the Pfizer and Moderna vaccines, now in the news, that are better identified by RGPS than by MGPS."[^fn-145]
+- Niu separately asks Zinderman for advice on how to respond to Szarfman, who had apparently described Niu as her collaborator on Szarfman's data mining work to FDA's data mining contractors.[^fn-146] In response, Zinderman sends Niu draft language to respond to Szarfman, telling Niu that asking Szarfman to stop sending data mining results "would create a bigger problem for us I think."[^fn-147]
+- Niu responds to Szarfman's earlier email, writing, "[w]hile we are aware that CDER is using the vaccine data to explore new calculations and various deviations of analysis parameters in disproportionality analysis, I haven't been, and are unable to, work as a collaborator with you on this project due to our higher priority work, and because this sort of statistical development work falls outside of my area of expertise."[^fn-148] Niu's email contains similar language to the draft response Zinderman sent her earlier that day.[^fn-149]
+- Szarfman responds to Niu that she understands but will keep her up to date with her findings.[^fn-150]
