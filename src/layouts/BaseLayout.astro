@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import SearchBox from '../components/SearchBox.astro';
 
 interface Props {
   title: string;
@@ -28,7 +29,9 @@ const { title, description = 'Unmasked: a structured presentation of the Senate 
         <a href="/glossary/">Glossary</a>
         <a href="/about/">About</a>
       </nav>
-      <div id="search-mount" class="search-mount" data-pagefind-ignore></div>
+      <div class="search-mount" data-pagefind-ignore>
+        <SearchBox />
+      </div>
     </header>
     <main>
       <slot />

@@ -1,0 +1,17 @@
+<div id="pagefind-search-mount"></div>
+<link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
+
+<script is:inline>
+  import('/pagefind/pagefind-ui.js').then(({ PagefindUI }) => {
+    new PagefindUI({
+      element: '#pagefind-search-mount',
+      showImages: false,
+      showSubResults: true,
+      excerptLength: 30,
+    });
+  }).catch(() => {
+    // Pagefind index not yet built (e.g. dev server). Show a static notice.
+    const mount = document.getElementById('pagefind-search-mount');
+    if (mount) mount.innerHTML = '<small style="color:var(--color-muted);font-family:var(--font-sans)">Search available after build.</small>';
+  });
+</script>
