@@ -8,8 +8,11 @@ emitGlossaryAssets();
 const aliases = loadAliases();
 
 export default defineConfig({
-  site: 'https://signals.coviddocuments.com',
-  base: '/',
+  // Deployed at GitHub Pages subpath: https://mroswell.github.io/unmasked/
+  // When migrating to a custom subdomain, change site → 'https://signals.coviddocuments.com',
+  // base → '/', and remove the rewrite-paths build step.
+  site: 'https://mroswell.github.io',
+  base: '/unmasked/',
   output: 'static',
   trailingSlash: 'always',
   build: { format: 'directory' },
