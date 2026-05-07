@@ -3,11 +3,35 @@ import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const terms = (await getCollection('glossary')).sort((a, b) => a.data.term.localeCompare(b.data.term));
+
+// Strip basic markdown so search hits plain words rather than the syntax around them.
+const stripMd = (s: string) =>
+  s
+    .replace(/```[\s\S]*?```/g, ' ')             // fenced code blocks
+    .replace(/`([^`]+)`/g, '$1')                  // inline code
+    .replace(/!\[[^\]]*\]\([^)]+\)/g, ' ')        // images
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')      // links: keep label, drop URL
+    .replace(/^#+\s+/gm, '')                      // ATX headings
+    .replace(/^>\s+/gm, '')                       // blockquotes
+    .replace(/\*\*([^*]+)\*\*/g, '$1')            // bold
+    .replace(/\*([^*]+)\*/g, '$1')                // italics
+    .replace(/_([^_]+)_/g, '$1')                  // underscored italics
+    .replace(/[\n\r]+/g, ' ')                     // newlines → space
+    .replace(/\s+/g, ' ')                         // collapse whitespace
+    .trim();
+
 const rendered = await Promise.all(
   terms.map(async (t) => ({
     term: t,
     ...(await render(t)),
-    searchText: [t.data.term, ...t.data.aliases, t.data.short_def].join(' ').toLowerCase(),
+    searchText: [
+      t.data.term,
+      ...t.data.aliases,
+      t.data.short_def,
+      stripMd(t.body || ''),
+    ]
+      .join(' ')
+      .toLowerCase(),
   }))
 );
 ---

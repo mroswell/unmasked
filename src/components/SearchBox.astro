@@ -10,8 +10,10 @@
       excerptLength: 30,
     });
   }).catch(() => {
-    // Pagefind index not yet built (e.g. dev server). Show a static notice.
+    // Pagefind index isn't available (dev server or stale preview).
+    // Hide the search affordance entirely rather than show a confusing placeholder.
     const mount = document.getElementById('pagefind-search-mount');
-    if (mount) mount.innerHTML = '<small style="color:var(--color-muted);font-family:var(--font-sans)">Search available after build.</small>';
+    const wrapper = mount?.closest('.search-mount');
+    if (wrapper instanceof HTMLElement) wrapper.style.display = 'none';
   });
 </script>

@@ -12,6 +12,18 @@ const events = (await getCollection('timeline')).sort((a, b) => a.data.date.loca
 
   <div class="filters" role="region" aria-label="Filter timeline">
     <div class="filter-row">
+      <label class="search-label">
+        <span class="visually-hidden">Search timeline</span>
+        <input
+          type="search"
+          id="timeline-search"
+          class="search-input"
+          placeholder="Search events (e.g. Szarfman, myocarditis, March 2021)…"
+          autocomplete="off"
+        />
+      </label>
+    </div>
+    <div class="filter-row">
       <span class="filter-label">Source</span>
       <button class="filter-chip is-active" data-filter="source" data-value="all" type="button">All</button>
       <button class="filter-chip" data-filter="source" data-value="report-body" type="button">Section II (FDA story)</button>
@@ -36,18 +48,23 @@ const events = (await getCollection('timeline')).sort((a, b) => a.data.date.loca
 </BaseLayout>
 
 <script>
-  const state: { source: string; category: string } = { source: 'all', category: 'all' };
+  const state: { source: string; category: string; q: string } = { source: 'all', category: 'all', q: '' };
   const events = document.querySelectorAll('.timeline-event');
   const emptyState = document.querySelector('.empty-state');
+  const searchInput = document.getElementById('timeline-search') as HTMLInputElement | null;
 
   function applyFilters() {
+    const q = state.q.toLowerCase().trim();
     let visibleCount = 0;
     events.forEach((el) => {
       const ev = el as HTMLElement;
       const src = ev.dataset.source;
       const cat = ev.dataset.category;
-      const visible = (state.source === 'all' || state.source === src) &&
-                       (state.category === 'all' || state.category === cat);
+      const text = ev.dataset.searchText ?? '';
+      const sourceOk = state.source === 'all' || state.source === src;
+      const categoryOk = state.category === 'all' || state.category === cat;
+      const queryOk = q === '' || text.includes(q);
+      const visible = sourceOk && categoryOk && queryOk;
       ev.hidden = !visible;
       if (visible) visibleCount++;
     });
@@ -65,6 +82,13 @@ const events = (await getCollection('timeline')).sort((a, b) => a.data.date.loca
       applyFilters();
     });
   });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      state.q = searchInput.value;
+      applyFilters();
+    });
+  }
 </script>
 
 <style>
@@ -85,7 +109,31 @@ const events = (await getCollection('timeline')).sort((a, b) => a.data.date.loca
     font-family: var(--font-sans);
     font-size: 0.85rem;
   }
-  .filter-row + .filter-row { margin-top: 0.5rem; }
+  .filter-row + .filter-row { margin-top: 0.6rem; }
+  .search-label { flex: 1; }
+  .search-input {
+    width: 100%;
+    padding: 0.45rem 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.95rem;
+  }
+  .search-input:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: -2px;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
   .filter-label {
     font-weight: 700;
     text-transform: uppercase;
