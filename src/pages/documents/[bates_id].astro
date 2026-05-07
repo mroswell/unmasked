@@ -48,17 +48,9 @@ const renderedSheets = table
     })
   : null;
 
-// Helpers
-function formatType(d: CollectionEntry<'documents'>) {
-  if (d.data.format === 'spreadsheet') return 'Spreadsheet';
-  return `PDF (${d.data.doc_type})`;
-}
-
 const downloadHref = doc.data.format === 'spreadsheet' ? doc.data.xlsx_path : doc.data.pdf_path;
 const downloadLabel = doc.data.format === 'spreadsheet' ? 'Original spreadsheet' : 'PDF';
 const isPdf = doc.data.format === 'pdf';
-const cov = doc.data.coverage_percent;
-const acpp = doc.data.avg_chars_per_page;
 ---
 
 <BaseLayout title={`${doc.data.title} — Unmasked`}>
@@ -69,7 +61,17 @@ const acpp = doc.data.avg_chars_per_page;
     </header>
 
     <dl class="doc-meta-bar">
-      <div><dt>Format (Type)</dt><dd>{formatType(doc)}</dd></div>
+      <div>
+        <dt>Type</dt>
+        <dd class="type-meta">
+          <span class={`format-badge format-${doc.data.format}`}>
+            {doc.data.format === 'spreadsheet' ? 'Spreadsheet' : 'PDF'}
+          </span>
+          {doc.data.format === 'pdf' && (
+            <span class="doc-type-suffix">({doc.data.doc_type})</span>
+          )}
+        </dd>
+      </div>
       {doc.data.date && <div><dt>Date</dt><dd>{doc.data.date}</dd></div>}
       {doc.data.page_count != null && <div><dt>Pages</dt><dd>{doc.data.page_count}</dd></div>}
       <div><dt>Source</dt><dd><a href={doc.data.source_url}>hsgac.senate.gov</a></dd></div>
@@ -81,9 +83,7 @@ const acpp = doc.data.avg_chars_per_page;
         <div class="doc-tabs" role="tablist" aria-label="Document views">
           <button role="tab" id="tab-doc" aria-controls="panel-doc" aria-selected="true" type="button" data-tab="doc">Document</button>
           <button role="tab" id="tab-text" aria-controls="panel-text" aria-selected="false" type="button" data-tab="text" tabindex="-1">
-            Document text{cov != null && (
-              <span class="tab-meta"> ({cov}%{acpp != null ? ` • ~${acpp.toLocaleString()} chars/page` : ''})</span>
-            )}
+            Document text
           </button>
         </div>
 
@@ -96,16 +96,9 @@ const acpp = doc.data.avg_chars_per_page;
 
         <div id="panel-text" role="tabpanel" aria-labelledby="tab-text" class="tab-panel" hidden>
           {textContent.trim().length >= 50 ? (
-            <>
-              {cov != null && (
-                <p class="coverage-summary">
-                  {doc.data.pages_with_text ?? 0} of {doc.data.page_count ?? 0} pages have extractable text ({cov}%); avg ~{(acpp ?? 0).toLocaleString()} characters per page.
-                </p>
-              )}
-              <pre class="doc-text-pre">{textContent}</pre>
-            </>
+            <pre class="doc-text-pre">{textContent}</pre>
           ) : (
-            <p class="coverage-summary">No extractable text was detected in this document. The original PDF is available above.</p>
+            <p class="empty-text-note">No extractable text was detected in this document. The original PDF is available above.</p>
           )}
         </div>
       </div>
@@ -209,6 +202,28 @@ const acpp = doc.data.avg_chars_per_page;
     margin: 0;
   }
   .doc-meta-bar dd { margin: 0; }
+  .doc-meta-bar .type-meta { display: inline-flex; gap: 0.4rem; align-items: baseline; }
+  .doc-type-suffix { color: var(--color-muted); font-size: 0.85rem; }
+
+  .format-badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .format-pdf {
+    background: rgba(180, 30, 30, 0.1);
+    color: #b41e1e;
+    border: 1px solid rgba(180, 30, 30, 0.3);
+  }
+  .format-spreadsheet {
+    background: rgba(30, 130, 70, 0.1);
+    color: #1e8246;
+    border: 1px solid rgba(30, 130, 70, 0.3);
+  }
 
   .doc-tabs {
     display: flex;
@@ -235,12 +250,10 @@ const acpp = doc.data.avg_chars_per_page;
     border-color: var(--color-border);
     background: var(--color-bg);
   }
-  .tab-meta { font-weight: 400; font-size: 0.85em; color: var(--color-muted); }
-
   .pdf-pane embed { width: 100%; height: 80vh; border: 1px solid var(--color-border); }
   .pdf-fallback { font-size: 0.9rem; color: var(--color-muted); margin-top: 0.5rem; }
 
-  .coverage-summary {
+  .empty-text-note {
     font-family: var(--font-sans);
     font-size: 0.85rem;
     color: var(--color-muted);

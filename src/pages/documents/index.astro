@@ -22,7 +22,7 @@ const distinctValues = Array.from(new Set(docs.map(formatType))).sort();
 
   <div class="filters" role="region" aria-label="Filter documents">
     <div class="filter-row">
-      <span class="filter-label">Format</span>
+      <span class="filter-label">Type</span>
       <button class="filter-chip is-active" data-filter="ft" data-value="all" type="button">All</button>
       {distinctValues.map((v) => (
         <button class="filter-chip" data-filter="ft" data-value={v} type="button">{v}</button>
@@ -34,18 +34,30 @@ const distinctValues = Array.from(new Set(docs.map(formatType))).sort();
 
   <table class="doc-table">
     <thead>
-      <tr><th>Bates ID / Title</th><th>Format (Type)</th></tr>
+      <tr>
+        <th>Type</th>
+        <th>Pages</th>
+        <th>Bates ID / Title</th>
+      </tr>
     </thead>
     <tbody>
       {docs.map((doc) => (
         <tr data-format-type={formatType(doc)}>
+          <td class="type-cell">
+            <span class={`format-badge format-${doc.data.format}`}>
+              {doc.data.format === 'spreadsheet' ? 'Spreadsheet' : 'PDF'}
+            </span>
+            {doc.data.format === 'pdf' && (
+              <span class="doc-type-suffix">({doc.data.doc_type})</span>
+            )}
+          </td>
+          <td class="pages-cell">{doc.data.page_count ?? '—'}</td>
           <td>
             <a href={`/documents/${doc.data.bates_id}/`}>
               <code>{doc.data.bates_id}</code>
             </a>
             <div class="doc-title">{doc.data.title}</div>
           </td>
-          <td>{formatType(doc)}</td>
         </tr>
       ))}
     </tbody>
@@ -127,5 +139,29 @@ const distinctValues = Array.from(new Set(docs.map(formatType))).sort();
   .doc-table { width: 100%; border-collapse: collapse; font-family: var(--font-sans); font-size: 0.95rem; }
   .doc-table th, .doc-table td { padding: 0.6rem 0.5rem; border-bottom: 1px solid var(--color-border); text-align: left; vertical-align: top; }
   .doc-table th { font-weight: 600; }
+
+  .type-cell { white-space: nowrap; }
+  .pages-cell { color: var(--color-muted); font-variant-numeric: tabular-nums; }
   .doc-title { color: var(--color-muted); font-size: 0.9rem; margin-top: 0.2rem; }
+  .doc-type-suffix { color: var(--color-muted); font-size: 0.85rem; margin-left: 0.4rem; }
+
+  .format-badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .format-pdf {
+    background: rgba(180, 30, 30, 0.1);
+    color: #b41e1e;
+    border: 1px solid rgba(180, 30, 30, 0.3);
+  }
+  .format-spreadsheet {
+    background: rgba(30, 130, 70, 0.1);
+    color: #1e8246;
+    border: 1px solid rgba(30, 130, 70, 0.3);
+  }
 </style>
