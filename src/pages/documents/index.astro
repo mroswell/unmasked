@@ -206,17 +206,28 @@ const base = import.meta.env.BASE_URL;
     }
   }
 
+  const FILTER_PLACEHOLDER = 'Search documents (e.g. testimony, masking, 0008257)…';
+  const CONTENT_PLACEHOLDER = 'Search full text of all document pages (e.g. masking, ECMO, RGPS)…';
+
   function applyMode() {
     if (state.mode === 'filter') {
       if (table) table.hidden = false;
       if (typeFilterRow) typeFilterRow.hidden = false;
       if (contentResults) contentResults.hidden = true;
+      if (searchInput) searchInput.placeholder = FILTER_PLACEHOLDER;
       applyFilterMode();
     } else {
       if (table) table.hidden = true;
       if (typeFilterRow) typeFilterRow.hidden = true;
       if (contentResults) contentResults.hidden = false;
       if (empty) empty.hidden = true;
+      if (searchInput) {
+        searchInput.placeholder = CONTENT_PLACEHOLDER;
+        // Focus + select so the user can immediately type or replace any
+        // leftover filter-mode query.
+        searchInput.focus();
+        searchInput.select();
+      }
       applyContentMode();
     }
   }
@@ -249,7 +260,16 @@ const base = import.meta.env.BASE_URL;
       if (state.mode === 'filter') {
         applyFilterMode();
       } else {
-        // Debounce Pagefind queries
+        // Immediate visible feedback that the keystroke landed (so the
+        // status doesn't appear stuck at "Type to search…" during the
+        // debounce or pagefind WASM load).
+        const q = state.q.trim();
+        if (contentStatus) {
+          (contentStatus as HTMLElement).hidden = false;
+          contentStatus.textContent = q.length === 0
+            ? 'Type to search inside document text…'
+            : `Searching for "${q}"…`;
+        }
         if (contentDebounce !== null) window.clearTimeout(contentDebounce);
         contentDebounce = window.setTimeout(() => applyContentMode(), 150);
       }
