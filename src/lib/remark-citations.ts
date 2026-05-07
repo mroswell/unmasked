@@ -79,10 +79,15 @@ function citationHtml(cit: Citation): string {
     linkHtml = `<span class="cite-link cite-link--unavailable">Document not publicly posted</span>`;
   }
 
+  const batesHtml = cit.bates_ids?.length
+    ? `<span class="cite-bates">${escapeHtml(cit.bates_ids.join('; '))}</span>`
+    : '';
+
   return [
     `<button type="button" popovertarget="${popoverId}" class="cite-marker">[${numericId}]</button>`,
     `<span popover="auto" id="${popoverId}" class="cite-popover">`,
     `<span class="cite-text">${escapeHtml(cit.footnote_text)}</span>`,
+    batesHtml,
     linkHtml,
     `</span>`,
   ].join('');

@@ -34,6 +34,9 @@ if (citation?.data.document_id) {
     </button>
     <div popover="auto" id={popoverId} class="cite-popover">
       <p class="cite-text">{citation.data.footnote_text}</p>
+      {citation.data.bates_ids && citation.data.bates_ids.length > 0 && (
+        <span class="cite-bates">{citation.data.bates_ids.join('; ')}</span>
+      )}
       {linkHref ? (
         <a href={linkHref} class="cite-link">{linkLabel}</a>
       ) : (
