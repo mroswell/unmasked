@@ -217,9 +217,11 @@ dfn[data-term][data-tooltip=""]::before {
 }
 
 .cite-popover {
-  /* Native HTML popover element. Styles apply only when the popover is open;
-     when closed the browser hides it via display: none on [popover]:not(:popover-open) */
-  display: block;
+  /* Native HTML popover element. The UA stylesheet handles visibility:
+     [popover]:not(:popover-open) { display: none } hides closed popovers,
+     and [popover] { position: fixed; inset: 0; margin: auto } centers open
+     ones in the viewport. We must not set display here — doing so defeats
+     the closed-state hide rule and stacks every popover at viewport center. */
   max-width: min(28rem, calc(100vw - 2rem));
   padding: 1rem 1.1rem;
   border: 1px solid var(--color-border);
