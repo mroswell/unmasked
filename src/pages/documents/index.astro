@@ -1,10 +1,17 @@
 ---
 import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const docs = (await getCollection('documents')).sort((a, b) => a.data.bates_id.localeCompare(b.data.bates_id));
 
-const formatLabel = (format: string) => format === 'spreadsheet' ? 'Spreadsheet' : 'PDF';
+function formatType(d: CollectionEntry<'documents'>) {
+  if (d.data.format === 'spreadsheet') return 'Spreadsheet';
+  return `PDF (${d.data.doc_type})`;
+}
+
+// Build chip list dynamically from the catalog so future doc types add chips automatically
+const distinctValues = Array.from(new Set(docs.map(formatType))).sort();
 ---
 
 <BaseLayout title="Documents — Unmasked">
@@ -12,44 +19,113 @@ const formatLabel = (format: string) => format === 'spreadsheet' ? 'Spreadsheet'
   <p class="archive-summary">
     {docs.length} documents from the Senate PSI investigation: testimonies, the staff report, and FOIA-produced HHS records.
   </p>
+
+  <div class="filters" role="region" aria-label="Filter documents">
+    <div class="filter-row">
+      <span class="filter-label">Format</span>
+      <button class="filter-chip is-active" data-filter="ft" data-value="all" type="button">All</button>
+      {distinctValues.map((v) => (
+        <button class="filter-chip" data-filter="ft" data-value={v} type="button">{v}</button>
+      ))}
+    </div>
+  </div>
+
+  <p class="empty-state" hidden>No documents match the current filter.</p>
+
   <table class="doc-table">
     <thead>
-      <tr><th>Bates ID / Title</th><th>Type</th><th>Format</th></tr>
+      <tr><th>Bates ID / Title</th><th>Format (Type)</th></tr>
     </thead>
     <tbody>
       {docs.map((doc) => (
-        <tr>
+        <tr data-format-type={formatType(doc)}>
           <td>
             <a href={`/documents/${doc.data.bates_id}/`}>
               <code>{doc.data.bates_id}</code>
             </a>
             <div class="doc-title">{doc.data.title}</div>
           </td>
-          <td>{doc.data.doc_type}</td>
-          <td>
-            <span class={`format-badge format-${doc.data.format}`}>{formatLabel(doc.data.format)}</span>
-          </td>
+          <td>{formatType(doc)}</td>
         </tr>
       ))}
     </tbody>
   </table>
 </BaseLayout>
 
+<script>
+  const state = { ft: 'all' };
+  const rows = document.querySelectorAll<HTMLTableRowElement>('.doc-table tbody tr');
+  const empty = document.querySelector<HTMLElement>('.empty-state');
+
+  function applyFilters() {
+    let visible = 0;
+    rows.forEach((row) => {
+      const ft = row.dataset.formatType ?? '';
+      const ok = state.ft === 'all' || ft === state.ft;
+      row.hidden = !ok;
+      if (ok) visible++;
+    });
+    if (empty) empty.hidden = visible > 0;
+  }
+
+  document.querySelectorAll<HTMLButtonElement>('.filter-chip').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      state.ft = btn.dataset.value!;
+      document.querySelectorAll<HTMLElement>('.filter-chip').forEach((b) => {
+        b.classList.toggle('is-active', b.dataset.value === state.ft);
+      });
+      applyFilters();
+    });
+  });
+</script>
+
 <style>
   .archive-summary { font-family: var(--font-sans); color: var(--color-muted); margin-bottom: 1.5rem; }
+
+  .filters {
+    margin: 0 0 1.5rem;
+    padding: 1rem 1.25rem;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+  }
+  .filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+  }
+  .filter-label {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.72rem;
+    color: var(--color-muted);
+    width: 4.5rem;
+    flex-shrink: 0;
+  }
+  .filter-chip {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color: var(--color-text);
+  }
+  .filter-chip:hover { border-color: var(--color-accent); }
+  .filter-chip.is-active {
+    background: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+  }
+  .empty-state { color: var(--color-muted); font-style: italic; margin: 2rem 0; }
+
   .doc-table { width: 100%; border-collapse: collapse; font-family: var(--font-sans); font-size: 0.95rem; }
   .doc-table th, .doc-table td { padding: 0.6rem 0.5rem; border-bottom: 1px solid var(--color-border); text-align: left; vertical-align: top; }
   .doc-table th { font-weight: 600; }
   .doc-title { color: var(--color-muted); font-size: 0.9rem; margin-top: 0.2rem; }
-  .format-badge {
-    display: inline-block;
-    padding: 0.15rem 0.5rem;
-    border-radius: 3px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.03em;
-  }
-  .format-pdf { background: rgba(180, 30, 30, 0.1); color: #b41e1e; border: 1px solid rgba(180, 30, 30, 0.3); }
-  .format-spreadsheet { background: rgba(30, 130, 70, 0.1); color: #1e8246; border: 1px solid rgba(30, 130, 70, 0.3); }
 </style>
