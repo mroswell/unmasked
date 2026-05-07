@@ -68,7 +68,7 @@ const isPdf = doc.data.format === 'pdf';
             {doc.data.format === 'spreadsheet' ? 'Spreadsheet' : 'PDF'}
           </span>
           {doc.data.format === 'pdf' && (
-            <span class="doc-type-suffix">({doc.data.doc_type})</span>
+            <span class="doc-type-suffix">({doc.data.doc_type[0].toUpperCase() + doc.data.doc_type.slice(1)})</span>
           )}
         </dd>
       </div>

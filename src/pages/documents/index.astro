@@ -3,12 +3,21 @@ import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
-const docs = (await getCollection('documents')).sort((a, b) => a.data.bates_id.localeCompare(b.data.bates_id));
+function capitalize(s: string) {
+  return s.length ? s[0].toUpperCase() + s.slice(1) : s;
+}
 
 function formatType(d: CollectionEntry<'documents'>) {
   if (d.data.format === 'spreadsheet') return 'Spreadsheet';
-  return `PDF (${d.data.doc_type})`;
+  return `PDF (${capitalize(d.data.doc_type)})`;
 }
+
+// Sort primary by formatType (Type column), secondary by bates_id
+const docs = (await getCollection('documents')).sort((a, b) => {
+  const ftCmp = formatType(a).localeCompare(formatType(b));
+  if (ftCmp !== 0) return ftCmp;
+  return a.data.bates_id.localeCompare(b.data.bates_id);
+});
 
 // Build chip list dynamically from the catalog so future doc types add chips automatically
 const distinctValues = Array.from(new Set(docs.map(formatType))).sort();
@@ -48,7 +57,7 @@ const distinctValues = Array.from(new Set(docs.map(formatType))).sort();
               {doc.data.format === 'spreadsheet' ? 'Spreadsheet' : 'PDF'}
             </span>
             {doc.data.format === 'pdf' && (
-              <span class="doc-type-suffix">({doc.data.doc_type})</span>
+              <span class="doc-type-suffix">({capitalize(doc.data.doc_type)})</span>
             )}
           </td>
           <td class="pages-cell">{doc.data.page_count ?? '—'}</td>
