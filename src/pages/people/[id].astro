@@ -31,7 +31,7 @@ const quotes = (await getCollection('quotes')).filter(
 ---
 
 <BaseLayout title={`${actor.name} — Unmasked`}>
-  <article class="person-page" data-pagefind-body>
+  <article class="person-page" data-pagefind-body data-pagefind-filter="content-type:Person">
     <header>
       <h1>{actor.name}</h1>
       <p class="role">{actor.role_at_time}</p>

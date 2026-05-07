@@ -31,6 +31,18 @@ const distinctValues = Array.from(new Set(docs.map(formatType))).sort();
 
   <div class="filters" role="region" aria-label="Filter documents">
     <div class="filter-row">
+      <label class="search-label">
+        <span class="visually-hidden">Search documents</span>
+        <input
+          type="search"
+          id="document-search"
+          class="search-input"
+          placeholder="Search documents (e.g. testimony, masking, 0008257)…"
+          autocomplete="off"
+        />
+      </label>
+    </div>
+    <div class="filter-row">
       <span class="filter-label">Type</span>
       <button class="filter-chip is-active" data-filter="ft" data-value="all" type="button">All</button>
       {distinctValues.map((v) => (
@@ -50,41 +62,59 @@ const distinctValues = Array.from(new Set(docs.map(formatType))).sort();
       </tr>
     </thead>
     <tbody>
-      {docs.map((doc) => (
-        <tr data-format-type={formatType(doc)}>
-          <td class="type-cell">
-            <span class={`format-badge format-${doc.data.format}`}>
-              {doc.data.format === 'spreadsheet' ? 'Spreadsheet' : 'PDF'}
-            </span>
-            {doc.data.format === 'pdf' && (
-              <span class="doc-type-suffix">({capitalize(doc.data.doc_type)})</span>
-            )}
-          </td>
-          <td class="pages-cell">{doc.data.page_count ?? '—'}</td>
-          <td>
-            <a href={`/documents/${doc.data.bates_id}/`}>
-              <code>{doc.data.bates_id}</code>
-            </a>
-            <div class="doc-title">{doc.data.title}</div>
-          </td>
-        </tr>
-      ))}
+      {docs.map((doc) => {
+        const searchText = [
+          doc.data.bates_id,
+          doc.data.title,
+          doc.data.doc_type,
+          doc.data.format,
+        ]
+          .join(' ')
+          .toLowerCase();
+        return (
+          <tr
+            data-format-type={formatType(doc)}
+            data-search-text={searchText}
+          >
+            <td class="type-cell">
+              <span class={`format-badge format-${doc.data.format}`}>
+                {doc.data.format === 'spreadsheet' ? 'Spreadsheet' : 'PDF'}
+              </span>
+              {doc.data.format === 'pdf' && (
+                <span class="doc-type-suffix">({capitalize(doc.data.doc_type)})</span>
+              )}
+            </td>
+            <td class="pages-cell">{doc.data.page_count ?? '—'}</td>
+            <td>
+              <a href={`/documents/${doc.data.bates_id}/`}>
+                <code>{doc.data.bates_id}</code>
+              </a>
+              <div class="doc-title">{doc.data.title}</div>
+            </td>
+          </tr>
+        );
+      })}
     </tbody>
   </table>
 </BaseLayout>
 
 <script>
-  const state = { ft: 'all' };
+  const state: { ft: string; q: string } = { ft: 'all', q: '' };
   const rows = document.querySelectorAll<HTMLTableRowElement>('.doc-table tbody tr');
   const empty = document.querySelector<HTMLElement>('.empty-state');
+  const searchInput = document.getElementById('document-search') as HTMLInputElement | null;
 
   function applyFilters() {
+    const q = state.q.toLowerCase().trim();
     let visible = 0;
     rows.forEach((row) => {
       const ft = row.dataset.formatType ?? '';
-      const ok = state.ft === 'all' || ft === state.ft;
-      row.hidden = !ok;
-      if (ok) visible++;
+      const text = row.dataset.searchText ?? '';
+      const typeOk = state.ft === 'all' || ft === state.ft;
+      const queryOk = q === '' || text.includes(q);
+      const isVisible = typeOk && queryOk;
+      row.hidden = !isVisible;
+      if (isVisible) visible++;
     });
     if (empty) empty.hidden = visible > 0;
   }
@@ -98,6 +128,13 @@ const distinctValues = Array.from(new Set(docs.map(formatType))).sort();
       applyFilters();
     });
   });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      state.q = searchInput.value;
+      applyFilters();
+    });
+  }
 </script>
 
 <style>
@@ -117,6 +154,31 @@ const distinctValues = Array.from(new Set(docs.map(formatType))).sort();
     gap: 0.5rem;
     font-family: var(--font-sans);
     font-size: 0.85rem;
+  }
+  .filter-row + .filter-row { margin-top: 0.6rem; }
+  .search-label { flex: 1; }
+  .search-input {
+    width: 100%;
+    padding: 0.45rem 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.95rem;
+  }
+  .search-input:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: -2px;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
   }
   .filter-label {
     font-weight: 700;

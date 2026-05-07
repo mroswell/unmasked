@@ -3,29 +3,237 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const quotes = await getCollection('quotes');
+const actors = await getCollection('actors');
+
+// id → display name lookup so we can render "Dr. Peter Marks" instead of "marks"
+const actorName = new Map<string, string>(
+  actors.map((a) => [a.data.id, a.data.name])
+);
+const nameFor = (id: string) => actorName.get(id) ?? id;
+
+// Sort quotes by date (descending), then by id for stability
+const sorted = [...quotes].sort((a, b) => {
+  const dateCmp = (b.data.date || '').localeCompare(a.data.date || '');
+  return dateCmp !== 0 ? dateCmp : a.data.id.localeCompare(b.data.id);
+});
+
+// Distinct topics for filter chips (sorted alphabetically)
+const allTopics = Array.from(
+  new Set(sorted.flatMap((q) => q.data.topic))
+).sort();
+
+// Build the per-quote search string up front so the client filter just reads
+// data-search-text. Includes the resolved speaker name, not just the id.
+const enriched = sorted.map((q) => {
+  const speakerName = nameFor(q.data.speaker);
+  const searchText = [
+    q.data.text,
+    speakerName,
+    q.data.speaker,
+    q.data.context,
+    q.data.date || '',
+    ...q.data.topic,
+  ]
+    .join(' ')
+    .toLowerCase();
+  return { quote: q, speakerName, searchText };
+});
 ---
 
 <BaseLayout title="Quotes — Unmasked">
   <h1>Quotes</h1>
-  <p class="placeholder-note">Currently placeholder. Filterable quote wall arrives in M1.</p>
+  <p class="lede">
+    Contemporaneous statements from emails, briefings, and papers — selected for clarity, intent, or substance. {sorted.length} entries.
+  </p>
+
+  <div class="filters" role="region" aria-label="Filter quotes">
+    <div class="filter-row">
+      <label class="search-label">
+        <span class="visually-hidden">Search quotes</span>
+        <input
+          type="search"
+          id="quote-search"
+          class="search-input"
+          placeholder="Search quotes (e.g. masking, anti-vaccination, Szarfman)…"
+          autocomplete="off"
+        />
+      </label>
+    </div>
+    <div class="filter-row">
+      <span class="filter-label">Topic</span>
+      <button class="filter-chip is-active" data-filter="topic" data-value="all" type="button">All</button>
+      {allTopics.map((t) => (
+        <button class="filter-chip" data-filter="topic" data-value={t} type="button">{t}</button>
+      ))}
+    </div>
+  </div>
+
+  <p class="empty-state" hidden>No quotes match the current filters.</p>
+
   <ul class="quote-list">
-    {quotes.map((q) => (
-      <li class="quote-card" id={q.data.id} data-pagefind-body>
+    {enriched.map(({ quote: q, speakerName, searchText }) => (
+      <li
+        class="quote-card"
+        id={q.data.id}
+        data-pagefind-body
+        data-pagefind-filter="content-type:Quote"
+        data-topics={q.data.topic.join(' ')}
+        data-search-text={searchText}
+      >
         <blockquote>"{q.data.text}"</blockquote>
         <footer>
-          <cite>{q.data.speaker}</cite>{q.data.date && <span> · {q.data.date}</span>}
+          <cite>{speakerName}</cite>{q.data.date && <span class="date"> · {q.data.date}</span>}
           <p class="context">{q.data.context}</p>
+          {q.data.topic.length > 0 && (
+            <p class="topics">
+              {q.data.topic.map((t) => <span class="topic-tag">{t}</span>)}
+            </p>
+          )}
         </footer>
       </li>
     ))}
   </ul>
 </BaseLayout>
 
+<script>
+  const state: { topic: string; q: string } = { topic: 'all', q: '' };
+  const cards = document.querySelectorAll('.quote-card');
+  const empty = document.querySelector('.empty-state') as HTMLElement | null;
+  const searchInput = document.getElementById('quote-search') as HTMLInputElement | null;
+
+  function applyFilters() {
+    const q = state.q.toLowerCase().trim();
+    let visible = 0;
+    cards.forEach((el) => {
+      const card = el as HTMLElement;
+      const topicsAttr = card.dataset.topics ?? '';
+      const topics = topicsAttr.split(' ').filter(Boolean);
+      const text = card.dataset.searchText ?? '';
+      const topicOk = state.topic === 'all' || topics.includes(state.topic);
+      const queryOk = q === '' || text.includes(q);
+      const isVisible = topicOk && queryOk;
+      card.hidden = !isVisible;
+      if (isVisible) visible++;
+    });
+    if (empty) empty.hidden = visible > 0;
+  }
+
+  document.querySelectorAll<HTMLButtonElement>('.filter-chip').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const dim = btn.dataset.filter as 'topic';
+      const val = btn.dataset.value!;
+      state[dim] = val;
+      document.querySelectorAll<HTMLElement>(`.filter-chip[data-filter="${dim}"]`).forEach((b) => {
+        b.classList.toggle('is-active', b.dataset.value === val);
+      });
+      applyFilters();
+    });
+  });
+
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      state.q = searchInput.value;
+      applyFilters();
+    });
+  }
+</script>
+
 <style>
-  .quote-list { list-style: none; padding: 0; display: grid; gap: 1.5rem; }
+  .lede { color: var(--color-muted); max-width: var(--max-prose); margin-bottom: 1.5rem; }
+
+  .filters {
+    margin: 0 0 2rem;
+    padding: 1rem 1.25rem;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+  }
+  .filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+  }
+  .filter-row + .filter-row { margin-top: 0.6rem; }
+  .filter-label {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.72rem;
+    color: var(--color-muted);
+    width: 4.5rem;
+    flex-shrink: 0;
+  }
+  .search-label { flex: 1; }
+  .search-input {
+    width: 100%;
+    padding: 0.45rem 0.75rem;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.95rem;
+  }
+  .search-input:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: -2px;
+  }
+  .filter-chip {
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+    color: var(--color-text);
+    text-transform: capitalize;
+  }
+  .filter-chip:hover { border-color: var(--color-accent); }
+  .filter-chip.is-active {
+    background: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  .empty-state {
+    color: var(--color-muted);
+    font-style: italic;
+    margin: 2rem 0;
+  }
+
+  .quote-list { list-style: none; padding: 0; display: grid; gap: 1.25rem; }
   .quote-card { padding: 1.25rem; background: white; border: 1px solid var(--color-border); border-radius: 6px; }
-  .quote-card blockquote { font-size: 1.1rem; margin: 0 0 0.75rem; }
-  .quote-card footer { font-family: var(--font-sans); font-size: 0.9rem; color: var(--color-muted); }
+  .quote-card blockquote {
+    font-size: 1.05rem;
+    margin: 0 0 0.75rem;
+    border-left: 3px solid var(--color-accent);
+    padding-left: 1rem;
+  }
+  .quote-card footer { font-family: var(--font-sans); font-size: 0.88rem; color: var(--color-muted); }
+  .quote-card cite { font-style: normal; font-weight: 600; color: var(--color-text); }
+  .date { color: var(--color-muted); }
   .context { margin: 0.5rem 0 0; }
-  .placeholder-note { font-style: italic; color: var(--color-muted); }
+  .topics { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.6rem 0 0; }
+  .topic-tag {
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    font-size: 0.72rem;
+    text-transform: capitalize;
+    color: var(--color-muted);
+    background: var(--color-bg);
+  }
 </style>

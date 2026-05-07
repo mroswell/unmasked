@@ -26,7 +26,7 @@ const enriched = actors.map((a) => ({
 
   <ul class="people-list">
     {enriched.map(({ actor, eventCount, quoteCount }) => (
-      <li class="person-card" id={`actor-${actor.id}`} data-pagefind-body>
+      <li class="person-card" id={`actor-${actor.id}`} data-pagefind-body data-pagefind-filter="content-type:Person">
         <h2 class="person-name">
           <a href={`/people/${actor.id}/`}>{actor.name}</a>
         </h2>

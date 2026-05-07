@@ -54,7 +54,7 @@ const isPdf = doc.data.format === 'pdf';
 ---
 
 <BaseLayout title={`${doc.data.title} — Unmasked`}>
-  <article class="document-page" data-pagefind-body>
+  <article class="document-page" data-pagefind-body data-pagefind-filter="content-type:Document">
     <header>
       <h1>{doc.data.title}</h1>
       <p class="bates"><code>{doc.data.bates_id}</code></p>
