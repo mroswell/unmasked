@@ -1,25 +1,25 @@
 [
   {
     "id": "szarfman",
-    "name": "Dr. Ana Szarfman",
+    "name": "Ana Szarfman, MD, PhD",
     "role_at_time": "Senior Medical Officer & Safety Data Mining Developer, FDA CDER",
     "short_bio": "Co-developer of FDA's data mining system; advocated for the RGPS method during COVID-19 vaccine safety surveillance."
   },
   {
     "id": "marks",
-    "name": "Dr. Peter Marks",
+    "name": "Peter Marks, MD, PhD",
     "role_at_time": "Director, FDA Center for Biologics Evaluation and Research (CBER)",
     "short_bio": "Led FDA's biologics center during COVID-19 vaccine authorization and surveillance."
   },
   {
     "id": "dumouchel",
-    "name": "Dr. William DuMouchel",
+    "name": "William DuMouchel, PhD",
     "role_at_time": "Then-Chief Statistician at Oracle",
     "short_bio": "Inventor of the data mining algorithms (GPS, MGPS, RGPS) that supported FDA's data mining system. Collaborated with Dr. Szarfman on the analyses underlying this report."
   },
   {
     "id": "menschik",
-    "name": "Dr. David Menschik",
+    "name": "David Menschik, MD, MPH",
     "role_at_time": "Associate Director for Surveillance Informatics, Division of Pharmacovigilance, FDA CBER OBPV",
     "short_bio": "Distributed FDA's weekly COVID-19 vaccine data mining reports and helped draft the May 2021 email directing Dr. Szarfman to hold off on her analyses."
   },
@@ -31,7 +31,7 @@
   },
   {
     "id": "zinderman",
-    "name": "Dr. Craig Zinderman",
+    "name": "Craig Zinderman, MD, MPH",
     "role_at_time": "Associate Director for Medical Policy, FDA CBER OBPV",
     "short_bio": "Transmitted the May 7, 2021 email directing Dr. Szarfman to hold off on creating and sending COVID-19 vaccine data mining reports and analyses."
   },
@@ -55,7 +55,7 @@
   },
   {
     "id": "nair",
-    "name": "Dr. Narayan Nair",
+    "name": "Narayan Nair, MD",
     "role_at_time": "Division Director, Division of Pharmacovigilance, FDA CBER OBPV",
     "short_bio": "Suggested in 2022 that FDA discontinue routine distribution of weekly COVID-19 data mining reports to CDC and acknowledged in 2023 that FDA was aware of the masking limitation during the pandemic."
   },
@@ -79,31 +79,31 @@
   },
   {
     "id": "califf",
-    "name": "Dr. Robert Califf",
+    "name": "Robert Califf, MD",
     "role_at_time": "Commissioner, FDA (Feb. 2022 - Jan. 2025)",
     "short_bio": "Received Dr. Szarfman's 2022 paper on unmasking hidden signals and replied only, 'Thanks. These are good.'"
   },
   {
     "id": "walinsky",
-    "name": "Sarah Walinsky",
+    "name": "Sarah Walinsky, JD",
     "role_at_time": "Acting Chief of Staff, FDA CBER",
     "short_bio": "In February 2022 circulated Dr. Szarfman's preprint on masking to FDA officials weighing Moderna's pediatric COVID-19 vaccine appeal."
   },
   {
     "id": "shimabukuro",
-    "name": "Dr. Tom Shimabukuro",
+    "name": "Tom Shimabukuro, MD, MPH, MBA",
     "role_at_time": "Deputy Director and later Director, Immunization Safety Office, CDC",
     "short_bio": "Senior CDC vaccine safety official who in June 2022 lauded FDA's EB data mining as the 'gold standard' for disproportionality analysis."
   },
   {
     "id": "su",
-    "name": "Dr. John Su",
+    "name": "John Su, MD, PhD, MPH",
     "role_at_time": "Immunization Safety Office, CDC; later Deputy Director and Acting Director",
     "short_bio": "CDC vaccine safety official with whom Dr. Menschik discussed the masking limitation in September 2021 in connection with a draft article on COVID-19 vaccine safety."
   },
   {
     "id": "walensky",
-    "name": "Dr. Rochelle Walensky",
+    "name": "Rochelle Walensky, MD, MPH",
     "role_at_time": "Director, Centers for Disease Control and Prevention",
     "short_bio": "CDC Director who in 2022 wrote to Sen. Johnson defending EB data mining as 'a more robust technique' for analyzing VAERS reports."
   },
@@ -115,13 +115,13 @@
   },
   {
     "id": "maro",
-    "name": "Dr. Judy Maro",
+    "name": "Judy Maro, PhD, MS",
     "role_at_time": "Associate Professor, Department of Population Medicine, Harvard Medical School and Harvard Pilgrim Health Care Institute",
     "short_bio": "Harvard researcher working with FDA and CDC who in October 2023 raised concerns about masking in FDA's data mining system."
   },
   {
     "id": "wiseman",
-    "name": "Dr. David Wiseman",
+    "name": "David Wiseman, PhD, MRPharmS",
     "role_at_time": "Independent medical researcher",
     "short_bio": "Authored a September 2025 preprint identifying masking and other limitations in EB data mining that resulted in underestimation of COVID-19 vaccine adverse events."
   },
@@ -145,13 +145,13 @@
   },
   {
     "id": "collins",
-    "name": "Dr. Francis Collins",
+    "name": "Francis Collins, MD, PhD",
     "role_at_time": "Director, National Institutes of Health (NIH)",
     "short_bio": "NIH Director from 2009 to 2021; recipient of multiple Sen. Johnson oversight letters and the April 2021 meeting in which he responded \"Senator, people die\" when asked about VAERS death reports."
   },
   {
     "id": "woodcock",
-    "name": "Dr. Janet Woodcock",
+    "name": "Janet Woodcock, MD",
     "role_at_time": "Acting Commissioner, U.S. Food and Drug Administration",
     "short_bio": "FDA Acting Commissioner during 2021; recipient of Sen. Johnson oversight letters on COVID-19 vaccine safety surveillance, hot lots, and adverse event reports."
   },
@@ -163,13 +163,13 @@
   },
   {
     "id": "becerra",
-    "name": "Xavier Becerra",
+    "name": "Xavier Becerra, JD",
     "role_at_time": "U.S. Secretary of Health and Human Services",
     "short_bio": "HHS Secretary from 2021 to 2025; recipient of multiple Sen. Johnson oversight letters on COVID-19 vaccine adverse events and Countermeasures Injury Compensation Program claims."
   },
   {
     "id": "fauci",
-    "name": "Dr. Anthony Fauci",
+    "name": "Anthony Fauci, MD",
     "role_at_time": "Director, National Institute of Allergy and Infectious Diseases (NIAID)",
     "short_bio": "NIAID Director and recipient of the March 2022 Sen. Johnson oversight letter highlighting over 1 million VAERS reports of adverse events."
   },
@@ -181,31 +181,31 @@
   },
   {
     "id": "cohen",
-    "name": "Dr. Mandy Cohen",
+    "name": "Mandy Cohen, MD, MPH",
     "role_at_time": "Director, Centers for Disease Control and Prevention",
     "short_bio": "CDC Director from July 2023 to January 2025; recipient of multiple Sen. Johnson oversight letters on COVID-19 vaccine safety, EB data mining analyses, and adverse event reports."
   },
   {
     "id": "tabak",
-    "name": "Dr. Lawrence Tabak",
+    "name": "Lawrence Tabak, DDS, PhD",
     "role_at_time": "Acting Director, National Institutes of Health (NIH)",
     "short_bio": "NIH Acting Director and co-recipient of the October 2023 Sen. Johnson oversight letter reiterating earlier requests for vaccine safety information."
   },
   {
     "id": "kennedy",
-    "name": "Robert F. Kennedy, Jr.",
+    "name": "Robert F. Kennedy, Jr., JD",
     "role_at_time": "U.S. Secretary of Health and Human Services",
     "short_bio": "HHS Secretary and recipient of the December 2025 and March 2026 oversight letters from Chairman Johnson on COVID-19 vaccine adverse events and masking in EB data mining."
   },
   {
     "id": "prasad",
-    "name": "Dr. Vinay Prasad",
+    "name": "Vinay Prasad, MD, MPH",
     "role_at_time": "Director, FDA Center for Biologics Evaluation and Research (CBER)",
     "short_bio": "CBER Director whose memorandum on deaths of children following a COVID-19 vaccine was the subject of Sen. Johnson's December 2025 letter to HHS Secretary Kennedy."
   },
   {
     "id": "jablonowski",
-    "name": "Dr. Karl Jablonowski",
+    "name": "Karl Jablonowski, PhD",
     "role_at_time": "Senior Research Scientist, Children's Health Defense",
     "short_bio": "Pharmacovigilance researcher and co-author of papers on VAERS data quality and COVID-19-era safety surveillance failures. Witness at the April 2026 PSI hearing on COVID-19 vaccine safety signal masking."
   },
