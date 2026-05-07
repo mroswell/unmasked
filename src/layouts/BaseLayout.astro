@@ -9,6 +9,25 @@ interface Props {
 }
 
 const { title, description = 'Unmasked: a structured presentation of the Senate PSI report and its underlying records.' } = Astro.props;
+
+// Active-page detection. Astro.url.pathname includes the deploy base prefix
+// (e.g., '/unmasked/timeline/' on github.io); strip it to compare against
+// the literal hrefs in the nav.
+const base = import.meta.env.BASE_URL;
+const stripBase = (p: string) => (p.startsWith(base) ? '/' + p.slice(base.length) : p);
+const route = stripBase(Astro.url.pathname);
+const isActive = (href: string) =>
+  href === '/' ? route === '/' : route === href || route.startsWith(href);
+
+const navLinks = [
+  { href: '/explainer/', label: 'Explainer' },
+  { href: '/timeline/', label: 'Timeline' },
+  { href: '/documents/', label: 'Documents' },
+  { href: '/quotes/', label: 'Quotes' },
+  { href: '/people/', label: 'People' },
+  { href: '/glossary/', label: 'Glossary' },
+  { href: '/about/', label: 'About' },
+];
 ---
 
 <!doctype html>
@@ -23,13 +42,9 @@ const { title, description = 'Unmasked: a structured presentation of the Senate 
     <header class="site-header">
       <a href="/" class="site-title">Unmasked</a>
       <nav>
-        <a href="/explainer/">Explainer</a>
-        <a href="/timeline/">Timeline</a>
-        <a href="/documents/">Documents</a>
-        <a href="/quotes/">Quotes</a>
-        <a href="/people/">People</a>
-        <a href="/glossary/">Glossary</a>
-        <a href="/about/">About</a>
+        {navLinks.map(({ href, label }) => (
+          <a href={href} aria-current={isActive(href) ? 'page' : undefined}>{label}</a>
+        ))}
       </nav>
       <div class="search-mount" data-pagefind-ignore>
         <SearchBox />
