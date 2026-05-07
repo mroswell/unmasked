@@ -43,6 +43,11 @@ const distinctValues = Array.from(new Set(docs.map(formatType))).sort();
       </label>
     </div>
     <div class="filter-row">
+      <span class="filter-label">Mode</span>
+      <button class="filter-chip is-active" data-mode="filter" type="button">Filter list</button>
+      <button class="filter-chip" data-mode="content" type="button">Search inside documents</button>
+    </div>
+    <div class="filter-row" data-mode-only="filter">
       <span class="filter-label">Type</span>
       <button class="filter-chip is-active" data-filter="ft" data-value="all" type="button">All</button>
       {distinctValues.map((v) => (
@@ -52,6 +57,11 @@ const distinctValues = Array.from(new Set(docs.map(formatType))).sort();
   </div>
 
   <p class="empty-state" hidden>No documents match the current filter.</p>
+
+  <div id="content-search-results" class="content-results" hidden>
+    <p class="content-results-status">Type to search inside document text…</p>
+    <ol class="content-results-list"></ol>
+  </div>
 
   <table class="doc-table">
     <thead>
@@ -99,12 +109,37 @@ const distinctValues = Array.from(new Set(docs.map(formatType))).sort();
 </BaseLayout>
 
 <script>
-  const state: { ft: string; q: string } = { ft: 'all', q: '' };
+  type Mode = 'filter' | 'content';
+
+  const state: { ft: string; q: string; mode: Mode } = { ft: 'all', q: '', mode: 'filter' };
   const rows = document.querySelectorAll<HTMLTableRowElement>('.doc-table tbody tr');
+  const table = document.querySelector<HTMLElement>('.doc-table');
   const empty = document.querySelector<HTMLElement>('.empty-state');
   const searchInput = document.getElementById('document-search') as HTMLInputElement | null;
+  const contentResults = document.getElementById('content-search-results');
+  const contentList = contentResults?.querySelector('.content-results-list');
+  const contentStatus = contentResults?.querySelector('.content-results-status');
+  const typeFilterRow = document.querySelector<HTMLElement>('[data-mode-only="filter"]');
 
-  function applyFilters() {
+  // Lazy-loaded Pagefind module — only fetched when the user switches to "Search inside documents".
+  // The /* @vite-ignore */ comment tells Vite to leave the import alone (Pagefind doesn't exist
+  // at Vite build time; the path is also rewritten to /unmasked/... by scripts/07-rewrite-paths-for-base.mjs).
+  let pagefind: any = null;
+  async function getPagefind() {
+    if (pagefind) return pagefind;
+    try {
+      const pagefindUrl = '/pagefind/pagefind.js';
+      pagefind = await import(/* @vite-ignore */ pagefindUrl);
+      await pagefind.options({ excerptLength: 30 });
+      return pagefind;
+    } catch (err) {
+      pagefind = null;
+      return null;
+    }
+  }
+
+  // ---- Filter mode (default): filter the rendered table by row text ----
+  function applyFilterMode() {
     const q = state.q.toLowerCase().trim();
     let visible = 0;
     rows.forEach((row) => {
@@ -119,20 +154,103 @@ const distinctValues = Array.from(new Set(docs.map(formatType))).sort();
     if (empty) empty.hidden = visible > 0;
   }
 
-  document.querySelectorAll<HTMLButtonElement>('.filter-chip').forEach((btn) => {
+  // ---- Content mode: full-text search inside document pages via Pagefind ----
+  let contentDebounce: number | null = null;
+  function escapeHtml(s: string) {
+    return s.replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch] as string));
+  }
+
+  async function applyContentMode() {
+    if (!contentList || !contentStatus) return;
+    const q = state.q.trim();
+    if (q.length === 0) {
+      contentStatus.textContent = 'Type to search inside document text…';
+      (contentStatus as HTMLElement).hidden = false;
+      contentList.innerHTML = '';
+      return;
+    }
+    const pf = await getPagefind();
+    if (!pf) {
+      contentStatus.textContent = 'Search index not yet built. Try again after a build.';
+      (contentStatus as HTMLElement).hidden = false;
+      contentList.innerHTML = '';
+      return;
+    }
+    contentStatus.textContent = `Searching for "${q}"…`;
+    (contentStatus as HTMLElement).hidden = false;
+
+    try {
+      const search = await pf.search(q, { filters: { 'content-type': 'Document' } });
+      const results = await Promise.all(search.results.slice(0, 30).map((r: any) => r.data()));
+      if (results.length === 0) {
+        contentStatus.textContent = `No matches inside any document for "${q}".`;
+        contentList.innerHTML = '';
+        return;
+      }
+      (contentStatus as HTMLElement).hidden = true;
+      contentList.innerHTML = results
+        .map((r: any) => {
+          const title = r.meta?.title || r.url;
+          return `
+            <li class="content-result">
+              <a href="${escapeHtml(r.url)}" class="content-result-link">${escapeHtml(title)}</a>
+              <p class="content-result-excerpt">${r.excerpt}</p>
+            </li>`;
+        })
+        .join('');
+    } catch (err) {
+      contentStatus.textContent = 'Search error — try a different query.';
+      contentList.innerHTML = '';
+    }
+  }
+
+  function applyMode() {
+    if (state.mode === 'filter') {
+      if (table) table.hidden = false;
+      if (typeFilterRow) typeFilterRow.hidden = false;
+      if (contentResults) contentResults.hidden = true;
+      applyFilterMode();
+    } else {
+      if (table) table.hidden = true;
+      if (typeFilterRow) typeFilterRow.hidden = true;
+      if (contentResults) contentResults.hidden = false;
+      if (empty) empty.hidden = true;
+      applyContentMode();
+    }
+  }
+
+  // Mode toggle (top-level chips with data-mode)
+  document.querySelectorAll<HTMLButtonElement>('.filter-chip[data-mode]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      state.mode = (btn.dataset.mode as Mode) ?? 'filter';
+      document.querySelectorAll<HTMLElement>('.filter-chip[data-mode]').forEach((b) => {
+        b.classList.toggle('is-active', b.dataset.mode === state.mode);
+      });
+      applyMode();
+    });
+  });
+
+  // Type filter chips (only meaningful in filter mode)
+  document.querySelectorAll<HTMLButtonElement>('.filter-chip[data-filter]').forEach((btn) => {
     btn.addEventListener('click', () => {
       state.ft = btn.dataset.value!;
-      document.querySelectorAll<HTMLElement>('.filter-chip').forEach((b) => {
+      document.querySelectorAll<HTMLElement>('.filter-chip[data-filter]').forEach((b) => {
         b.classList.toggle('is-active', b.dataset.value === state.ft);
       });
-      applyFilters();
+      if (state.mode === 'filter') applyFilterMode();
     });
   });
 
   if (searchInput) {
     searchInput.addEventListener('input', () => {
       state.q = searchInput.value;
-      applyFilters();
+      if (state.mode === 'filter') {
+        applyFilterMode();
+      } else {
+        // Debounce Pagefind queries
+        if (contentDebounce !== null) window.clearTimeout(contentDebounce);
+        contentDebounce = window.setTimeout(() => applyContentMode(), 150);
+      }
     });
   }
 </script>
@@ -206,6 +324,42 @@ const distinctValues = Array.from(new Set(docs.map(formatType))).sort();
     border-color: var(--color-accent);
   }
   .empty-state { color: var(--color-muted); font-style: italic; margin: 2rem 0; }
+
+  .content-results { margin: 1rem 0 2rem; }
+  .content-results-status { color: var(--color-muted); font-style: italic; font-family: var(--font-sans); }
+  .content-results-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1rem;
+  }
+  .content-result {
+    padding: 0.85rem 1rem;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+  }
+  .content-result-link {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    color: var(--color-accent);
+    text-decoration: none;
+  }
+  .content-result-link:hover { text-decoration: underline; }
+  .content-result-excerpt {
+    margin: 0.4rem 0 0;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--color-text);
+    line-height: 1.5;
+  }
+  .content-result-excerpt :global(mark) {
+    background: rgba(15, 76, 92, 0.18);
+    color: var(--color-text);
+    padding: 0 0.15em;
+    border-radius: 2px;
+  }
 
   .doc-table { width: 100%; border-collapse: collapse; font-family: var(--font-sans); font-size: 0.95rem; }
   .doc-table th, .doc-table td { padding: 0.6rem 0.5rem; border-bottom: 1px solid var(--color-border); text-align: left; vertical-align: top; }
