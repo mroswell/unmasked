@@ -1,14 +1,15 @@
 # Build output
 dist/
 .astro/
+.cache/
+*.tsbuildinfo
 
 # Dependencies
 node_modules/
 
 # Environment
 .env
-.env.local
-.env.*.local
+.env.*
 
 # OS / editors
 .DS_Store
