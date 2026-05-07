@@ -118,9 +118,129 @@ main.prose { max-width: var(--max-prose); }
   .search-mount { margin-left: auto; }
 }
 
+/* ============================================================
+   Glossary inline definitions: subtle dotted underline, custom
+   tooltip on hover/focus. No `cursor: help` (the question-mark
+   cursor is intrusive when many words are wrapped on a page).
+   ============================================================ */
 dfn[data-term] {
   font-style: normal;
-  border-bottom: 1px dotted var(--color-accent);
-  cursor: help;
+  border-bottom: 1px dotted rgba(15, 76, 92, 0.45);
+  cursor: default;
+  position: relative;
 }
-/* Browser native tooltip via title attribute populated by GlossaryTooltips */
+
+dfn[data-term]:hover,
+dfn[data-term]:focus-within {
+  border-bottom-color: var(--color-accent);
+}
+
+/* Custom tooltip rendered as a ::after element. Uses
+   data-tooltip (populated by GlossaryTooltips at runtime), not the
+   native title attribute, so we control the size and styling. */
+dfn[data-term]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-text);
+  color: white;
+  padding: 0.7rem 0.95rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.45;
+  border-radius: 6px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+  width: max-content;
+  max-width: min(28rem, calc(100vw - 2rem));
+  text-align: left;
+  pointer-events: none;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+/* Small caret pointing down from the tooltip toward the dfn */
+dfn[data-term]::before {
+  content: '';
+  position: absolute;
+  bottom: calc(100% + 1px);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 7px solid transparent;
+  border-top-color: var(--color-text);
+  pointer-events: none;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+dfn[data-term]:hover::after,
+dfn[data-term]:focus-within::after,
+dfn[data-term]:hover::before,
+dfn[data-term]:focus-within::before {
+  visibility: visible;
+}
+
+/* Hide tooltip if data-tooltip is empty (no short_def loaded yet) */
+dfn[data-term]:not([data-tooltip])::after,
+dfn[data-term]:not([data-tooltip])::before,
+dfn[data-term][data-tooltip=""]::after,
+dfn[data-term][data-tooltip=""]::before {
+  display: none;
+}
+
+/* ============================================================
+   Citation popover marker + popover. Used by Citation.astro AND
+   by remark-citations.ts (which emits the same markup inside
+   markdown bodies). Defined globally so both render identically.
+   ============================================================ */
+.cite-marker {
+  display: inline-block;
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  font-family: var(--font-sans);
+  font-size: 0.78em;
+  cursor: pointer;
+  padding: 0 0.1em;
+  vertical-align: super;
+  line-height: 1;
+}
+.cite-marker:hover {
+  text-decoration: underline;
+}
+.cite-marker--unresolved {
+  color: var(--color-muted);
+  cursor: default;
+}
+
+.cite-popover {
+  /* Native HTML popover element. Styles apply only when the popover is open;
+     when closed the browser hides it via display: none on [popover]:not(:popover-open) */
+  display: block;
+  max-width: min(28rem, calc(100vw - 2rem));
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--color-border);
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.cite-text {
+  display: block;
+  margin: 0 0 0.7rem;
+  color: var(--color-text);
+}
+.cite-link {
+  display: inline-block;
+  font-weight: 600;
+}
+.cite-link--unavailable {
+  color: var(--color-muted);
+  font-weight: 400;
+  font-style: italic;
+}

@@ -26,7 +26,8 @@ const stripMd = (s: string) =>
   s
     .replace(/```[\s\S]*?```/g, ' ')
     .replace(/`([^`]+)`/g, '$1')
-    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
+    .replace(/\[\^[^\]]+\]/g, ' ')                  // footnote markers like [^fn-117]
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')        // links: keep label, drop URL
     .replace(/[*_#>]/g, ' ')
     .replace(/[\n\r]+/g, ' ')
     .replace(/\s+/g, ' ')

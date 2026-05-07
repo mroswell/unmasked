@@ -15,10 +15,10 @@
       const aliases = await aliasesResp.json();
       const defs = await defsResp.json();
 
-      // Step 1: enrich existing <dfn> elements with the title attribute
+      // Step 1: enrich existing <dfn> elements with the custom tooltip attribute
       document.querySelectorAll('dfn[data-term]').forEach((el) => {
         const term = el.getAttribute('data-term');
-        if (term && defs[term]) el.setAttribute('title', defs[term]);
+        if (term && defs[term]) el.setAttribute('data-tooltip', defs[term]);
       });
 
       // Step 2: wrap plain-text glossary terms inside main content blocks
@@ -73,7 +73,7 @@
           const beforeNode = before ? document.createTextNode(before) : null;
           const dfn = document.createElement('dfn');
           dfn.setAttribute('data-term', best.canonical);
-          if (defs[best.canonical]) dfn.setAttribute('title', defs[best.canonical]);
+          if (defs[best.canonical]) dfn.setAttribute('data-tooltip', defs[best.canonical]);
           dfn.textContent = best.matched;
           const afterNode = after ? document.createTextNode(after) : null;
 
