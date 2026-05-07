@@ -12,21 +12,25 @@ const { title, description = 'Unmasked: a structured presentation of the Senate 
 
 // Active-page detection. Astro.url.pathname includes the deploy base prefix
 // (e.g., '/unmasked/timeline/' on github.io); strip it to compare against
-// the literal hrefs in the nav.
+// the route component of the nav hrefs.
 const base = import.meta.env.BASE_URL;
 const stripBase = (p: string) => (p.startsWith(base) ? '/' + p.slice(base.length) : p);
 const route = stripBase(Astro.url.pathname);
-const isActive = (href: string) =>
-  href === '/' ? route === '/' : route === href || route.startsWith(href);
+const isActive = (path: string) =>
+  path === '/' ? route === '/' : route === path || route.startsWith(path);
+
+// Base-prefix hand-written hrefs at render time so navigation works in dev too,
+// without depending on the post-build path rewriter.
+const link = (path: string) => base + path.replace(/^\//, '');
 
 const navLinks = [
-  { href: '/explainer/', label: 'Explainer' },
-  { href: '/timeline/', label: 'Timeline' },
-  { href: '/documents/', label: 'Documents' },
-  { href: '/quotes/', label: 'Quotes' },
-  { href: '/people/', label: 'People' },
-  { href: '/glossary/', label: 'Glossary' },
-  { href: '/about/', label: 'About' },
+  { path: '/explainer/', label: 'Explainer' },
+  { path: '/timeline/',  label: 'Timeline' },
+  { path: '/documents/', label: 'Documents' },
+  { path: '/quotes/',    label: 'Quotes' },
+  { path: '/people/',    label: 'People' },
+  { path: '/glossary/',  label: 'Glossary' },
+  { path: '/about/',     label: 'About' },
 ];
 ---
 
@@ -40,10 +44,10 @@ const navLinks = [
   </head>
   <body>
     <header class="site-header">
-      <a href="/" class="site-title">Unmasked</a>
+      <a href={base} class="site-title">Unmasked</a>
       <nav>
-        {navLinks.map(({ href, label }) => (
-          <a href={href} aria-current={isActive(href) ? 'page' : undefined}>{label}</a>
+        {navLinks.map(({ path, label }) => (
+          <a href={link(path)} aria-current={isActive(path) ? 'page' : undefined}>{label}</a>
         ))}
       </nav>
       <div class="search-mount" data-pagefind-ignore>

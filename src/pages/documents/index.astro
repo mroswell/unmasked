@@ -21,6 +21,7 @@ const docs = (await getCollection('documents')).sort((a, b) => {
 
 // Build chip list dynamically from the catalog so future doc types add chips automatically
 const distinctValues = Array.from(new Set(docs.map(formatType))).sort();
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title="Documents — Unmasked">
@@ -96,7 +97,7 @@ const distinctValues = Array.from(new Set(docs.map(formatType))).sort();
             </td>
             <td class="pages-cell">{doc.data.page_count ?? '—'}</td>
             <td>
-              <a href={`/documents/${doc.data.bates_id}/`}>
+              <a href={`${base}documents/${doc.data.bates_id}/`}>
                 <code>{doc.data.bates_id}</code>
               </a>
               <div class="doc-title">{doc.data.title}</div>
@@ -123,12 +124,13 @@ const distinctValues = Array.from(new Set(docs.map(formatType))).sort();
 
   // Lazy-loaded Pagefind module — only fetched when the user switches to "Search inside documents".
   // The /* @vite-ignore */ comment tells Vite to leave the import alone (Pagefind doesn't exist
-  // at Vite build time; the path is also rewritten to /unmasked/... by scripts/07-rewrite-paths-for-base.mjs).
+  // at Vite build time). Path is built from import.meta.env.BASE_URL so it resolves correctly
+  // in both dev and prod without depending on the post-build path rewriter.
   let pagefind: any = null;
   async function getPagefind() {
     if (pagefind) return pagefind;
     try {
-      const pagefindUrl = '/pagefind/pagefind.js';
+      const pagefindUrl = `${import.meta.env.BASE_URL}pagefind/pagefind.js`;
       pagefind = await import(/* @vite-ignore */ pagefindUrl);
       await pagefind.options({ excerptLength: 30 });
       return pagefind;

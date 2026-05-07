@@ -11,6 +11,7 @@
 import type { Plugin } from 'unified';
 import type { Root, Text, Parent, RootContent } from 'mdast';
 import { visit, SKIP } from 'unist-util-visit';
+import { findBatesPage } from './bates-page-lookup.ts';
 
 interface Citation {
   id: string;
@@ -23,10 +24,12 @@ interface Citation {
 
 interface Options {
   citations: Citation[];
+  base?: string;
 }
 
 const remarkCitations: Plugin<[Options], Root> = (options) => {
   const byId = new Map<string, Citation>(options.citations.map((c) => [c.id, c]));
+  const base = options.base ?? '/';
 
   return (tree) => {
     visit(tree, 'text', (node: Text, index, parent: Parent | undefined) => {
@@ -51,7 +54,7 @@ const remarkCitations: Plugin<[Options], Root> = (options) => {
         replacements.push({
           type: 'html',
           value: cit
-            ? citationHtml(cit)
+            ? citationHtml(cit, base)
             : `<span class="cite-marker cite-marker--unresolved">[${m[1]}]</span>`,
         } as RootContent);
         lastEnd = end;
@@ -65,18 +68,29 @@ const remarkCitations: Plugin<[Options], Root> = (options) => {
   };
 };
 
-function citationHtml(cit: Citation): string {
+function citationHtml(cit: Citation, base: string): string {
   const popoverId = `popover-${cit.id}`;
   const numericId = cit.id.replace(/^fn-/, '');
 
+  // Priority: standalone document_id → bundle deep-link → external_url → unavailable.
+  // `base` is import.meta.env.BASE_URL passed through from render-markdown.ts —
+  // making URLs base-correct in dev, with no reliance on the post-build rewriter.
   let linkHtml: string;
   if (cit.document_id) {
-    // Root-relative — gets prefixed with the deploy base by scripts/07-rewrite-paths-for-base.mjs
-    linkHtml = `<a href="/documents/${escapeAttr(cit.document_id)}/" class="cite-link">Read document &rarr;</a>`;
-  } else if (cit.external_url) {
-    linkHtml = `<a href="${escapeAttr(cit.external_url)}" class="cite-link" target="_blank" rel="noopener">External source &rarr;</a>`;
+    linkHtml = `<a href="${base}documents/${escapeAttr(cit.document_id)}/" class="cite-link">Read document &rarr;</a>`;
   } else {
-    linkHtml = `<span class="cite-link cite-link--unavailable">Document not publicly posted</span>`;
+    const hit = findBatesPage(cit.bates_ids);
+    if (hit) {
+      const docHref = `${base}documents/${escapeAttr(hit.bundleId)}/#doc-page-${hit.page}`;
+      const textHref = `${base}documents/${escapeAttr(hit.bundleId)}/#text-page-${hit.page}`;
+      linkHtml =
+        `<a href="${docHref}" class="cite-link">Read PDF (page ${hit.page}) &rarr;</a>` +
+        `<a href="${textHref}" class="cite-link cite-link--secondary">View as text &rarr;</a>`;
+    } else if (cit.external_url) {
+      linkHtml = `<a href="${escapeAttr(cit.external_url)}" class="cite-link" target="_blank" rel="noopener">External source &rarr;</a>`;
+    } else {
+      linkHtml = `<span class="cite-link cite-link--unavailable">Document not publicly posted</span>`;
+    }
   }
 
   const batesHtml = cit.bates_ids?.length

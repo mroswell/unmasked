@@ -12,9 +12,11 @@ const aliases = loadAliases();
 // enough (~100KB) and doesn't change during a build.
 const citations = JSON.parse(readFileSync('./src/content/citations.json', 'utf-8'));
 
+const base = import.meta.env.BASE_URL;
+
 const processor = remark()
   .use(remarkGlossary, { aliases })
-  .use(remarkCitations, { citations })
+  .use(remarkCitations, { citations, base })
   .use(remarkRehype, { allowDangerousHtml: true })
   .use(rehypeStringify, { allowDangerousHtml: true });
 

@@ -2,14 +2,15 @@
 // This component injects the glossary tooltip script + handles
 // tooltip enrichment for both server-rendered <dfn> elements
 // (from the remark plugin) and plain-text terms on .astro pages.
+const base = import.meta.env.BASE_URL;
 ---
 
-<script is:inline>
+<script is:inline define:vars={{ base }}>
   (async function() {
     try {
       const [aliasesResp, defsResp] = await Promise.all([
-        fetch('/glossary-aliases.json'),
-        fetch('/glossary-shortdefs.json'),
+        fetch(base + 'glossary-aliases.json'),
+        fetch(base + 'glossary-shortdefs.json'),
       ]);
       if (!aliasesResp.ok || !defsResp.ok) return;
       const aliases = await aliasesResp.json();

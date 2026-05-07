@@ -247,8 +247,15 @@ dfn[data-term][data-tooltip=""]::before {
   word-break: break-all;
 }
 .cite-link {
-  display: inline-block;
+  display: block;
   font-weight: 600;
+  margin-top: 0.35rem;
+}
+.cite-link--secondary {
+  font-weight: 500;
+  color: var(--color-accent);
+  opacity: 0.85;
+  font-size: 0.9rem;
 }
 .cite-link--unavailable {
   color: var(--color-muted);

@@ -28,6 +28,8 @@ const events = (await getCollection('timeline'))
 const quotes = (await getCollection('quotes')).filter(
   (q) => q.data.speaker === actor.id
 );
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title={`${actor.name} — Unmasked`}>
@@ -39,7 +41,7 @@ const quotes = (await getCollection('quotes')).filter(
     </header>
 
     <p class="back-link">
-      <a href="/people/">← All people</a>
+      <a href={`${base}people/`}>← All people</a>
     </p>
 
     {events.length > 0 ? (
@@ -51,7 +53,7 @@ const quotes = (await getCollection('quotes')).filter(
         <ul class="event-list">
           {events.map((event) => (
             <li>
-              <a href={`/timeline/#${event.data.date}`} class="event-link">
+              <a href={`${base}timeline/#${event.data.date}`} class="event-link">
                 <time datetime={event.data.date}>{event.data.date_display}</time>
                 <span class={`event-cat event-cat--${event.data.category}`}>
                   {event.data.category}
@@ -84,7 +86,7 @@ const quotes = (await getCollection('quotes')).filter(
                   <span class="context">{q.data.context}</span>
                   {q.data.date && <span class="date"> · {q.data.date}</span>}
                   {' '}
-                  <a href={`/quotes/#${q.data.id}`} class="quote-anchor">view in /quotes/ →</a>
+                  <a href={`${base}quotes/#${q.data.id}`} class="quote-anchor">view in /quotes/ →</a>
                 </footer>
               </blockquote>
             </li>
