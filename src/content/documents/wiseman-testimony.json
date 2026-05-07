@@ -6,5 +6,9 @@
   "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/Wiseman-Testimony.pdf",
   "split_from": null,
   "pdf_path": "/documents/wiseman-testimony.pdf",
-  "ocr_text_path": "/documents/wiseman-testimony.txt"
+  "ocr_text_path": "/documents/wiseman-testimony.txt",
+  "page_count": 10,
+  "pages_with_text": 10,
+  "avg_chars_per_page": 3933,
+  "coverage_percent": 100
 }

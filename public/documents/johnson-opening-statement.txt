@@ -1,126 +1,249 @@
-[OCR skipped on page(s) 1-2]VACCINE RELATED DEATHS
+Page 1 of 6
+Opening Statement of Chairman Ron Johnson
+Permanent Subcommittee on Investigations
+April 29, 2026
+As submitted to the record:
+In conjunction with this hearing, I am releasing an interim report titled, “Unmasked: How Biden
+Health Officials Purposely Turned a Blind Eye toward COVID-19 Vaccine Safety Signals.” I
+urge everyone tuning in to today’s hearing to read the full report to determine for yourself how
+the title is as accurate as it is incriminating.
+To set the stage for what follows, let me remind everyone what Dr. David Morens, an advisor to
+Anthony Fauci who was recently charged with conspiracy and destruction of records, emailed to
+colleagues on how to evade Freedom of Information Act requests, “I learned from our foia lady
+here how to make emails disappear,” and how he wanted, “correspondence on sensitive issues be
+sent to me at my gmail address.”1 	Included in our report is additional evidence of how federal
+health officials avoided creating a paper trail to prevent transparency and public disclosure. In
+discussing how they’ve been warned of a major limitation of FDA’s data mining system, one
+senior FDA official wrote, “we should meet internally – many considerations not suited to
+email.”2
+Other federal health officials appeared to have openly acknowledged that they were actively
+attempting to avoid transparency. A CDC official discussing the sharing of vaccine safety data
+stated, “I think because of the FOIAs we may have asked FDA to stop sending these weekly data
+mining outputs.”3 	In spite of their concerted efforts to conceal what they knew, and when they
+knew it, the documents we have obtained, thanks to Secretary Kennedy’s responsiveness to my
+subpoena and his commitment to radical transparency, paint a clear picture of an obvious cover-
+up by federal health officials.
+Our 	report shows how FDA officials were warned and fully aware of their safety surveillance
+system’s inability to adjust for a statistical phenomenon called “masking” which, according to
+medical researchers, occurs when “signals for a vaccine of interest are hidden by the presence of
+other reported vaccines.”4 	Rather than use a newer, “state of the art” system that can adjust for
+masking, Biden health officials purposefully chose to employ the older system that concealed the
+signals for serious adverse events associated with the COVID injection.5 	Throughout 2021, FDA
+1 Letter from Ron Johnson, Ranking Member, Permanent Subcomm. on Investigations, to Xavier Becerra, Secretary,
+Dep’t of Health and Human Services, Nov. 15, 2023; Department of Justice, Former Senior NIAID Official Indicted
+for Concealing Federal Records During COVID-19 Pandemic, April 28, 2026,
+https://www.justice.gov/opa/pr/former-senior-niaid-official-indicted-concealing-federal-records-during-covid-19-
+pandemic-0; Christenson, Josh, NIH adviser David Morens can’t recall if he deleted COVID records, laughs off
+Fauci FOIA evasions, New York Post, May 22, 2024, https://nypost.com/2024/05/22/us-news/explosive-emails-
+show-top-nih-adviser-deleted-records-used-secret-back-channels-to-help-fauci-ecohealth-evade-covid-transparency/.
+2 PSI-HHS-000008251979.
+3 PSI-HHS-000002480132.
+4 Rave Harpaz et al., Signaling COVID-19 Vaccine Adverse Events, Drug Safety (2022),
+https://link.springer.com/article/10.1007/s40264-022-01186-z.
+5 PSI-HHS-000002134656.
 
+Page 2 of 6
+officials received multiple analyses from the “state of the art” system showing statistically
+significant safety signals for adverse events, but made a conscious decision to ignore the data.
+On October 22, 2020, CDC’s Tom Shimabukuro touted VAERS by saying it can “rapidly detect
+safety signals and can detect rare adverse events.”6 	But in an email a year later, when VAERS
+was reporting worldwide adverse events of 837,595 and 17,619 deaths, Dr. Shimabukuro stated,
+“it’s not a database that should be used for serious surveillance or research.”7
+In reaction to the skyrocketing number of deaths and adverse events, other Biden Administration
+and federal health officials were also publicly denigrating VAERS with comments like, “falsified
+VAERS report,” “potentially misleading VAERS posts,” “frequently misused by anti-vaccine
+activists,” and “conspiracy theorists, science deniers, and anti-vaccine activists can fill out the
+form.”8
+The federal health agencies had to be sued twice before a court finally forced them to disclose
+the results of the V-Safe system, an online self reporting safety surveillance system created
+specifically for the mRNA COVID injections.9 	Here’s why they fought so hard to keep it from
+public view. Of the 10 million people who voluntarily provided information to V-Safe, 7.7%
+sought medical care for COVID injection adverse events and 25% lost time at work or couldn’t
+perform their daily routine following injection.10
+Even though I wrote 21 letters requesting information on what the agencies were tracking and
+what they knew about adverse events, I didn’t need a sophisticated mathematical model to tell
+me the COVID injection was causing significant harm. The data depicted in these charts alone
+should have raised the alert level to DEFCON 1.
+6 Failure to Warn Interim Report, Footnote 210, https://www.hsgac.senate.gov/wp-content/uploads/2025.05.21-PSI-
+Majority-Staff-Interim-Report-Failure-to-Warn.pdf; Tom Shimabukuro, Presentation before the Vaccines and
+Related Biological Products Advisory, Oct. 22, 2020, transcript available at
+https://www.fda.gov/media/143982/download at 94.
+7 PSI-HHS-000007122821.
+8 Document Release: https://aflegal.org/wp-content/uploads/2024/08/America-First-Legal_CDC-
+Censorship_Release1.pdf at 38; Offit, Paul, Labels Matter: VAERS, Jan. 8, 2024,
+https://pauloffit.substack.com/p/labels-matter-vaers.
+9 Dumais, John-Michael, Federal Judge Orders CDC to Release V-safe Texts Detailing COVID Vaccine Injuries,
+The Defender, Jan. 16, 2024, https://childrenshealthdefense.org/defender/federal-judge-cdc-release-v-safe-texts-
+covid-vaccine-injuries/; Jevradakis, Michael, CDC Has 4 Days to Release Data on COVID Vaccine Injuries
+Collected via V-safe App, Court Rules, The Defender, Sept. 26, 2022,
+https://childrenshealthdefense.org/defender/cdc-data-covid-vaccine-injuries-vsafe-app/.
+10 Dominique, Nicole, 25% Of People Who Received Covid-19 Vaccination Missed Work Or Reported A "Serious
+Event" Affecting Their Normal Life Functions, According To CDC Data , Oct. 5, 2022,
+https://www.eviemagazine.com/post/25-percent-people-received-covid-19-vaccination-missed-work-serious-event-
+cdc.
+
+VACCINE RELATED DEATHS
 FOR ALL VACCINES AS OF APRIL 21, 2026.
 WORLDWIDE.
-
 At other Vaccines
-
 i cowo-18vacene
-
 <covid
 Vaccine
-
 “<Allother
-
 tosemes
-eee ial
-2010 2024
-
+eee ial2010 2024
 DRUG ADVERSE EVENT COMPARISON
-
 FDA AND CDC DATA: WORLDWIDE
-
 Adverse
-
 mite Deaths Deaths/year
-
 In 30 years (1906-2026)
-
 Ivermectin 4,998 510 17
-
-In 39 years (1987-2026):
-
+In
+39
+years
+(1987-2026):
 HcQ 36,819 5,207
-
 In 36 years (1990-20261
-
-Flu vaccines 240,511 2,722
-
+Flu
+vaccines
+	240,511 2,722
 In 57 years (1969-2026
-
-Dexamethasone 140,690 25,213
-
-In 87 years (1969-20263
-
-Acetaminophen 181,072 42,112
-
+Dexamethasone
+	140,690
+	25,213
+In
+87
+years
+	(1969-20263
+Acetaminophen
+	181,072
+	42,112
 In 66 months:
-
-Remdesivir 1 0,638 2,745
-
+Remdesivir
+	1
+0,638 2,745
 In 65 months:
+COVID vaccines
+	1,675,590
+	39,077 7,210
+Deaths on
+days 0,
+1
+or 2:
+	9,329 24%
+FDA AEMS system, CDC VAERS system. Reports	trom all locations worldwide, Data	as ot March 27, 2026; downloaded April 27, 2026.
+Page 3 of6
 
-COVID vaccines 1,675,590 39,077 7,210
+Page 4 of 6
+In spite of these shocking numbers, federal health officials continued to recommend the injection,
+claiming it is both safe and effective. By comparison, in 1976, after approximately 25 to 30
+deaths and over 500 cases of Guillain-Barré syndrome, the swine flu vaccine was pulled from the
+market.11 	Biden federal health officials were clearly not as vigilant in reacting to what VAERS
+was showing.
+For over four years, I have wondered how health officials could possibly ignore this
+overwhelming evidence of harm. Now I know. Our report details that on March 1, 2021, less
+than three months after the COVID injections received an Emergency Use Authorization, Peter
+Marks, the head of CBER, and officials reporting to him were warned by FDA’s Dr. Ana
+Szarfman, an individual who these officials recognized as an expert in FDA’s data mining, that
+the current system would mask safety signals for COVID injection adverse events.12 	Dr.
+Szarfman proposed a new method, invented by Dr. William DuMouchel, of Oracle, the inventor
+of the current algorithm, to uncover the hidden safety signals.13 	On March 26, 2021, Dr.
+Szarfman sent Dr. DuMouchel’s data analysis to senior FDA officials showing that the new
+analytical method found “49 examples of extreme masking” and uncovered approximately 25
+statistically significant safety signals of adverse events associated with the COVID injection,
+including sudden cardiac death, Bell’s palsy, and pulmonary infarction (see list below).14
+11 Roan, Shari, Swine flu ‘debacle’ of 1976 is recalled, LA Times, (April 27, 2009),
+https://www.latimes.com/archives/la-xpm-2009-apr-27-sci-swine-history27-
+story.html#:~:text=%E2%80%9CThat%20raised%20the%20concern%20that,60%20million%20Americans%2C%2
+0never%20unfolded.
+12 PSI-HHS-000008257443.
+13 Ana Szarfman et al., Pharmacovigilance in the 21st century: new systematic tools for an old problem,
+Pharmacotherapy (2004), https://accpjournals.onlinelibrary.wiley.com/doi/epdf/10.1592/phco.24.13.1099.38090.
+14 PSI-HHS-000008263190-91; PSI-HHS-000008257443-45 (with attachment).
 
-Deaths on days 0, 1 or 2: 9,329 24%
-
-FDA AEMS system, CDC VAERS system. Reports trom all locations worldwide, Data as ot March 27, 2026; downloaded April 27, 2026.
-
-Page 3 of 6
-[OCR skipped on page(s) 4]Vaccine Type +
-
+Vaccine
+Type
++
+COVID19 (Custom Term)
+COVID19
+(Custom
+Term)
+COVID19 (Custom Term)
+COVID19 (Custom Term)
+COVID19
+(Custom
+Term)
+COVID19 (Custom Term)
+COVID19 (Custom Term)
+COVID19 (Custom Term)
+COVID19
+(Custom
+Term)
+COVID19 (Custom Term)
+COVID19 (Custom Term)
+COVID19
+(Custom
+Term)
 COVID19 (Custom Term)
 COVID19 (Custom Term)
 COVID19 (Custom Term)
 COVID19 (Custom Term)
-
-COVID19 (Custom Term)
-COVID19 (Custom Term)
-COVID19 (Custom Term)
-COVID19 (Custom Term)
-
-COVID19 (Custom Term)
-
-COVID19 (Custom Term)
-COVID19 (Custom Term)
-COVID19 (Custom Term)
-COVID19 (Custom Term)
-COVID19 (Custom Term)
-COVID19 (Custom Term)
-COVID19 (Custom Term)
-COVID19 (Custom Term)
+COVID19
+(Custom
+Term)
 COVID19 (Custom Term)
 COVID19_MODERNA
-
 COVID19_MODERNA
-
-=
-
-Cardiac telemetry abnormal
+=Cardiac telemetry abnormal
 ASTIALT ratio abnormal
 Diaphragmatic spasm
 Mastoid disorder
-
 May-Thurner syndrome
 Infusion
-
-Aortic aneurysm rupture
+Aortic aneurysm
+rupture
 Thalamic infarction
-
 Percutaneous coronary intervention
-
 Embolic stroke
-
 Cardiac assistance device user
 Magnetic resonance imaging heart
 Brain natriuretic peptide increased
 Ischaemic stroke
-
 COVID-19 pneumonia
-
 Dementia
-
 Acute myocardial infarction
 Pneumonia aspiration
-
 Electrocardiogram ST segment elevation
 Product administered to patient of inappropriate
-
 i
-
 COVID19_PFIZER/BIONTECH Brain natriuretic peptide increased
 COVID19_PFIZER/BIONTECH Acute myocardial infarction
 COVID19_PFIZER/BIONTECH COVID-19 pneumonia
+Page 5 of6
 
-Page 5 of 6
-[OCR skipped on page(s) 6]
+Page 6 of 6
+Our 	report goes on to detail how federal officials refused to acknowledge these revelations, or
+take action to warn the public. Instead, senior FDA officials repeatedly tried to stop Dr.
+Szarfman from continuing her work or communicating her findings outside of FDA.15 	In
+September 2021, Dr. Marks informed Dr. Patrizia Cavazzoni, the then-Director of CDER, that
+Dr. Szarfman, who was a CDER employee, “has been asked to cease and desist” conducting her
+data analyses.16 	Dr. Marks complained that Dr. Szarfman’s work had “become a major
+distraction” and that her efforts could “create erroneous conflicts that feed in to anti-vaccination
+rhetoric.”17
+Dr. Peter Stein, the then-Director of CDER’s Office of New Drugs, reported to Dr. Marks that
+his office had “made it clear” to Dr. Szarfman “that she should not be discussing or providing
+internal analyses externally, and needs to focus on her assigned work.”18 	Dr. Szarfman, who
+retired from the FDA in 2025 after more than 35 years of service, told PSI staff in a recent
+interview that she believed her FDA colleagues saw her as a “pest” and “persona non grata”
+because she was raising concerns about masking.
+Our witnesses today are medical researchers and experts in scientific data collection. They will
+help clarify the masking issue and describe why this cover up was so egregious. I want to thank
+them for the time and effort they have put into their testimony. I also want to again thank
+Secretary Kennedy for his commitment to radical transparency and for promising to make the
+HHS personnel with knowledge of these events available for interviews with the Subcommittee.
+15 PSI-HHS-000002213752-53; PSICOVID_00017246; PSI-HHS-000008251530; PSI-HHS-000008251912-13;
+PSI-HHS-000001195617-19; PSI_HHS-000008253450-51; PSI-HHS-000001175745-47; PSI-HHS-000001148712-
+14.
+16 PSI-HHS-000002213753.
+17 Id.
+18 PSI-HHS-000002213752-53.

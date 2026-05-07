@@ -6,5 +6,9 @@
   "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/Wiseman-Supporting-Document-1.pdf",
   "split_from": null,
   "pdf_path": "/documents/wiseman-supporting-document-1.pdf",
-  "ocr_text_path": "/documents/wiseman-supporting-document-1.txt"
+  "ocr_text_path": "/documents/wiseman-supporting-document-1.txt",
+  "page_count": 103,
+  "pages_with_text": 103,
+  "avg_chars_per_page": 4081,
+  "coverage_percent": 100
 }

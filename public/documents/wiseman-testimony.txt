@@ -1,1 +1,420 @@
-[OCR skipped on page(s) 1-10]
+Wiseman PSI Testimony 042726 Page 1 of 10
+Consequences of underestimated statistical safety signals, potential risks and suspected adverse
+reactions from VAERS associated with COVID-19 and other vaccines
+David M Wiseman, PhD, MRPharmS
+“Unmasked: How Biden Health Officials Purposely Turned a Blind Eye
+Toward COVID-19 Vaccine Safety Signals”
+Permanent Subcommittee on Investigations
+of the U.S. Senate Committee on
+Homeland Security and Governmental Affairs
+April 29, 2026
+Synechion, Inc., Dallas, TX 75252
+David.wiseman@synechion.com
+1 OPENING STATEMENT
+Distinguished Chairman, Ranking Member, and Committee Members. I am honored to discuss critical limitations in
+statistical safety signal and potential risk detection in VAERS, touted by CDC as “the nation’s early warning system
+for vaccine safety” and credited by former CBER Director Dr. Peter Marks with “detecting both potential and actual
+safety issues and informing vaccine policy decisions.” Among limitations undermining detection of statistical safety
+signals is the problem of masking.
+Certain data challenges often necessitate deploying surrogate methods for signal detection. CDC was required by
+VAERS’ COVID-19 Standard Operating Procedures to use the straightforward Proportional Reporting Ratio (PRR)
+method, while FDA would employ Empirical Bayesian modeling, requiring sophisticated software such as Oracle’s
+Empirica SignalTM.
+Masking occurs when statistical signals for one vaccine in a database are obscured by reports associated with other
+vaccines. For example, Moderna’s myocarditis signal becomes hidden if its comparison baseline is artificially
+inflated by including Pfizer’s myocarditis reports.
+In a simple analogy, hemlock and arsenic appear equally toxic when compared separately with a non-toxic baseline
+control such as tea. However, if hemlock’s baseline data include arsenic data, hemlock’s signal is drowned out or
+masked, appearing innocuous.
+As Chairman Johnson recently highlighted, regulators were well aware of the masking problem. Nonetheless,
+officials claimed ignorance on how to address masking, and that developing solutions exceeded FDA’s capabilities.
+They considered it “problematic to use a brand new, possibly unvalidated tool in the context of an EUA.”
+FDA’s failure to use tools already at their disposal challenge these assertions. In their own 2024 paper about tinnitus,
+regulators discussed masking, citing a 2022 seminal publication in the leading journal Drug Safety, noteworthy for
+three reasons.
+Firstly, its authors included Oracle’s Dr. William DuMouchel, developer of the Bayesian method and Empirica Signal
+software, along with FDA biostatistician Dr. Ana Szarfman.
+Secondly, it detailed a demasking protocol they developed and available within the same Empirica software used
+by FDA.
+Thirdly, it applied this protocol to unmask hundreds of statistical signals for the COVID-19 vaccines; a result
+consistent with my analysis.
+
+Wiseman PSI Testimony 042726 Page 2 of 10
+Despite citing this Drug Safety paper and possessing both software and in-house expertise, regulators failed to
+implement this solution to correct their analyses for masking.
+This omission impeded detection of perhaps hundreds of signals, including myocarditis and ischemic stroke; a
+striking failure given the accelerated, population-scale deployment by Operation Warp Speed of a novel and most
+complex class of drugs ever - mRNA.
+Signals surviving masking warranted, perforce, urgent investigation. Yet in FDA’s 2025 FOIA release, 163 Janssen
+signals evoked minimal discussion.
+Compounding the problem, CDC considered that its PRR analyses were rendered “basically redundant” by FDA’s
+Bayesian work, ignoring its responsibility to generate PRRs, with relatively simple demasking methods. Accordingly,
+the United States lacked a fully functional “early warning system” at the time of its greatest need.
+Separately, statistical signals were apparently trivialized by a reluctance to use the term “signal” and recognize a
+“statistical signal” as a potential safety signal.
+This hedging is incompatible with the “enhanced surveillance” required by VAERS’ Standard Operating Procedures,
+hindering investigation of potential risks FDA was legally obliged to consider, even without proven causality. Such
+shortcomings impugn decisions regarding authorization, approval, and vaccine injury compensation, and the
+marginalization of those apparently injured after receiving a COVID-19 vaccine.
+The notion that focusing on VAERS’ shortcomings distracts from current public health priorities is mistaken. Not
+only did the system fail to perform as advertised, but, as the Drug Safety paper presciently warned —the COVID-
+19 vaccine reporting deluge likely created masking effects that now compromise signal detection for other vaccines.
+Regulators must swiftly correct masking and other VAERS deficiencies, heeding earlier warnings of their former
+colleagues, Drs. Marks and Jernigan: “failure to detect and communicate a serious health issue related to a vaccine
+could impact confidence not only in COVID-19 vaccines but in all vaccines.”
+Thank you. I welcome questions.
+
+Wiseman PSI Testimony 042726 Page 3 of 10
+2 ANNOTATED VERSION
+Distinguished Chairman, Ranking Member, and Committee Members. I am honored to discuss critical limitations in
+statistical safety signal and potential risk detection in VAERS, (1-3) touted by CDC as “the nation’s early warning
+system for vaccine safety” (4-8) and credited by former CBER Director Marks with “detecting both potential and
+actual safety issues and informing vaccine policy decisions.” (9)1 2 Among (e.g. (10)) limitations undermining
+detection of statistical safety signals (p18/43 of (11)) is the problem of masking.(12) 3
+Empirical Bayesian Data Mining and detection of COVID-19 vaccine safety signals
+Certain data challenges often necessitate deploying surrogate methods4 for signal detection. CDC was required by
+VAERS’ COVID-195 Standard Operating Procedures to use the straightforward Proportional Reporting Ratio (PRR)
+method,(13) while FDA would employ Empirical Bayesian modeling,(14,15) requiring sophisticated software such
+as Oracle’s Empirica SignalTM.
+What is masking and why is it a problem with Empirical Bayesian Data Mining analyses?
+Masking occurs when statistical signals for one vaccine in a database are obscured by reports associated with other
+vaccines. (12) For example, Moderna’s myocarditis signal becomes hidden if its comparison baseline is artificially
+inflated by including Pfizer’s myocarditis reports.
+Simplified analogy of how masking could prevent detection of COVID-19 vaccine safety signals
+In a simple analogy, hemlock and arsenic appear equally toxic when compared separately with a non-toxic baseline
+control such as tea. However, if hemlock’s baseline data include arsenic data, hemlock’s signal is drowned out or
+masked, appearing innocuous.
+1 Notably, myocarditis for the modRNA vaccines, and blood clotting issues for Janssen. FDA’s Marks and CDC’s Jernigan proffered: “While not
+without limitations, VAERS has proven to be vital in detecting both potential and actual safety issues and informing vaccine policy decisions that
+protect the health of the American public. That’s a job the CDC and the FDA take seriously. “We know that failure to detect and communicate a
+serious health issue related to a vaccine could impact confidence not only in COVID-19 vaccines but in all vaccines. Bottom line: VAERS works
+and has a track record that proves it.”
+2 These descriptions dispatch the popular canard of VAERS’ alleged nonutility due to passive and lay reporting. Another canard is that VAERS
+is unreliable because it does not prove causality. Indeed, raw VAERS data do not prove causality. However, causality may be determined after
+further investigation, including the examination of statistical signals generated from VAERS data. Proof of causality is not required for the
+issuance (or non-issuance) of an Emergency Use Authorization (EUA) which requires only FDA’s reasonable belief “that the product may be
+effective” based on a “totality” standard which is lower than the regular “safe and effective” standard. This standard requires FDA to consider
+“known and potential risks,“ even without proving causality. (Food, Drug and Cosmetic Act, Section 564(c) (2)(B)
+www.govinfo.gov/content/pkg/COMPS-973/pdf/COMPS-973.pdf) Emphasis added.
+3 These methods are termed “Disproportionality Signal Analyses” (DSA). There are other forms of masking possible with DSA. Additionally, since
+DSA methods were developed primarily for signal detection involving classical small-molecule drugs with limited pharmacological effects, the
+inherent assumptions underlying the use of DSA may be violated for complex products involving several potential toxicants. This would certainly
+be true of the modRNA COVID-19 vaccines, for which toxic effects might arise from the modRNA itself, the lipid nanoparticles (and their
+components), RNA-lipid adducts, frameshift proteins, dsRNA, residual DNA, and elicited spike protein. Other issues in the conduct of DSA
+include the setting of statistical thresholds. These issues are beyond the scope of this presentation.
+4 Because the number of people receiving a drug, and the number of doses they have received is often unknown, it is difficult to calculate an
+occurrence rate for a particular adverse event. Accordingly, the total number of adverse events reported is used as a surrogate for the number
+of doses or people receiving doses of drug.
+5 I use the term “vaccine” to refer to all COVID-19 vaccine types. Although for the Pfizer, Moderna and Jannsen products, the term “pro-vaccine”
+more accurately describes their character and distinguishes them from conventional vaccines. Unlike conventional vaccines, these pro-vaccines
+do not contain target antigens. Rather, they contain the genetic instructions read by a vaccinee’s body to produce the target spike protein antigen.
+This is somewhat analogous to the activation of a pro-drug that lacks the desired pharmacologic action, but is converted by the body to an active
+form.
+
+Wiseman PSI Testimony 042726 Page 4 of 10
+Were federal health officials able to adjust their data analyses to account for masking?
+As Chairman Johnson recently highlighted,(2,16,17)6 regulators were well aware of the masking problem. (footnote
+89 in (2))7 Nonetheless, officials claimed ignorance on how to address masking, and that developing solutions
+exceeded FDA’s capabilities.(p108 in document 4 of (3)) They considering it “problematic to use a brand new,
+possibly unvalidated tool in the context of an EUA.” 8 9
+6 Chairman Johnson cites David Menschik MD, MPH who, as of January 2021, was Associate Director for Surveillance Informatics, Division of
+Epidemiology/Office of Biostatistics and Epidemiology, CBER, FDA (p179 document 3 of 2026 Johnson release). He authored most of the weekly
+email EBDM alerts from January 2021 to mid-2022. The recently released documents contain several drafts for limitation language relating to
+masking for the paper by Rosenblum et al. This was included in the preprint version, but removed in the Lancet version, along with mention of
+EB data mining. Three versions of this language are contained in an email found on p146 of document 9 from the March 2026 Johnson release.
+(Bates PSI-HHS-000008252047, in pertinent part)
+From: Menschik, David To: Baer, Bethany Subject: FW: [EXTERNAL] 6 month safety review- approval for CDC clearance- please review and
+respond. Date: Thu, 23 Sep 2021
+“Attached is the new clean manuscript and there is no redline version per below. I created a “blackline version” of the manuscript (comparing
+previous clean version with this clean version; attached) and it appears that there are substantive changes that will require re-clearance.
+I’m not satisfied with the late changes to the data mining limitation section. Recent version said:
+EB data mining has multiple limitations22 including that an absence of a disproportionality alert does not rule out presence of a safety
+problem. Additionally, since most reports received during this surveillance period involved COVID-19 vaccines, disproportionality
+scores (which are adjusted by year to control for time-dependent confounders, potentially confounding, exposure and outcome
+variables) can be muted by COVID-19 vaccine reports contributing substantially to the comparator group, particularly if both mRNA
+COVID-19 vaccines are associated with the same adverse event.
+New version says:
+A limitation of EB data mining22 is low sensitivity; that is, absence of a disproportionality alert does not rule out a possible adverse
+event. A new concern with disproportionality scores, which are adjusted by year to control for time-dependent confounders, is that
+during the study period most VAERS reports were for COVID-19 vaccinations. As all VAERS reports are used for vaccine-event
+comparisons in EB data mining, potential associations with mRNA COVID-19 vaccines plausibly could be missed.
+This is inadequate since there are many limitations to data mining and they are only pointing out ‘low sensitivity’ which is not accurate. If you
+agree, would advise revising to:
+EB data mining has multiple limitations22,23 including that the absence of a disproportionality alert does not rule out a possible
+corresponding adverse event. A new concern with disproportionality scores, which are adjusted by year to control for time-dependent
+confounders, is that during the study period most VAERS reports were for COVID-19 vaccinations. As all VAERS reports are used for
+vaccine-event comparisons in EB data mining, potential associations with mRNA COVID-19 vaccines plausibly could be missed.
+I’m ok with the other data mining parts (including slimming down the results section) and deferring on non-data mining parts of the paper (for
+which we were not involved).
+Any additional edits or thoughts welcome. Thanks, David”
+7 Indeed, they were cautioned by FDA’s Dr. David Menschik against “placing excess value on… the absence of specific data mining alerts.”
+8 Bates PSI-HHS-000001136460. In pertinent part. The tinnitus paper referred to is Yih et al.
+Email from Nair, Narayan (FDA), Friday, October 27, 2023. To: Su, John (CDC), Bazel, Samaneh (FDA). Cc: Shimabukuro, Tom (CDC)
+Subject: FDA coauthor for tinnitus paper
+“Hi John,
+She does bring up a good point. As you know, data mining has all the limitations of passive surveillance as well as others. However, during the
+COVID vaccine era there is an additional limitation. Since most reports received involve COVID-19 vaccines, disproportionately scores (which
+are adjusted by year to control for time-dependent, potentially confounding, exposure and outcome variables) can be driven towards the null
+by COVID-19 vaccine reports contributing substantially to the comparator group. This would could occur in the setting if there was some type
+of class-effect (e.g., if both mRNA COVID-19 vaccines are associated with the same adverse event).
+We were aware of this limitation before and during the pandemic. There are many data mining tools and there was some discussion about
+utilizing a novel tool to adjust for this. However, we thought it would be problematic to use a brand new, possibly unvalidated tool in the context
+of an EUA. We ended up using the same EBGM data mining we use for all vaccines and has a long history of use rather than take an
+experimental approach. As new non-COVID vaccine reports are added we think this limitation will be mitigated to some degree.
+As far as the paper goes there are several options to address this:
+• We could report our data mining findings and just acknowledge this as a limitation (this is what we have done in other papers)
+• We could not include any data mining findings
+• You could develop another tool that would compensate for the greater number of COVID vaccine reports. I am not sure how to do
+this but you would need a statistician with DM experience. This would be beyond our capabilities at FDA.”
+9 If this is taken to mean that it might not be possible to validate a new tool, this suggestion is untenable in the light of many examples of FDA
+accepting the use of unvalidated, unverified, or low--quality data, such as: a) use of immunobridging methods with no establishment of am
+immune correlate of protection to authorize booster for new-variant COVID-19 vaccine authorizations (see comments of Dr. Ofer Levy at the
+VRBPAC meeting of October 13, 2021; b) At the VRBPAC meeting of October 26 2021, FDA accepted clinical data it had not verified; c) At the
+VRBPAC meeting of June 15, 2022, FDA accepted clinical data it considered “preliminary, imprecise, and potentially unstable” () but
+nonetheless “based on the totality of evidence [..] we do feel very confident that the evidentiary standard for benefit for EUA has been met
+here. “
+It is difficult to understand why validating a statistical method should take more than a few weeks, given the pace of Operation Warp speed
+that was able to solve far more challenging issues.
+
+Wiseman PSI Testimony 042726 Page 5 of 10
+FDA’s failure to use tools already at their disposal challenge these assertions. In their own 2024 paper about
+tinnitus,(18) regulators discussed masking,10 citing a 2022 seminal publication (12) in the leading journal Drug
+Safety, noteworthy for three reasons.
+Firstly, its authors included Oracle’s Dr. William DuMouchel, developer of the Bayesian method (19) and Empirica
+Signal software, along with FDA biostatistician Dr. Ana Szarfman.11
+Secondly, it detailed a demasking protocol they developed (20) and available within the same Empirica software
+used by FDA.
+Thirdly, it applied this protocol to unmask hundreds of statistical signals for the COVID-19 vaccines; a result
+consistent with my analysis. (21) 12 13
+Despite citing this Drug Safety paper and possessing both software and in-house expertise,(22)14 (p56 of Document
+i1 in (3)),15 (reviewed in (21)),16 regulators failed to implement this solution to correct their analyses for masking.
+Other data mining limitations
+This omission impeded detection of perhaps hundreds of signals,(21) including myocarditis 17 (Figure 1) and
+ischemic stroke;18 a striking failure given the accelerated, population-scale deployment by Operation Warp Speed
+of a novel and most complex class of drugs ever - mRNA.
+What is the significance of signals that survive masking?
+Signals surviving masking warranted, perforce, urgent investigation. Yet in FDA’s 2025 FOIA release, 163 Janssen
+signals evoked minimal discussion. (21)
+10 “VAERS is a system used primarily for signal detection. Since COVID-19 vaccines became available, the majority of VAERS reports have
+been for COVID-19 vaccines, which is unprecedented compared to pre-pandemic reporting. This might limit signal detection capability for
+COVID-19 vaccines using Empirical Bayesian data mining because disproportionality scores may be driven towards the null [35 – citing Harpaz
+et al].”
+11 Writing in her personal capacity.
+12 For the seven events that were the focus of the Drug Safety paper, Harpaz et al. detected, before demasking, Empirical Bayesian Data Mining
+safety signals for eight out of a possible 21 vaccine-adverse event pairs, from the global VAERS database. Using US data, FDA only detected
+one of these, missing seven out of eight, a statistically significant failure (p=0.02). See Wiseman, 2025.
+13 In addition to demasking, Harpaz et al., used a threshold of 1, instead of the arbitrary threshold of 2. Discussion of this also significant issue
+with PRR, Bayesian, and related methods, is beyond the scope of this presentation (see Wiseman, 2025).
+14 In addition to Dr. Szarfman, other FDA data mining experts include Drs. Travis Canida (current) and John Ihre (former), statisticians who
+developed open-source software for Empirical Bayesian Data Mining.
+15 Dr. Brendan Day, working on Empirical Bayesian Data Mining analysis for pneumococcal vaccines, described consideration of data from both
+the USA and worldwide, similar to that used in the Drug Safety (Harpaz et al.) paper. Although FDA’s disclosed analysis only considered US
+reports, both analyses contribute to the totality of evidence on vaccine safety.
+16 Although the Empirica Signal software is able to calculate PRR values, it is unknown which software CDC used to calculate PRR values
+disclosed under a FOIA request. These analyses were limited in the time period covered, and in the comparisons made (Pfizer and Moderna
+were combined and no analyses were provided for Janssen). These analyses did however substantively account for masking by a) combining
+the Pfizer and Moderna reports, and b) comparing these combined data against non-COVID vaccines, presumably excluding Janssen data from
+the comparator. (see 8.4.2 in Wiseman, 2025) CDC’s analysis also appears to avoid a different kind of masking that would have been problematic
+had CDC complied with its own Standard Operating Procedure. (see 10.1.1 in Wiseman, 2025) How these analyses were used to inform
+regulators’ decisions has not been disclosed, but it appears that for the most part they were not. (see p144 in Document 8 of Johnson 2026
+release)
+17 Taking myocarditis as an example, after demasking Harpaz et al. detected a Bayesian safety signal for Pfizer in the dataset around May 28,
+2021, and for Moderna, February 18. When adjustment was also made for a separate statistical problem in which the threshold is set too high,
+a Pfizer myocarditis signal was evident March 5, and a Moderna signal for February 5, 2021. Compare these dates with the requests for
+information from Israel on February 28, 2021 (p14 in Document 2 submitted to the PSI 5/21/25) and FDA and CDC statements (p 153 in
+Document 2 submitted to the PSI 5/21/25). (see Figure 1).
+https://www.hsgac.senate.gov/subcommittees/investigations/hearings/the-corruption-of-science-and-federal-health-agencies-how-health-
+officials-downplayed-and-hid-myocarditis-and-other-adverse-events-associated-with-the-covid-19-vaccines/
+Regarding Pfizer's EUA for its teenage dose, ACIP were told on May 17, 2021 over two months after a signal was evident according to Harpaz
+et al., that myocarditis did “not differ[ed] from expected baseline rates.” Finally, a myocarditis signal was announced May 27, 2021. (see Wiseman,
+2025)
+18 CDC’s substantively demasked PRR analysis (see 8.4.2 in Wiseman, 2025) identified signals for ischemic stroke at least as early as July
+2022, despite representations made in early 2023, regarding the VSD signal that there were “no excess reports of stroke from VAERS” and that
+“Other safety monitoring systems have not observed similar findings.” (see 9.1.3 in Wiseman, 2025)
+
+Wiseman PSI Testimony 042726 Page 6 of 10
+Compounding the problem, CDC considered that its PRR analyses were rendered “basically redundant” by FDA’s
+Bayesian work, (p144 in Document 8 of (3)),19 ignoring its responsibility to generate PRRs, (11) with relatively simple
+demasking methods.(21) Accordingly, the United States lacked a fully functional “early warning system” (4-7) at the
+time of its greatest need.
+Separately, statistical signals were apparently trivialized 20 by a reluctance to use the term “signal” (p62 12/1/22 in
+Document 1 of (3))21 22 and recognize a “statistical signal” as a potential safety signal. (eg p2 of (1,8)) 23
+This hedging is incompatible with the “enhanced surveillance” required by VAERS’ Standard Operating
+Procedures,(11) hindering investigation of potential risks FDA was legally obliged to consider, even without proven
+causality. Such shortcomings impugn decisions 24 regarding authorization, approval, and vaccine injury
+compensation, and the marginalization of those apparently injured after receiving a COVID-19 vaccine.
+Ongoing implications
+The notion that focusing on VAERS’ shortcomings distracts from current public health priorities is mistaken. Not
+only did the system fail to perform as advertised, but, as the Drug Safety paper presciently warned (12)25—the
+19 In pertinent part: Email from Dr. Tom Shimabukuro to CDC colleagues (CDC), June 23, 2022. To: Martha Sharan, John Su, cc Kristen Nordlund,
+Perstephanie Thompson, Paige Marquez.
+“Okay, but the main reason we didn't do PRR is b/c FDA EB data mining is the 'gold standard' for disproportionality analysis so we had a better
+and more efficient way of doing disproportionality analysis at a time when we were occupied trying to monitor an onslaught of reports. There
+really isn't a reason for CDC to do PRR if FDA is conducting EB data mining b/c it's basically redundant. Now that we are further along in the
+pandemic and we better understand some of the limitations of FDA's EB data mining for COVID-19 vaccines we are doing some exploratory
+work with PRR, but it's still not a major component of our monitoring.”
+20 The VAERS Standard Operating Procedure (p18/43) clearly refers to PRR or EBDM findings as safety signals: “MedDRA terms identified as
+safety signals due to elevated PRR and/or a statistically significant finding on data mining will be reviewed as appropriate.”
+In the context of Investigational New Drugs, the term “Suspected adverse reaction” appears appropriate, per 21 CFR §312.32 (a):
+“Suspected adverse reaction means any adverse event for which there is a reasonable possibility that the drug caused the adverse event. For
+the purposes of IND safety reporting, “reasonable possibility” means there is evidence to suggest a causal relationship between the drug and
+the adverse event. Suspected adverse reaction implies a lesser degree of certainty about causality than adverse reaction, which means any
+adverse event caused by a drug.” at www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-312/subpart-B/section-312.32
+21 In pertinent part (emphasis added). From: Nair, Narayan (FDA) December 1, 2022.
+To: Moro, Pedro (CDC) Cc: Alimchandani, Meghna (FDA); Zinderman, Craig E (FDA)
+Subject: RE: RE: Weekly data mining
+“Hi Pedro,
+I hope you are well. FYI - we have shifted some of our responsibilities in our Division so David will no longer be responsible for fielding questions
+about data mining. Feel free to contact me if questions come up. With regard to Alison’s question, we have not had any disproportionality alerts
+from Data Mining for the mRNA COVID-19 vaccines for any new safety concerns (including none for Parsonage Turner Syndrome.)
+[…] We generally try and avoid referring to disproportionality/data mining alerts as “signals” or “safety signals”. From a regulatory
+perspective the terms signal and/or safety signal have certain connotations and may trigger actions so we try not conflate data mining alerts with
+signals.”
+22 In meetings held between the React19.org Patient Advocacy group, and FDA officials, frequent mention is made of the inability to detect
+signals of interest from VAERS data. For example see:
+https://static.therealpetermarks.com/assets/01_04_22_FDA_PeterMarks_FollowUp_transcript.pdf
+https://icandecide.org/wp-content/uploads/2025/04/03_03_2022_FDA_transcript.pdf
+https://icandecide.org/wp-content/uploads/2025/04/05_25_22_FDA_transcript.pdf
+https://icandecide.org/wp-content/uploads/2025/04/React19-FDA-Transcript-12_14_2022.pdf
+23 The 2026 paper by Anyalechi et al., co-authored by CDC and FDA scientists, uses the term “SDR’ which it defines as a "Statistic of
+disproportional reporting” and qualifies by saying “SDRs are not necessarily safety signals and should be considered hypothesis- generating. "
+Two points are noteworthy. Firstly, the acronym “SDR” is used throughout pharmacovigilance literature to mean “signal of disproportionate
+reporting.” The term “statistic of disproportional reporting” does not appear. Secondly, in noting that "A strength of our analysis is that VAERS is
+a large national database designed to detect early signals of potential vaccine safety concerns," the paper acknowledges that SDRs as a type
+of signal.
+24 Importantly, the failure to identify potential safety risks, represented by the masked signals means that FDA failed to adequately inform
+VRBPAC and ACIP committees, being asked to consider the “totality of scientific evidence” to make COVID-19 vaccine recommendations that
+would inform public policy authorization, approval, and vaccine injury compensation decisions. This extended to health providers and ultimately
+to American citizens who would be given these products. Because many countries relied on FDA decisions to make their policy decisions, these
+failures affect millions of people around the world.
+25 “Furthermore, the volume of reporting for COVID-19 vaccines is likely to influence future statistical associations with other new vaccines.
+This suggests that masking may become more frequent and should be carefully considered.”
+
+Wiseman PSI Testimony 042726 Page 7 of 10
+COVID-19 vaccine reporting deluge likely created masking effects that now compromise signal detection for other
+vaccines. (23),26 (24),27.(25),28 (p17 in document 5 of (3))29
+Regulators must swiftly correct masking and other VAERS deficiencies, heeding earlier warnings of their former
+colleagues, Drs. Marks and Jernigan: “failure to detect and communicate a serious health issue related to a vaccine
+could impact confidence not only in COVID-19 vaccines but in all vaccines.” (9)Error! Bookmark not defined.
+Further discussion of masking and related issues welcome
+Thank you I welcome questions.30
+26 “To mitigate the masking effect of COVID-19 vaccines in post-marketing SRS analyses, we recommend utilizing COVID-19-corrected versions
+for a more accurate assessment.”
+27 “The impact of COVID-19 vaccine ADR reports on current signal detection practices requires further evaluation and solutions to tackle masking
+issues in EudraVigilance may need to be developed.”
+28 “COVID-19 vaccines caused substantial masking in both databases.” (Dutch - Lareb database, Spanish – FEDRA database)
+29 The following email suggests that the earlier concern regarding the mutual masking of the mRNA products, now extends to the masking by
+the COVID-19 vaccines of vaccines in general.
+Email (in pertinent part) from: Nair, Narayan [FDA]. Sent: March 15, 2024. To: Menschik, David [FDA] Zinderman, Craig [FDA] Baer, Bethany
+[FDA], Subject: Data mining question
+“I know in the past we have discussed one of the possible limitations of data mining currently is the vast number of VAERS reports from the
+COVID vaccines may limit our ability to detect statistical alerts because disproportionality scores may be driven towards the null. Do you know
+if there is a public reference that discusses this limitation? I have found some references that discuss general limitations for data mining but not
+sure if there is one that talks about how a large volume of reports from a single class of products could masks results.
+Narayan Nair, MD
+Division Director, Division of Pharmacovigilance, Office of Biostatistics and Pharmacovigilance [CBER, FDA]”
+30 Since these highly technical issues are not easily discussed in this sort of forum, I am happy to do so off-line.
+
+Wiseman PSI Testimony 042726 Page 8 of 10
+3 FIGURE: 1
+Chronology of myocarditis and pericarditis signal generation by different methods, in comparison to key
+regulatory events
+Each panel contains three columns representing signals generated weekly by Empirical Bayesian Data Mining
+(EBDM). The first column of each panel shows that no signals were detected in FDA’s analysis from US VAERS
+data using the EB05>2 criteria at a threshold of 2. (1) The second and third columns of each panel are the signals
+detected by Harpaz et al.,(12) The second column uses the same criteria as FDA, but for global data reported to
+VAERS. The third column uses the version of EBDM that accounts for masking, (ER05>1) at a threshold of 1.
+Orange signifies the presence of a signal. No color, indicates no signal detected. Adapted from Wiseman, 2025
+(21) Numbers in each cell are case counts.
+4 ATTACHMENTS
+The following two works are provided as attachments to this document.
+Wiseman D. Signal loss by truancy, masking, and filtering, and underestimation of potential risks and suspected
+adverse reactions in the Disproportionality Signal Analyses of VAERS data associated with COVID-19 pro-
+vaccines. Research Gate 2025. Epub Sept 9 http://doi.org/10.13140/RG.2.2.16568.40961
+Filename: Wiseman2025DSASignalLossVAERS-FOIA-090925PUB.pdf
+Wiseman D, Gutschi, LM. Great expectations and generous reading of guidelines underestimate potential risk in
+oversight of COVID- 19 pro-vaccine quality, safety testing, and manufacturing: 248 questions for FDA.
+ResearchGate 2025. Epub Sept 13 http://doi.org/10.13140/RG.2.2.29026.80324
+WisemanGutschi2025FDAIntrospection091325.pdf
+An interactive version of this work is available at: https://248questions.com/
+5 CONFLICT OF INTEREST
+The author has acted as an expert witness or consultant in several legal cases related to COVID-19 vaccines.
+
+Wiseman PSI Testimony 042726 Page 9 of 10
+6 ACKNOWLEDGEMENT
+I am grateful to the many colleagues whose discussions or collaborations have informed much of the knowledge
+that is the basis for this testimony, and to the many patients who have shared their stories of being injured after
+receiving a COVID-19 vaccine.
+7 REFERENCES
+1. FDA. FOIA disclosure to ICAN regarding EBDM and PRR VAERS analyses. 2025 Jan 22. at
+https://filedev0128.s3.us-east-1.amazonaws.com/ratio-tables/cdc-proportional-reporting-ratio-tables.zip
+https://www.fda.gov/media/184988/download.)
+2. Johnson R. Letter to The Honorable Robert F. Kennedy, Jr. Re: COVID-19 Vaccine Safety Risk. 2026 March
+23. at https://www.ronjohnson.senate.gov/services/files/CA500350-195E-472C-9F26-BE93B290B9D9.)
+3. Johnson R. PSI Chairman Johnson Reveals Further Evidence of Biden Administration Downplaying
+COVID-19 Vaccine Safety Risk. 2026 March 25. at https://www.ronjohnson.senate.gov/2026/3/psi-chairman-
+johnson-reveals-further-evidence-of-biden-administration-downplaying-covid-19-vaccine-safety-risk.)
+4. Shimabukuro T. mRNA COVID 19 bivalent booster vaccine safety update: ACIP. 2023 April 19. at
+https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2023-04-19/03-COVID-Shimabukuro-508.pdf.)
+5. Shimabukuro T. COVID-19 vaccine safety update: VRBPAC. 2021 Feb 26. at
+https://www.fda.gov/media/146269/download.)
+6. Shimabukuro T. Update: Thrombosis with thrombocytopenia syndrome (TTS) following COVID-19
+vaccination. ACIP. 2021 May 12. at https://archive.cdc.gov/vaccines/acip/meetings/downloads/slides-2021-05-
+12/07-COVID-Shimabukuro-508.pdf.)
+7. Shimabukuro T. COVID 19 vaccine safety update: Primary series in young children and booster doses in
+older children and adults. ACIP. 2022 September 1. at www.cdc.gov/vaccines/acip/meetings/downloads/slides-
+2022-09-01/05-COVID-Shimabukuro-508.pdf.)
+8. Anyalechi EG, Marquez PL, Rubin MN, et al. Safety of seasonal inactivated influenza vaccines in children
+6 months–17 years of age in the Vaccine Adverse Events Reporting System (VAERS) 2018–2023: before, during,
+and after the COVID-19 pandemic public health emergency. Vaccine 2026; 81:128569. Epub
+http://doi.org/https://doi.org/10.1016/j.vaccine.2026.128569
+9. Marks P, Jernigan, D. VAERS: A Critical Part of the National Vaccine Safety System. 2023 Nov 21. at
+https://web.archive.org/web/20231122180604/https://www.fda.gov/news-events/fda-voices/vaers-critical-part-
+national-vaccine-safety-system.)
+10. Benavides A, Seligmann H. More missing age data in VAERS COVID19 injection reports for severe than
+mild adverse events in children and women at peak fertility ages. ResearchGate 2023. Epub July
+http://doi.org/10.13140/RG.2.2.14464.00007
+11. VAERS. CDC. Vaccine Adverse Event Reporting System (VAERS) Standard Operating Procedures for
+COVID-19. 2021 Jan 29. at https://www.documentcloud.org/documents/22119655-cdc-vaers-sop-2021/.)
+12. Harpaz R, DuMouchel W, Van Manen R, et al. Signaling COVID-19 Vaccine Adverse Events. Drug Saf 2022;
+45:765-80. Epub 20220623 http://doi.org/10.1007/s40264-022-01186-z
+13. Evans SJ, Waller PC, Davis S. Use of proportional reporting ratios (PRRs) for signal generation from
+spontaneous adverse drug reaction reports. Pharmacoepidemiol Drug Saf 2001; 10:483-6. Epub 2002/02/07
+http://doi.org/10.1002/pds.677
+14. Szarfman A, Tonning JM, Doraiswamy PM. Pharmacovigilance in the 21st century: new systematic tools for
+an old problem. Pharmacotherapy 2004; 24:1099-104. Epub http://doi.org/10.1592/phco.24.13.1099.38090
+15. Almenoff JS, LaCroix KK, Yuen NA, Fram D, DuMouchel W. Comparative performance of two quantitative
+safety signalling methods: implications for use in a pharmacovigilance department. Drug Saf 2006; 29:875-87. Epub
+2006/09/15 http://doi.org/10.2165/00002018-200629100-00005
+16. Rosenblum HG, Gee J, Liu R, et al. Safety of mRNA vaccines administered during the initial 6 months of
+the US COVID-19 vaccination programme: an observational study of reports to the Vaccine Adverse Event
+Reporting System and v-safe. Lancet Infect Dis 2022. Epub 2022/03/11 http://doi.org/10.1016/S1473-
+3099(22)00054-8
+17. Rosenblum HG, Gee JM, Liu R, et al. Safety Monitoring of mRNA Vaccines Administered During the Initial
+6 Months of the U.S. COVID-19 Vaccination Program: Reports to Vaccine Adverse Events Reporting System
+(VAERS) and v-safe. medRxiv 2021:2021.10.26.21265261. Epub http://doi.org/10.1101/2021.10.26.21265261
+18. Yih WK, Duffy J, Su JR, et al. Tinnitus after COVID-19 vaccination: Findings from the vaccine adverse event
+reporting system and the vaccine safety datalink. Am J Otolaryngol 2024; 45:104448. Epub 20240730
+http://doi.org/10.1016/j.amjoto.2024.104448
+
+Wiseman PSI Testimony 042726 Page 10 of 10
+19. Dumouchel W. Bayesian Data Mining in Large Frequency Tables, with an Application to the FDA
+Spontaneous Reporting System. The American Statistician 1999; 53:177-90. Epub
+http://doi.org/10.1080/00031305.1999.10474456
+20. DuMouchel WaRH. Oracle White Paper: Regression-adjusted GPS algorithm (RGPS). 2012. at
+https://docs.oracle.com/health-sciences/empirica-signal-811/ESIUG/RegressionAdjusted_GPS_Algorithm.pdf.
+2012.)
+21. Wiseman D. Signal loss by truancy, masking, and filtering, and underestimation of potential risks and
+suspected adverse reactions in the Disproportionality Signal Analyses of VAERS data associated with COVID-19
+pro-vaccines. Research Gate 2025. Epub Sept 9 http://doi.org/10.13140/RG.2.2.16568.40961
+22. Canida T, Ihrie, J. openEBGM: An R Implementation of the Gamma-Poisson Shrinker Data Mining Model.
+The R Journal 2017; 9:499-519. Epub http://doi.org/10.32614/RJ-2017-063
+23. Montes-Grajales D, Garcia-Serna R, Mestres J. Impact of the COVID-19 pandemic on the spontaneous
+reporting and signal detection of adverse drug events. Sci Rep 2023; 13:18817. Epub 20231101
+http://doi.org/10.1038/s41598-023-46275-w
+24. Micallef B, Dogné JM, Sultana J, et al. An Exploratory Study of the Impact of COVID-19 Vaccine
+Spontaneous Reporting on Masking Signal Detection in EudraVigilance. Drug Saf 2023; 46:1089-103. Epub
+20230914 http://doi.org/10.1007/s40264-023-01346-9
+25. Rachwal O, Gutiérrez-Lobón M, Cueto NS, et al. Evaluating COVID-19 Vaccine Masking and Unmasking
+Methods in Two National Pharmacovigilance Databases. Drug Saf 2026. Epub 20260107
+http://doi.org/10.1007/s40264-025-01644-4

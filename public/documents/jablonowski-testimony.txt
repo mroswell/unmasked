@@ -1,1 +1,722 @@
-[OCR skipped on page(s) 1-18]
+April 27, 2026
+The Honorable Ron Johnson
+Chairman
+The Honorable Richard Blumenthal
+Ranking Member
+Permanent Subcommittee on Investigations
+Committee on Homeland Security and Governmental Affairs
+United States Senate
+Please find below my, Dr. Karl Jablonowski, written testimony for the U.S. Permanent
+Subcommittee on Investigations hearing titled, “Unmasked: How Biden Health Officials
+Purposely Turned a Blind Eye Toward COVID-19 Vaccine Safety Signals.”
+Introduction
+My research at Children’s Health Defense has been focusing on bringing about an end to
+childhood epidemics. In its course I have gained insight into the promise, pitfalls, and failings of
+pharmacovigilance systems that the United States relies upon to effectuate pharmaceutical
+safety in the population.
+A vaccine clinical trial phase 1 and 2 involve up to a few hundred very healthy people, to make
+sure it’s safe enough for phase 3, involving a few thousand very healthy people. All of it
+orchestrated by the pharmaceutical company that stands to profit. By the time it is FDA
+approved, if a bad reaction is uncommon we’re not going to see it in a few-thousand person
+study - but, like how not every single cigarette causes cancer, the dangers are still real. We
+simply do not know what adverse events will look like in a diverse large population until
+vaccines are administered to a diverse large population. In essence, the clinical trial never
+ends, it’s just that the population becomes the subjects of the uncontrolled experiment. We had
+better be watching awfully closely - that is pharmacovigilance.
+Our knowledge of the safety of the mRNA vaccine prior to the issuance of the Emergency Use
+Authorization was poor. Pfizer did not perform a drug-drug interaction study, so they had no
+idea if the vaccine would interact with another drug and have an effect. Pfizer also did not
+
+perform a cardiovascular toxicity study, or a central nervous system toxicity study, or evaluate
+the toxicity of other organs like the liver, kidneys, or even blood toxicity. They did not perform a
+genotoxicity study to see if DNA would be affected or a carcinogenicity study to see if the
+vaccine may cause cancers. Technically they did a reproductive toxicity study1, but not one that
+followed good laboratory practices and would not normally be accepted for approval
+considerations. Animal and in vitro studies are not sufficient to substantiate health-related
+claims, and neither are poorly tracked mandated population-wide vaccines.
+Pharmacovigilance behind-closed-doors should give everyone pause. It is simply too important
+to not do it correctly and timely. Lapses can be, and were, catastrophic.
+The Promise of the Vaccine Adverse Event Reporting System
+VAERS was instituted and administered jointly by the FDA and the CDC as a result of the
+National Childhood Vaccine Injury Act of 19862. The impetus of passing the Act was the large
+number of our nation’s children being vaccine injured by the childhood DTP vaccine.
+There are two major successes of VAERS.
+Wyeth-Lederle’s (acquired by Pfizer) RotaShield® was approved in August 1998 as the first
+vaccine to prevent rotavirus infections in infants3. It was recommended as a 3-dose series at
+2-months, 4-months, and 6-months of age. There was a higher than expected number of
+reports for intussusception, a life-threatening bowel obstruction, to VAERS. This initiated a
+multi-state investigation that concluded an increase 20-30 times over expected risk 2-weeks
+following the first dose and 3-7 times over expected risk 2-weeks after the second dose.
+Pre-licensure trials included 5 intussusception cases of the 10,054 vaccinated (all after second
+or third dose), and 1 of the 4,633 placebo recipients. Though this represents a higher odds
+ratio, it was not deemed statistically significant (unadjusted OR 2.30 (95%CI: 0.27-19.73,
+p-value=0.446)4). RotaShield® was suspended in July 1999 and fully withdrawn from the U.S.
+market in October 19995.
+Lederle Laboratory was the primary manufacturer in the 1990s of the Oral Polio Vaccine (OPV),
+recommended at 2-months, 4-months, and 6-months of age. It is a live-virus vaccine. The
+wild-type poliovirus is grown in non-human primate (monkey) kidney cells at cold temperatures.
+This selects for mutations that allow the virus to replicate well in cooler temperatures, such as
+cell cultures or the human gut. The human brain is about 2-degrees celsius warmer than the
+core temperature in healthy adults, and the cold-adapted vaccine strain is less likely to thrive in
+neural tissue. There is, however, the risk of mutations reverting the virus lineage to a
+neurovirulent form, resulting in Vaccine-Associated Paralytic Poliomyelitis (VAPP). By the
+mid-1990s, the only polio paralysis cases in the U.S. were vaccine related6. In January 1997,
+6 https://www.cdc.gov/mmWR/preview/mmwrhtml/00045949.htm
+5 CDC, https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5334a3.htm accessed April 26, 2026
+4 https://www.medcalc.org/en/calc/odds_ratio.php
+3 https://archive.cdc.gov/www_cdc_gov/vaccines/vpd-vac/rotavirus/vac-rotashield-historical.htm
+2 https://www.congress.gov/bill/99th-congress/house-bill/5546
+1 Christopher J Bowman et al., "Lack of Effects on Female Fertility and Prenatal and Postnatal Offspring
+Development in Rats with bnt162b2, a mRNA-Based COVID-19 Vaccine," Reproductive Toxicology 103, (2021):
+28–35, doi: 10.1016/j.reprotox.2021.05.007
+2
+
+the ACIP changed the recommendation surrounding the poliovirus vaccine based partly on
+VAERS reports. The new recommendation excluded OPV in favor of Inactivated Polio Virus
+(IPV) vaccine for infants at 2-months and 4-months of age.
+The Pitfalls of the Vaccine Adverse Event Reporting System
+VAERS is a passive volunteer-based surveillance system. Anyone may submit a VAERS report,
+and for any degree of suspicion that an adverse event is related to a vaccine. VAERS reporting
+is available to all, and is not limited to the discretion of medical care givers.
+Its design may be considered appropriate in 1986, with 1986 technology, where the primary
+transmission of documents was the U.S. Postal Service or telefacsimile. In the information-age
+there is an unacceptable disconnect between a VAERS report and the medical records of the
+affected person.
+Biases are inherent in the passive volunteer-based surveillance system, and New Hampshire is
+a good example of this. According to VAERS, New Hampshire has the highest per-capita infant
+mortality rate in the country7. According to national statistics New Hampshire sits at the second
+lowest infant mortality rate in the country. It is reasonable to interpret these seemingly
+contradictory statements as both: New Hampshire does a good job in keeping their infant
+population healthy, and New Hampshire reports infant deaths to VAERS.
+Revealed in Part 58 of the Honorable Ron Johnson’s data release on March 25th, 20269 is an
+estimation of how much time is dedicated to each report. On page 8 of the document and slide
+8 of Dr. Narayan Nair's presentation titled “Artificial Intelligence and Division of
+Pharmacovigilance” is an estimate of “~20,000 serious reports/reviewer (~385 per week)”. This
+indicates that a reviewer of serious reports processes an estimated 20,000 per year or an
+estimated 385 per week. Assuming a 40-hour work week, this translates into one serious report
+every 6 minutes 14 seconds. Dr. Nair notes on the next line, all boldface, “~28-fold increase in
+serious adverse events” from pre-Covid era. In a contract between the CDC and General
+Dynamics Information Technology (GDIT), the CDC predicted that the “total number of reports
+received during periods of peak activity (which are not expected to reflect sustained activity) is
+expected to be 1,000 reports per day, with up to 40% of the reports serious.”10 According to
+monthly status reports from GDIT, in January 2021, the number of incoming reports rose to over
+2,500 per day11. The bottleneck of processing and the magnitude of reports to be processed
+11 Children’s Health Defense,
+https://childrenshealthdefense.org/wp-content/uploads/CDC.GDIT-Status-reports.pdf accessed April 25,
+2026
+10 Children’s Health Defense,
+https://childrenshealthdefense.org/wp-content/uploads/CDC.GDIT-Contract-Summer-2020.pdf accessed
+April 25, 2026
+9
+https://www.ronjohnson.senate.gov/2026/3/psi-chairman-johnson-reveals-further-evidence-of-biden-admin
+istration-downplaying-covid-19-vaccine-safety-risk
+8 https://www.ronjohnson.senate.gov/services/files/32FB3363-DFD1-453C-88FC-BE53E324F93E
+7
+https://rumble.com/v58lqpp-ep.6-right-on-point-podcast-w-wayne-rohde-karl-jablonowski-phd.html?start=7
+83
+3
+
+created a lag-time of several months between report date and input date12. Those months were
+the most important several months in pharmacovigilance history.
+The largest pitfall of VAERS is that the CDC, which co-administers it, doesn’t even take it, or the
+human suffering each report represents, seriously. Of mortalities associated with the COVID-19
+vaccine it wrote, one of the worst lines CDC has ever written, in the Lancet - Infectious Disease,
+“The concentrated reporting of deaths on the first few days after vaccination follows patterns
+similar to those observed for other adult vaccinations. This pattern might represent reporting
+bias because the likelihood to report a serious adverse event might increase when it occurs in
+close temporal proximity to vaccination.”13 All of VAERS is a collection of adverse events “in
+close temporal proximity to vaccination.” Though no critical reader would have the take-away,
+the paper was cited by at ACIP’s meeting of May 19, 2022 as supporting “[n]o unusual
+clustering of causes of death associated with U.S. authorized COVID-19 vaccines”14.
+The Failing of the Vaccine Adverse Event Reporting System
+A failed Standard Operating Procedure:
+According to the Vaccine Adverse Event Reporting System (VAERS) Standard Operating
+Procedures for COVID-19 (as of 29 January 2021)15, section 2.3.1 Proportional Reporting Ratio
+(PRR)16, “CDC will perform PRR data mining on a weekly basis or as needed.” The CDC chose
+to ignore their own Standard Operating Procedure and not run the distinct analysis during the
+early months of the vaccine rollouts.
+PRR represents a rudimentary level of sophistication, and is described in Table 417. As Dr. Tom
+Shimabukuro puts it, “PRR is a simple (maybe overly simplistic) mathematical calculation.
+There are no technical limitations to doing PRR, it’s easy, and there are plenty of data in VAERS
+to do PRR whenever we want to and on whichever vaccines we choose.”18 In response to a
+Children’s Health Defense FOIA request, the CDC revealed PRR analysis from March 25, 2022
+through July 31, 2022. The above e-mail demonstrates that the CDC Immunization Safety
+Office members, Dr. Tom Shimabukuro and Dr. John Su, were seemingly unaware that CDC
+had been running PRR analysis for 90 days, and would continue to run it for another 38 days.
+18 Part 8, p.144,
+https://www.ronjohnson.senate.gov/services/files/9F5B0145-6120-4DC7-8451-FB6D31BB0D3F
+17 Id. p.16
+16 Id. p.16
+15Vaccine Adverse Event Reporting System (VAERS) Standard Operating Procedures for COVID-19,
+Centers for Disease Control and Prevention, Jan. 29, 2021,
+https://web.archive.org/web/20210319091240/https:/www.cdc.gov/vaccinesafety/pdf/VAERS-v2-SOP.pdf
+14 https://www.youtube.com/watch?v=Zhod_rH2Kw8&t=4763s
+13 Rosenblum, H. G., Gee, J., Liu, R., Marquez, P. L., Zhang, B., Strid, P., Abara, W. E., McNeil, M. M.,
+Myers, T. R., Hause, A. M., Su, J. R., Markowitz, L. E., Shimabukuro, T. T., & Shay, D. K. (2022). Safety of
+mRNA vaccines administered during the initial 6 months of the US COVID-19 vaccination programme: an
+observational study of reports to the Vaccine Adverse Event Reporting System and v-safe. The Lancet.
+Infectious diseases, 22(6), 802–812. https://doi.org/10.1016/S1473-3099(22)00054-8
+12 Rose J. Critical Appraisal of VAERS Pharmacovigilance: Is the U.S. Vaccine Adverse Events Reporting
+System (VAERS) a Functioning Pharmacovigilance System?. Science, Public Health Policy and the Law.
+2021 Oct 01; v3.2019-2024
+https://publichealthpolicyjournal.com/critical-appraisal-of-vaers-pharmacovigilance-is-the-u-s-vaccine-adv
+erse-events-reporting-system-vaers-a-functioning-pharmacovigilance-system/
+4
+
+In response to Children’s Health Defense FOIA request, the CDC stated “[t]he results of the
+PRR analysis within the time period mentioned above were generally consistent with empirical
+Bayesian data mining, revealing no additional unexpected safety signals.”19 This statement is
+hard to reconcile given PRR analysis produced 743 clinically relevant signals and EB data
+mining produced 320.
+A Standard Operating Procedure that is “dynamic and subject to change without notice”21 is a
+failed Standard Operating Procedure.
+Failure of Empirical Bayesian Data Mining:
+Rosenblum et al.:
+Rosenblum et al.22 (Rosenblum) is a study of the first 6 months of the US COVID-19 vaccination
+program, utilizing VAERS and v-safe. The study has 14 CDC authors, most of whom are in the
+Immunization Safety Office. It was originally23 to include two from the FDA - specifically
+contributing EB data mining results - showing nothing of interest as an attestation of safety of
+the mRNA vaccines. It was cleared by both CDC (and their Office of Science) and the FDA
+before being submitted for publication at The Lancet Infectious Disease. The Lancet’s editor
+reviewed it and passed it along to 6 reviewers, an end-product of “the most extensive safety
+analysis in U.S. history.”24 Not a single person in this chain questioned the appropriateness of
+EB data mining…until, and only, Reviewer #5. They wrote ”[f]or the disproportionality analysis
+we have no information on the dataset. What were the vaccines included in the dataset? What
+was the proportion of COVID-19 vaccines?...If this proportion is over 90% the possibility of
+identifying a signal was likely close to zero.”25
+That is: the Immunization Safety Office at the CDC, the people who should know something
+about the safety of vaccines, and the EB data mining team at the FDA, the only people running
+a surveillance report on VAERS, just tried to get “the most extensive safety analysis in U.S.
+history” published and were stopped by Reviewer #5…the only person in this entire chain who
+25 Part 9, 1.131,
+https://www.ronjohnson.senate.gov/services/files/7DD643F9-BF66-4923-B791-7766870C8856
+24 https://www.cdc.gov/vaccine-safety-systems/monitoring/covid-19.html
+23 Part 9, p.179-216,
+https://www.ronjohnson.senate.gov/services/files/7DD643F9-BF66-4923-B791-7766870C8856
+22 Rosenblum, H. G., Gee, J., Liu, R., Marquez, P. L., Zhang, B., Strid, P., Abara, W. E., McNeil, M. M.,
+Myers, T. R., Hause, A. M., Su, J. R., Markowitz, L. E., Shimabukuro, T. T., & Shay, D. K. (2022). Safety of
+mRNA vaccines administered during the initial 6 months of the US COVID-19 vaccination programme: an
+observational study of reports to the Vaccine Adverse Event Reporting System and v-safe. The Lancet.
+Infectious diseases, 22(6), 802–812. https://doi.org/10.1016/S1473-3099(22)00054-8
+21 Children’s Health Defense,
+https://childrenshealthdefense.org/wp-content/uploads/CDC-letter-re-PRR-v.-EB-Mining.pdf accessed
+April 26, 2026
+20 Jablonowski, K., Evans, R., Hooker, B., 2025. The Pharmacovigilance Betrayal of the COVID-19 Era.
+Medical Research Archives, 13(5). https://doi.org/10.18103/mra.v13i5.6505
+19 Children’s Health Defense,
+https://childrenshealthdefense.org/wp-content/uploads/CDC-letter-re-PRR-v.-EB-Mining.pdf accessed
+April 26, 2026
+5
+
+seemed to think the limitations of EB data mining means the absence of a signal does not mean
+the absence of a hazard.
+Because of Reviewer #5, EB data mining and the two FDA authors, were stripped out of this
+paper. Dr. David Menschik was one of the FDA authors, and wrote to the first-author “[w]e
+acknowledge this in the limitations and understand that there is a considerable bias towards the
+null when using our data mining methods in this current, unprecedented situation.”26
+The FDA is saying the only system monitoring VAERS doesn’t work in this “unprecedented
+situation” - meaning the pathetically tested COVID vaccines pushed onto the country generated
+a half-million VAERS reports in the first few months - far outpacing all reports over the last 30
+years. This isn’t a blind-spot, the FDA was completely blind to COVID-19 vaccine adverse
+events. The CDC chose to ignore their own Standard Operating Procedure and not run a
+distinct monitoring program, in favor of the FDAs. It was figuratively, the blind leading the blind
+and dressed up as “the most extensive safety analysis in U.S. history.”
+Dr. Menschik knew of the limitations prior to publication. In an email to Dr. John Su, he wrote
+“disproportionately [sic] scores…can be muted…particularly if both mRNA COVID-19 vaccines
+are associated with the same adverse event”, and warned of not putting “excess value on the
+absence of a signal”27. He’s probably alluding to myocarditis, which never flagged in the EB
+data mining system. To which Dr. John Su responded “[s]ignal detection with VAERS data has
+always been tricky business.”28
+The first-author, to make sure she got it right, e-mailed Dr. Menschik “...you’re saying that the
+sheer volume of COVID-19 vaccine reports basically washes out the possibility of finding
+disproportionality…”29 to which Dr. Menschik responded “I think you’ve got the main point...data
+mining has blind spots…”30 Again, this isn’t a blind-spot, the FDA was completely blind to
+COVID-19 vaccine adverse events. And the CDC wasn’t even looking.
+Dr. Menschik was actually the individual who ran the weekly reports and sent them out. In
+weekly EB data mining emails to Dr. John Su and Dr. Tom Shimabukuro (both also authors on
+the paper). It included attached slides31 that discuss the limitations, the same slides every
+single week. Those limitations are, essentially just because we don’t see it, doesn’t mean it’s
+not there, and the entire system can be used for screening and hypothesis generation only.
+Failure to pass the scrutiny of Reviewer #5 is an indication that the only system monitoring
+VAERS fails to monitor for safety. The FDA authors withdrawing their contribution to the study is
+an admission, acknowledging that the multimillion dollar per year pharmacovigilance system
+isn’t working.
+31 Part 10, p160,
+https://www.ronjohnson.senate.gov/services/files/F92FBB0A-CCFD-412A-A02D-243AA1844D6E
+30 Id. p.120
+29 Part 9, p.120-121,
+https://www.ronjohnson.senate.gov/services/files/7DD643F9-BF66-4923-B791-7766870C8856
+28 Part 3, p.6,
+https://www.ronjohnson.senate.gov/services/files/70DB86AF-8620-49A3-ABE2-18FFA3C57968
+27 Id. p.178
+26 Id. p.126
+6
+
+Yih et al.:
+In October of 2023 CDC asks the FDA if they would like to be co-authors on a tinnitus paper
+utilizing EB data mining, Yih et al.32 (Yih).
+After reading their plan Dr. Judith Maro, Associate Professor at Harvard, was blunt: “It will be
+mostly useless to try to make statements about the COVID vaccines because the database will
+have so many COVID reports that you can’t create a comparator.”33
+Dr. John Su responded privately, “I don’t know the methods well enough to address Judy’s
+comments”34. A co-author, Dr. Nair, wrote “[w]e could report our data mining findings and just
+acknowledge this as a limitation (this is what we have done in other papers).”35 And that is what
+they did. Yih was published in the American Journal of Otolaryngology, concluding “these
+findings do not support an increased risk of tinnitus following COVID-19 vaccination” and
+includes EB data mining, for which one of the authors - Dr. Judith Maro, has already said “it will
+be mostly useless to try to make statements about COVID vaccines”.
+Co-author, Dr. Brian Hooker, and I have submitted a letter to the editor of the publishing journal.
+In it we highlight the authors’ dismissive consideration of the masking effect inherent in EB data
+mining of COVID-19 vaccines in VAERS. We conclude that the fact-pattern is meritorious of a
+review concerning retraction, in part or in whole, of the study. As of this writing, the editor of the
+journal has sent it for peer review.
+Failure to learn:
+The overall theme, not only does CDC not understand the limitations of EB data mining, they
+are not learning. Before Rosenblum was written, on myocarditis, Shimabukuro wrote on June
+3rd 2021: “This stuff is kind of like a foreign language to me. I get it conceptually, but I can’t
+explain the mathematical details.”36 Later (June 22nd), in a direct message to Dr. Frank
+DeStefano: “I’m perplexed that myocarditis isn’t alerting for either of the mRNA vaccines. I’m
+wondering if it’s getting washed out in the half million reports.”37
+37 Part 9, p118,
+https://www.ronjohnson.senate.gov/services/files/7DD643F9-BF66-4923-B791-7766870C8856
+36 Id. p.104
+35 Id. p.108
+34 Id. p.108-109
+33 Part 4, p109-110,
+https://www.ronjohnson.senate.gov/services/files/6102048F-D934-4511-8CA4-DFFB06DE6F8E
+32 Yih, W. K., Duffy, J., Su, J. R., Bazel, S., Fireman, B., Hurley, L., Maro, J. C., Marquez, P., Moro, P.,
+Nair, N., Nelson, J., Smith, N., Sundaram, M., Vasquez-Benitez, G., Weintraub, E., Xu, S., &
+Shimabukuro, T. (2024). Tinnitus after COVID-19 vaccination: Findings from the vaccine adverse event
+reporting system and the vaccine safety datalink. American journal of otolaryngology, 45(6), 104448.
+https://doi.org/10.1016/j.amjoto.2024.104448
+7
+
+Why then use EB data mining as an attestation of safety in Rosenblum, or Yin, or an MMWR
+report on the safety in adolescents aged 12-17 years38, or on pregnancy adverse events in the
+journal of Vaccine39?
+Failure to learn the limitations of EB data mining is disturbing. The Immunization Safety Office
+of the CDC has been taught the limitations by: the failure to detect myocarditis in 202140;
+Reviewer #5 of Rosenblum in 202241; Dr. Judith Maro in 202342. The office still continues to
+publish into 2024 utilizing the lack of EB data mining signal as an attestation of safety.
+A simple explanation of EB data mining begins with a Proportional Reporting Ratio, just like the
+one the CDC chose not to produce. That will have a lot of false positives, because high ratios
+can be driven by very few numbers. So a shrinker is applied that shrinks the high ratios with
+few numbers - that method is dependent upon the distribution across the entire database. The
+Geometric mean of the posterior distribution is the shrunken estimate of the relative reporting
+ratio, for which you flag as a signal if the lower 5th percentile is above 2.
+The first limitation is highlighted by Reviewer #5 of Rosenblum. The expected count is based
+on a tiny fragment, as VAERS was grossly under-reported over the preceding 30 years. The
+observed is based on a huge number of reports, as the pathetically tested COVID-19 vaccines
+were pushed onto the country resulting in so many reports that the reporting system ground to a
+halt. Prior distributions across the entire dataset is going to dilute everything, or as Reviewer #5
+put it, “the possibility of identifying a signal was likely close to zero.”43
+The second limitation is that if the sudden surge of VAERS reports was from two vaccines of the
+same platform, like mRNA experimental gene therapy, have the same adverse events, as Dr.
+Menschik put it “disproportionately [sic] scores…can be muted”.44
+The scientific community performs self-correction with varying degrees of success. If it is
+performed well in this context, all papers that lean on the lack of a COVID vaccine EB data
+mining signal to support safety will be retracted.
+Failure in duty:
+44 Part 9, 1.178,
+https://www.ronjohnson.senate.gov/services/files/7DD643F9-BF66-4923-B791-7766870C8856
+43 Part 9, 1.131,
+https://www.ronjohnson.senate.gov/services/files/7DD643F9-BF66-4923-B791-7766870C8856
+42 Part 4, p109-110,
+https://www.ronjohnson.senate.gov/services/files/6102048F-D934-4511-8CA4-DFFB06DE6F8E
+41 Part 9, 1.131,
+https://www.ronjohnson.senate.gov/services/files/7DD643F9-BF66-4923-B791-7766870C8856
+40 Part 9, p118,
+https://www.ronjohnson.senate.gov/services/files/7DD643F9-BF66-4923-B791-7766870C8856
+39 Moro, P. L., Olson, C. K., Clark, E., Marquez, P., Strid, P., Ellington, S., Zhang, B., Mba-Jonas, A.,
+Alimchandani, M., Cragan, J., & Moore, C. (2022). Post-authorization surveillance of adverse events
+following COVID-19 vaccines in pregnant persons in the vaccine adverse event reporting system
+(VAERS), December 2020 - October 2021. Vaccine, 40(24), 3389–3394.
+https://doi.org/10.1016/j.vaccine.2022.04.031
+38 Hause AM, Gee J, Baggs J, et al. COVID-19 Vaccine Safety in Adolescents Aged 12–17 Years —
+United States, December 14, 2020–July 16, 2021. MMWR Morb Mortal Wkly Rep 2021;70:1053-1058.
+DOI: http://dx.doi.org/10.15585/mmwr.mm7031e1
+8
+
+Pharmacovigilance over the past several years has been insulting, and many people are
+injured. To add more insult to that injury, the e-mail45 that Dr. Nair wrote to Drs. Su and
+Shimabukuro “We could report our data mining findings and just acknowledge this as a
+limitation”, before that he wrote “We were aware of this limitation before and during the
+pandemic. There are many data mining tools and there was some discussion about utilizing a
+novel tool to adjust for this. However, we thought it would be problematic to use a brand new,
+possibly unvalidated tool in the context of an EUA.” He’s saying that the brand new vaccines
+can’t be monitored with a brand new tool.
+That statement is made so much worse by knowing what position Dr. Nair once held, Director
+and Chief Medical Officer of the Division of Injury Compensation Programs, which administers
+the Vaccine Injury Compensation Program and the Countermeasures Injury Compensation
+Program. Injuries are only compensated if they can be identified as such.
+Dr. Nair ends the email with “You could develop another tool that would compensate for the
+greater number of COVID vaccine reports. I am not sure how to do this but you would need a
+statistician with DM [data mining] experience. This would be beyond our capabilities at FDA.”
+He is describing the work of Dr. Ana Szarfman (who collaborated with Dr. William DuMouchel,
+the inventor of EB data mining). He is describing the qualifications of Dr. Ana Szarfman. Dr.
+Ana Szarfman has already co-developed the tool, is amply qualified, has sent out numerous
+comparable analyses showing uncompensated and compensated signals, and is (at the time)
+employed by the FDA.
+Failure that became a Betrayal:
+The population of the United States is around 340,000,00046. A VAERS search for COVID-19
+vaccine adverse event reports for the 50 states and the District of Columbia yields 853,031
+(data current as of March 27th, 2026)47. This equates to roughly 1-in-400 Americans filing a
+VAERS report of having a VAERS report filed on their behalf.
+Filing a VAERS report is an act of hope, and selfless hope at that. Too late for the injured, it is
+the hope that the knowledge of one person’s injury and suffering may avert the affliction of
+another person’s.
+The culmination of those many acts of selfless hope amounted to enough evidence for a
+statistically significant signal of myocarditis in young males as early as the week of February
+19th, 202148. That was a week before even Dr. Roee Singer, Deputy Director, Division of
+48 Delayed Vigilance: A Comment on Myocarditis in Association with the COVID-19 Injections. (2022).
+International Journal of Vaccine Theory, Practice, and Research , 2(2), 651.1-651.4.
+https://doi.org/10.56098/ijvtpr.v2i2.61
+47 United States Department of Health and Human Services (DHHS), Public Health Service (PHS),
+Centers for Disease Control (CDC) / Food and Drug Administration (FDA), Vaccine Adverse Event
+Reporting System (VAERS) 1990 - 03/27/2026, CDC WONDER On-line Database.
+Accessed at http://wonder.cdc.gov/vaers.html on Apr 25, 2026 10:47:32 AM
+46 https://www.census.gov/popclock/
+45 Part 4, p109-110,
+https://www.ronjohnson.senate.gov/services/files/6102048F-D934-4511-8CA4-DFFB06DE6F8E
+9
+
+Epidemiology, Israel Ministry of Health contacts the CDC stating “From the Israel vaccine
+adverse event monitoring team: We are seeing a large number of myocarditis and pericarditis
+cases in young individuals soon after [sic] Pfizer COVID-19 vaccine. We would like to discuss
+the issue with a relevant expert at CDC.”49 That was months before the citizens of the United
+States were made aware of the risk posed by the novel vaccines.
+For all its EB data mining efforts, the FDA found merely 3 clinically significant signals for mRNA
+vaccines: a rash (mechanical urticaria), exposure via breast milk, and drug ineffective50. CDC
+did run a PRR analysis for 4-short months51, and when they did they discovered 743 clinically
+significant safety signals including stroke, heavy menstrual bleeding, myocarditis, cardiac arrest,
+and death. “For 5-to-11 year-olds, the analysis flagged 56 symptoms, of which 20 are serious,
+including myo- and pericarditis. For 12-to-17 year-olds, the analysis flagged 95 symptoms, of
+which 45 are serious, also including myo- and pericarditis.”52
+This is the betrayal of our time, so vast that we cannot even count its casualties.
+The Promise of V-Safe
+V-safe is a smart-phone application that prompts users for health check-ins. It constitutes an
+active volunteer surveillance system, as it actively engages with the around 10 million
+volunteers who agreed to participate with the system. V-safe allows for the surveillance of
+subclinical indications of health outcomes associated with vaccination. The vast 10 million
+volunteers were distributed demographically and geographically, with the acceptable limitation of
+participation dependent upon smart-phone usage circa 2021.
+The Pitfalls of V-Safe
+V-safe’s protocol document53 from January 28, 2021 describes 10-check-box options for minor
+transient conditions (chills; headache; joint pain; muscle or body aches; fatigue or tiredness;
+nausea; vomiting; diarrhea; abdominal pain; rash, not including the immediate are around the
+injection site), 1-check-box for none, and a free-text field for “other”. This is a system designed
+to collect inconsequential data. In the extreme hypothetical, if every one of the 10 million users
+checked every one of the 10 boxes every time they were prompted, would it have changed the
+multibillion dollar rollout of the emergency use authorized vaccines? My opinion is “no”.
+Dr. Renata Engler is distinguished in the study of vaccine-induced myocarditis among U.S.
+military members. Amid the possibility of biological warfare in the early 2000s the smallpox
+53 p.43,
+https://www.hsgac.senate.gov/wp-content/uploads/2025.05.21-PSI-Majority-Staff-Interim-Report-Failure-t
+o-Warn.pdf
+52 Children’s Health Defense,
+https://childrenshealthdefense.org/defender/emails-chd-foia-government-covid-vaccine-injury-reports/
+accessed on April 25, 2026
+51 Id.
+50 Jablonowski, K., Evans, R., Hooker, B., 2025. The Pharmacovigilance Betrayal of the COVID-19 Era.
+Medical Research Archives, 13(5). https://doi.org/10.18103/mra.v13i5.6505
+49 Jablonowski, K, Hooker, B. (2023). Lock the Doors: The Myocarditis Disaster and a call for the broad
+examination of the CDC and FDA. Medical Research Archives, [S.l.], v. 11, n. 5, may 2023. ISSN
+2375-1924. https://doi.org/10.18103/mra.v11i5.3907.
+10
+
+vaccine was administered to service personnel. Dr. Engler is among the researchers who
+characterized the myocarditis outcome of those vaccinations in a clinical review54, a follow-up55,
+a prospective study56, and a comparative observational cohort study57. Dr. Engler gave a
+presentation to CDC on April 12, 202158. For not including myocarditis into V-safe she had this
+to ask: “If you do not ask, you will not see it, but does that mean it does not exist?” Dr. Engler’s
+paper “Myocarditis Following Immunization With mRNA COVID-19 Vaccines in Members of the
+US Military”59 was accepted for publication 50 days later on June 1, 2021. Over the next years
+she would have several more publications on our military’s and nation’s newfound myocarditis
+epidemic, including: case definition60, cardiac adverse events61, and relapsing myocarditis62.
+The Failing of V-Safe
+V-safe succeeded in collecting inconsequential data, which in itself is a failure of
+pharmacovigilance. Among its first uses was in Rosenblum63 study of the first 6 months of the
+63 Rosenblum, H. G., Gee, J., Liu, R., Marquez, P. L., Zhang, B., Strid, P., Abara, W. E., McNeil, M. M.,
+Myers, T. R., Hause, A. M., Su, J. R., Markowitz, L. E., Shimabukuro, T. T., & Shay, D. K. (2022). Safety of
+mRNA vaccines administered during the initial 6 months of the US COVID-19 vaccination programme: an
+62 Amodio, D., Manno, E. C., Cotugno, N., Santilli, V., Franceschini, A., Perrone, M. A., Chinali, M., Drago,
+F., Cantarutti, N., Curione, D., Engler, R., Secinaro, A., & Palma, P. (2023). Relapsing myocarditis
+following initial recovery of post COVID-19 vaccination in two adolescent males - Case reports. Vaccine:
+X, 14, 100318. https://doi.org/10.1016/j.jvacx.2023.100318
+61 Montgomery, J. R., Hoffman, D. L., Ryan, M. A., Lee, R. U., Housel, L. A., Engler, R. J., Collins, L. C.,
+Atwood, J. E., & Cooper, L. T. (2023). Cardiac Adverse Events Following COVID-19 Vaccination in
+Patients With Prior Vaccine-Associated Myocarditis. Federal practitioner : for the health care
+professionals of the VA, DoD, and PHS, 40(1), 6–10. https://doi.org/10.12788/fp.0354
+60 Sexson Tejtel, S. K., Munoz, F. M., Al-Ammouri, I., Savorgnan, F., Guggilla, R. K., Khuri-Bulos, N.,
+Phillips, L., & Engler, R. J. M. (2022). Myocarditis and pericarditis: Case definition and guidelines for data
+collection, analysis, and presentation of immunization safety data. Vaccine, 40(10), 1499–1511.
+https://doi.org/10.1016/j.vaccine.2021.11.074
+59 Montgomery, J., Ryan, M., Engler, R., Hoffman, D., McClenathan, B., Collins, L., Loran, D., Hrncir, D.,
+Herring, K., Platzer, M., Adams, N., Sanou, A., & Cooper, L. T., Jr (2021). Myocarditis Following
+Immunization With mRNA COVID-19 Vaccines in Members of the US Military. JAMA cardiology, 6(10),
+1202–1206. https://doi.org/10.1001/jamacardio.2021.2833
+58 p.45,
+https://www.hsgac.senate.gov/wp-content/uploads/2025.05.21-PSI-Majority-Staff-Interim-Report-Failure-t
+o-Warn.pdf
+57 Engler, R. J. M., Montgomery, J. R., Spooner, C. E., Nelson, M. R., Collins, L. C., Ryan, M. A., Chu, C.
+S., Atwood, J. E., Hulten, E. A., Rutt, A. A., Parish, D. O., McClenathan, B. M., Hrncir, D. E., Duran, L.,
+Skerrett, C., Housel, L. A., Brunader, J. A., Ryder, S. L., Lohsl, C. L., Hemann, B. A., … Cooper, L. T.
+(2023). Myocarditis and pericarditis recovery following smallpox vaccine 2002-2016: A comparative
+observational cohort study in the military health system. PloS one, 18(5), e0283988.
+https://doi.org/10.1371/journal.pone.0283988
+56 Engler, R. J., Nelson, M. R., Collins, L. C., Jr, Spooner, C., Hemann, B. A., Gibbs, B. T., Atwood, J. E.,
+Howard, R. S., Chang, A. S., Cruser, D. L., Gates, D. G., Vernalis, M. N., Lengkeek, M. S., McClenathan,
+B. M., Jaffe, A. S., Cooper, L. T., Black, S., Carlson, C., Wilson, C., & Davis, R. L. (2015). A prospective
+study of the incidence of myocarditis/pericarditis and new onset cardiac symptoms following smallpox and
+influenza vaccination. PloS one, 10(3), e0118283. https://doi.org/10.1371/journal.pone.0118283
+55 Eckart, R. E., Love, S. S., Atwood, J. E., Arness, M. K., Cassimatis, D. C., Campbell, C. L., Boyd, S. Y.,
+Murphy, J. G., Swerdlow, D. L., Collins, L. C., Riddle, J. R., Tornberg, D. N., Grabenstein, J. D., Engler, R.
+J., & Department of Defense Smallpox Vaccination Clinical Evaluation Team (2004). Incidence and
+follow-up of inflammatory cardiac complications after smallpox vaccination. Journal of the American
+College of Cardiology, 44(1), 201–205. https://doi.org/10.1016/j.jacc.2004.05.004
+54 Cassimatis, D. C., Atwood, J. E., Engler, R. M., Linz, P. E., Grabenstein, J. D., & Vernalis, M. N. (2004).
+Smallpox vaccination and myopericarditis: a clinical review. Journal of the American College of
+Cardiology, 43(9), 1503–1510. https://doi.org/10.1016/j.jacc.2003.11.053
+11
+
+US COVID-19 vaccination program. It included a mortality assessment, dismissing “[t]he
+concentrated reporting of deaths on the first few days after vaccination” as “reporting bias”.
+Instead, they chose to populate the paper with clinically inconsequential findings. The only
+figure of the paper is a time series analysis of both Moderna’s and Pfizer-BioNTech’s COVID-19
+vaccine, for both dose 1 and dose 2, of: injection-site pain, fatigue, headache, myalgia, chills,
+and joint pain.
+Though no signal for myocarditis was ever attributed to V-safe, it is with horror that we find 366
+individuals typed “myocarditis” in the “other” free-text field64, a condition requiring a medical
+diagnosis. The horror is amplified by the nearly 50,000 registrants who typed “chest pain” into
+the “other” free-text field.
+Children’s Health Defense contractor Thomas Yengst performed a pregnancy analysis on V-safe
+data. Of the 10 million participants, 104,556 women checked the pregnant box. Of those,
+11,037 (or 10.6%) indicated a pregnancy difficulty. Women who checked the pregnant box and
+contributed free-text information numbered 36,981 (or 35.4%) of whom 3,691 (or 10.0%)
+indicated a miscarriage. Ten percent miscarriage rate is the upper-bound of pregnancy
+outcome before the woman is aware of the pregnancy. That rate drops dramatically after the
+fetal heart begins to function. These findings do not, by themselves, constitute a failure to warn,
+as the numbers as presented are explainable. These findings do, however, present V-safe’s
+failure to explain. The CDC’s and FDA’s preliminary findings65 left Americans with more
+questions than answers, questions still unanswered.
+The Promise of the Vaccine Safety Datalink
+The Vaccine Safety Datalink (VSD) is a collaboration of 13 integrated healthcare organizations
+covering over 15.5 million people66. It can detect near-real-time safety issues as they arise and
+most frequently use a Rapid Cycle Analysis, for example the first 21 days after vaccination
+compared to the subsequent 21 days could detect an adverse event of rapid onset. Its use is
+intended to “allow the CDC to adequately monitor vaccine safety in a scientifically rigorous
+manner.”67
+The datalink includes: birth date, gender, medicaid status, enrollment, immunizations, vaccine
+type/manufacturer/lot-number/date-of-administration, hospitalization and outpatient (date, length
+of stay, diagnosis code, diagnosis type), gestational age, child’s weight, Apgar score, race, birth
+67 Part 8, p.157,
+https://www.ronjohnson.senate.gov/services/files/9F5B0145-6120-4DC7-8451-FB6D31BB0D3F
+66 p.6, https://www.cdc.gov/acip/downloads/slides-2025-06-25-26/04-Meyer-COVID-508.pdf
+65 Shimabukuro, T. T., Kim, S. Y., Myers, T. R., Moro, P. L., Oduyebo, T., Panagiotakopoulos, L., Marquez,
+P. L., Olson, C. K., Liu, R., Chang, K. T., Ellington, S. R., Burkel, V. K., Smoots, A. N., Green, C. J., Licata,
+C., Zhang, B. C., Alimchandani, M., Mba-Jonas, A., Martin, S. W., Gee, J. M., … CDC v-safe COVID-19
+Pregnancy Registry Team (2021). Preliminary Findings of mRNA Covid-19 Vaccine Safety in Pregnant
+Persons. The New England journal of medicine, 384(24), 2273–2282.
+https://doi.org/10.1056/NEJMoa2104983
+64 Informed Consent Action Network, https://icandecide.org/v-safe-data/ accessed April 25, 2026
+observational study of reports to the Vaccine Adverse Event Reporting System and v-safe. The Lancet.
+Infectious diseases, 22(6), 802–812. https://doi.org/10.1016/S1473-3099(22)00054-8
+12
+
+geography, mother’s date of birth, underlying cause of death, date of death, and patient’s zip
+code68.
+The Pitfalls of the Vaccine Safety Datalink
+Rapid Cycle Analysis is designed to detect adverse events of rapid onset. If the adverse event
+has a delayed onset, with a median onset near or beyond the risk interval, Rapid Cycle Analysis
+will negate it. Other options that would not be subject to delayed onset negation are rarely
+utilized in CDC’s VSD analyses. These include vaccinated vs. unvaccinated direct comparison
+and pre-post (medical utilization for the same individual before vaccination and after
+vaccination). Both of these types of analyses would require the well-practiced extra-step of
+considering differences in healthcare seeking behavior.
+The VSD, by nature, can only analyze clinically recognized outcomes, and, by its distribution, is
+made up of approximately 50% from California residents.
+The largest pitfall of the VSD is not in its design, data, or mode of analysis, but in who is allowed
+access. This many million-dollar taxpayer funded resource is not available to any scientist
+outside of the 13 Managed Care Organizations (MCO) or the federal government without 13
+independent IRB applications approved by all 13 MCOs, an estimated $250,000 per project.
+Transparency is simply unattainable, and allows for the poor practice of science free rein over
+vaccine safety.
+The Failing of the Vaccine Safety Datalink
+A true accounting of poor-quality science derived from the VSD, where the skeptical researcher
+may not access, would fill volumes. For expediency, it is appropriate to demonstrate from
+example.
+Eriksen et al.69 (Eriksen) is a study entitled “Lack of Association Between Hepatitis B Birth
+Immunization and Neonatal Death”. It includes the notable author Dr. Frank DeStefano, at the
+time a medical epidemiologist at the CDC and appointed acting chief of the Immunization Safety
+Branch of the National Immunization Program. The study was recently cited by the ironically
+named Vaccine Integrity Project70 and former CDC Director Dr. Rochelle Walensky71 in the
+71 Ulrich, A. K., Fleming, D. F., Smith, E. A., Anderson, C. J., Mehr, A. J., Redepenning, S. G., Stoddart, C.
+J., Moat, L. E., Walensky, R. P., & Lackritz, E. M. (2026). Hepatitis B Vaccination at Birth: Safety,
+Effectiveness, and Public Health Benefit. Pediatrics, 10.1542/peds.2025-075783. Advance online
+publication. https://doi.org/10.1542/peds.2025-075783
+70 Ironically named Vaccine Integrity Project, Center for Infectious Disease Research and Policy,
+University of Minnesota,
+https://www.cidrap.umn.edu/sites/default/files/searchable-download/Universal%20Hepatitis%20B%20Vac
+cination%20at%20Birth%202Dec2025.pdf accessed April 25, 2026
+69 Eriksen, E. M., Perlman, J. A., Miller, A., Marcy, S. M., Lee, H., Vadheim, C., Zangwill, K. M., Chen, R.
+T., DeStefano, F., Lewis, E., Black, S., Shinefield, H., & Ward, J. I. (2004). Lack of association between
+hepatitis B birth immunization and neonatal death: a population-based study from the vaccine safety
+datalink project. The Pediatric infectious disease journal, 23(7), 656–662.
+https://doi.org/10.1097/01.inf.0000130953.08946.d0
+68 Id. p.154
+13
+
+journal of the American Academy of Pediatrics as supporting, “[n]o increase in infant deaths
+attributed to HepB vaccination”.
+Eriksen is a publication utilizing the VSD, specifically the MCOs of both “Southern and Northern
+California Kaiser Permanente Health Plans of more than 350,000 live births from 1993 to 1998
+and ascertained all deaths occurring under 29 days of age.” The authors compared vaccinated
+and unvaccinated neonates who died in the first 29 days, matched on a few characteristics, and
+concluded “no significant difference”.
+The authors failed to match on gestational age or birthweight. The unvaccinated had a median
+gestation of 28 weeks (extreme prematurity) while the vaccinated had 39 weeks of gestation
+(full term). The unvaccinated had a median birth weight of 3 pounds while the vaccinated had a
+median birth weight of 6.8 pounds. It is inappropriate to consider this a vaccinated and
+unvaccinated study, as it is in practice a comparison between full term neonates and extreme
+premature and low birthweight neonates.
+There are plenty of poor quality studies out there, and this is one of them with an abysmal
+conclusion, “[n]o increase in infant deaths attributed to HepB vaccination”, which is an untenable
+summary given the study’s design. What I find difficult to reconcile is that Walensky, the former
+CDC director, leans on it to assert the safety of the Hepatitis B birth dose. At best she never
+read it. Much worse she did and stands by it.
+This was her initiative to demonstrate the scientific community is well-functioning, and that it
+establishes the Hepatitis B birth dose to be safe. She failed miserably, and in that failing
+actually demonstrates the counterpoints. The scientific community is NOT well-functioning
+surrounding vaccinations, and that the Hepatitis B birth dose has never been shown to be safe.
+Conclusions
+No serendipity:
+The COVID-19 mRNA vaccines were, by honest accounting, pathetically tested. Prior to EUA
+many safety studies (drug-drug interactions, cardiovascular toxicity, central nervous system
+toxicity, other organ toxicity, blood toxicity, genotoxicity, carcinogenicity) were skipped. Had they
+turned out to be actually safe, it would have been serendipitous, a happy accident. Luck is not a
+pillar of public health.
+Failure to look:
+The largest pharmaceutical rollout in human history was the CDC’s time to shine. More so,
+America needed the CDC to shine. When we needed them the most, the CDC chose to ignore
+their own SOP and defer to the FDA.
+Failure to fix the broken warning system:
+The last several years is littered with examples of knowledge that the EB data mining system
+was incapable of effectuating pharmacovigilance. With full knowledge of its failures and
+14
+
+limitations, the lack of a hypothesis generating signal was still presented as an attestation of
+safety.
+Failure to protect:
+Even if public health institutions had overcome the pharmacovigilance failures and managed to
+warn, a warning of an approved product would be insufficient to protect the citizenry. With
+professional membership medical organizations (AAP, AMA, ACOG, IDSA, etc.) spinning
+narratives of safety, efficacy, and necessity, there is no assurance a warning would be heeded.
+The landscape of freedom of choice drastically changed on September 9, 202172. The most
+powerful threat to freedom originated domestically from the highest office of the United States
+government. Then President Joe Biden proclaimed the vaccines to be “safe”, described “a
+pandemic of the unvaccinated”, stated the obvious “this is not about freedom or personal
+choice”, and then threatened everyone who would think otherwise with “our patience is wearing
+thin.” Public health institutions needed to, and didn’t, counter the coercion under extreme
+duress.
+What's a freedom for?:
+The Freedom of Information Act evasion is uncomfortably well-practiced throughout the
+documents produced by the subcommittee. “[M]any considerations not suited to email...”73 and
+“I think that because of the FOIAs we may have asked FDA to stop sending these weekly data
+mining outputs”74 are overt deprivations of Americans’ freedom.
+In the backdrop of evasion, even potentially honest mistakes could also potentially be practiced
+evasion. On May 24th, 2021 Dr. Peter Marks forwards an email from Dr. Steve Anderson on a
+CMS signal for pulmonary embolism and immune thrombocytopenia to Dr. Rochelle Walensky,
+but does so to her non-government email address75. Mistake or evasion is unclear. Why would
+the Director of CBER email the Director of CDC to her non-government email address? Why
+would he even have that email address?
+FOIA evasion is not conduct becoming of a democratic republic, it is conduct of a government
+that believes it is beyond oversight of the governed. “Instituted among Men, deriving their just
+powers from the consent of the governed”76 depends upon the governed to be able to give
+consent. The governed cannot give consent if they are being deceived; not even if they wanted
+to - because it wouldn’t be called “consent” it would be called “submission” or “subjugation”.
+76 U.S. Declaration of Independence. (1776).
+https://www.archives.gov/founding-docs/declaration-transcript
+75 Children’s Health Defense,
+https://childrenshealthdefense.org/wp-content/uploads/s_r_23-00756-FDA-Equity-Modified.pdf accessed
+APril 25, 2026
+74 PSI-HHS-000002480132.
+73 PSI-HHS-000008251979
+72 Miller Center,
+https://millercenter.org/the-presidency/presidential-speeches/september-9-2021-remarks-fighting-covid-19
+-pandemic accessed April 25, 2026
+15
+
+History’s lesson:
+Our understanding of signal detection was catapulted forward after the first time a U.S. military
+radar detected an enemy aircraft, it was ignored. Those aircraft went on to bomb Pearl Harbor.
+America and Congress really needed to know why our navy was destroyed while docked and
+our aircraft were destroyed on the ground. The ensuing investigations and growth in
+understanding signal detection were needed to ensure Americans would not again be put in
+harm’s way by the failure to warn. But 79 years later, it happened again.
+All mistakes made are repeatable. Time is allowing for the escape of accountability and
+diminishing our opportunity to learn. Either we learn the lessons we need to in order to fix our
+flaws from the last pandemic, or a future one. The COVID-19 pandemic created over 100
+billionaires in the United States77 and over 1,000 billionaires around the world78. Anything that
+profitable is going to repeat.
+Sincerely,
+Karl Jablonowski, PhD
+Director of Science and Research
+Children’s Health Defense
+78 https://www.equals.ink/p/its-a-great-time-to-be-a-billionaire
+Archived at
+http://archive.today/2026.04.25-023636/https://www.equals.ink/p/its-a-great-time-to-be-a-billionaire
+77 https://nchstats.com/billionaires-in-united-states/
+Archived at http://archive.today/2026.04.25-023739/https://nchstats.com/billionaires-in-united-states/
+16
+
+Pharmacovigilance is absolutely necessary. Our knowledge is limited, even of a vaccine that
+passes clinical trials of a few thousand healthy individuals. We simply do not know what
+adverse events look like for a diverse large population until vaccines are administered to a
+diverse large population. We had better be watching very closely, which is pharmacovigilance.
+The vaccines were, by honest accounting, pathetically tested. Pre-EUA no studies on drug-drug
+interactions, cardiovascular toxicity, central nervous system toxicity, other organ toxicity, blood
+toxicity, genotoxicity, carcinogenicity. Had they turned out to be actually safe, it would have
+been serendipitous, a happy accident. Luck is not a pillar of public health.
+Pharmacovigilance behind closed doors should give everyone pause. It is simply too important
+to not do it correctly. Lapses can be, and were, catastrophic.
+That vigilance heavily depended upon three sources of data: the passive surveillance of
+VAERS, the active surveillance of v-safe, and the VSD, an active system linked to medical
+records.
+V-safe was designed to collect inconsequential data. One of the first papers to publish the
+results was a mortality and adverse event study. The only figure of the paper was a time-series
+comparison from both Moderna and Pfizer, for both dose one and dose two of adverse events
+no one cares about: injection-site pain, fatigue, headache, myalgia, chills, and joint pain.
+Dr. Renata Engler is distinguished in the study of vaccine-induced myocarditis among the U.S.
+military with 4 publications on the smallpox vaccine. On the CDC not including myocarditis in
+V-safe she asked: “If you do not ask, you will not see it, but does that mean it does not exist?”
+Within 50 days of that meeting Dr. Engler would start adding 4 more publications on COVID-19
+vaccine associated myocarditis. The CDC already had Israel’s slides in hand.
+The V-safe system had 10 million volunteers, about one-third entered free-text. Perhaps there
+is some horror found in the 366 individuals who typed in “myocarditis”, a condition requiring
+medical diagnosis. That is amplified by the nearly 50,000 registrants who typed in “chest pain”.
+The Vaccine Safety Datalink is a collaboration of 13 healthcare organizations covering over 15.5
+million people. It can detect safety issues within weeks and most frequently uses a Rapid Cycle
+Analysis, which can miss delayed onset events. Better and timely options like vaccinated vs.
+unvaccinated and pre-post are rarely used, and would need the well-practiced extra-step of
+considering differences in healthcare seeking behavior.
+By the time the CDC’s webpage was updated to warn of "inflammation of the heart” 313 million
+doses had been administered to 173 million people in the United States, and it had just been
+authorized for the most vulnerable 12-15 year olds. I don’t see vigilance at work.
+With VAERS, the CDC chose to ignore its own Standard Operating Procedure and not run
+Proportional Reporting Ratios in favor of the FDA’s, what Walensky calls “more robust” and
+
+Shimabukuro calls “the gold standard”. VAERS had been grossly under-reported over the first
+30 years, maxing out at 58,000 reports per year. In its 31st year alone VAERS logged 18-times
+that number. Because of this disproportionality, the FDA’s disproportionality analysis was
+washed out. Since both dominant vaccines were of the same platform and similar adverse
+events, the comparison was muted. This isn’t a blind-spot. The FDA was completely blind to
+adverse events and the CDC wasn’t even looking.
+There was a savior in the ranks of the FDA, who: correctly identified the problem; appropriately
+worked with the inventor of EB data mining to create a solution; communicated the fix to
+everyone who would listen. The problem is, no one listened.
+Luck was not on our side. The CDC failed to look. The FDA failed to fix a broken system that
+the CDC touted as “the gold standard”. The HHS failed to protect us, especially after freedom
+of choice was assaulted by the President threatening us all with “our patience is wearing thin”.
+FOIA evasion was well practiced, and discovered - obviously - not through a FOIA.
+Simply put, during the largest pharmaceutical roll-out in human history, pharmacovigilance did
+not exist. That is the betrayal of our time, so vast that we cannot even count its casualties.

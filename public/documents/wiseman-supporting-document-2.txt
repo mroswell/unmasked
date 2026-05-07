@@ -1,1 +1,2792 @@
-[OCR skipped on page(s) 1-55]
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 1 of 55
+Signal loss by truancy, masking, and filtering, and underestimation of potential risks and suspected
+adverse reactions in the Disproportionality Signal Analyses of VAERS data associated with COVID-19
+pro-vaccines
+Wiseman, DM
+Synechion, Inc., Dallas, TX 75252
+David.wiseman@synechion.com
+ORCID: 0000-0002-8367-6158
+Version: 090925
+Funding: No funding was received for this study.
+Conflict of interest: The author has acted as an expert witness or consultant in several legal cases related to
+parental authority regarding COVID-19 vaccines or their mandatory use.
+Data availability: Data were obtained from publicly available sources as indicated.
+Keywords: VAERS, Vaccine, COVID-19, Pfizer-BioNTech, Janssen, Moderna, Disproportionality Signal Analyses,
+DSA, adverse event, adverse reaction, FDA, CDC, Empirical Bayesian Data Mining, Proportional Reporting Ratio,
+masking, filtering, vaccine safety.
+CONTENTS
+1 TOP FOUR POINTS ....................................................................................................................................3
+2 CAPSULE ....................................................................................................................................................3
+3 LAY CAPSULE.............................................................................................................................................3
+4 ABSTRACT ..................................................................................................................................................4
+5 LAY SUMMARY ...........................................................................................................................................5
+6 INTRODUCTION .........................................................................................................................................6
+6.1 Background ..................................................................................................................................................6
+6.2 Objectives ....................................................................................................................................................7
+7 METHODS ...................................................................................................................................................7
+7.1 DSA Datasets ..............................................................................................................................................7
+7.1.1 The FOIA dataset ................................................................................................................................7
+7.1.2 The VIOLIN dataset ............................................................................................................................8
+7.1.3 The Oracle dataset .............................................................................................................................8
+7.2 Other dataset ...............................................................................................................................................9
+7.3 Institutional Approval....................................................................................................................................9
+8 RESULTS.....................................................................................................................................................9
+8.1 Characterization of the EBGM FOIA dataset ...............................................................................................9
+8.1.1 Distribution of EBGM event signals by pro-vaccine type ....................................................................9
+8.1.2 Distribution of EBGM signals by event type and category ............................................................... 12
+8.1.3 Disproportion of EBGM event signals normalized for population exposure .................................... 14
+8.1.4 Disproportion of EBGM event signals normalized for the total number of AE reports to VAERS .... 16
+8.2 Disproportion of EBDM signals in the context of PRR signals derived from the VIOLIN dataset ............ 16
+8.2.1 Characterization of PRR signals derived from the VIOLIN dataset ................................................. 16
+8.2.2 Signal truancy as a source of EBDM signal disproportion in the FOIA dataset ............................... 19
+8.3 Further exploration of EBDM signals in the FOIA dataset through the lens of the Oracle dataset .......... 21
+8.3.1 Oracle dataset clues about Pfizer and Moderna EBDM signal truancy in the FOIA dataset ........... 21
+8.3.2 Threshold choice and signal generation in the Oracle database..................................................... 23
+8.4 The effect of masking in the VIOLIN and ORACLE datasets ................................................................... 24
+8.4.1 The effect of masking on the number of PRR signals in the VIOLIN dataset .................................. 24
+8.4.2 Masking and PRR signals in the FOIA dataset for the mRNA products combined ......................... 25
+8.4.3 The effect of masking on the number of PRR and EBDM signals in the ORACLE dataset ............ 26
+8.5 The aggregate effect of truancy, masking, and high thresholding on DSA signal generation .................. 26
+8.5.1 Relationship between signal losses due to masking and threshold filtering .................................... 26
+8.5.2 Effect of the type of “significance component” of the signal criteria on signal generation ............... 27
+8.5.3 Evidence basis: expected VAERS DSA signal losses due to truancy, filtering, and masking ......... 27
+8.5.4 The combined effect of masking and filtering on the timing of signals generated ........................... 30
+9 Regulatory context of anomalies found in the FOIA dataset .................................................................... 31
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 2 of 55
+9.1 Inconsistencies between the FOIA, Oracle, or VIOLIN datasets and FDA or CDC statements .............. 31
+9.1.1 Misreporting of data mining alerts .................................................................................................... 31
+9.1.2 CMS signals: pulmonary embolism, myocardial infarction, immune thrombocytopenia, DIC ......... 32
+9.1.3 Signals for stroke ............................................................................................................................. 32
+9.1.4 Signals for cancer ............................................................................................................................ 33
+9.1.5 VSD Signals for acute myocardial infarction and venous thromboembolism .................................. 33
+9.1.6 Signals for myocarditis ..................................................................................................................... 33
+9.2 The impact of signal anomalies on the robustness of the regulatory process ......................................... 34
+9.3 Relationship to regulatory actions regarding Janssen-associated thrombotic events ............................. 35
+9.3.1 Basis for pausing the use of the Janssen product ........................................................................... 35
+9.3.2 Relationship to signals for other clotting disorders. ......................................................................... 35
+9.3.3 Inconsistent regulatory handling of signals for clotting disorders .................................................... 36
+9.3.4 Persistent imbalance of Janssen signals lacking regulatory action ................................................. 36
+9.3.5 Implications of regulatory inaction regarding Janssen signal imbalance ......................................... 37
+9.4 Did regulators dismiss the value of DSA? ................................................................................................ 37
+10 DISCUSSION ........................................................................................................................................... 40
+10.1 Deficiencies in DSA methodology applied to vaccine safety .................................................................... 41
+10.1.1 The absurdity of failing to adjust for masking .................................................................................. 41
+10.1.2 PRR>2 and EB05>2 thresholds constitute filtering antithetical to “early warning” and “enhanced
+surveillance” ................................................................................................................................................... 41
+10.1.3 “Inquisitorial triage bias” ................................................................................................................... 43
+10.1.4 Selection of the “significance component” of the signal criterion ..................................................... 43
+10.1.5 Shifting definitions of “signal.” Is a signal of a signal a signal or a suspected adverse reaction? ... 43
+10.1.6 Other DSA improvements: surrogate estimates of exposure when coverage rates are known ...... 44
+10.2 Limitations ................................................................................................................................................. 44
+11 CONCLUSION .......................................................................................................................................... 45
+12 Acknowledgments..................................................................................................................................... 45
+13 Revision History ........................................................................................................................................ 45
+14 Glossary .................................................................................................................................................... 46
+15 READUS‑PV Checklist ............................................................................................................................. 46
+16 List of Supplemental Sources ................................................................................................................... 49
+17 References ............................................................................................................................................... 50
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 3 of 55
+1 TOP FOUR POINTS
+• Large, use-normalized imbalances of 76-123 times (IQR) the number of safety signals for the Janssen
+COVID-19 pro-vaccine compared with the Pfizer and Moderna products generated by FDA’s Empirical
+Bayesian Data Mining analysis, persisted for at least 18 months without clear comment or action.
+• This analysis lacked an estimated 96% and 91% of Pfizer’s and Moderna’s safety signals, respectively.
+The FDA did not adjust for masking despite having the software to do so. Signals were filtered out by a
+high threshold. There were flaws in CDC’s Proportional Reporting Ratio (PRR) analysis.
+• Robust correction of bias due to truancy, masking, and threshold filtering suggests that as of April 29, 2022,
+763 (range 487-1898) (86%, range 85-93%) signals were lost and/or delayed. Orthogonal analyses
+suggest losses as high as 6765 signals.
+• Safety signals represent potential risk FDA was required to consider. The suppression of this largely
+uninvestigated potential risk is both a scientific and a regulatory failure. It impugns the reliability of
+decisions regarding authorization, approval, and vaccine injury compensation. Our findings warrant full
+disclosure of vaccine safety data and an investigation into inadequate signal detection and regulatory
+oversight.
+2 CAPSULE
+Persistent and ignored imbalances in safety signals identified by FDA’s Empirical Bayesian Data Mining of VAERS
+COVID-19 data suggest losses of 763 (up to 6765) safety signals (to April 29, 2022) due to truancy, masking, and
+inappropriate filtering. These losses delayed recognition of safety signals and represent a still largely
+uninvestigated potential risk FDA was required to consider. Along with inconsistencies with statements made by
+regulators, these anomalies impugn the reliability of regulatory and compensation decisions and warrant an
+investigation into COVID-19 vaccine safety oversight, with the formulation of a corrective action plan.
+3 LAY CAPSULE
+Examination of FDA’s Empirical Bayesian Data Mining of VAERS COVID-19 vaccine safety analysis suggests that
+over 91% of Pfizer’s and Moderna’s safety signals were missing from alerts circulated between regulators. A signal
+is a statistical warning sign (but not proof) that a particular adverse event may occur with a particular vaccine.
+FDA’s analysis neglected to correct for masking, where signals for one vaccine are concealed by signals from
+other vaccines. Signals were filtered out by an inappropriately high detection threshold. These anomalies resulted
+in the loss of up to 6765 signals. Along with inconsistencies with statements made by regulators, these missing
+safety signals represent still largely uninvestigated potential risk FDA was required to consider, impugn the
+reliability of regulatory and compensation decisions, warranting an investigation into COVID-19 vaccine safety
+oversight and the formulation of a corrective action plan.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 4 of 55
+4 ABSTRACT
+Background
+Disproportionality Signal Analyses (DSA) of data from the US Vaccine Adverse Event Reporting System (VAERS)
+relating to COVID-19 pro-vaccines and conducted by FDA and CDC were released under the Freedom of
+Information Act (FOIA).
+Objective
+To explore dataset anomalies in the context of contemporary regulatory history.
+Methods
+Three sources of VAERS-derived disproportionality (DSA) signals were analyzed. 1) The “FOIA dataset” spanning
+January 2021 to July 2022 (US only, Empirical Bayesian Geometric Mean – EBGM, and Proportional Reporting
+Ratio - PRR). 2) The “VIOLIN dataset” (US only, PRR) extracted from an online NIH-supported database. 3) The
+“Oracle dataset” published by authors who include the developer of the Empirical Bayesian Data Mining (EBDM)
+method, and current and retired FDA staff (US + foreign, EBGM, PRR).
+Results
+These anomalies were identified:
+1. Along with a broader diversity of event types, there were 76-123 (use-normalized, interquartile range)
+times the number of EBGM signals associated with the Janssen product compared with the Pfizer and
+Moderna products. These imbalances persisted over the period covered by the dataset, without obvious
+regulatory action.
+2. Missing from FDA’s analysis were an estimated 96% of Pfizer’s and 91% of Moderna’s safety signals,
+representing truancy factors of 26 and 11, respectively. 7/8 (87.5%) of EBDM signals detected in the
+Oracle dataset were missing in the FOIA dataset (p=0.02).
+3. FDA did not correct for masking despite possessing the software to do so. Signals were filtered out by an
+inappropriately high detection threshold. FDA failed to consider foreign-originating VAERS reports in its
+EBDM, or to mine potential signals among borderline signals, thereby introducing “Inquisitorial triage bias.”
+4. Robust correction of bias due to truancy, masking, and filtering suggests an aggregate loss of 763 signals
+(range 487-1898; 86% loss, range 85-93%) to April 29, 2022. Orthogonal analysis suggests losses as high
+as 6765 signals.
+5. The PRR portion of the FOIA dataset lacked analyses for the Janssen product and separate analyses for
+the Pfizer and Moderna products. The disclosed analysis for mRNA pro-vaccines combined appears to be
+missing 54% of its signals (N=1026).
+6. There appear to be 4.8- and 8.8-fold true signal excesses associated with the Janssen over the Pfizer and
+Moderna products, respectively. Hematologic events accounted for 30% of the Janssen signals, but were
+absent from the Pfizer and Moderna signals. This anomaly should have warranted regulatory actions at
+least as extensive and transparent as those executed for Thrombosis with Thrombocytopenia Syndrome
+(TTS) associated with the Janssen product.
+Conclusion
+These anomalies are inconsistent with statements made by regulators, particularly regarding stroke, cancer,
+clotting issues, and myocarditis. These anomalies constrained the hypothesis-generating approach of identifying
+potential safety signals. They are incompatible with the “Enhanced surveillance” of Adverse Events Special Interest
+and belie the representation of VAERS as “the nation’s early warning system for vaccine safety.” The missing
+safety signals represent a still largely uninvestigated potential risk FDA was required to consider. Despite their
+limitations, our findings impugn the reliability of regulatory and injury compensation decisions concerning the
+COVID-19 pro-vaccines. They warrant full disclosure of vaccine safety data and an investigation into deficient
+signal detection and regulatory oversight.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 5 of 55
+5 LAY SUMMARY
+This study examines safety analyses for COVID-19 vaccines based on adverse events reported to the US Vaccine
+Adverse Event Reporting System (VAERS) from January 2021 to July 2022. Released via a Freedom of
+Information Act request, these analyses aimed to identify potential safety signals. A signal means that there is a
+statistical warning sign (not proof) that a particular adverse event may be occurring with a particular vaccine.
+What Was Done? Researchers compared three datasets:
+• The "FOIA dataset" from the FDA and CDC, which calculated the Empirical Bayesian Geometric Mean
+(EBGM) and Proportional Reporting Ratio (PRR) to detect safety signals.
+• The "VIOLIN dataset" from an NIH-funded database (PRR values).
+• The "Oracle dataset" from a study analyzing EBGM and PRR signals for seven “high-profile” adverse
+events. Authors of this study included the originator of the EBGM method, as well as FDA staff.
+What Was Found? Key issues included:
+• Adjusting for actual use, there were 76-123 times the number of EBGM signals associated with the
+Janssen product compared with the Pfizer and Moderna products. These large imbalances persisted over
+the 18 months covered by the dataset, with no obvious regulatory action or comment at any of the 17 FDA
+or CDC advisory meetings held over this period.
+• Missing from FDA’s analysis were an estimated 96% of Pfizer’s and 91% of Moderna’s safety signals. 7/8
+(87.5%) of EBGM signals detected in the Oracle dataset were missing from the FOIA dataset.
+• Despite possessing the software to do so, FDA did not correct for masking, which means that signals may
+be lost because of the mathematical interference of signals from other vaccines. For example, the
+myocarditis signal for Pfizer could have reduced the strength of the myocarditis signal for Moderna, and
+vice versa.
+• Signals were filtered out because the detection threshold was set too high.
+• These anomalies may account for a loss (to April 29, 2022) of 763 signals, which could be as high as 6765
+signals.
+• After corrections, there appear to be 4.8- and 8.8-times as many signals associated with the Janssen than
+the Pfizer and Moderna products, respectively. This anomaly should have triggered regulatory actions as
+extensive as those executed for Thrombosis with Thrombocytopenia Syndrome (TTS) associated with the
+Janssen product.
+• The study found inconsistencies between statements made by the FDA or CDC and actual data regarding
+safety signals for stroke, cancer, clotting issues, and myocarditis.
+What Does This Mean?
+Regulators likely missed or ignored imbalanced safety signals, compromising their vaccine safety, approval,
+authorization, and injury compensation decisions. The missing safety signals represent a still largely
+uninvestigated potential risk FDA was required to consider. These anomalies belie the representation of VAERS
+as “the nation’s early warning system for vaccine safety.” Full data disclosure and further investigation are
+warranted.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 6 of 55
+6 INTRODUCTION
+6.1 Background
+The United States monitors vaccine safety through programs within the Department of Defense, the Department
+of Veterans Affairs, the Indian Health Service, and the Centers for Medicare and Medicaid Services (CMS). The
+primary responsibility for monitoring vaccine safety resides within the Centers for Disease Control and Prevention
+(CDC) (1) and the Food and Drug Administration (FDA).(2) The main monitoring systems include:
+• BEST (Biologics Effectiveness and Safety) Initiative (3)
+• CMS Medical Claims Database (4)
+• Vaccine Safety Datalink (VSD) (5)
+• V-safe (1)
+• COVID-19 Vaccine Pregnancy Registry (6)
+• Clinical Immunization Safety Assessment (CISA) Project (7)
+• Other claims databases (8)
+The best-known and publicly accessible of these is the Vaccine Adverse Event Reporting System (VAERS), (9)
+established in 1990. Although anyone can submit a report, medical providers and manufacturers are required
+under certain conditions to do so. Limitations, including underreporting, misreporting, and stimulated reporting, are
+widely acknowledged by the FDA (4,10) whose own data document that mandatory reports for deaths following
+COVID-19 vaccination were underreported by between 9 and 36 times.(11) In addition to misreporting and
+reporting delays, other biases are present due to missing data or data that are inadequately captured in free-text
+rather than specific fields.(12)
+Felonious false reporting has been proposed as a contributing factor to the fallibility of VAERS. However, this is
+difficult to assess since the number of prosecutions for cases of fraud has not been made public. In contrast,
+underreporting that violates the False Claims Act is alleged in an ongoing lawsuit.(13) Nevertheless, VAERS data
+are frequently cited by the FDA and CDC without adjusting for fraud. FDA has been confident of the utility of
+VAERS, with a former director of the Center for Biologics Evaluation and Research (CBER) co-authoring an article
+stating, “VAERS works and has a track record that proves it” with “a proven track record of successfully helping to
+identify safety issues.” (14) CDC describes VAERS as “the nation’s early warning system for vaccine safety.” (15-
+18)
+Although to describe these products. others have employed the term “gene-based prodrug,” (19) we employ the
+term “pro-vaccine” (20,21) to more accurately describe their character. Unlike conventional vaccines, the Pfizer,
+Moderna, and Janssen COVID-19 pro-vaccines do not contain target antigens. Rather, they contain the genetic
+instructions read by a patient’s body to produce the target spike protein antigen. This is somewhat analogous to
+the activation of a pro-drug that lacks the desired pharmacologic action, but is converted by the body to an active
+form.(22)
+The COVID-19 pro-vaccines were introduced in the USA (Pfizer-BioNTech, December 11, 2020; Moderna,
+December 19, 2020; Janssen - Johnson & Johnson, February 27, 2021) under Emergency Use Authorizations
+(EUA). (23) VAERS was subsequently deluged by adverse event reports. A VAERS query (2/20/25) revealed that
+more adverse events had been reported for the COVID-19 pro-vaccines (1,023,251) than for all other vaccines
+(873,968) in all years combined since the inception of VAERS in 1990. These events include (COVID-19 vs Other)
+19,252 vs. 5,840 deaths, 90,937 vs. 42,579 hospitalizations, 15,483 vs. 10,797 life-threatening events, 18,789 vs.
+14,500 permanent disabilities, and 120,007 vs. 211,912 Emergency Room visits.
+Before causality and its consequences can be determined, the volume of reports for a given type or class of AE
+must signal sufficient concern. The identification of a “signal” after drug approval is beset by informational and
+statistical challenges. In a carefully monitored clinical trial, since the administration and dose of a drug and the
+timing of adverse events are well-defined, comparisons between the incidence of AEs in drug and placebo-treated
+subjects are easily made. Once the drug enters widespread distribution, the number of people taking the drug,
+and the dose and timing of an adverse event are poorly defined.
+Disproportionality Signal Analysis (DSA) attempts to approximate the occurrence rate of an AE by using surrogate
+estimates for the total exposure of patients to the drug. This rate is compared with the corresponding surrogate
+rate obtained for a reference drug (or drugs). This comparison aims to determine if the strength of statistical
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 7 of 55
+association between a particular drug and a particular AE (“a drug-AE pair”) meets certain criteria and should be
+declared a ”signal of statistical association.” It is emphasized that causality is determined only after further
+investigation of, inter alia, individual case reports, exposure data, and misreporting.(24-29)
+Perhaps the most often used DSA techniques (30) are the “Evans” (PRR) (31) and Empirical Bayesian Data Mining
+(EBDM) (32) methods.(33,34) The PRR approach (31) uses the total number of reports for a drug-AE pair as a
+surrogate denominator to estimate the population event frequency. Empirical Bayesian Data Mining (EBDM) (32)
+calculates the Empirical Bayes Geometric Mean (EBGM) using the method known as Multi-item Gamma Poisson
+Shrinker (MGPS). MGPS uses modeling to adjust for random noise and other confounding (35) particularly to
+reduce the variability and generation of false positives (33) associated with low case counts. The development of
+this method was supported and incorporated by FDA (36,37) in the late 1990s (discussion of O’Neill and Szarfman
+appended to (32)).
+Although with known limitations, (38,39) DSA is an important pharmacovigilance tool. To identify safety signals for
+the COVID-19 pro-vaccines, responsibility was given to CDC for the PRR analysis, and to FDA for EBDM.(40)
+6.2 Objectives
+Some details of these analyses were recently disclosed (41) under the Freedom of Information Act (the “FOIA
+dataset”). Preliminary examination of these analyses suggests the presence of certain anomalies. This study seeks
+to explore these anomalies in the context of other data and the regulatory history of the COVID-19 pro-vaccines
+in this period.
+7 METHODS
+The study design involved a quantitative comparison of the number of DSA signals generated in the ”FOIA dataset”
+with those generated in two other datasets. The READUS‑PV checklist (24) was completed (section 15). p values
+have been cited or calculated without adjustment for multiple comparisons. Microsoft® Excel® 2016 was used for
+our analyses.
+7.1 DSA Datasets
+Three datasets described below were consulted.
+A limitation of VAERS-derived data is that reports made concerning a COVID-19 vaccine whose manufacturer is
+“UNKNOWN” may generate signals that, if properly assigned, could alter some of the analyses described here.
+The VIOLIN and Oracle datasets do contain signals for “UNKNOWN,” but the FOIA dataset does not.
+7.1.1 The FOIA dataset
+The “FOIA dataset” (41) covering January 6, 2021, to July 29, 2022, consisted of two parts
+1) Weekly PRR analyses covering an approximately 3-month period from May 6, 2022, to July 29, 2022. The
+analyses were provided in Microsoft Excel files containing PRR values with ancillary statistics by MedDRA
+term (Medical Dictionary for Regulatory Activities).
+The PRR values compare the Pfizer and Moderna nucleoside-modified messenger RNA (modRNA) pro-
+vaccines with each other and collectively with other vaccines. Some stratifications based on age were
+provided, but there are no separate comparisons for the individual modRNA pro-vaccines with other
+vaccines. No PRR analyses for the Janssen adenovirus vector DNA pro-vaccine were provided. The July
+2022 PRR analyses were previously disclosed under another FOIA request. (42) A further disclosure was
+made in 2023 on March 25 and May 6, 2022.(43)
+2) EBDM analyses disclosed under a FOIA request made on June 30, 2022, (44) covering January 6, 2021,
+to July 1, 2022. Analyses were conducted by FDA using EmpiricaTM software (Oracle Corporation, Austin,
+TX). Previously, FDA had declined to release these analyses. (43) EBDM analyses were furnished as text
+tables contained in a single PDF file of 153 pages. Each approximately weekly EBDM “alert” report was
+embedded in an email sent from the responsible FDA team to other FDA staff as well as CDC staff. Each
+alert report included adverse events associated separately with the three COVID-19 pro-vaccines whose
+cumulative frequency had exceeded a preset signal threshold (EB05>2) for any of the stratifications used
+(all data, Serious, Fatal, Infant, Child, Teen, Adult - three groups, Female, Male). The EB05>2 threshold
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 8 of 55
+was reached when the lower 5% confidence interval of the Empirical-Bayes Geometric Mean (EBGM)
+exceeded two.
+These tables were not uniform in layout and often of poor resolution. Initial attempts to convert these text
+tables into an analyzable numerical form produced numerical errors that, even after extensive checking,
+would impugn the reliability of any analysis, highlighting the need for the release of high-fidelity data files
+under FOIA. Accordingly, we limited this review to an analysis of the textual portions of this dataset. Events
+by name, vaccine, and report date were exported to a Microsoft Excel spreadsheet.
+7.1.2 The VIOLIN dataset
+The second dataset consulted is the Cov19VaxKB component of the Vaccine Investigation and Online Information
+Network (the “VIOLIN” dataset). This online database (https://violinet.org/cov19vaxkb) (45) calculates PRR values
+from VAERS data and was developed with partial funding by NIH-NIAID, and by developers who included those
+affiliated with NIH. We extracted PRR and related data from VIOLIN on September 5, 2023. To calculate the
+significance of PRR values, the VIOLIN dataset uses (46) the Pearson chi-squared value, but without the Yates
+correction specified by Evans et al. (31) or as used in the PRR portion of the FOIA dataset. We recalculated chi-
+squared and associated p-values using the Yates correction.
+Although the VIOLIN database is periodically updated, VIOLIN’s provenance statements have been inconsistently
+updated. We are grateful to the developers for providing this clarification. From the VAERS database (6/20/25) via
+CDC’s WONDER interface (https://wonder.cdc.gov/vaers.html), we checked the dating of the VIOLIN datasets by
+obtaining case and symptom counts, recognizing that subsequent VAERS corrections may have occurred. The
+COVID-19 vaccine case counts published by VIOLIN’s developers (46) as originating from a VAERS version of
+December 31, 2021, were consistent with case counts we obtained from VAERS for November and December
+2021 for the United States and territories (plus unknown location) (Supplemental Table 4B). Further, case counts
+for COVID-19 vaccines we extracted from VIOLIN on September 5, 2023, were consistent with VAERS data
+through April 2022. Case counts for non-COVID-19 vaccines for all available dates for vaccines extracted from
+VIOLIN on 9/5/23 were also similar to those indicated by VAERS WONDER.
+We note that in the PRR portion of the FOIA dataset, CDC used data for non-COVID-19 vaccines that extended
+only to January 1, 2009, rather than to before 1990, as is available through VAERS WONDER. With these caveats,
+we are assigning a nominal date of April 30, 2022, to the data we extracted from the VIOLIN dataset on September
+5, 2023. Since this date is within the range covered by the FOIA dataset of January 6, 2021, to July 29, 2022, the
+VIOLIN dataset provides a valid source of comparison.
+7.1.3 The Oracle dataset
+The third source of data consulted (the “Oracle dataset”) was the supplemental material provided by Harpaz et al.,
+(38) which examined DSA signals for “five largely recognized adverse events and two potentially new adverse
+events” (Appendicitis, Bell's palsy, Herpes zoster, myocarditis, pericarditis, pulmonary embolism, Tinnitus). The
+study used data derived from 19 fortnightly VAERS reports between weeks 3 (January 22, 2021) and 39 (October
+1, 2021), overlapping the first half of the period covered by the EBDM component of the FOIA dataset. The study
+reported “all VAERS” reports. Based on when the EUAs were issued, signals could appear for the Pfizer and
+Moderna products in all 19 of the reports (weeks 3 to 39, 1/22/21 to 10/1/21), and for the Janssen product in 16 of
+the reports (weeks 9-39, 3/5/21 to 10/1/21).
+The total case counts for both COVID-19 and non-COVID-19 vaccines were consistent with those we obtained
+from VAERS WONDER for a period between August 31 and September 30, 2021 (Supplemental Table 4B) for all
+locations (USA, territories, unknown location, Foreign). Without stratification for age or gender, the Oracle dataset
+provided underlying data and values for Reporting Odds Ratio (ROR), EBGM, Information Component (IC),
+Empirical-Bayes Regression-Adjusted Arithmetic Mean (ERAM), and Relative Reporting Ratio (RRR), along with
+related confidence intervals. We calculated PRR confidence intervals and chi-squared values. We corrected what
+appeared to be a typographical error in the abcd nomenclature used to designate cells in the 2x2 contingency
+table used for these data.
+The affiliation for six of the eight coauthors of the paper by Harpaz et al. (38) is Oracle Health Sciences (Burlington,
+MA). One of these authors (Dr. DuMouchel) is the originator of the EBDM method (32) and developer of Oracle’s
+EmpiricaTM software used by FDA to generate the EBGM signals. Another author is retired from FDA, and another
+is FDA’s key biostatistician (Dr. Szarfman, Center for Drug Evaluation and Research), who collaborated in the
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 9 of 55
+development and adoption by FDA of the EBDM methodology. The paper disclaims, “The findings and conclusions
+expressed in this report are those of the authors and do not necessarily represent the views of the US FDA or the
+federal government.”
+We note the possibility of confusion in how Harpaz et al., ISO 8601 (47) and CDC (48) designate “week number.”
+This may result in a shift of one week when attempting to compare data from the different datasets. For this
+discussion, we used the definition given by Harpaz et al. that weeks 3 and 39 correspond to January 22 and
+October 1, 2021, respectively.
+7.2 Other dataset
+CDC’s vaccine use dataset https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-
+Jurisdi/unsk-b7fc/about_data) was also accessed. This dataset provides the cumulative daily tallies of the number
+of doses of COVID-19 vaccines administered from December 13, 2020, to May 10, 2023, segregated by number
+of people completing the initial series, additional doses, second booster doses, and bivalent doses. In addition to
+data collection or reporting errors (8.1.3), CDC’s data are subject to other confounding due to the practice of
+heterologous boosting introduced in the fall of 2021.
+7.3 Institutional Approval
+This study uses aggregated, de-identified data from publicly available databases. No institutional approval is
+required.
+8 RESULTS
+8.1 Characterization of the EBGM FOIA dataset
+8.1.1 Distribution of EBGM event signals by pro-vaccine type
+For the EBDM portion of the FOIA dataset, a total of 79 weekly reports would be expected from January 6, 2021,
+to July 1, 2022. However, no reports were provided for 10 of these weeks. Four of the remaining 69 reports (1/10/21,
+1/29/21, 2/18/21, 3/5/21) stated that there were no AEs that had met the signal threshold.
+The 65 reports contained a cumulative total of 5,564 signal events, representing 189 unique signals. Some signals
+were reported only once, although some appeared up to 60 (median 33) times. Fifty-two of the weekly reports
+contained an AE signal that had not appeared previously. There were 165 (4,910), 19 (394), and 12 (260) unique
+event types (signal reports) for the Janssen, Pfizer, and Moderna pro-vaccines, respectively (Table 1).
+A striking imbalance in the number of EBDM signal reports for the Janssen over the Pfizer and Moderna products
+is visually evident (Figure 1) reflecting overall numerical contributions of 89.7% (Janssen), 4.7% (Pfizer), and 5.6%
+(Moderna) (Figure 2).
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 10 of 55
+Figure 1: Illustrative examples of data mining alerts (EB05 >2) in the FOIA dataset (highlight added)
+These examples were selected because their length was suitable for display on a printed page. Only the first two
+columns of each report are displayed here. Pink (Janssen), yellow (Moderna), and green (Pfizer) highlights have been
+added here. Each row represents an adverse event (Preferred Term, PT) for which an EB05>2 signal was present for
+at least one of the stratifications used. A typical description accompanying each alert (e.g. email dated June 1, 2021,
+p42/153), reads:
+“Attached please find a list of all (i.e., unvetted and regardless of notability) PTs with data mining alerts (i.e., EB05 >2)
+for all EUA SARS-CoV-2 vaccine VAERS reports from our weekly ‘US Signals Summary Table’ (‘as of date’ 5/28/21).
+Please feel free to share this hypothesis-generating output with your team/command chain, though this is not intended
+to be shared more broadly.”
+The possibility was entertained that the tables provided in the FOIA disclosure contain only the upper portion of
+the table included in the spreadsheet file accompanying each email alert, whereas, in reality, the email recipients
+received a lengthier report. However, when comparing the four leftmost examples in Figure 1 with the rightmost
+example, it is evident that had there been more signals for Pfizer, there would have been sufficient room on a
+single page for display. Further, had there been more alerts of Moderna, the Pfizer alerts would have run off the
+page.
+There is also the possibility that the tables provided in the FOIA disclosure did not represent the extent of the
+information shared in FDA’s email alerts; rather, they represent incomplete disclosure under FOIA. The attorneys
+originating the FOIA request (44) confirmed that the disclosure contained only the 153 PDF document with no
+accompanying data files.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 11 of 55
+Figure 2: Number of VAERs signals for COVID-19 pro-vaccines by week, meeting the EB05>2 threshold
+obtained by FDA using Empirical Bayesian Data Mining.
+The reports of 1/10/21, 1/29/21, 2/18/21, and 3/5/21 stated that there were no AEs that met the threshold signal. Zero
+values at other times indicate that no report was provided. See Supplemental Table 11 for underlying data and charts
+for individual pro-vaccines.
+Table 1: Distribution of EBDM signals by vaccine type in the FOIA dataset, accumulated over the period reported
+Drug
+# Unique
+AE types
+Total AE
+signals
+AEs %
+of total
+# Unique
+Non-abnormal
+signals
+Total non-
+abnormal
+AE signals
+Unique
+abnormal
+AE types
+Total
+abnormal
+AE signals
+Abnormal
+AE
+% of Total
+PFIZER 19 394 7.1% 6 187 13 207 4.7%
+MODERNA 12 260 4.7% 1 16 11 244 5.6%
+JANSSEN 165 * 4910 88.2% 23 989 142* 3921 89.7%
+UNKNOWN 0 0 0 0 0 0 0 0
+Janssen / Pfizer SER 12.46 18.94
+Janssen / Moderna SER 18.88 16.07
+* Reflecting poor image resolution or extraction, two events appear to have duplicate designations.
+“COV D-19 pneumonia” and “COVID-19 pneumonia”
+“Suspected COV D-19” and “Suspected COVID-19”
+Accordingly, the number of unique AE types for the Janssen pro-vaccine should be 163 and 140 in the two columns
+indicated.
+SER Signal Excess Ratio
+See Supplemental Table 9 for full signal listing by date and manufacturer.
+Thirty event types (Supplemental Table 1) accounting for 1192 AE signal reports did not appear to indicate an
+abnormality, merely, in most cases, that a test had been performed (e.g. “Platelet count”), yielding, in some cases,
+a normal value (e.g. “Platelet count normal”). Subtracting these “non-abnormalities” from the total tally, there were
+13 (207), 11 (244), and 142 (3921) unique event types (signal reports) for the Pfizer, Moderna, and Janssen pro-
+vaccines, respectively (Table 1). Only six unique signal types were shared by two of the pro-vaccines, and one
+event (Product administered to patient of inappropriate age) was shared by all three (Supplemental Table 10).
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 12 of 55
+8.1.2 Distribution of EBGM signals by event type and category
+Detail of the EBDM signals for the COVID-19 pro-vaccines in the FOIA dataset is shown in Table 2. Each event
+type was also categorized using the Common Toxicity Criteria (CTC) (49), and the numbers of event types and
+event signals contributing to each category were tabulated (Supplemental Table 2).
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 13 of 55
+Table 2: Frequency and number of alerts for abnormal adverse event EBDM signal types for COVID-19 pro-vaccines
+Pfizer Moderna Janssen
+EVENT Na Firstb Catc EVENT Na Firstb Catc EVENT Na Firstb Catc Subc
+Product preparation issue 59 210423 USE
+Product administered to patient
+of inappropriate age 52 210618 USE Thrombosis 60 210416 CVG TE
+Drug ineffective 50 210507 P Exposure via breast milk 42 210827 REP Ultrasound Doppler abnormal 59 210423 SYN OTH
+Exposure via breast milk 44 210813 REP Product dose omission issue 38 210924 USE Therapy non-responder 59 210416 P
+Disease recurrence 33 210827 P Interchange of vaccine products 30 211119 USE Pulmonary embolism 59 210423 CVG TE
+Product administered to
+patient of inappropriate age 9 210910 USE Mechanical urticaria 22 220128 DER
+Cerebral venous sinus
+thrombosis 59 210423 CVG TE
+Product use issue 3 210423 USE
+Poor quality product
+administered 17 210507 USE Angiogram cerebral abnormal 59 210423 N
+Vaccination site pain 3 210423 PAIN Vaccination complication 15 220318 SYN Adverse drug reaction 59 210423 SYN
+Incorrect dose
+administered 1 211112 USE
+Product temperature excursion
+issue 12 210507 USE Venogram abnormal 58 210507 CVG TE
+Off label use 1 210507 USE Headache 8 211001 PAIN
+Magnetic resonance imaging
+head abnormal 58 210507 N
+Paraesthesia oral 1 210106 N Accidental exposure to product 7 210702 USE Jugular vein thrombosis 58 210507 CVG TE
+Dysgeusia 1 210106 GAS Injection site pruritus 1 210423 DER Gaze palsy 58 210507 N
+Flushing 1 210106 DER Deep vein thrombosis 58 210507 CVG TE
+Palpitations 1 210106 ARY
+Computerised tomogram head
+abnormal 58 210507 N
+Angiogram pulmonary
+abnormal 58 210507 CVG TE
+Transverse sinus thrombosis 57 210507 CVG TE
+Event types are listed in descending order of frequency within the FOIA dataset.
+Only the top 15 events are shown for Janssen. A list of all AE signals is provided in Supplemental Table 2.
+a Number of weekly reports that include this signal
+b Date of first report (YYMMDD)
+c CTC event category (see Supplemental Table 2).
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 14 of 55
+An overall impression emerges:
+• The cumulative number of event signals for the Janssen pro-vaccine in the FDA’s EBDM analysis far
+exceeded that for Pfizer and Moderna by (in aggregate over the whole period) 12.46 (4910/394) and 18.88
+(4910/260) times (the “signal excess ratio,” SER), respectively. Excluding events that did not indicate an
+abnormality, these ratios were 18.94 (3921/207) and 16.07 (3921/244), respectively.
+• These ratios would be greater when considering the large contribution of product use-related events (e.g.
+administration, dose, and quality issues or errors) for the Moderna (63.9%) and Pfizer (35.3%) compared
+with the Janssen (3%) pro-vaccine.
+• The variety of event types where an abnormality was indicated was greater for the Janssen product,
+spanning 140 event types in 13 CTC categories, contrasting with 11 event types in 5 categories (Moderna)
+and 13 event types in 8 categories (Pfizer).
+• Hematologic (thrombo-embolic, coagulation) events accounted for 30.1% of the signals for Janssen, but
+were absent from the Pfizer and Moderna signals.
+• There were no signals for myocarditis or pericarditis in the FDA’s EBDM analysis.
+• There were, cumulatively, 17 event signals for death for the Janssen pro-vaccine, and none for the Pfizer
+of Moderna pro-vaccines.
+• There were, cumulatively, 48 event signals for Guillain-Barré syndrome for the Janssen pro-vaccine, and
+none for the Pfizer or Moderna pro-vaccines.
+8.1.3 Disproportion of EBGM event signals normalized for population exposure
+Expressed as the Signal Excess Ratio (SER), the disproportionate fold excess of the number of EBGM signals for
+the Janssen COVID-19 pro-vaccines compared with the Pfizer and Moderna products must be normalized for the
+relative usage of the pro-vaccines. This was done using data from CDC’s vaccine use dataset. Although we have
+assumed linearity, the number of signals generated for any vaccine will eventually plateau as a function of usage,
+as the number of truly associated AEs yet to be recognized dwindles. This relationship may vary by vaccine type.
+The “Relative Use Ratio” (RUR) and “Use Normalized Signal Excess Ratio” (UNSER) of the Pfizer or Moderna
+product compared with the Janssen product were (Supplemental Tables 3A and 3B) derived from either:
+• The number of people given at least one vaccine dose. Not everyone who received a first dose received
+subsequent doses. To the number of people completing the initial series was added the number of people
+receiving only one dose obtained by subtracting the various dose types from the total administered and
+adjusting for a two (Pfizer or Moderna) or one (Janssen) dose initial series (Supplemental Table 3A).
+For each EBDM “as of” alert date, the corresponding SER and RUR values were calculated (Supplemental
+Tables 3A and 3B). All "as of" dates for the FOIA dataset email alerts matched with a date available in
+CDC's vaccine use dataset, except two for which the closest prior date was used.
+Likely reporting delays or other inconsistencies in the CDC vaccine use dataset resulted in two minor
+anomalies. Firstly, for some dates, there were negative numbers of people receiving only one dose. These
+were removed by taking two-day backward-moving averages for each of the ratios calculated. Secondly,
+an anomaly for the Janssen product yielded a small (<2%) “number of people receiving only one dose”
+that was greater than zero after subtracting the various dose types from the total administered.
+A Use Normalized Signal Excess Ratio (UNSER) was obtained by multiplying the SER and RUR for each
+date. Median and range SER, RUR, and UNSER values were obtained for the span of dates represented
+in the EBDM FOIA dataset (Supplemental Table 3B), summarized in Table 3.
+The UNSER values for the Jansen product compared with the Pfizer and Moderna products were 112 and
+104, respectively, based on the number of people who received at least one vaccine dose. This method
+of calculating UNSER was used hereafter, since it yields more conservative estimates than normalizing
+by dose.
+• The total number of doses administered. The median use-normalized signal excess ratios for the Jansen
+product over the Pfizer and Moderna products were 206 and 213, respectively, based on the total number
+of doses administered.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 15 of 55
+Table 3: Signal Excess, Relative Use, and Use Normalized Signal Ratios for the EBDM FOIA dataset
+SER Method RUR UNSER
+Janssen Janssen Pfizer to Moderna Janssen Janssen
+Pfizer Moderna Janssen Janssen Pfizer Moderna
+All dates in FOIA dataset (1/6/21 to 7/1/22)
+Median a 13.0
+(9-14)
+18.83
+(16-22)
+N >=1 dose 8.60
+(8.2-9)
+5.43
+(5.4-5.7)
+112.3
+(76-126)
+103.7
+(92-123)
+Total doses 16.08
+(14.7-17.8)
+11.25
+(10.4-11.6)
+206.2
+(138-261)
+213.1
+(174-234)
+4/29/22 (closest prior date to nominal VIOLIN date of 4/20/22)
+Point value 13.75 18.33 N >=1 dose 8.96 5.41 123.15 99.16
+Total doses 18.15 11.58 249.57 212.38
+SER Signal Excess Ratio (expressed here as Janssen to Pfizer or Moderna)
+RUR Relative Use Ratio
+UNSER Use Normalized Signal Excess Ratio
+a Median (interquartile range) values across all dates in FOIA dataset. Note the aggregate values based
+on total EBDM signal counts are (12.46 (Pfizer) and 18.88 (Moderna).
+See also Supplemental Table 3B
+The persistence of the large crude (SER) and Use Normalized (UNSER) excess of Janssen EBDM signals
+compared with Pfizer of Moderna over the period covered by the FOIA dataset is shown in Figure 3, as of the
+dates of ACIP or VRBPAC meetings during that time.
+Figure 3: Time course of disproportionate excess (Janssen) and dearth (Pfizer, Moderna) of EBGM signals in the
+FOIA dataset relative to ACIP and VRBPAC meeting dates: Signal Excess (SER) and Use Normalized Signal
+Excess (UNSER) Ratios
+The number of EBDM signals for each COVID-19 pro-vaccine in the FOIA dataset was determined (Supplemental
+Table 9) for each date just before the seventeen relevant ACIP or VRBPAC meetings convened between April 16,
+2021, and July 1, 2022 (the date for the last report in the FOIA dataset). Signal Excess (SER, solid lines) and Use
+Normalized Signal Excess (UNSER, dashed lines) Ratios were calculated using data for the closest date preceding
+each meeting, based on the excess of Janssen over Pfizer (blue lines) or Moderna (red lines) signals, normalized for
+the number of people receiving at least one dose of pro-vaccine (Supplemental Table 3A). Note the logarithmic Y-axis.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 16 of 55
+8.1.4 Disproportion of EBGM event signals normalized for the total number of AE reports to VAERS
+As a further check on the plausibility of the disproportionate number of AE signals for the Janssen product, the
+relative occurrence of VAERS reports derived from several sources was calculated (Supplemental Table 4A). The
+median fold-excesses of VAERS-reported unique patient events for Pfizer and Moderna over the Janssen products
+were 5.3 and 5.4, respectively. The median fold-excesses of unique symptom reports for the Pfizer and Moderna
+over the Janssen products were 4.8 and 4.9, respectively. Combining these figures with the median SER (Table
+3) suggests that a report to VAERS involving the Janssen pro-vaccine was more likely to generate an EBGM signal
+than for the Pfizer and Moderna pro-vaccines by factors of about 62-69 and 90-99, respectively.
+8.2 Disproportion of EBDM signals in the context of PRR signals derived from the VIOLIN dataset
+8.2.1 Characterization of PRR signals derived from the VIOLIN dataset
+To understand whether the disproportion of EBDM signals in the FOIA dataset was due to an inherent disproportion
+in signals derived from VAERS in general, or a feature of the particular analyses reported in the FOIA dataset, we
+examined the PRR signals generated by the VIOLIN dataset. This was necessary because the FOIA disclosure
+contained no Pfizer- or Moderna-specific PRR analyses, or any PRR analyses for Janssen.
+What became accepted as the “canonical Evans” (38) criteria set the PRR threshold at 2, with at least three case
+reports and a chi-squared value of at least 4.(31) To declare a “signal,” VIOLIN modifies (the “modified” Evans
+criteria) the canonical criteria by adding the condition that the number of cases for a particular AE must be >0.2%
+(50) of the total number (Table 4). This condition is not used in the canonical criteria (31) nor in the VAERS SOP.
+(40) It is inconsistent with the intent of the Evans method to detect frequency changes in uncommon events. In
+reality, this condition does not change whether or not there is a statistical association; it merely superimposes a
+filtering condition to “provide[d us] better manageability of the sets of AEs studied.” (50)
+Table 4: Summary of the three types of “Evans” criteria for assessing PRR values
+Type PRR
+threshold
+Number
+of events
+Chi-squared Citation
+Canonical Evans 2 >3 > 4 with Yates’ correction (31)
+Modified Evans 2 >3
+>0.2% of total
+> 4
+VIOLIN uses Pearson's version
+VIOLIN
+(45,46,50)
+Alternative Evans * >3 Based on the confidence interval (31)
+* For the present work, we use a threshold of 1
+We consulted three sources of PRR signals derived from the VIOLIN database (Supplemental Table 5E) covering
+roughly the midpoint of our study period. Two of these were derived from publications by the database developers.
+(45,46) The third dataset was obtained by extracting PRR signals from the online database, from which the number
+of PRR signals was tallied using canonical, modified, and alternative Evans criteria.
+The use of the Pearson (46) chi-squared value by the VIOLIN dataset yields 10-39% more (Supplemental Table
+5E) canonical PRR signals than if the Yates version is used as specified in the original paper (31) or as used in
+the PRR portion of the FOIA dataset. The relative proportions of Pfizer, Moderna, and Janssen signals are
+approximately the same.
+Focusing on signals generated using the Yates chi-squared values as of the index date of 4/30/22, the number of
+modified PRR signals for the Pfizer and Janssen pro-vaccines was approximately the same, but lower for the
+Moderna pro-vaccine, whose Moderna to Janssen ratio was 0.29 (Supplemental Table 5E).
+As expected, modifying the Evans criteria reduces the number of PRR signals obtained using the canonical criteria,
+in fact, by up to about 90% (Supplemental Table 5E). However, using the canonical Evans criteria also yielded
+differences in the relative numbers (SER) of PRR signals for the three pro-vaccines. There were nearly double
+(1.86x, Pfizer) and two-thirds (0.61x) the number of Moderna PRR signals compared with those for Janssen.
+Adjusting these figures for the RUR (Pfizer 8.96, Moderna 5.41, Table 3) yields normalized PRR signal fold
+excesses (UNSER) for Janssen over Pfizer and Moderna of 4.82 (8.96/1.86) and 8.8 (5.41/0.61), respectively
+(Table 5, row J).
+The observation that the signaling criteria may influence the absolute and relative behavior of the three pro-
+vaccines prompted further examination. The original publication describing the PRR method (31) was not rigid in
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 17 of 55
+defining the criteria (> 2 case reports, PRR >2, chi-squared>4), proposing that “[a]n equivalent alternative to chi-
+squared is to calculate a confidence interval around the PRR.”
+As discussed below (10.1.2) use of a threshold of two does not change whether or not there is a statistical
+association; it merely superimposes a filtering condition. Accordingly, we apply here the “alternative Evans criteria”
+to declare a statistical association (i.e. a signal) at a threshold of PRR > 1 and p <0.05 (Table 4). The p-value was
+chosen as the statistical component of the signal criteria, rather than a confidence interval, since the VIOLIN
+dataset reported p-values for each vaccine-AE pair. Some limitations are noted (10.1.4).
+Applying the “alternative Evans criteria” (p<0.05, Yates chi-squared) to the VIOLIN 4/30/22 dataset yields 48%
+(Pfizer), 152% (Moderna), and 51% (Janssen) more signals (Supplemental Tables 5E and 12) than using the
+canonical Evans criteria. These criteria also change the relative behavior of the three pro-vaccines (1.83, Pfizer
+vs. Janssen; 1.03, Moderna vs. Janssen). Normalizing for use yields alternative PRR signal fold excesses (UNSER)
+for Janssen over Pfizer and Moderna of 4.90 (8.96/1.83) and 5.25 (5.41/1.03), respectively (Table 5, row M).
+Further exploration of the relationship between threshold values and signal generation, yielded plots
+(Supplemental Tables 5A and 5B) that indicate:
+• Strong negative linear correlations (R2 >0.93) between the number of signals generated and the threshold.
+• Similar regression lines, both in terms of slope and intercept, for the Pfizer and Moderna pro-vaccines.
+• A regression line for the Janssen pro-vaccine compared with the two modRNA products with a steeper
+slope and a greater intercept, reflecting the approximately 4.82 (Pfizer) to 8.8 (Moderna) -fold adjusted
+excess (UNSER) of PRR signals (Table 5, row J).
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 18 of 55
+Table 5. Relative occurrence of EBGM (FOIA dataset) and PRR (VIOLIN dataset) signals from VAERS for
+COVID-19 pro-vaccines, normalized for population exposure
+Line Ratio type (vs Janssen) Math ** Pfizer Moderna Janssen Date Source
+A Ratio, number of people given >1
+dose RUR (based on CDC date
+4/29/22)
+8.96 5.41 1 4/30/22 Supp
+Tab 3A
+B Total EBGM signals 394 260 4910 1/6/21 -
+7/1/22
+Table 1
+C Ratio, SER, aggregate (SER)
+Median
+from B 1/12.46
+1/13
+1/18.88
+1/18.83
+1
+1
+Supp
+Tab 3B
+D Ratio, normalized to # people >-1d
+(UNSER)
+(Median from paired estimation
+Supp Tab 3B)
+Equiv
+to C/A
+1/112 1/104 Table 3
+E Abnormal EBGM signals only 207 244 3921` 1/6/21 -
+7/1/21
+Table 1
+F Ratio, abnormal EBGM signals
+(SER)
+from E 1/18.94 1/16.07 1
+G Ratio, normalized to # people
+(UNSER)
+(based on median RUR for all alerts
+Pfizer 8.6, Moderna 5.43, Supp Tab
+3B)
+Equiv
+to F/A
+1/170 1/87 1
+H PRR Signals (Canonical Evans,
+Yates)
+1485 491 799 4/30/22 Suppl
+Table 5E
+I Ratio, PRR signals SER from H 1.86 0.61 1
+J Ratio, normalized to # people >= 1
+dose UNSER
+I/A 1/ 4.82 1/8.8 1
+K PRR Signals (Alternative Evans,
+Yates, p value)
+2197 1238 1203 4/30/22 Suppl
+Table 5E
+L Ratio, PRR signals SER from K 1.83 1.03 1
+M Ratio, normalized to # people
+UNSER
+L/A 1/ 4.9 1/ 5.25 1
+** Using the line identifier from the first column, this indicates how each ratio was derived.
+SER Signal Excess Ratio (Pfizer or Moderna to Janssen)
+RUR Relative Use Ratio
+UNSER Use Normalized Signal Excess Ratio
+All values are the median, except where noted.
+The aggregate value is based on the total number of EBDM signals for the three products.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 19 of 55
+8.2.2 Signal truancy as a source of EBDM signal disproportion in the FOIA dataset
+Implicit in CDC’s statement that the disclosed PRR analyses (42) “generally corroborated findings from Empirical
+Bayesian (EB) data mining,” is the expected correlation between the numbers of PRR and EBGM signals. This
+was borne out (8.3) in an analysis of the Oracle dataset (Figure 5).
+Using this principle, we compared the vaccine-specific UNSERs derived from near-contemporaneous data
+(4/29/22) in the VIOLIN and FOIA datasets (Table 6). The lack of similarity between the two sets of values suggests
+that EBGM signals are missing from the FOIA dataset. Dividing the FOIA UNSER by the VIOLIN UNSER yields
+“Truancy Factors” of 25.6 (123.2/4.82) for Pfizer and 11.3 (99.2/8.8) for Moderna (Supplemental Table 14). These
+truancy factors represent respective losses of 96.1% (N=204) and 91.1% (N=68) signals (individual AE types for
+each pro-vaccine). It is assumed that there were no signals lost for the Janssen product. (It is noted that when
+similarly dated data are being compared, as in the above example, the truancy factor is independent of the RUR).
+Using the equivalent ratios (UNSER) of 4.9 and 5.25 derived from the alternative PRR criteria (Table 5, row M)
+yields, respectively, truancy factors of 25.1 (123.2/4.9, 96% signal loss) and 18.9 (99.2/5.26, 94.7% signal loss)
+for Pfizer and Moderna (Supplemental Table 14).
+Plotting the number of canonical PRR signals from the VIOLIN dataset for each pro-vaccine against the
+corresponding number of EBDM signals from the FOIA dataset yields (Figure 4), contrary to expectations (e.g.
+Figure 5), a trendline with a negative slope and an extremely low R2 value. Since these plots act as fingerprints to
+characterize the data, differences in the data “fingerprint” further suggest a disturbance of FOIA dataset integrity.
+However, adjusting the number of EBGM signals using the truancy factors yields a trendline with a strong positive
+slope, consistent with the expected relationship between PRR and EBGM signals found with the Oracle dataset
+(Figure 5).
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 20 of 55
+Table 6: Correspondence of PRR and EBGM Signals in the VIOLIN and FOIA datasets
+Data from Supplemental Tables 3B, 9 and 14.
+SER Signal Excess Ratio: expressed here as Pfizer or Moderna to Janssen
+RUR Relative Use Ratio
+UNSER Use Normalized Signal Excess Ratio of Janssen to Pfizer or Moderna = RUR/SER
+a Truancy factor calculated by dividing the UNSER for the FOIA dataset by the corresponding value for the VIOLIN
+dataset.
+b EBDM (EB05>2) signals or each vaccine adjusted for truancy by multiplying the number of signals in the FOIA
+dataset by the truancy factor.
+c Canonical VIOLIN PRR signal numbers with a nominal date of 4/30/22 are compared with near-
+contemporaneous EBGM signal numbers in the FOIA dataset with an alert report “as of date” of April 29, 2022.
+d Total number of signals accumulated over the entire period of EBDM reports in the FOIA dataset (Table 1).
+Median RUR and aggregate UNSER values from 1/6/21 to 6/29/22 shown. See Supplemental Table 3B.
+e UNSER obtained by dividing the RUR by the SER.
+f See text for caveats
+g The tally does not include 112 (77, Pfizer; 34, Moderna; 1, Janssen) signals for which the case count is >2, but
+with zero comparator cases (listed in Supplemental Table 22).
+Ideally, truancy and signal loss could be estimated for each FOIA dataset alert and aggregated to obtain an
+estimate of total signal loss over the entire period covered by the FOIA dataset. This is not possible for two main
+reasons. Firstly, six of the ten dates for which no alert report was issued were in the first three months of 2021
+(Supplemental Table 9), potentially skewing data from the initial rollout of the pro-vaccines. Secondly, we lack the
+equivalent PRR data from which to calculate truancy factors for each alert report.
+With these caveats, it is possible to produce a de minimis approximation of overall truancy and signal loss in the
+FOIA dataset by relying on the similarity between the median RUR values across the whole period (1/6/21-7/1/22)
+covered by the EBDM alerts (Supplemental Table 3B) in the FOIA dataset (Pfizer 8.6, Moderna 5.43) and the RUR
+point values for the VIOLIN dataset of 4/30/22 (Pfizer 8.96, Moderna 5.41). This approach yields UNSER values
+of 112 and 104 (Table 5, row D) for the EBGM signals. Dividing this figure by the UNSER values for canonical PRR
+signals of 4.82 and 8.8 (Table 5, row J) yields aggregate truancy factors of 23.1 (112/4.82, range 4.1-77, 95.7%
+signal loss) for Pfizer and 11.8 (104/8.8, range 6.3-16.2, 91.5% signal loss) for Moderna.
+Using the equivalent UNSER values for alternative PRR criteria (Pfizer 4.9, Moderna 5.26), yields, respectively,
+truancy factors of 22.9 (range 4-76, 95.6% loss) and 19.7 (range 10.6-27, 95% loss). (Supplemental Table 18).
+These values are highly consistent with those obtained from the date-specific comparison described above.
+Further, a plot of the cumulative number of EBGM signals in the FOIA dataset against the number of PRR signals
+Signal Type PRR EBGM EBGM EBGM EBGM EBGM EBGM
+Database VIOLIN FOIA FOIA FOIA FOIA FOIA FOIA
+Date 4/30/22 c
+g
+4/29/22 c Truancy
+adjusted b
+N
+signals
+lost
+%
+signals
+lost
+1/6/21 to
+7/1/22 d
+1/6/21 to
+7/1/22 d
+Vaccine Type
+Pfizer 1485 8 204 196 96.1% 394
+Moderna 491 6 68 62 91.1% 260
+Janssen 799 110 110 0 0.0% 4910
+SER
+Pfizer to Janssen 1.86 0.07 0.08
+Moderna to Janssen 0.61 0.05 0.05
+RUR (from CDC data)
+Pfizer to Janssen 8.96 8.60
+Moderna to Janssen 5.41 5.43
+UNSER e Truancy
+Factor a
+Truancy
+Factor f
+Pfizer to Janssen 4.82 123.15 25.56 112.32 23.31
+Moderna to Janssen 8.80 99.16 11.27 103.65 11.78
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 21 of 55
+in the VIOLIN dataset yields a negative slope with a very small R2 value, consistent with a disturbance in FOIA
+dataset integrity (Supplemental Table 14).
+Figure 4: Correlation between PRR (VIOLIN) and
+EBGM (FOIA) Signals Generated in VAERS, with
+truancy adjustment
+Figure 5: Correlation between PRR and EBGM
+Signals Generated in VAERS (Oracle dataset)
+See Table 5 for source data for PRR Evans (canonical)
+signals from the 4/30/22 VIOLIN dataset, using Yates’ chi-
+squared. EBGM data are those from the 4/29/22 email alert
+in the FOIA dataset (see Supplemental Table 9).
+Signals are plotted for Pfizer, Moderna, Janssen, but not
+“Unknown Manufacturer” as there were none in the FOIA
+dataset.
+To adjust EBGM signals for truancy, RUR and UNSER values
+derived from CDC data of 4/29/22 were used (Supplemental
+Table 14)
+See Supplemental Figures 1A and 1B for similar correlations
+using cumulative EBDM data from the FOIA dataset.
+The number of signals is the number apparent as of 10/1/21
+and plotted for Pfizer, Moderna, Janssen, and “Unknown
+Manufacturer.”
+See
+Table 8 for source data and Supplemental Table 15
+8.3 Further exploration of EBDM signals in the FOIA dataset through the lens of the Oracle dataset
+Examination of the Oracle dataset permits further exploration of anomalies in the FOIA dataset. There are
+advantages and limitations to Oracle’s consideration of both US- and foreign-originating VAERS reports.
+Expanding the study population by including foreign-originating VAERS reports potentially increases the power to
+detect safety signals, essentially for hypothesis generation in a system represented as an “early warning for
+vaccine safety.” (15-18) However, calculations of relative vaccine use, signal generation, and truancy are limited
+because of differences in the relative:
+• domestic (US) and foreign use of the three COVID-19 pro-vaccines.
+• pattern of domestic and foreign reporting into VAERS, despite the requirement that manufacturers report
+certain AEs originating outside the USA.
+Although PRR or Empirical Bayesian values should be stratified by originating source, the omission of foreign-
+derived safety signals from FDA’s EBDM analysis in the FOIA dataset is material, necessitating the following
+discussion.
+8.3.1 Oracle dataset clues about Pfizer and Moderna EBDM signal truancy in the FOIA dataset
+Signals for the seven AEs studied in the Oracle dataset (Supplemental Table 13, Figure 7), differed in number and
+timing from their counterparts in the FOIA dataset (Table 2).
+Using FDA’s EB05>2 threshold, nine myocarditis-Pfizer signals were present in the Oracle dataset beginning week
+21 (5/28/21) but were absent from the FOIA dataset (Table 2). Alternative PRR signals appeared in week 19,
+EB05>1 signals in week 17, and ER05>1 (see below) signals in week 9. No EB05>2 Moderna-myocarditis signal
+was present, but alternative PRR, EB05>1, and ER05>1 signals were present from week 5. There were no EB05>2
+signals for pericarditis in either dataset for any pro-vaccine. There were PRR (both methods), EB05>1, and
+ER01>1 pericarditis signals for the Pfizer and Moderna pro-vaccines in the Oracle dataset starting week 7 (except
+Pfizer EB05>1, week 9).
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 22 of 55
+One Bell’s palsy EB05>2 signal was present in the Oracle dataset associated with the Pfizer pro-vaccine in week
+9, with 19 (out of a possible 19) signals meeting the other three criteria. This signal was absent from the FOIA
+dataset. PRR (both methods) and Moderna-Bell’s palsy EB05>1 signals were present in the Oracle dataset.
+For tinnitus, no EB05>2 signals for either modRNA pro-vaccine were present in the Oracle dataset, although
+between 11 and 19 signals met each of the other three criteria. Three tinnitus EB05>2 signals for the Janssen pro-
+vaccine beginning week 15 were found, but were absent from the FOIA dataset. Between 9 and 15 signals were
+found for each of the other signal thresholds. Up to 403 neurologically related signals were found in the VIOLIN
+dataset (Supplemental Table 21), including stroke (9.1.3). A number of these were the subject of an NIH report.(51)
+Considering appendicitis, 13 (Pfizer) and seven (Moderna) EB05>2 signals, both beginning in week 3, were
+present in the Oracle dataset but were absent from the FOIA dataset. Between 9 and 19 signals were found for
+each of the other threshold criteria. No appendicitis EB05>2 signals were found for Janssen, but there were 3, 10,
+and 1 signals for the canonical and alternative PRR, and EB05>1 criteria, respectively.
+For pulmonary embolism (Figure 8), eleven EB05>2 signals were found in the Oracle dataset for the Janssen pro-
+vaccine, along with 13-14 signals for each of the five other threshold criteria. This is consistent with the FOIA
+dataset (Table 2) in which thrombo-embolic and coagulation events accounted for 30.1% of Janssen’s EBGM
+signals (8.1.2, Table 2, Supplemental Table 2).
+However, despite the FOIA dataset lacking a Pfizer or Moderna PE (or other thrombo-embolic related) signal, the
+Oracle dataset contained 9 (Pfizer) and 7 (Moderna) EB05>2 pulmonary embolism signals, starting week 5.
+Between 13 and 19 signals were present for each of the other threshold criteria for both modRNA products. The
+finding of Pfizer and Moderna EBGM signals for pulmonary embolism in the Oracle dataset suggests that there
+may have been other hematologic events associated with the modRNA pro-vaccines. This was indeed discerned
+from PRR signals in the VIOLIN dataset (Supplemental Table 6), where canonical PRR signals were found for 19
+(Pfizer), 14 (Moderna), and 56 (Janssen) hematologic event types.
+EBGM or PRR signals for Herpes zoster were absent for all the COVID-19 pro-vaccines in the Oracle dataset.
+However, 14 (Pfizer) and 12 (Moderna) signals were found using the ER05>1 criteria. Herpes zoster EBGM signals
+were absent from the FOIA dataset.
+Reconciling the appearance of EB05>2 signals for these seven selected AEs in the Oracle and FOIA datasets
+(Table 7), there was no case of a signal present in the FOIA dataset but absent from the Oracle dataset. Signals
+for eight out of a possible 21 pro-vaccine-AE pairs were detected in the Oracle dataset, only one of which (Janssen,
+pulmonary embolism) was also detected in the FOIA dataset (Odds ratio 0.0813, 95%CI 0.0091, 0.7282, p = 0.02,
+Fisher’s Exact test). This leaves 7/8 (87.5%) signals in the Oracle dataset that were absent in the FOIA dataset.
+The failure of the FOIA dataset to detect signals was disproportionately weighted towards the Pfizer and Moderna
+products over the Janssen product. Of the eight signals detected in the Oracle dataset, 0/4 (Pfizer). 0/2 (Moderna)
+and 1 / 2 (Janssen) signals were found in the FOIA dataset. With noted limitations, this disproportion could
+contribute to the disproportion in the use-normalized EBGM signals for Janssen in the FOIA dataset, supporting
+our earlier estimation of true 4.82- and 8.8 - fold signal excesses (Table 5, Row J) in Janssen signals, and truancy
+factors of 25.6 and 11.3 (section 8.2.2) for Pfizer and Moderna signals, respectively.
+Further corroboration of the truancy of signals in the FOIA dataset is provided by CDC’s enumeration to the June
+25, 2025 ACIP meeting (52) of eight statistical signals for the modRNA products obtained from the VSD. None of
+these signals appeared in the FOIA dataset (acute myocardial infarction, immune thrombocytopenia purpura,
+seizure, Bell’s palsy, venous thromboembolism, ischemic stroke, Guillain-Barré syndrome, myocarditis).
+Woodcock and Bartels (53) reported PRR signals related to otologic symptoms (vertigo, tinnitus, hearing loss,
+Bell’s palsy) associated with the COVID vaccines from VAERS data to June 7, 2021.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 23 of 55
+Table 7: Reconciliation of EBGM EB05>2 Signals in the Oracle and FOIA datasets
+Pfizer Moderna Janssen All
+Appendicitis O not F O not F Neither O nor F
+Bell’s palsy O not F Neither O nor F Neither O nor F
+Herpes zoster Neither O nor F Neither O nor F Neither O nor F
+Myocarditis O not F Neither O nor F Neither O nor F
+Pericarditis Neither O nor F Neither O nor F Neither O nor F
+Pulmonary embolism O not F O not F Both O and F
+Tinnitus Neither O nor F Neither O nor F O not F
+Number of signals / Number
+possible
+Neither O nor F 3/7 5/7 5/7 13/21
+Both O and F 0/7 0/7 1/7 1/21
+Absent in O, present in F 0/7 0/7 0/7 0/21
+Present in O, not F 4/7 2/7 1/7 7/21
+Considering only instances of
+signals found in the Oracle dataset
+4 2 2 8
+Present in O, present in F 0/4 0/2 1/2 1/8
+Present in O, absent in F 4/4 2/2 1/2 7/8
+Both O and F EB05>2 signal is present in both Oracle (O) and FOIA (F) datasets.
+Neither O nor F EB05>2 signal is absent in both the Oracle (O) and FOIA (F) datasets.
+O not F EB05>2 signal is present in the Oracle (O) but not in the FOIA (F) dataset.
+8.3.2 Threshold choice and signal generation in the Oracle database.
+Reducing the PRR threshold from two to one increased the number of signals by 25% to 158% in the Oracle
+dataset (Table 8), consistent with our estimates in the VIOLIN dataset (8.2.1) of 48% to 151%.
+We enumerated EBGM signals exceeding the EB05>2 threshold defined by both the VAERS SOP (40) and the
+FOIA disclosure (41) that it should represent a reporting proportion at least “twice that of other vaccines (i.e., lower
+bound of the 90% confidence [credible] interval of the [EBGM]).“ (40) In reporting the Oracle dataset, Harpaz et al.
+(38) used the EB05>1 threshold, consistent with the discussion by Evans et al. (31) that statistical association
+becomes evident once the PRR crosses a null of one. Applying this lower threshold (Table 8) increased the number
+of EB05 signals for the three pro-vaccines by two to six times. These estimates are also consistent with estimates
+obtained from MHRA data on non-COVID-19 vaccines (Supplemental Table 20).(54)
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 24 of 55
+Table 8: Cumulative number of PRR and EBGM signals of selected AEs reported to VAERS (Oracle dataset)
+N a
+PRR
+Canonical
+PRR
+Alt by
+95%CI c
+PRR
+Alt by
+90%CI
+d
+PRR
+Alt by
+p val e
+EBGM b
+EB05>2
+EBGM b
+EB05>1
+ERAM b
+ER05>2
+ERAM b
+ER05>1
+PFIZER/BIONTECH 133 98 104 104 123
+(25%)
+32 102
+(219%)
+85 123
+(45%)
+MODERNA 131 45 95 97 116
+(158%)
+14 86
+(514%)
+62 122
+(97%)
+JANSSEN 100 26 39 40 65
+(67%)
+14 28
+(100%)
+34 52
+(53%)
+UNKNOWN 84 12 20 22 15
+(25%)
+11 13
+(18%)
+12 35
+(192%)
+` 448 181 258 263 319
+(76%)
+71 229
+(223%)
+193 332
+(72%)
+a Total number of reports (not signals) contained in the Oracle dataset, across the study period. Other columns report the
+number of signals obtained by the specified method.
+b Number of signals in the whole study period whose lower 5% confidence interval of the Empirical-Bayes Geometric
+Mean (EBGM) or Empirical-Bayes Regression-adjusted Arithmetic Mean (ERAM) exceeds thresholds of one or
+two.(38,55) (% increase over number of signals using a threshold of 2 in parentheses)
+c Number of signals whose lower 2.5% confidence interval of the PRR exceeds 1
+d Number of signals whose lower 5% confidence interval of the PRR exceeds 1
+e Number of signals whose PRR p-value (chi-squared test) is less than 0.05 (% increase over number of canonical signals
+in parentheses)
+A PRR signal is only included if the case count is >2.
+See also Supplemental Table 13.
+Furthermore, in this Oracle dataset, the expected correlation between the number of PRR and EBGM signals was
+observed (Figure 5), in contrast to the lack of correlation between VIOLIN PRR and FOIA dataset EBGM signals
+(Figure 4).
+8.4 The effect of masking in the VIOLIN and ORACLE datasets
+Masking occurs when “signals for a vaccine of interest are hidden by the presence of other reported vaccines.”
+(38) For example, the number of myocarditis cases reported for Moderna will contribute to the “other vaccine” tally
+used in the denominator of Pfizer’s myocarditis PRR, thus attenuating its signal. In the PRR portion of the FOIA
+dataset, the masking effect is only mitigated by combining or comparing the Pfizer and Moderna case counts.
+Harpaz et al., (38) note that the problem of masking is about eight times more likely in the analysis of safety signals
+for COVID-19 vaccines than for other vaccines.
+A report from the MHRA noted that “With the majority of the vaccine dataset now comprised of reports for COVID-
+19 vaccines, these have the potential to unduly influence the disproportionality statistics for other vaccines.”(54)
+The report, puzzlingly, concluded that “differences in signal generation were not substantial and the differences
+did not have a large impact on signalling for other vaccines.”
+8.4.1 The effect of masking on the number of PRR signals in the VIOLIN dataset
+To calculate a “demasked PRR” value for each adverse event type (Preferred Term), the total of target events for
+the other COVID-19 vaccines was subtracted from the number of target events for all other vaccines. A similar
+subtraction was made for all non-target events.
+It is instructive to describe the loss of signals due to masking in terms of the fold gain in the number of signals
+identified after demasking of an otherwise masked dataset. Table 9 shows that demasking increases the number
+of PRR signals in the VIOLIN dataset by 30% (range 8 -180%, Alternative Evans criteria) and 87% (range 37-
+229%, Canonical Evans criteria).
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 25 of 55
+Table 9: Effect of masking on the number of PRR signals in the VIOLIN dataset
+Masked a Demasked b Demask/ Mask c
+Evans criteria Alt Canon Alt Canon Alt Canon
+PRR Threshold 1 2 1 2 1 2
+PFIZER 2197 1485 2377 2039 1.08 1.37
+MODERNA 1238 491 1927 1613 1.56 3.29
+JANSSEN 1203 799 1626 1464 1.35 1.83
+UNKNOWN 69 62 193 179 2.80 2.89
+Sum 4707 2837 6123 5295 1.30 1.87
+Ratio vs Janssen d (SER)
+Pfizer 1.83 1.86 1.46 1.39
+Moderna 1.03 0.61 1.19 1.10
+Ratio normalized for usage: Janssen vs e (UNSER)
+Pfizer 8.96 4.90 4.82 6.13 f 6.43
+Moderna 5.41 5.26 8.80 4.56 f 4.91
+The number of PRR signals in the VIOLIN dataset using the Alternative or Canonical Evans criteria, and chi-squared values
+with Yates’ correction were calculated for:
+a the original data, without adjustment for masking
+b the original data, with adjustment for masking (“demasking”)
+c Ratio of the number of demasked to masked signals
+d Signal Excess Ratio (SER) of the number of Pfizer or Moderna signals to those of Janssen.
+e Ratio of the number of Pfizer or Moderna signals to those of Janssen, normalized for the number of people given at
+least one dose of vaccine (UNSER), using the normalization ratios (RUR) of 8.96 (Pfizer) and 5.41 (Moderna)
+(Supplemental Table 3A).
+f These values produce truancy ratios of 20.1 (Pfizer, 123.2/6.13, 95.5% signal loss) and 21.7 (Moderna, 99.2/ 4.56,
+95.8% signal loss) (Supplemental Table 3B)
+See Supplemental Tables 5B, 5D, and 12. See also Supplemental Tables 5A and 5C for equivalent data generated using the
+Pearson chi-squared.
+8.4.2 Masking and PRR signals in the FOIA dataset for the mRNA products combined
+The PRR portion of the FOIA dataset is limited. There were no analyses for the Janssen product, and no separate analyses
+for the Pfizer and Moderna products. Instead, the mRNA pro-vaccines were compared with each other, and aggregated together
+against non-COVID vaccines. These analyses can be considered as substantively “unmasked.” We enumerated the canonical
+PRR signals obtained from these comparisons (Table 10) for the closest available dates to the date of the VIOLIN dataset, or
+the last date in the FOIA EBDM dataset.
+Due to the limited data provided in the PRR FOIA dataset, it is not possible to enumerate the signals from unstratified data.
+However, combining data in the VIOLIN dataset (4/30/22) for the Moderna and Pfizer products yields 1904 unmasked
+canonical PRR signals. With the above caveats, this is much greater than the 878 signals found in the PRR FOIA dataset
+(Table 10), representing a 2.17 truancy factor and 54% (N=1026) signal loss. Of these 878 signals, 778 are unique, with 59
+signals occurring in two age classes, and 24 occurring in three age classes (a listing of signals is given in Supplemental Table
+19). The nature of the data provided does not permit an assessment of the number of signals obtained using a threshold of 1.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 26 of 55
+Table 10: Number of canonical PRR signals present in CDC datasets released under FOIA
+Comparison Date Age N Source
+Pfizer vs. Moderna 7/8/22 >18 225 (42)
+Moderna vs. Pfizer 7/8/22 >18 94 (42)
+mRNA vs non-COVID
+vaccines 4/29/22 >5 878
+(41,43)
+mRNA vs non-COVID
+vaccines 7/1/22 >5 901
+(41,43)
+See data for all dates provided in the PRR disclosures in Supplemental Tables 16A and 16B
+N Number of canonical PRR signals obtained for the comparison indicated.
+8.4.3 The effect of masking on the number of PRR and EBDM signals in the ORACLE dataset
+The subtractions needed to “demask” are easy to perform when there are, as in the case of the COVID-19 pro-
+vaccines, only a few potentially masking products. As Harpaz et al., (38) point out, although the same subtractions
+could be made in the calculation of the EBGM, in the general case involving many more product-AE pairs, this
+technique becomes computationally infeasible. Accordingly, DuMouchel and colleagues adapted their MGPS
+method used to compute EBGM values to compute the “Empirical-Bayes Regression-Adjusted Arithmetic Mean”
+(ERAM) using a method they term “Regression-Adjusted Gamma Poisson Shrinker” (RGPS). (38,55)
+Using RGPS, Harpaz et al. identified a masking effect of smallpox vaccine on the myocarditis signals for the
+modRNA pro-vaccines. Harpaz et al. estimated the size of the masking effect for any AE by calculating the percent
+difference between the corresponding ERAM and EBGM values. In their study, (Table 6 in (38)) the masking effect
+ranged from 39-232%. From the Oracle dataset, we calculated the overall masking effect size for all 21 pro-
+vaccine-AE pairs as 123% (range -3% to 403%). Applying the same formula to PRR values in the VIOLIN dataset
+yielded a similar value of 120%.
+These estimates are consistent with our estimate based on the additional number of signals found after demasking
+in the Oracle dataset (Table 8, Supplemental Table 12) of 45% (range 21-169%, threshold 1) and 172% (range 9-
+343%, threshold 2), and in the VIOLIN dataset of 30% and 87%% at the two thresholds, respectively (Table 9).
+8.5 The aggregate effect of truancy, masking, and high thresholding on DSA signal generation
+8.5.1 Relationship between signal losses due to masking and threshold filtering
+Expressing signal loss in terms of the gain in signals identified after defiltering (lowering the threshold) and/or
+demasking, we find signal increases of 4.68- and 2.16-fold for the Oracle and VIOLIN datasets, respectively. These
+figures correspond to combined signal losses due to masking and threshold filtering of 79% and 54%, respectively.
+Although the aggregate effects are identical, the component effects of filtering or demasking will depend on their
+order of execution (Figure 6, Supplemental Figure 2). Except in the cases where the manufacturer is unknown,
+whichever procedure is performed first yields the greater signal gain. With some differences in the fold gains in
+the number of signals generated, similarities between the two databases and between the pro-vaccines are
+generally evident.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 27 of 55
+Figure 6: Component and aggregate effects of masking and threshold filtering on signal generation in the Oracle
+and VIOLIN datasets
+VIOLIN, All vaccines, overall 116% gain ORACLE, All vaccines, overall 368% gain
+The number of masked signals at a threshold of 2 is represented at the “start position” at the lower left of each diagram. The
+increase in the number of signals identified after demasking (Mask) or defiltering by reducing the threshold (Thr) is indicated
+by the length on a log scale of the line emanating from each point, with the fold signal increase indicated in the label near
+the center of each line. The increases after demasking followed by defiltering are indicated by the solid black line. The
+reversed order is indicated by the dashed black line, always yielding the same net result. The combined effect of demasking
+and defiltering by lowering the threshold is indicated by the red line, which has been aligned at the same angle for ease of
+comparison. Underlying data are found in Supplemental Table 12. Signal gain diagrams by individual pro-vaccine are shown
+in Supplemental Figure 2.
+(Left) In the VIOLIN dataset, demasking was accomplished
+by the subtractions outlined in 8.4.1. Defiltering was
+accomplished by lowering the threshold from two to one
+(“Alternative” criteria.)
+Executing both procedures increases the number of PRR
+signals by 2.16-fold (range 1.76 – 3.92).
+Expressed as a % loss of signals, demasking first reveals a
+loss of 46%, and a 13.5% loss if the threshold is then
+lowered. Reversing the order of execution reveals losses of
+40% (defiltering) and 23% (demasking)
+.
+(Right) In the Oracle dataset, demasking was accomplished
+by tallying the number of signals generated using the RGPS
+(ERAM) rather than the MGPS (EBGM), Empirical Bayesian
+methods.
+Executing both procedures increases the number of Empirical
+Bayesian signals by 4.68-fold (range 3.18 – 8.71).
+Expressed as the % loss of signals, demasking first reveals a
+loss of 63%, and a 42% loss if the threshold is then lowered.
+Reversing the order of execution reveals losses of 69%
+(defiltering) and 31% (demasking).
+8.5.2 Effect of the type of “significance component” of the signal criteria on signal generation
+For reasons the Discussion will elucidate, there are likely to be mismatches in the number of signals generated
+depending on which significance component (i.e. chi-squared value, p-value, or confidence interval) is chosen.
+We confirmed this using the Oracle dataset (Table 8, Supplemental Table 13). Nevertheless, the use-normalized
+fold excesses of Janssen signals over Pfizer or Moderna remain fairly similar between the three methods.
+Repeating the exercise for unmasked data in the VIOLIN dataset (Supplemental Table 5D), at a threshold of 2,
+yields between 3337 (lower 95% CI) and 5295 (chi-squared) signals. At a threshold of 1, between 6123 (p<0.05
+value) and 6889 (lower 90% CI) signals were generated. However, the corresponding use-normalized excess for
+Janssen signals over Pfizer and Moderna remained stable (median, range) for both at Pfizer (6.43, 6.1-7.6) and
+Moderna (4.9, 4.5-6.2).
+8.5.3 Evidence basis: expected VAERS DSA signal losses due to truancy, filtering, and masking
+In addition to providing an evidentiary road map, Table 11 summarizes the number of DSA signals that should
+have been evident to regulators charged with monitoring VAERS and COVID-19 pro-vaccine safety. The table
+summarizes the biases in signal estimation due to truancy, threshold, and masking. The table provides the
+provenance of the Signal Excess Ratios (SER) and Relative Use Ratios (RUR) used to correct these biases as
+originating from the FOIA, VIOLIN, and Oracle datasets, and CDC vaccine use data. Table 11 is color-coded to
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 28 of 55
+indicate whether calculations have been based on data from nearly-identically dated data sources, or from sources
+whose dates differ by several months (see 8.2.2).
+Although CDC was required to “perform PRR data mining on a weekly basis or as needed,” (40) only limited
+analyses were disclosed. Without requiring adjustment, the VIOLIN dataset contains 2837 canonical PRR signals
+for COVID-19 pro-vaccines, as of 4/30/22. Direct interrogation of the VIOLIN dataset using a threshold of 1 and
+avoiding masking and filtering, yields between 6123 and 6889 PRR signals (Table 11, rows A and B). 7294 unique
+vaccine-adverse event pairs meet one or more of the versions of PRR criteria (Supplemental Table 17).
+Using nearly-identically dated data sources to determine the effects of truancy, masking, and filtering, yields 887
+Empirical Bayesian signals for all COVID-19 pro-vaccines that would have been expected in FDA’s report as of
+April 29, 2022. Thus, 763 (86%) signals were lost (Table 11, row C).
+Supporting this estimate are those obtained using combinations of data sources dated 10/1/21, 4/30/22, or 7/1/22,
+which suggest between 573 to 2032 Empirical Bayesian signals would have been expected in FDA’s weekly
+reports for these dates. Thus, between 487-1898 (85-93%) signals appear lost due to truancy, masking, and high
+thresholding (Table 11, rows D-H).
+Table 7 of Harpaz et al. (38) provides a further point of triangulation and enumerates 24971 associations in VAERS
+as a whole as of 10/1/21, assumed to meet the ER05>1 (demasked, defiltered) criteria. Adjusting this downwards
+to reflect an approximate 33% excess of foreign to US reports, yields 18803 signals (Table 11, row I). This is still
+much larger than the above estimates, despite their estimate of only 2.31% masked associations (i.e. the increase
+in associations generated at a threshold of 1).
+Lastly, these primary findings are supported by a number of sensitivity analyses described throughout this work.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 29 of 55
+Table 11: Expected number of DSA signals from VAERS and aggregate effect of truancy. threshold and masking on signal loss
+Row Dataset Signal Date Truancy factor derived from Masking &
+filtering ratios
+derived from
+Crude
+c After adjustment for Signal loss Note
+Type Target UNSER Comparator
+UNSER Truancy Masking Filtering
+SER a RUR a SER b RUR a Number of signals N %
+A VIOLIN PRR 4/30/2022 NA NA NA NA NA 2837 NA 5295 6123 5999 98% d
+B 6889 6765 98%
+C FOIA EBDM
+4/29/2022 FOIA
+4/29/22
+CDC
+4/29/22
+PRR
+Signals
+VIOLIN
+4/30/22
+CDC
+4/29/22
+PRR Signals
+VIOLIN 4/30/22 124
+405 770 887 763 86%
+e
+D
+FOIA EBDM
+EBDM Signals
+Oracle 10/1/21 405 1134 1856 1732 93%
+E 10/1/2021 FOIA
+10/1/21
+CDC
+10/1/21
+PRR Signals
+VIOLIN 4/30/22 86
+258 498 573 487 85%
+f
+F
+EBDM Signals
+Oracle 10/1/21 258 724 1192 1106 93%
+G 7/1/2022 FOIA
+7/1/22
+CDC
+6/29/22
+PRR Signals
+VIOLIN 4/30/22 134
+443 842 971 837 86%
+g
+H
+EBDM Signals
+Oracle 10/1/21 443 1243 2032 1898 93%
+I VAERS EBDM 10/1/2021 NA NA NA NA NA 18717 h
+Notes
+For source data, unless specified, see Supplemental Table 12. All data involve VAERS reports from the USA only, except as noted.
+Same or near identical dating of source data is indicated by the same color. 10/1/2021 4/29/2022 7/1/2022
+The tally of VIOLIN PRR signals does not include 112 (77, Pfizer; 34, Moderna; 1, Janssen) signals for which the case count is >2, but with zero comparator cases (listed in
+Supplemental Table 22).
+a Supplemental Table 3A, Supplemental Table 3B
+b Supplemental Table 5D
+c Number of masked signals, at threshold of 2
+d The estimate of 6889 uses the criteria of the lower 5% confidence interval of the PRR >1. See
+e 405 includes an estimated 23 signals for unknown manufacturer
+f 258 includes an estimated 16 signals for unknown manufacturer
+g 443 includes an estimated 25 signals for unknown manufacturer
+h Table 7 of Harpaz et al. lists 24971 associations in VAERS, adjusted to 18803 to account for the approximately 33% excess of foreign to US reports.
+Subtracting 86 yields 18717. These are assumed to be associations using the ER05>1 criteria.
+SER Signal Excess Ratio (expressed here as Janssen to Pfizer or Moderna)
+RUR Relative Use Ratio
+UNSER Use Normalized Signal Excess Ratio
+NA Not applicable
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 30 of 55
+8.5.4 The combined effect of masking and filtering on the timing of signals generated
+Demasking and defiltering may not only identify new suspected adverse reactions (such as Herpes zoster and
+tinnitus (38)), but may also detect signals sooner. The chronologies of PRR, EBGM, and ERAM signal generation
+at thresholds of 2 and 1 for myocarditis and pericarditis in the Oracle dataset are compared in Figure 7. Due to the
+nature of the data in the Oracle dataset, it was not possible to obtain a set of demasked PRR values. Generally,
+signals emerge sooner and persist longer as the threshold decreases from 2 to 1, and when ERAM / RGPS
+demasking is used. A similar pattern can be discerned for pulmonary embolism (Figure 8), despite signals
+appearing sooner.
+Figure 7: Chronology of myocarditis and pericarditis signal generation by different methods in the Oracle dataset
+Myocarditis
+(no EB05>2 signal in FOIA dataset)
+Pfizer (3515 cases) Moderna (1175 cases)
+Pericarditis
+(no EB05>2 signal in FOIA dataset)
+Pfizer (2408 cases) Moderna (671 cases)
+Each panel contains six columns representing signals generated by Canonical PRR (PRR C), EB05>2 (EB>2), ER05>2
+(ER>2), Alternative PRR (PRR A, using the lower 95% confidence interval), EB05>1 (EB>1), and ER05>1 (ER>1) criteria.
+The presence or absence of a signal at each report date is signified by a 1 (pink color) or 0 (green color).
+The Oracle dataset is based on VAERS reports from US and foreign sources.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 31 of 55
+Figure 8: Chronology of pulmonary embolism signal generation by different methods in the Oracle dataset
+Pulmonary Embolism
+Pfizer (4394 cases) Moderna (1475 cases) Janssen (643 cases)
+no FOIA EB05>2 signal no FOIA EB05>2 signal FOIA EB05>2 signal at w17
+Each panel contains six columns representing signals generated by canonical PRR (PRR C), EB05>2 (EB>2), ER05>2
+(ER>2), Alternative PRR (PRR A, using the lower 95% confidence interval), EB05>1 (EB>1), and ER05>1 (ER>1) criteria.
+The presence or absence of a signal at each report date is signified by a 1 (pink color) or 0 (green color). For Janssen, no
+data were included in the Oracle dataset for week 9, however, the absence of a signal is inferred in the first week after EUA
+issuance. The Oracle dataset is based on VAERS reports from US and foreign sources.
+FDA’s 2005 guidance (56) on pharmacovigilance is silent on the issue of masking. In contrast, a similar document
+whose authors included representatives from AstraZeneca, Pfizer, the European Medicines Agency (EMA), and
+MHRA (39) recommended quantification of the masking effect. The EMA guide that evolved from this work (57)
+refers (Chapter 11) to the use of RGPS to reduce masking. The Empirica Signal software used by FDA for the
+EBDM analyses in the FOIA dataset, at least in version 9.1 available in August 2020, included the ability to perform
+RGPS analyses.(58) This was the same software version used by Harpaz et al. (38)
+9 REGULATORY CONTEXT OF ANOMALIES FOUND IN THE FOIA DATASET
+9.1 Inconsistencies between the FOIA, Oracle, or VIOLIN datasets and FDA or CDC statements
+Examination of the signals in the FOIA, Oracle, and VIOLIN datasets reveals inconsistencies with statements
+made by FDA or CDC (Table 12).
+9.1.1 Misreporting of data mining alerts
+A senior CDC safety expert and recipient of the weekly FOIA dataset EBDM alerts, conveyed to FDA’s VRBPAC
+(p75/355 in (59), slide 12 of (16)) on February 26, 2021: “there were no empirical, Bayesian data mining alerts
+detected for any adverse event COVID-19 vaccine pairs as of the last data mining run that the FDA performed on
+February 18th.“ While technically true, this statement is inconsistent with the January 6, 2021 FOIA dataset report
+of EB05>2 signals for the Pfizer product (paraesthesia, dysgeusia, flushing, palpitations) and in the Oracle dataset
+for appendicitis (Moderna and Pfizer, week 3), and pulmonary embolism (Moderna and Pfizer, week 5)
+(Supplemental Table 13, Figure 8).
+This same person co-authored, along with other FDA and CDC staff, some of whom were email recipients of the
+FOIA dataset EBGM alerts (41) a preprint posted in October 2021. (60) This preprint described the safety
+monitoring of mRNA pro-vaccines to June 14, 2021. The preprint stated: “No adverse health outcome alerts were
+identified in EB data mining. However, five mRNA COVID-19 administrative error alerts (e.g. ‘product temperature
+excursion issue’) with disproportionality (EB05>2) were identified during the surveillance period.”
+This statement is inconsistent with the alerts listed in Supplemental Table 2 first occurring before June 14, 2021
+(paraesthesia, dysgeusia, flushing, palpitations, Injection site pruritus). The statement, or any reference to EB data
+mining, was absent in a peer-reviewed version of this preprint.(61)
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 32 of 55
+FDA’s Review Memorandum preceding the 2021 EUA for the Pfizer pro-vaccine for teenagers (62) stated (p34/43):
+“Data mining query with the Empirica Signal tool was performed […] The data lock point was April 16, 2021. The
+alert score for disproportional reporting uses the […] EB05 >2.0. An EB05 of 2.064 was found for the PT ‘Body
+Temperature’ in adults ages 45-64.9 years of age. There were no other PTs with an EB05 >2.0.” This statement is
+inconsistent with the EB05>2 signals reported in the FOIA dataset (January 6, 2021) for oral paraesthesia,
+dysgeusia, flushing, palpitations, and in the Oracle dataset for appendicitis (starting week 3), pulmonary embolism
+(starting week 5), and Bell’s palsy (week 9). In weeks 15 and 17 of the Oracle dataset (corresponding to the lock
+point date indicated in the Review memorandum), signals for pulmonary embolism and appendicitis were present
+(Supplemental Table 13).
+9.1.2 CMS signals: pulmonary embolism, myocardial infarction, immune thrombocytopenia, DIC
+In December 2022, based on their “near real-time active surveillance“ of CMS (US Centers for Medicare &
+Medicaid Services) data through Jan 15, 2022, FDA and CMS staff reported (4) signals (with dates) from a Poisson
+Maximized Sequential Probability Ratio Test, for pulmonary embolism (2/27/21), acute myocardial infarction
+(2/27/21), disseminated intravascular coagulation (3/13/21), and immune thrombocytopenia (4/24/21) in people
+age 65 years and older, given the Pfizer, but not the Moderna or Janssen products. After adjusting for medical and
+demographic differences, only the signal for pulmonary embolism persisted. FDA announced these findings “in the
+spirit of transparency” on July 12, 2021, (63) stating:
+“These events have not been identified as safety concerns or signals in the CDC Vaccine Safety Datalink
+(VSD) or the Veterans Administration (VA) Healthcare data systems screening methods. The
+Vaccine Adverse Event Reporting System (VAERS), another government monitoring system, also has
+not identified any association between any COVID-19 vaccine and these AEI” [adverse events of
+interest] (emphasis added).
+This statement is inconsistent with EB05>2 signals (Supplemental Table 13) present in the Oracle dataset for
+pulmonary embolism for all three COVID-19 pro-vaccines starting week 5 (Pfizer, Moderna) and week 15
+(Janssen). Canonical PRR signals were also present starting week 3 (Pfizer, Moderna) and week 13 (Janssen).
+This inconsistency impugns FDA’s decision (63) that it was “not taking any regulatory actions based on these
+signal detection activities because these signals are still under investigation and require more robust study.”
+9.1.3 Signals for stroke
+At the VRBPAC meeting of January 26, 2023, CDC (64) reported a VSD signal for ischemic stroke associated with
+the Pfizer bivalent product. It was suggested that if this was a true signal, it was only in those over 65, and likely
+associated with the cotemporal injection of an influenza vaccine. A second presentation from FDA (65) stated (slide
+16) that there were “No excess reports of stroke from VAERS.” An update presentation at the April 19, 2023, ACIP
+meeting made similar statements, specifically (slide 23) “No safety signals were detected for ischemic stroke for
+primary series or monovalent boosters for Pfizer-BioNTech or Moderna COVID-19 vaccines in U.S. and global
+monitoring.” (15) A May 2023 update stated: “Other safety monitoring systems have not observed similar findings.”
+(66) There was no discussion of this AE at the June 2023 ACIP meeting.
+As we noted previously, (67) these statements are inconsistent with canonical PRR signals for ischemic stroke
+associated with the modRNA vaccines (combined data) in FOIA disclosures. (41,42) Associations were found in
+the 4/30/22 VIOLIN dataset for all three COVID-19 pro-vaccines with PRR values of 2.35 (Pfizer), 1.6 (Moderna),
+and 3.34 (Janssen). Signals in VAERS for stroke were evident as early as April 10, 2021 according to Aggarwal
+(68) who found PRR, ROR, and IC signals for Cerebrovascular Accidents for all three pro-vaccines.
+These signals were not discussed in a general update at the ACIP meeting of September 12, 2023, given by the
+VSD lead (69) who, a month later, coauthored a report (70) of an elevated risk for ischemic stroke in those younger
+than 65 years receiving the Pfizer bivalent pro-vaccine and influenza vaccine on the same day. This work was
+based on data accumulated between September 1, 2022, and March 31, 2023. On the same day, FDA and CMS
+scientists published a report (71) based on Medicare data between August 31 to November 6, 2022, of an elevated
+risk associated with the Pfizer bivalent product for non-hemorrhagic stroke (NHS) in those over 85 years. In those
+over 65 years also receiving a high-dose/adjuvanted influenza vaccine, there were elevated risks for NHS with the
+Pfizer bivalent product and for NHS with Transient Ischemic Attack with the Moderna bivalent product.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 33 of 55
+9.1.4 Signals for cancer
+The director of FDA’s Center for Biologics Evaluation and Research (CBER) testified before the House Select
+Subcommittee on the Coronavirus Pandemic on February 15, 2024, that “we have not detected any increase in
+cancers with the Covid-19 vaccines.” (1 hr 55 mins in (72)) This statement is inconsistent with the 23 PRR signals
+in the dataset for July 29, 2022, disclosed in December 2022 (42) and recently (41) for some cancer types or
+codes (Supplemental Table 7). Further, in the VIOLIN dataset, we found 25 (Pfizer), 6 (Moderna), and 4 (Janssen)
+canonical PRR signals for cancer-related events. Demasking and defiltering yielded 32, 18, and 9, signals,
+respectively (Supplemental Table 8).
+9.1.5 VSD Signals for acute myocardial infarction and venous thromboembolism
+The presentation by the VSD lead at the ACIP meeting of September 12, 2023 (69) included slide 64, which
+suggested that, “VSD may consider further investigating mRNA vaccine primary series signals of VTE and AMI.”
+Slide number 42 showed Rapid Cycle Analysis signals for Pfizer and both mRNA pro-vaccines together (but not
+Moderna alone) for acute myocardial infarction (AMI) and venous thromboembolism (VTE). Although the date of
+the analysis indicated on the slide was May 2022, the equivalent VSD presentations made to the two ACIP
+meetings bracketing this date (i.e. April 20, 2022 (73), and September 1, 2022 (18)), were silent about these
+signals. A version of a presentation made to VRBPAC on June 14, 2022 obtained pursuant to a US Senate
+investigation, contained a slide substantially similar to slide 42 described above. (p84 and 129/201 in document 2
+of (74)) However, this slide did not appear in the version as presented on FDA’s web page. Canonical PRR signals
+for AMI, Venous Embolism, and venous thrombosis (limb) for the modRNA products combined were present in the
+FOIA dataset for July 2022, as well as in data released separately (43) for April 29 and May 6, 2022.
+9.1.6 Signals for myocarditis
+On May 10, 2021, FDA lowered the age range for Pfizer’s COVID-19 EUA to include children ages 12 to 15 years,
+with the endorsement of CDC’s ACIP on May 12. On May 17, ACIP’s Vaccine Safety Technical (VaST) Work Group
+discussed “relatively few reports of myocarditis,” whose rates within CDC systems had “not differed from expected
+baseline rates.” (75) A week later, a signal for 16–24-year-olds was reported as present in VAERS but absent in
+VSD.(76) CDC issued information to the lay public on May 27.(77) This was followed by a presentation to FDA’s
+VRBPAC on June 10 and by FDA’s addition of a Warning to the Fact Sheet about myocarditis and pericarditis on
+June 25, 2021.(78)
+Information about myocarditis would surely have been material to ACIP's determination on May 12, 2021 that
+“Desirable consequences clearly outweigh undesirable consequences in most settings,” and yet the presentations
+by CDC, VaST, and Pfizer to ACIP were silent on the issue. (79) Such omission must be viewed in light of a FOIA
+disclosure (80) documenting requests for information by Israel’s Ministry of Health on February 28, 2021 (page
+14/201 in Document 2 of (74)) and March 2, 2021 (p712/985 in (80)), after noticing “a large number of reports,
+particularly in young people, following the administration of the Pfizer vaccine.” This request precipitated
+discussion between within CDC, FDA, and the Department of Defense (e.g. p985/985 in (80)), who were noted as
+submitting a paper for publication on the topic. It is unclear if that particular paper was published, but one report
+(81) describes at least 22 active-duty military personnel presenting between January and April 2021 with acute
+chest pain and elevated cardiac troponin levels following receipt of an mRNA COVID-19 pro-vaccine. With reports
+about myocarditis cases appearing in the press (82) on April 27, 2021, FDA and CDC issued statements (page
+153/201 in Document 2 of (74)), cited in part (83) as:
+• [the agency has not seen] “any new safety signals for myocarditis following administration of any of the
+authorized COVID19 vaccines.” (FDA)
+• “at this point, there is no safety signal for myocarditis or pericarditis for COVID-19 vaccines in U.S. monitoring
+systems.” (CDC)
+These statements were inaccurate as discussed (8.3.1, 8.5), because various signals for myocarditis or pericarditis
+had emerged around or before the time of the Israeli inquiry on February 28, 2021. FDA has recently (July 14,
+2025) stated FDA (84) "The history of vaccine-associated myocarditis reflects missed opportunities for safety
+mitigation.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 34 of 55
+Table 12: Examples of inconsistencies between FOIA, Oracle or VIOLIN datasets and FDA or CDC statements
+regarding safety signals
+Date Setting Statement Inconsistent
+with
+Event / Signal Other
+reference
+February 26
+2021
+VRBPAC “No alerts detected..” (59)
+(16)
+Oracle, FOIA
+datasets
+paraesthesia, dysgeusia,
+flushing, palpitations
+appendicitis pulmonary
+embolism
+Table 1
+April 16, 2021 FDA Review
+Memo
+“no other PTs with an
+EB05 >2.0” (62)
+Oracle, FOIA
+datasets
+paraesthesia, dysgeusia,
+flushing, palpitations
+appendicitis pulmonary
+embolism, Bell’s palsy
+Supplemental
+Table 13
+October
+28,2021
+Preprint
+authored by
+FDA and CDC
+“No adverse health
+outcome alerts were
+identified in EB data
+mining. However, five
+mRNA COVID-19
+administrative error
+alerts […] were
+identified during the
+surveillance period”
+Oracle, FOIA
+datasets
+paraesthesia, dysgeusia,
+flushing, palpitations
+appendicitis pulmonary
+embolism, Bell’s palsy
+(60)
+Supplemental
+Table 2
+November 12,
+2021
+Paper by FDA
+and CDC staff
+(11)
+“one signal of
+disproportionate reporting
+(EB05>2) for US VAERS
+death reports”
+FOIA datasets Signal absent
+July 12 2021 Paper by FDA
+and CMS staff
+(4)
+“VAERS […] has not
+identified any association
+between any COVID-19
+vaccine and these AEI”
+Oracle PE, AMI, DIC, ITP
+January 26
+2023
+VRBPAC (64) “No excess reports of
+stroke from VAERS.” (65)
+FOIA – PRR
+VIOLIN
+Ischemic stroke (15,66,67,69-
+71)
+February 15
+2024
+House Select
+Committee (72)
+“we have not detected any
+increase in cancers with
+the Covid-19 vaccines.”
+PRR FOIA July
+29 2022
+Cancer signals Supp Table 7
+Supp Table 8
+September 12
+2023
+ACIP (69) “VSD may consider further
+investigating mRNA
+vaccine primary series
+signals of VTE and AMI.”
+Signals present
+in FOIA PRR
+May to July 2022
+(43)
+VSD signals dated May
+2022 not previously
+disclosed
+May 17 2021 ACIP Myocarditis “not differed
+from expected baseline
+rates.” (75)
+Myocarditis
+signal
+announced May
+27, 2021 (77)
+FOIA disclosure
+shows
+awareness of
+signal in early
+March 2021 (80)
+Myocarditis
+9.2 The impact of signal anomalies on the robustness of the regulatory process
+In 2017 FDA outlined (23) the statutory and regulatory basis for the Emergency Use Authorizations (EUA) it later
+issued for the COVID-19 pro-vaccines. Rather than the requirements of a conventional approval that establishes
+a new drug as “safe and effective,” an EUA (p12/49) requires a lower standard whereby “based on the totality of
+the scientific evidence available, it is reasonable to believe that the product may be effective.” The “totality”
+standard allows the FDA to consider evidence of a type or procedural or statistical quality not normally considered
+in a conventional approval.
+The safety standard for an EUA requires that “the known and potential benefits of the product, […] outweigh [its]
+known and potential risks.“ In the same 2017 guidance (p12/49) FDA declared that to make this safety
+determination, “FDA intends to look at the totality of the scientific evidence,” which could arise from a variety of
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 35 of 55
+sources “available for FDA consideration.” Safety signals, including statistical signals, represent “potential risks”
+FDA was required to consider.
+Beyond the initial COVID-19 vaccine EUAs, these evidentiary standards applied to the subsequent amendments
+and to ongoing EUA review of emerging data. Such emerging data included the 487-1898 Empirical Bayesian
+signals that we estimate were lost by filtering, masking, and truancy, representing an 86% suppression of the still
+largely uninvestigated “potential risks” FDA was required to consider.
+The suppression of risk is both a scientific and a regulatory failure. The dissemination of anomalous and risk-
+suppressed EBGM signal data by the FDA within the FDA itself and to other agencies impugns the robustness of
+decision-making by regulators and their advisory committees, medical professionals, scientists, and the lay public
+regarding vaccine safety, authorization, approval, and injury compensation.
+The problem is compounded if CDC could not place the FDA’s EBDM data in the context of PRR analyses it was
+required to conduct. (40) This possibility is realized by reports that CDC only started conducting PRR analyses in
+March 2022.(43)
+9.3 Relationship to regulatory actions regarding Janssen-associated thrombotic events
+The effectiveness of how the totality of evidence regarding safety signals was integrated into regulatory decisions
+can be evaluated through the case of thrombosis with thrombocytopenia syndrome (TTS) associated with the
+Janssen vaccine.
+9.3.1 Basis for pausing the use of the Janssen product
+Against a background of seemingly similar cases involving the Astra-Zeneca product from outside the USA, and
+following six US cases reported to VAERS of cerebral venous sinus thrombosis (CVST) with thrombocytopenia
+after the Janssen product, the CDC and FDA recommended pausing the use of the Janssen product on April 13,
+2021. Convening the next day, ACIP requested more data and an early follow-up meeting, occurring on April 23.
+The pause was then lifted (85) along with a new warning regarding TTS.(86) A booster dose was authorized in
+October 2021, and a contraindication was added in December 2021 (87) with ACIP’s preferential recommendation
+for the modRNA products. (88) FDA further restricted the use of the Janssen pro-vaccine in May 2022, (88)
+revoking the EUA “at the manufacturer’s request” on June 1, 2023. (89)
+It is noteworthy that the appropriately cautious regulatory actions of April 2021 were made without a formal
+statistical analysis. CDC characterized the inciting six reports (in 6.86 million Janssen doses) of CVST with
+thrombocytopenia as a “reporting rate imbalance” (1:09:40 in (90)) compared with no reports after 97.9 million
+Pfizer doses, and 3 questionably similar reports with 84.7 million Moderna doses. Furthermore, as Janssen stated,
+(32:33 in Part 1 of (91)) “causality has not been fully established” for what could be an important potential risk.
+9.3.2 Relationship to signals for other clotting disorders.
+At this time, the status of other thrombotic events surfaced, albeit fleetingly. CDC’s Health Alert (92) recommended
+that clinicians “Maintain a high index of suspicion for symptoms that might represent serious thrombotic events.”
+Answering an ACIP member at the April 14 meeting, VaST stated (20:01 in Part 1 of (91)) that they had not focused
+on more general clotting disturbances. CDC indicated that it would study other thrombosis-related events.(2:30:40
+in Part 1 of (91)) Before the April 14 meeting, regulators discussed by email broadening the definition of a “case
+of interest” (p45/201 in Document 3 of (74)). They were also shown VSD analyses (p146/202 in Document 8 of
+(74)) indicating borderline rate ratios for DIC (1.29) and VTE (1.29) for the modRNA products.
+Similar analyses (p52/198 in Document 9 of (74)) showing near-threshold signals were shown to VaST before the
+April 23, 2021, ACIP meeting, along with an update on the CMS data describing a Pfizer-PE signal (p189/198 in
+Document 9 of (74)). This signal was evident as early as 2/27/21, flagged as an “outstanding issue” in a May 10,
+2021 presentation (“VaST planning” - p209-211 in Document 10 of (74) ) disclosed by FDA in July 2021, (63) and
+published in December 2022.(4) (see also 9.1.2) Of note is CDC’s statement (May 12 ACIP meeting) regarding
+the few cases of Janssen-related thrombosis events (VTE, PE) that “No statistical signals [were] detected for any
+prespecified Rapid Cycle Analysis outcomes.” (slide 29 in (17) Even if technically true, the materially omitted
+analyses and subthreshold signals shared with VaST members were key components of the “totality” of evidence
+needed by ACIP members to generate hypotheses concerning vaccine-related clotting disturbances and to
+consider the policy question of recommending the Pfizer pro-vaccine for teenagers.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 36 of 55
+9.3.3 Inconsistent regulatory handling of signals for clotting disorders
+It is therefore difficult to reconcile the following.
+• On the one hand, just a few cases of TTS, an intuitively detected reporting imbalance, no formal statistical
+analysis, and no establishment of causality elicited regulatory actions and an acknowledgement of the
+importance of monitoring other clotting disturbances.
+• On the other hand, by ACIP’s second meeting on April 23, 2021, the number of reports of PE far exceeded
+(Pfizer 129, Moderna 155, Janssen 49) the number of action-triggering cases of CVST with
+thrombocytopenia (Supplemental Table 13). Further, EB05>2 and canonical PRR signals for PE were
+available about 12 weeks earlier for the Pfizer and Moderna products, and had just appeared for the
+Janssen pro-vaccine, despite its only recent authorization on February 27 (Figure 8). It is noteworthy that
+these signals, evident in the Oracle dataset and derived from US and foreign reports, appeared to go
+unnoticed by regulators, despite their willingness to allow foreign-sourced reports about a related vaccine
+(AstraZeneca) to influence regulatory actions regarding the Janssen product.
+Regardless of whether or not these signals would be dismissed after triage, their existence was material
+to the discussion as well as to a subsequent ACIP meeting on May 12, 2021 along with the aforementioned
+signals or borderline signals from CMS and VSD data, respectively.
+9.3.4 Persistent imbalance of Janssen signals lacking regulatory action
+The imbalance of Janssen EBGM signals in the FOIA dataset was evident before ACIP’s second emergency
+meeting on April 23, 2021 and persisted over the next 14 months (Figure 3). Seventeen ACIP or VRBPAC meetings
+afforded opportunities for regulators to report their findings publicly, in the “spirit of transparency.” (63) as to
+whether this imbalance reflected a truly greater use-normalized abundance of signals associated with the Janssen
+product, or a disproportionate truancy of signals associated with the Pfizer and Moderna products.
+Aside from the relevance of this imbalance to ACIP discussions on the full approval of the Pfizer (August 2021)
+and Moderna (February 2022) products, three of these occasions were particularly germane to the Janssen
+product. Rather than considering whether the increased risk for the Janssen product was so great as to warrant
+revocation of its EUA, any discussion of risk excluded the EBDM data.
+The first of these occasions was a VRBPAC meeting (October 15, 2021), which considered Janssen’s booster
+dose. Janssen’s briefing document (93) noted imbalances for embolic and thrombotic events (p56/117), specifically
+PE and DVT (p71/117). Noting their investigation of VAERS signals (p80/117), Janssen concluded that their data
+“support a favorable benefit-risk profile” for their booster dose. In an addendum, Janssen described real-world
+data indicating what they characterized (p7/10) as “slightly increased” risks of PE of 1.3 or 1.4-1.5 under different
+study designs. They reported no increased risk for DVT and a “slightly increased” relative risk of 1.17-1.33 for a
+composite VTE endpoint. Janssen concluded that “Based on the review of the totality of data there is insufficient
+evidence to establish a causal relationship between Ad26.COV2.S and thromboembolic events.”
+The reliability of this conclusion is questionable since FDA had indicated that in its review (94) of the Janssen
+submission, it had not verified Janssen’s analyses, disclosed in 22 out of 26 data tables or figures. This included
+(slide 35) reports of thrombosis, PE, and venous thrombosis, and the annotation “Narratives of SAEs were not
+submitted by the Sponsor (which limits FDA’s assessment of causal relationship).” Further, FDA acknowledged
+(slide 43) that interpretation of safety data was limited by the small sample size and short follow-up.
+FDA’s briefing document (95) and safety presentation (96) reported that “Post-authorization surveillance of VAERS
+has identified a potential emerging safety concern for thromboembolic events (TEEs) with normal platelet counts,”
+and noted a risk assessment by the EMA regarding VTE (p14/54). FDA further noted a signal for Immune
+Thrombocytopenia, but reported (slide 12 in (96)) finding no DVT or PE signals from near real-time surveillance
+within the BEST system. Given these acknowledgments, and FDA’s admittedly limited review of Janssen’s
+submission, there was a heightened need to disclose to VRBPAC members the material EBDM analyses from the
+FOIA dataset, given that they were asked to vote on whether “available data support the safety and effectiveness
+of Janssen COVID-19 Vaccine for use under EUA as a booster dose…” (emphasis added).
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 37 of 55
+On the second of these occasions, an ACIP meeting (October 21, 2021) to consider the Janssen booster dose,
+discussion of the EBGM signal imbalance was absent from CDC’s safety presentations (97) and the Evidence to
+Recommendation Framework. (98)
+Lastly, the imbalance was not raised at the ACIP meeting of December 16, 2021 meeting to discuss policy options
+following FDA’s addition of a contraindication for the Janssen product regarding TTS. The EBGM signal imbalance
+was again absent from CDC’s Risk/ Benefit assessment (99) whose proposed policy options included a CDC
+recommendation (slide 50) against the use of the Janssen product “for all persons.”
+9.3.5 Implications of regulatory inaction regarding Janssen signal imbalance
+Other analyses have described a diversity of VAERS signals associated with all three pro-vaccines, including
+thrombo-embolic events over similar periods. Using data to April 30, 2021, Yan et al. (100) calculated Reporting
+Odds Ratios, a metric related to PRR. Likewise, Montano calculated Risk Ratios for VAERS (to October 10, 2021)
+and European data (to October 18, 2021). We previously noted (101) that there were many other signals
+associated with all three COVID-19 pro-vaccines that warranted investigation and action at least as urgently as
+TTS associated with the Janssen product.
+Our findings suggest that the EBGM signal imbalance in the FOIA dataset reflects both a truly greater use-
+normalized abundance of signals associated with the Janssen product (4.8, 8.8-fold), and a disproportionate
+truancy (26, 11-fold) of signals associated with the Pfizer and Moderna products, respectively. This imbalance
+warrants regulatory action at least as extensive and transparent as those executed for TTS, the correction of
+deficiencies in data handling and interpretation, and addressing the consequences of the safety signals
+themselves. One notable example of a signal warranting special attention would be the signal for death (n=17)
+associated with the Janssen pro-vaccine in the FOIA dataset (Supplemental Table 2).
+9.4 Did regulators dismiss the value of DSA?
+Implicit in the inclusion of DSA methods in the VAERS standard operating procedure for COVID-19 vaccines, (40)
+and the Federal expenditure on them, is the acceptance that these methods are valuable pharmacovigilance tools.
+However, these methods are seldom mentioned or integrated into discussions of safety at ACIP or VRBPAC
+meetings or in documents released under FOIA or Senate subpoena (e.g. Document 8 of (74)).
+Indeed, although noting comments ascribing some value to EBDM, a VaST report (March 29, 2021) recorded that
+“[m]ost members felt that proportional ratio would not be helpful due to the nature of the Covid-19 vaccination
+program” (p7/202 in Document 8 of (74)). Only limited mention of DSA has been found so far. (pp41 & 189/194 in
+Document 11; pp10, 79, 94, 174 in Document 12 of (74); slides 12 and 26 of (16))
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 38 of 55
+Table 13: Summary of deficiencies in the FOIA dataset
+Description Consequence Note
+PRR Analyses
+Janssen data missing Unable to make between-vaccine and
+between-threshold criteria comparisons
+No separate analyses provided for Pfizer and
+Moderna: analyses
+Unable to analyze PRRs for each pro-vaccine
+separately
+Limited date range supplied Unable to compare the time dependence of
+signal generation with EBGM data
+Foreign-originating VAERS reports not included. Although signals should be stratified by
+originating location, foreign-originating cases
+make a valuable contribution to the “totality of
+data” essential for an “early warning system.
+Canonical EVANS PRR arbitrarily set at 2.
+Ignores “alternative” criteria described in the
+original paper. (31)
+Statistically and clinically meaningful signals
+may be missed. Use of a threshold of 2
+constitutes filtering.
+General
+comment on
+VAERS SOP
+Use of chi-squared value in canonical criteria
+based on empirical considerations.
+Method should be standardized using a
+confidence interval-based method, as
+proposed in the original paper.(31)
+General
+comment on
+method
+90% intervals are used in EBDM, and CDC
+reports use of 95% intervals.
+Intervals should be standardized across
+methods.
+General
+comment on
+method
+Data not corrected for masking Signals may be masked by many AE reports
+for other COVID-19 vaccines (38)
+Delayed FOIA disclosure Impedes timely analysis by the public
+Stratification is inconsistent with EBGM
+stratification
+Impedes the “totality of evidence”
+assessment of adverse event signals
+PRR analysis performed by a different agency
+(CDC) than the EBDM analysis (FDA)
+1. Impedes the “totality of evidence”
+assessment of adverse event signals
+2. Ineffective and inefficient use of public
+resources
+Unknown if analyses have been performed on
+groups of related events, e.g. thromboembolic
+events, cancer-related events, etc.
+The same signal may be reflected in multiple
+Preferred Terms
+Background info
+to FOIA dataset
+EBGM Analyses
+Threshold set at 2 without justification. Statistically and clinically meaningful signals
+may be missed. Use of a threshold of 2
+constitutes filtering.
+General
+comment on
+VAERS SOP
+Data not corrected for masking, despite
+apparent availability of RGPS method to FDA.
+Signals may be masked by high rates of other
+COVID-19 vaccines (38)
+Data supplied as poor-quality PDF-embedded
+text, not in spreadsheet form. Inconsistent
+format
+1. Possible errors in data extraction
+2. Inability to perform quantitative analysis
+Data appear missing for 10 of the expected 79
+weekly reports
+Missing data impedes reliable analysis
+Foreign-originating VAERS reports not included. Although signals should be stratified by
+originating location, foreign-originating cases
+make a valuable contribution to the “totality of
+data” essential for an “early warning system.
+Delayed FOIA disclosure Impedes timely analysis by the public
+PRR analysis performed by a different agency
+(CDC) than the EBDM analysis (FDA)
+1. Impedes “totality of evidence”
+assessment of adverse event signals
+2. Ineffective and inefficient use of public
+resources
+Unknown if analyses have been performed on
+groups of related events, e.g. thromboembolic
+events, cancer-related events, etc.
+3. The same signal may be reflected in
+multiple Preferred Terms
+Background info
+to FOIA dataset
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 39 of 55
+Table 14: Summary of anomalies in the FOIA dataset
+Description Consequence/ Detail Note
+PRR Analyses
+The VIOLIN dataset contains 2837 canonical PRR
+signals for COVID-19 pro-vaccines (4/30/22).
+Adjusting for masking and threshold filtering yields
+between 6123 and 6889 signals
+Either these analyses were not done by CDC,
+or they were not disclosed under FOIA.
+8.5.3
+Table 11
+The number of signals for mRNA vaccines vs. non-
+COVID vaccines (878) is far lower than the 1904
+signals estimated from the VIOLIN dataset.
+This represents a 2.17 truancy factor and
+54% signal loss.
+8.4.2
+EBGM Analyses
+Disproportionate contribution of Janssen EBGM
+signals both by variety of type and category and by
+number (~88%) to total vs. Pfizer (~7%) and
+Moderna (~5%)
+Extremely high use-normalized signal excesses for
+Janssen over Pfizer (99x) and Moderna (123x) (as
+of 4/29/22)
+These fold excesses for EBGM signals in the
+FOIA dataset are inconsistent with excesses
+of Pfizer or Moderna over Janssen signals of:
+1. 4.8-8.8 fold (canonical PRR signals,
+VIOLIN dataset)
+2. 1.7 -3.8 fold (canonical PRR signals,
+Oracle dataset)
+3. 1 to 2.3 fold (EBGM signals, Oracle
+dataset)
+Table 1
+Table 5
+Table 8
+Supp Tab 13
+Apparent truancy of EB05>2 signals by 26- (96.1%
+Pfizer) and 11- (91.1% Moderna) fold.
+From alternative PRR criteria: the ratios are
+25- (Pfizer 96%) fold and 19.4 (Moderna
+94.7%) Table 5
+Large contribution of product use-related events for
+the Moderna (63.9%) and Pfizer (35.3%) compared
+with the Janssen (3%) pro-vaccine.
+Exacerbates the disproportionate excess of
+Janssen signals over Pfizer and Moderna.
+Supplemental
+Table 12
+Expected correlation of EBGM (FOIA dataset) vs.
+PRR signals (VIOLIN dataset) not present.
+Inconsistent with the correlation between
+PRR and EBGM signals found in the Oracle
+dataset.
+Figure 4
+Figure 5
+7/8 (87.5%) of EB05>2 EBGM signals detected in
+the Oracle dataset were missing in the FOIA
+dataset (p=0.02).
+EB05>2 signals missing for
+1. Myocarditis - Pfizer
+2. Bell’s palsy – Pfizer
+3. Tinnitus – Janssen
+4. Appendicitis – Pfizer, Moderna
+5. Pulmonary embolism – Pfizer, Moderna
+(present for Janssen)
+Supplemental
+Table 13, Table
+7
+Signals disproportionally missing from FOIA
+dataset for Pfizer > Moderna >> Janssen
+May partly account for the disproportional
+excess of signals in the FOIA dataset for
+Janssen over Pfizer and Moderna.
+FOIA dataset misses EBGM signals using the
+EB05>1 threshold present in the Oracle dataset
+for:
+1. Myocarditis - Moderna
+2. Pericarditis, Moderna, Pfizer
+3. Bell’s palsy – Moderna
+4. Tinnitus – Pfizer, Moderna
+5. Appendicitis – Janssen
+Arbitrary use of EB05>2 threshold (and not
+the EB05>1 threshold means that potentially
+important signals may be missed. Use of a
+threshold of 2 constitutes filtering.
+Supplemental
+Table 13
+An estimated 763 (range 487-1898, 85-93%)
+signals are missing from the FOIA dataset.
+Includes losses due to truancy, masking, and
+filtering. These represent largely
+uninvestigated potential risks FDA were
+required to consider.
+8.5.3
+Hematologic events (thrombo-embolic,
+coagulation) accounted for 30.1% of the signals for
+Janssen, but were absent from the AE signals
+associated with the Pfizer and Moderna pro-
+vaccines.
+There are a large number of PRR signals for
+hematologic events for both modRNA,
+products, although they are outnumbered by
+those for the Janssen product.
+Supplemental
+Tables 2 and 6
+Inconsistencies between FOIA, Oracle or VIOLIN
+datasets and FDA or CDC statements regarding
+safety signals
+Table 12
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 40 of 55
+10 DISCUSSION
+This study has revealed six main anomalies that challenge its reliability:
+• A disproportionate use-normalized excess of the number of EBGM signals for the Janssen over the Pfizer
+(123x) and Moderna (99x) pro-vaccines.
+• Lack of an expected correlation between the numbers of EBDM and PRR signals in the FOIA dataset
+suggests a disturbance of data integrity.
+• An apparent absence of 96% (Pfizer) and 91% (Moderna) in the FOIA dataset, representing truancy
+factors of 26 and 11, respectively. 87.5% (7/8) of EB05>2 signals detected in the Oracle dataset were
+absent from the FOIA dataset (p=0.02).
+• No adjustment appears to have been made for masking, which could account for 23-63% losses in the
+number of signals (Figure 6).
+• The EBGM and PRR thresholds were set at 2 instead of 1, filtering out 13-69% of signals.
+• The true excess of Janssen over Pfizer or Moderna signals is likely to be around 4.8, 8.8-fold, This
+anomaly should have warranted regulatory actions at least as extensive and transparent as those
+executed for Thrombosis with Thrombocytopenia Syndrome (TTS) associated with the Janssen product
+(9.3).
+After correcting for biases due to signal truancy, filtering, and masking, these anomalies represent aggregate
+losses as of April 29, 2022, in the FOIA dataset of 763 (range 487-1898, 86% loss, range 85-93%) EBDM signals
+(Figure 9, section 8.5.3). Given the strong linear correlations found in the Oracle dataset (Figure 5) between the
+number of PRR signals and Empirical Bayesian signals, the loss of signals could be as high as 2713 (canonical
+PRR) to 6765 (demasked alternative criteria PRR signals) found by direct examination of the VIOLIN database,
+but not reported or retrieved by CDC.
+Figure 9: Summary of EBDM estimated lost signals in FOA dataset as of 4/29/22
+The total number of signals (unique AE-vaccine pairs with a statistical association) is shown in the boxes above each
+bar, each representing a additional level of bias correction. As of April 29, 2022, there were 124 EBDM signals in the
+FOIA dataset. Using similarly dated CDC vaccine use data and PRR data from the VIOLIN database, the number of
+signals expected after accounting for truancy (420), masking (770), and filtering (887) were calculated. Additionally,
+there were 580 borderline signals, with PRR >1, lower 5% CI <1, or PRR <1, lower 5% CI >1, from which an unknown
+number of bona fide signals may be discoverable. (See Supplemental Table 18 for source, and a similar graph that
+utilizes Oracle data).
+Failure to adjust for masking and filtering are incompatible with the “Enhanced surveillance” of Adverse Events
+Special Interest (AESI) and the representation of VAERS as “the nation’s early warning system for vaccine safety.”
+Additionally, the PRR component of the FOIA dataset lacked separate analyses for Pfizer and Moderna products
+or any analysis for the Janssen product. The limited analysis for the mRNA vaccines aggregated against non-
+COVID vaccines appears deficient in 1026 (54%) PRR signals.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 41 of 55
+10.1 Deficiencies in DSA methodology applied to vaccine safety
+10.1.1 The absurdity of failing to adjust for masking
+In estimating the effect of masking in the FOIA and VIOLIN datasets, we have only addressed one form of masking,
+namely (38) where “signals for a vaccine of interest are hidden by the presence of other reported vaccines.”
+A second form of masking occurs where the PRR signal for an otherwise more frequent target AE is attenuated
+because the number of separate AE types reported for each unique VAERS case report for the target vaccine is
+greater than for its comparators. This form of masking is unavoidable, according to the original description of the
+PRR method (31) and the VAERS Standard Operating Procedure for COVID-19 vaccines.(40) which defines the
+PRR in terms of the number of “reactions of interest” and “all other reactions.” This problem is avoided by using
+the number of unique VAERS case reports, rather than the total number of unique AEs reported, to calculate the
+PRR. To do otherwise would be absurd, and indeed, the Oracle and VIOLIN datasets used this improved method.
+Further, it is the method used by CDC in the PRR portion of the FOIA dataset, despite not complying with the
+standard operating procedure.(40)
+CDC’s avoidance of this second form of masking intensifies the question as to why regulators failed to avoid the
+first kind of masking by availing themselves of relatively simple spreadsheet calculations or features of the Empirica
+software it was using. The MHRA, also using Empirica software, does not appear to be availing itself of its
+demasking features.(54)
+A third form of uncorrected masking occurs if, despite an increase in the number of cases of the target AE, there
+is a greater increase in the number of other AEs experienced by different patients, without an increase in the
+number of events reported per case.
+Related to the issue of masking is the choice of comparator vaccine, as differences between its usage pattern and
+that of the target vaccine will lead to confounding. The VAERS SOP (p16/43 in (40)) required CDC to “apply
+appropriate comparator vaccines (e.g., adjuvanted vaccines like Shingrix and/or Fluad for adjuvanted COVID-19
+vaccines) and adjust for severity and age distributions where applicable.” It is unclear if this was done.
+10.1.2 PRR>2 and EB05>2 thresholds constitute filtering antithetical to “early warning” and “enhanced
+surveillance”
+A presentation given by an FDA scientist to VaST on April 5, 2021, noted that “Technically, any EBGM value above
+one indicates disproportionate reporting” (p47/202 in Document 8 of (74)). Despite this, the presentation noted, a
+“standard” threshold of two was used in FDA’s EBDM analyses, as reflected in the VAERS SOP.(40)
+As we noted earlier (8.2.1), the use of the higher threshold does not change whether or not there is a statistical
+association for a particular vaccine-AE pair, it merely imposes a filtering condition, somewhat analogous to a “high-
+pass” filter used in electronics.
+This distinction is an important one for regulatory transparency in the description of the totality of safety data. If,
+on the one hand, a statistical signal is only truly declared at a threshold of two, the enumeration of signals meeting
+this threshold fairly represents the universe of potential safety issues for a particular drug. If, on the other hand,
+the higher threshold is applied as a filter, this fact must be disclosed in any consideration of potential safety issues,
+else it would appear as an attempt to misrepresent the statistical axiom that a statistical association occurs once
+the null of one is crossed.
+Using a threshold of two has become a widespread practice. The main justification appears to be the reduction of
+noise. According to a paper cited in the background materials accompanying the FOIA disclosure (35) and co-
+authored by one of the FDA-affiliated co-authors (Dr. Szarfman) in the paper by Harpaz et al., (38)
+“using the criterion of EB05 greater than 2 ensures with a high probability that, regardless of the count
+size, the particular drug-event combination occurs in the database at least twice as often as expected
+under the assumption of randomly paired drug and event reports. The EB05 gives some assurance that
+potential signals are unlikely to be noise.”
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 42 of 55
+Accordingly, a high threshold serves as a surrogate for further investigation of signals to determine whether or not
+causality can be declared.
+Setting a threshold necessitates a trade-off between ‘‘generating too many false positive signals if the threshold is
+too low or missing true signals if this threshold is too high.” (cited by (39)) Thus, as recognized by Szarfman et al.
+“using an EB05 greater than 2 as a definition of a signal for all analyses is by no means always optimal.” Szarfman
+et al., proffer:
+“[The] threshold should be chosen by the analyst depending on the severity of the event of interest or its
+clinical or public health importance.”
+This sentiment is echoed by other FDA statisticians responsible for an open-source version of the EBDM software
+who note (Vignette 4 in (102,103)) that the “value of 2 is arbitrarily chosen, and depends on the context.”
+The consideration of the “clinical or public health importance” certainly pertains to the COVID-19 pro-vaccines.
+Further, Szarfman et al. (35) advise:
+“When exploring severe adverse events (such as fatal outcomes), it might be appropriate to use the whole
+range of EBGM signal scores (positive and negative [EBGM > 0]) and confidence limits…”
+Despite effectively constituting a filter, the threshold of two for PRR analyses seems to have become canonized
+for more empirical reasons. As described earlier (8.2.1), in their original paper, Evans et al. (31) were not rigid in
+defining what became accepted as their “canonical” criteria. (38) Implicit in these criteria (PRR>2, chi-squared >4,
+N cases > 3) is the ability to detect signals involving low case counts, an assumption reinforced by the use of
+Yates’s correction, typically used when at least one of the input values is less than five. Thus, the canonical Evans
+PRR criteria appear to have been set empirically, such that with few AE cases, only PRR values exceeding 2
+provide sufficient power to detect statistically significant (p<0.05) increases (associations) over the expected null
+value of 1 and reflected in a chi-squared value of approximately 4. Using a p-value, or confidence interval as the
+significance component of the signal criterion (10.1.4) avoids the problem of filtering by fixing the threshold at 2.
+In the VIOLIN dataset, there were 5844 AE types with more than 20 case reports, and 2432 events with more than
+100 case reports. These frequencies comfortably exceed those for which the canonical Evans criteria would need
+to be strictly applied. It is readily apparent that more AE reports provide sufficient power to detect smaller increases
+in the PRR for a particular AE. For some AEs, (e.g. death), increases of just a few percent would be clinically and
+epidemiologically meaningful.
+There are notable exceptions to the widespread practice of using a threshold of two. In their paper providing the
+Oracle dataset, Harpaz et al. (38) use the EB05>1 threshold. The minutes of the April 5, 2021, VaST meeting
+noted that on a certain date, EB05 values for death, myocarditis, and facial paresis were less than 1, indicating
+that for some purposes, the value of 1 was considered an important threshold. A similar threshold was also applied
+to the Reporting Odds Ratio in a publication whose authors included the originator of the PRR method. (104)
+In sum, given the rapid introduction of a novel class of drugs under emergency authorization, filtering signals by
+applying a threshold of two is:
+• incompatible with the VAERS SOP (40) that describes conducting “Enhanced surveillance” of “adverse
+events of special interest” (AESI)
+• incompatible with the representation that “VAERS is the nation’s early warning system for vaccine safety.”
+(15-18)
+• incompatible with the “hypothesis-generating” objective of the EBDM analyses, as pointed out in the
+background materials provided with the FOIA dataset.
+• mostly superfluous to the noise reduction already accomplished by EBDM
+It therefore behooves investigators and regulators to not only justify the application of a threshold filter to DSA
+criteria, but to report its use along with the enumeration of unfiltered signals (i.e. meeting PPR >1 and EB05>1)
+ab initio.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 43 of 55
+10.1.3 “Inquisitorial triage bias”
+FDA has referred to the PRR and EBDM methodologies as forms of data mining (40) which it defines (56) as the
+“systematic examination of the reported adverse events by using statistical or mathematical tools.” FDA explains
+that data mining “can provide additional information about the existence of an excess of adverse events reported
+for a product.” (56) “Inquisitorial triage bias” is introduced in the triage of DSA signals by mining for false positives,
+without equally zealous mining of “borderline” signals (false negatives among borderline threshold ratios whose
+confidence intervals cross the null). Such a bias is incompatible with the “enhanced surveillance” and “early
+warning system” goals of VAERS cited in the Introduction. Mining within borderline cases is essential to identify
+falsely negative or emerging signals.
+Borderline signals in the Oracle dataset contributed an additional 17 to 21% to the number of signals possibly
+meeting the PRR, EB05 or ER05 criteria (Supplemental Table 13). In the VIOLIN dataset (Supplemental Table 5D),
+this contribution was between 87% and 181% (threshold of 2) and 65-84% (threshold 1).
+Another source of potential signals is in the AEs for which the case count is >2, but for which the case count for
+comparator vaccines is zero, excluding them from consideration in the other analyses. In the VIOLIN dataset
+(Supplemental Table 22), there were 112 of these AEs (Pfizer 77, Moderna 34, Janssen 1).
+10.1.4 Selection of the “significance component” of the signal criterion
+There are limitations in declaring a PRR signal related to the selection of the significance component (i.e. a chi-
+squared value, a p-value, or a confidence interval) of the signal criteria. As described above (10.1.2), a chi-squared
+value of 4 appears to be an empirically set minimum value needed to provide sufficient power to detect PRR
+changes associated with low case counts. Since this is only an approximation, there will be a mismatch between
+the number of signals adjudicated by the canonical criteria and those that use a p-value calculated from a chi-
+squared value. Due to differences in the characteristics of the chi-squared and normal distributions, there is likely
+to be a further mismatch, especially with low case counts, in the number of signals generated using the chi-
+squared-derived p-value and a confidence interval based on the normal distribution.
+In addition to providing chi-squared values, the PRR component of the FOIA dataset provides the upper and lower
+bounds of the 95% confidence interval. It is unknown if this interval informed any regulatory decision. This interval
+will yield fewer signals than the one used in the EBDM method, namely, the lower 5th percentile of the EBGM
+distribution (38) referred to by FDA as the lower bound of the 90% confidence interval. (40)
+Given the variable selection of the significance component of the PRR criteria by FDA, CDC, and an NIH-funded
+database, the opportunity for confusion can be avoided by standardization. It seems that replacing the chi-squared-
+based canonical PRR criteria with a confidence interval-based method, as others have done,(105) would provide
+the most flexibility and consistency with Bayesian methods.
+10.1.5 Shifting definitions of “signal.” Is a signal of a signal a signal or a suspected adverse reaction?
+Although a signal of statistical association (i.e. a PRR or EBGM value meeting signaling criteria) requires further
+investigation to establish causality, FDA sought to widen the distinction between signal and causality by stating in
+the FOIA disclosure that “[t]he [EBDM] method is hypothesis-generating. Statistical signal of disproportional
+reporting (SSDR) ≠ safety signal.” Such a distinction would render “true” a report that certain safety signals had
+not been detected, without revealing the existence of signals of statistical association. This, at best, disingenuous
+distinction is not borne out practically in the use of the word “signal.”
+The pharmacovigilance literature attempts to discern between a “signal of disproportionate reporting” (SDR) and
+a “signal of suspected causality” (SSC). However, as can be inferred from references to “signals” in presentations
+by regulators, (40) this distinction is seldom made. (65,69) The term “safety signal” at best left undefined, but often
+tied to the findings of statistical signals without further qualification. (e.g. slide 23 in (15), slide 20 in (73), (106)
+Both types of signals, SDR and SSC, are forms of “safety signal,” the former being a precursor for the latter. As
+understood by Harpaz et al., (38) and from the context of work that includes the VSD lead.(70) “safety signal”
+represents a “possible causal relationship between an AE and a product, of which the relationship is unknown or
+incompletely documented.” (38) Accordingly, paralleling its use by CDC (slide 31 in (17)), we have used the term
+“safety signal” generically to include both SDR and SSC.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 44 of 55
+Perhaps the clearest acknowledgement that a statistical signal is considered a “safety signal” comes from the
+VAERS SOP: “MedDRA terms identified as safety signals due to elevated PRR and/or a statistically significant
+finding on data mining will be reviewed as appropriate.” (p18/43, emphasis added)(40)
+Regardless of the degree of triage or confirmation, a statistical signal is in essence a “suspected adverse reaction”
+(SAR) which, in the context of Investigational New Drugs, (107) means “any adverse event for which there is a
+reasonable possibility that the drug caused the adverse event. For the purposes of IND safety reporting,
+“reasonable possibility” means there is evidence to suggest [not establish] a causal relationship between the drug
+and the adverse event.”
+10.1.6 Other DSA improvements: surrogate estimates of exposure when coverage rates are known
+Although DSA of spontaneously reported data (e.g. VAERS) is considered an important tool in pharmacovigilance,
+there is wide agreement, as evinced by a paper authored by British and European regulators, along with Astra-
+Zeneca and Pfizer scientists, that they "are not easily interpretable in terms of clinical impact." (39) The paper
+further noted that "calculation of PRRs […] should not replace nor delay the performance of formal epidemiological
+studies." (39)
+It is for this, and other known shortcomings of VAERS, that the recently confirmed FDA Commissioner announced
+a transition away from VAERS towards Health Information Exchanges (HIEs) that access real-world data contained
+in electronic health records (EHR).(108) This is not without its own challenges, including public accessibility and
+transparency, and evidence that EHRs may fail to capture vaccine use adequately. (109) Limitations of EHR data,
+for example, in the comparison of myocarditis rates in vaccinated and SARS-CoV-2 infected cohorts, were noted
+in a paper authored, in his former capacity, by CBER Director Prasad.(110) Further, existing EHR or database-
+based systems monitor a limited number of events – 23 for VSD (69) and 17 in BEST. (111) VSD has lagged
+behind other systems in identifying myocarditis, PE, and stroke signals (9.1.2 , 9.1.3, 9.1.6).
+There is therefore value in improving VAERS and related systems to provide an orthogonal view to that obtained
+from EHRs, and yielding analyses more rapid and reliable than at present. In the initial phases of vaccine
+introduction, the number of doses per person is fixed, with a known number of doses given to a known number of
+people (vaccine coverage). Hence, replacing surrogate measures of exposure with direct measures of vaccine
+coverage already available to CDC provides a more accurate incidence rate, inter alia, because individual signals
+are not diluted by a total number of events for that drug that is disproportionately greater than for comparator drugs.
+Adopting this approach, used occasionally by FDA and CDC (61,112,113) and others,(114) we obtained
+“Normalized Event Ratio” (NER) signals referenced against influenza vaccine (115,116) that were more intense
+than their PRR counterparts. For example, the NER for death (all COVID-19 pro-vaccines) was 176 (by person
+vaccinated) and 97.5 (by number of doses) against a PRR of 5.2. For coagulopathy, the NER (by dose) was 276
+against a PRR (by number of events) of 12.8.(116)
+However, in the case of COVID-19 vaccines, booster dosing complicated the estimation of an incidence rate
+denominator, necessitating the use of DSA methods. Moreover, the advent of heterologous (“mix-and-match”)
+boosting further confounded safety data analysis.
+10.2 Limitations
+A strength of our study is that it utilizes data from two well-pedigreed sources associated with NIH and FDA. (38,45)
+Our study has several limitations, described in the text, but largely related to inherent deficiencies in the quality
+and extent of the FOIA dataset (Table 13). Accordingly, verification of our analysis, with age and gender
+stratification, awaits full disclosure of EBGM and PRR signals by regulators. Although supported by an analysis
+based on the number of masked associations found by Harpaz et al. in VAERS. our finding of truant EBDM signals
+from the FOIA dataset awaits full disclosure of AE and vaccine coverage data to determine if this finding is
+generalizable beyond the seven AEs studied by Harpaz et al. Such disclosure will enable more accurate time-
+stratified estimation of the number of masked and otherwise concealed signals.
+A general limitation is reflected in the background information accompanying the FOIA dataset relating to MedDRA
+constraints, namely that “Signal X can be reflected in multiple PTs [Preferred Terms] that individually do not reach
+alert threshold.” It is not known what analyses were performed by FDA or CDC on groups of related terms, such
+as thromboembolic events, cancer-related events, etc.
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 45 of 55
+11 CONCLUSION
+CDC has stated (17) that the “U.S. vaccine safety monitoring system is able to rapidly detect rare adverse events
+following vaccination and quickly assess safety signals” and that “VAERS is the nation’s early warning system for
+vaccine safety.” (15-18) Such attributes were critical to monitor the safety of arguably the most complicated medical
+products ever produced, authorized for emergency use after an accelerated research program whose development
+was characterized by the boast “We flew the aeroplane while we were still building it.” (117)
+However, regulators failed to recognize imbalances in the analysis of EBGM signals. They failed to act on a greater
+abundance of signals associated with the Janssen product and a truancy of signals associated with the Pfizer and
+Moderna products. Further, inappropriate threshold filtering, a failure to correct for masking, and an inquisitorial
+triage bias prevented the identification of signals.
+Our primary finding, suggesting 763 missing signals in the FOIA dataset as of 4/29/22 is based on the correction
+of truancy, masking, and filtering biases. The robustness of this correction stems from the almost identically dated
+CDC and VIOLIN data used to calculate the correction factors, the completeness and size of the VIOLIN dataset,
+and the strong correlations between PRR and EBDM signal types derived from a well-pedigreed Oracle dataset.
+The estimate is supported by those obtained using dataset-date combinations. It is conservatively lower than that
+obtained by direct enumeration from the VIOLIN dataset of between 2713 and 6765 lost signals, and still lower
+than the 24971 US and foreign VAERS signals (total) reported by Harpaz et al.
+Along with inconsistencies with statements made by regulators (9.1) and actions related to the Janssen product
+(9.3), our findings signal a failure to integrate the totality of safety data in the calculation of “potential risk.”
+Suppressing 86% of Bayesian signals suppressed 86% of suspected adverse reactions, still uninvestigated
+“potential risks” that the FDA was required to consider, and impugning authorization, approval, and injury
+compensation decisions concerning the COVID-19 pro-vaccines (9.2). Most notable are those decisions relating
+to the safety of the Janssen product and the full approval of the Pfizer and Moderna products.
+This compromise amplifies the erosion of trust in public health institutions, exacerbated by COVID-19
+vaccination.(118) Despite their limitations, our findings warrant full disclosure of vaccine safety data and an
+investigation into inadequate signal detection and regulatory oversight. This must be consistent with the CDC’s
+commitment to “open and transparent communication of vaccine safety information.”(17) Possibly a harbinger for
+reform is the recent statement by FDA (84) "The history of vaccine-associated myocarditis reflects missed
+opportunities for safety mitigation."
+12 ACKNOWLEDGMENTS
+I wish to thank Ms. Marjorie Roswell for her assistance in data extraction and production of graphics, and Tom
+Yengst and Lizabeth Willner for their assistance in obtaining historical VAERS data. I also wish to thank several
+colleagues for their comments on this work, and the many collaborators on previous works, which have formed
+the foundation for this one.
+13 REVISION HISTORY
+083125
+090125 Legend added for Figure 9
+090525 Citations and associated text added (12,53,60,68)
+Version number removed, and replaced exclusively with date (MMDDYY)
+Keywords added
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 46 of 55
+14 GLOSSARY
+ACIP Advisory Committee on Immunization Practices (CDC)
+AE Adverse event
+AESI Adverse Event of Special Interest
+AMI Acute myocardial infarction
+AR Adverse reaction
+CBER Center for Biologics Evaluation and Research
+CDC Centers for Disease Control and Prevention
+CI Confidence interval
+COVID-19 Coronavirus disease 2019
+DIS Disseminated intravascular coagulation
+DSA Disproportionality Signal Analysis
+DVT Deep venous thrombosis
+EBDM Empirical Bayesian Data Mining
+EBGM Empirical Bayesian Geometric Mean
+EMA European Medicines Agency
+EUA Emergency Use Authorization
+FDA Food and Drug Administration
+GM Geometric mean
+HHS Health and Human Services
+IQR Interquartile range
+MedDRA Medical Dictionary for Regulatory Activities
+MHRA Medicines and Healthcare products Regulatory Agency (UK)
+NIH National Institutes of Health
+PE Pulmonary embolism
+PRR Proportional Reporting Ratio
+PT Preferred term
+RUR Relative Use Ratio. The ratio of either:
+(By dose): The number of Pfizer of Moderna to Janssen doses administered by a certain date.
+(By people): The number of people receiving at least one dose of vaccine by a certain date.
+SER Signal Excess Ratio. The ratio of the number of Janssen to Pfizer or Moderna signals,
+unadjusted for usage.
+TTS Thrombosis with thrombocytopenia syndrome
+UNSER Use Normalized Signal Excess Ratio
+VaST ACIP’s Vaccine Safety Technical (VaST) Work Group
+VAERS Vaccine Adverse Event Reporting System
+VE Vaccine efficacy
+VRBPAC Vaccines and Related Biological Products Advisory Committee (FDA)
+VSD Vaccine Safety Datalink
+VTE Venous thromboembolism
+15 READUS‑PV CHECKLIST
+The following checklist has been completed: Reporting of a Disproportionality Analysis for Drug Safety Signal
+Detection Using Individual Case Safety Reports in PharmacoVigilance (READUS‑PV) (24)
+Section and topic Item
+# Checklist item Location where
+item is reported
+Title
+1a
+If disproportionality analyses are a prominent component of
+the published study, the study should be identified as a
+“disproportionality analysis”. The type of data and name of
+the database(s) should be specified.
+Title
+1b Report the name of adverse event(s) and/or drug(s) under
+study, when applicable.
+Title
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 47 of 55
+Introduction
+Background 2a
+Describe the drug(s) and its utilization, the nature of the
+adverse event(s) under study and its frequency, and the
+existing knowledge on the drug-event combination.
+Section 6.1
+2b
+Specify the rationale for performing the analysis, e.g., as
+part of routine pharmacovigilance, to investigate an overall
+safety profile, or to assess a pre-specified hypothesis.
+Section 6.1
+2c Explain why ICSR databases and disproportionality analysis
+are suitable to fill the knowledge gap.
+Section 6.1
+Objectives 3
+State specific objectives, identifying the adverse event(s),
+the drug(s), and the reference group, including any pre-
+specified hypothesis, if applicable.
+Section 6.2
+Methods
+Study design 4a Identify the study (i.e., “disproportionality analysis”) and the
+type of data used (e.g., “individual case safety reports”).
+Section 7
+4b
+Provide an outline of the entire study design, including
+primary and sensitivity analyses performed, and other
+designs such as case-by-case analysis or literature review.
+Section 7
+Data description,
+access, and pre-
+processing 5a
+Specify the name of the database(s), the database(s)
+custodian, and the coverage. Specify the type/number of
+drugs included within the database and the thesaurus,
+taxonomies, or ontologies used for coding drugs and events.
+7.1.1, 7.1.2, 7.1.3
+5b
+Specify the extraction dates and describe and justify all
+choices used for data pre-processing, including any data
+transformation or exclusion, if appropriate.
+7.1.1, 7.1.2, 7.1.3
+Variables
+definition 6a Describe the study population, including any restriction. 7.1.1, 7.1.2, 7.1.3
+6b Describe the nature and the meaning of key variables
+assessed in the work.
+throughout
+6c
+Specify and justify any grouping of drugs or events. For
+drugs, specify and justify whether active ingredients/trade
+names/salts were considered and/or the selected role.
+8.1.2, 8.4.2, 9.1.3,
+9.1.4
+6d Describe any additional data source used, the type of data,
+and how they interact with ICSRs.
+8.1.3
+Statistical
+methods 7a
+Present any descriptive analysis performed, specifying
+variables investigated, statistical tests, and significance
+thresholds.
+8
+7b
+Describe the measure(s) selected for the disproportionality
+analysis including any threshold used to identify signals of
+disproportionate reporting. Explain the reason for this choice
+if applicable.
+8
+7c
+Clearly describe any sensitivity analysis and any tool to
+control confounding, including any restriction, subgroup,
+stratification, adjustment, or interaction.
+8
+7d
+Specify the variables and methods used for the case-by-
+case analysis, including any algorithm or criteria used to
+assess causality, if performed.
+NA
+7e Specify any statistical methods used for other data sources. NA
+Results
+Participants 8a Specify the number of individual case safety reports
+included at each stage, including reasons for exclusion.
+NA
+8b
+Provide key demographic and clinical characteristics of
+cases, if possible comparing cases with any appropriate
+reference group.
+NA
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 48 of 55
+Disproportionality
+analysis
+9 Present all results including confidence intervals. Present
+also results of sensitivity analyses, if performed.
+CI’s medians and
+range presented
+as appropriate
+Case-by-case 10 Present the case-by-case analysis of key variables. Present
+the causality analysis assessment, if applicable.
+NA
+Discussion
+Key results 11
+Discuss key results with reference to study objectives and
+contextualize them within the current literature and other
+consulted sources. Clearly discriminate between expected
+reactions and emerging safety signals.
+10,
+External validity 12a Discuss the external validity of the results to the general
+population.
+10.2
+12b Discuss the potential relevance of results in clinical practice 9.1, 10.1
+12c Propose further study designs if applicable 10.1.4, 10.1.6
+Limitations 13
+Present general limitations, making clear that
+disproportionality analysis alone cannot prove causation or
+measure incidence, and specific limitations, including
+confounding and reporting bias and efforts to mitigate them.
+10.2, 6.1
+Declarations
+14a
+Provide the source of funding/sponsorship and the role of the
+funders/sponsors for the present study and for any original
+study on which the present article is based
+Title page
+14b
+Clearly identify potential commercial and intellectual
+conflicts of interest (e.g., link to any drug/event investigated,
+whether financial, legal action, or software used).
+Title page
+14c Declare any institutional approval needed or granted in the
+investigation.
+7.3
+14d
+Include a statement on data availability, code availability
+(including the version of the statistical software used), and
+protocol registration.
+Title page
+The READUS-PV checklist for abstracts
+Background 1a State the aim/rationale for performing the study. X
+1b Specify the adverse event(s) and/or the drug(s) under study, when applicable. X
+1c Specify the specific population or setting, when applicable. X
+Methods 2a Identify the study as a “disproportionality analysis” and specify the type of
+data used
+X
+2b Specify the name of the database(s) used and the type of access. X
+2c Specify the timeframe and geographical region, when applicable. X
+2d Specify the disproportionality measure(s) used and their statistical
+significance threshold(s).
+X
+2e Specify if a case-by-case analysis is performed. NA
+Results 3 Report main findings including their precision (e.g., 95% confidence intervals),
+together with a short summary of the case-by-case analysis.
+X
+Conclusion 4a Clearly report key conclusions. X
+4b Acknowledge that the disproportionality analysis is a hypothesis generating or
+refinement approach.
+X
+4c State the implications and clinical relevance of the findings. X
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 49 of 55
+16 LIST OF SUPPLEMENTAL SOURCES
+Supplemental Table 1: List of events that do not indicate an abnormality
+Supplemental Table 2: EBDM signals by event type and category in FOIA dataset
+Supplemental Table 3:
+3A: Relative COVID-19 vaccine use by dose and users from January 6, 2021 to June 29, 2022, based on CDC
+statistics
+3B: Ratios and normalized ratios of Pfizer or Moderna to Janssen signals, by doses, users
+Supplemental Table 4:
+4A: Numbers and relative occurrence (as SER) of AE reports made to VAERS for the COVID-19 pro-vaccines
+4B: Reconciling case and event counts in Oracle and VIOLIN datasets, with VAERS Wonder
+Supplemental Table 5:
+5A: Number of PRR Signals in VIOLIN dataset (4/30/22), Pearson chi-squared: Masked.Alt Evans based on p
+value
+5B: Number of PRR Signals in VIOLIN dataset (4/30/22), Yates chi-squared: Masked. Alt Evans based on p
+value
+5C: Number of PRR Signals in VIOLIN dataset (4/30/22), Pearson chi-squared: Demasked. Alt Evans based on
+p value
+5D: Number of PRR Signals in VIOLIN dataset (4/30/22), Yates chi-squared: Demasked. Alt Evans based on p
+value
+5E: Number of PRR signals derived from the VIOLIN dataset and ratio compared with Janssen
+Supplemental Table 6: PRR Hematologic Signals Extracted from VIOLIN database 4/30/22 (Yates chi-squared)
+Supplemental Table 7: Cancer Signals for mRNA vaccines in FOIA PRR dataset meeting canonical criteria
+Supplemental Table 8: PRR Cancer Signals Extracted from VIOLIN database 4/30/22 (Yates chi-squared)
+Supplemental Table 9: Listing of EBGM EB05 >2 signals by report date
+Supplemental Table 10: Shared Event Types in EBDM FOIA dataset
+Supplemental Table 11: Data for histograms: accumulation of EBDM signals by time
+Supplemental Table 12: Effect of masking and threshold filtering on the number of signals in the Oracle and
+VIOLIN datasets
+Supplemental Table 13: Analysis of Oracle dataset from Harpaz et al, 2022
+Supplemental Table 14: Figure 4 background data. Correlation between PRR (4/30/22 snapshot) and EBGM
+(4/29/22 snapshot) Signals Generated in VAERS (Yates chi squared)
+Supplemental Table 15: Figure 6 background data Correlation between PRR and EBGM Signals Generated in
+VAERS Oracle dataset
+Supplemental Table 16:
+16A: Background data for Table 10: Number of canonical PRR signals present in CDC datasets released under
+FOIA
+16B: Consolidated list of PRR signals in FOIA dataset (5-11, 12-17 and 18+ age classes) for 4/29/22
+Supplemental Table 17: Vaccine-AE pair listing for PRR Signals in VIOLIN dataset (4/30/22), Yates chi-squared
+Supplemental Table 18: Figure 9 source: Summary of EBDM estimated signal losses in FOA dataset as of
+4/29/22
+Supplemental Table 19: Canonical Signals in VIOLIN dataset for mRNA vacines combined vs. non-COVID
+vaccines
+Supplemental Table 20: Effect of threshold on EB05 signal generation from a MHRA dataset
+Supplemental Table 21: PRR Neurologic, or possibly neurologic signals extracted from VIOLIN database 4/30/22
+(Yates chi-squared)
+Supplemental Table 22: Listing of events in VIOLIN dataset (4/30/22) with >2 events in target product, but 0
+events in comparator
+Table 2 Source Categorized adverse event signals obtained by EBDM for COVID-19 pro-
+vaccines, in descending order of frequency
+Table 11 Source Aggregate effect of threshold and masking on loss of DSA signals
+Supplemental Figure 1A Correlation between PRR (4/30/22 snapshot) and EBGM (7/1/22 cumulative)
+Signals Generated in VAERS (Pearson chi squared)
+Supplemental Figure 1B Correlation between PRR (4/30/22 snapshot) and EBGM (7/1/22 cumulative)
+Signals Generated in VAERS (Yates chi squared)
+Supplemental Figure 2 Component and aggregate effects of masking and threshold filtering on signal
+generation in the Oracle and VIOLIN dataset, by pro-vaccine
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 50 of 55
+17 REFERENCES
+1. CDC. Vaccine Safety Systems. (Accessed May 19, 2025, at https://www.cdc.gov/vaccine-safety-
+systems/site.html.)
+2. FDA. COVID-19 Vaccine Safety Surveillance. 2025 January 10. (Accessed May 19, 2025, at
+http://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/covid-19-vaccine-safety-surveillance.)
+3. FDA. The Biologics Effectiveness and Safety (BEST) Initiative. (Accessed May 19, 2025, at
+https://bestinitiative.org/.)
+4. Wong HL, Tworkoski E, Ke Zhou C, et al. Surveillance of COVID-19 vaccine safety among elderly persons
+aged 65 years and older. Vaccine 2022. Epub 20221201 http://doi.org/10.1016/j.vaccine.2022.11.069
+5. CDC. About the Vaccine Safety Datalink (VSD). 2025 January 31. (Accessed May 19, 2025, at
+http://www.cdc.gov/vaccine-safety-systems/vsd/index.html.)
+6. CDC. COVID-19 Vaccine Pregnancy Registry. 2025 January 31. (Accessed May 19, 2025, at
+http://www.cdc.gov/vaccine-safety-systems/monitoring/covid-preg-reg.html.)
+7. CDC. About the Clinical Immunization Safety Assessment (CISA) Project. 2025 May 6. (Accessed May 19,
+2025, at http://www.cdc.gov/vaccine-safety-systems/hcp/cisa/index.html.)
+8. Wong HL, Hu M, Zhou CK, et al. Risk of myocarditis and pericarditis after the COVID-19 mRNA vaccination
+in the USA: a cohort study in claims databases. Lancet 2022; 399:2191-9. Epub 2022/06/13
+http://doi.org/10.1016/s0140-6736(22)00791-7
+9. CDC. About the Vaccine Adverse Event Reporting System (VAERS). 2024 August 7. (Accessed May 19,
+2025, at http://www.cdc.gov/vaccine-safety-systems/vaers/index.html.)
+10. Funk PR, Yogurtcu ON, Forshee RA, et al. Benefit-risk assessment of COVID-19 vaccine, mRNA
+(Comirnaty) for age 16-29 years. Vaccine 2022. Epub 2022/04/05 http://doi.org/10.1016/j.vaccine.2022.03.030
+11. Day B, Menschik D, Thompson D, et al. Reporting Rates for VAERS Death Reports Following COVID-19
+Vaccination, December 14, 2020-November 17, 2021. medRxiv 2022:2022.05.05.22274695. Epub May 7
+http://doi.org/10.1101/2022.05.05.22274695
+12. Benavides A, Seligmann H. More missing age data in VAERS COVID19 injection reports for severe than
+mild adverse events in children and women at peak fertility ages. ResearchGate 2023. Epub July
+http://doi.org/10.13140/RG.2.2.14464.00007
+13. UNITED STATES OF AMERICA, ex rel., Deborah Conrad vs. ROCHESTER REGIONAL HEALTH and
+UNITED MEMORIAL MEDICAL CENTER. UNITED STATES DISTRICT COURT FOR THE WESTERN DISTRICT
+OF NEW YORKCASE NO.: 1:23-cv-00438-JLS. at
+https://www.pacermonitor.com/public/case/52540203/United_States_of_America_v_Rochester_Regional_Health
+_et_al.)
+14. Marks P, Jernigan, D. VAERS: A Critical Part of the National Vaccine Safety System. 2023 Nov 21. at
+https://www.fda.gov/news-events/fda-voices/vaers-critical-part-national-vaccine-safety-system.)
+15. Shimabukuro T. mRNA COVID 19 bivalent booster vaccine safety update: ACIP. 2023 April 19. at
+https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2023-04-19/03-COVID-Shimabukuro-508.pdf.)
+16. Shimabukuro T. COVID-19 vaccine safety update: VRBPAC. 2021 Feb 26. at
+https://www.fda.gov/media/146269/download.)
+17. Shimabukuro T. Update: Thrombosis with thrombocytopenia syndrome (TTS) following COVID-19
+vaccination. ACIP. 2021 May 12. at https://archive.cdc.gov/vaccines/acip/meetings/downloads/slides-2021-05-
+12/07-COVID-Shimabukuro-508.pdf.)
+18. Shimabukuro T. COVID 19 vaccine safety update: Primary series in young children and booster doses in
+older children and adults. ACIP. 2022 September 1. at www.cdc.gov/vaccines/acip/meetings/downloads/slides-
+2022-09-01/05-COVID-Shimabukuro-508.pdf.)
+19. Posa A. Spike protein-related proteinopathies: a focus on the neurological side of spikeopathies. Ann Anat
+2025:152662. Epub 20250418 http://doi.org/10.1016/j.aanat.2025.152662
+20. Cosentino M, Marino F. Understanding the Pharmacology of COVID-19 mRNA Vaccines: Playing Dice with
+the Spike? Int J Mol Sci 2022; 23:10881. Epub Sept 17 http://doi.org/10.3390/ijms231810881
+21. Banoun H. mRNA: Vaccine or Gene Therapy? The Safety Regulatory Issues. Int J Mol Sci 2023; 24. Epub
+http://doi.org/10.3390/ijms241310514
+22. Wu KM. A New Classification of Prodrugs: Regulatory Perspectives. Pharmaceuticals (Basel) 2009; 2:77-
+81. Epub 20091014 http://doi.org/10.3390/ph2030077
+23. FDA. Emergency Use Authorization of Medical Products and Related Authorities. 2017. 2022, at
+https://www.fda.gov/media/97321/download.)
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 51 of 55
+24. Fusaroli M, Salvo F, Begaud B, et al. The Reporting of a Disproportionality Analysis for Drug Safety Signal
+Detection Using Individual Case Safety Reports in PharmacoVigilance (READUS-PV): Development and
+Statement. Drug Saf 2024; 47:575-84. Epub http://doi.org/10.1007/s40264-024-01421-9
+25. Hill AB. The Environment and Disease: Association or Causation? Proc R Soc Med 1965; 58:295-300.
+Epub, https://www.ncbi.nlm.nih.gov/pubmed/14283879
+26. Schunemann H, Hill S, Guyatt G, Akl EA, Ahmed F. The GRADE approach and Bradford Hill's criteria for
+causation. J Epidemiol Community Health 2011; 65:392-5. Epub 20101014
+http://doi.org/10.1136/jech.2010.119933
+27. Adverse Effects of Vaccines: Evidence and Causality.
+. Washington, DC: Institute of Medicine, The National Academies Press; 2012.
+28. WHO. Causality assessment of an adverse event following immunization (AEFI). Updated user manual
+for the revised WHO classification. 2019. at https://www.who.int/publications/i/item/9789241516990.)
+29. Pather S, Charpentier N, van den Ouweland F, et al. A Brighton Collaboration standardized template with
+key considerations for a benefit-risk assessment for the Comirnaty COVID-19 mRNA vaccine. Vaccine 2024;
+42:126165. Epub http://doi.org/https://doi.org/10.1016/j.vaccine.2024.126165
+30. Sakaeda T, Tamon A, Kadoyama K, Okuno Y. Data mining of the public version of the FDA Adverse Event
+Reporting System. Int J Med Sci 2013; 10:796-803. Epub 2013/06/26 http://doi.org/10.7150/ijms.6048
+31. Evans SJ, Waller PC, Davis S. Use of proportional reporting ratios (PRRs) for signal generation from
+spontaneous adverse drug reaction reports. Pharmacoepidemiol Drug Saf 2001; 10:483-6. Epub 2002/02/07
+http://doi.org/10.1002/pds.677
+32. Dumouchel W. Bayesian Data Mining in Large Frequency Tables, with an Application to the FDA
+Spontaneous Reporting System. The American Statistician 1999; 53:177-90. Epub
+http://doi.org/10.1080/00031305.1999.10474456
+33. Almenoff JS, LaCroix KK, Yuen NA, Fram D, DuMouchel W. Comparative performance of two quantitative
+safety signalling methods: implications for use in a pharmacovigilance department. Drug Saf 2006; 29:875-87.
+Epub 2006/09/15 http://doi.org/10.2165/00002018-200629100-00005
+34. Harpaz R, DuMouchel W, LePendu P, et al. Performance of pharmacovigilance signal-detection algorithms
+for the FDA adverse event reporting system. Clin Pharmacol Ther 2013; 93:539-46. Epub 2013/04/11
+http://doi.org/10.1038/clpt.2013.24
+35. Szarfman A, Tonning JM, Doraiswamy PM. Pharmacovigilance in the 21st century: new systematic tools
+for an old problem. Pharmacotherapy 2004; 24:1099-104. Epub http://doi.org/10.1592/phco.24.13.1099.38090
+36. Duggirala H J, Tonning J M, Smith E, et al. Data Mining at FDA -- White Paper. 2018. at
+https://www.fda.gov/media/91848/download.)
+37. Duggirala HJ, Tonning JM, Smith E, et al. Use of data mining at the Food and Drug Administration. J Am
+Med Inform Assoc 2016; 23:428-34. Epub 20150723 http://doi.org/10.1093/jamia/ocv063
+38. Harpaz R, DuMouchel W, Van Manen R, et al. Signaling COVID-19 Vaccine Adverse Events. Drug Saf
+2022; 45:765-80. Epub 20220623 http://doi.org/10.1007/s40264-022-01186-z
+39. Wisniewski AF, Bate A, Bousquet C, et al. Good Signal Detection Practices: Evidence from IMI PROTECT.
+Drug Saf 2016; 39:469-90. Epub 2016/03/10 http://doi.org/10.1007/s40264-016-0405-1
+40. VAERS. Immunization Safety Office, Division of Healthcare Quality Promotion National Center for
+Emerging and Zoonotic Infectious Diseases Centers for Disease Control and Prevention. Vaccine Adverse Event
+Reporting System (VAERS) Standard Operating Procedures for COVID-19. 2021 Jan 29. at
+https://www.documentcloud.org/documents/22119655-cdc-vaers-sop-2021/.)
+41. FDA. FOIA disclosure to ICAN regarding EBDM and PRR VAERS analyses. 2025 Jan 22. at
+https://filedev0128.s3.us-east-1.amazonaws.com/ratio-tables/cdc-proportional-reporting-ratio-tables.zip
+https://www.fda.gov/media/184988/download.)
+42. Stieber Z. Epoch Times. CDC Finds Hundreds of Safety Signals for Pfizer, Moderna COVID Vaccines.
+2023 Jan 3. at https://www.theepochtimes.com/health/exclusive-cdc-finds-hundreds-of-safety-signals-for-pfizer-
+and-moderna-covid-19-vaccines-4956733.)
+43. Stieber Z. EXCLUSIVE: CDC Found COVID-19 Vaccine Safety Signals Months Earlier Than Previously
+Known, Files Show. 2023 March 28. at https://www.theepochtimes.com/article/exclusive-cdc-found-covid-19-
+vaccine-safety-signals-months-earlier-than-previously-known-files-show-5151506.)
+44. Siri Glimstad, LLP. FDA FREEDOM OF INFORMATION ACT REQUEST: Re: “Empirical Bayesian” –
+VAERS Standard Operating Procedures for COVID-19 (IR#0802M). 2022 June 20. at https://icandecide.org/wp-
+content/uploads/2025/08/IR0802M-FDA-Empirical-Bayesian-%E2%80%93-VAERS-SOP-for-COVID-19.pdf.)
+45. Huang PC, Goru R, Huffman A, et al. Cov19VaxKB: A Web-based Integrative COVID-19 Vaccine
+Knowledge Base. Vaccine X 2021:100139. Epub 2022/01/05 http://doi.org/10.1016/j.jvacx.2021.100139
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 52 of 55
+46. Guo W, Deguise J, Tian Y, et al. Profiling COVID-19 Vaccine Adverse Events by Statistical and Ontological
+Analysis of VAERS Case Reports. Front Pharmacol 2022; 13:870599. Epub 2022/07/12
+http://doi.org/10.3389/fphar.2022.870599
+47. ISO. ISO 8601-1:2019 Date and time — Representations for information interchange. Part 1: Basic rules.
+2019. at https://www.iso.org/standard/70907.html.)
+48. CDC. MMWR Weeks. 2013 November 5. (Accessed 2025 April 24, at https://ndc.services.cdc.gov/wp-
+content/uploads/MMWR_Week_overview.pdf.)
+49. National Cancer Institute (NCI). Common Toxicity Criteria (CTC) v2.0. 1999 April 30. at
+https://ctep.cancer.gov/protocoldevelopment/electronic_applications/docs/ctcv20_4-30-992.pdf.)
+50. Sarntivijai S, Xiang Z, Shedden KA, et al. Ontology-based combinatorial comparative analysis of adverse
+events associated with killed and live influenza vaccines. PLoS One 2012; 7:e49941. Epub 20121128
+http://doi.org/10.1371/journal.pone.0049941
+51. Safavi F, Gustafson L, Walitt B, et al. Neuropathic symptoms with SARS-CoV-2 vaccination. medRxiv
+2022:2022.05.16.22274439. Epub May 17 http://doi.org/10.1101/2022.05.16.22274439
+52. Meyer S. Update on CDC’s COVID-19 Vaccine Safety Monitoring. ACIP. 2025 June 25. at
+https://www.cdc.gov/acip/downloads/slides-2025-06-25-26/04-Meyer-COVID-508.pdf.)
+53. Woodcock RA, Bartels LJ. Preliminary Evidence of a Link between COVID-19 Vaccines and Otologic
+Symptoms. medRxiv 2022:2022.02.23.22271144. Epub http://doi.org/10.1101/2022.02.23.22271144
+54. MHRA. FOI 22-1232 – reports on disproportionality analysis and impact of Covid vaccine reports 2023
+May 18. at https://www.gov.uk/government/publications/freedom-of-information-responses-from-the-mhra-week-
+commencing-15-may-2023.)
+55. DuMouchel WaRH. Oracle White Paper: Regression-adjusted GPS algorithm (RGPS). 2012. at
+https://docs.oracle.com/health-sciences/empirica-signal-811/ESIUG/RegressionAdjusted_GPS_Algorithm.pdf.
+2012.)
+56. FDA. Food and Drug Administration, Center for Drug Evaluation and Research (CDER), Center for
+Biologics Evaluation and Research (CBER). Guidance for Industry: Good Pharmacovigilance Practices and
+Pharmacoepidemiologic Assessment. 2005 March 24. at https://www.fda.gov/media/71546/download.)
+57. ENCePP. European Network of Centres for Pharmacoepidemiology and Pharmacovigilance (ENCePP).
+Guide on Methodological Standards in Pharmacoepidemiology. 2023. at https://encepp.europa.eu/encepp-
+toolkit/methodological-guide_en.)
+58. Oracle Corporation. Oracle Empirica Signal User Guide and Online Help 9.1. 2020 August 27. (Accessed
+May 28, 2025, at https://docs.oracle.com/en/industries/health-sciences/empirica-signal/9.1/userguide/rgps-
+computations.html.)
+59. FDA. Transcript: 164th Vaccines and Related Biological Products Advisory Committee (VRBPAC) Meeting
+2021 February 26. at https://www.fda.gov/media/147455/download.)
+60. Rosenblum HG, Gee JM, Liu R, et al. Safety Monitoring of mRNA Vaccines Administered During the Initial
+6 Months of the U.S. COVID-19 Vaccination Program: Reports to Vaccine Adverse Events Reporting System
+(VAERS) and v-safe. medRxiv 2021:2021.10.26.21265261. Epub http://doi.org/10.1101/2021.10.26.21265261
+61. Rosenblum HG, Gee J, Liu R, et al. Safety of mRNA vaccines administered during the initial 6 months of
+the US COVID-19 vaccination programme: an observational study of reports to the Vaccine Adverse Event
+Reporting System and v-safe. Lancet Infect Dis 2022. Epub 2022/03/11 http://doi.org/10.1016/S1473-
+3099(22)00054-8
+62. FDA. Emergency Use Authorization (EUA) Amendment for an Unapproved Product Review Memorandum.
+Pfizer-BioNTech COVID-19 Vaccine / BNT162b2 Children over 12. 2021 May 10. at
+https://www.fda.gov/media/148542/download.)
+63. FDA. Initial Results of Near Real-Time Safety Monitoring of COVID-19 Vaccines in Persons Aged 65 Years
+and Older. 2021 July 12. at https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/initial-
+results-near-real-time-safety-monitoring-covid-19-vaccines-persons-aged-65-years-and-older.)
+64. Shimabukuro T, Klein, N. COVID-19 mRNA bivalent booster vaccine safety: Vaccines and Related
+Biological Products Advisory Committee meeting 2023 January 26. at
+https://www.fda.gov/media/164811/download.)
+65. Forshee R. Update on Original COVID-19 Vaccine and COVID-19 Vaccine, Bivalent Effectiveness and
+Safety. 2023 January 26. at https://www.fda.gov/media/164815/download.)
+66. FDA. CDC and FDA Identify Preliminary COVID-19 Vaccine Safety Signal for Persons Aged 65 Years and
+Older. 2023 January 13, updated May 31. at https://www.fda.gov/vaccines-blood-biologics/safety-availability-
+biologics/cdc-and-fda-identify-preliminary-covid-19-vaccine-safety-signal-persons-aged-65-years-and-older.)
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 53 of 55
+67. Wiseman D. Covid-19 vaccine safety, bivalent primary series, future directions. Written comments
+submitted to CDC- ACIP February 24 2023. CDC-2023-0007-0496. Research Gate 2023 Feb 24. Epub
+http://doi.org/10.13140/RG.2.2.25839.10404
+68. Aggarwal LP. Pharmacovigilance Analysis on Cerebrovascular Accidents and Coronavirus disease 2019
+Vaccines. medRxiv 2021:2021.04.19.21255768. Epub April 27 http://doi.org/10.1101/2021.04.19.21255768
+69. Klein N. COVID-19 Vaccine Safety Surveillance: Summary from VSD RCA. ACIP September 12 2023.
+2023 September 12. at https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2023-09-12/07-COVID-
+Klein-508.pdf.)
+70. Xu S, Sy LS, Hong V, et al. Ischemic Stroke after Bivalent COVID-19 Vaccination: A Self-Controlled Case
+Series Study. medRxiv 2023:2023.10.12.23296968. Epub Oct 15 http://doi.org/10.1101/2023.10.12.23296968
+71. Lu Y, Matuska K, Nadimpalli G, et al. Evaluation of Stroke Risk Following COVID-19 mRNA Bivalent
+Vaccines Among U.S. Adults Aged ≥65 Years. medRxiv 2023:2023.10.10.23296624. Epub Oct 15
+http://doi.org/10.1101/2023.10.10.23296624
+72. Marks P. Testimony before the Select Subcommittee on the Coronavirus Pandemic Committee on
+Oversight and Accountability U.S. House of Representatives. 2024 Feb 15. at
+https://oversight.house.gov/hearing/assessing-americas-vaccine-safety-systemspart-1/
+https://www.youtube.com/watch?v=c5hYh5XO7qY&t.)
+73. Klein N, Shimabukuro, T. Safety update of 1st booster mRNA COVID-19 vaccination. ACIP. 2022 April 20.
+at www.cdc.gov/vaccines/acip/meetings/downloads/slides-2022-04-20/03-COVID-Klein-Shimabukuro-508.pdf.)
+74. Senate Homeland Security and Governmental Affairs Committee, Permanent Subcommittee on
+Investigations. Hearing “The Corruption of Science and Federal Health Agencies: How Health Officials
+Downplayed and Hid Myocarditis and Other Adverse Events Associated with the COVID-19 Vaccines.” PSI failure
+to warn supporting documents. 2025 May 21. at
+https://www.hsgac.senate.gov/subcommittees/investigations/hearings/the-corruption-of-science-and-federal-
+health-agencies-how-health-officials-downplayed-and-hid-myocarditis-and-other-adverse-events-associated-
+with-the-covid-19-vaccines/.)
+75. CDC. COVID-19 VaST Work Group Report. 2021 May 17. at https://www.cdc.gov/vaccines/acip/work-
+groups-vast/report-2021-05-17.html.)
+76. CDC. COVID-19 VaST Work Group Report. 2021 May 24. at https://www.cdc.gov/vaccines/acip/work-
+groups-vast/report-2021-05-24.html.)
+77. CDC. Myocarditis and Pericarditis Following mRNA COVID-19 Vaccination. 2021 May 27. at
+https://stacks.cdc.gov/view/cdc/106641.)
+78. FDA. Letter to Pfizer- EUA Authorization Revised. 2021 June 25. at
+https://web.archive.org/web/20210730171151/https://www.fda.gov/media/150386/download.)
+79. CDC. ACIP Presentation Slides. 2021 May 12. at
+https://web.archive.org/web/20210604173945/https://www.cdc.gov/vaccines/acip/meetings/slides-2021-05-
+12.html.)
+80. CDC. Emails disclosed underFOIA regarding myocarditis, spring 2021. 2021. at
+https://childrenshealthdefense.org/wp-content/uploads/23-00056-for-2-24-2023-Close.pdf.)
+81. Homo RL, Colby DJ, Romo ML, et al. COVID-19 mRNA vaccination and myocarditis/pericarditis in the
+setting of active surveillance at a military treatment facility. BMJ Mil Health 2023. Epub 20231116
+http://doi.org/10.1136/military-2023-002599
+82. TERCATIN R. Jerusalem Post. COVID-19: Israel finds possible link between vaccine, myocarditis cases.
+2021 April 25. at https://www.jpost.com/health-science/covid-19-israel-finds-possible-link-between-vaccine-
+myocarditis-cases-666237.)
+83. Wilner M. McClatchy DC. CDC, FDA see no Pfizer vaccine link to heart problem, eyeing with ‘special
+interest’. 2021 April 27. (Accessed May 23, 2025, at
+https://www.mcclatchydc.com/news/coronavirus/article250965424.html.)
+84. Prasad V, Makary MA. US FDA Safety Labeling Change for mRNA COVID-19 Vaccines. JAMA 2025. Epub
+20250714 http://doi.org/10.1001/jama.2025.12675
+85. MacNeil JR, Su JR, Broder KR, et al. Updated Recommendations from the Advisory Committee on
+Immunization Practices for Use of the Janssen (Johnson & Johnson) COVID-19 Vaccine After Reports of
+Thrombosis with Thrombocytopenia Syndrome Among Vaccine Recipients - United States, April 2021. MMWR
+Morb Mortal Wkly Rep 2021; 70:651-6. Epub 20210430 http://doi.org/10.15585/mmwr.mm7017e4
+86. Janssen. FACT SHEET FOR HEALTHCARE PROVIDERS ADMINISTERING VACCINE (VACCINATION
+PROVIDERS) EMERGENCY USE AUTHORIZATION (EUA) OF THE JANSSEN COVID-19 VACCINE TO
+PREVENT CORONAVIRUS DISEASE 2019 (COVID-19). 2021 April 23. at
+https://web.archive.org/web/20210429064510/https://www.fda.gov/media/146304/download.)
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 54 of 55
+87. Janssen. FACT SHEET FOR RECIPIENTS AND CAREGIVERS EMERGENCY USE AUTHORIZATION
+(EUA) OF THE JANSSEN COVID-19 VACCINE TO PREVENT CORONAVIRUS DISEASE 2019 (COVID-19) IN
+INDIVIDUALS 18 YEARS OF AGE AND OLDER 2021 Dec 14. (Accessed Dec 16, 2021, at
+https://www.fda.gov/media/146305/download.)
+88. FDA. Coronavirus (COVID-19) Update: FDA Limits Use of Janssen COVID-19 Vaccine to Certain
+Individuals. 2022 May 5. at https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-
+fda-limits-use-janssen-covid-19-vaccine-certain-individuals.)
+89. FDA. Revocation of EUA 27205 - Janssen COVID-19 Vaccine. 2023 June 1. at
+https://www.fda.gov/media/169003/download?attachment.)
+90. CDC. Video recording of the Emergency Meeting of the Advisory Committee on Immunization Practices.
+2021 April 23. at Part 1: https://www.youtube.com/watch?v=XxdMBj-eGFI.)
+91. CDC. Video recording of the Emergency Meeting of the Advisory Committee on Immunization Practices.
+2021 April 14. at Part 1: https://www.youtube.com/watch?v=GR-t5kD8rMo
+Part 2: https://www.youtube.com/watch?v=NTodQqoWki8&t.)
+92. CDC. Cases of Cerebral Venous Sinus Thrombosis with Thrombocytopenia after Receipt of the Johnson
+& Johnson COVID-19 Vaccine. CDC Health Alert Network. 2021 April 13. at
+https://web.archive.org/web/20230127152447/https://emergency.cdc.gov/han/2021/han00442.asp.)
+93. Janssen. Briefing Materials for VRBPAC Meeting with addendum. 2021 October 15. at
+www.fda.gov/media/152954/download
+www.fda.gov/media/152948/download.)
+94. Zhang R, Brennan, T. FDA Review of Effectiveness and Safety of Janssen COVID-19 Vaccine
+(Ad26.COV2.S) Booster Dose Emergency Use Authorization Amendment. 2021 Oct 15. at
+https://www.fda.gov/media/153130/download.)
+95. FDA. FDA briefing document for VRBPAC: EUA amendment request for a booster dose for the Janssen
+COVID-19 Vaccine. 2021 Oct 15. at https://www.fda.gov/media/153037/download.)
+96. Nair N. FDA Review of Post Authorization Safety Data for Janssen COVID-19 Vaccine. VRBPAC. 2021
+Oct 15. at https://www.fda.gov/media/153132/download.)
+97. Shimabukuro T. COVID-19 Vaccine Safety Updates. ACIP. 2021 Oct 21. at
+https:/www.cdc.gov/vaccines/acip/meetings/downloads/slides-2021-10-20-21/06-COVID-Shimabukuro-508.pdf.)
+98. Dooling K. Evidence to Recommendation Framework: Moderna & Janssen COVID-19 Vaccine Booster
+Dose. ACIP. 2021 Oct 21. at https:/www.cdc.gov/vaccines/acip/meetings/downloads/slides-2021-10-20-21/11-
+COVID-Dooling-508.pdf.)
+99. Oliver S. Updates to the benefit/risk assessment for Janssen COVID-19 vaccines: Applying the Evidence
+to Recommendation Framework. ACIP. 2021 Dec 16. at
+https://www.cdc.gov/vaccines/acip/meetings/downloads/slides-2021-12-16/04_covid_oliver_2021-12-16.pdf.)
+100. Yan MM, Zhao H, Li ZR, et al. Serious adverse reaction associated with the COVID-19 vaccines of
+BNT162b2, Ad26.COV2.S, and mRNA-1273: Gaining insight through the VAERS. Front Pharmacol 2022;
+13:921760. Epub 20221107 http://doi.org/10.3389/fphar.2022.921760
+101. Wiseman D, Rose, J, Guetzkow, H, Seligmann H. Why limit contraindication to Janssen? Using same
+criteria revisit EUA/BLA for all C19 quasi-vaccines. Transparency: Emergency ACIP Meeting Dec 16 2021. CDC-
+2021-0133. ResearchGate 2021 Dec 23. Epub http://doi.org/https://dx.doi.org/10.13140/RG.2.2.32783.51368
+102. Canida T, Ihrie, J. openEBGM: An R Implementation of the Gamma-Poisson Shrinker Data Mining Model.
+The R Journal 2017; 9:499-519. Epub http://doi.org/10.32614/RJ-2017-063
+103. Canida T, Ihrie, J. openEBGM: EBGM Disproportionality Scores for Adverse Event Data Mining. 2023.
+(Accessed March 28 2025, at https://cran.r-project.org/web/packages/openEBGM/index.html
+https://cran.r-project.org/web/packages/openEBGM/openEBGM.pdf.)
+104. Sankar C, Evans S, Meyer JC, et al. Signal Monitoring for Adverse Events Following Immunisation with
+COVID-19 Vaccines During the SARS-CoV-2 Pandemic: An Evaluation of the South African Surveillance System.
+Drug Saf 2025. Epub 20250416 http://doi.org/10.1007/s40264-025-01547-4
+105. Roque-Pereira L, Sisay MM, Ogar CK, et al. Comparison of Adverse Events in Pregnant Persons
+Receiving COVID-19 and Influenza Vaccines: A Disproportionality Analysis Using Combined Data from US VAERS
+and EudraVigilance Spontaneous Report Databases. Drug Saf 2025. Epub http://doi.org/10.1007/s40264-025-
+01561-6
+106. CDC. CDC & FDA Identify Preliminary COVID-19 Vaccine Safety Signal for Persons Aged 65 Years and
+Older. 2023 Jan 13. at https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/bivalent-boosters.html.)
+107. USA. IND safety reporting 21 CFR §312.32 (a). at https://www.ecfr.gov/current/title-21/chapter-
+I/subchapter-D/part-312/subpart-B/section-312.32.)
+
+Wiseman VAERS DSA signal loss associated with COVID-19 pro-vaccines PUB 090925 Page 55 of 55
+108. Osman M. Inside Health Policy. Makary Turns To EHRs Instead Of VAERS To Track Vaccine Safety. 2025
+April 22. at https://insidehealthpolicy.com/daily-news/makary-turns-ehrs-instead-vaers-track-vaccine-safety.)
+109. Deady M, Ezzeldin H, Cook K, et al. The Food and Drug Administration Biologics Effectiveness and Safety
+Initiative Facilitates Detection of Vaccine Administrations From Unstructured Data in Medical Records Through
+Natural Language Processing. Front Digit Health 2021; 3:777905. Epub 2022/01/11
+http://doi.org/10.3389/fdgth.2021.777905
+110. Bowyer W, Haslam A, Prasad V. An Analysis of Studies Comparing Myocarditis and Pericarditis in COVID-
+19 Vaccinated and SARS-CoV-2 Infected Individuals. Am J Med Sci 2025. Epub 20250705
+http://doi.org/10.1016/j.amjms.2025.06.012
+111. Lloyd PC, Hu M, Wong HL, et al. Near real-time surveillance of safety outcomes in US COVID-19 vaccine
+recipients aged 12 to 64 years. Vaccine 2022; 40:6481-8. Epub 20220927
+http://doi.org/10.1016/j.vaccine.2022.09.060
+112. Vellozzi C, Broder KR, Haber P, et al. Adverse events following influenza A (H1N1) 2009 monovalent
+vaccines reported to the Vaccine Adverse Event Reporting System, United States, October 1, 2009-January 31,
+2010. Vaccine 2010; 28:7248-55. Epub 2010/09/21 http://doi.org/10.1016/j.vaccine.2010.09.021
+113. Welsh KJ, Baumblatt J, Chege W, Goud R, Nair N. Thrombocytopenia including immune thrombocytopenia
+after receipt of mRNA COVID-19 vaccines reported to the Vaccine Adverse Event Reporting System (VAERS).
+Vaccine 2021; 39:3329-32. Epub 20210430 http://doi.org/10.1016/j.vaccine.2021.04.054
+114. Montano D. Frequency and Associations of Adverse Reactions of COVID-19 Vaccines Reported to
+Pharmacovigilance Systems in the European Union and the United States. Front Public Health 2022; 9:756633.
+Epub 2022/02/22 http://doi.org/10.3389/fpubh.2021.756633
+115. Wiseman D, Guetzkow, J, Seligmann, H. Supplemental Written comments submitted to: Vaccines and
+Related Biological Products Advisory Committee (VRBPAC) October 14-15, 2021 Meeting: Booster Doses for
+Janssen and Moderna Vaccines FDA-2021-N-0965-0164. 2021 October 13. at
+www.regulations.gov/comment/FDA-2021-N-0965-0164.)
+116. Wiseman D, Guetzkow, J,, Seligmann H. Comment submitted to August 30 2021 meeting of the Advisory
+Committee on Immunization Practices (Centers for Disease Control). Docket CDC-2021-0089-0023. 2021 Aug 29.
+at https://www.regulations.gov/comment/CDC-2021-0089-0023.)
+117. Kingwell K. COVID vaccines: “We flew the aeroplane while we were still building it”. Nature Reviews Drug
+Disc 2022. Epub Nov 11 http://doi.org/doi.org/10.1038/d41573-022-00191-2
+118. Eisenstein M. Vaccination rates are falling, and its not just the COVID-19 vaccine that people are refusing.
+Nature 2022; 612:S44-s6. Epub Dec 19 http://doi.org/10.1038/d41586-022-04341-9

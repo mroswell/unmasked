@@ -6,5 +6,9 @@
   "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/2026.04.29-%E2%80%93-Vaccine-Monitoring-Failures-Chairman-Johnson-Opening-Statement.pdf",
   "split_from": null,
   "pdf_path": "/documents/johnson-opening-statement.pdf",
-  "ocr_text_path": "/documents/johnson-opening-statement.txt"
+  "ocr_text_path": "/documents/johnson-opening-statement.txt",
+  "page_count": 6,
+  "pages_with_text": 6,
+  "avg_chars_per_page": 2064,
+  "coverage_percent": 100
 }

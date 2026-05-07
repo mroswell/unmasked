@@ -6,5 +6,9 @@
   "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/Part-3.pdf",
   "split_from": null,
   "pdf_path": "/documents/psi-april-2026-part-3.pdf",
-  "ocr_text_path": "/documents/psi-april-2026-part-3.txt"
+  "ocr_text_path": "/documents/psi-april-2026-part-3.txt",
+  "page_count": 200,
+  "pages_with_text": 200,
+  "avg_chars_per_page": 2515,
+  "coverage_percent": 100
 }

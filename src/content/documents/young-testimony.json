@@ -6,5 +6,9 @@
   "source_url": "https://www.hsgac.senate.gov/wp-content/uploads/Young-Testimony.pdf",
   "split_from": null,
   "pdf_path": "/documents/young-testimony.pdf",
-  "ocr_text_path": "/documents/young-testimony.txt"
+  "ocr_text_path": "/documents/young-testimony.txt",
+  "page_count": 4,
+  "pages_with_text": 4,
+  "avg_chars_per_page": 1438,
+  "coverage_percent": 100
 }
