@@ -1,0 +1,98 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const actors = (await getCollection('actors')).sort((a, b) =>
+  a.data.id.localeCompare(b.data.id)
+);
+
+// Count event appearances and quotes per actor for at-a-glance context
+const events = await getCollection('timeline');
+const quotes = await getCollection('quotes');
+
+const enriched = actors.map((a) => ({
+  actor: a.data,
+  eventCount: events.filter((e) => e.data.actors.includes(a.data.id)).length,
+  quoteCount: quotes.filter((q) => q.data.speaker === a.data.id).length,
+}));
+---
+
+<BaseLayout title="People — Unmasked">
+  <h1>People</h1>
+  <p class="lede">
+    Named individuals who appear in the report's narrative — FDA scientists, agency officials, hearing witnesses, and Congressional oversight personnel.
+    Click any name to see the events they appear in and quotes attributed to them.
+  </p>
+
+  <ul class="people-list">
+    {enriched.map(({ actor, eventCount, quoteCount }) => (
+      <li class="person-card" id={`actor-${actor.id}`} data-pagefind-body>
+        <h2 class="person-name">
+          <a href={`/people/${actor.id}/`}>{actor.name}</a>
+        </h2>
+        <p class="role">{actor.role_at_time}</p>
+        <p class="bio">{actor.short_bio}</p>
+        <p class="counts">
+          <a href={`/people/${actor.id}/`}>
+            {eventCount} timeline event{eventCount === 1 ? '' : 's'}
+            {quoteCount > 0 && ` · ${quoteCount} quote${quoteCount === 1 ? '' : 's'}`}
+            {' →'}
+          </a>
+        </p>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>
+
+<style>
+  .lede { color: var(--color-muted); max-width: var(--max-prose); margin-bottom: 2rem; }
+
+  .people-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 1.5rem;
+  }
+
+  .person-card {
+    padding: 1.25rem;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+  }
+
+  .person-name {
+    margin: 0 0 0.25rem;
+    font-family: var(--font-sans);
+    font-size: 1.1rem;
+  }
+  .person-name a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+  .person-name a:hover { color: var(--color-accent); }
+
+  .role {
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    color: var(--color-muted);
+    margin: 0 0 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .bio { margin: 0 0 0.8rem; font-size: 0.95rem; }
+
+  .counts {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    margin: 0;
+  }
+  .counts a {
+    color: var(--color-accent);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .counts a:hover { text-decoration: underline; }
+</style>

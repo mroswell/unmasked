@@ -1,0 +1,212 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+interface Props {
+  actor: {
+    id: string;
+    name: string;
+    role_at_time: string;
+    short_bio: string;
+  };
+}
+
+export async function getStaticPaths() {
+  const actors = await getCollection('actors');
+  return actors.map((a) => ({
+    params: { id: a.data.id },
+    props: { actor: a.data },
+  }));
+}
+
+const { actor } = Astro.props;
+
+const events = (await getCollection('timeline'))
+  .filter((e) => e.data.actors.includes(actor.id))
+  .sort((a, b) => a.data.date.localeCompare(b.data.date));
+
+const quotes = (await getCollection('quotes')).filter(
+  (q) => q.data.speaker === actor.id
+);
+---
+
+<BaseLayout title={`${actor.name} — Unmasked`}>
+  <article class="person-page" data-pagefind-body>
+    <header>
+      <h1>{actor.name}</h1>
+      <p class="role">{actor.role_at_time}</p>
+      <p class="bio">{actor.short_bio}</p>
+    </header>
+
+    <p class="back-link">
+      <a href="/people/">← All people</a>
+    </p>
+
+    {events.length > 0 ? (
+      <section>
+        <h2>
+          Timeline appearances
+          <span class="count">({events.length})</span>
+        </h2>
+        <ul class="event-list">
+          {events.map((event) => (
+            <li>
+              <a href={`/timeline/#${event.data.date}`} class="event-link">
+                <time datetime={event.data.date}>{event.data.date_display}</time>
+                <span class={`event-cat event-cat--${event.data.category}`}>
+                  {event.data.category}
+                </span>
+              </a>
+              <p class="event-summary">{event.data.summary}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ) : (
+      <section>
+        <h2>Timeline appearances</h2>
+        <p class="empty">No timeline events reference this person.</p>
+      </section>
+    )}
+
+    {quotes.length > 0 && (
+      <section>
+        <h2>
+          Quotes
+          <span class="count">({quotes.length})</span>
+        </h2>
+        <ul class="quote-list">
+          {quotes.map((q) => (
+            <li>
+              <blockquote>
+                "{q.data.text}"
+                <footer class="quote-context">
+                  <span class="context">{q.data.context}</span>
+                  {q.data.date && <span class="date"> · {q.data.date}</span>}
+                  {' '}
+                  <a href={`/quotes/#${q.data.id}`} class="quote-anchor">view in /quotes/ →</a>
+                </footer>
+              </blockquote>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+  </article>
+</BaseLayout>
+
+<style>
+  .person-page header { margin-bottom: 1.5rem; max-width: var(--max-prose); }
+  .person-page h1 { margin: 0 0 0.3rem; }
+  .role {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    color: var(--color-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.8rem;
+  }
+  .bio { margin: 0; max-width: var(--max-prose); }
+
+  .back-link {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    margin: 0 0 2rem;
+  }
+  .back-link a { color: var(--color-muted); text-decoration: none; }
+  .back-link a:hover { color: var(--color-accent); }
+
+  .person-page section { margin-bottom: 2.5rem; max-width: var(--max-prose); }
+  .person-page h2 {
+    font-family: var(--font-sans);
+    font-size: 1.1rem;
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+  }
+  .count {
+    color: var(--color-muted);
+    font-weight: 400;
+    font-size: 0.9em;
+    margin-left: 0.4rem;
+  }
+
+  .event-list, .quote-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+  .event-list li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .event-list li:last-child { border-bottom: none; }
+
+  .event-link {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    text-decoration: none;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+  }
+  .event-link time {
+    font-weight: 600;
+    color: var(--color-accent);
+    min-width: 8rem;
+  }
+  .event-link:hover time { text-decoration: underline; }
+
+  .event-cat {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    color: white;
+  }
+  .event-cat--regulatory  { background: #1e40af; }
+  .event-cat--analysis    { background: #0f4c5c; }
+  .event-cat--internal    { background: #b45309; }
+  .event-cat--publication { background: #15803d; }
+  .event-cat--oversight   { background: #6b21a8; }
+
+  .event-summary {
+    margin: 0.3rem 0 0 8.75rem;
+    font-size: 0.95rem;
+    color: var(--color-text);
+  }
+  @media (max-width: 540px) {
+    .event-link { flex-direction: column; gap: 0.25rem; }
+    .event-summary { margin-left: 0; }
+  }
+
+  .quote-list blockquote {
+    margin: 0;
+    padding: 1rem 1.25rem;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 0 6px 6px 0;
+    font-size: 1rem;
+  }
+  .quote-context {
+    margin-top: 0.6rem;
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    color: var(--color-muted);
+  }
+  .quote-anchor {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .quote-anchor:hover { text-decoration: underline; }
+
+  .empty {
+    color: var(--color-muted);
+    font-style: italic;
+  }
+</style>
