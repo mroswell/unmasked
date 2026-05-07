@@ -202,5 +202,17 @@
     "name": "Dr. Vinay Prasad",
     "role_at_time": "Director, FDA Center for Biologics Evaluation and Research (CBER)",
     "short_bio": "CBER Director whose memorandum on deaths of children following a COVID-19 vaccine was the subject of Sen. Johnson's December 2025 letter to HHS Secretary Kennedy."
+  },
+  {
+    "id": "jablonowski",
+    "name": "Dr. Karl Jablonowski",
+    "role_at_time": "Senior Research Scientist, Children's Health Defense",
+    "short_bio": "Pharmacovigilance researcher and co-author of papers on VAERS data quality and COVID-19-era safety surveillance failures. Witness at the April 2026 PSI hearing on COVID-19 vaccine safety signal masking."
+  },
+  {
+    "id": "young",
+    "name": "Maria Young",
+    "role_at_time": "Patient advocate; COVID-19 ARDS / ECMO survivor",
+    "short_bio": "Survived severe COVID-19 in 2020 after 69 days on ECMO and 70 on a ventilator; now advocates with Vaccinate Your Family for COVID-19 vaccination and post-ICU survivor support. Witness at the April 2026 PSI hearing."
   }
 ]
