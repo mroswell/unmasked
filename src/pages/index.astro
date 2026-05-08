@@ -6,9 +6,10 @@ await runBuildValidation();
 const base = import.meta.env.BASE_URL;
 ---
 
-<BaseLayout title="Unmasked — Vaccine Safety Signal Masking">
+<BaseLayout title="Vaccine Safety Signals">
   <section class="hero">
-    <h1>Unmasked</h1>
+    <h1>Vaccine Safety Signals</h1>
+    <p class="tagline">Pharmacovigilance, on the record.</p>
     <p class="lede">A structured presentation of the U.S. Senate Permanent Subcommittee on Investigations' April 2026 interim report and the underlying records published with it. The site centers the evidence: contemporaneous emails, the masking phenomenon in VAERS data mining, and the MGPS / RGPS comparison that drives the story.</p>
   </section>
   <section class="modes">
@@ -29,7 +30,15 @@ const base = import.meta.env.BASE_URL;
 
 <style>
   .hero { max-width: var(--max-prose); margin: 2rem auto; }
-  .hero h1 { font-size: 3rem; margin: 0 0 0.5em; }
+  .hero h1 { font-size: 3rem; margin: 0 0 0.15em; line-height: 1.1; }
+  .tagline {
+    font-family: var(--font-sans);
+    font-size: 1.05rem;
+    color: var(--color-accent);
+    letter-spacing: 0.01em;
+    margin: 0 0 1.5rem;
+    font-style: italic;
+  }
   .lede { font-size: 1.15rem; color: var(--color-muted); }
   .modes { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.5rem; margin-top: 3rem; }
   .mode { display: block; padding: 1.5rem; border: 1px solid var(--color-border); border-radius: 6px; text-decoration: none; color: var(--color-text); background: white; }

@@ -6,7 +6,7 @@ import TimelineEvent from '../../components/TimelineEvent.astro';
 const events = (await getCollection('timeline')).sort((a, b) => a.data.date.localeCompare(b.data.date));
 ---
 
-<BaseLayout title="Timeline — Signals">
+<BaseLayout title="Timeline — Vaccine Safety Signals">
   <h1>Timeline</h1>
   <p class="lede">Records released by the U.S. Senate Permanent Subcommittee on Investigations chronicle FDA scientists' attempts to surface masking-affected safety signals in COVID-19 vaccine adverse event data, the agency's responses, and the Subcommittee's oversight.</p>
 

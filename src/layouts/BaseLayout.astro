@@ -8,7 +8,7 @@ interface Props {
   description?: string;
 }
 
-const { title, description = 'Unmasked: a structured presentation of the Senate PSI report and its underlying records.' } = Astro.props;
+const { title, description = 'Vaccine Safety Signals: pharmacovigilance, on the record. A structured, footnoted presentation of the Senate PSI report and its underlying records.' } = Astro.props;
 
 // Active-page detection. Astro.url.pathname includes the deploy base prefix
 // (e.g., '/unmasked/timeline/' on github.io); strip it to compare against
@@ -44,7 +44,7 @@ const navLinks = [
   </head>
   <body>
     <header class="site-header">
-      <a href={base} class="site-title">Unmasked</a>
+      <a href={base} class="site-title">Vaccine Safety Signals</a>
       <nav>
         {navLinks.map(({ path, label }) => (
           <a href={link(path)} aria-current={isActive(path) ? 'page' : undefined}>{label}</a>
