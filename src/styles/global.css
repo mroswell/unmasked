@@ -119,6 +119,20 @@ main.prose { max-width: var(--max-prose); }
 }
 
 /* ============================================================
+   Mobile / small-viewport adjustments. Below 640px (typical phone
+   width), tighten gutters, scale headings, and give tap targets
+   enough surface area to actually hit with a thumb.
+   ============================================================ */
+@media (max-width: 640px) {
+  html { font-size: 16px; } /* slightly smaller root → all rem-based sizes track down */
+  main { padding: 1.25rem 1rem; }
+  .site-header { padding: 0.5rem 0.75rem; }
+  .site-title { font-size: 1.05rem; }
+  .search-mount { min-width: 0; flex: 1; }
+}
+
+
+/* ============================================================
    Glossary inline definitions: subtle dotted underline, custom
    tooltip on hover/focus. No `cursor: help` (the question-mark
    cursor is intrusive when many words are wrapped on a page).
@@ -204,7 +218,11 @@ dfn[data-term][data-tooltip=""]::before {
   font-family: var(--font-sans);
   font-size: 0.78em;
   cursor: pointer;
-  padding: 0 0.1em;
+  /* Generous padding + negative margin keeps the tap target ≥ 32px
+     without altering the visible footnote-marker size or affecting
+     surrounding text flow. */
+  padding: 0.35em 0.4em;
+  margin: -0.35em -0.2em;
   vertical-align: super;
   line-height: 1;
 }

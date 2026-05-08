@@ -416,6 +416,23 @@ const base = import.meta.env.BASE_URL;
     text-transform: uppercase;
     letter-spacing: 0.03em;
   }
+  /* ------- Mobile adjustments ------- */
+  @media (max-width: 640px) {
+    .filters { padding: 0.75rem 0.85rem; }
+    .filter-label {
+      width: auto;
+      flex-basis: 100%;
+      margin-bottom: 0.15rem;
+    }
+    .doc-table { font-size: 0.9rem; }
+    .doc-table th, .doc-table td { padding: 0.5rem 0.35rem; }
+    .pages-cell, .doc-table th:nth-child(2) { display: none; }
+    .doc-type-suffix { display: block; margin-left: 0; font-size: 0.78rem; }
+    /* Long Bates IDs (e.g. PSI-HHS-000004592364-65-and-000004588545-46)
+       would overflow without break-all on narrow screens. */
+    .doc-table code { word-break: break-all; }
+  }
+
   .format-pdf {
     background: rgba(180, 30, 30, 0.1);
     color: #b41e1e;

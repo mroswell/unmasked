@@ -153,6 +153,12 @@ const searchText = [
     color: var(--color-muted);
   }
 
+  @media (max-width: 640px) {
+    .timeline-event { padding: 0 0 1.5rem 1.25rem; }
+    .event-summary { font-size: 1rem; }
+    .event-body { font-size: 0.95rem; }
+  }
+
   @media print {
     .timeline-event { page-break-inside: avoid; }
   }

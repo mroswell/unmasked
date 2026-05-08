@@ -29,9 +29,11 @@ const base = import.meta.env.BASE_URL;
 
 <style>
   .hero { max-width: var(--max-prose); margin: 2rem auto; }
-  .hero h1 { font-size: 3rem; margin: 0 0 0.5em; }
-  .lede { font-size: 1.15rem; color: var(--color-muted); }
-  .modes { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+  /* clamp() scales the headline from 2rem on a phone up to 3rem on
+     desktop, with the middle term keyed to viewport width. */
+  .hero h1 { font-size: clamp(2rem, 6vw, 3rem); margin: 0 0 0.5em; line-height: 1.15; }
+  .lede { font-size: 1.1rem; color: var(--color-muted); }
+  .modes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr)); gap: 1.5rem; margin-top: 3rem; }
   .mode { display: block; padding: 1.5rem; border: 1px solid var(--color-border); border-radius: 6px; text-decoration: none; color: var(--color-text); background: white; }
   .mode:hover { border-color: var(--color-accent); }
   .mode h2 { margin: 0 0 0.5rem; font-family: var(--font-sans); font-size: 1.25rem; color: var(--color-accent); }
