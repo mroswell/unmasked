@@ -6,14 +6,28 @@ const actors = (await getCollection('actors')).sort((a, b) =>
   a.data.id.localeCompare(b.data.id)
 );
 
-// Count event appearances and quotes per actor for at-a-glance context
+// Count event appearances, quotes, and hearing documents per actor for
+// at-a-glance context. The hearing-document filter mirrors the one on the
+// detail page (src/pages/people/[id].astro): a document with doc_type
+// 'testimony' whose bates_id is `<id>-testimony` or starts with
+// `<id>-supporting-`.
 const events = await getCollection('timeline');
 const quotes = await getCollection('quotes');
+const documents = await getCollection('documents');
+
+const testimonyCountFor = (id: string) =>
+  documents.filter(
+    (d) =>
+      d.data.doc_type === 'testimony' &&
+      (d.data.bates_id === `${id}-testimony` ||
+        d.data.bates_id.startsWith(`${id}-supporting-`)),
+  ).length;
 
 const enriched = actors.map((a) => ({
   actor: a.data,
   eventCount: events.filter((e) => e.data.actors.includes(a.data.id)).length,
   quoteCount: quotes.filter((q) => q.data.speaker === a.data.id).length,
+  testimonyCount: testimonyCountFor(a.data.id),
 }));
 
 const base = import.meta.env.BASE_URL;
@@ -27,7 +41,7 @@ const base = import.meta.env.BASE_URL;
   </p>
 
   <ul class="people-list">
-    {enriched.map(({ actor, eventCount, quoteCount }) => (
+    {enriched.map(({ actor, eventCount, quoteCount, testimonyCount }) => (
       <li class="person-card" id={`actor-${actor.id}`} data-pagefind-body data-pagefind-filter="content-type:Person">
         <h2 class="person-name">
           <a href={`${base}people/${actor.id}/`}>{actor.name}</a>
@@ -36,6 +50,7 @@ const base = import.meta.env.BASE_URL;
         <p class="bio">{actor.short_bio}</p>
         <p class="counts">
           <a href={`${base}people/${actor.id}/`}>
+            {testimonyCount > 0 && `${testimonyCount} hearing document${testimonyCount === 1 ? '' : 's'} · `}
             {eventCount} timeline event{eventCount === 1 ? '' : 's'}
             {quoteCount > 0 && ` · ${quoteCount} quote${quoteCount === 1 ? '' : 's'}`}
             {' →'}

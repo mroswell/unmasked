@@ -31,7 +31,9 @@ const quotes = (await getCollection('quotes')).filter(
 
 // Surface this person's hearing testimony + any "supporting document"
 // they filed under the same id prefix (e.g. wiseman → wiseman-testimony,
-// wiseman-supporting-document-1, wiseman-supporting-document-2).
+// wiseman-supporting-document-1, wiseman-supporting-document-2). Sort
+// pins the main testimony to the top, then orders supporting docs
+// alphabetically so `-1` precedes `-2`.
 const testimonyDocs = (await getCollection('documents'))
   .filter(
     (d) =>
@@ -39,7 +41,12 @@ const testimonyDocs = (await getCollection('documents'))
       (d.data.bates_id === `${actor.id}-testimony` ||
         d.data.bates_id.startsWith(`${actor.id}-supporting-`)),
   )
-  .sort((a, b) => a.data.bates_id.localeCompare(b.data.bates_id));
+  .sort((a, b) => {
+    const aMain = a.data.bates_id === `${actor.id}-testimony`;
+    const bMain = b.data.bates_id === `${actor.id}-testimony`;
+    if (aMain !== bMain) return aMain ? -1 : 1;
+    return a.data.bates_id.localeCompare(b.data.bates_id);
+  });
 
 const base = import.meta.env.BASE_URL;
 ---
