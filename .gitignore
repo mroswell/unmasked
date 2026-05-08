@@ -35,3 +35,8 @@ raw/*
 
 # Local scratch
 .tmp/
+
+# Local-only interactive copies of plan checklists. The companion .md is
+# committed; the .local.html mirror persists checked state in localStorage
+# and is not meant to ship to the deploy or to GitHub.
+*.local.html
