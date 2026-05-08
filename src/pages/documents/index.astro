@@ -38,15 +38,15 @@ const base = import.meta.env.BASE_URL;
           type="search"
           id="document-search"
           class="search-input"
-          placeholder="Search documents (e.g. testimony, masking, 0008257)…"
+          placeholder="Search full text of all document pages (e.g. masking, ECMO, RGPS)…"
           autocomplete="off"
         />
       </label>
     </div>
     <div class="filter-row">
       <span class="filter-label">Mode</span>
-      <button class="filter-chip is-active" data-mode="filter" type="button">Filter list</button>
-      <button class="filter-chip" data-mode="content" type="button">Search inside documents</button>
+      <button class="filter-chip is-active" data-mode="content" type="button">Search inside documents</button>
+      <button class="filter-chip" data-mode="filter" type="button">Search list</button>
     </div>
     <div class="filter-row" data-mode-only="filter">
       <span class="filter-label">Type</span>
@@ -112,7 +112,7 @@ const base = import.meta.env.BASE_URL;
 <script>
   type Mode = 'filter' | 'content';
 
-  const state: { ft: string; q: string; mode: Mode } = { ft: 'all', q: '', mode: 'filter' };
+  const state: { ft: string; q: string; mode: Mode } = { ft: 'all', q: '', mode: 'content' };
   const rows = document.querySelectorAll<HTMLTableRowElement>('.doc-table tbody tr');
   const table = document.querySelector<HTMLElement>('.doc-table');
   const empty = document.querySelector<HTMLElement>('.empty-state');
@@ -206,7 +206,7 @@ const base = import.meta.env.BASE_URL;
     }
   }
 
-  const FILTER_PLACEHOLDER = 'Search documents (e.g. testimony, masking, 0008257)…';
+  const FILTER_PLACEHOLDER = 'Search by Bates ID or Title (e.g. testimony, 0008257)…';
   const CONTENT_PLACEHOLDER = 'Search full text of all document pages (e.g. masking, ECMO, RGPS)…';
 
   function applyMode() {
@@ -221,18 +221,15 @@ const base = import.meta.env.BASE_URL;
       if (typeFilterRow) typeFilterRow.hidden = true;
       if (contentResults) contentResults.hidden = false;
       if (empty) empty.hidden = true;
-      if (searchInput) {
-        searchInput.placeholder = CONTENT_PLACEHOLDER;
-        // Focus + select so the user can immediately type or replace any
-        // leftover filter-mode query.
-        searchInput.focus();
-        searchInput.select();
-      }
+      if (searchInput) searchInput.placeholder = CONTENT_PLACEHOLDER;
       applyContentMode();
     }
   }
 
-  // Mode toggle (top-level chips with data-mode)
+  // Mode toggle (top-level chips with data-mode). Focus the input only on
+  // user-initiated mode switches, not on the initial applyMode() call —
+  // otherwise content-mode being the default would yank focus on every
+  // page load.
   document.querySelectorAll<HTMLButtonElement>('.filter-chip[data-mode]').forEach((btn) => {
     btn.addEventListener('click', () => {
       state.mode = (btn.dataset.mode as Mode) ?? 'filter';
@@ -240,6 +237,10 @@ const base = import.meta.env.BASE_URL;
         b.classList.toggle('is-active', b.dataset.mode === state.mode);
       });
       applyMode();
+      if (searchInput) {
+        searchInput.focus();
+        searchInput.select();
+      }
     });
   });
 
@@ -275,6 +276,10 @@ const base = import.meta.env.BASE_URL;
       }
     });
   }
+
+  // Sync DOM to the initial state (default mode is 'content', so we need to
+  // hide the table and reveal the content-results panel on first paint).
+  applyMode();
 </script>
 
 <style>
