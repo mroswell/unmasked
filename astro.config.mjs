@@ -8,11 +8,13 @@ emitGlossaryAssets();
 const aliases = loadAliases();
 
 export default defineConfig({
-  // Deployed at GitHub Pages subpath: https://mroswell.github.io/unmasked/
-  // When migrating to a custom subdomain, change site → 'https://signals.coviddocuments.com',
-  // base → '/', and remove the rewrite-paths build step.
-  site: 'https://mroswell.github.io',
-  base: '/unmasked/',
+  // Deployed at https://vsafetysignals.com (custom apex domain on GitHub Pages,
+  // configured via public/CNAME). The legacy github.io URL still works via
+  // GitHub Pages' automatic redirect.
+  // The post-build path-rewriter (scripts/07-rewrite-paths-for-base.mjs) is a
+  // no-op when base is '/'.
+  site: 'https://vsafetysignals.com',
+  base: '/',
   output: 'static',
   trailingSlash: 'always',
   build: { format: 'directory' },
