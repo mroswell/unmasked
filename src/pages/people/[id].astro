@@ -29,6 +29,18 @@ const quotes = (await getCollection('quotes')).filter(
   (q) => q.data.speaker === actor.id
 );
 
+// Surface this person's hearing testimony + any "supporting document"
+// they filed under the same id prefix (e.g. wiseman → wiseman-testimony,
+// wiseman-supporting-document-1, wiseman-supporting-document-2).
+const testimonyDocs = (await getCollection('documents'))
+  .filter(
+    (d) =>
+      d.data.doc_type === 'testimony' &&
+      (d.data.bates_id === `${actor.id}-testimony` ||
+        d.data.bates_id.startsWith(`${actor.id}-supporting-`)),
+  )
+  .sort((a, b) => a.data.bates_id.localeCompare(b.data.bates_id));
+
 const base = import.meta.env.BASE_URL;
 ---
 
@@ -43,6 +55,31 @@ const base = import.meta.env.BASE_URL;
     <p class="back-link">
       <a href={`${base}people/`}>← All people</a>
     </p>
+
+    {testimonyDocs.length > 0 && (
+      <section>
+        <h2>
+          Hearing testimony
+          {testimonyDocs.length > 1 && <span class="count">({testimonyDocs.length})</span>}
+        </h2>
+        <ul class="testimony-list">
+          {testimonyDocs.map((doc) => {
+            const isMain = doc.data.bates_id === `${actor.id}-testimony`;
+            return (
+              <li>
+                <a href={`${base}documents/${doc.data.bates_id}/`} class="testimony-link">
+                  <span class="testimony-label">{isMain ? 'Written testimony' : 'Supporting document'}</span>
+                  <span class="testimony-title">{doc.data.title}</span>
+                  {doc.data.page_count != null && (
+                    <span class="testimony-pages">{doc.data.page_count} {doc.data.page_count === 1 ? 'page' : 'pages'}</span>
+                  )}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    )}
 
     {events.length > 0 ? (
       <section>
@@ -210,5 +247,47 @@ const base = import.meta.env.BASE_URL;
   .empty {
     color: var(--color-muted);
     font-style: italic;
+  }
+
+  .testimony-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.6rem;
+  }
+  .testimony-link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem 0.85rem;
+    padding: 0.7rem 1rem;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-accent);
+    border-radius: 0 6px 6px 0;
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: var(--font-sans);
+  }
+  .testimony-link:hover {
+    border-color: var(--color-accent);
+    background: rgba(15, 76, 92, 0.03);
+  }
+  .testimony-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+  }
+  .testimony-title {
+    flex: 1 1 auto;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  .testimony-pages {
+    font-size: 0.8rem;
+    color: var(--color-muted);
   }
 </style>
