@@ -210,19 +210,32 @@ const base = import.meta.env.BASE_URL;
   const CONTENT_PLACEHOLDER = 'Search full text of all document pages (e.g. masking, ECMO, RGPS)…';
 
   function applyMode() {
-    if (state.mode === 'filter') {
-      if (table) table.hidden = false;
-      if (typeFilterRow) typeFilterRow.hidden = false;
-      if (contentResults) contentResults.hidden = true;
-      if (searchInput) searchInput.placeholder = FILTER_PLACEHOLDER;
-      applyFilterMode();
-    } else {
+    const q = state.q.trim();
+    const isContentSearchActive = state.mode === 'content' && q.length > 0;
+
+    if (searchInput) {
+      searchInput.placeholder = state.mode === 'filter' ? FILTER_PLACEHOLDER : CONTENT_PLACEHOLDER;
+    }
+    if (typeFilterRow) typeFilterRow.hidden = state.mode !== 'filter';
+
+    if (isContentSearchActive) {
+      // User is actively searching document text — replace the table with results.
       if (table) table.hidden = true;
-      if (typeFilterRow) typeFilterRow.hidden = true;
       if (contentResults) contentResults.hidden = false;
       if (empty) empty.hidden = true;
-      if (searchInput) searchInput.placeholder = CONTENT_PLACEHOLDER;
       applyContentMode();
+    } else {
+      // Default view in either mode: show the catalog table. Filter mode
+      // applies the metadata filter; content mode with an empty query
+      // shows everything so the user always has documents to look at.
+      if (table) table.hidden = false;
+      if (contentResults) contentResults.hidden = true;
+      if (state.mode === 'filter') {
+        applyFilterMode();
+      } else {
+        rows.forEach((row) => { row.hidden = false; });
+        if (empty) empty.hidden = true;
+      }
     }
   }
 
@@ -258,18 +271,15 @@ const base = import.meta.env.BASE_URL;
   if (searchInput) {
     searchInput.addEventListener('input', () => {
       state.q = searchInput.value;
-      if (state.mode === 'filter') {
-        applyFilterMode();
-      } else {
-        // Immediate visible feedback that the keystroke landed (so the
-        // status doesn't appear stuck at "Type to search…" during the
-        // debounce or pagefind WASM load).
-        const q = state.q.trim();
+      // applyMode handles the visible-panel switch every keystroke
+      // (e.g. clearing the input in content mode brings the table back).
+      applyMode();
+      if (state.mode === 'content' && state.q.trim().length > 0) {
+        // Show "Searching for…" immediately so the status reflects the
+        // latest keystroke before the debounced pagefind query lands.
         if (contentStatus) {
           (contentStatus as HTMLElement).hidden = false;
-          contentStatus.textContent = q.length === 0
-            ? 'Type to search inside document text…'
-            : `Searching for "${q}"…`;
+          contentStatus.textContent = `Searching for "${state.q.trim()}"…`;
         }
         if (contentDebounce !== null) window.clearTimeout(contentDebounce);
         contentDebounce = window.setTimeout(() => applyContentMode(), 150);
