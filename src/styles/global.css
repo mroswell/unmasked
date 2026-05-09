@@ -206,7 +206,9 @@ body.nav-open .nav-toggle-bot { transform: translateY(-5px) rotate(-45deg); }
    ============================================================ */
 dfn[data-term] {
   font-style: normal;
-  border-bottom: 1px dotted rgba(15, 76, 92, 0.45);
+  /* Dashed (not solid, to distinguish from a clickable link), but at full
+     accent color so the marker is actually visible against body text. */
+  border-bottom: 1px dashed var(--color-accent);
   cursor: default;
   position: relative;
 }
