@@ -25,7 +25,7 @@
   },
   {
     "id": "baer",
-    "name": "Dr. Bethany Baer",
+    "name": "Bethany Baer, MD",
     "role_at_time": "Official, Division of Pharmacovigilance, FDA CBER OBPV",
     "short_bio": "CBER official who questioned Dr. Szarfman's access to VAERS data and acknowledged in 2024 that the RGPS model yielded significantly higher signals than MGPS."
   },
@@ -37,19 +37,19 @@
   },
   {
     "id": "anderson",
-    "name": "Dr. Steven Anderson",
+    "name": "Steven Anderson, PhD",
     "role_at_time": "Director, Office of Biostatistics and Pharmacovigilance, FDA CBER",
     "short_bio": "Headed CBER's pharmacovigilance office and in September 2021 asked that Dr. Szarfman refrain from using her FDA email to communicate data mining findings using CBER VAERS data."
   },
   {
     "id": "forshee",
-    "name": "Dr. Richard Forshee",
+    "name": "Richard Forshee, PhD",
     "role_at_time": "Associate Director for Research/Acting Deputy Director, FDA CBER OBPV",
     "short_bio": "Reported Dr. Szarfman's mortality-signal findings to Dr. Marks in July 2021 and in 2022 expressed concerns about her published paper on masking."
   },
   {
     "id": "niu",
-    "name": "Dr. Manette Niu",
+    "name": "Manette Niu, MD",
     "role_at_time": "Acting Branch Chief, Division of Pharmacovigilance, FDA CBER OBPV",
     "short_bio": "CBER official who received Dr. Szarfman's RGPS analyses in 2021 and told her CBER could not collaborate with her on the project."
   },
@@ -61,19 +61,19 @@
   },
   {
     "id": "cavazzoni",
-    "name": "Dr. Patrizia Cavazzoni",
+    "name": "Patrizia Cavazzoni, MD",
     "role_at_time": "Director, FDA Center for Drug Evaluation and Research (CDER)",
     "short_bio": "Was warned by Dr. Marks in September 2021 that Dr. Szarfman's data mining could create erroneous conflicts that feed into anti-vaccination rhetoric."
   },
   {
     "id": "stein",
-    "name": "Dr. Peter Stein",
+    "name": "Peter Stein, MD",
     "role_at_time": "Director, Office of New Drugs, FDA CDER",
     "short_bio": "Reported to Dr. Marks in September 2021 that his office had made clear to Dr. Szarfman that she should not be discussing or providing internal analyses externally."
   },
   {
     "id": "stockbridge",
-    "name": "Dr. Norman Stockbridge",
+    "name": "Norman Stockbridge, MD, PhD",
     "role_at_time": "Division Director, Division of Cardiology and Nephrology, FDA CDER",
     "short_bio": "CDER division director who attended Dr. Szarfman's December 2020 meeting on new safety methodology and received her May 2021 analysis on undervalued myocardial infarction signals."
   },
@@ -108,8 +108,8 @@
     "short_bio": "CDC Director who in 2022 wrote to Sen. Johnson defending EB data mining as 'a more robust technique' for analyzing VAERS reports."
   },
   {
-    "id": "reezek",
-    "name": "Jeff Reezek",
+    "id": "reczek",
+    "name": "Jeff Reczek, MPA",
     "role_at_time": "Official, Centers for Disease Control and Prevention",
     "short_bio": "Authored the March 2023 CDC letter to Sen. Johnson on EB data mining cited throughout the report."
   },

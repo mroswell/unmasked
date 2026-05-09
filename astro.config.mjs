@@ -18,6 +18,13 @@ export default defineConfig({
   output: 'static',
   trailingSlash: 'always',
   build: { format: 'directory' },
+  // Preserve any deep-links that pointed at the old, misspelled slug
+  // /people/reezek/ — the actor's correct surname is Reczek, and the
+  // slug was renamed to match. Astro emits a meta-refresh redirect at
+  // the old path on static deploys.
+  redirects: {
+    '/people/reezek/': '/people/reczek/',
+  },
   markdown: {
     remarkPlugins: [[remarkGlossary, { aliases }]],
   },
