@@ -24,6 +24,7 @@ const isActive = (path: string) =>
 const link = (path: string) => base + path.replace(/^\//, '');
 
 const navLinks = [
+  { path: '/',           label: 'Home' },
   { path: '/explainer/', label: 'Explainer' },
   { path: '/timeline/',  label: 'Timeline' },
   { path: '/documents/', label: 'Documents' },
@@ -41,10 +42,36 @@ const navLinks = [
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    {/* Critical layout CSS, inlined so it applies on first paint — before
+        any external stylesheet finishes loading. Without this, the new
+        page can render briefly with default flex behavior (nav left-
+        aligned), then snap to centered once global.css applies, which
+        reads as a "menu flash" leftward on every navigation. */}
+    <style is:inline>
+      .site-header {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        gap: 1rem;
+        font-family: Inter, system-ui, -apple-system, sans-serif;
+        padding: 0.7rem 1.5rem;
+        border-bottom: 1px solid #d8d8d8;
+        background: #fafafa;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      .site-header > nav { grid-column: 2; display: flex; gap: 0.25rem; }
+      .site-header > .search-mount {
+        grid-column: 3;
+        justify-self: end;
+        width: 14rem;
+      }
+      .site-header > .nav-toggle { display: none; }
+    </style>
   </head>
   <body>
     <header class="site-header">
-      <a href={base} class="site-title">Vaccine Safety Signals</a>
       <button
         class="nav-toggle"
         type="button"

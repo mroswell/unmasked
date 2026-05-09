@@ -3,60 +3,80 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="About — Vaccine Safety Signals">
-  <article class="prose-page">
-    <h1>About this site</h1>
-    <p>This is an independent, evidence-first presentation of the U.S. Senate Permanent Subcommittee on Investigations' April 29, 2026 majority-staff interim report <em>Unmasked: How Biden Health Officials Purposely Turned a Blind Eye Toward COVID-19 Vaccine Safety Signals</em>, together with the Bates-stamped HHS records, witness testimony, and other exhibits the Subcommittee published with it.</p>
-    <p>The site is not affiliated with the Subcommittee. Its purpose is to make the underlying records — emails, presentations, FOIA productions, journal papers — accessible and navigable to readers without a pharmacovigilance background, and to honestly disclose where the cited record is or is not publicly available.</p>
-    <h2>Methodology</h2>
-    <p>Source documents are downloaded from the Subcommittee's hearing page, and OCR'd with <code>ocrmypdf</code>. ("OCR" means Optical Character Recognition.) Citations in the report are extracted by Bates ID and cross-referenced against the document catalog.</p>
-    <h2>From the author</h2>
-    <p>This website was created by Marjorie Roswell. I will not forget the day Dr. Peter Marks told a roomful of bereaved and vaccine-injured people that there were no signals in FDA data suggesting any relationship between the COVID-19 vaccines and the losses and conditions we had endured. The records the Subcommittee has now made public — and which this site presents — show that FDA's safety data mining had in fact been masking signals (yielding missed signals) when those reassurances were given.</p>
+  <article class="about-page">
+    <div class="about-text">
+      <h1>About this site</h1>
+      <p>This is an independent, evidence-first presentation of the U.S. Senate Permanent Subcommittee on Investigations' April 29, 2026 majority-staff interim report <em>Unmasked: How Biden Health Officials Purposely Turned a Blind Eye Toward COVID-19 Vaccine Safety Signals</em>, together with the Bates-stamped HHS records, witness testimony, and other exhibits the Subcommittee published with it.</p>
+      <p>The site is not affiliated with the Subcommittee. Its purpose is to make the underlying records — emails, presentations, FOIA productions, journal papers — accessible and navigable to readers without a pharmacovigilance background, and to honestly disclose where the cited record is or is not publicly available.</p>
+      <h2>Methodology</h2>
+      <p>Source documents are downloaded from the Subcommittee's hearing page, and OCR'd with <code>ocrmypdf</code>. ("OCR" means Optical Character Recognition.) Citations in the report are extracted by Bates ID and cross-referenced against the document catalog.</p>
+      <h2>From the author</h2>
+      <p>This website was created by Marjorie Roswell. I will not forget the day Dr. Peter Marks told a roomful of bereaved and vaccine-injured people that there were no signals in FDA data suggesting any relationship between the COVID-19 vaccines and the losses and conditions we had endured. The records the Subcommittee has now made public — and which this site presents — show that FDA's safety data mining had in fact been masking signals even as those reassurances were given.</p>
 
-    <p>Furthermore, he had been <strong>told</strong> by experts how to <strong>not</strong> mask the signals. He had chosen not to implement the fix.</p>
+      <p>Furthermore, he had been <strong>told</strong> by experts how to <strong>not</strong> mask the signals. He had chosen not to implement the fix.</p>
 
-    <p>There is a human impact, which in some cases is devastating.</p>
+      <p>There is a human impact, which in some cases is devastating.</p>
+    </div>
 
-    <h2>Feedback</h2>
-    <p>If you've found something on this site to correct, supplement, or discuss, please use the form below.</p>
+    <aside class="about-form">
+      <h2>Feedback</h2>
+      <p>If you've found something on this site to correct, supplement, or discuss, please use the form below.</p>
 
-    <form
-      class="contact-form"
-      action="https://formspree.io/f/mwvywkzb"
-      method="POST"
-    >
-      <label class="field">
-        <span class="field-label">Name <small>(optional)</small></span>
-        <input type="text" name="name" autocomplete="name" />
-      </label>
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/mwvywkzb"
+        method="POST"
+      >
+        <label class="field">
+          <span class="field-label">Name <small>(optional)</small></span>
+          <input type="text" name="name" autocomplete="name" />
+        </label>
 
-      <label class="field">
-        <span class="field-label">Email <small>(only needed if you'd like a reply)</small></span>
-        <input type="email" name="email" autocomplete="email" />
-      </label>
+        <label class="field">
+          <span class="field-label">Email <small>(only needed if you'd like a reply)</small></span>
+          <input type="email" name="email" autocomplete="email" />
+        </label>
 
-      <label class="field">
-        <span class="field-label">Message</span>
-        <textarea name="message" rows="6" required></textarea>
-      </label>
+        <label class="field">
+          <span class="field-label">Message</span>
+          <textarea name="message" rows="6" required></textarea>
+        </label>
 
-      {/* Honeypot — hidden from human users; bots that fill every field
-          get caught and discarded by Formspree. */}
-      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="honeypot" aria-hidden="true" />
+        {/* Honeypot — hidden from human users; bots that fill every field
+            get caught and discarded by Formspree. */}
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="honeypot" aria-hidden="true" />
 
-      {/* Customize the email subject Formspree sends you. */}
-      <input type="hidden" name="_subject" value="Vaccine Safety Signals — feedback" />
+        {/* Customize the email subject Formspree sends you. */}
+        <input type="hidden" name="_subject" value="Vaccine Safety Signals — feedback" />
 
-      <button type="submit" class="contact-submit">Send</button>
-    </form>
+        <button type="submit" class="contact-submit">Send</button>
+      </form>
 
-    <p class="form-note">
-      Submissions go through <a href="https://formspree.io/" target="_blank" rel="noopener">Formspree</a>; spreadsheet logging is configured in the Formspree dashboard.
-    </p>
+      <p class="form-note">
+        Submissions go through <a href="https://formspree.io/" target="_blank" rel="noopener">Formspree</a>.
+      </p>
+    </aside>
   </article>
 </BaseLayout>
 
 <style>
-  .prose-page { max-width: var(--max-prose); margin: 0 auto; }
+  .about-page {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  .about-text > :first-child { margin-top: 0; }
+  .about-form > :first-child { margin-top: 0; }
+
+  /* Stack to a single column on tablets / phones — two side-by-side
+     columns get cramped below ~840px. */
+  @media (max-width: 840px) {
+    .about-page {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
 
   .contact-form {
     display: grid;
@@ -64,7 +84,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     margin: 1.25rem 0 0.75rem;
     padding: 1.25rem;
     background: white;
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-border-soft);
     border-radius: 6px;
   }
   .field { display: grid; gap: 0.35rem; }
@@ -84,7 +104,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     font-family: var(--font-sans);
     font-size: 0.95rem;
     padding: 0.55rem 0.7rem;
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-input-border);
     border-radius: 4px;
     background: var(--color-bg);
     color: var(--color-text);
