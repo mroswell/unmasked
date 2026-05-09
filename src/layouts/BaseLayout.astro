@@ -45,7 +45,20 @@ const navLinks = [
   <body>
     <header class="site-header">
       <a href={base} class="site-title">Vaccine Safety Signals</a>
-      <nav>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Menu"
+        aria-controls="primary-nav"
+        aria-expanded="false"
+      >
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <line class="nav-toggle-line nav-toggle-top" x1="4" y1="7" x2="20" y2="7"/>
+          <line class="nav-toggle-line nav-toggle-mid" x1="4" y1="12" x2="20" y2="12"/>
+          <line class="nav-toggle-line nav-toggle-bot" x1="4" y1="17" x2="20" y2="17"/>
+        </svg>
+      </button>
+      <nav id="primary-nav">
         {navLinks.map(({ path, label }) => (
           <a href={link(path)} aria-current={isActive(path) ? 'page' : undefined}>{label}</a>
         ))}
@@ -54,6 +67,28 @@ const navLinks = [
         <SearchBox />
       </div>
     </header>
+
+    <script is:inline>
+      // Toggle the mobile nav. Below 860px the nav is hidden until the
+      // hamburger is tapped; the toggle flips both aria-expanded and a
+      // body-level class the CSS keys off of.
+      (function() {
+        const btn = document.querySelector('.nav-toggle');
+        if (!btn) return;
+        btn.addEventListener('click', () => {
+          const open = document.body.classList.toggle('nav-open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+        // Close after navigating to a link (mostly relevant when the new
+        // page is the same single-page-app-style scroll, e.g. /timeline/#date).
+        document.querySelectorAll('#primary-nav a').forEach((a) => {
+          a.addEventListener('click', () => {
+            document.body.classList.remove('nav-open');
+            btn.setAttribute('aria-expanded', 'false');
+          });
+        });
+      })();
+    </script>
     <main>
       <slot />
     </main>
