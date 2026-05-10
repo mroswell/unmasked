@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Page not found — Vaccine Safety Signals">
+  <article class="notfound">
+    <p class="status">404</p>
+    <h1>Page not found</h1>
+    <p class="lede">The URL you opened doesn't match a page on this site. Most likely the link points to an older path, or there's a typo somewhere along the way.</p>
+
+    <h2>Try one of these</h2>
+    <ul class="suggestions">
+      <li><a href={base}>Home</a> — what the site is and how to use it</li>
+      <li><a href={`${base}timeline/`}>Timeline</a> — dated chronology of events, with citations</li>
+      <li><a href={`${base}documents/`}>Documents</a> — searchable archive of every published exhibit</li>
+      <li><a href={`${base}explainer/`}>Explainer</a> — plain-language overview of safety signal masking</li>
+      <li><a href={`${base}about/`}>About</a> — methodology and feedback form</li>
+    </ul>
+
+    <p class="search-hint">Or use the search box in the header to look across the whole site.</p>
+  </article>
+</BaseLayout>
+
+<style>
+  .notfound {
+    max-width: var(--max-prose);
+    margin: 1rem auto 0;
+  }
+  .status {
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--color-muted);
+    margin: 0 0 0.4rem;
+  }
+  .notfound h1 {
+    margin: 0 0 0.6em;
+  }
+  .lede {
+    font-size: 1.05rem;
+    color: var(--color-muted);
+    margin-bottom: 2rem;
+  }
+  .notfound h2 {
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-muted);
+    margin: 1.5rem 0 0.5rem;
+  }
+  .suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem;
+  }
+  .suggestions li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-border-soft);
+  }
+  .suggestions li:last-child {
+    border-bottom: none;
+  }
+  .suggestions a {
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .suggestions a:hover {
+    text-decoration: underline;
+  }
+  .search-hint {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    color: var(--color-muted);
+  }
+</style>

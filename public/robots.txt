@@ -1,0 +1,6 @@
+# Allow all well-behaved crawlers everywhere on the site.
+User-agent: *
+Allow: /
+
+# Point crawlers at the sitemap so they discover every page.
+Sitemap: https://vsafetysignals.com/sitemap-index.xml
