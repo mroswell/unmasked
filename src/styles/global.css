@@ -141,8 +141,14 @@ body.nav-open .nav-toggle-top { transform: translateY(5px) rotate(45deg); }
 body.nav-open .nav-toggle-mid { opacity: 0; }
 body.nav-open .nav-toggle-bot { transform: translateY(-5px) rotate(-45deg); }
 
-@media (max-width: 860px) {
-  /* Below 860px we fall back to flex with wrap — the hamburger drawer
+/* Below 1024px the desktop layout (1fr | nav | 1fr-with-14rem-search)
+   gets cramped: 8 nav links (~690px) plus the 14rem search slot plus
+   gaps and padding total ~990px of fixed-width content, and the search
+   overflows leftward into the nav at narrower viewports. So we
+   intentionally drop into the hamburger-drawer pattern earlier than
+   the previous 860px breakpoint — the drawer always fits. */
+@media (max-width: 1024px) {
+  /* Below 1024px we fall back to flex with wrap — the hamburger drawer
      pattern can't use the desktop 3-column grid because the nav needs
      to occupy its own row, full-width, when expanded. */
   .site-header {

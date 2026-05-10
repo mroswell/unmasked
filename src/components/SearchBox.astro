@@ -1,23 +1,235 @@
 ---
+// Custom site-wide search using Pagefind's JS API directly (not Pagefind
+// UI's default rendering). Renders an obvious, branded input field plus
+// an absolutely-positioned dropdown that shows matching results as you
+// type.
+//
+// Why custom: Pagefind UI's default styling is a small magnifier icon
+// without a visible border, which reads as decoration rather than as a
+// search affordance — and when the Pagefind index isn't available (dev
+// server, stale preview), it hides itself silently. This component
+// always shows the input so users know search exists, and degrades to a
+// "search index not yet built" hint when Pagefind can't load.
 const base = import.meta.env.BASE_URL;
 ---
 
-<div id="pagefind-search-mount"></div>
-<link rel="stylesheet" href={`${base}pagefind/pagefind-ui.css`} />
+<div class="site-search">
+  <svg class="site-search-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="11" cy="11" r="7"/>
+    <path d="m21 21-4.3-4.3"/>
+  </svg>
+  <input
+    type="search"
+    class="site-search-input"
+    placeholder="Search…"
+    aria-label="Search the site"
+    aria-controls="site-search-results"
+    aria-autocomplete="list"
+    autocomplete="off"
+  />
+  <div id="site-search-results" class="site-search-results" role="listbox" hidden></div>
+</div>
 
 <script is:inline define:vars={{ base }}>
-  import(base + 'pagefind/pagefind-ui.js').then(({ PagefindUI }) => {
-    new PagefindUI({
-      element: '#pagefind-search-mount',
-      showImages: false,
-      showSubResults: true,
-      excerptLength: 30,
+  (function () {
+    const input = document.querySelector('.site-search-input');
+    const dropdown = document.getElementById('site-search-results');
+    if (!(input instanceof HTMLInputElement) || !(dropdown instanceof HTMLElement)) return;
+
+    const PAGEFIND_URL = base + 'pagefind/pagefind.js';
+    let pagefind = null;
+    let pagefindError = null;
+    let debounce = null;
+
+    async function loadPagefind() {
+      if (pagefind || pagefindError) return;
+      try {
+        pagefind = await import(PAGEFIND_URL);
+        await pagefind.options({ excerptLength: 28 });
+      } catch (err) {
+        pagefindError = err;
+      }
+    }
+
+    function escapeHtml(s) {
+      return s.replace(/[&<>"']/g, (ch) => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[ch]));
+    }
+
+    function showDropdown(html) {
+      dropdown.innerHTML = html;
+      dropdown.hidden = false;
+    }
+
+    function hideDropdown() {
+      dropdown.hidden = true;
+      dropdown.innerHTML = '';
+    }
+
+    async function runSearch(q) {
+      if (!q.trim()) { hideDropdown(); return; }
+      await loadPagefind();
+      if (pagefindError || !pagefind) {
+        showDropdown('<p class="site-search-empty">Search index isn’t built yet. Run <code>npm run build</code>.</p>');
+        return;
+      }
+      let results;
+      try {
+        const search = await pagefind.search(q);
+        results = await Promise.all(search.results.slice(0, 8).map((r) => r.data()));
+      } catch (err) {
+        showDropdown('<p class="site-search-empty">Search error. Try a different query.</p>');
+        return;
+      }
+      if (results.length === 0) {
+        showDropdown('<p class="site-search-empty">No matches for &ldquo;' + escapeHtml(q) + '&rdquo;.</p>');
+        return;
+      }
+      const items = results.map((r) => {
+        const title = (r.meta && r.meta.title) ? r.meta.title : r.url;
+        return '<a class="site-search-result" href="' + escapeHtml(r.url) + '" role="option">'
+          + '<span class="site-search-result-title">' + escapeHtml(title) + '</span>'
+          + '<span class="site-search-result-excerpt">' + r.excerpt + '</span>'
+          + '</a>';
+      }).join('');
+      showDropdown(items);
+    }
+
+    input.addEventListener('input', () => {
+      if (debounce !== null) clearTimeout(debounce);
+      debounce = window.setTimeout(() => runSearch(input.value), 150);
     });
-  }).catch(() => {
-    // Pagefind index isn't available (dev server or stale preview).
-    // Hide the search affordance entirely rather than show a confusing placeholder.
-    const mount = document.getElementById('pagefind-search-mount');
-    const wrapper = mount?.closest('.search-mount');
-    if (wrapper instanceof HTMLElement) wrapper.style.display = 'none';
-  });
+
+    // Hide dropdown on click-outside or Escape.
+    document.addEventListener('click', (e) => {
+      if (!(e.target instanceof Node)) return;
+      if (e.target === input) return;
+      if (dropdown.contains(e.target)) return;
+      hideDropdown();
+    });
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') { hideDropdown(); input.blur(); }
+    });
+
+    // Pre-load Pagefind quietly when the input is first focused, so the
+    // first keystroke has zero perceptible latency.
+    input.addEventListener('focus', () => { loadPagefind(); }, { once: true });
+  })();
 </script>
+
+<style>
+  .site-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .site-search-icon {
+    position: absolute;
+    left: 0.55rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    color: var(--color-muted);
+    pointer-events: none;
+  }
+  .site-search-input {
+    width: 100%;
+    padding: 0.4rem 0.7rem 0.4rem 2rem;
+    border: 1px solid var(--color-input-border);
+    border-radius: 4px;
+    background: white;
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+  }
+  .site-search-input:focus {
+    outline: 2px solid var(--color-accent);
+    outline-offset: -2px;
+  }
+
+  .site-search-results {
+    position: absolute;
+    top: calc(100% + 0.3rem);
+    right: 0;
+    width: max(20rem, 100%);
+    max-height: 70vh;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid var(--color-border);
+    border-radius: 6px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    z-index: 200;
+    font-family: var(--font-sans);
+  }
+  .site-search-empty {
+    padding: 0.85rem 1rem;
+    margin: 0;
+    color: var(--color-muted);
+    font-size: 0.88rem;
+    font-style: italic;
+  }
+  .site-search-empty code {
+    background: rgba(0,0,0,0.05);
+    padding: 0.05em 0.3em;
+    border-radius: 3px;
+    font-size: 0.95em;
+  }
+  .site-search-result {
+    display: block;
+    padding: 0.65rem 1rem;
+    text-decoration: none;
+    color: var(--color-text);
+  }
+  /* Subtle separator only between items, not below the last one. */
+  .site-search-result + .site-search-result {
+    border-top: 1px solid var(--color-border-soft);
+  }
+  /* Strong hover/focus state — the entire row turns into an accent
+     pill so the active link is unmistakable. */
+  .site-search-result:hover,
+  .site-search-result:focus {
+    background: var(--color-accent);
+    outline: none;
+  }
+  .site-search-result:hover .site-search-result-title,
+  .site-search-result:focus .site-search-result-title {
+    color: white;
+  }
+  .site-search-result:hover .site-search-result-excerpt,
+  .site-search-result:focus .site-search-result-excerpt {
+    color: rgba(255, 255, 255, 0.92);
+  }
+  .site-search-result-title {
+    display: block;
+    font-weight: 600;
+    color: var(--color-accent);
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+  }
+  .site-search-result-excerpt {
+    display: block;
+    font-size: 0.82rem;
+    color: var(--color-text);
+    line-height: 1.45;
+  }
+  /* Pagefind indexes the rendered HTML, which includes <dfn data-term="…">
+     elements from the remark-glossary plugin. Inside a search excerpt
+     those dashed underlines plus the <mark> highlights look noisy — the
+     excerpt is reference text, not active glossary prose. Suppress the
+     glossary decoration here. */
+  .site-search-result-excerpt :global(dfn[data-term]) {
+    border-bottom: none;
+  }
+  .site-search-result-excerpt :global(mark) {
+    background: rgba(15, 76, 92, 0.18);
+    color: inherit;
+    padding: 0 0.15em;
+    border-radius: 2px;
+  }
+  .site-search-result:hover .site-search-result-excerpt :global(mark),
+  .site-search-result:focus .site-search-result-excerpt :global(mark) {
+    background: rgba(255, 255, 255, 0.22);
+    color: white;
+  }
+</style>
