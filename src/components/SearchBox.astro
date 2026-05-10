@@ -116,7 +116,16 @@ const base = import.meta.env.BASE_URL;
   })();
 </script>
 
-<style>
+<style is:global>
+  /* `is:global` is essential here. The result rows (.site-search-result,
+     .site-search-result-title, etc.) are created at *runtime* via
+     innerHTML inside the script above. Astro's default style scoping
+     attaches a data-astro-cid attribute to elements at build time —
+     dynamic elements never get it, so a scoped rule like
+     `.site-search-result[data-astro-cid-XXX] { … }` can't find them
+     and the rows render with browser-default <a> styling (blue
+     underlined links). Going global lets the rules apply to both the
+     server-rendered scaffolding and the JS-injected children. */
   .site-search {
     position: relative;
     display: flex;
@@ -177,13 +186,15 @@ const base = import.meta.env.BASE_URL;
   }
   .site-search-result {
     display: block;
-    padding: 0.65rem 1rem;
+    padding: 0.85rem 1rem;
     text-decoration: none;
     color: var(--color-text);
   }
-  /* Subtle separator only between items, not below the last one. */
+  /* Visible separator only between items, not below the last one.
+     Uses --color-border (#d8d8d8, the same mid-grey as the home-page
+     box borders) so successive results are clearly separate rows. */
   .site-search-result + .site-search-result {
-    border-top: 1px solid var(--color-border-soft);
+    border-top: 1px solid var(--color-border);
   }
   /* Strong hover/focus state — the entire row turns into an accent
      pill so the active link is unmistakable. */
@@ -218,17 +229,17 @@ const base = import.meta.env.BASE_URL;
      those dashed underlines plus the <mark> highlights look noisy — the
      excerpt is reference text, not active glossary prose. Suppress the
      glossary decoration here. */
-  .site-search-result-excerpt :global(dfn[data-term]) {
+  .site-search-result-excerpt dfn[data-term] {
     border-bottom: none;
   }
-  .site-search-result-excerpt :global(mark) {
+  .site-search-result-excerpt mark {
     background: rgba(15, 76, 92, 0.18);
     color: inherit;
     padding: 0 0.15em;
     border-radius: 2px;
   }
-  .site-search-result:hover .site-search-result-excerpt :global(mark),
-  .site-search-result:focus .site-search-result-excerpt :global(mark) {
+  .site-search-result:hover .site-search-result-excerpt mark,
+  .site-search-result:focus .site-search-result-excerpt mark {
     background: rgba(255, 255, 255, 0.22);
     color: white;
   }
