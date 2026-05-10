@@ -11,6 +11,16 @@ const base = import.meta.env.BASE_URL;
     <h1>Unmasked: Vaccine Safety Signals</h1>
     <p class="lede">A structured presentation of the U.S. Senate Permanent Subcommittee on Investigations' April 2026 interim report and the underlying records published with it. The site centers the evidence: contemporaneous emails, the masking phenomenon in VAERS data mining, and the MGPS / RGPS comparison that drives the story.</p>
   </section>
+  <aside class="key-points" aria-labelledby="key-points-heading">
+    <h2 id="key-points-heading">Key Points</h2>
+    <ul>
+      <li>The FDA's vaccine safety monitoring system has a known flaw called &ldquo;masking&rdquo; — when similar products dominate the database, real warning signs can get hidden because the products end up being compared against themselves.</li>
+      <li>This happened with the COVID-19 mRNA vaccines (Pfizer and Moderna), where masking was roughly eight times more likely than with other vaccines.</li>
+      <li>A senior FDA scientist, Dr. Ana Szarfman, applied a better method (RGPS) and found over 20 hidden safety signals — including sudden cardiac death, Bell's palsy, heart attacks, blood clots, and dementia.</li>
+      <li>When she reported these findings to FDA leadership in 2021, she was told to stop, partly out of concern her work could fuel anti-vaccine sentiment.</li>
+      <li>The FDA never adopted the improved method, and the routine weekly COVID-19 vaccine data-mining reports were discontinued in July 2022 — around the same time outside groups were filing public records requests for them.</li>
+    </ul>
+  </aside>
   <section class="modes">
     <a class="mode" href={`${base}explainer/`}>
       <h2>Explainer</h2>
@@ -42,6 +52,33 @@ const base = import.meta.env.BASE_URL;
   /* text-wrap: pretty balances the last few lines of the paragraph so we
      don't get an orphan word on its own line. */
   .lede { font-size: 1.1rem; color: var(--color-muted); text-wrap: pretty; }
+  /* Key Points callout: bordered box with a teal accent stripe down the
+     left, signalling "summary" without competing with the three mode
+     boxes below for the visitor's attention. */
+  .key-points {
+    margin: 2.5rem 0 0;
+    padding: 1.25rem 1.5rem 1.25rem 1.4rem;
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-accent);
+    border-radius: 6px;
+    background: white;
+  }
+  .key-points h2 {
+    margin: 0 0 0.6rem;
+    font-family: var(--font-sans);
+    font-size: 1.1rem;
+    color: var(--color-accent);
+  }
+  .key-points ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+  .key-points li {
+    font-size: 0.97rem;
+    line-height: 1.55;
+    margin-bottom: 0.5rem;
+  }
+  .key-points li:last-child { margin-bottom: 0; }
   .modes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3rem; }
   @media (max-width: 640px) {
     .modes { grid-template-columns: 1fr; }
