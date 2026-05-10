@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 import remarkGlossary from './src/lib/remark-glossary.ts';
 import { loadAliases } from './src/lib/glossary-loader.ts';
 import { emitGlossaryAssets } from './src/lib/emit-shortdefs.ts';
@@ -8,6 +9,7 @@ emitGlossaryAssets();
 const aliases = loadAliases();
 
 export default defineConfig({
+  integrations: [sitemap()],
   // Deployed at https://vsafetysignals.com (custom apex domain on GitHub Pages,
   // configured via public/CNAME). The legacy github.io URL still works via
   // GitHub Pages' automatic redirect.

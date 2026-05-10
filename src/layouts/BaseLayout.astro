@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import SearchBox from '../components/SearchBox.astro';
 import GlossaryTooltips from '../components/GlossaryTooltips.astro';
+import ShareButtons from '../components/ShareButtons.astro';
 
 interface Props {
   title: string;
@@ -9,6 +10,11 @@ interface Props {
 }
 
 const { title, description = 'Vaccine Safety Signals: a structured, footnoted presentation of the Senate PSI report and its underlying records.' } = Astro.props;
+
+// Full URL of the current page, used in OpenGraph + Twitter Card meta tags
+// and passed to ShareButtons so each network gets the right URL embedded.
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
+const ogImageUrl = new URL('/og-img.jpg', Astro.site).href;
 
 // Active-page detection. Astro.url.pathname includes the deploy base prefix
 // (e.g., '/unmasked/timeline/' on github.io); strip it to compare against
@@ -42,6 +48,35 @@ const navLinks = [
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+
+    {/* OpenGraph (Facebook, LinkedIn, BlueSky, iMessage previews, etc.) */}
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Vaccine Safety Signals" />
+
+    {/* Twitter / X cards */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    {/* Google Analytics 4 (gtag.js). Standard install — async tag-loader
+        plus the inline init. The measurement ID is the project's
+        production ID; if you ever rotate property IDs, edit it here. */}
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-255FPTN6M8"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-255FPTN6M8');
+    </script>
     {/* Critical layout CSS, inlined so it applies on first paint — before
         any external stylesheet finishes loading. Without this, the new
         page can render briefly with default flex behavior (nav left-
@@ -118,6 +153,7 @@ const navLinks = [
     </script>
     <main>
       <slot />
+      <ShareButtons title={title} />
     </main>
     <footer class="site-footer">
       <p>Source: <a href="https://www.hsgac.senate.gov/">U.S. Senate Permanent Subcommittee on Investigations</a> hearing materials. This site is not affiliated with the Subcommittee.</p>
