@@ -89,8 +89,13 @@ const base = import.meta.env.BASE_URL;
         // Collapse long dot-leader runs (e.g. ".................. 19" from
         // a PDF table of contents that the OCR pass preserved verbatim)
         // to a fixed 5-dot marker — visible enough to read as "leader",
-        // not 3 dots (which reads as a rhetorical ellipsis).
-        const excerpt = r.excerpt.replace(/\.{4,}/g, '.....');
+        // not 3 dots (which reads as a rhetorical ellipsis). Then break
+        // to a new line after the page number that follows, so what was
+        // a single TOC line in the source becomes ". . . . . N⏎" in the
+        // excerpt and the next entry starts cleanly on its own line.
+        const excerpt = r.excerpt
+          .replace(/\.{4,}/g, '.....')
+          .replace(/(\.{5}\s+\d+)/g, '$1<br>');
         return '<a class="site-search-result" href="' + escapeHtml(r.url) + '" role="option">'
           + '<span class="site-search-result-title">' + escapeHtml(title) + '</span>'
           + '<span class="site-search-result-excerpt">' + excerpt + '</span>'
