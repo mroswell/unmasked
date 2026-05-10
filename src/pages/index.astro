@@ -49,23 +49,19 @@ const base = import.meta.env.BASE_URL;
   .mode {
     display: block;
     padding: 1.5rem;
-    /* --color-border is the visible "light grey" against the #fafafa page
-       bg; --color-border-soft (#ebebeb) was too close to the bg to read as
-       a border at all. */
-    border: 1px solid var(--color-border);
+    /* Solid black border at rest; on hover an outline of the same color
+       appears flush against the outer edge of the border — visually
+       thickening the edge from 1px to 2px without any grid-layout
+       shift (outline doesn't take up box-model space). */
+    border: 1px solid #000;
     border-radius: 6px;
     text-decoration: none;
     color: var(--color-text);
     background: white;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
   }
-  /* Default border is light grey (--color-border, #d8d8d8). On hover the
-     border itself stays the same; an outline of a noticeably darker grey
-     appears flush against its outside edge, both thickening the visible
-     edge and darkening it without any grid layout shift. */
   .mode:hover {
-    border-color: #999;
-    outline: 1px solid #999;
+    outline: 1px solid #000;
     outline-offset: 0;
   }
   .mode h2 { margin: 0 0 0.5rem; font-family: var(--font-sans); font-size: 1.25rem; color: var(--color-accent); }
