@@ -125,18 +125,31 @@ const isPdf = doc.data.format === 'pdf';
 
         <div id="panel-doc" role="tabpanel" aria-labelledby="tab-doc" class="tab-panel">
           <div class="pdf-pane">
-            {/* No `src` here on purpose: a dynamic src change after the browser
-                starts loading aborts the request and can leave Chrome's PDF
-                viewer in a stuck state when arriving at #doc-page-N. The
-                inline script below sets src exactly once, with the right
-                #page=N fragment from the URL hash already baked in. */}
+            {/* Two design constraints intersect here:
+                  (1) A dynamic src change AFTER the browser starts loading
+                      the PDF can leave Chrome's viewer in a stuck state,
+                      so when the user arrives on the doc tab we set src
+                      ONCE with the right #page=N fragment baked in.
+                  (2) But when the user arrives on the text tab (e.g. via
+                      a Pagefind search hit at #text-page-N), panel-doc
+                      becomes display:none milliseconds after the embed
+                      starts loading — Chrome treats that as a navigation
+                      away and aborts the fetch, leaving the viewer blank
+                      when the user later switches in.
+                Resolution: set src only if the initial hash is on the doc
+                tab. Otherwise leave src unset; activate('doc') will
+                populate it on demand when the user clicks Document, at
+                which point the panel is visible and the load can proceed. */}
             <embed type="application/pdf" data-pdf-base={pdfHref!} />
             <script is:inline define:vars={{ pdfHref }}>
               (function() {
                 var e = document.currentScript.previousElementSibling;
                 if (!e || !pdfHref) return;
-                var m = (location.hash || '').slice(1).match(/^doc(?:-page-(\d+))?$/);
-                e.setAttribute('src', m && m[1] ? pdfHref + '#page=' + m[1] : pdfHref);
+                var hash = (location.hash || '').slice(1);
+                var docMatch = hash.match(/^doc(?:-page-(\d+))?$/);
+                if (docMatch) {
+                  e.setAttribute('src', docMatch[1] ? pdfHref + '#page=' + docMatch[1] : pdfHref);
+                }
               })();
             </script>
             <p class="pdf-fallback">If the PDF doesn't load, <a href={doc.data.source_url}>view the original on hsgac.senate.gov</a>.</p>
@@ -144,6 +157,20 @@ const isPdf = doc.data.format === 'pdf';
         </div>
 
         <div id="panel-text" role="tabpanel" aria-labelledby="tab-text" class="tab-panel" hidden>
+          {pagedTextHtml && (
+            /* Surfaced inside the text panel — most users who land
+               here came from a search hit on extracted text and may
+               not realize there's a visual PDF tab next door. Wiring
+               via data-action lets the existing tab-script handle
+               the click (which preserves the current page suffix). */
+            <button class="view-pdf-cta" type="button" data-action="show-pdf">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+              View the source PDF
+            </button>
+          )}
           {pagedTextHtml ? (
             /* <div> not <pre> here: the paged HTML contains <h2> page
                markers (block elements), which aren't valid phrasing
@@ -256,6 +283,16 @@ const isPdf = doc.data.format === 'pdf';
       });
     });
     window.addEventListener('hashchange', () => activate(window.location.hash.slice(1)));
+
+    // The "View the source PDF" CTA inside the text panel just clicks
+    // the doc tab — reuses tab-button logic, including currentPageSuffix
+    // preservation, so a user on #text-page-23 lands on #doc-page-23.
+    document.querySelectorAll<HTMLButtonElement>('[data-action="show-pdf"]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelector<HTMLButtonElement>('#tab-doc')?.click();
+        document.querySelector<HTMLElement>('.pdf-pane')?.scrollIntoView({ block: 'start' });
+      });
+    });
   }
 </script>
 
@@ -310,29 +347,75 @@ const isPdf = doc.data.format === 'pdf';
 
   .doc-tabs {
     display: flex;
-    gap: 0.25rem;
-    border-bottom: 1px solid var(--color-border);
+    gap: 0.4rem;
+    border-bottom: 2px solid var(--color-input-border);
     margin-bottom: 1rem;
   }
+  /* Inactive tab: visible 1px border so the tab reads as a clickable
+     control (the previous transparent border made tabs nearly
+     invisible until hover). Active tab: 2px accent-colored top
+     border + sides; the bottom border is masked white so the tab
+     visually merges with the panel below. */
   .doc-tabs button[role="tab"] {
-    background: transparent;
-    border: 1px solid transparent;
+    background: var(--color-bg);
+    border: 1px solid var(--color-input-border);
     border-bottom: none;
-    padding: 0.5rem 1rem;
+    padding: 0.55rem 1.15rem;
     font-family: var(--font-sans);
     font-size: 0.95rem;
     font-weight: 600;
     color: var(--color-muted);
     cursor: pointer;
-    border-radius: 4px 4px 0 0;
-    margin-bottom: -1px;
+    border-radius: 6px 6px 0 0;
+    margin-bottom: -2px;
+    position: relative;
   }
-  .doc-tabs button[role="tab"]:hover { color: var(--color-text); }
+  .doc-tabs button[role="tab"]:hover {
+    color: var(--color-accent);
+    background: white;
+  }
   .doc-tabs button[role="tab"][aria-selected="true"] {
     color: var(--color-accent);
-    border-color: var(--color-border);
-    background: var(--color-bg);
+    background: white;
+    border-color: var(--color-accent);
+    border-width: 2px 2px 0 2px;
+    padding: calc(0.55rem - 1px) calc(1.15rem - 1px);
   }
+  /* Cover the wrapper's bottom border under the active tab so it
+     visually connects to the panel rather than being divided from it. */
+  .doc-tabs button[role="tab"][aria-selected="true"]::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    background: white;
+  }
+
+  /* "View the source PDF" CTA inside the text panel — visible
+     button to make the existence of the PDF tab obvious when a
+     user lands here via search. */
+  .view-pdf-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.5rem 0.9rem;
+    border: 1px solid var(--color-accent);
+    background: white;
+    color: var(--color-accent);
+    border-radius: 6px;
+    font-family: var(--font-sans);
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 0 0.85rem;
+  }
+  .view-pdf-cta:hover {
+    background: var(--color-accent);
+    color: white;
+  }
+  .view-pdf-cta svg { flex: 0 0 auto; }
   .pdf-pane embed { width: 100%; height: 80vh; border: 1px solid var(--color-border); }
   .pdf-fallback { font-size: 0.9rem; color: var(--color-muted); margin-top: 0.5rem; }
 
@@ -343,7 +426,7 @@ const isPdf = doc.data.format === 'pdf';
     margin: 0 0 0.75rem;
   }
   .doc-text-pre {
-    background: var(--color-bg);
+    background: white;
     border: 1px solid var(--color-border);
     padding: 1rem;
     font-family: var(--font-sans);
