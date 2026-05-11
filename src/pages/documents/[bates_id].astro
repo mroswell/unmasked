@@ -117,9 +117,9 @@ const isPdf = doc.data.format === 'pdf';
     {isPdf && (
       <div class="doc-tabs-wrap">
         <div class="doc-tabs" role="tablist" aria-label="Document views">
-          <button role="tab" id="tab-doc" aria-controls="panel-doc" aria-selected="true" type="button" data-tab="doc">Document</button>
+          <button role="tab" id="tab-doc" aria-controls="panel-doc" aria-selected="true" type="button" data-tab="doc">Document (PDF)</button>
           <button role="tab" id="tab-text" aria-controls="panel-text" aria-selected="false" type="button" data-tab="text" tabindex="-1">
-            Document text
+            Document (Text)
           </button>
         </div>
 
@@ -157,20 +157,6 @@ const isPdf = doc.data.format === 'pdf';
         </div>
 
         <div id="panel-text" role="tabpanel" aria-labelledby="tab-text" class="tab-panel" hidden>
-          {pagedTextHtml && (
-            /* Surfaced inside the text panel — most users who land
-               here came from a search hit on extracted text and may
-               not realize there's a visual PDF tab next door. Wiring
-               via data-action lets the existing tab-script handle
-               the click (which preserves the current page suffix). */
-            <button class="view-pdf-cta" type="button" data-action="show-pdf">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                <polyline points="14 2 14 8 20 8"/>
-              </svg>
-              View the source PDF
-            </button>
-          )}
           {pagedTextHtml ? (
             /* <div> not <pre> here: the paged HTML contains <h2> page
                markers (block elements), which aren't valid phrasing
@@ -284,15 +270,6 @@ const isPdf = doc.data.format === 'pdf';
     });
     window.addEventListener('hashchange', () => activate(window.location.hash.slice(1)));
 
-    // The "View the source PDF" CTA inside the text panel just clicks
-    // the doc tab — reuses tab-button logic, including currentPageSuffix
-    // preservation, so a user on #text-page-23 lands on #doc-page-23.
-    document.querySelectorAll<HTMLButtonElement>('[data-action="show-pdf"]').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        document.querySelector<HTMLButtonElement>('#tab-doc')?.click();
-        document.querySelector<HTMLElement>('.pdf-pane')?.scrollIntoView({ block: 'start' });
-      });
-    });
   }
 </script>
 
@@ -349,7 +326,15 @@ const isPdf = doc.data.format === 'pdf';
     display: flex;
     gap: 0.4rem;
     border-bottom: 2px solid var(--color-input-border);
-    margin-bottom: 1rem;
+    margin-bottom: 0;
+    /* Stick the tabs just below the site header so a user who arrives
+       on #text-page-23 (via a Pagefind search hit, for example) can
+       always toggle back to the Document tab without scrolling up. */
+    position: sticky;
+    top: 3.4rem;
+    z-index: 90;
+    background: var(--color-bg);
+    padding-top: 0.4rem;
   }
   /* Inactive tab: visible 1px border so the tab reads as a clickable
      control (the previous transparent border made tabs nearly
@@ -381,7 +366,7 @@ const isPdf = doc.data.format === 'pdf';
     border-width: 2px 2px 0 2px;
     padding: calc(0.55rem - 1px) calc(1.15rem - 1px);
   }
-  /* Cover the wrapper's bottom border under the active tab so it
+  /* Cover the doc-tabs' bottom border under the active tab so it
      visually connects to the panel rather than being divided from it. */
   .doc-tabs button[role="tab"][aria-selected="true"]::after {
     content: '';
@@ -393,29 +378,6 @@ const isPdf = doc.data.format === 'pdf';
     background: white;
   }
 
-  /* "View the source PDF" CTA inside the text panel — visible
-     button to make the existence of the PDF tab obvious when a
-     user lands here via search. */
-  .view-pdf-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    padding: 0.5rem 0.9rem;
-    border: 1px solid var(--color-accent);
-    background: white;
-    color: var(--color-accent);
-    border-radius: 6px;
-    font-family: var(--font-sans);
-    font-size: 0.88rem;
-    font-weight: 600;
-    cursor: pointer;
-    margin: 0 0 0.85rem;
-  }
-  .view-pdf-cta:hover {
-    background: var(--color-accent);
-    color: white;
-  }
-  .view-pdf-cta svg { flex: 0 0 auto; }
   .pdf-pane embed { width: 100%; height: 80vh; border: 1px solid var(--color-border); }
   .pdf-fallback { font-size: 0.9rem; color: var(--color-muted); margin-top: 0.5rem; }
 
@@ -428,6 +390,11 @@ const isPdf = doc.data.format === 'pdf';
   .doc-text-pre {
     background: white;
     border: 1px solid var(--color-border);
+    /* No top border — the doc-tabs' grey border-bottom serves as the
+       visual top edge of the text container, so the doc-text-pre's
+       own white padding-top is the only thing between the tabs and
+       the scrolling text. */
+    border-top: 0;
     padding: 1rem;
     font-family: var(--font-sans);
     font-size: 0.85rem;
@@ -437,6 +404,14 @@ const isPdf = doc.data.format === 'pdf';
     white-space: pre-wrap;
     /* offset for sticky header so #text-page-N anchors land below it */
     scroll-padding-top: 1rem;
+    /* Pin the text frame just below the sticky tabs. Without this,
+       page-scrolling slides the frame up under the tabs, and the
+       white padding-top eventually scrolls behind them — leaving
+       the text visually touching the tab border. With sticky, the
+       frame stays and the 1rem of white padding-top is always
+       visible between the tabs and the scrolling text. */
+    position: sticky;
+    top: 6rem;
   }
   /* .doc-text-page-marker lives in src/styles/global.css — it styles an
      element injected via set:html, which doesn't pick up Astro's scoped
