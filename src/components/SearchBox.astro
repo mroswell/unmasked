@@ -86,6 +86,18 @@ const base = import.meta.env.BASE_URL;
       }
       const items = results.map((r) => {
         const title = (r.meta && r.meta.title) ? r.meta.title : r.url;
+        // Pagefind automatically splits each result into sub_results
+        // along heading boundaries. The bundled Documents pages now
+        // wrap each PDF page in an <h2 id="text-page-N">, so the
+        // first sub_result for those pages carries an anchored URL
+        // (e.g. /documents/.../#text-page-23) — much better than
+        // landing the user on the bundle root. Fall back to the
+        // top-level URL/excerpt if there is no sub-result or the
+        // sub-result URL has no anchor.
+        const sub = (r.sub_results && r.sub_results[0]) || null;
+        const useSub = sub && typeof sub.url === 'string' && sub.url.indexOf('#') !== -1;
+        const href = useSub ? sub.url : r.url;
+        const rawExcerpt = (useSub && sub.excerpt) ? sub.excerpt : r.excerpt;
         // Collapse long dot-leader runs (e.g. ".................. 19" from
         // a PDF table of contents that the OCR pass preserved verbatim)
         // to a fixed 5-dot marker — visible enough to read as "leader",
@@ -93,10 +105,10 @@ const base = import.meta.env.BASE_URL;
         // to a new line after the page number that follows, so what was
         // a single TOC line in the source becomes ". . . . . N⏎" in the
         // excerpt and the next entry starts cleanly on its own line.
-        const excerpt = r.excerpt
+        const excerpt = rawExcerpt
           .replace(/\.{4,}/g, '.....')
           .replace(/(\.{5}\s+\d+)/g, '$1<br>');
-        return '<a class="site-search-result" href="' + escapeHtml(r.url) + '" role="option">'
+        return '<a class="site-search-result" href="' + escapeHtml(href) + '" role="option">'
           + '<span class="site-search-result-title">' + escapeHtml(title) + '</span>'
           + '<span class="site-search-result-excerpt">' + excerpt + '</span>'
           + '</a>';

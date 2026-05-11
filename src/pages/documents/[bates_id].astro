@@ -27,10 +27,11 @@ if (doc.data.ocr_text_path) {
 
 // For bundled PDFs (anything with a sibling -pages.json from
 // scripts/build-bates-page-index.mjs), build a server-side HTML string
-// for the text tab, with per-page anchor IDs so deep-links like
-// #text-page-23 can scroll to the right page. Built as a string (and
-// injected via set:html) because JSX expressions inside <pre> behave
-// inconsistently in Astro.
+// for the text tab, with per-page heading markers so deep-links like
+// #text-page-23 can scroll to the right page AND Pagefind's auto
+// sub-result splitting (which keys on headings) produces per-page
+// search-result URLs. Page markers are <h2> rather than <a> for that
+// reason; the visual styling is overridden via .doc-text-page-marker.
 let pagedTextHtml: string | null = null;
 try {
   const pagesPath = join('./public/documents', `${doc.data.bates_id}-pages.json`);
@@ -43,7 +44,7 @@ try {
     pagedTextHtml = parsed.pages
       .map(
         (page, i) =>
-          `<a id="text-page-${i + 1}" class="doc-text-page-marker">— Page ${i + 1} of ${total} —</a>\n${escape(page)}\n\n`,
+          `<h2 id="text-page-${i + 1}" class="doc-text-page-marker">— Page ${i + 1} of ${total} —</h2>\n${escape(page)}\n\n`,
       )
       .join('');
   }
@@ -144,7 +145,11 @@ const isPdf = doc.data.format === 'pdf';
 
         <div id="panel-text" role="tabpanel" aria-labelledby="tab-text" class="tab-panel" hidden>
           {pagedTextHtml ? (
-            <pre class="doc-text-pre" set:html={pagedTextHtml}></pre>
+            /* <div> not <pre> here: the paged HTML contains <h2> page
+               markers (block elements), which aren't valid phrasing
+               content for <pre>. CSS's white-space: pre-wrap preserves
+               the same visual whitespace handling. */
+            <div class="doc-text-pre" set:html={pagedTextHtml}></div>
           ) : textContent.trim().length >= 50 ? (
             <pre class="doc-text-pre">{textContent}</pre>
           ) : (
@@ -350,26 +355,9 @@ const isPdf = doc.data.format === 'pdf';
     /* offset for sticky header so #text-page-N anchors land below it */
     scroll-padding-top: 1rem;
   }
-  .doc-text-page-marker {
-    display: block;
-    text-align: center;
-    font-family: var(--font-sans);
-    font-size: 0.78rem;
-    color: var(--color-muted);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin: 1.25rem 0 0.5rem;
-    padding-top: 0.5rem;
-    border-top: 1px dashed var(--color-border);
-    /* extra room above so anchor scroll lands with the marker visible */
-    scroll-margin-top: 4.5rem;
-  }
-  .doc-text-page-marker:first-child {
-    margin-top: 0;
-    border-top: none;
-    padding-top: 0;
-  }
+  /* .doc-text-page-marker lives in src/styles/global.css — it styles an
+     element injected via set:html, which doesn't pick up Astro's scoped
+     data-astro-cid attribute, so the rule must be global to apply. */
   .doc-text-details { margin-top: 1.5rem; }
 
   /* Spreadsheet styles unchanged */

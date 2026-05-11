@@ -92,6 +92,39 @@ a { color: var(--color-accent); }
   background: rgba(15, 76, 92, 0.06);
 }
 
+/* Per-page markers in the Document text tab of bundled PDFs. The
+   element is an <h2> (so Pagefind generates per-page sub-results that
+   anchor search hits to #text-page-N) but the visual treatment is a
+   thin small-caps divider — h2 defaults (bold, large) are overridden
+   here. This rule must be global, not scoped to documents/[bates_id]
+   .astro, because the markers are injected via set:html and so do not
+   carry Astro's data-astro-cid attribute. */
+.doc-text-page-marker {
+  display: block;
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 1.25rem 0 0.5rem;
+  padding-top: 0.5rem;
+  /* --color-border (#d8d8d8) was too faint to read against the muted bg
+     of doc-text-pre; --color-input-border (#b8b8b8) shows the divider
+     without competing with the text. */
+  border-top: 1px dashed var(--color-input-border);
+  /* extra room above so anchor-scroll lands with the marker visible */
+  scroll-margin-top: 4.5rem;
+}
+.doc-text-page-marker:first-child {
+  margin-top: 0;
+  border-top: none;
+  padding-top: 0;
+}
+
 /* Active-page marker is a filled pill (accent background, white text) so
    the current section is unambiguous at a glance. We keep the same
    font-weight as inactive links — bumping to 600 widens the text and
