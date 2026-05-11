@@ -14,7 +14,10 @@ const { title, description = 'Vaccine Safety Signals: a structured, footnoted pr
 // Full URL of the current page, used in OpenGraph + Twitter Card meta tags
 // and passed to ShareButtons so each network gets the right URL embedded.
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
-const ogImageUrl = new URL('/og-img.jpg', Astro.site).href;
+// 1200x630 is the recommended OpenGraph image ratio (1.91:1). The
+// 1407x768 original is preserved at /og-img.jpg as a backup; the
+// active preview is the cropped/resized derivative.
+const ogImageUrl = new URL('/og-img-1200x630.jpg', Astro.site).href;
 
 // Active-page detection. Astro.url.pathname includes the deploy base prefix
 // (e.g., '/unmasked/timeline/' on github.io); strip it to compare against
