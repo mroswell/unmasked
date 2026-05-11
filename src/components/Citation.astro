@@ -1,6 +1,7 @@
 ---
 import { getEntry } from 'astro:content';
 import { findBatesPage } from '../lib/bates-page-lookup.ts';
+import { cleanFootnoteText } from '../lib/clean-footnote-text.ts';
 
 interface Props {
   citationId: string;
@@ -26,6 +27,10 @@ const hasAnyLink = Boolean(docHref || bundleHit || externalUrl);
 // External link is the "primary" affordance only when nothing else
 // rendered; otherwise it's a "See also" supplementary pointer.
 const externalIsPrimary = !docHref && !bundleHit;
+// Strip the external URL from the displayed prose since the same URL
+// is one of the clickable links below — no need to duplicate it as
+// plain text in the popover body.
+const citeText = citation ? cleanFootnoteText(citation.data.footnote_text, externalUrl) : '';
 ---
 
 {citation && (
@@ -39,7 +44,7 @@ const externalIsPrimary = !docHref && !bundleHit;
       [{citationId.replace(/^fn-/, '')}]
     </button>
     <div popover="auto" id={popoverId} class="cite-popover">
-      <p class="cite-text">{citation.data.footnote_text}</p>
+      {citeText && <p class="cite-text">{citeText}</p>}
       {citation.data.bates_ids && citation.data.bates_ids.length > 0 && (
         <span class="cite-bates">{citation.data.bates_ids.join('; ')}</span>
       )}

@@ -12,6 +12,7 @@ import type { Plugin } from 'unified';
 import type { Root, Text, Parent, RootContent } from 'mdast';
 import { visit, SKIP } from 'unist-util-visit';
 import { findBatesPage } from './bates-page-lookup.ts';
+import { cleanFootnoteText } from './clean-footnote-text.ts';
 
 interface Citation {
   id: string;
@@ -103,10 +104,15 @@ function citationHtml(cit: Citation, base: string): string {
     ? `<span class="cite-bates">${escapeHtml(cit.bates_ids.join('; '))}</span>`
     : '';
 
+  const citeText = cleanFootnoteText(cit.footnote_text, cit.external_url);
+  const citeTextHtml = citeText
+    ? `<span class="cite-text">${escapeHtml(citeText)}</span>`
+    : '';
+
   return [
     `<button type="button" popovertarget="${popoverId}" class="cite-marker">[${numericId}]</button>`,
     `<span popover="auto" id="${popoverId}" class="cite-popover">`,
-    `<span class="cite-text">${escapeHtml(cit.footnote_text)}</span>`,
+    citeTextHtml,
     batesHtml,
     linkHtml,
     `</span>`,
