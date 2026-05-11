@@ -122,9 +122,9 @@ const isPdf = doc.data.format === 'pdf';
             Document (Text)
           </button>
           <div class="doc-text-controls" aria-label="Text size controls">
-            <button class="text-size-btn" data-action="text-smaller" type="button" aria-label="Smaller text" title="Smaller text">A−</button>
-            <button class="text-size-btn" data-action="text-larger" type="button" aria-label="Larger text" title="Larger text">A+</button>
-            <button class="text-size-btn text-size-btn--reset" data-action="text-reset" type="button" aria-label="Reset text size to default" title="Reset text size to default">Reset</button>
+            <button class="text-size-btn" data-action="text-smaller" type="button" aria-label="Smaller text" data-tip="Smaller text">A−</button>
+            <button class="text-size-btn" data-action="text-larger" type="button" aria-label="Larger text" data-tip="Larger text">A+</button>
+            <button class="text-size-btn text-size-btn--reset" data-action="text-reset" type="button" aria-label="Reset text size to default" data-tip="Reset to default size">Reset</button>
           </div>
         </div>
 
@@ -320,6 +320,44 @@ const isPdf = doc.data.format === 'pdf';
   resetBtns.forEach((btn) => {
     btn.addEventListener('click', () => { currentSizeIdx = applyTextSizeIdx(DEFAULT_SIZE_IDX); });
   });
+
+  // Custom hover tooltip on [data-tip] elements. Faster to appear
+  // than the native title attribute (~250ms vs ~700ms), and snaps
+  // away on mouseleave with no fade-out delay.
+  {
+    const tipEl = document.createElement('div');
+    tipEl.className = 'btn-tip';
+    tipEl.style.cssText = 'display:none;position:fixed;z-index:10000;pointer-events:none;';
+    document.body.appendChild(tipEl);
+    let showTimer = 0;
+    const hide = () => {
+      if (showTimer) { clearTimeout(showTimer); showTimer = 0; }
+      tipEl.style.display = 'none';
+    };
+    const show = (el: Element) => {
+      const text = (el as HTMLElement).dataset.tip || '';
+      if (!text) return;
+      tipEl.textContent = text;
+      tipEl.style.display = 'block';
+      const eRect = (el as HTMLElement).getBoundingClientRect();
+      const tRect = tipEl.getBoundingClientRect();
+      // Below the trigger, centered horizontally; constrained to viewport.
+      let left = eRect.left + eRect.width / 2 - tRect.width / 2;
+      left = Math.max(8, Math.min(left, window.innerWidth - tRect.width - 8));
+      tipEl.style.left = left + 'px';
+      tipEl.style.top = (eRect.bottom + 6) + 'px';
+    };
+    document.querySelectorAll<HTMLElement>('[data-tip]').forEach((el) => {
+      el.addEventListener('mouseenter', () => {
+        if (showTimer) clearTimeout(showTimer);
+        showTimer = window.setTimeout(() => show(el), 250);
+      });
+      el.addEventListener('mouseleave', hide);
+      el.addEventListener('focus', () => show(el));
+      el.addEventListener('blur', hide);
+      el.addEventListener('click', hide);
+    });
+  }
 </script>
 
 <style>
@@ -473,6 +511,20 @@ const isPdf = doc.data.format === 'pdf';
   .text-size-btn:disabled {
     opacity: 0.4;
     cursor: not-allowed;
+  }
+
+  /* Custom hover tooltip for [data-tip] buttons — faster than the
+     native title attribute and styled to match the site palette. */
+  :global(.btn-tip) {
+    background: var(--color-text);
+    color: white;
+    padding: 0.35rem 0.6rem;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    line-height: 1.3;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    white-space: nowrap;
   }
 
   .doc-text-pre {
