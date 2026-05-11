@@ -112,10 +112,11 @@ a { color: var(--color-accent); }
   text-decoration: none;
   margin: 1.25rem 0 0.5rem;
   padding-top: 0.5rem;
-  /* --color-border (#d8d8d8) was too faint to read against the muted bg
-     of doc-text-pre; --color-input-border (#b8b8b8) shows the divider
-     without competing with the text. */
-  border-top: 1px dashed var(--color-input-border);
+  /* --color-border (#d8d8d8) was too faint, --color-input-border
+     (#b8b8b8) was still subtle on white. Using a slightly darker
+     mid-grey here so the divider reads clearly without competing
+     with the text. */
+  border-top: 1px dashed #999;
   /* extra room above so anchor-scroll lands with the marker visible */
   scroll-margin-top: 4.5rem;
 }

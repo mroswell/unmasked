@@ -75,7 +75,24 @@ const base = import.meta.env.BASE_URL;
       let results;
       try {
         const search = await pagefind.search(q);
-        results = await Promise.all(search.results.slice(0, 8).map((r) => r.data()));
+        // Pagefind's prefix/stemming sometimes over-matches short or
+        // non-dictionary queries (e.g. "mrna" was returning every word
+        // starting with "m"); we require each visible result's title
+        // or excerpt to actually contain every query term as a
+        // substring (case-insensitive), which keeps short exact
+        // queries honest without breaking longer queries. We pull a
+        // larger raw set from Pagefind and show every surviving
+        // result — the dropdown scrolls.
+        const raw = await Promise.all(search.results.slice(0, 60).map((r) => r.data()));
+        const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+        results = raw.filter((r) => {
+          const title = ((r.meta && r.meta.title) || '').toLowerCase();
+          const subTitle = (r.sub_results && r.sub_results[0] && r.sub_results[0].title) || '';
+          const subExcerpt = (r.sub_results && r.sub_results[0] && r.sub_results[0].excerpt) || '';
+          const excerpt = (r.excerpt || '') + ' ' + subExcerpt;
+          const haystack = (title + ' ' + subTitle + ' ' + excerpt.replace(/<[^>]*>/g, ' ')).toLowerCase();
+          return terms.every((t) => haystack.indexOf(t) !== -1);
+        });
       } catch (err) {
         showDropdown('<p class="site-search-empty">Search error. Try a different query.</p>');
         return;
