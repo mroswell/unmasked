@@ -50,6 +50,18 @@ const navLinks = [
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />
 
+    {/* Favicons. Files live in public/ (served at site root). Multiple sizes
+        cover browser tab (16/32 PNG + .ico fallback for very old browsers),
+        iOS home screen (180 apple-touch), and Android / PWA install (192,
+        512 via the manifest). theme-color tints the browser chrome on
+        Android Chrome / Edge / Brave. */}
+    <link rel="icon" type="image/x-icon" href={`${base}favicon.ico`} sizes="any" />
+    <link rel="icon" type="image/png" sizes="16x16" href={`${base}favicon-16x16.png`} />
+    <link rel="icon" type="image/png" sizes="32x32" href={`${base}favicon-32x32.png`} />
+    <link rel="apple-touch-icon" sizes="180x180" href={`${base}apple-touch-icon.png`} />
+    <link rel="manifest" href={`${base}site.webmanifest`} />
+    <meta name="theme-color" content="#0f4c5c" />
+
     {/* OpenGraph (Facebook, LinkedIn, BlueSky, iMessage previews, etc.) */}
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonicalUrl} />
