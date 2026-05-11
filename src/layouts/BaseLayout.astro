@@ -117,6 +117,18 @@ const navLinks = [
         width: 14rem;
       }
       .site-header > .nav-toggle { display: none; }
+      /* Brand logo sits at the right edge of column 1 — i.e. just to
+         the left of the centered nav (whose first link is "Home"). */
+      .site-header > .site-logo {
+        grid-column: 1;
+        justify-self: end;
+        display: inline-flex;
+        align-items: center;
+        padding: 0.2rem;
+        border-radius: 6px;
+        text-decoration: none;
+      }
+      .site-header > .site-logo img { display: block; width: 32px; height: 32px; }
 
       /* Mobile layout (≤1024px): flex with wrap, hamburger + drawer.
          These rules MUST live in the same inline block as the desktop
@@ -129,6 +141,11 @@ const navLinks = [
           flex-wrap: wrap;
           padding: 0.6rem 1rem;
           gap: 0.5rem;
+        }
+        .site-header > .site-logo {
+          order: 1;
+          grid-column: auto;
+          justify-self: auto;
         }
         .site-header > .nav-toggle {
           display: inline-flex;
@@ -161,6 +178,9 @@ const navLinks = [
   </head>
   <body>
     <header class="site-header">
+      <a class="site-logo" href={link('/')} aria-label="Vaccine Safety Signals home">
+        <img src={`${base}android-chrome-512x512.png`} alt="" width="32" height="32" />
+      </a>
       <button
         class="nav-toggle"
         type="button"

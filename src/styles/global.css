@@ -86,6 +86,12 @@ a { color: var(--color-accent); }
   background: rgba(15, 76, 92, 0.06);
 }
 
+/* Logo hover matches the nav-link hover — a faint teal tile so it
+   reads as the same kind of clickable as the rest of the header. */
+.site-logo:hover {
+  background: rgba(15, 76, 92, 0.06);
+}
+
 /* Active-page marker is a filled pill (accent background, white text) so
    the current section is unambiguous at a glance. We keep the same
    font-weight as inactive links — bumping to 600 widens the text and
