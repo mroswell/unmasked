@@ -121,6 +121,11 @@ const isPdf = doc.data.format === 'pdf';
           <button role="tab" id="tab-text" aria-controls="panel-text" aria-selected="false" type="button" data-tab="text" tabindex="-1">
             Document (Text)
           </button>
+          <div class="doc-text-controls" aria-label="Text size controls">
+            <button class="text-size-btn" data-action="text-smaller" type="button" aria-label="Smaller text">A−</button>
+            <button class="text-size-btn" data-action="text-larger" type="button" aria-label="Larger text">A+</button>
+            <button class="text-size-btn text-size-btn--reset" data-action="text-reset" type="button" aria-label="Reset text size to default">Reset</button>
+          </div>
         </div>
 
         <div id="panel-doc" role="tabpanel" aria-labelledby="tab-doc" class="tab-panel">
@@ -240,6 +245,11 @@ const isPdf = doc.data.format === 'pdf';
     panels.forEach((p) => {
       p.hidden = !p.id.endsWith(`-${tab}`);
     });
+    // Text-size controls live in the tabs row but only apply to the
+    // Text panel; hide them entirely on the PDF tab.
+    document.querySelectorAll<HTMLElement>('.doc-text-controls').forEach((el) => {
+      el.hidden = tab !== 'text';
+    });
 
     if (tab === 'doc' && embed && pdfBase) {
       // PDF Open Parameters — supported by Chrome/Edge/Firefox/Safari built-in viewers.
@@ -269,8 +279,47 @@ const isPdf = doc.data.format === 'pdf';
       });
     });
     window.addEventListener('hashchange', () => activate(window.location.hash.slice(1)));
-
   }
+
+  // Text-size controls (A− / A+) for the Document (Text) panel. The
+  // chosen size is stored in localStorage, so it carries across
+  // navigations between document pages.
+  const TEXT_SIZES = [0.75, 0.85, 0.95, 1.05, 1.20, 1.40];
+  const DEFAULT_SIZE_IDX = 1;
+  const SIZE_STORAGE_KEY = 'doc-text-size-idx';
+  const smallerBtns = document.querySelectorAll<HTMLButtonElement>('[data-action="text-smaller"]');
+  const largerBtns = document.querySelectorAll<HTMLButtonElement>('[data-action="text-larger"]');
+  const resetBtns = document.querySelectorAll<HTMLButtonElement>('[data-action="text-reset"]');
+
+  function applyTextSizeIdx(idx: number): number {
+    const clamped = Math.max(0, Math.min(TEXT_SIZES.length - 1, idx));
+    document.documentElement.style.setProperty('--doc-text-font-size', TEXT_SIZES[clamped] + 'rem');
+    try { localStorage.setItem(SIZE_STORAGE_KEY, String(clamped)); } catch {}
+    smallerBtns.forEach((b) => { b.disabled = clamped <= 0; });
+    largerBtns.forEach((b) => { b.disabled = clamped >= TEXT_SIZES.length - 1; });
+    resetBtns.forEach((b) => { b.disabled = clamped === DEFAULT_SIZE_IDX; });
+    return clamped;
+  }
+
+  let currentSizeIdx = DEFAULT_SIZE_IDX;
+  try {
+    const stored = localStorage.getItem(SIZE_STORAGE_KEY);
+    if (stored !== null) {
+      const n = parseInt(stored, 10);
+      if (Number.isInteger(n)) currentSizeIdx = n;
+    }
+  } catch {}
+  currentSizeIdx = applyTextSizeIdx(currentSizeIdx);
+
+  smallerBtns.forEach((btn) => {
+    btn.addEventListener('click', () => { currentSizeIdx = applyTextSizeIdx(currentSizeIdx - 1); });
+  });
+  largerBtns.forEach((btn) => {
+    btn.addEventListener('click', () => { currentSizeIdx = applyTextSizeIdx(currentSizeIdx + 1); });
+  });
+  resetBtns.forEach((btn) => {
+    btn.addEventListener('click', () => { currentSizeIdx = applyTextSizeIdx(DEFAULT_SIZE_IDX); });
+  });
 </script>
 
 <style>
@@ -387,6 +436,45 @@ const isPdf = doc.data.format === 'pdf';
     color: var(--color-muted);
     margin: 0 0 0.75rem;
   }
+  /* Text-size controls (A− / A+ / Reset) live in the tabs row so
+     they don't consume vertical space above the text content.
+     Right-aligned via margin-left:auto, vertically centered with
+     the tabs via align-self:center. Hidden on the PDF tab. */
+  .doc-text-controls {
+    margin-left: auto;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  .text-size-btn {
+    background: white;
+    border: 1px solid var(--color-input-border);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    font-weight: 600;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    line-height: 1.2;
+    min-width: 2rem;
+    text-align: center;
+  }
+  .text-size-btn--reset {
+    min-width: 0;
+    font-weight: 500;
+    color: var(--color-muted);
+  }
+  .text-size-btn:hover:not(:disabled) {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+  .text-size-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
   .doc-text-pre {
     background: white;
     border: 1px solid var(--color-border);
@@ -397,7 +485,11 @@ const isPdf = doc.data.format === 'pdf';
     border-top: 0;
     padding: 1rem;
     font-family: var(--font-sans);
-    font-size: 0.85rem;
+    /* Font size driven by --doc-text-font-size, set inline on
+       document.documentElement by the A−/A+ controls. Persisted in
+       localStorage so the user's preferred size carries across
+       document pages. */
+    font-size: var(--doc-text-font-size, 0.85rem);
     line-height: 1.5;
     max-height: 70vh;
     overflow: auto;
