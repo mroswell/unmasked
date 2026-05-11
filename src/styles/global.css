@@ -263,15 +263,12 @@ dfn[data-term]:focus-within {
   border-bottom-color: var(--color-accent);
 }
 
-/* Custom tooltip rendered as a ::after element. Uses
-   data-tooltip (populated by GlossaryTooltips at runtime), not the
-   native title attribute, so we control the size and styling. */
-dfn[data-term]::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  bottom: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
+/* Glossary tooltip — a singleton element rendered as a child of
+   <body> by GlossaryTooltips.astro, positioned with JS (position:
+   fixed, inline left/top) on hover/focus. Living outside all
+   overflow ancestors means it can't be clipped by .doc-text-pre
+   or any other scrollable container that holds a dfn. */
+.glossary-tooltip {
   background: var(--color-text);
   color: white;
   padding: 0.7rem 0.95rem;
@@ -282,41 +279,27 @@ dfn[data-term]::after {
   line-height: 1.45;
   border-radius: 6px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
-  width: max-content;
   max-width: min(28rem, calc(100vw - 2rem));
   text-align: left;
-  pointer-events: none;
-  visibility: hidden;
-  z-index: 1000;
 }
-
-/* Small caret pointing down from the tooltip toward the dfn */
-dfn[data-term]::before {
+/* Caret. Default: arrow pointing down from the tooltip's bottom
+   toward the dfn (when the tooltip sits above). */
+.glossary-tooltip::after {
   content: '';
   position: absolute;
-  bottom: calc(100% + 1px);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   border: 7px solid transparent;
   border-top-color: var(--color-text);
-  pointer-events: none;
-  visibility: hidden;
-  z-index: 1000;
 }
-
-dfn[data-term]:hover::after,
-dfn[data-term]:focus-within::after,
-dfn[data-term]:hover::before,
-dfn[data-term]:focus-within::before {
-  visibility: visible;
-}
-
-/* Hide tooltip if data-tooltip is empty (no short_def loaded yet) */
-dfn[data-term]:not([data-tooltip])::after,
-dfn[data-term]:not([data-tooltip])::before,
-dfn[data-term][data-tooltip=""]::after,
-dfn[data-term][data-tooltip=""]::before {
-  display: none;
+/* When there's not enough room above the dfn, JS flips the tooltip
+   below it — flip the caret to point up. */
+.glossary-tooltip--below::after {
+  top: auto;
+  bottom: 100%;
+  border-top-color: transparent;
+  border-bottom-color: var(--color-text);
 }
 
 /* ============================================================

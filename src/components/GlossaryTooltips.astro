@@ -16,10 +16,87 @@ const base = import.meta.env.BASE_URL;
       const aliases = await aliasesResp.json();
       const defs = await defsResp.json();
 
-      // Step 1: enrich existing <dfn> elements with the custom tooltip attribute
+      // Singleton tooltip rendered in <body>, positioned with JS on
+      // hover/focus. Because the element lives outside all overflow
+      // ancestors, the tooltip can't be clipped by .doc-text-pre or
+      // any other scrollable container — which is the whole reason we
+      // moved away from CSS-pseudo-element tooltips.
+      const tooltipEl = document.createElement('div');
+      tooltipEl.className = 'glossary-tooltip';
+      tooltipEl.setAttribute('role', 'tooltip');
+      tooltipEl.style.cssText = 'display:none;position:fixed;z-index:10000;pointer-events:auto;';
+      document.body.appendChild(tooltipEl);
+
+      let activeDfn = null;
+      let hideTimer = 0;
+
+      function position(dfn) {
+        // Display first so we can measure (then maybe reposition).
+        tooltipEl.style.display = 'block';
+        tooltipEl.classList.remove('glossary-tooltip--below');
+        const dfnRect = dfn.getBoundingClientRect();
+        const tRect = tooltipEl.getBoundingClientRect();
+        const pad = 8;
+        // Centered horizontally on the dfn, but kept inside the viewport.
+        let left = dfnRect.left + dfnRect.width / 2 - tRect.width / 2;
+        left = Math.max(pad, Math.min(left, window.innerWidth - tRect.width - pad));
+        let top = dfnRect.top - tRect.height - 10;
+        if (top < pad) {
+          // Not enough room above — flip below the dfn.
+          top = dfnRect.bottom + 10;
+          tooltipEl.classList.add('glossary-tooltip--below');
+        }
+        tooltipEl.style.left = left + 'px';
+        tooltipEl.style.top = top + 'px';
+      }
+
+      function show(dfn, text) {
+        if (hideTimer) { clearTimeout(hideTimer); hideTimer = 0; }
+        activeDfn = dfn;
+        tooltipEl.textContent = text;
+        position(dfn);
+      }
+
+      function scheduleHide() {
+        if (hideTimer) clearTimeout(hideTimer);
+        hideTimer = window.setTimeout(() => {
+          tooltipEl.style.display = 'none';
+          activeDfn = null;
+          hideTimer = 0;
+        }, 120);
+      }
+
+      tooltipEl.addEventListener('mouseenter', () => {
+        if (hideTimer) { clearTimeout(hideTimer); hideTimer = 0; }
+      });
+      tooltipEl.addEventListener('mouseleave', scheduleHide);
+
+      // If anything in the page scrolls (including nested overflow
+      // containers like .doc-text-pre), dismiss — the tooltip is
+      // position:fixed so it'd otherwise float detached from its dfn.
+      window.addEventListener('scroll', () => {
+        if (activeDfn) {
+          tooltipEl.style.display = 'none';
+          activeDfn = null;
+          if (hideTimer) { clearTimeout(hideTimer); hideTimer = 0; }
+        }
+      }, { passive: true, capture: true });
+
+      function enhanceDfn(el, text) {
+        if (!text || el.dataset.glossaryBound === '1') return;
+        el.dataset.glossaryBound = '1';
+        el.setAttribute('data-tooltip', text);
+        if (!el.hasAttribute('tabindex')) el.setAttribute('tabindex', '0');
+        el.addEventListener('mouseenter', () => show(el, text));
+        el.addEventListener('mouseleave', scheduleHide);
+        el.addEventListener('focus', () => show(el, text));
+        el.addEventListener('blur', scheduleHide);
+      }
+
+      // Step 1: enhance existing <dfn> elements (from remark-glossary).
       document.querySelectorAll('dfn[data-term]').forEach((el) => {
         const term = el.getAttribute('data-term');
-        if (term && defs[term]) el.setAttribute('data-tooltip', defs[term]);
+        if (term && defs[term]) enhanceDfn(el, defs[term]);
       });
 
       // Step 2: wrap plain-text glossary terms inside main content blocks
@@ -74,7 +151,6 @@ const base = import.meta.env.BASE_URL;
           const beforeNode = before ? document.createTextNode(before) : null;
           const dfn = document.createElement('dfn');
           dfn.setAttribute('data-term', best.canonical);
-          if (defs[best.canonical]) dfn.setAttribute('data-tooltip', defs[best.canonical]);
           dfn.textContent = best.matched;
           const afterNode = after ? document.createTextNode(after) : null;
 
@@ -85,6 +161,7 @@ const base = import.meta.env.BASE_URL;
           if (afterNode) parent.insertBefore(afterNode, textNode);
           parent.removeChild(textNode);
 
+          if (defs[best.canonical]) enhanceDfn(dfn, defs[best.canonical]);
           wrappedCanonicals.add(best.canonical);
         }
       });
