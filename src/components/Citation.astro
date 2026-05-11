@@ -11,30 +11,21 @@ const citation = await getEntry('citations', citationId);
 const popoverId = `popover-${citationId}`;
 const base = import.meta.env.BASE_URL;
 
-// Priority mirrors remark-citations.ts:
-//   standalone document_id → bundle deep-link → external_url → unavailable.
-type LinkVariant =
-  | { kind: 'doc'; href: string }
-  | { kind: 'bundle'; pdfHref: string; textHref: string; page: number }
-  | { kind: 'external'; href: string }
-  | { kind: 'unavailable' };
-
-let link: LinkVariant = { kind: 'unavailable' };
-if (citation?.data.document_id) {
-  link = { kind: 'doc', href: `${base}documents/${citation.data.document_id}/` };
-} else if (citation) {
-  const hit = findBatesPage(citation.data.bates_ids);
-  if (hit) {
-    link = {
-      kind: 'bundle',
-      pdfHref: `${base}documents/${hit.bundleId}/#doc-page-${hit.page}`,
-      textHref: `${base}documents/${hit.bundleId}/#text-page-${hit.page}`,
-      page: hit.page,
-    };
-  } else if (citation.data.external_url) {
-    link = { kind: 'external', href: citation.data.external_url };
-  }
-}
+// Link rendering: a footnote can point to multiple sources at once (e.g.
+// a primary Bates email AND a "See also" external testimony URL). The
+// renderer surfaces every link the citation has — document_id, bundle
+// deep-link, and external_url are not mutually exclusive. Earlier
+// versions used else-if, which silently dropped external_url whenever
+// bates_ids resolved. Mirror this in remark-citations.ts.
+const docHref = citation?.data.document_id
+  ? `${base}documents/${citation.data.document_id}/`
+  : null;
+const bundleHit = !docHref && citation ? findBatesPage(citation.data.bates_ids) : null;
+const externalUrl = citation?.data.external_url ?? null;
+const hasAnyLink = Boolean(docHref || bundleHit || externalUrl);
+// External link is the "primary" affordance only when nothing else
+// rendered; otherwise it's a "See also" supplementary pointer.
+const externalIsPrimary = !docHref && !bundleHit;
 ---
 
 {citation && (
@@ -52,17 +43,24 @@ if (citation?.data.document_id) {
       {citation.data.bates_ids && citation.data.bates_ids.length > 0 && (
         <span class="cite-bates">{citation.data.bates_ids.join('; ')}</span>
       )}
-      {link.kind === 'doc' && <a href={link.href} class="cite-link">Read document →</a>}
-      {link.kind === 'bundle' && (
+      {docHref && <a href={docHref} class="cite-link">Read document →</a>}
+      {bundleHit && (
         <>
-          <a href={link.pdfHref} class="cite-link">Read PDF (page {link.page}) →</a>
-          <a href={link.textHref} class="cite-link cite-link--secondary">View as text →</a>
+          <a href={`${base}documents/${bundleHit.bundleId}/#doc-page-${bundleHit.page}`} class="cite-link">Read PDF (page {bundleHit.page}) →</a>
+          <a href={`${base}documents/${bundleHit.bundleId}/#text-page-${bundleHit.page}`} class="cite-link cite-link--secondary">View as text →</a>
         </>
       )}
-      {link.kind === 'external' && (
-        <a href={link.href} class="cite-link" target="_blank" rel="noopener">External source →</a>
+      {externalUrl && (
+        <a
+          href={externalUrl}
+          class={externalIsPrimary ? 'cite-link' : 'cite-link cite-link--secondary'}
+          target="_blank"
+          rel="noopener"
+        >
+          {externalIsPrimary ? 'External source →' : 'See also: external source →'}
+        </a>
       )}
-      {link.kind === 'unavailable' && (
+      {!hasAnyLink && (
         <span class="cite-link cite-link--unavailable">Document not publicly posted</span>
       )}
     </div>

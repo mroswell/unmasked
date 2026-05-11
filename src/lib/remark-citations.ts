@@ -72,26 +72,32 @@ function citationHtml(cit: Citation, base: string): string {
   const popoverId = `popover-${cit.id}`;
   const numericId = cit.id.replace(/^fn-/, '');
 
-  // Priority: standalone document_id → bundle deep-link → external_url → unavailable.
-  // `base` is import.meta.env.BASE_URL passed through from render-markdown.ts —
-  // making URLs base-correct in dev, with no reliance on the post-build rewriter.
-  let linkHtml: string;
-  if (cit.document_id) {
-    linkHtml = `<a href="${base}documents/${escapeAttr(cit.document_id)}/" class="cite-link">Read document &rarr;</a>`;
-  } else {
+  // Link rendering mirrors Citation.astro: a footnote can carry multiple
+  // sources (e.g. Bates email + "See also" external testimony) and the
+  // popover should surface each one. `base` is import.meta.env.BASE_URL
+  // passed through from render-markdown.ts.
+  const docLinkHtml = cit.document_id
+    ? `<a href="${base}documents/${escapeAttr(cit.document_id)}/" class="cite-link">Read document &rarr;</a>`
+    : '';
+  let bundleLinkHtml = '';
+  if (!cit.document_id) {
     const hit = findBatesPage(cit.bates_ids);
     if (hit) {
       const docHref = `${base}documents/${escapeAttr(hit.bundleId)}/#doc-page-${hit.page}`;
       const textHref = `${base}documents/${escapeAttr(hit.bundleId)}/#text-page-${hit.page}`;
-      linkHtml =
+      bundleLinkHtml =
         `<a href="${docHref}" class="cite-link">Read PDF (page ${hit.page}) &rarr;</a>` +
         `<a href="${textHref}" class="cite-link cite-link--secondary">View as text &rarr;</a>`;
-    } else if (cit.external_url) {
-      linkHtml = `<a href="${escapeAttr(cit.external_url)}" class="cite-link" target="_blank" rel="noopener">External source &rarr;</a>`;
-    } else {
-      linkHtml = `<span class="cite-link cite-link--unavailable">Document not publicly posted</span>`;
     }
   }
+  const externalIsPrimary = !docLinkHtml && !bundleLinkHtml;
+  const externalLinkHtml = cit.external_url
+    ? `<a href="${escapeAttr(cit.external_url)}" class="${externalIsPrimary ? 'cite-link' : 'cite-link cite-link--secondary'}" target="_blank" rel="noopener">${externalIsPrimary ? 'External source' : 'See also: external source'} &rarr;</a>`
+    : '';
+  const linkHtml =
+    docLinkHtml || bundleLinkHtml || externalLinkHtml
+      ? docLinkHtml + bundleLinkHtml + externalLinkHtml
+      : `<span class="cite-link cite-link--unavailable">Document not publicly posted</span>`;
 
   const batesHtml = cit.bates_ids?.length
     ? `<span class="cite-bates">${escapeHtml(cit.bates_ids.join('; '))}</span>`
