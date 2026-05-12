@@ -36,6 +36,10 @@ raw/*
 # Local scratch
 .tmp/
 
+# Local-only attic — work-in-progress, backups, asset variants we
+# want to keep on disk but never ship.
+attic/
+
 # Local-only interactive copies of plan checklists. The companion .md is
 # committed; the .local.html mirror persists checked state in localStorage
 # and is not meant to ship to the deploy or to GitHub.
