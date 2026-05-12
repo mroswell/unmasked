@@ -160,7 +160,13 @@ const isPdf = doc.data.format === 'pdf';
                 var hash = (location.hash || '').slice(1);
                 var docMatch = hash.match(/^doc(?:-page-(\d+))?$/);
                 if (docMatch) {
-                  e.setAttribute('src', docMatch[1] ? pdfHref + '#page=' + docMatch[1] : pdfHref);
+                  // view=FitH fits page width to the embed (higher default
+                  // zoom than Chrome's whole-page fit, centered).
+                  // toolbar=1 asks the viewer to keep the toolbar
+                  // visible (Chrome's auto-hide behavior often hides
+                  // the page-number indicator after a few seconds).
+                  var page = docMatch[1];
+                  e.setAttribute('src', page ? pdfHref + '#page=' + page + '&view=FitH&toolbar=1' : pdfHref + '#view=FitH&toolbar=1');
                 }
               })();
             </script>
@@ -259,13 +265,18 @@ const isPdf = doc.data.format === 'pdf';
     });
 
     if (tab === 'doc' && pdfBase) {
-      // PDF Open Parameters: pdfBase#page=N. Rather than mutating the
-      // existing embed's src (which Chrome's PDF viewer handles
-      // unreliably — repeated text→pdf swaps can leave the viewer
-      // blank), we replace the embed with a fresh one whenever the
-      // page changes. Same-page tab toggles skip the replacement, so
-      // the user's PDF state (scroll position, zoom) survives.
-      const desired = page ? `${pdfBase}#page=${page}` : pdfBase;
+      // PDF Open Parameters: pdfBase#page=N&view=FitH. view=FitH fits
+      // the page to the embed's width — sensibly higher default zoom
+      // than Chrome's whole-page-fit, and the page renders centered
+      // horizontally. Rather than mutating the existing embed's src
+      // (which Chrome's PDF viewer handles unreliably — repeated
+      // text→pdf swaps can leave the viewer blank), we replace the
+      // embed with a fresh one whenever the page changes. Same-page
+      // tab toggles skip the replacement, so the user's PDF state
+      // (scroll position, manual zoom) survives.
+      const desired = page
+        ? `${pdfBase}#page=${page}&view=FitH&toolbar=1`
+        : `${pdfBase}#view=FitH&toolbar=1`;
       const currentEmbed = document.querySelector<HTMLEmbedElement>('.pdf-pane embed');
       const currentSrc = currentEmbed?.getAttribute('src') ?? '';
       if (currentSrc !== desired) {
@@ -547,6 +558,13 @@ const isPdf = doc.data.format === 'pdf';
     bottom: -2px;
     height: 2px;
     background: white;
+  }
+
+  /* Expand main's max-width on document detail pages so the PDF
+     embed has more room to breathe. Other pages keep the default
+     50rem prose width. :has() has solid modern-browser support. */
+  :global(main:has(.document-page)) {
+    max-width: 70rem;
   }
 
   /* :global() so dynamically-created <embed> elements (the
