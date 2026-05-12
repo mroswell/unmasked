@@ -38,17 +38,25 @@ const base = import.meta.env.BASE_URL;
 
     const PAGEFIND_URL = base + 'pagefind/pagefind.js';
     let pagefind = null;
-    let pagefindError = null;
+    let pagefindPromise = null;
     let debounce = null;
 
+    // Try to load Pagefind. Failures are NOT sticky: a transient
+    // mobile-network hiccup just leaves pagefindPromise null again so
+    // the next search attempt can retry. (Previously a permanent
+    // pagefindError flag meant one early failure on a slow connection
+    // would break search until reload.)
     async function loadPagefind() {
-      if (pagefind || pagefindError) return;
-      try {
-        pagefind = await import(PAGEFIND_URL);
-        await pagefind.options({ excerptLength: 28 });
-      } catch (err) {
-        pagefindError = err;
+      if (pagefind) return;
+      if (!pagefindPromise) {
+        pagefindPromise = (async () => {
+          const mod = await import(PAGEFIND_URL);
+          await mod.options({ excerptLength: 28 });
+          pagefind = mod;
+        })();
+        pagefindPromise.catch(() => { pagefindPromise = null; });
       }
+      try { await pagefindPromise; } catch (_) {}
     }
 
     function escapeHtml(s) {
@@ -66,31 +74,44 @@ const base = import.meta.env.BASE_URL;
     }
 
     async function runSearch(q) {
-      if (!q.trim()) { hideDropdown(); return; }
+      const trimmed = q.trim();
+      if (!trimmed) { hideDropdown(); return; }
+      // Don't fire on a single character — Pagefind's prefix matching
+      // returns every word starting with that letter, which is noise.
+      // Wait for at least 2 characters before showing anything.
+      if (trimmed.length < 2) { hideDropdown(); return; }
       await loadPagefind();
-      if (pagefindError || !pagefind) {
-        showDropdown('<p class="site-search-empty">Search index isn’t built yet. Run <code>npm run build</code>.</p>');
+      if (!pagefind) {
+        // Could be a slow first load on mobile, or (in dev) the
+        // /pagefind/ directory hasn't been built. Either way: a retry
+        // on the next keystroke is automatic, so keep the message soft.
+        showDropdown('<p class="site-search-empty">Search is still loading… try again in a moment.</p>');
         return;
       }
       let results;
       try {
         const search = await pagefind.search(q);
-        // Pagefind's prefix/stemming sometimes over-matches short or
-        // non-dictionary queries (e.g. "mrna" was returning every word
-        // starting with "m"); we require each visible result's title
-        // or excerpt to actually contain every query term as a
-        // substring (case-insensitive), which keeps short exact
-        // queries honest without breaking longer queries. We pull a
-        // larger raw set from Pagefind and show every surviving
-        // result — the dropdown scrolls.
+        // Pagefind's prefix/stemming over-matches short or non-
+        // dictionary queries (e.g. "mrna" was returning pages where
+        // the highlighted match was just "m" or some other "m..."
+        // word). Require each query term to be a prefix of at least
+        // one of the words Pagefind has actually wrapped in <mark> in
+        // the excerpt — so "mrna" only keeps results where Pagefind
+        // matched a word starting with "mrna" (i.e. mRNA itself).
+        // Falls back to substring search if no marks were returned.
         const raw = await Promise.all(search.results.slice(0, 60).map((r) => r.data()));
-        const terms = q.toLowerCase().split(/\s+/).filter(Boolean);
+        const terms = trimmed.toLowerCase().split(/\s+/).filter(Boolean);
         results = raw.filter((r) => {
+          const excerpt = (r.excerpt || '') + ' '
+            + (r.sub_results && r.sub_results[0] && r.sub_results[0].excerpt || '');
+          const marked = [...excerpt.matchAll(/<mark[^>]*>([^<]+)<\/mark>/gi)]
+            .map((m) => m[1].toLowerCase().trim())
+            .filter(Boolean);
+          if (marked.length > 0) {
+            return terms.every((t) => marked.some((w) => w.startsWith(t)));
+          }
           const title = ((r.meta && r.meta.title) || '').toLowerCase();
-          const subTitle = (r.sub_results && r.sub_results[0] && r.sub_results[0].title) || '';
-          const subExcerpt = (r.sub_results && r.sub_results[0] && r.sub_results[0].excerpt) || '';
-          const excerpt = (r.excerpt || '') + ' ' + subExcerpt;
-          const haystack = (title + ' ' + subTitle + ' ' + excerpt.replace(/<[^>]*>/g, ' ')).toLowerCase();
+          const haystack = (title + ' ' + excerpt.replace(/<[^>]*>/g, ' ')).toLowerCase();
           return terms.every((t) => haystack.indexOf(t) !== -1);
         });
       } catch (err) {

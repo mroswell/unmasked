@@ -111,7 +111,14 @@ const isPdf = doc.data.format === 'pdf';
       {doc.data.date && <div><dt>Date</dt><dd>{doc.data.date}</dd></div>}
       {doc.data.page_count != null && <div><dt>Pages</dt><dd>{doc.data.page_count}</dd></div>}
       <div><dt>Source</dt><dd><a href={doc.data.source_url}>hsgac.senate.gov</a></dd></div>
-      {downloadHref && <div><dt>Download</dt><dd><a href={downloadHref}>{downloadLabel}</a></dd></div>}
+      {isPdf && pdfHref && (
+        <div>
+          <a href={pdfHref} target="_blank" rel="noopener">Open full PDF in a new tab ↗</a>
+        </div>
+      )}
+      {!isPdf && downloadHref && (
+        <div><dt>Download</dt><dd><a href={downloadHref}>{downloadLabel}</a></dd></div>
+      )}
     </dl>
 
     {isPdf && (
@@ -251,10 +258,30 @@ const isPdf = doc.data.format === 'pdf';
       el.hidden = tab !== 'text';
     });
 
-    if (tab === 'doc' && embed && pdfBase) {
-      // PDF Open Parameters — supported by Chrome/Edge/Firefox/Safari built-in viewers.
+    if (tab === 'doc' && pdfBase) {
+      // PDF Open Parameters: pdfBase#page=N. Rather than mutating the
+      // existing embed's src (which Chrome's PDF viewer handles
+      // unreliably — repeated text→pdf swaps can leave the viewer
+      // blank), we replace the embed with a fresh one whenever the
+      // page changes. Same-page tab toggles skip the replacement, so
+      // the user's PDF state (scroll position, zoom) survives.
       const desired = page ? `${pdfBase}#page=${page}` : pdfBase;
-      if (embed.getAttribute('src') !== desired) embed.setAttribute('src', desired);
+      const currentEmbed = document.querySelector<HTMLEmbedElement>('.pdf-pane embed');
+      const currentSrc = currentEmbed?.getAttribute('src') ?? '';
+      if (currentSrc !== desired) {
+        requestAnimationFrame(() => {
+          const pane = document.querySelector<HTMLElement>('.pdf-pane');
+          if (!pane) return;
+          const fresh = document.createElement('embed');
+          fresh.setAttribute('type', 'application/pdf');
+          fresh.setAttribute('data-pdf-base', pdfBase);
+          fresh.setAttribute('src', desired);
+          const existing = pane.querySelector('embed');
+          if (existing) existing.replaceWith(fresh);
+          else pane.prepend(fresh);
+          embed = fresh;
+        });
+      }
     } else if (tab === 'text' && page) {
       const target = document.getElementById(`text-page-${page}`);
       // Wait one frame so panel.hidden=false has applied before scrolling.
@@ -320,6 +347,63 @@ const isPdf = doc.data.format === 'pdf';
   resetBtns.forEach((btn) => {
     btn.addEventListener('click', () => { currentSizeIdx = applyTextSizeIdx(DEFAULT_SIZE_IDX); });
   });
+
+  // Keep the URL hash in sync with the page the user is currently
+  // viewing in the Document (Text) view. The tab-click handler reads
+  // the hash via currentPageSuffix(), so as a side effect, clicking
+  // "Document (PDF)" jumps the embed to the same page the user has
+  // scrolled to in the text. (Reverse direction isn't possible with
+  // the native browser PDF embed — it doesn't expose the current
+  // page to outside JS.)
+  {
+    const docTextPre = document.querySelector<HTMLElement>('.doc-text-pre');
+    if (docTextPre) {
+      const pageMarkers = Array.from(
+        docTextPre.querySelectorAll<HTMLElement>('h2.doc-text-page-marker[id^="text-page-"]')
+      );
+      if (pageMarkers.length) {
+        let lastReported = 0;
+        let ticking = false;
+
+        function updateCurrentPage() {
+          if (!docTextPre) return;
+          const containerTop = docTextPre.getBoundingClientRect().top;
+          // A marker counts as "current" once its top has crossed
+          // ~20px below the container's top edge.
+          const threshold = containerTop + 20;
+          let current = 0;
+          for (const m of pageMarkers) {
+            if (m.getBoundingClientRect().top < threshold) {
+              const num = parseInt(m.id.replace('text-page-', ''), 10);
+              if (Number.isInteger(num) && num > current) current = num;
+            } else {
+              break;
+            }
+          }
+          if (current && current !== lastReported) {
+            lastReported = current;
+            const panelText = document.getElementById('panel-text');
+            // Only mutate the hash if the user is on the Text tab —
+            // otherwise we'd clobber #doc-page-N while they're on PDF.
+            if (panelText && !panelText.hidden) {
+              history.replaceState(null, '', '#text-page-' + current);
+            }
+          }
+        }
+
+        const onScroll = () => {
+          if (ticking) return;
+          ticking = true;
+          requestAnimationFrame(() => {
+            ticking = false;
+            updateCurrentPage();
+          });
+        };
+        docTextPre.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('scroll', onScroll, { passive: true });
+      }
+    }
+  }
 
   // Custom hover tooltip on [data-tip] elements. Faster to appear
   // than the native title attribute (~250ms vs ~700ms), and snaps
@@ -465,7 +549,11 @@ const isPdf = doc.data.format === 'pdf';
     background: white;
   }
 
-  .pdf-pane embed { width: 100%; height: 80vh; border: 1px solid var(--color-border); }
+  /* :global() so dynamically-created <embed> elements (the
+     activate-on-page-change replacement) still pick up the size
+     styling — Astro scopes by default but new DOM nodes lack the
+     data-astro-cid attribute and would otherwise render unsized. */
+  :global(.pdf-pane embed) { width: 100%; height: 80vh; border: 1px solid var(--color-border); }
   .pdf-fallback { font-size: 0.9rem; color: var(--color-muted); margin-top: 0.5rem; }
 
   .empty-text-note {
@@ -576,7 +664,7 @@ const isPdf = doc.data.format === 'pdf';
   /* ------- Mobile ------- */
   @media (max-width: 640px) {
     .doc-meta-bar { gap: 0.4rem 1rem; padding: 0.6rem 0.75rem; font-size: 0.85rem; }
-    .pdf-pane embed { height: 65vh; }
+    :global(.pdf-pane embed) { height: 65vh; }
     .doc-tabs button[role="tab"] {
       padding: 0.5rem 0.75rem;
       font-size: 0.9rem;
