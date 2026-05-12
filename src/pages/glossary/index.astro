@@ -121,6 +121,20 @@ const rendered = await Promise.all(
       applyFilters();
     });
   }
+
+  // Honour ?q= passed from the global header search.
+  const initialQ = new URLSearchParams(window.location.search).get('q');
+  if (initialQ && search) {
+    search.value = initialQ;
+    state.q = initialQ;
+    applyFilters();
+    if (window.location.hash) {
+      const target = document.querySelector(window.location.hash);
+      if (target instanceof HTMLElement && !target.hidden) {
+        requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }));
+      }
+    }
+  }
 </script>
 
 <style>

@@ -134,7 +134,20 @@ const base = import.meta.env.BASE_URL;
         // sub-result URL has no anchor.
         const sub = (r.sub_results && r.sub_results[0]) || null;
         const useSub = sub && typeof sub.url === 'string' && sub.url.indexOf('#') !== -1;
-        const href = useSub ? sub.url : r.url;
+        let href = useSub ? sub.url : r.url;
+        // If the result lives on one of the filterable list pages
+        // (/timeline/, /quotes/, /glossary/, /documents/), pass the
+        // query along as ?q= so the destination page lands with its
+        // own search input pre-populated and the list pre-filtered.
+        // Skips individual document detail pages (/documents/<id>/).
+        try {
+          const u = new URL(href, location.href);
+          const seg = u.pathname.replace(/\/+$/, '').split('/').filter(Boolean);
+          if (seg.length === 1 && ['timeline', 'quotes', 'glossary', 'documents'].indexOf(seg[0]) !== -1) {
+            u.searchParams.set('q', trimmed);
+            href = u.pathname + u.search + u.hash;
+          }
+        } catch (_) {}
         const rawExcerpt = (useSub && sub.excerpt) ? sub.excerpt : r.excerpt;
         // Collapse long dot-leader runs (e.g. ".................. 19" from
         // a PDF table of contents that the OCR pass preserved verbatim)

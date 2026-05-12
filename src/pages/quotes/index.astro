@@ -137,6 +137,21 @@ const enriched = sorted.map((q) => {
       applyFilters();
     });
   }
+
+  // Honour ?q= passed from the global header search (so a hit on the
+  // Quotes page lands with the filter already applied).
+  const initialQ = new URLSearchParams(window.location.search).get('q');
+  if (initialQ && searchInput) {
+    searchInput.value = initialQ;
+    state.q = initialQ;
+    applyFilters();
+    if (window.location.hash) {
+      const target = document.querySelector(window.location.hash);
+      if (target instanceof HTMLElement && !target.hidden) {
+        requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }));
+      }
+    }
+  }
 </script>
 
 <style>

@@ -290,6 +290,18 @@ const base = import.meta.env.BASE_URL;
   // Sync DOM to the initial state (default mode is 'content', so we need to
   // hide the table and reveal the content-results panel on first paint).
   applyMode();
+
+  // Honour ?q= passed from the global header search (so a hit on the
+  // documents archive lands with the search input pre-populated).
+  const initialQ = new URLSearchParams(window.location.search).get('q');
+  if (initialQ && searchInput) {
+    searchInput.value = initialQ;
+    state.q = initialQ;
+    // Dispatch an input event so the existing handler runs (mode
+    // switching, debounced content search, etc.) rather than
+    // duplicating that logic here.
+    searchInput.dispatchEvent(new Event('input', { bubbles: true }));
+  }
 </script>
 
 <style>
